@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: ["20", "22"]
+        node-version: ["20", "24"]
         os: [ubuntu, macos, windows]
     runs-on: ${{ matrix.os }}-latest
     steps:
@@ -33,79 +33,60 @@ jobs:
         run: npm test
 
   build-linux-arm:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: arm
+            platform: linux/arm/v7
+            runner: ubuntu-latest
+            variant: standard
+            script: ./tools/crossbuild.sh
+          - arch: arm
+            platform: linux/arm/v7
+            runner: ubuntu-latest
+            variant: drm
+            script: ./tools/crossbuild-drm.sh
+          - arch: arm64
+            platform: linux/arm64
+            runner: ubuntu-latest
+            variant: standard
+            script: ./tools/crossbuild.sh
+          - arch: arm64
+            platform: linux/arm64
+            runner: ubuntu-latest
+            variant: drm
+            script: ./tools/crossbuild-drm.sh
+          - arch: arm64
+            platform: native
+            runner: ubuntu-24.04-arm64
+            variant: standard
+            script: native
+    runs-on: ${{ matrix.runner }}
     steps:
       - name: checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Set up QEMU
+        if: matrix.platform != 'native'
         uses: docker/setup-qemu-action@v3
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "npm"
-      - name: Build for arm
-        run:
-          docker run --platform linux/arm/v7 --rm -v "${PWD}:/work" -w /work
-          node:20-bullseye ./tools/crossbuild.sh
-
-  build-linux-arm64:
-    runs-on: ubuntu-24.04-arm64
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "npm"
-      - name: Install Node Dependencies
+      - name: Install Node Dependencies (native)
+        if: matrix.platform == 'native'
         run: npm ci --ignore-scripts
-      - name: Install System Dependencies
-        run:
-          sudo apt-get update && sudo apt-get install -y xorg-dev
-          libglu1-mesa-dev cmake build-essential
-      - name: Build Node Addon
+      - name: Install System Dependencies (native)
+        if: matrix.platform == 'native'
+        run: |
+          sudo apt-get update && sudo apt-get install -y xorg-dev libglu1-mesa-dev cmake build-essential
+      - name: Build Node Addon (native)
+        if: matrix.platform == 'native'
         run: npm run compile
-
-  build-linux-arm-drm:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "npm"
-      - name: Build for arm DRM
-        run:
-          docker run --platform linux/arm/v7 --rm -v "${PWD}:/work" -w /work
-          node:20-bullseye ./tools/crossbuild-drm.sh
-
-  build-linux-arm64-drm:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "npm"
-      - name: Build for arm64 DRM
-        run:
-          docker run --platform linux/arm64 --rm -v "${PWD}:/work" -w /work
-          node:20-bullseye ./tools/crossbuild-drm.sh
+      - name: Build for ${{ matrix.arch }} (${{ matrix.variant }})
+        if: matrix.platform != 'native'
+        run: |
+          docker run --platform ${{ matrix.platform }} --rm -v "${PWD}:/work" -w /work node:20-bullseye ${{ matrix.script }}
