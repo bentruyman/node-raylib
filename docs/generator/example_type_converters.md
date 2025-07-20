@@ -1,4 +1,3 @@
-
 ```cpp
 Napi::Value ToValue(napi_env env, float obj) {
   return Napi::Number::New(env, obj);
@@ -22,7 +21,7 @@ Napi::Value ToValue(napi_env env, Texture2D obj) {
   out.Set("height", ToValue(env, obj.x)); // int
   out.Set("mipmaps", ToValue(env, obj.y)); // int
   out.Set("format", ToValue(env, obj.x)); // int
-  // future: texture.pointer 
+  // future: texture.pointer
   return out;
 }
 

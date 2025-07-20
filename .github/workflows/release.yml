@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 permissions:
   contents: write
@@ -75,10 +75,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
       - name: Build for arm64 DRM
-        run: docker run --platform linux/arm64 --rm -v "${PWD}:/work" -w /work node:20-bullseye ./tools/crossbuild-drm.sh
+        run:
+          docker run --platform linux/arm64 --rm -v "${PWD}:/work" -w /work
+          node:20-bullseye ./tools/crossbuild-drm.sh
       - name: upload linux artifact
         uses: actions/upload-release-asset@v1
         env:

@@ -7,9 +7,9 @@
  * GENERATED CODE: DO NOT MODIFY
  */
 
-const r = require('../../build/Release/node-raylib.node')
+const r = require("../../build/Release/node-raylib.node");
 
-const raylib = {}
+const raylib = {};
 
 /**
  * Initialize window and OpenGL context
@@ -21,13 +21,9 @@ const raylib = {}
  * @return {undefined}
  */
 function InitWindow(width, height, title) {
-  return r.BindInitWindow(
-    width,
-    height,
-    title
-  )
+  return r.BindInitWindow(width, height, title);
 }
-raylib.InitWindow = InitWindow
+raylib.InitWindow = InitWindow;
 
 /**
  * Close window and unload OpenGL context
@@ -35,9 +31,9 @@ raylib.InitWindow = InitWindow
  * @return {undefined}
  */
 function CloseWindow() {
-  return r.BindCloseWindow()
+  return r.BindCloseWindow();
 }
-raylib.CloseWindow = CloseWindow
+raylib.CloseWindow = CloseWindow;
 
 /**
  * Check if application should close (KEY_ESCAPE pressed or windows close icon clicked)
@@ -45,9 +41,9 @@ raylib.CloseWindow = CloseWindow
  * @return {boolean} The resulting bool.
  */
 function WindowShouldClose() {
-  return r.BindWindowShouldClose()
+  return r.BindWindowShouldClose();
 }
-raylib.WindowShouldClose = WindowShouldClose
+raylib.WindowShouldClose = WindowShouldClose;
 
 /**
  * Check if window has been initialized successfully
@@ -55,9 +51,9 @@ raylib.WindowShouldClose = WindowShouldClose
  * @return {boolean} The resulting bool.
  */
 function IsWindowReady() {
-  return r.BindIsWindowReady()
+  return r.BindIsWindowReady();
 }
-raylib.IsWindowReady = IsWindowReady
+raylib.IsWindowReady = IsWindowReady;
 
 /**
  * Check if window is currently fullscreen
@@ -65,9 +61,9 @@ raylib.IsWindowReady = IsWindowReady
  * @return {boolean} The resulting bool.
  */
 function IsWindowFullscreen() {
-  return r.BindIsWindowFullscreen()
+  return r.BindIsWindowFullscreen();
 }
-raylib.IsWindowFullscreen = IsWindowFullscreen
+raylib.IsWindowFullscreen = IsWindowFullscreen;
 
 /**
  * Check if window is currently hidden
@@ -75,9 +71,9 @@ raylib.IsWindowFullscreen = IsWindowFullscreen
  * @return {boolean} The resulting bool.
  */
 function IsWindowHidden() {
-  return r.BindIsWindowHidden()
+  return r.BindIsWindowHidden();
 }
-raylib.IsWindowHidden = IsWindowHidden
+raylib.IsWindowHidden = IsWindowHidden;
 
 /**
  * Check if window is currently minimized
@@ -85,9 +81,9 @@ raylib.IsWindowHidden = IsWindowHidden
  * @return {boolean} The resulting bool.
  */
 function IsWindowMinimized() {
-  return r.BindIsWindowMinimized()
+  return r.BindIsWindowMinimized();
 }
-raylib.IsWindowMinimized = IsWindowMinimized
+raylib.IsWindowMinimized = IsWindowMinimized;
 
 /**
  * Check if window is currently maximized
@@ -95,9 +91,9 @@ raylib.IsWindowMinimized = IsWindowMinimized
  * @return {boolean} The resulting bool.
  */
 function IsWindowMaximized() {
-  return r.BindIsWindowMaximized()
+  return r.BindIsWindowMaximized();
 }
-raylib.IsWindowMaximized = IsWindowMaximized
+raylib.IsWindowMaximized = IsWindowMaximized;
 
 /**
  * Check if window is currently focused
@@ -105,9 +101,9 @@ raylib.IsWindowMaximized = IsWindowMaximized
  * @return {boolean} The resulting bool.
  */
 function IsWindowFocused() {
-  return r.BindIsWindowFocused()
+  return r.BindIsWindowFocused();
 }
-raylib.IsWindowFocused = IsWindowFocused
+raylib.IsWindowFocused = IsWindowFocused;
 
 /**
  * Check if window has been resized last frame
@@ -115,9 +111,9 @@ raylib.IsWindowFocused = IsWindowFocused
  * @return {boolean} The resulting bool.
  */
 function IsWindowResized() {
-  return r.BindIsWindowResized()
+  return r.BindIsWindowResized();
 }
-raylib.IsWindowResized = IsWindowResized
+raylib.IsWindowResized = IsWindowResized;
 
 /**
  * Check if one specific window flag is enabled
@@ -127,11 +123,9 @@ raylib.IsWindowResized = IsWindowResized
  * @return {boolean} The resulting bool.
  */
 function IsWindowState(flag) {
-  return r.BindIsWindowState(
-    flag
-  )
+  return r.BindIsWindowState(flag);
 }
-raylib.IsWindowState = IsWindowState
+raylib.IsWindowState = IsWindowState;
 
 /**
  * Set window configuration state using flags
@@ -141,11 +135,9 @@ raylib.IsWindowState = IsWindowState
  * @return {undefined}
  */
 function SetWindowState(flags) {
-  return r.BindSetWindowState(
-    flags
-  )
+  return r.BindSetWindowState(flags);
 }
-raylib.SetWindowState = SetWindowState
+raylib.SetWindowState = SetWindowState;
 
 /**
  * Clear window configuration state flags
@@ -155,11 +147,9 @@ raylib.SetWindowState = SetWindowState
  * @return {undefined}
  */
 function ClearWindowState(flags) {
-  return r.BindClearWindowState(
-    flags
-  )
+  return r.BindClearWindowState(flags);
 }
-raylib.ClearWindowState = ClearWindowState
+raylib.ClearWindowState = ClearWindowState;
 
 /**
  * Toggle window state: fullscreen/windowed, resizes monitor to match window resolution
@@ -167,9 +157,9 @@ raylib.ClearWindowState = ClearWindowState
  * @return {undefined}
  */
 function ToggleFullscreen() {
-  return r.BindToggleFullscreen()
+  return r.BindToggleFullscreen();
 }
-raylib.ToggleFullscreen = ToggleFullscreen
+raylib.ToggleFullscreen = ToggleFullscreen;
 
 /**
  * Toggle window state: borderless windowed, resizes window to match monitor resolution
@@ -177,9 +167,9 @@ raylib.ToggleFullscreen = ToggleFullscreen
  * @return {undefined}
  */
 function ToggleBorderlessWindowed() {
-  return r.BindToggleBorderlessWindowed()
+  return r.BindToggleBorderlessWindowed();
 }
-raylib.ToggleBorderlessWindowed = ToggleBorderlessWindowed
+raylib.ToggleBorderlessWindowed = ToggleBorderlessWindowed;
 
 /**
  * Set window state: maximized, if resizable
@@ -187,9 +177,9 @@ raylib.ToggleBorderlessWindowed = ToggleBorderlessWindowed
  * @return {undefined}
  */
 function MaximizeWindow() {
-  return r.BindMaximizeWindow()
+  return r.BindMaximizeWindow();
 }
-raylib.MaximizeWindow = MaximizeWindow
+raylib.MaximizeWindow = MaximizeWindow;
 
 /**
  * Set window state: minimized, if resizable
@@ -197,9 +187,9 @@ raylib.MaximizeWindow = MaximizeWindow
  * @return {undefined}
  */
 function MinimizeWindow() {
-  return r.BindMinimizeWindow()
+  return r.BindMinimizeWindow();
 }
-raylib.MinimizeWindow = MinimizeWindow
+raylib.MinimizeWindow = MinimizeWindow;
 
 /**
  * Set window state: not minimized/maximized
@@ -207,9 +197,9 @@ raylib.MinimizeWindow = MinimizeWindow
  * @return {undefined}
  */
 function RestoreWindow() {
-  return r.BindRestoreWindow()
+  return r.BindRestoreWindow();
 }
-raylib.RestoreWindow = RestoreWindow
+raylib.RestoreWindow = RestoreWindow;
 
 /**
  * Set icon for window (single image, RGBA 32bit)
@@ -224,10 +214,10 @@ function SetWindowIcon(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
+    image.format,
+  );
 }
-raylib.SetWindowIcon = SetWindowIcon
+raylib.SetWindowIcon = SetWindowIcon;
 
 /**
  * Set icon for window (multiple images, RGBA 32bit)
@@ -238,12 +228,9 @@ raylib.SetWindowIcon = SetWindowIcon
  * @return {undefined}
  */
 function SetWindowIcons(images, count) {
-  return r.BindSetWindowIcons(
-    images,
-    count
-  )
+  return r.BindSetWindowIcons(images, count);
 }
-raylib.SetWindowIcons = SetWindowIcons
+raylib.SetWindowIcons = SetWindowIcons;
 
 /**
  * Set title for window
@@ -253,11 +240,9 @@ raylib.SetWindowIcons = SetWindowIcons
  * @return {undefined}
  */
 function SetWindowTitle(title) {
-  return r.BindSetWindowTitle(
-    title
-  )
+  return r.BindSetWindowTitle(title);
 }
-raylib.SetWindowTitle = SetWindowTitle
+raylib.SetWindowTitle = SetWindowTitle;
 
 /**
  * Set window position on screen
@@ -268,12 +253,9 @@ raylib.SetWindowTitle = SetWindowTitle
  * @return {undefined}
  */
 function SetWindowPosition(x, y) {
-  return r.BindSetWindowPosition(
-    x,
-    y
-  )
+  return r.BindSetWindowPosition(x, y);
 }
-raylib.SetWindowPosition = SetWindowPosition
+raylib.SetWindowPosition = SetWindowPosition;
 
 /**
  * Set monitor for the current window
@@ -283,11 +265,9 @@ raylib.SetWindowPosition = SetWindowPosition
  * @return {undefined}
  */
 function SetWindowMonitor(monitor) {
-  return r.BindSetWindowMonitor(
-    monitor
-  )
+  return r.BindSetWindowMonitor(monitor);
 }
-raylib.SetWindowMonitor = SetWindowMonitor
+raylib.SetWindowMonitor = SetWindowMonitor;
 
 /**
  * Set window minimum dimensions (for FLAG_WINDOW_RESIZABLE)
@@ -298,12 +278,9 @@ raylib.SetWindowMonitor = SetWindowMonitor
  * @return {undefined}
  */
 function SetWindowMinSize(width, height) {
-  return r.BindSetWindowMinSize(
-    width,
-    height
-  )
+  return r.BindSetWindowMinSize(width, height);
 }
-raylib.SetWindowMinSize = SetWindowMinSize
+raylib.SetWindowMinSize = SetWindowMinSize;
 
 /**
  * Set window maximum dimensions (for FLAG_WINDOW_RESIZABLE)
@@ -314,12 +291,9 @@ raylib.SetWindowMinSize = SetWindowMinSize
  * @return {undefined}
  */
 function SetWindowMaxSize(width, height) {
-  return r.BindSetWindowMaxSize(
-    width,
-    height
-  )
+  return r.BindSetWindowMaxSize(width, height);
 }
-raylib.SetWindowMaxSize = SetWindowMaxSize
+raylib.SetWindowMaxSize = SetWindowMaxSize;
 
 /**
  * Set window dimensions
@@ -330,12 +304,9 @@ raylib.SetWindowMaxSize = SetWindowMaxSize
  * @return {undefined}
  */
 function SetWindowSize(width, height) {
-  return r.BindSetWindowSize(
-    width,
-    height
-  )
+  return r.BindSetWindowSize(width, height);
 }
-raylib.SetWindowSize = SetWindowSize
+raylib.SetWindowSize = SetWindowSize;
 
 /**
  * Set window opacity [0.0f..1.0f]
@@ -345,11 +316,9 @@ raylib.SetWindowSize = SetWindowSize
  * @return {undefined}
  */
 function SetWindowOpacity(opacity) {
-  return r.BindSetWindowOpacity(
-    opacity
-  )
+  return r.BindSetWindowOpacity(opacity);
 }
-raylib.SetWindowOpacity = SetWindowOpacity
+raylib.SetWindowOpacity = SetWindowOpacity;
 
 /**
  * Set window focused
@@ -357,9 +326,9 @@ raylib.SetWindowOpacity = SetWindowOpacity
  * @return {undefined}
  */
 function SetWindowFocused() {
-  return r.BindSetWindowFocused()
+  return r.BindSetWindowFocused();
 }
-raylib.SetWindowFocused = SetWindowFocused
+raylib.SetWindowFocused = SetWindowFocused;
 
 /**
  * Get native window handle
@@ -367,9 +336,9 @@ raylib.SetWindowFocused = SetWindowFocused
  * @return {number} The resulting void *.
  */
 function GetWindowHandle() {
-  return r.BindGetWindowHandle()
+  return r.BindGetWindowHandle();
 }
-raylib.GetWindowHandle = GetWindowHandle
+raylib.GetWindowHandle = GetWindowHandle;
 
 /**
  * Get current screen width
@@ -377,9 +346,9 @@ raylib.GetWindowHandle = GetWindowHandle
  * @return {number} The resulting int.
  */
 function GetScreenWidth() {
-  return r.BindGetScreenWidth()
+  return r.BindGetScreenWidth();
 }
-raylib.GetScreenWidth = GetScreenWidth
+raylib.GetScreenWidth = GetScreenWidth;
 
 /**
  * Get current screen height
@@ -387,9 +356,9 @@ raylib.GetScreenWidth = GetScreenWidth
  * @return {number} The resulting int.
  */
 function GetScreenHeight() {
-  return r.BindGetScreenHeight()
+  return r.BindGetScreenHeight();
 }
-raylib.GetScreenHeight = GetScreenHeight
+raylib.GetScreenHeight = GetScreenHeight;
 
 /**
  * Get current render width (it considers HiDPI)
@@ -397,9 +366,9 @@ raylib.GetScreenHeight = GetScreenHeight
  * @return {number} The resulting int.
  */
 function GetRenderWidth() {
-  return r.BindGetRenderWidth()
+  return r.BindGetRenderWidth();
 }
-raylib.GetRenderWidth = GetRenderWidth
+raylib.GetRenderWidth = GetRenderWidth;
 
 /**
  * Get current render height (it considers HiDPI)
@@ -407,9 +376,9 @@ raylib.GetRenderWidth = GetRenderWidth
  * @return {number} The resulting int.
  */
 function GetRenderHeight() {
-  return r.BindGetRenderHeight()
+  return r.BindGetRenderHeight();
 }
-raylib.GetRenderHeight = GetRenderHeight
+raylib.GetRenderHeight = GetRenderHeight;
 
 /**
  * Get number of connected monitors
@@ -417,9 +386,9 @@ raylib.GetRenderHeight = GetRenderHeight
  * @return {number} The resulting int.
  */
 function GetMonitorCount() {
-  return r.BindGetMonitorCount()
+  return r.BindGetMonitorCount();
 }
-raylib.GetMonitorCount = GetMonitorCount
+raylib.GetMonitorCount = GetMonitorCount;
 
 /**
  * Get current monitor where window is placed
@@ -427,9 +396,9 @@ raylib.GetMonitorCount = GetMonitorCount
  * @return {number} The resulting int.
  */
 function GetCurrentMonitor() {
-  return r.BindGetCurrentMonitor()
+  return r.BindGetCurrentMonitor();
 }
-raylib.GetCurrentMonitor = GetCurrentMonitor
+raylib.GetCurrentMonitor = GetCurrentMonitor;
 
 /**
  * Get specified monitor position
@@ -439,11 +408,9 @@ raylib.GetCurrentMonitor = GetCurrentMonitor
  * @return {Vector2} The resulting Vector2.
  */
 function GetMonitorPosition(monitor) {
-  return r.BindGetMonitorPosition(
-    monitor
-  )
+  return r.BindGetMonitorPosition(monitor);
 }
-raylib.GetMonitorPosition = GetMonitorPosition
+raylib.GetMonitorPosition = GetMonitorPosition;
 
 /**
  * Get specified monitor width (current video mode used by monitor)
@@ -453,11 +420,9 @@ raylib.GetMonitorPosition = GetMonitorPosition
  * @return {number} The resulting int.
  */
 function GetMonitorWidth(monitor) {
-  return r.BindGetMonitorWidth(
-    monitor
-  )
+  return r.BindGetMonitorWidth(monitor);
 }
-raylib.GetMonitorWidth = GetMonitorWidth
+raylib.GetMonitorWidth = GetMonitorWidth;
 
 /**
  * Get specified monitor height (current video mode used by monitor)
@@ -467,11 +432,9 @@ raylib.GetMonitorWidth = GetMonitorWidth
  * @return {number} The resulting int.
  */
 function GetMonitorHeight(monitor) {
-  return r.BindGetMonitorHeight(
-    monitor
-  )
+  return r.BindGetMonitorHeight(monitor);
 }
-raylib.GetMonitorHeight = GetMonitorHeight
+raylib.GetMonitorHeight = GetMonitorHeight;
 
 /**
  * Get specified monitor physical width in millimetres
@@ -481,11 +444,9 @@ raylib.GetMonitorHeight = GetMonitorHeight
  * @return {number} The resulting int.
  */
 function GetMonitorPhysicalWidth(monitor) {
-  return r.BindGetMonitorPhysicalWidth(
-    monitor
-  )
+  return r.BindGetMonitorPhysicalWidth(monitor);
 }
-raylib.GetMonitorPhysicalWidth = GetMonitorPhysicalWidth
+raylib.GetMonitorPhysicalWidth = GetMonitorPhysicalWidth;
 
 /**
  * Get specified monitor physical height in millimetres
@@ -495,11 +456,9 @@ raylib.GetMonitorPhysicalWidth = GetMonitorPhysicalWidth
  * @return {number} The resulting int.
  */
 function GetMonitorPhysicalHeight(monitor) {
-  return r.BindGetMonitorPhysicalHeight(
-    monitor
-  )
+  return r.BindGetMonitorPhysicalHeight(monitor);
 }
-raylib.GetMonitorPhysicalHeight = GetMonitorPhysicalHeight
+raylib.GetMonitorPhysicalHeight = GetMonitorPhysicalHeight;
 
 /**
  * Get specified monitor refresh rate
@@ -509,11 +468,9 @@ raylib.GetMonitorPhysicalHeight = GetMonitorPhysicalHeight
  * @return {number} The resulting int.
  */
 function GetMonitorRefreshRate(monitor) {
-  return r.BindGetMonitorRefreshRate(
-    monitor
-  )
+  return r.BindGetMonitorRefreshRate(monitor);
 }
-raylib.GetMonitorRefreshRate = GetMonitorRefreshRate
+raylib.GetMonitorRefreshRate = GetMonitorRefreshRate;
 
 /**
  * Get window position XY on monitor
@@ -521,9 +478,9 @@ raylib.GetMonitorRefreshRate = GetMonitorRefreshRate
  * @return {Vector2} The resulting Vector2.
  */
 function GetWindowPosition() {
-  return r.BindGetWindowPosition()
+  return r.BindGetWindowPosition();
 }
-raylib.GetWindowPosition = GetWindowPosition
+raylib.GetWindowPosition = GetWindowPosition;
 
 /**
  * Get window scale DPI factor
@@ -531,9 +488,9 @@ raylib.GetWindowPosition = GetWindowPosition
  * @return {Vector2} The resulting Vector2.
  */
 function GetWindowScaleDPI() {
-  return r.BindGetWindowScaleDPI()
+  return r.BindGetWindowScaleDPI();
 }
-raylib.GetWindowScaleDPI = GetWindowScaleDPI
+raylib.GetWindowScaleDPI = GetWindowScaleDPI;
 
 /**
  * Get the human-readable, UTF-8 encoded name of the specified monitor
@@ -543,11 +500,9 @@ raylib.GetWindowScaleDPI = GetWindowScaleDPI
  * @return {string} The resulting const char *.
  */
 function GetMonitorName(monitor) {
-  return r.BindGetMonitorName(
-    monitor
-  )
+  return r.BindGetMonitorName(monitor);
 }
-raylib.GetMonitorName = GetMonitorName
+raylib.GetMonitorName = GetMonitorName;
 
 /**
  * Set clipboard text content
@@ -557,11 +512,9 @@ raylib.GetMonitorName = GetMonitorName
  * @return {undefined}
  */
 function SetClipboardText(text) {
-  return r.BindSetClipboardText(
-    text
-  )
+  return r.BindSetClipboardText(text);
 }
-raylib.SetClipboardText = SetClipboardText
+raylib.SetClipboardText = SetClipboardText;
 
 /**
  * Get clipboard text content
@@ -569,9 +522,9 @@ raylib.SetClipboardText = SetClipboardText
  * @return {string} The resulting const char *.
  */
 function GetClipboardText() {
-  return r.BindGetClipboardText()
+  return r.BindGetClipboardText();
 }
-raylib.GetClipboardText = GetClipboardText
+raylib.GetClipboardText = GetClipboardText;
 
 /**
  * Get clipboard image content
@@ -579,9 +532,9 @@ raylib.GetClipboardText = GetClipboardText
  * @return {Image} The resulting Image.
  */
 function GetClipboardImage() {
-  return r.BindGetClipboardImage()
+  return r.BindGetClipboardImage();
 }
-raylib.GetClipboardImage = GetClipboardImage
+raylib.GetClipboardImage = GetClipboardImage;
 
 /**
  * Enable waiting for events on EndDrawing(), no automatic event polling
@@ -589,9 +542,9 @@ raylib.GetClipboardImage = GetClipboardImage
  * @return {undefined}
  */
 function EnableEventWaiting() {
-  return r.BindEnableEventWaiting()
+  return r.BindEnableEventWaiting();
 }
-raylib.EnableEventWaiting = EnableEventWaiting
+raylib.EnableEventWaiting = EnableEventWaiting;
 
 /**
  * Disable waiting for events on EndDrawing(), automatic events polling
@@ -599,9 +552,9 @@ raylib.EnableEventWaiting = EnableEventWaiting
  * @return {undefined}
  */
 function DisableEventWaiting() {
-  return r.BindDisableEventWaiting()
+  return r.BindDisableEventWaiting();
 }
-raylib.DisableEventWaiting = DisableEventWaiting
+raylib.DisableEventWaiting = DisableEventWaiting;
 
 /**
  * Shows cursor
@@ -609,9 +562,9 @@ raylib.DisableEventWaiting = DisableEventWaiting
  * @return {undefined}
  */
 function ShowCursor() {
-  return r.BindShowCursor()
+  return r.BindShowCursor();
 }
-raylib.ShowCursor = ShowCursor
+raylib.ShowCursor = ShowCursor;
 
 /**
  * Hides cursor
@@ -619,9 +572,9 @@ raylib.ShowCursor = ShowCursor
  * @return {undefined}
  */
 function HideCursor() {
-  return r.BindHideCursor()
+  return r.BindHideCursor();
 }
-raylib.HideCursor = HideCursor
+raylib.HideCursor = HideCursor;
 
 /**
  * Check if cursor is not visible
@@ -629,9 +582,9 @@ raylib.HideCursor = HideCursor
  * @return {boolean} The resulting bool.
  */
 function IsCursorHidden() {
-  return r.BindIsCursorHidden()
+  return r.BindIsCursorHidden();
 }
-raylib.IsCursorHidden = IsCursorHidden
+raylib.IsCursorHidden = IsCursorHidden;
 
 /**
  * Enables cursor (unlock cursor)
@@ -639,9 +592,9 @@ raylib.IsCursorHidden = IsCursorHidden
  * @return {undefined}
  */
 function EnableCursor() {
-  return r.BindEnableCursor()
+  return r.BindEnableCursor();
 }
-raylib.EnableCursor = EnableCursor
+raylib.EnableCursor = EnableCursor;
 
 /**
  * Disables cursor (lock cursor)
@@ -649,9 +602,9 @@ raylib.EnableCursor = EnableCursor
  * @return {undefined}
  */
 function DisableCursor() {
-  return r.BindDisableCursor()
+  return r.BindDisableCursor();
 }
-raylib.DisableCursor = DisableCursor
+raylib.DisableCursor = DisableCursor;
 
 /**
  * Check if cursor is on the screen
@@ -659,9 +612,9 @@ raylib.DisableCursor = DisableCursor
  * @return {boolean} The resulting bool.
  */
 function IsCursorOnScreen() {
-  return r.BindIsCursorOnScreen()
+  return r.BindIsCursorOnScreen();
 }
-raylib.IsCursorOnScreen = IsCursorOnScreen
+raylib.IsCursorOnScreen = IsCursorOnScreen;
 
 /**
  * Set background color (framebuffer clear color)
@@ -671,14 +624,9 @@ raylib.IsCursorOnScreen = IsCursorOnScreen
  * @return {undefined}
  */
 function ClearBackground(color) {
-  return r.BindClearBackground(
-    color.r,
-    color.g,
-    color.b,
-    color.a
-  )
+  return r.BindClearBackground(color.r, color.g, color.b, color.a);
 }
-raylib.ClearBackground = ClearBackground
+raylib.ClearBackground = ClearBackground;
 
 /**
  * Setup canvas (framebuffer) to start drawing
@@ -686,9 +634,9 @@ raylib.ClearBackground = ClearBackground
  * @return {undefined}
  */
 function BeginDrawing() {
-  return r.BindBeginDrawing()
+  return r.BindBeginDrawing();
 }
-raylib.BeginDrawing = BeginDrawing
+raylib.BeginDrawing = BeginDrawing;
 
 /**
  * End canvas drawing and swap buffers (double buffering)
@@ -696,9 +644,9 @@ raylib.BeginDrawing = BeginDrawing
  * @return {undefined}
  */
 function EndDrawing() {
-  return r.BindEndDrawing()
+  return r.BindEndDrawing();
 }
-raylib.EndDrawing = EndDrawing
+raylib.EndDrawing = EndDrawing;
 
 /**
  * Begin 2D mode with custom camera (2D)
@@ -714,10 +662,10 @@ function BeginMode2D(camera) {
     camera.target.x,
     camera.target.y,
     camera.rotation,
-    camera.zoom
-  )
+    camera.zoom,
+  );
 }
-raylib.BeginMode2D = BeginMode2D
+raylib.BeginMode2D = BeginMode2D;
 
 /**
  * Ends 2D mode with custom camera
@@ -725,9 +673,9 @@ raylib.BeginMode2D = BeginMode2D
  * @return {undefined}
  */
 function EndMode2D() {
-  return r.BindEndMode2D()
+  return r.BindEndMode2D();
 }
-raylib.EndMode2D = EndMode2D
+raylib.EndMode2D = EndMode2D;
 
 /**
  * Begin 3D mode with custom camera (3D)
@@ -748,10 +696,10 @@ function BeginMode3D(camera) {
     camera.up.y,
     camera.up.z,
     camera.fovy,
-    camera.projection
-  )
+    camera.projection,
+  );
 }
-raylib.BeginMode3D = BeginMode3D
+raylib.BeginMode3D = BeginMode3D;
 
 /**
  * Ends 3D mode and returns to default 2D orthographic mode
@@ -759,9 +707,9 @@ raylib.BeginMode3D = BeginMode3D
  * @return {undefined}
  */
 function EndMode3D() {
-  return r.BindEndMode3D()
+  return r.BindEndMode3D();
 }
-raylib.EndMode3D = EndMode3D
+raylib.EndMode3D = EndMode3D;
 
 /**
  * Begin drawing to render texture
@@ -782,10 +730,10 @@ function BeginTextureMode(target) {
     target.depth.width,
     target.depth.height,
     target.depth.mipmaps,
-    target.depth.format
-  )
+    target.depth.format,
+  );
 }
-raylib.BeginTextureMode = BeginTextureMode
+raylib.BeginTextureMode = BeginTextureMode;
 
 /**
  * Ends drawing to render texture
@@ -793,9 +741,9 @@ raylib.BeginTextureMode = BeginTextureMode
  * @return {undefined}
  */
 function EndTextureMode() {
-  return r.BindEndTextureMode()
+  return r.BindEndTextureMode();
 }
-raylib.EndTextureMode = EndTextureMode
+raylib.EndTextureMode = EndTextureMode;
 
 /**
  * Begin custom shader drawing
@@ -805,12 +753,9 @@ raylib.EndTextureMode = EndTextureMode
  * @return {undefined}
  */
 function BeginShaderMode(shader) {
-  return r.BindBeginShaderMode(
-    shader.id,
-    shader.locs
-  )
+  return r.BindBeginShaderMode(shader.id, shader.locs);
 }
-raylib.BeginShaderMode = BeginShaderMode
+raylib.BeginShaderMode = BeginShaderMode;
 
 /**
  * End custom shader drawing (use default shader)
@@ -818,9 +763,9 @@ raylib.BeginShaderMode = BeginShaderMode
  * @return {undefined}
  */
 function EndShaderMode() {
-  return r.BindEndShaderMode()
+  return r.BindEndShaderMode();
 }
-raylib.EndShaderMode = EndShaderMode
+raylib.EndShaderMode = EndShaderMode;
 
 /**
  * Begin blending mode (alpha, additive, multiplied, subtract, custom)
@@ -830,11 +775,9 @@ raylib.EndShaderMode = EndShaderMode
  * @return {undefined}
  */
 function BeginBlendMode(mode) {
-  return r.BindBeginBlendMode(
-    mode
-  )
+  return r.BindBeginBlendMode(mode);
 }
-raylib.BeginBlendMode = BeginBlendMode
+raylib.BeginBlendMode = BeginBlendMode;
 
 /**
  * End blending mode (reset to default: alpha blending)
@@ -842,9 +785,9 @@ raylib.BeginBlendMode = BeginBlendMode
  * @return {undefined}
  */
 function EndBlendMode() {
-  return r.BindEndBlendMode()
+  return r.BindEndBlendMode();
 }
-raylib.EndBlendMode = EndBlendMode
+raylib.EndBlendMode = EndBlendMode;
 
 /**
  * Begin scissor mode (define screen area for following drawing)
@@ -857,14 +800,9 @@ raylib.EndBlendMode = EndBlendMode
  * @return {undefined}
  */
 function BeginScissorMode(x, y, width, height) {
-  return r.BindBeginScissorMode(
-    x,
-    y,
-    width,
-    height
-  )
+  return r.BindBeginScissorMode(x, y, width, height);
 }
-raylib.BeginScissorMode = BeginScissorMode
+raylib.BeginScissorMode = BeginScissorMode;
 
 /**
  * End scissor mode
@@ -872,9 +810,9 @@ raylib.BeginScissorMode = BeginScissorMode
  * @return {undefined}
  */
 function EndScissorMode() {
-  return r.BindEndScissorMode()
+  return r.BindEndScissorMode();
 }
-raylib.EndScissorMode = EndScissorMode
+raylib.EndScissorMode = EndScissorMode;
 
 /**
  * End stereo rendering (requires VR simulator)
@@ -882,9 +820,9 @@ raylib.EndScissorMode = EndScissorMode
  * @return {undefined}
  */
 function EndVrStereoMode() {
-  return r.BindEndVrStereoMode()
+  return r.BindEndVrStereoMode();
 }
-raylib.EndVrStereoMode = EndVrStereoMode
+raylib.EndVrStereoMode = EndVrStereoMode;
 
 /**
  * Load shader from files and bind default locations
@@ -895,12 +833,9 @@ raylib.EndVrStereoMode = EndVrStereoMode
  * @return {Shader} The resulting Shader.
  */
 function LoadShader(vsFileName, fsFileName) {
-  return r.BindLoadShader(
-    vsFileName,
-    fsFileName
-  )
+  return r.BindLoadShader(vsFileName, fsFileName);
 }
-raylib.LoadShader = LoadShader
+raylib.LoadShader = LoadShader;
 
 /**
  * Load shader from code strings and bind default locations
@@ -911,12 +846,9 @@ raylib.LoadShader = LoadShader
  * @return {Shader} The resulting Shader.
  */
 function LoadShaderFromMemory(vsCode, fsCode) {
-  return r.BindLoadShaderFromMemory(
-    vsCode,
-    fsCode
-  )
+  return r.BindLoadShaderFromMemory(vsCode, fsCode);
 }
-raylib.LoadShaderFromMemory = LoadShaderFromMemory
+raylib.LoadShaderFromMemory = LoadShaderFromMemory;
 
 /**
  * Check if a shader is valid (loaded on GPU)
@@ -926,12 +858,9 @@ raylib.LoadShaderFromMemory = LoadShaderFromMemory
  * @return {boolean} The resulting bool.
  */
 function IsShaderValid(shader) {
-  return r.BindIsShaderValid(
-    shader.id,
-    shader.locs
-  )
+  return r.BindIsShaderValid(shader.id, shader.locs);
 }
-raylib.IsShaderValid = IsShaderValid
+raylib.IsShaderValid = IsShaderValid;
 
 /**
  * Get shader uniform location
@@ -942,13 +871,9 @@ raylib.IsShaderValid = IsShaderValid
  * @return {number} The resulting int.
  */
 function GetShaderLocation(shader, uniformName) {
-  return r.BindGetShaderLocation(
-    shader.id,
-    shader.locs,
-    uniformName
-  )
+  return r.BindGetShaderLocation(shader.id, shader.locs, uniformName);
 }
-raylib.GetShaderLocation = GetShaderLocation
+raylib.GetShaderLocation = GetShaderLocation;
 
 /**
  * Get shader attribute location
@@ -959,13 +884,9 @@ raylib.GetShaderLocation = GetShaderLocation
  * @return {number} The resulting int.
  */
 function GetShaderLocationAttrib(shader, attribName) {
-  return r.BindGetShaderLocationAttrib(
-    shader.id,
-    shader.locs,
-    attribName
-  )
+  return r.BindGetShaderLocationAttrib(shader.id, shader.locs, attribName);
 }
-raylib.GetShaderLocationAttrib = GetShaderLocationAttrib
+raylib.GetShaderLocationAttrib = GetShaderLocationAttrib;
 
 /**
  * Set shader uniform value (matrix 4x4)
@@ -996,10 +917,10 @@ function SetShaderValueMatrix(shader, locIndex, mat) {
     mat.m3,
     mat.m7,
     mat.m11,
-    mat.m15
-  )
+    mat.m15,
+  );
 }
-raylib.SetShaderValueMatrix = SetShaderValueMatrix
+raylib.SetShaderValueMatrix = SetShaderValueMatrix;
 
 /**
  * Set shader uniform value for texture (sampler2d)
@@ -1019,10 +940,10 @@ function SetShaderValueTexture(shader, locIndex, texture) {
     texture.width,
     texture.height,
     texture.mipmaps,
-    texture.format
-  )
+    texture.format,
+  );
 }
-raylib.SetShaderValueTexture = SetShaderValueTexture
+raylib.SetShaderValueTexture = SetShaderValueTexture;
 
 /**
  * Unload shader from GPU memory (VRAM)
@@ -1032,12 +953,9 @@ raylib.SetShaderValueTexture = SetShaderValueTexture
  * @return {undefined}
  */
 function UnloadShader(shader) {
-  return r.BindUnloadShader(
-    shader.id,
-    shader.locs
-  )
+  return r.BindUnloadShader(shader.id, shader.locs);
 }
-raylib.UnloadShader = UnloadShader
+raylib.UnloadShader = UnloadShader;
 
 /**
  * Get a ray trace from screen position (i.e mouse)
@@ -1061,10 +979,10 @@ function GetScreenToWorldRay(position, camera) {
     camera.up.y,
     camera.up.z,
     camera.fovy,
-    camera.projection
-  )
+    camera.projection,
+  );
 }
-raylib.GetScreenToWorldRay = GetScreenToWorldRay
+raylib.GetScreenToWorldRay = GetScreenToWorldRay;
 
 /**
  * Get a ray trace from screen position (i.e mouse) in a viewport
@@ -1092,10 +1010,10 @@ function GetScreenToWorldRayEx(position, camera, width, height) {
     camera.fovy,
     camera.projection,
     width,
-    height
-  )
+    height,
+  );
 }
-raylib.GetScreenToWorldRayEx = GetScreenToWorldRayEx
+raylib.GetScreenToWorldRayEx = GetScreenToWorldRayEx;
 
 /**
  * Get the screen space position for a 3d world space position
@@ -1120,10 +1038,10 @@ function GetWorldToScreen(position, camera) {
     camera.up.y,
     camera.up.z,
     camera.fovy,
-    camera.projection
-  )
+    camera.projection,
+  );
 }
-raylib.GetWorldToScreen = GetWorldToScreen
+raylib.GetWorldToScreen = GetWorldToScreen;
 
 /**
  * Get size position for a 3d world space position
@@ -1152,10 +1070,10 @@ function GetWorldToScreenEx(position, camera, width, height) {
     camera.fovy,
     camera.projection,
     width,
-    height
-  )
+    height,
+  );
 }
-raylib.GetWorldToScreenEx = GetWorldToScreenEx
+raylib.GetWorldToScreenEx = GetWorldToScreenEx;
 
 /**
  * Get the screen space position for a 2d camera world space position
@@ -1174,10 +1092,10 @@ function GetWorldToScreen2D(position, camera) {
     camera.target.x,
     camera.target.y,
     camera.rotation,
-    camera.zoom
-  )
+    camera.zoom,
+  );
 }
-raylib.GetWorldToScreen2D = GetWorldToScreen2D
+raylib.GetWorldToScreen2D = GetWorldToScreen2D;
 
 /**
  * Get the world space position for a 2d camera screen space position
@@ -1196,10 +1114,10 @@ function GetScreenToWorld2D(position, camera) {
     camera.target.x,
     camera.target.y,
     camera.rotation,
-    camera.zoom
-  )
+    camera.zoom,
+  );
 }
-raylib.GetScreenToWorld2D = GetScreenToWorld2D
+raylib.GetScreenToWorld2D = GetScreenToWorld2D;
 
 /**
  * Get camera transform matrix (view matrix)
@@ -1220,10 +1138,10 @@ function GetCameraMatrix(camera) {
     camera.up.y,
     camera.up.z,
     camera.fovy,
-    camera.projection
-  )
+    camera.projection,
+  );
 }
-raylib.GetCameraMatrix = GetCameraMatrix
+raylib.GetCameraMatrix = GetCameraMatrix;
 
 /**
  * Get camera 2d transform matrix
@@ -1239,10 +1157,10 @@ function GetCameraMatrix2D(camera) {
     camera.target.x,
     camera.target.y,
     camera.rotation,
-    camera.zoom
-  )
+    camera.zoom,
+  );
 }
-raylib.GetCameraMatrix2D = GetCameraMatrix2D
+raylib.GetCameraMatrix2D = GetCameraMatrix2D;
 
 /**
  * Set target FPS (maximum)
@@ -1252,11 +1170,9 @@ raylib.GetCameraMatrix2D = GetCameraMatrix2D
  * @return {undefined}
  */
 function SetTargetFPS(fps) {
-  return r.BindSetTargetFPS(
-    fps
-  )
+  return r.BindSetTargetFPS(fps);
 }
-raylib.SetTargetFPS = SetTargetFPS
+raylib.SetTargetFPS = SetTargetFPS;
 
 /**
  * Get time in seconds for last frame drawn (delta time)
@@ -1264,9 +1180,9 @@ raylib.SetTargetFPS = SetTargetFPS
  * @return {number} The resulting float.
  */
 function GetFrameTime() {
-  return r.BindGetFrameTime()
+  return r.BindGetFrameTime();
 }
-raylib.GetFrameTime = GetFrameTime
+raylib.GetFrameTime = GetFrameTime;
 
 /**
  * Get elapsed time in seconds since InitWindow()
@@ -1274,9 +1190,9 @@ raylib.GetFrameTime = GetFrameTime
  * @return {number} The resulting double.
  */
 function GetTime() {
-  return r.BindGetTime()
+  return r.BindGetTime();
 }
-raylib.GetTime = GetTime
+raylib.GetTime = GetTime;
 
 /**
  * Get current FPS
@@ -1284,9 +1200,9 @@ raylib.GetTime = GetTime
  * @return {number} The resulting int.
  */
 function GetFPS() {
-  return r.BindGetFPS()
+  return r.BindGetFPS();
 }
-raylib.GetFPS = GetFPS
+raylib.GetFPS = GetFPS;
 
 /**
  * Swap back buffer with front buffer (screen drawing)
@@ -1294,9 +1210,9 @@ raylib.GetFPS = GetFPS
  * @return {undefined}
  */
 function SwapScreenBuffer() {
-  return r.BindSwapScreenBuffer()
+  return r.BindSwapScreenBuffer();
 }
-raylib.SwapScreenBuffer = SwapScreenBuffer
+raylib.SwapScreenBuffer = SwapScreenBuffer;
 
 /**
  * Register all input events
@@ -1304,9 +1220,9 @@ raylib.SwapScreenBuffer = SwapScreenBuffer
  * @return {undefined}
  */
 function PollInputEvents() {
-  return r.BindPollInputEvents()
+  return r.BindPollInputEvents();
 }
-raylib.PollInputEvents = PollInputEvents
+raylib.PollInputEvents = PollInputEvents;
 
 /**
  * Wait for some time (halt program execution)
@@ -1316,11 +1232,9 @@ raylib.PollInputEvents = PollInputEvents
  * @return {undefined}
  */
 function WaitTime(seconds) {
-  return r.BindWaitTime(
-    seconds
-  )
+  return r.BindWaitTime(seconds);
 }
-raylib.WaitTime = WaitTime
+raylib.WaitTime = WaitTime;
 
 /**
  * Set the seed for the random number generator
@@ -1330,11 +1244,9 @@ raylib.WaitTime = WaitTime
  * @return {undefined}
  */
 function SetRandomSeed(seed) {
-  return r.BindSetRandomSeed(
-    seed
-  )
+  return r.BindSetRandomSeed(seed);
 }
-raylib.SetRandomSeed = SetRandomSeed
+raylib.SetRandomSeed = SetRandomSeed;
 
 /**
  * Get a random value between min and max (both included)
@@ -1345,12 +1257,9 @@ raylib.SetRandomSeed = SetRandomSeed
  * @return {number} The resulting int.
  */
 function GetRandomValue(min, max) {
-  return r.BindGetRandomValue(
-    min,
-    max
-  )
+  return r.BindGetRandomValue(min, max);
 }
-raylib.GetRandomValue = GetRandomValue
+raylib.GetRandomValue = GetRandomValue;
 
 /**
  * Load random values sequence, no values repeated
@@ -1362,13 +1271,9 @@ raylib.GetRandomValue = GetRandomValue
  * @return {number} The resulting int *.
  */
 function LoadRandomSequence(count, min, max) {
-  return r.BindLoadRandomSequence(
-    count,
-    min,
-    max
-  )
+  return r.BindLoadRandomSequence(count, min, max);
 }
-raylib.LoadRandomSequence = LoadRandomSequence
+raylib.LoadRandomSequence = LoadRandomSequence;
 
 /**
  * Unload random values sequence
@@ -1378,11 +1283,9 @@ raylib.LoadRandomSequence = LoadRandomSequence
  * @return {undefined}
  */
 function UnloadRandomSequence(sequence) {
-  return r.BindUnloadRandomSequence(
-    sequence
-  )
+  return r.BindUnloadRandomSequence(sequence);
 }
-raylib.UnloadRandomSequence = UnloadRandomSequence
+raylib.UnloadRandomSequence = UnloadRandomSequence;
 
 /**
  * Takes a screenshot of current screen (filename extension defines format)
@@ -1392,11 +1295,9 @@ raylib.UnloadRandomSequence = UnloadRandomSequence
  * @return {undefined}
  */
 function TakeScreenshot(fileName) {
-  return r.BindTakeScreenshot(
-    fileName
-  )
+  return r.BindTakeScreenshot(fileName);
 }
-raylib.TakeScreenshot = TakeScreenshot
+raylib.TakeScreenshot = TakeScreenshot;
 
 /**
  * Setup init configuration flags (view FLAGS)
@@ -1406,11 +1307,9 @@ raylib.TakeScreenshot = TakeScreenshot
  * @return {undefined}
  */
 function SetConfigFlags(flags) {
-  return r.BindSetConfigFlags(
-    flags
-  )
+  return r.BindSetConfigFlags(flags);
 }
-raylib.SetConfigFlags = SetConfigFlags
+raylib.SetConfigFlags = SetConfigFlags;
 
 /**
  * Open URL with default system browser (if available)
@@ -1420,11 +1319,9 @@ raylib.SetConfigFlags = SetConfigFlags
  * @return {undefined}
  */
 function OpenURL(url) {
-  return r.BindOpenURL(
-    url
-  )
+  return r.BindOpenURL(url);
 }
-raylib.OpenURL = OpenURL
+raylib.OpenURL = OpenURL;
 
 /**
  * Set the current threshold (minimum) log level
@@ -1434,11 +1331,9 @@ raylib.OpenURL = OpenURL
  * @return {undefined}
  */
 function SetTraceLogLevel(logLevel) {
-  return r.BindSetTraceLogLevel(
-    logLevel
-  )
+  return r.BindSetTraceLogLevel(logLevel);
 }
-raylib.SetTraceLogLevel = SetTraceLogLevel
+raylib.SetTraceLogLevel = SetTraceLogLevel;
 
 /**
  * Internal memory allocator
@@ -1448,11 +1343,9 @@ raylib.SetTraceLogLevel = SetTraceLogLevel
  * @return {number} The resulting void *.
  */
 function MemAlloc(size) {
-  return r.BindMemAlloc(
-    size
-  )
+  return r.BindMemAlloc(size);
 }
-raylib.MemAlloc = MemAlloc
+raylib.MemAlloc = MemAlloc;
 
 /**
  * Internal memory reallocator
@@ -1463,12 +1356,9 @@ raylib.MemAlloc = MemAlloc
  * @return {number} The resulting void *.
  */
 function MemRealloc(ptr, size) {
-  return r.BindMemRealloc(
-    ptr,
-    size
-  )
+  return r.BindMemRealloc(ptr, size);
 }
-raylib.MemRealloc = MemRealloc
+raylib.MemRealloc = MemRealloc;
 
 /**
  * Internal memory free
@@ -1478,11 +1368,9 @@ raylib.MemRealloc = MemRealloc
  * @return {undefined}
  */
 function MemFree(ptr) {
-  return r.BindMemFree(
-    ptr
-  )
+  return r.BindMemFree(ptr);
 }
-raylib.MemFree = MemFree
+raylib.MemFree = MemFree;
 
 /**
  * Load file data as byte array (read)
@@ -1493,12 +1381,9 @@ raylib.MemFree = MemFree
  * @return {Buffer} The resulting unsigned char *.
  */
 function LoadFileData(fileName, dataSize) {
-  return r.BindLoadFileData(
-    fileName,
-    dataSize
-  )
+  return r.BindLoadFileData(fileName, dataSize);
 }
-raylib.LoadFileData = LoadFileData
+raylib.LoadFileData = LoadFileData;
 
 /**
  * Unload file data allocated by LoadFileData()
@@ -1508,11 +1393,9 @@ raylib.LoadFileData = LoadFileData
  * @return {undefined}
  */
 function UnloadFileData(data) {
-  return r.BindUnloadFileData(
-    data
-  )
+  return r.BindUnloadFileData(data);
 }
-raylib.UnloadFileData = UnloadFileData
+raylib.UnloadFileData = UnloadFileData;
 
 /**
  * Save data to file from byte array (write), returns true on success
@@ -1524,13 +1407,9 @@ raylib.UnloadFileData = UnloadFileData
  * @return {boolean} The resulting bool.
  */
 function SaveFileData(fileName, data, dataSize) {
-  return r.BindSaveFileData(
-    fileName,
-    data,
-    dataSize
-  )
+  return r.BindSaveFileData(fileName, data, dataSize);
 }
-raylib.SaveFileData = SaveFileData
+raylib.SaveFileData = SaveFileData;
 
 /**
  * Export data to code (.h), returns true on success
@@ -1542,13 +1421,9 @@ raylib.SaveFileData = SaveFileData
  * @return {boolean} The resulting bool.
  */
 function ExportDataAsCode(data, dataSize, fileName) {
-  return r.BindExportDataAsCode(
-    data,
-    dataSize,
-    fileName
-  )
+  return r.BindExportDataAsCode(data, dataSize, fileName);
 }
-raylib.ExportDataAsCode = ExportDataAsCode
+raylib.ExportDataAsCode = ExportDataAsCode;
 
 /**
  * Load text data from file (read), returns a '\0' terminated string
@@ -1558,11 +1433,9 @@ raylib.ExportDataAsCode = ExportDataAsCode
  * @return {string} The resulting char *.
  */
 function LoadFileText(fileName) {
-  return r.BindLoadFileText(
-    fileName
-  )
+  return r.BindLoadFileText(fileName);
 }
-raylib.LoadFileText = LoadFileText
+raylib.LoadFileText = LoadFileText;
 
 /**
  * Unload file text data allocated by LoadFileText()
@@ -1572,11 +1445,9 @@ raylib.LoadFileText = LoadFileText
  * @return {undefined}
  */
 function UnloadFileText(text) {
-  return r.BindUnloadFileText(
-    text
-  )
+  return r.BindUnloadFileText(text);
 }
-raylib.UnloadFileText = UnloadFileText
+raylib.UnloadFileText = UnloadFileText;
 
 /**
  * Save text data to file (write), string must be '\0' terminated, returns true on success
@@ -1587,12 +1458,9 @@ raylib.UnloadFileText = UnloadFileText
  * @return {boolean} The resulting bool.
  */
 function SaveFileText(fileName, text) {
-  return r.BindSaveFileText(
-    fileName,
-    text
-  )
+  return r.BindSaveFileText(fileName, text);
 }
-raylib.SaveFileText = SaveFileText
+raylib.SaveFileText = SaveFileText;
 
 /**
  * Check if file exists
@@ -1602,11 +1470,9 @@ raylib.SaveFileText = SaveFileText
  * @return {boolean} The resulting bool.
  */
 function FileExists(fileName) {
-  return r.BindFileExists(
-    fileName
-  )
+  return r.BindFileExists(fileName);
 }
-raylib.FileExists = FileExists
+raylib.FileExists = FileExists;
 
 /**
  * Check if a directory path exists
@@ -1616,11 +1482,9 @@ raylib.FileExists = FileExists
  * @return {boolean} The resulting bool.
  */
 function DirectoryExists(dirPath) {
-  return r.BindDirectoryExists(
-    dirPath
-  )
+  return r.BindDirectoryExists(dirPath);
 }
-raylib.DirectoryExists = DirectoryExists
+raylib.DirectoryExists = DirectoryExists;
 
 /**
  * Check file extension (including point: .png, .wav)
@@ -1631,12 +1495,9 @@ raylib.DirectoryExists = DirectoryExists
  * @return {boolean} The resulting bool.
  */
 function IsFileExtension(fileName, ext) {
-  return r.BindIsFileExtension(
-    fileName,
-    ext
-  )
+  return r.BindIsFileExtension(fileName, ext);
 }
-raylib.IsFileExtension = IsFileExtension
+raylib.IsFileExtension = IsFileExtension;
 
 /**
  * Get file length in bytes (NOTE: GetFileSize() conflicts with windows.h)
@@ -1646,11 +1507,9 @@ raylib.IsFileExtension = IsFileExtension
  * @return {number} The resulting int.
  */
 function GetFileLength(fileName) {
-  return r.BindGetFileLength(
-    fileName
-  )
+  return r.BindGetFileLength(fileName);
 }
-raylib.GetFileLength = GetFileLength
+raylib.GetFileLength = GetFileLength;
 
 /**
  * Get pointer to extension for a filename string (includes dot: '.png')
@@ -1660,11 +1519,9 @@ raylib.GetFileLength = GetFileLength
  * @return {string} The resulting const char *.
  */
 function GetFileExtension(fileName) {
-  return r.BindGetFileExtension(
-    fileName
-  )
+  return r.BindGetFileExtension(fileName);
 }
-raylib.GetFileExtension = GetFileExtension
+raylib.GetFileExtension = GetFileExtension;
 
 /**
  * Get pointer to filename for a path string
@@ -1674,11 +1531,9 @@ raylib.GetFileExtension = GetFileExtension
  * @return {string} The resulting const char *.
  */
 function GetFileName(filePath) {
-  return r.BindGetFileName(
-    filePath
-  )
+  return r.BindGetFileName(filePath);
 }
-raylib.GetFileName = GetFileName
+raylib.GetFileName = GetFileName;
 
 /**
  * Get filename string without extension (uses static string)
@@ -1688,11 +1543,9 @@ raylib.GetFileName = GetFileName
  * @return {string} The resulting const char *.
  */
 function GetFileNameWithoutExt(filePath) {
-  return r.BindGetFileNameWithoutExt(
-    filePath
-  )
+  return r.BindGetFileNameWithoutExt(filePath);
 }
-raylib.GetFileNameWithoutExt = GetFileNameWithoutExt
+raylib.GetFileNameWithoutExt = GetFileNameWithoutExt;
 
 /**
  * Get full path for a given fileName with path (uses static string)
@@ -1702,11 +1555,9 @@ raylib.GetFileNameWithoutExt = GetFileNameWithoutExt
  * @return {string} The resulting const char *.
  */
 function GetDirectoryPath(filePath) {
-  return r.BindGetDirectoryPath(
-    filePath
-  )
+  return r.BindGetDirectoryPath(filePath);
 }
-raylib.GetDirectoryPath = GetDirectoryPath
+raylib.GetDirectoryPath = GetDirectoryPath;
 
 /**
  * Get previous directory path for a given path (uses static string)
@@ -1716,11 +1567,9 @@ raylib.GetDirectoryPath = GetDirectoryPath
  * @return {string} The resulting const char *.
  */
 function GetPrevDirectoryPath(dirPath) {
-  return r.BindGetPrevDirectoryPath(
-    dirPath
-  )
+  return r.BindGetPrevDirectoryPath(dirPath);
 }
-raylib.GetPrevDirectoryPath = GetPrevDirectoryPath
+raylib.GetPrevDirectoryPath = GetPrevDirectoryPath;
 
 /**
  * Get current working directory (uses static string)
@@ -1728,9 +1577,9 @@ raylib.GetPrevDirectoryPath = GetPrevDirectoryPath
  * @return {string} The resulting const char *.
  */
 function GetWorkingDirectory() {
-  return r.BindGetWorkingDirectory()
+  return r.BindGetWorkingDirectory();
 }
-raylib.GetWorkingDirectory = GetWorkingDirectory
+raylib.GetWorkingDirectory = GetWorkingDirectory;
 
 /**
  * Get the directory of the running application (uses static string)
@@ -1738,9 +1587,9 @@ raylib.GetWorkingDirectory = GetWorkingDirectory
  * @return {string} The resulting const char *.
  */
 function GetApplicationDirectory() {
-  return r.BindGetApplicationDirectory()
+  return r.BindGetApplicationDirectory();
 }
-raylib.GetApplicationDirectory = GetApplicationDirectory
+raylib.GetApplicationDirectory = GetApplicationDirectory;
 
 /**
  * Create directories (including full path requested), returns 0 on success
@@ -1750,11 +1599,9 @@ raylib.GetApplicationDirectory = GetApplicationDirectory
  * @return {number} The resulting int.
  */
 function MakeDirectory(dirPath) {
-  return r.BindMakeDirectory(
-    dirPath
-  )
+  return r.BindMakeDirectory(dirPath);
 }
-raylib.MakeDirectory = MakeDirectory
+raylib.MakeDirectory = MakeDirectory;
 
 /**
  * Change working directory, return true on success
@@ -1764,11 +1611,9 @@ raylib.MakeDirectory = MakeDirectory
  * @return {boolean} The resulting bool.
  */
 function ChangeDirectory(dir) {
-  return r.BindChangeDirectory(
-    dir
-  )
+  return r.BindChangeDirectory(dir);
 }
-raylib.ChangeDirectory = ChangeDirectory
+raylib.ChangeDirectory = ChangeDirectory;
 
 /**
  * Check if a given path is a file or a directory
@@ -1778,11 +1623,9 @@ raylib.ChangeDirectory = ChangeDirectory
  * @return {boolean} The resulting bool.
  */
 function IsPathFile(path) {
-  return r.BindIsPathFile(
-    path
-  )
+  return r.BindIsPathFile(path);
 }
-raylib.IsPathFile = IsPathFile
+raylib.IsPathFile = IsPathFile;
 
 /**
  * Check if fileName is valid for the platform/OS
@@ -1792,11 +1635,9 @@ raylib.IsPathFile = IsPathFile
  * @return {boolean} The resulting bool.
  */
 function IsFileNameValid(fileName) {
-  return r.BindIsFileNameValid(
-    fileName
-  )
+  return r.BindIsFileNameValid(fileName);
 }
-raylib.IsFileNameValid = IsFileNameValid
+raylib.IsFileNameValid = IsFileNameValid;
 
 /**
  * Load directory filepaths
@@ -1806,11 +1647,9 @@ raylib.IsFileNameValid = IsFileNameValid
  * @return {FilePathList} The resulting FilePathList.
  */
 function LoadDirectoryFiles(dirPath) {
-  return r.BindLoadDirectoryFiles(
-    dirPath
-  )
+  return r.BindLoadDirectoryFiles(dirPath);
 }
-raylib.LoadDirectoryFiles = LoadDirectoryFiles
+raylib.LoadDirectoryFiles = LoadDirectoryFiles;
 
 /**
  * Load directory filepaths with extension filtering and recursive directory scan. Use 'DIR' in the filter string to include directories in the result
@@ -1822,13 +1661,9 @@ raylib.LoadDirectoryFiles = LoadDirectoryFiles
  * @return {FilePathList} The resulting FilePathList.
  */
 function LoadDirectoryFilesEx(basePath, filter, scanSubdirs) {
-  return r.BindLoadDirectoryFilesEx(
-    basePath,
-    filter,
-    scanSubdirs
-  )
+  return r.BindLoadDirectoryFilesEx(basePath, filter, scanSubdirs);
 }
-raylib.LoadDirectoryFilesEx = LoadDirectoryFilesEx
+raylib.LoadDirectoryFilesEx = LoadDirectoryFilesEx;
 
 /**
  * Unload filepaths
@@ -1838,13 +1673,9 @@ raylib.LoadDirectoryFilesEx = LoadDirectoryFilesEx
  * @return {undefined}
  */
 function UnloadDirectoryFiles(files) {
-  return r.BindUnloadDirectoryFiles(
-    files.capacity,
-    files.count,
-    files.paths
-  )
+  return r.BindUnloadDirectoryFiles(files.capacity, files.count, files.paths);
 }
-raylib.UnloadDirectoryFiles = UnloadDirectoryFiles
+raylib.UnloadDirectoryFiles = UnloadDirectoryFiles;
 
 /**
  * Check if a file has been dropped into window
@@ -1852,9 +1683,9 @@ raylib.UnloadDirectoryFiles = UnloadDirectoryFiles
  * @return {boolean} The resulting bool.
  */
 function IsFileDropped() {
-  return r.BindIsFileDropped()
+  return r.BindIsFileDropped();
 }
-raylib.IsFileDropped = IsFileDropped
+raylib.IsFileDropped = IsFileDropped;
 
 /**
  * Load dropped filepaths
@@ -1862,9 +1693,9 @@ raylib.IsFileDropped = IsFileDropped
  * @return {FilePathList} The resulting FilePathList.
  */
 function LoadDroppedFiles() {
-  return r.BindLoadDroppedFiles()
+  return r.BindLoadDroppedFiles();
 }
-raylib.LoadDroppedFiles = LoadDroppedFiles
+raylib.LoadDroppedFiles = LoadDroppedFiles;
 
 /**
  * Unload dropped filepaths
@@ -1874,13 +1705,9 @@ raylib.LoadDroppedFiles = LoadDroppedFiles
  * @return {undefined}
  */
 function UnloadDroppedFiles(files) {
-  return r.BindUnloadDroppedFiles(
-    files.capacity,
-    files.count,
-    files.paths
-  )
+  return r.BindUnloadDroppedFiles(files.capacity, files.count, files.paths);
 }
-raylib.UnloadDroppedFiles = UnloadDroppedFiles
+raylib.UnloadDroppedFiles = UnloadDroppedFiles;
 
 /**
  * Get file modification time (last write time)
@@ -1890,11 +1717,9 @@ raylib.UnloadDroppedFiles = UnloadDroppedFiles
  * @return {number} The resulting long.
  */
 function GetFileModTime(fileName) {
-  return r.BindGetFileModTime(
-    fileName
-  )
+  return r.BindGetFileModTime(fileName);
 }
-raylib.GetFileModTime = GetFileModTime
+raylib.GetFileModTime = GetFileModTime;
 
 /**
  * Compress data (DEFLATE algorithm), memory must be MemFree()
@@ -1906,13 +1731,9 @@ raylib.GetFileModTime = GetFileModTime
  * @return {Buffer} The resulting unsigned char *.
  */
 function CompressData(data, dataSize, compDataSize) {
-  return r.BindCompressData(
-    data,
-    dataSize,
-    compDataSize
-  )
+  return r.BindCompressData(data, dataSize, compDataSize);
 }
-raylib.CompressData = CompressData
+raylib.CompressData = CompressData;
 
 /**
  * Decompress data (DEFLATE algorithm), memory must be MemFree()
@@ -1924,13 +1745,9 @@ raylib.CompressData = CompressData
  * @return {Buffer} The resulting unsigned char *.
  */
 function DecompressData(compData, compDataSize, dataSize) {
-  return r.BindDecompressData(
-    compData,
-    compDataSize,
-    dataSize
-  )
+  return r.BindDecompressData(compData, compDataSize, dataSize);
 }
-raylib.DecompressData = DecompressData
+raylib.DecompressData = DecompressData;
 
 /**
  * Encode data to Base64 string, memory must be MemFree()
@@ -1942,13 +1759,9 @@ raylib.DecompressData = DecompressData
  * @return {string} The resulting char *.
  */
 function EncodeDataBase64(data, dataSize, outputSize) {
-  return r.BindEncodeDataBase64(
-    data,
-    dataSize,
-    outputSize
-  )
+  return r.BindEncodeDataBase64(data, dataSize, outputSize);
 }
-raylib.EncodeDataBase64 = EncodeDataBase64
+raylib.EncodeDataBase64 = EncodeDataBase64;
 
 /**
  * Decode Base64 string data, memory must be MemFree()
@@ -1959,12 +1772,9 @@ raylib.EncodeDataBase64 = EncodeDataBase64
  * @return {Buffer} The resulting unsigned char *.
  */
 function DecodeDataBase64(data, outputSize) {
-  return r.BindDecodeDataBase64(
-    data,
-    outputSize
-  )
+  return r.BindDecodeDataBase64(data, outputSize);
 }
-raylib.DecodeDataBase64 = DecodeDataBase64
+raylib.DecodeDataBase64 = DecodeDataBase64;
 
 /**
  * Compute CRC32 hash code
@@ -1975,12 +1785,9 @@ raylib.DecodeDataBase64 = DecodeDataBase64
  * @return {number} The resulting unsigned int.
  */
 function ComputeCRC32(data, dataSize) {
-  return r.BindComputeCRC32(
-    data,
-    dataSize
-  )
+  return r.BindComputeCRC32(data, dataSize);
 }
-raylib.ComputeCRC32 = ComputeCRC32
+raylib.ComputeCRC32 = ComputeCRC32;
 
 /**
  * Compute MD5 hash code, returns static int[4] (16 bytes)
@@ -1991,12 +1798,9 @@ raylib.ComputeCRC32 = ComputeCRC32
  * @return {number} The resulting unsigned int *.
  */
 function ComputeMD5(data, dataSize) {
-  return r.BindComputeMD5(
-    data,
-    dataSize
-  )
+  return r.BindComputeMD5(data, dataSize);
 }
-raylib.ComputeMD5 = ComputeMD5
+raylib.ComputeMD5 = ComputeMD5;
 
 /**
  * Compute SHA1 hash code, returns static int[5] (20 bytes)
@@ -2007,12 +1811,9 @@ raylib.ComputeMD5 = ComputeMD5
  * @return {number} The resulting unsigned int *.
  */
 function ComputeSHA1(data, dataSize) {
-  return r.BindComputeSHA1(
-    data,
-    dataSize
-  )
+  return r.BindComputeSHA1(data, dataSize);
 }
-raylib.ComputeSHA1 = ComputeSHA1
+raylib.ComputeSHA1 = ComputeSHA1;
 
 /**
  * Load automation events list from file, NULL for empty list, capacity = MAX_AUTOMATION_EVENTS
@@ -2022,11 +1823,9 @@ raylib.ComputeSHA1 = ComputeSHA1
  * @return {AutomationEventList} The resulting AutomationEventList.
  */
 function LoadAutomationEventList(fileName) {
-  return r.BindLoadAutomationEventList(
-    fileName
-  )
+  return r.BindLoadAutomationEventList(fileName);
 }
-raylib.LoadAutomationEventList = LoadAutomationEventList
+raylib.LoadAutomationEventList = LoadAutomationEventList;
 
 /**
  * Unload automation events list from file
@@ -2039,10 +1838,10 @@ function UnloadAutomationEventList(list) {
   return r.BindUnloadAutomationEventList(
     list.capacity,
     list.count,
-    list.events
-  )
+    list.events,
+  );
 }
-raylib.UnloadAutomationEventList = UnloadAutomationEventList
+raylib.UnloadAutomationEventList = UnloadAutomationEventList;
 
 /**
  * Export automation events list as text file
@@ -2057,10 +1856,10 @@ function ExportAutomationEventList(list, fileName) {
     list.capacity,
     list.count,
     list.events,
-    fileName
-  )
+    fileName,
+  );
 }
-raylib.ExportAutomationEventList = ExportAutomationEventList
+raylib.ExportAutomationEventList = ExportAutomationEventList;
 
 /**
  * Set automation event list to record to
@@ -2070,11 +1869,9 @@ raylib.ExportAutomationEventList = ExportAutomationEventList
  * @return {undefined}
  */
 function SetAutomationEventList(list) {
-  return r.BindSetAutomationEventList(
-    list
-  )
+  return r.BindSetAutomationEventList(list);
 }
-raylib.SetAutomationEventList = SetAutomationEventList
+raylib.SetAutomationEventList = SetAutomationEventList;
 
 /**
  * Set automation event internal base frame to start recording
@@ -2084,11 +1881,9 @@ raylib.SetAutomationEventList = SetAutomationEventList
  * @return {undefined}
  */
 function SetAutomationEventBaseFrame(frame) {
-  return r.BindSetAutomationEventBaseFrame(
-    frame
-  )
+  return r.BindSetAutomationEventBaseFrame(frame);
 }
-raylib.SetAutomationEventBaseFrame = SetAutomationEventBaseFrame
+raylib.SetAutomationEventBaseFrame = SetAutomationEventBaseFrame;
 
 /**
  * Start recording automation events (AutomationEventList must be set)
@@ -2096,9 +1891,9 @@ raylib.SetAutomationEventBaseFrame = SetAutomationEventBaseFrame
  * @return {undefined}
  */
 function StartAutomationEventRecording() {
-  return r.BindStartAutomationEventRecording()
+  return r.BindStartAutomationEventRecording();
 }
-raylib.StartAutomationEventRecording = StartAutomationEventRecording
+raylib.StartAutomationEventRecording = StartAutomationEventRecording;
 
 /**
  * Stop recording automation events
@@ -2106,9 +1901,9 @@ raylib.StartAutomationEventRecording = StartAutomationEventRecording
  * @return {undefined}
  */
 function StopAutomationEventRecording() {
-  return r.BindStopAutomationEventRecording()
+  return r.BindStopAutomationEventRecording();
 }
-raylib.StopAutomationEventRecording = StopAutomationEventRecording
+raylib.StopAutomationEventRecording = StopAutomationEventRecording;
 
 /**
  * Check if a key has been pressed once
@@ -2118,11 +1913,9 @@ raylib.StopAutomationEventRecording = StopAutomationEventRecording
  * @return {boolean} The resulting bool.
  */
 function IsKeyPressed(key) {
-  return r.BindIsKeyPressed(
-    key
-  )
+  return r.BindIsKeyPressed(key);
 }
-raylib.IsKeyPressed = IsKeyPressed
+raylib.IsKeyPressed = IsKeyPressed;
 
 /**
  * Check if a key has been pressed again
@@ -2132,11 +1925,9 @@ raylib.IsKeyPressed = IsKeyPressed
  * @return {boolean} The resulting bool.
  */
 function IsKeyPressedRepeat(key) {
-  return r.BindIsKeyPressedRepeat(
-    key
-  )
+  return r.BindIsKeyPressedRepeat(key);
 }
-raylib.IsKeyPressedRepeat = IsKeyPressedRepeat
+raylib.IsKeyPressedRepeat = IsKeyPressedRepeat;
 
 /**
  * Check if a key is being pressed
@@ -2146,11 +1937,9 @@ raylib.IsKeyPressedRepeat = IsKeyPressedRepeat
  * @return {boolean} The resulting bool.
  */
 function IsKeyDown(key) {
-  return r.BindIsKeyDown(
-    key
-  )
+  return r.BindIsKeyDown(key);
 }
-raylib.IsKeyDown = IsKeyDown
+raylib.IsKeyDown = IsKeyDown;
 
 /**
  * Check if a key has been released once
@@ -2160,11 +1949,9 @@ raylib.IsKeyDown = IsKeyDown
  * @return {boolean} The resulting bool.
  */
 function IsKeyReleased(key) {
-  return r.BindIsKeyReleased(
-    key
-  )
+  return r.BindIsKeyReleased(key);
 }
-raylib.IsKeyReleased = IsKeyReleased
+raylib.IsKeyReleased = IsKeyReleased;
 
 /**
  * Check if a key is NOT being pressed
@@ -2174,11 +1961,9 @@ raylib.IsKeyReleased = IsKeyReleased
  * @return {boolean} The resulting bool.
  */
 function IsKeyUp(key) {
-  return r.BindIsKeyUp(
-    key
-  )
+  return r.BindIsKeyUp(key);
 }
-raylib.IsKeyUp = IsKeyUp
+raylib.IsKeyUp = IsKeyUp;
 
 /**
  * Get key pressed (keycode), call it multiple times for keys queued, returns 0 when the queue is empty
@@ -2186,9 +1971,9 @@ raylib.IsKeyUp = IsKeyUp
  * @return {number} The resulting int.
  */
 function GetKeyPressed() {
-  return r.BindGetKeyPressed()
+  return r.BindGetKeyPressed();
 }
-raylib.GetKeyPressed = GetKeyPressed
+raylib.GetKeyPressed = GetKeyPressed;
 
 /**
  * Get char pressed (unicode), call it multiple times for chars queued, returns 0 when the queue is empty
@@ -2196,9 +1981,9 @@ raylib.GetKeyPressed = GetKeyPressed
  * @return {number} The resulting int.
  */
 function GetCharPressed() {
-  return r.BindGetCharPressed()
+  return r.BindGetCharPressed();
 }
-raylib.GetCharPressed = GetCharPressed
+raylib.GetCharPressed = GetCharPressed;
 
 /**
  * Set a custom key to exit program (default is ESC)
@@ -2208,11 +1993,9 @@ raylib.GetCharPressed = GetCharPressed
  * @return {undefined}
  */
 function SetExitKey(key) {
-  return r.BindSetExitKey(
-    key
-  )
+  return r.BindSetExitKey(key);
 }
-raylib.SetExitKey = SetExitKey
+raylib.SetExitKey = SetExitKey;
 
 /**
  * Check if a gamepad is available
@@ -2222,11 +2005,9 @@ raylib.SetExitKey = SetExitKey
  * @return {boolean} The resulting bool.
  */
 function IsGamepadAvailable(gamepad) {
-  return r.BindIsGamepadAvailable(
-    gamepad
-  )
+  return r.BindIsGamepadAvailable(gamepad);
 }
-raylib.IsGamepadAvailable = IsGamepadAvailable
+raylib.IsGamepadAvailable = IsGamepadAvailable;
 
 /**
  * Get gamepad internal name id
@@ -2236,11 +2017,9 @@ raylib.IsGamepadAvailable = IsGamepadAvailable
  * @return {string} The resulting const char *.
  */
 function GetGamepadName(gamepad) {
-  return r.BindGetGamepadName(
-    gamepad
-  )
+  return r.BindGetGamepadName(gamepad);
 }
-raylib.GetGamepadName = GetGamepadName
+raylib.GetGamepadName = GetGamepadName;
 
 /**
  * Check if a gamepad button has been pressed once
@@ -2251,12 +2030,9 @@ raylib.GetGamepadName = GetGamepadName
  * @return {boolean} The resulting bool.
  */
 function IsGamepadButtonPressed(gamepad, button) {
-  return r.BindIsGamepadButtonPressed(
-    gamepad,
-    button
-  )
+  return r.BindIsGamepadButtonPressed(gamepad, button);
 }
-raylib.IsGamepadButtonPressed = IsGamepadButtonPressed
+raylib.IsGamepadButtonPressed = IsGamepadButtonPressed;
 
 /**
  * Check if a gamepad button is being pressed
@@ -2267,12 +2043,9 @@ raylib.IsGamepadButtonPressed = IsGamepadButtonPressed
  * @return {boolean} The resulting bool.
  */
 function IsGamepadButtonDown(gamepad, button) {
-  return r.BindIsGamepadButtonDown(
-    gamepad,
-    button
-  )
+  return r.BindIsGamepadButtonDown(gamepad, button);
 }
-raylib.IsGamepadButtonDown = IsGamepadButtonDown
+raylib.IsGamepadButtonDown = IsGamepadButtonDown;
 
 /**
  * Check if a gamepad button has been released once
@@ -2283,12 +2056,9 @@ raylib.IsGamepadButtonDown = IsGamepadButtonDown
  * @return {boolean} The resulting bool.
  */
 function IsGamepadButtonReleased(gamepad, button) {
-  return r.BindIsGamepadButtonReleased(
-    gamepad,
-    button
-  )
+  return r.BindIsGamepadButtonReleased(gamepad, button);
 }
-raylib.IsGamepadButtonReleased = IsGamepadButtonReleased
+raylib.IsGamepadButtonReleased = IsGamepadButtonReleased;
 
 /**
  * Check if a gamepad button is NOT being pressed
@@ -2299,12 +2069,9 @@ raylib.IsGamepadButtonReleased = IsGamepadButtonReleased
  * @return {boolean} The resulting bool.
  */
 function IsGamepadButtonUp(gamepad, button) {
-  return r.BindIsGamepadButtonUp(
-    gamepad,
-    button
-  )
+  return r.BindIsGamepadButtonUp(gamepad, button);
 }
-raylib.IsGamepadButtonUp = IsGamepadButtonUp
+raylib.IsGamepadButtonUp = IsGamepadButtonUp;
 
 /**
  * Get the last gamepad button pressed
@@ -2312,9 +2079,9 @@ raylib.IsGamepadButtonUp = IsGamepadButtonUp
  * @return {number} The resulting int.
  */
 function GetGamepadButtonPressed() {
-  return r.BindGetGamepadButtonPressed()
+  return r.BindGetGamepadButtonPressed();
 }
-raylib.GetGamepadButtonPressed = GetGamepadButtonPressed
+raylib.GetGamepadButtonPressed = GetGamepadButtonPressed;
 
 /**
  * Get gamepad axis count for a gamepad
@@ -2324,11 +2091,9 @@ raylib.GetGamepadButtonPressed = GetGamepadButtonPressed
  * @return {number} The resulting int.
  */
 function GetGamepadAxisCount(gamepad) {
-  return r.BindGetGamepadAxisCount(
-    gamepad
-  )
+  return r.BindGetGamepadAxisCount(gamepad);
 }
-raylib.GetGamepadAxisCount = GetGamepadAxisCount
+raylib.GetGamepadAxisCount = GetGamepadAxisCount;
 
 /**
  * Get axis movement value for a gamepad axis
@@ -2339,12 +2104,9 @@ raylib.GetGamepadAxisCount = GetGamepadAxisCount
  * @return {number} The resulting float.
  */
 function GetGamepadAxisMovement(gamepad, axis) {
-  return r.BindGetGamepadAxisMovement(
-    gamepad,
-    axis
-  )
+  return r.BindGetGamepadAxisMovement(gamepad, axis);
 }
-raylib.GetGamepadAxisMovement = GetGamepadAxisMovement
+raylib.GetGamepadAxisMovement = GetGamepadAxisMovement;
 
 /**
  * Set internal gamepad mappings (SDL_GameControllerDB)
@@ -2354,11 +2116,9 @@ raylib.GetGamepadAxisMovement = GetGamepadAxisMovement
  * @return {number} The resulting int.
  */
 function SetGamepadMappings(mappings) {
-  return r.BindSetGamepadMappings(
-    mappings
-  )
+  return r.BindSetGamepadMappings(mappings);
 }
-raylib.SetGamepadMappings = SetGamepadMappings
+raylib.SetGamepadMappings = SetGamepadMappings;
 
 /**
  * Set gamepad vibration for both motors (duration in seconds)
@@ -2371,14 +2131,9 @@ raylib.SetGamepadMappings = SetGamepadMappings
  * @return {undefined}
  */
 function SetGamepadVibration(gamepad, leftMotor, rightMotor, duration) {
-  return r.BindSetGamepadVibration(
-    gamepad,
-    leftMotor,
-    rightMotor,
-    duration
-  )
+  return r.BindSetGamepadVibration(gamepad, leftMotor, rightMotor, duration);
 }
-raylib.SetGamepadVibration = SetGamepadVibration
+raylib.SetGamepadVibration = SetGamepadVibration;
 
 /**
  * Check if a mouse button has been pressed once
@@ -2388,11 +2143,9 @@ raylib.SetGamepadVibration = SetGamepadVibration
  * @return {boolean} The resulting bool.
  */
 function IsMouseButtonPressed(button) {
-  return r.BindIsMouseButtonPressed(
-    button
-  )
+  return r.BindIsMouseButtonPressed(button);
 }
-raylib.IsMouseButtonPressed = IsMouseButtonPressed
+raylib.IsMouseButtonPressed = IsMouseButtonPressed;
 
 /**
  * Check if a mouse button is being pressed
@@ -2402,11 +2155,9 @@ raylib.IsMouseButtonPressed = IsMouseButtonPressed
  * @return {boolean} The resulting bool.
  */
 function IsMouseButtonDown(button) {
-  return r.BindIsMouseButtonDown(
-    button
-  )
+  return r.BindIsMouseButtonDown(button);
 }
-raylib.IsMouseButtonDown = IsMouseButtonDown
+raylib.IsMouseButtonDown = IsMouseButtonDown;
 
 /**
  * Check if a mouse button has been released once
@@ -2416,11 +2167,9 @@ raylib.IsMouseButtonDown = IsMouseButtonDown
  * @return {boolean} The resulting bool.
  */
 function IsMouseButtonReleased(button) {
-  return r.BindIsMouseButtonReleased(
-    button
-  )
+  return r.BindIsMouseButtonReleased(button);
 }
-raylib.IsMouseButtonReleased = IsMouseButtonReleased
+raylib.IsMouseButtonReleased = IsMouseButtonReleased;
 
 /**
  * Check if a mouse button is NOT being pressed
@@ -2430,11 +2179,9 @@ raylib.IsMouseButtonReleased = IsMouseButtonReleased
  * @return {boolean} The resulting bool.
  */
 function IsMouseButtonUp(button) {
-  return r.BindIsMouseButtonUp(
-    button
-  )
+  return r.BindIsMouseButtonUp(button);
 }
-raylib.IsMouseButtonUp = IsMouseButtonUp
+raylib.IsMouseButtonUp = IsMouseButtonUp;
 
 /**
  * Get mouse position X
@@ -2442,9 +2189,9 @@ raylib.IsMouseButtonUp = IsMouseButtonUp
  * @return {number} The resulting int.
  */
 function GetMouseX() {
-  return r.BindGetMouseX()
+  return r.BindGetMouseX();
 }
-raylib.GetMouseX = GetMouseX
+raylib.GetMouseX = GetMouseX;
 
 /**
  * Get mouse position Y
@@ -2452,9 +2199,9 @@ raylib.GetMouseX = GetMouseX
  * @return {number} The resulting int.
  */
 function GetMouseY() {
-  return r.BindGetMouseY()
+  return r.BindGetMouseY();
 }
-raylib.GetMouseY = GetMouseY
+raylib.GetMouseY = GetMouseY;
 
 /**
  * Get mouse position XY
@@ -2462,9 +2209,9 @@ raylib.GetMouseY = GetMouseY
  * @return {Vector2} The resulting Vector2.
  */
 function GetMousePosition() {
-  return r.BindGetMousePosition()
+  return r.BindGetMousePosition();
 }
-raylib.GetMousePosition = GetMousePosition
+raylib.GetMousePosition = GetMousePosition;
 
 /**
  * Get mouse delta between frames
@@ -2472,9 +2219,9 @@ raylib.GetMousePosition = GetMousePosition
  * @return {Vector2} The resulting Vector2.
  */
 function GetMouseDelta() {
-  return r.BindGetMouseDelta()
+  return r.BindGetMouseDelta();
 }
-raylib.GetMouseDelta = GetMouseDelta
+raylib.GetMouseDelta = GetMouseDelta;
 
 /**
  * Set mouse position XY
@@ -2485,12 +2232,9 @@ raylib.GetMouseDelta = GetMouseDelta
  * @return {undefined}
  */
 function SetMousePosition(x, y) {
-  return r.BindSetMousePosition(
-    x,
-    y
-  )
+  return r.BindSetMousePosition(x, y);
 }
-raylib.SetMousePosition = SetMousePosition
+raylib.SetMousePosition = SetMousePosition;
 
 /**
  * Set mouse offset
@@ -2501,12 +2245,9 @@ raylib.SetMousePosition = SetMousePosition
  * @return {undefined}
  */
 function SetMouseOffset(offsetX, offsetY) {
-  return r.BindSetMouseOffset(
-    offsetX,
-    offsetY
-  )
+  return r.BindSetMouseOffset(offsetX, offsetY);
 }
-raylib.SetMouseOffset = SetMouseOffset
+raylib.SetMouseOffset = SetMouseOffset;
 
 /**
  * Set mouse scaling
@@ -2517,12 +2258,9 @@ raylib.SetMouseOffset = SetMouseOffset
  * @return {undefined}
  */
 function SetMouseScale(scaleX, scaleY) {
-  return r.BindSetMouseScale(
-    scaleX,
-    scaleY
-  )
+  return r.BindSetMouseScale(scaleX, scaleY);
 }
-raylib.SetMouseScale = SetMouseScale
+raylib.SetMouseScale = SetMouseScale;
 
 /**
  * Get mouse wheel movement for X or Y, whichever is larger
@@ -2530,9 +2268,9 @@ raylib.SetMouseScale = SetMouseScale
  * @return {number} The resulting float.
  */
 function GetMouseWheelMove() {
-  return r.BindGetMouseWheelMove()
+  return r.BindGetMouseWheelMove();
 }
-raylib.GetMouseWheelMove = GetMouseWheelMove
+raylib.GetMouseWheelMove = GetMouseWheelMove;
 
 /**
  * Get mouse wheel movement for both X and Y
@@ -2540,9 +2278,9 @@ raylib.GetMouseWheelMove = GetMouseWheelMove
  * @return {Vector2} The resulting Vector2.
  */
 function GetMouseWheelMoveV() {
-  return r.BindGetMouseWheelMoveV()
+  return r.BindGetMouseWheelMoveV();
 }
-raylib.GetMouseWheelMoveV = GetMouseWheelMoveV
+raylib.GetMouseWheelMoveV = GetMouseWheelMoveV;
 
 /**
  * Set mouse cursor
@@ -2552,11 +2290,9 @@ raylib.GetMouseWheelMoveV = GetMouseWheelMoveV
  * @return {undefined}
  */
 function SetMouseCursor(cursor) {
-  return r.BindSetMouseCursor(
-    cursor
-  )
+  return r.BindSetMouseCursor(cursor);
 }
-raylib.SetMouseCursor = SetMouseCursor
+raylib.SetMouseCursor = SetMouseCursor;
 
 /**
  * Get touch position X for touch point 0 (relative to screen size)
@@ -2564,9 +2300,9 @@ raylib.SetMouseCursor = SetMouseCursor
  * @return {number} The resulting int.
  */
 function GetTouchX() {
-  return r.BindGetTouchX()
+  return r.BindGetTouchX();
 }
-raylib.GetTouchX = GetTouchX
+raylib.GetTouchX = GetTouchX;
 
 /**
  * Get touch position Y for touch point 0 (relative to screen size)
@@ -2574,9 +2310,9 @@ raylib.GetTouchX = GetTouchX
  * @return {number} The resulting int.
  */
 function GetTouchY() {
-  return r.BindGetTouchY()
+  return r.BindGetTouchY();
 }
-raylib.GetTouchY = GetTouchY
+raylib.GetTouchY = GetTouchY;
 
 /**
  * Get touch position XY for a touch point index (relative to screen size)
@@ -2586,11 +2322,9 @@ raylib.GetTouchY = GetTouchY
  * @return {Vector2} The resulting Vector2.
  */
 function GetTouchPosition(index) {
-  return r.BindGetTouchPosition(
-    index
-  )
+  return r.BindGetTouchPosition(index);
 }
-raylib.GetTouchPosition = GetTouchPosition
+raylib.GetTouchPosition = GetTouchPosition;
 
 /**
  * Get touch point identifier for given index
@@ -2600,11 +2334,9 @@ raylib.GetTouchPosition = GetTouchPosition
  * @return {number} The resulting int.
  */
 function GetTouchPointId(index) {
-  return r.BindGetTouchPointId(
-    index
-  )
+  return r.BindGetTouchPointId(index);
 }
-raylib.GetTouchPointId = GetTouchPointId
+raylib.GetTouchPointId = GetTouchPointId;
 
 /**
  * Get number of touch points
@@ -2612,9 +2344,9 @@ raylib.GetTouchPointId = GetTouchPointId
  * @return {number} The resulting int.
  */
 function GetTouchPointCount() {
-  return r.BindGetTouchPointCount()
+  return r.BindGetTouchPointCount();
 }
-raylib.GetTouchPointCount = GetTouchPointCount
+raylib.GetTouchPointCount = GetTouchPointCount;
 
 /**
  * Enable a set of gestures using flags
@@ -2624,11 +2356,9 @@ raylib.GetTouchPointCount = GetTouchPointCount
  * @return {undefined}
  */
 function SetGesturesEnabled(flags) {
-  return r.BindSetGesturesEnabled(
-    flags
-  )
+  return r.BindSetGesturesEnabled(flags);
 }
-raylib.SetGesturesEnabled = SetGesturesEnabled
+raylib.SetGesturesEnabled = SetGesturesEnabled;
 
 /**
  * Check if a gesture have been detected
@@ -2638,11 +2368,9 @@ raylib.SetGesturesEnabled = SetGesturesEnabled
  * @return {boolean} The resulting bool.
  */
 function IsGestureDetected(gesture) {
-  return r.BindIsGestureDetected(
-    gesture
-  )
+  return r.BindIsGestureDetected(gesture);
 }
-raylib.IsGestureDetected = IsGestureDetected
+raylib.IsGestureDetected = IsGestureDetected;
 
 /**
  * Get latest detected gesture
@@ -2650,9 +2378,9 @@ raylib.IsGestureDetected = IsGestureDetected
  * @return {number} The resulting int.
  */
 function GetGestureDetected() {
-  return r.BindGetGestureDetected()
+  return r.BindGetGestureDetected();
 }
-raylib.GetGestureDetected = GetGestureDetected
+raylib.GetGestureDetected = GetGestureDetected;
 
 /**
  * Get gesture hold time in seconds
@@ -2660,9 +2388,9 @@ raylib.GetGestureDetected = GetGestureDetected
  * @return {number} The resulting float.
  */
 function GetGestureHoldDuration() {
-  return r.BindGetGestureHoldDuration()
+  return r.BindGetGestureHoldDuration();
 }
-raylib.GetGestureHoldDuration = GetGestureHoldDuration
+raylib.GetGestureHoldDuration = GetGestureHoldDuration;
 
 /**
  * Get gesture drag vector
@@ -2670,9 +2398,9 @@ raylib.GetGestureHoldDuration = GetGestureHoldDuration
  * @return {Vector2} The resulting Vector2.
  */
 function GetGestureDragVector() {
-  return r.BindGetGestureDragVector()
+  return r.BindGetGestureDragVector();
 }
-raylib.GetGestureDragVector = GetGestureDragVector
+raylib.GetGestureDragVector = GetGestureDragVector;
 
 /**
  * Get gesture drag angle
@@ -2680,9 +2408,9 @@ raylib.GetGestureDragVector = GetGestureDragVector
  * @return {number} The resulting float.
  */
 function GetGestureDragAngle() {
-  return r.BindGetGestureDragAngle()
+  return r.BindGetGestureDragAngle();
 }
-raylib.GetGestureDragAngle = GetGestureDragAngle
+raylib.GetGestureDragAngle = GetGestureDragAngle;
 
 /**
  * Get gesture pinch delta
@@ -2690,9 +2418,9 @@ raylib.GetGestureDragAngle = GetGestureDragAngle
  * @return {Vector2} The resulting Vector2.
  */
 function GetGesturePinchVector() {
-  return r.BindGetGesturePinchVector()
+  return r.BindGetGesturePinchVector();
 }
-raylib.GetGesturePinchVector = GetGesturePinchVector
+raylib.GetGesturePinchVector = GetGesturePinchVector;
 
 /**
  * Get gesture pinch angle
@@ -2700,9 +2428,9 @@ raylib.GetGesturePinchVector = GetGesturePinchVector
  * @return {number} The resulting float.
  */
 function GetGesturePinchAngle() {
-  return r.BindGetGesturePinchAngle()
+  return r.BindGetGesturePinchAngle();
 }
-raylib.GetGesturePinchAngle = GetGesturePinchAngle
+raylib.GetGesturePinchAngle = GetGesturePinchAngle;
 
 /**
  * Update camera movement/rotation
@@ -2723,10 +2451,10 @@ function UpdateCameraPro(camera, movement, rotation, zoom) {
     rotation.x,
     rotation.y,
     rotation.z,
-    zoom
-  )
+    zoom,
+  );
 }
-raylib.UpdateCameraPro = UpdateCameraPro
+raylib.UpdateCameraPro = UpdateCameraPro;
 
 /**
  * Set texture and rectangle to be used on shapes drawing
@@ -2746,10 +2474,10 @@ function SetShapesTexture(texture, source) {
     source.x,
     source.y,
     source.width,
-    source.height
-  )
+    source.height,
+  );
 }
-raylib.SetShapesTexture = SetShapesTexture
+raylib.SetShapesTexture = SetShapesTexture;
 
 /**
  * Get texture that is used for shapes drawing
@@ -2757,9 +2485,9 @@ raylib.SetShapesTexture = SetShapesTexture
  * @return {Texture2D} The resulting Texture2D.
  */
 function GetShapesTexture() {
-  return r.BindGetShapesTexture()
+  return r.BindGetShapesTexture();
 }
-raylib.GetShapesTexture = GetShapesTexture
+raylib.GetShapesTexture = GetShapesTexture;
 
 /**
  * Get texture source rectangle that is used for shapes drawing
@@ -2767,9 +2495,9 @@ raylib.GetShapesTexture = GetShapesTexture
  * @return {Rectangle} The resulting Rectangle.
  */
 function GetShapesTextureRectangle() {
-  return r.BindGetShapesTextureRectangle()
+  return r.BindGetShapesTextureRectangle();
 }
-raylib.GetShapesTextureRectangle = GetShapesTextureRectangle
+raylib.GetShapesTextureRectangle = GetShapesTextureRectangle;
 
 /**
  * Draw a pixel using geometry [Can be slow, use with care]
@@ -2781,16 +2509,9 @@ raylib.GetShapesTextureRectangle = GetShapesTextureRectangle
  * @return {undefined}
  */
 function DrawPixel(posX, posY, color) {
-  return r.BindDrawPixel(
-    posX,
-    posY,
-    color.r,
-    color.g,
-    color.b,
-    color.a
-  )
+  return r.BindDrawPixel(posX, posY, color.r, color.g, color.b, color.a);
 }
-raylib.DrawPixel = DrawPixel
+raylib.DrawPixel = DrawPixel;
 
 /**
  * Draw a pixel using geometry (Vector version) [Can be slow, use with care]
@@ -2807,10 +2528,10 @@ function DrawPixelV(position, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawPixelV = DrawPixelV
+raylib.DrawPixelV = DrawPixelV;
 
 /**
  * Draw a line
@@ -2832,10 +2553,10 @@ function DrawLine(startPosX, startPosY, endPosX, endPosY, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawLine = DrawLine
+raylib.DrawLine = DrawLine;
 
 /**
  * Draw a line (using gl lines)
@@ -2855,10 +2576,10 @@ function DrawLineV(startPos, endPos, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawLineV = DrawLineV
+raylib.DrawLineV = DrawLineV;
 
 /**
  * Draw a line (using triangles/quads)
@@ -2880,10 +2601,10 @@ function DrawLineEx(startPos, endPos, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawLineEx = DrawLineEx
+raylib.DrawLineEx = DrawLineEx;
 
 /**
  * Draw lines sequence (using gl lines)
@@ -2901,10 +2622,10 @@ function DrawLineStrip(points, pointCount, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawLineStrip = DrawLineStrip
+raylib.DrawLineStrip = DrawLineStrip;
 
 /**
  * Draw line segment cubic-bezier in-out interpolation
@@ -2926,10 +2647,10 @@ function DrawLineBezier(startPos, endPos, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawLineBezier = DrawLineBezier
+raylib.DrawLineBezier = DrawLineBezier;
 
 /**
  * Draw a color-filled circle
@@ -2949,10 +2670,10 @@ function DrawCircle(centerX, centerY, radius, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCircle = DrawCircle
+raylib.DrawCircle = DrawCircle;
 
 /**
  * Draw a piece of a circle
@@ -2966,7 +2687,14 @@ raylib.DrawCircle = DrawCircle
  *
  * @return {undefined}
  */
-function DrawCircleSector(center, radius, startAngle, endAngle, segments, color) {
+function DrawCircleSector(
+  center,
+  radius,
+  startAngle,
+  endAngle,
+  segments,
+  color,
+) {
   return r.BindDrawCircleSector(
     center.x,
     center.y,
@@ -2977,10 +2705,10 @@ function DrawCircleSector(center, radius, startAngle, endAngle, segments, color)
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCircleSector = DrawCircleSector
+raylib.DrawCircleSector = DrawCircleSector;
 
 /**
  * Draw circle sector outline
@@ -2994,7 +2722,14 @@ raylib.DrawCircleSector = DrawCircleSector
  *
  * @return {undefined}
  */
-function DrawCircleSectorLines(center, radius, startAngle, endAngle, segments, color) {
+function DrawCircleSectorLines(
+  center,
+  radius,
+  startAngle,
+  endAngle,
+  segments,
+  color,
+) {
   return r.BindDrawCircleSectorLines(
     center.x,
     center.y,
@@ -3005,10 +2740,10 @@ function DrawCircleSectorLines(center, radius, startAngle, endAngle, segments, c
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCircleSectorLines = DrawCircleSectorLines
+raylib.DrawCircleSectorLines = DrawCircleSectorLines;
 
 /**
  * Draw a gradient-filled circle
@@ -3033,10 +2768,10 @@ function DrawCircleGradient(centerX, centerY, radius, inner, outer) {
     outer.r,
     outer.g,
     outer.b,
-    outer.a
-  )
+    outer.a,
+  );
 }
-raylib.DrawCircleGradient = DrawCircleGradient
+raylib.DrawCircleGradient = DrawCircleGradient;
 
 /**
  * Draw a color-filled circle (Vector version)
@@ -3055,10 +2790,10 @@ function DrawCircleV(center, radius, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCircleV = DrawCircleV
+raylib.DrawCircleV = DrawCircleV;
 
 /**
  * Draw circle outline
@@ -3078,10 +2813,10 @@ function DrawCircleLines(centerX, centerY, radius, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCircleLines = DrawCircleLines
+raylib.DrawCircleLines = DrawCircleLines;
 
 /**
  * Draw circle outline (Vector version)
@@ -3100,10 +2835,10 @@ function DrawCircleLinesV(center, radius, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCircleLinesV = DrawCircleLinesV
+raylib.DrawCircleLinesV = DrawCircleLinesV;
 
 /**
  * Draw ellipse
@@ -3125,10 +2860,10 @@ function DrawEllipse(centerX, centerY, radiusH, radiusV, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawEllipse = DrawEllipse
+raylib.DrawEllipse = DrawEllipse;
 
 /**
  * Draw ellipse outline
@@ -3150,10 +2885,10 @@ function DrawEllipseLines(centerX, centerY, radiusH, radiusV, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawEllipseLines = DrawEllipseLines
+raylib.DrawEllipseLines = DrawEllipseLines;
 
 /**
  * Draw ring
@@ -3168,7 +2903,15 @@ raylib.DrawEllipseLines = DrawEllipseLines
  *
  * @return {undefined}
  */
-function DrawRing(center, innerRadius, outerRadius, startAngle, endAngle, segments, color) {
+function DrawRing(
+  center,
+  innerRadius,
+  outerRadius,
+  startAngle,
+  endAngle,
+  segments,
+  color,
+) {
   return r.BindDrawRing(
     center.x,
     center.y,
@@ -3180,10 +2923,10 @@ function DrawRing(center, innerRadius, outerRadius, startAngle, endAngle, segmen
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRing = DrawRing
+raylib.DrawRing = DrawRing;
 
 /**
  * Draw ring outline
@@ -3198,7 +2941,15 @@ raylib.DrawRing = DrawRing
  *
  * @return {undefined}
  */
-function DrawRingLines(center, innerRadius, outerRadius, startAngle, endAngle, segments, color) {
+function DrawRingLines(
+  center,
+  innerRadius,
+  outerRadius,
+  startAngle,
+  endAngle,
+  segments,
+  color,
+) {
   return r.BindDrawRingLines(
     center.x,
     center.y,
@@ -3210,10 +2961,10 @@ function DrawRingLines(center, innerRadius, outerRadius, startAngle, endAngle, s
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRingLines = DrawRingLines
+raylib.DrawRingLines = DrawRingLines;
 
 /**
  * Draw a color-filled rectangle
@@ -3235,10 +2986,10 @@ function DrawRectangle(posX, posY, width, height, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRectangle = DrawRectangle
+raylib.DrawRectangle = DrawRectangle;
 
 /**
  * Draw a color-filled rectangle (Vector version)
@@ -3258,10 +3009,10 @@ function DrawRectangleV(position, size, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRectangleV = DrawRectangleV
+raylib.DrawRectangleV = DrawRectangleV;
 
 /**
  * Draw a color-filled rectangle
@@ -3280,10 +3031,10 @@ function DrawRectangleRec(rec, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRectangleRec = DrawRectangleRec
+raylib.DrawRectangleRec = DrawRectangleRec;
 
 /**
  * Draw a color-filled rectangle with pro parameters
@@ -3307,10 +3058,10 @@ function DrawRectanglePro(rec, origin, rotation, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRectanglePro = DrawRectanglePro
+raylib.DrawRectanglePro = DrawRectanglePro;
 
 /**
  * Draw a vertical-gradient-filled rectangle
@@ -3337,10 +3088,10 @@ function DrawRectangleGradientV(posX, posY, width, height, top, bottom) {
     bottom.r,
     bottom.g,
     bottom.b,
-    bottom.a
-  )
+    bottom.a,
+  );
 }
-raylib.DrawRectangleGradientV = DrawRectangleGradientV
+raylib.DrawRectangleGradientV = DrawRectangleGradientV;
 
 /**
  * Draw a horizontal-gradient-filled rectangle
@@ -3367,10 +3118,10 @@ function DrawRectangleGradientH(posX, posY, width, height, left, right) {
     right.r,
     right.g,
     right.b,
-    right.a
-  )
+    right.a,
+  );
 }
-raylib.DrawRectangleGradientH = DrawRectangleGradientH
+raylib.DrawRectangleGradientH = DrawRectangleGradientH;
 
 /**
  * Draw a gradient-filled rectangle with custom vertex colors
@@ -3383,7 +3134,13 @@ raylib.DrawRectangleGradientH = DrawRectangleGradientH
  *
  * @return {undefined}
  */
-function DrawRectangleGradientEx(rec, topLeft, bottomLeft, topRight, bottomRight) {
+function DrawRectangleGradientEx(
+  rec,
+  topLeft,
+  bottomLeft,
+  topRight,
+  bottomRight,
+) {
   return r.BindDrawRectangleGradientEx(
     rec.x,
     rec.y,
@@ -3404,10 +3161,10 @@ function DrawRectangleGradientEx(rec, topLeft, bottomLeft, topRight, bottomRight
     bottomRight.r,
     bottomRight.g,
     bottomRight.b,
-    bottomRight.a
-  )
+    bottomRight.a,
+  );
 }
-raylib.DrawRectangleGradientEx = DrawRectangleGradientEx
+raylib.DrawRectangleGradientEx = DrawRectangleGradientEx;
 
 /**
  * Draw rectangle outline
@@ -3429,10 +3186,10 @@ function DrawRectangleLines(posX, posY, width, height, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRectangleLines = DrawRectangleLines
+raylib.DrawRectangleLines = DrawRectangleLines;
 
 /**
  * Draw rectangle outline with extended parameters
@@ -3453,10 +3210,10 @@ function DrawRectangleLinesEx(rec, lineThick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRectangleLinesEx = DrawRectangleLinesEx
+raylib.DrawRectangleLinesEx = DrawRectangleLinesEx;
 
 /**
  * Draw rectangle with rounded edges
@@ -3479,10 +3236,10 @@ function DrawRectangleRounded(rec, roundness, segments, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRectangleRounded = DrawRectangleRounded
+raylib.DrawRectangleRounded = DrawRectangleRounded;
 
 /**
  * Draw rectangle lines with rounded edges
@@ -3505,10 +3262,10 @@ function DrawRectangleRoundedLines(rec, roundness, segments, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRectangleRoundedLines = DrawRectangleRoundedLines
+raylib.DrawRectangleRoundedLines = DrawRectangleRoundedLines;
 
 /**
  * Draw rectangle with rounded edges outline
@@ -3521,7 +3278,13 @@ raylib.DrawRectangleRoundedLines = DrawRectangleRoundedLines
  *
  * @return {undefined}
  */
-function DrawRectangleRoundedLinesEx(rec, roundness, segments, lineThick, color) {
+function DrawRectangleRoundedLinesEx(
+  rec,
+  roundness,
+  segments,
+  lineThick,
+  color,
+) {
   return r.BindDrawRectangleRoundedLinesEx(
     rec.x,
     rec.y,
@@ -3533,10 +3296,10 @@ function DrawRectangleRoundedLinesEx(rec, roundness, segments, lineThick, color)
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRectangleRoundedLinesEx = DrawRectangleRoundedLinesEx
+raylib.DrawRectangleRoundedLinesEx = DrawRectangleRoundedLinesEx;
 
 /**
  * Draw a color-filled triangle (vertex in counter-clockwise order!)
@@ -3559,10 +3322,10 @@ function DrawTriangle(v1, v2, v3, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawTriangle = DrawTriangle
+raylib.DrawTriangle = DrawTriangle;
 
 /**
  * Draw triangle outline (vertex in counter-clockwise order!)
@@ -3585,10 +3348,10 @@ function DrawTriangleLines(v1, v2, v3, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawTriangleLines = DrawTriangleLines
+raylib.DrawTriangleLines = DrawTriangleLines;
 
 /**
  * Draw a triangle fan defined by points (first vertex is the center)
@@ -3606,10 +3369,10 @@ function DrawTriangleFan(points, pointCount, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawTriangleFan = DrawTriangleFan
+raylib.DrawTriangleFan = DrawTriangleFan;
 
 /**
  * Draw a triangle strip defined by points
@@ -3627,10 +3390,10 @@ function DrawTriangleStrip(points, pointCount, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawTriangleStrip = DrawTriangleStrip
+raylib.DrawTriangleStrip = DrawTriangleStrip;
 
 /**
  * Draw a regular polygon (Vector version)
@@ -3653,10 +3416,10 @@ function DrawPoly(center, sides, radius, rotation, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawPoly = DrawPoly
+raylib.DrawPoly = DrawPoly;
 
 /**
  * Draw a polygon outline of n sides
@@ -3679,10 +3442,10 @@ function DrawPolyLines(center, sides, radius, rotation, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawPolyLines = DrawPolyLines
+raylib.DrawPolyLines = DrawPolyLines;
 
 /**
  * Draw a polygon outline of n sides with extended parameters
@@ -3707,10 +3470,10 @@ function DrawPolyLinesEx(center, sides, radius, rotation, lineThick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawPolyLinesEx = DrawPolyLinesEx
+raylib.DrawPolyLinesEx = DrawPolyLinesEx;
 
 /**
  * Draw spline: Linear, minimum 2 points
@@ -3730,10 +3493,10 @@ function DrawSplineLinear(points, pointCount, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSplineLinear = DrawSplineLinear
+raylib.DrawSplineLinear = DrawSplineLinear;
 
 /**
  * Draw spline: B-Spline, minimum 4 points
@@ -3753,10 +3516,10 @@ function DrawSplineBasis(points, pointCount, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSplineBasis = DrawSplineBasis
+raylib.DrawSplineBasis = DrawSplineBasis;
 
 /**
  * Draw spline: Catmull-Rom, minimum 4 points
@@ -3776,10 +3539,10 @@ function DrawSplineCatmullRom(points, pointCount, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSplineCatmullRom = DrawSplineCatmullRom
+raylib.DrawSplineCatmullRom = DrawSplineCatmullRom;
 
 /**
  * Draw spline: Quadratic Bezier, minimum 3 points (1 control point): [p1, c2, p3, c4...]
@@ -3799,10 +3562,10 @@ function DrawSplineBezierQuadratic(points, pointCount, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSplineBezierQuadratic = DrawSplineBezierQuadratic
+raylib.DrawSplineBezierQuadratic = DrawSplineBezierQuadratic;
 
 /**
  * Draw spline: Cubic Bezier, minimum 4 points (2 control points): [p1, c2, c3, p4, c5, c6...]
@@ -3822,10 +3585,10 @@ function DrawSplineBezierCubic(points, pointCount, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSplineBezierCubic = DrawSplineBezierCubic
+raylib.DrawSplineBezierCubic = DrawSplineBezierCubic;
 
 /**
  * Draw spline segment: Linear, 2 points
@@ -3847,10 +3610,10 @@ function DrawSplineSegmentLinear(p1, p2, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSplineSegmentLinear = DrawSplineSegmentLinear
+raylib.DrawSplineSegmentLinear = DrawSplineSegmentLinear;
 
 /**
  * Draw spline segment: B-Spline, 4 points
@@ -3878,10 +3641,10 @@ function DrawSplineSegmentBasis(p1, p2, p3, p4, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSplineSegmentBasis = DrawSplineSegmentBasis
+raylib.DrawSplineSegmentBasis = DrawSplineSegmentBasis;
 
 /**
  * Draw spline segment: Catmull-Rom, 4 points
@@ -3909,10 +3672,10 @@ function DrawSplineSegmentCatmullRom(p1, p2, p3, p4, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSplineSegmentCatmullRom = DrawSplineSegmentCatmullRom
+raylib.DrawSplineSegmentCatmullRom = DrawSplineSegmentCatmullRom;
 
 /**
  * Draw spline segment: Quadratic Bezier, 2 points, 1 control point
@@ -3937,10 +3700,10 @@ function DrawSplineSegmentBezierQuadratic(p1, c2, p3, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSplineSegmentBezierQuadratic = DrawSplineSegmentBezierQuadratic
+raylib.DrawSplineSegmentBezierQuadratic = DrawSplineSegmentBezierQuadratic;
 
 /**
  * Draw spline segment: Cubic Bezier, 2 points, 2 control points
@@ -3968,10 +3731,10 @@ function DrawSplineSegmentBezierCubic(p1, c2, c3, p4, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSplineSegmentBezierCubic = DrawSplineSegmentBezierCubic
+raylib.DrawSplineSegmentBezierCubic = DrawSplineSegmentBezierCubic;
 
 /**
  * Get (evaluate) spline point: Linear
@@ -3988,10 +3751,10 @@ function GetSplinePointLinear(startPos, endPos, t) {
     startPos.y,
     endPos.x,
     endPos.y,
-    t
-  )
+    t,
+  );
 }
-raylib.GetSplinePointLinear = GetSplinePointLinear
+raylib.GetSplinePointLinear = GetSplinePointLinear;
 
 /**
  * Get (evaluate) spline point: B-Spline
@@ -4014,10 +3777,10 @@ function GetSplinePointBasis(p1, p2, p3, p4, t) {
     p3.y,
     p4.x,
     p4.y,
-    t
-  )
+    t,
+  );
 }
-raylib.GetSplinePointBasis = GetSplinePointBasis
+raylib.GetSplinePointBasis = GetSplinePointBasis;
 
 /**
  * Get (evaluate) spline point: Catmull-Rom
@@ -4040,10 +3803,10 @@ function GetSplinePointCatmullRom(p1, p2, p3, p4, t) {
     p3.y,
     p4.x,
     p4.y,
-    t
-  )
+    t,
+  );
 }
-raylib.GetSplinePointCatmullRom = GetSplinePointCatmullRom
+raylib.GetSplinePointCatmullRom = GetSplinePointCatmullRom;
 
 /**
  * Get (evaluate) spline point: Quadratic Bezier
@@ -4056,17 +3819,9 @@ raylib.GetSplinePointCatmullRom = GetSplinePointCatmullRom
  * @return {Vector2} The resulting Vector2.
  */
 function GetSplinePointBezierQuad(p1, c2, p3, t) {
-  return r.BindGetSplinePointBezierQuad(
-    p1.x,
-    p1.y,
-    c2.x,
-    c2.y,
-    p3.x,
-    p3.y,
-    t
-  )
+  return r.BindGetSplinePointBezierQuad(p1.x, p1.y, c2.x, c2.y, p3.x, p3.y, t);
 }
-raylib.GetSplinePointBezierQuad = GetSplinePointBezierQuad
+raylib.GetSplinePointBezierQuad = GetSplinePointBezierQuad;
 
 /**
  * Get (evaluate) spline point: Cubic Bezier
@@ -4089,10 +3844,10 @@ function GetSplinePointBezierCubic(p1, c2, c3, p4, t) {
     c3.y,
     p4.x,
     p4.y,
-    t
-  )
+    t,
+  );
 }
-raylib.GetSplinePointBezierCubic = GetSplinePointBezierCubic
+raylib.GetSplinePointBezierCubic = GetSplinePointBezierCubic;
 
 /**
  * Check collision between two rectangles
@@ -4111,10 +3866,10 @@ function CheckCollisionRecs(rec1, rec2) {
     rec2.x,
     rec2.y,
     rec2.width,
-    rec2.height
-  )
+    rec2.height,
+  );
 }
-raylib.CheckCollisionRecs = CheckCollisionRecs
+raylib.CheckCollisionRecs = CheckCollisionRecs;
 
 /**
  * Check collision between two circles
@@ -4133,10 +3888,10 @@ function CheckCollisionCircles(center1, radius1, center2, radius2) {
     radius1,
     center2.x,
     center2.y,
-    radius2
-  )
+    radius2,
+  );
 }
-raylib.CheckCollisionCircles = CheckCollisionCircles
+raylib.CheckCollisionCircles = CheckCollisionCircles;
 
 /**
  * Check collision between circle and rectangle
@@ -4155,10 +3910,10 @@ function CheckCollisionCircleRec(center, radius, rec) {
     rec.x,
     rec.y,
     rec.width,
-    rec.height
-  )
+    rec.height,
+  );
 }
-raylib.CheckCollisionCircleRec = CheckCollisionCircleRec
+raylib.CheckCollisionCircleRec = CheckCollisionCircleRec;
 
 /**
  * Check if circle collides with a line created betweeen two points [p1] and [p2]
@@ -4178,10 +3933,10 @@ function CheckCollisionCircleLine(center, radius, p1, p2) {
     p1.x,
     p1.y,
     p2.x,
-    p2.y
-  )
+    p2.y,
+  );
 }
-raylib.CheckCollisionCircleLine = CheckCollisionCircleLine
+raylib.CheckCollisionCircleLine = CheckCollisionCircleLine;
 
 /**
  * Check if point is inside rectangle
@@ -4198,10 +3953,10 @@ function CheckCollisionPointRec(point, rec) {
     rec.x,
     rec.y,
     rec.width,
-    rec.height
-  )
+    rec.height,
+  );
 }
-raylib.CheckCollisionPointRec = CheckCollisionPointRec
+raylib.CheckCollisionPointRec = CheckCollisionPointRec;
 
 /**
  * Check if point is inside circle
@@ -4218,10 +3973,10 @@ function CheckCollisionPointCircle(point, center, radius) {
     point.y,
     center.x,
     center.y,
-    radius
-  )
+    radius,
+  );
 }
-raylib.CheckCollisionPointCircle = CheckCollisionPointCircle
+raylib.CheckCollisionPointCircle = CheckCollisionPointCircle;
 
 /**
  * Check if point is inside a triangle
@@ -4242,10 +3997,10 @@ function CheckCollisionPointTriangle(point, p1, p2, p3) {
     p2.x,
     p2.y,
     p3.x,
-    p3.y
-  )
+    p3.y,
+  );
 }
-raylib.CheckCollisionPointTriangle = CheckCollisionPointTriangle
+raylib.CheckCollisionPointTriangle = CheckCollisionPointTriangle;
 
 /**
  * Check if point belongs to line created between two points [p1] and [p2] with defined margin in pixels [threshold]
@@ -4265,10 +4020,10 @@ function CheckCollisionPointLine(point, p1, p2, threshold) {
     p1.y,
     p2.x,
     p2.y,
-    threshold
-  )
+    threshold,
+  );
 }
-raylib.CheckCollisionPointLine = CheckCollisionPointLine
+raylib.CheckCollisionPointLine = CheckCollisionPointLine;
 
 /**
  * Check if point is within a polygon described by array of vertices
@@ -4280,14 +4035,9 @@ raylib.CheckCollisionPointLine = CheckCollisionPointLine
  * @return {boolean} The resulting bool.
  */
 function CheckCollisionPointPoly(point, points, pointCount) {
-  return r.BindCheckCollisionPointPoly(
-    point.x,
-    point.y,
-    points,
-    pointCount
-  )
+  return r.BindCheckCollisionPointPoly(point.x, point.y, points, pointCount);
 }
-raylib.CheckCollisionPointPoly = CheckCollisionPointPoly
+raylib.CheckCollisionPointPoly = CheckCollisionPointPoly;
 
 /**
  * Check the collision between two lines defined by two points each, returns collision point by reference
@@ -4300,7 +4050,13 @@ raylib.CheckCollisionPointPoly = CheckCollisionPointPoly
  *
  * @return {boolean} The resulting bool.
  */
-function CheckCollisionLines(startPos1, endPos1, startPos2, endPos2, collisionPoint) {
+function CheckCollisionLines(
+  startPos1,
+  endPos1,
+  startPos2,
+  endPos2,
+  collisionPoint,
+) {
   return r.BindCheckCollisionLines(
     startPos1.x,
     startPos1.y,
@@ -4310,10 +4066,10 @@ function CheckCollisionLines(startPos1, endPos1, startPos2, endPos2, collisionPo
     startPos2.y,
     endPos2.x,
     endPos2.y,
-    collisionPoint
-  )
+    collisionPoint,
+  );
 }
-raylib.CheckCollisionLines = CheckCollisionLines
+raylib.CheckCollisionLines = CheckCollisionLines;
 
 /**
  * Get collision rectangle for two rectangles collision
@@ -4332,10 +4088,10 @@ function GetCollisionRec(rec1, rec2) {
     rec2.x,
     rec2.y,
     rec2.width,
-    rec2.height
-  )
+    rec2.height,
+  );
 }
-raylib.GetCollisionRec = GetCollisionRec
+raylib.GetCollisionRec = GetCollisionRec;
 
 /**
  * Load image from file into CPU memory (RAM)
@@ -4345,11 +4101,9 @@ raylib.GetCollisionRec = GetCollisionRec
  * @return {Image} The resulting Image.
  */
 function LoadImage(fileName) {
-  return r.BindLoadImage(
-    fileName
-  )
+  return r.BindLoadImage(fileName);
 }
-raylib.LoadImage = LoadImage
+raylib.LoadImage = LoadImage;
 
 /**
  * Load image from RAW file data
@@ -4363,15 +4117,9 @@ raylib.LoadImage = LoadImage
  * @return {Image} The resulting Image.
  */
 function LoadImageRaw(fileName, width, height, format, headerSize) {
-  return r.BindLoadImageRaw(
-    fileName,
-    width,
-    height,
-    format,
-    headerSize
-  )
+  return r.BindLoadImageRaw(fileName, width, height, format, headerSize);
 }
-raylib.LoadImageRaw = LoadImageRaw
+raylib.LoadImageRaw = LoadImageRaw;
 
 /**
  * Load image sequence from file (frames appended to image.data)
@@ -4382,12 +4130,9 @@ raylib.LoadImageRaw = LoadImageRaw
  * @return {Image} The resulting Image.
  */
 function LoadImageAnim(fileName, frames) {
-  return r.BindLoadImageAnim(
-    fileName,
-    frames
-  )
+  return r.BindLoadImageAnim(fileName, frames);
 }
-raylib.LoadImageAnim = LoadImageAnim
+raylib.LoadImageAnim = LoadImageAnim;
 
 /**
  * Load image sequence from memory buffer
@@ -4400,14 +4145,9 @@ raylib.LoadImageAnim = LoadImageAnim
  * @return {Image} The resulting Image.
  */
 function LoadImageAnimFromMemory(fileType, fileData, dataSize, frames) {
-  return r.BindLoadImageAnimFromMemory(
-    fileType,
-    fileData,
-    dataSize,
-    frames
-  )
+  return r.BindLoadImageAnimFromMemory(fileType, fileData, dataSize, frames);
 }
-raylib.LoadImageAnimFromMemory = LoadImageAnimFromMemory
+raylib.LoadImageAnimFromMemory = LoadImageAnimFromMemory;
 
 /**
  * Load image from memory buffer, fileType refers to extension: i.e. '.png'
@@ -4419,13 +4159,9 @@ raylib.LoadImageAnimFromMemory = LoadImageAnimFromMemory
  * @return {Image} The resulting Image.
  */
 function LoadImageFromMemory(fileType, fileData, dataSize) {
-  return r.BindLoadImageFromMemory(
-    fileType,
-    fileData,
-    dataSize
-  )
+  return r.BindLoadImageFromMemory(fileType, fileData, dataSize);
 }
-raylib.LoadImageFromMemory = LoadImageFromMemory
+raylib.LoadImageFromMemory = LoadImageFromMemory;
 
 /**
  * Load image from GPU texture data
@@ -4440,10 +4176,10 @@ function LoadImageFromTexture(texture) {
     texture.width,
     texture.height,
     texture.mipmaps,
-    texture.format
-  )
+    texture.format,
+  );
 }
-raylib.LoadImageFromTexture = LoadImageFromTexture
+raylib.LoadImageFromTexture = LoadImageFromTexture;
 
 /**
  * Load image from screen buffer and (screenshot)
@@ -4451,9 +4187,9 @@ raylib.LoadImageFromTexture = LoadImageFromTexture
  * @return {Image} The resulting Image.
  */
 function LoadImageFromScreen() {
-  return r.BindLoadImageFromScreen()
+  return r.BindLoadImageFromScreen();
 }
-raylib.LoadImageFromScreen = LoadImageFromScreen
+raylib.LoadImageFromScreen = LoadImageFromScreen;
 
 /**
  * Check if an image is valid (data and parameters)
@@ -4468,10 +4204,10 @@ function IsImageValid(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
+    image.format,
+  );
 }
-raylib.IsImageValid = IsImageValid
+raylib.IsImageValid = IsImageValid;
 
 /**
  * Unload image from CPU memory (RAM)
@@ -4486,10 +4222,10 @@ function UnloadImage(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
+    image.format,
+  );
 }
-raylib.UnloadImage = UnloadImage
+raylib.UnloadImage = UnloadImage;
 
 /**
  * Export image data to file, returns true on success
@@ -4506,10 +4242,10 @@ function ExportImage(image, fileName) {
     image.height,
     image.mipmaps,
     image.format,
-    fileName
-  )
+    fileName,
+  );
 }
-raylib.ExportImage = ExportImage
+raylib.ExportImage = ExportImage;
 
 /**
  * Export image to memory buffer
@@ -4528,10 +4264,10 @@ function ExportImageToMemory(image, fileType, fileSize) {
     image.mipmaps,
     image.format,
     fileType,
-    fileSize
-  )
+    fileSize,
+  );
 }
-raylib.ExportImageToMemory = ExportImageToMemory
+raylib.ExportImageToMemory = ExportImageToMemory;
 
 /**
  * Export image as code file defining an array of bytes, returns true on success
@@ -4548,10 +4284,10 @@ function ExportImageAsCode(image, fileName) {
     image.height,
     image.mipmaps,
     image.format,
-    fileName
-  )
+    fileName,
+  );
 }
-raylib.ExportImageAsCode = ExportImageAsCode
+raylib.ExportImageAsCode = ExportImageAsCode;
 
 /**
  * Generate image: plain color
@@ -4563,16 +4299,9 @@ raylib.ExportImageAsCode = ExportImageAsCode
  * @return {Image} The resulting Image.
  */
 function GenImageColor(width, height, color) {
-  return r.BindGenImageColor(
-    width,
-    height,
-    color.r,
-    color.g,
-    color.b,
-    color.a
-  )
+  return r.BindGenImageColor(width, height, color.r, color.g, color.b, color.a);
 }
-raylib.GenImageColor = GenImageColor
+raylib.GenImageColor = GenImageColor;
 
 /**
  * Generate image: linear gradient, direction in degrees [0..360], 0=Vertical gradient
@@ -4597,10 +4326,10 @@ function GenImageGradientLinear(width, height, direction, start, end) {
     end.r,
     end.g,
     end.b,
-    end.a
-  )
+    end.a,
+  );
 }
-raylib.GenImageGradientLinear = GenImageGradientLinear
+raylib.GenImageGradientLinear = GenImageGradientLinear;
 
 /**
  * Generate image: radial gradient
@@ -4625,10 +4354,10 @@ function GenImageGradientRadial(width, height, density, inner, outer) {
     outer.r,
     outer.g,
     outer.b,
-    outer.a
-  )
+    outer.a,
+  );
 }
-raylib.GenImageGradientRadial = GenImageGradientRadial
+raylib.GenImageGradientRadial = GenImageGradientRadial;
 
 /**
  * Generate image: square gradient
@@ -4653,10 +4382,10 @@ function GenImageGradientSquare(width, height, density, inner, outer) {
     outer.r,
     outer.g,
     outer.b,
-    outer.a
-  )
+    outer.a,
+  );
 }
-raylib.GenImageGradientSquare = GenImageGradientSquare
+raylib.GenImageGradientSquare = GenImageGradientSquare;
 
 /**
  * Generate image: checked
@@ -4683,10 +4412,10 @@ function GenImageChecked(width, height, checksX, checksY, col1, col2) {
     col2.r,
     col2.g,
     col2.b,
-    col2.a
-  )
+    col2.a,
+  );
 }
-raylib.GenImageChecked = GenImageChecked
+raylib.GenImageChecked = GenImageChecked;
 
 /**
  * Generate image: white noise
@@ -4698,13 +4427,9 @@ raylib.GenImageChecked = GenImageChecked
  * @return {Image} The resulting Image.
  */
 function GenImageWhiteNoise(width, height, factor) {
-  return r.BindGenImageWhiteNoise(
-    width,
-    height,
-    factor
-  )
+  return r.BindGenImageWhiteNoise(width, height, factor);
 }
-raylib.GenImageWhiteNoise = GenImageWhiteNoise
+raylib.GenImageWhiteNoise = GenImageWhiteNoise;
 
 /**
  * Generate image: perlin noise
@@ -4718,15 +4443,9 @@ raylib.GenImageWhiteNoise = GenImageWhiteNoise
  * @return {Image} The resulting Image.
  */
 function GenImagePerlinNoise(width, height, offsetX, offsetY, scale) {
-  return r.BindGenImagePerlinNoise(
-    width,
-    height,
-    offsetX,
-    offsetY,
-    scale
-  )
+  return r.BindGenImagePerlinNoise(width, height, offsetX, offsetY, scale);
 }
-raylib.GenImagePerlinNoise = GenImagePerlinNoise
+raylib.GenImagePerlinNoise = GenImagePerlinNoise;
 
 /**
  * Generate image: cellular algorithm, bigger tileSize means bigger cells
@@ -4738,13 +4457,9 @@ raylib.GenImagePerlinNoise = GenImagePerlinNoise
  * @return {Image} The resulting Image.
  */
 function GenImageCellular(width, height, tileSize) {
-  return r.BindGenImageCellular(
-    width,
-    height,
-    tileSize
-  )
+  return r.BindGenImageCellular(width, height, tileSize);
 }
-raylib.GenImageCellular = GenImageCellular
+raylib.GenImageCellular = GenImageCellular;
 
 /**
  * Generate image: grayscale image from text data
@@ -4756,13 +4471,9 @@ raylib.GenImageCellular = GenImageCellular
  * @return {Image} The resulting Image.
  */
 function GenImageText(width, height, text) {
-  return r.BindGenImageText(
-    width,
-    height,
-    text
-  )
+  return r.BindGenImageText(width, height, text);
 }
-raylib.GenImageText = GenImageText
+raylib.GenImageText = GenImageText;
 
 /**
  * Create an image duplicate (useful for transformations)
@@ -4777,10 +4488,10 @@ function ImageCopy(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
+    image.format,
+  );
 }
-raylib.ImageCopy = ImageCopy
+raylib.ImageCopy = ImageCopy;
 
 /**
  * Create an image from another image piece
@@ -4800,10 +4511,10 @@ function ImageFromImage(image, rec) {
     rec.x,
     rec.y,
     rec.width,
-    rec.height
-  )
+    rec.height,
+  );
 }
-raylib.ImageFromImage = ImageFromImage
+raylib.ImageFromImage = ImageFromImage;
 
 /**
  * Create an image from a selected channel of another image (GRAYSCALE)
@@ -4820,10 +4531,10 @@ function ImageFromChannel(image, selectedChannel) {
     image.height,
     image.mipmaps,
     image.format,
-    selectedChannel
-  )
+    selectedChannel,
+  );
 }
-raylib.ImageFromChannel = ImageFromChannel
+raylib.ImageFromChannel = ImageFromChannel;
 
 /**
  * Create an image from text (default font)
@@ -4835,16 +4546,9 @@ raylib.ImageFromChannel = ImageFromChannel
  * @return {Image} The resulting Image.
  */
 function ImageText(text, fontSize, color) {
-  return r.BindImageText(
-    text,
-    fontSize,
-    color.r,
-    color.g,
-    color.b,
-    color.a
-  )
+  return r.BindImageText(text, fontSize, color.r, color.g, color.b, color.a);
 }
-raylib.ImageText = ImageText
+raylib.ImageText = ImageText;
 
 /**
  * Create an image from text (custom sprite font)
@@ -4875,10 +4579,10 @@ function ImageTextEx(font, text, fontSize, spacing, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.ImageTextEx = ImageTextEx
+raylib.ImageTextEx = ImageTextEx;
 
 /**
  * Apply Gaussian blur using a box blur approximation
@@ -4889,12 +4593,9 @@ raylib.ImageTextEx = ImageTextEx
  * @return {undefined}
  */
 function ImageBlurGaussian(image, blurSize) {
-  return r.BindImageBlurGaussian(
-    image,
-    blurSize
-  )
+  return r.BindImageBlurGaussian(image, blurSize);
 }
-raylib.ImageBlurGaussian = ImageBlurGaussian
+raylib.ImageBlurGaussian = ImageBlurGaussian;
 
 /**
  * Apply custom square convolution kernel to image
@@ -4906,13 +4607,9 @@ raylib.ImageBlurGaussian = ImageBlurGaussian
  * @return {undefined}
  */
 function ImageKernelConvolution(image, kernel, kernelSize) {
-  return r.BindImageKernelConvolution(
-    image,
-    kernel,
-    kernelSize
-  )
+  return r.BindImageKernelConvolution(image, kernel, kernelSize);
 }
-raylib.ImageKernelConvolution = ImageKernelConvolution
+raylib.ImageKernelConvolution = ImageKernelConvolution;
 
 /**
  * Rotate image by input angle in degrees (-359 to 359)
@@ -4923,12 +4620,9 @@ raylib.ImageKernelConvolution = ImageKernelConvolution
  * @return {undefined}
  */
 function ImageRotate(image, degrees) {
-  return r.BindImageRotate(
-    image,
-    degrees
-  )
+  return r.BindImageRotate(image, degrees);
 }
-raylib.ImageRotate = ImageRotate
+raylib.ImageRotate = ImageRotate;
 
 /**
  * Load color data from image as a Color array (RGBA - 32bit)
@@ -4943,10 +4637,10 @@ function LoadImageColors(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
+    image.format,
+  );
 }
-raylib.LoadImageColors = LoadImageColors
+raylib.LoadImageColors = LoadImageColors;
 
 /**
  * Load colors palette from image as a Color array (RGBA - 32bit)
@@ -4965,10 +4659,10 @@ function LoadImagePalette(image, maxPaletteSize, colorCount) {
     image.mipmaps,
     image.format,
     maxPaletteSize,
-    colorCount
-  )
+    colorCount,
+  );
 }
-raylib.LoadImagePalette = LoadImagePalette
+raylib.LoadImagePalette = LoadImagePalette;
 
 /**
  * Unload color data loaded with LoadImageColors()
@@ -4978,11 +4672,9 @@ raylib.LoadImagePalette = LoadImagePalette
  * @return {undefined}
  */
 function UnloadImageColors(colors) {
-  return r.BindUnloadImageColors(
-    colors
-  )
+  return r.BindUnloadImageColors(colors);
 }
-raylib.UnloadImageColors = UnloadImageColors
+raylib.UnloadImageColors = UnloadImageColors;
 
 /**
  * Unload colors palette loaded with LoadImagePalette()
@@ -4992,11 +4684,9 @@ raylib.UnloadImageColors = UnloadImageColors
  * @return {undefined}
  */
 function UnloadImagePalette(colors) {
-  return r.BindUnloadImagePalette(
-    colors
-  )
+  return r.BindUnloadImagePalette(colors);
 }
-raylib.UnloadImagePalette = UnloadImagePalette
+raylib.UnloadImagePalette = UnloadImagePalette;
 
 /**
  * Get image alpha border rectangle
@@ -5013,10 +4703,10 @@ function GetImageAlphaBorder(image, threshold) {
     image.height,
     image.mipmaps,
     image.format,
-    threshold
-  )
+    threshold,
+  );
 }
-raylib.GetImageAlphaBorder = GetImageAlphaBorder
+raylib.GetImageAlphaBorder = GetImageAlphaBorder;
 
 /**
  * Get image pixel color at (x, y) position
@@ -5035,10 +4725,10 @@ function GetImageColor(image, x, y) {
     image.mipmaps,
     image.format,
     x,
-    y
-  )
+    y,
+  );
 }
-raylib.GetImageColor = GetImageColor
+raylib.GetImageColor = GetImageColor;
 
 /**
  * Draw a line defining thickness within an image
@@ -5062,10 +4752,10 @@ function ImageDrawLineEx(dst, start, end, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.ImageDrawLineEx = ImageDrawLineEx
+raylib.ImageDrawLineEx = ImageDrawLineEx;
 
 /**
  * Draw circle outline within an image
@@ -5087,10 +4777,10 @@ function ImageDrawCircleLines(dst, centerX, centerY, radius, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.ImageDrawCircleLines = ImageDrawCircleLines
+raylib.ImageDrawCircleLines = ImageDrawCircleLines;
 
 /**
  * Draw circle outline within an image (Vector version)
@@ -5111,10 +4801,10 @@ function ImageDrawCircleLinesV(dst, center, radius, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.ImageDrawCircleLinesV = ImageDrawCircleLinesV
+raylib.ImageDrawCircleLinesV = ImageDrawCircleLinesV;
 
 /**
  * Draw triangle within an image
@@ -5139,10 +4829,10 @@ function ImageDrawTriangle(dst, v1, v2, v3, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.ImageDrawTriangle = ImageDrawTriangle
+raylib.ImageDrawTriangle = ImageDrawTriangle;
 
 /**
  * Draw triangle with interpolated colors within an image
@@ -5177,10 +4867,10 @@ function ImageDrawTriangleEx(dst, v1, v2, v3, c1, c2, c3) {
     c3.r,
     c3.g,
     c3.b,
-    c3.a
-  )
+    c3.a,
+  );
 }
-raylib.ImageDrawTriangleEx = ImageDrawTriangleEx
+raylib.ImageDrawTriangleEx = ImageDrawTriangleEx;
 
 /**
  * Draw triangle outline within an image
@@ -5205,10 +4895,10 @@ function ImageDrawTriangleLines(dst, v1, v2, v3, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.ImageDrawTriangleLines = ImageDrawTriangleLines
+raylib.ImageDrawTriangleLines = ImageDrawTriangleLines;
 
 /**
  * Draw a triangle fan defined by points within an image (first vertex is the center)
@@ -5228,10 +4918,10 @@ function ImageDrawTriangleFan(dst, points, pointCount, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.ImageDrawTriangleFan = ImageDrawTriangleFan
+raylib.ImageDrawTriangleFan = ImageDrawTriangleFan;
 
 /**
  * Draw a triangle strip defined by points within an image
@@ -5251,10 +4941,10 @@ function ImageDrawTriangleStrip(dst, points, pointCount, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.ImageDrawTriangleStrip = ImageDrawTriangleStrip
+raylib.ImageDrawTriangleStrip = ImageDrawTriangleStrip;
 
 /**
  * Load texture from file into GPU memory (VRAM)
@@ -5264,11 +4954,9 @@ raylib.ImageDrawTriangleStrip = ImageDrawTriangleStrip
  * @return {Texture2D} The resulting Texture2D.
  */
 function LoadTexture(fileName) {
-  return r.BindLoadTexture(
-    fileName
-  )
+  return r.BindLoadTexture(fileName);
 }
-raylib.LoadTexture = LoadTexture
+raylib.LoadTexture = LoadTexture;
 
 /**
  * Load texture from image data
@@ -5283,10 +4971,10 @@ function LoadTextureFromImage(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
+    image.format,
+  );
 }
-raylib.LoadTextureFromImage = LoadTextureFromImage
+raylib.LoadTextureFromImage = LoadTextureFromImage;
 
 /**
  * Load cubemap from image, multiple image cubemap layouts supported
@@ -5303,10 +4991,10 @@ function LoadTextureCubemap(image, layout) {
     image.height,
     image.mipmaps,
     image.format,
-    layout
-  )
+    layout,
+  );
 }
-raylib.LoadTextureCubemap = LoadTextureCubemap
+raylib.LoadTextureCubemap = LoadTextureCubemap;
 
 /**
  * Load texture for rendering (framebuffer)
@@ -5317,12 +5005,9 @@ raylib.LoadTextureCubemap = LoadTextureCubemap
  * @return {RenderTexture2D} The resulting RenderTexture2D.
  */
 function LoadRenderTexture(width, height) {
-  return r.BindLoadRenderTexture(
-    width,
-    height
-  )
+  return r.BindLoadRenderTexture(width, height);
 }
-raylib.LoadRenderTexture = LoadRenderTexture
+raylib.LoadRenderTexture = LoadRenderTexture;
 
 /**
  * Check if a texture is valid (loaded in GPU)
@@ -5337,10 +5022,10 @@ function IsTextureValid(texture) {
     texture.width,
     texture.height,
     texture.mipmaps,
-    texture.format
-  )
+    texture.format,
+  );
 }
-raylib.IsTextureValid = IsTextureValid
+raylib.IsTextureValid = IsTextureValid;
 
 /**
  * Unload texture from GPU memory (VRAM)
@@ -5355,10 +5040,10 @@ function UnloadTexture(texture) {
     texture.width,
     texture.height,
     texture.mipmaps,
-    texture.format
-  )
+    texture.format,
+  );
 }
-raylib.UnloadTexture = UnloadTexture
+raylib.UnloadTexture = UnloadTexture;
 
 /**
  * Check if a render texture is valid (loaded in GPU)
@@ -5379,10 +5064,10 @@ function IsRenderTextureValid(target) {
     target.depth.width,
     target.depth.height,
     target.depth.mipmaps,
-    target.depth.format
-  )
+    target.depth.format,
+  );
 }
-raylib.IsRenderTextureValid = IsRenderTextureValid
+raylib.IsRenderTextureValid = IsRenderTextureValid;
 
 /**
  * Unload render texture from GPU memory (VRAM)
@@ -5403,10 +5088,10 @@ function UnloadRenderTexture(target) {
     target.depth.width,
     target.depth.height,
     target.depth.mipmaps,
-    target.depth.format
-  )
+    target.depth.format,
+  );
 }
-raylib.UnloadRenderTexture = UnloadRenderTexture
+raylib.UnloadRenderTexture = UnloadRenderTexture;
 
 /**
  * Update GPU texture with new data
@@ -5423,10 +5108,10 @@ function UpdateTexture(texture, pixels) {
     texture.height,
     texture.mipmaps,
     texture.format,
-    pixels
-  )
+    pixels,
+  );
 }
-raylib.UpdateTexture = UpdateTexture
+raylib.UpdateTexture = UpdateTexture;
 
 /**
  * Update GPU texture rectangle with new data
@@ -5448,10 +5133,10 @@ function UpdateTextureRec(texture, rec, pixels) {
     rec.y,
     rec.width,
     rec.height,
-    pixels
-  )
+    pixels,
+  );
 }
-raylib.UpdateTextureRec = UpdateTextureRec
+raylib.UpdateTextureRec = UpdateTextureRec;
 
 /**
  * Set texture scaling filter mode
@@ -5468,10 +5153,10 @@ function SetTextureFilter(texture, filter) {
     texture.height,
     texture.mipmaps,
     texture.format,
-    filter
-  )
+    filter,
+  );
 }
-raylib.SetTextureFilter = SetTextureFilter
+raylib.SetTextureFilter = SetTextureFilter;
 
 /**
  * Set texture wrapping mode
@@ -5488,10 +5173,10 @@ function SetTextureWrap(texture, wrap) {
     texture.height,
     texture.mipmaps,
     texture.format,
-    wrap
-  )
+    wrap,
+  );
 }
-raylib.SetTextureWrap = SetTextureWrap
+raylib.SetTextureWrap = SetTextureWrap;
 
 /**
  * Draw a Texture2D
@@ -5515,10 +5200,10 @@ function DrawTexture(texture, posX, posY, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawTexture = DrawTexture
+raylib.DrawTexture = DrawTexture;
 
 /**
  * Draw a Texture2D with position defined as Vector2
@@ -5541,10 +5226,10 @@ function DrawTextureV(texture, position, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawTextureV = DrawTextureV
+raylib.DrawTextureV = DrawTextureV;
 
 /**
  * Draw a Texture2D with extended parameters
@@ -5571,10 +5256,10 @@ function DrawTextureEx(texture, position, rotation, scale, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawTextureEx = DrawTextureEx
+raylib.DrawTextureEx = DrawTextureEx;
 
 /**
  * Draw a part of a texture defined by a rectangle
@@ -5602,10 +5287,10 @@ function DrawTextureRec(texture, source, position, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawTextureRec = DrawTextureRec
+raylib.DrawTextureRec = DrawTextureRec;
 
 /**
  * Draw a part of a texture defined by a rectangle with 'pro' parameters
@@ -5640,10 +5325,10 @@ function DrawTexturePro(texture, source, dest, origin, rotation, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawTexturePro = DrawTexturePro
+raylib.DrawTexturePro = DrawTexturePro;
 
 /**
  * Draws a texture (or part of it) that stretches or shrinks nicely
@@ -5683,10 +5368,10 @@ function DrawTextureNPatch(texture, nPatchInfo, dest, origin, rotation, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawTextureNPatch = DrawTextureNPatch
+raylib.DrawTextureNPatch = DrawTextureNPatch;
 
 /**
  * Check if two colors are equal
@@ -5705,10 +5390,10 @@ function ColorIsEqual(col1, col2) {
     col2.r,
     col2.g,
     col2.b,
-    col2.a
-  )
+    col2.a,
+  );
 }
-raylib.ColorIsEqual = ColorIsEqual
+raylib.ColorIsEqual = ColorIsEqual;
 
 /**
  * Get color with alpha applied, alpha goes from 0.0f to 1.0f
@@ -5719,15 +5404,9 @@ raylib.ColorIsEqual = ColorIsEqual
  * @return {Color} The resulting Color.
  */
 function Fade(color, alpha) {
-  return r.BindFade(
-    color.r,
-    color.g,
-    color.b,
-    color.a,
-    alpha
-  )
+  return r.BindFade(color.r, color.g, color.b, color.a, alpha);
 }
-raylib.Fade = Fade
+raylib.Fade = Fade;
 
 /**
  * Get hexadecimal value for a Color (0xRRGGBBAA)
@@ -5737,14 +5416,9 @@ raylib.Fade = Fade
  * @return {number} The resulting int.
  */
 function ColorToInt(color) {
-  return r.BindColorToInt(
-    color.r,
-    color.g,
-    color.b,
-    color.a
-  )
+  return r.BindColorToInt(color.r, color.g, color.b, color.a);
 }
-raylib.ColorToInt = ColorToInt
+raylib.ColorToInt = ColorToInt;
 
 /**
  * Get Color normalized as float [0..1]
@@ -5754,14 +5428,9 @@ raylib.ColorToInt = ColorToInt
  * @return {Vector4} The resulting Vector4.
  */
 function ColorNormalize(color) {
-  return r.BindColorNormalize(
-    color.r,
-    color.g,
-    color.b,
-    color.a
-  )
+  return r.BindColorNormalize(color.r, color.g, color.b, color.a);
 }
-raylib.ColorNormalize = ColorNormalize
+raylib.ColorNormalize = ColorNormalize;
 
 /**
  * Get Color from normalized values [0..1]
@@ -5775,10 +5444,10 @@ function ColorFromNormalized(normalized) {
     normalized.x,
     normalized.y,
     normalized.z,
-    normalized.w
-  )
+    normalized.w,
+  );
 }
-raylib.ColorFromNormalized = ColorFromNormalized
+raylib.ColorFromNormalized = ColorFromNormalized;
 
 /**
  * Get HSV values for a Color, hue [0..360], saturation/value [0..1]
@@ -5788,14 +5457,9 @@ raylib.ColorFromNormalized = ColorFromNormalized
  * @return {Vector3} The resulting Vector3.
  */
 function ColorToHSV(color) {
-  return r.BindColorToHSV(
-    color.r,
-    color.g,
-    color.b,
-    color.a
-  )
+  return r.BindColorToHSV(color.r, color.g, color.b, color.a);
 }
-raylib.ColorToHSV = ColorToHSV
+raylib.ColorToHSV = ColorToHSV;
 
 /**
  * Get a Color from HSV values, hue [0..360], saturation/value [0..1]
@@ -5807,13 +5471,9 @@ raylib.ColorToHSV = ColorToHSV
  * @return {Color} The resulting Color.
  */
 function ColorFromHSV(hue, saturation, value) {
-  return r.BindColorFromHSV(
-    hue,
-    saturation,
-    value
-  )
+  return r.BindColorFromHSV(hue, saturation, value);
 }
-raylib.ColorFromHSV = ColorFromHSV
+raylib.ColorFromHSV = ColorFromHSV;
 
 /**
  * Get color multiplied with another color
@@ -5832,10 +5492,10 @@ function ColorTint(color, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.ColorTint = ColorTint
+raylib.ColorTint = ColorTint;
 
 /**
  * Get color with brightness correction, brightness factor goes from -1.0f to 1.0f
@@ -5846,15 +5506,9 @@ raylib.ColorTint = ColorTint
  * @return {Color} The resulting Color.
  */
 function ColorBrightness(color, factor) {
-  return r.BindColorBrightness(
-    color.r,
-    color.g,
-    color.b,
-    color.a,
-    factor
-  )
+  return r.BindColorBrightness(color.r, color.g, color.b, color.a, factor);
 }
-raylib.ColorBrightness = ColorBrightness
+raylib.ColorBrightness = ColorBrightness;
 
 /**
  * Get color with contrast correction, contrast values between -1.0f and 1.0f
@@ -5865,15 +5519,9 @@ raylib.ColorBrightness = ColorBrightness
  * @return {Color} The resulting Color.
  */
 function ColorContrast(color, contrast) {
-  return r.BindColorContrast(
-    color.r,
-    color.g,
-    color.b,
-    color.a,
-    contrast
-  )
+  return r.BindColorContrast(color.r, color.g, color.b, color.a, contrast);
 }
-raylib.ColorContrast = ColorContrast
+raylib.ColorContrast = ColorContrast;
 
 /**
  * Get color with alpha applied, alpha goes from 0.0f to 1.0f
@@ -5884,15 +5532,9 @@ raylib.ColorContrast = ColorContrast
  * @return {Color} The resulting Color.
  */
 function ColorAlpha(color, alpha) {
-  return r.BindColorAlpha(
-    color.r,
-    color.g,
-    color.b,
-    color.a,
-    alpha
-  )
+  return r.BindColorAlpha(color.r, color.g, color.b, color.a, alpha);
 }
-raylib.ColorAlpha = ColorAlpha
+raylib.ColorAlpha = ColorAlpha;
 
 /**
  * Get src alpha-blended into dst color with tint
@@ -5916,10 +5558,10 @@ function ColorAlphaBlend(dst, src, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.ColorAlphaBlend = ColorAlphaBlend
+raylib.ColorAlphaBlend = ColorAlphaBlend;
 
 /**
  * Get color lerp interpolation between two colors, factor [0.0f..1.0f]
@@ -5940,10 +5582,10 @@ function ColorLerp(color1, color2, factor) {
     color2.g,
     color2.b,
     color2.a,
-    factor
-  )
+    factor,
+  );
 }
-raylib.ColorLerp = ColorLerp
+raylib.ColorLerp = ColorLerp;
 
 /**
  * Get Color structure from hexadecimal value
@@ -5953,11 +5595,9 @@ raylib.ColorLerp = ColorLerp
  * @return {Color} The resulting Color.
  */
 function GetColor(hexValue) {
-  return r.BindGetColor(
-    hexValue
-  )
+  return r.BindGetColor(hexValue);
 }
-raylib.GetColor = GetColor
+raylib.GetColor = GetColor;
 
 /**
  * Get Color from a source pixel pointer of certain format
@@ -5968,12 +5608,9 @@ raylib.GetColor = GetColor
  * @return {Color} The resulting Color.
  */
 function GetPixelColor(srcPtr, format) {
-  return r.BindGetPixelColor(
-    srcPtr,
-    format
-  )
+  return r.BindGetPixelColor(srcPtr, format);
 }
-raylib.GetPixelColor = GetPixelColor
+raylib.GetPixelColor = GetPixelColor;
 
 /**
  * Set color formatted into destination pixel pointer
@@ -5991,10 +5628,10 @@ function SetPixelColor(dstPtr, color, format) {
     color.g,
     color.b,
     color.a,
-    format
-  )
+    format,
+  );
 }
-raylib.SetPixelColor = SetPixelColor
+raylib.SetPixelColor = SetPixelColor;
 
 /**
  * Get pixel data size in bytes for certain format
@@ -6006,13 +5643,9 @@ raylib.SetPixelColor = SetPixelColor
  * @return {number} The resulting int.
  */
 function GetPixelDataSize(width, height, format) {
-  return r.BindGetPixelDataSize(
-    width,
-    height,
-    format
-  )
+  return r.BindGetPixelDataSize(width, height, format);
 }
-raylib.GetPixelDataSize = GetPixelDataSize
+raylib.GetPixelDataSize = GetPixelDataSize;
 
 /**
  * Get the default Font
@@ -6020,9 +5653,9 @@ raylib.GetPixelDataSize = GetPixelDataSize
  * @return {Font} The resulting Font.
  */
 function GetFontDefault() {
-  return r.BindGetFontDefault()
+  return r.BindGetFontDefault();
 }
-raylib.GetFontDefault = GetFontDefault
+raylib.GetFontDefault = GetFontDefault;
 
 /**
  * Load font from file into GPU memory (VRAM)
@@ -6032,11 +5665,9 @@ raylib.GetFontDefault = GetFontDefault
  * @return {Font} The resulting Font.
  */
 function LoadFont(fileName) {
-  return r.BindLoadFont(
-    fileName
-  )
+  return r.BindLoadFont(fileName);
 }
-raylib.LoadFont = LoadFont
+raylib.LoadFont = LoadFont;
 
 /**
  * Load font from file with extended parameters, use NULL for codepoints and 0 for codepointCount to load the default character set, font size is provided in pixels height
@@ -6049,14 +5680,9 @@ raylib.LoadFont = LoadFont
  * @return {Font} The resulting Font.
  */
 function LoadFontEx(fileName, fontSize, codepoints, codepointCount) {
-  return r.BindLoadFontEx(
-    fileName,
-    fontSize,
-    codepoints,
-    codepointCount
-  )
+  return r.BindLoadFontEx(fileName, fontSize, codepoints, codepointCount);
 }
-raylib.LoadFontEx = LoadFontEx
+raylib.LoadFontEx = LoadFontEx;
 
 /**
  * Load font from Image (XNA style)
@@ -6078,10 +5704,10 @@ function LoadFontFromImage(image, key, firstChar) {
     key.g,
     key.b,
     key.a,
-    firstChar
-  )
+    firstChar,
+  );
 }
-raylib.LoadFontFromImage = LoadFontFromImage
+raylib.LoadFontFromImage = LoadFontFromImage;
 
 /**
  * Load font from memory buffer, fileType refers to extension: i.e. '.ttf'
@@ -6095,17 +5721,24 @@ raylib.LoadFontFromImage = LoadFontFromImage
  *
  * @return {Font} The resulting Font.
  */
-function LoadFontFromMemory(fileType, fileData, dataSize, fontSize, codepoints, codepointCount) {
+function LoadFontFromMemory(
+  fileType,
+  fileData,
+  dataSize,
+  fontSize,
+  codepoints,
+  codepointCount,
+) {
   return r.BindLoadFontFromMemory(
     fileType,
     fileData,
     dataSize,
     fontSize,
     codepoints,
-    codepointCount
-  )
+    codepointCount,
+  );
 }
-raylib.LoadFontFromMemory = LoadFontFromMemory
+raylib.LoadFontFromMemory = LoadFontFromMemory;
 
 /**
  * Check if a font is valid (font data loaded, WARNING: GPU texture not checked)
@@ -6125,10 +5758,10 @@ function IsFontValid(font) {
     font.texture.mipmaps,
     font.texture.format,
     font.recs,
-    font.glyphs
-  )
+    font.glyphs,
+  );
 }
-raylib.IsFontValid = IsFontValid
+raylib.IsFontValid = IsFontValid;
 
 /**
  * Load font data for further use
@@ -6142,17 +5775,24 @@ raylib.IsFontValid = IsFontValid
  *
  * @return {number} The resulting GlyphInfo *.
  */
-function LoadFontData(fileData, dataSize, fontSize, codepoints, codepointCount, type) {
+function LoadFontData(
+  fileData,
+  dataSize,
+  fontSize,
+  codepoints,
+  codepointCount,
+  type,
+) {
   return r.BindLoadFontData(
     fileData,
     dataSize,
     fontSize,
     codepoints,
     codepointCount,
-    type
-  )
+    type,
+  );
 }
-raylib.LoadFontData = LoadFontData
+raylib.LoadFontData = LoadFontData;
 
 /**
  * Generate image font atlas using chars info
@@ -6166,17 +5806,24 @@ raylib.LoadFontData = LoadFontData
  *
  * @return {Image} The resulting Image.
  */
-function GenImageFontAtlas(glyphs, glyphRecs, glyphCount, fontSize, padding, packMethod) {
+function GenImageFontAtlas(
+  glyphs,
+  glyphRecs,
+  glyphCount,
+  fontSize,
+  padding,
+  packMethod,
+) {
   return r.BindGenImageFontAtlas(
     glyphs,
     glyphRecs,
     glyphCount,
     fontSize,
     padding,
-    packMethod
-  )
+    packMethod,
+  );
 }
-raylib.GenImageFontAtlas = GenImageFontAtlas
+raylib.GenImageFontAtlas = GenImageFontAtlas;
 
 /**
  * Unload font chars info data (RAM)
@@ -6187,12 +5834,9 @@ raylib.GenImageFontAtlas = GenImageFontAtlas
  * @return {undefined}
  */
 function UnloadFontData(glyphs, glyphCount) {
-  return r.BindUnloadFontData(
-    glyphs,
-    glyphCount
-  )
+  return r.BindUnloadFontData(glyphs, glyphCount);
 }
-raylib.UnloadFontData = UnloadFontData
+raylib.UnloadFontData = UnloadFontData;
 
 /**
  * Unload font from GPU memory (VRAM)
@@ -6212,10 +5856,10 @@ function UnloadFont(font) {
     font.texture.mipmaps,
     font.texture.format,
     font.recs,
-    font.glyphs
-  )
+    font.glyphs,
+  );
 }
-raylib.UnloadFont = UnloadFont
+raylib.UnloadFont = UnloadFont;
 
 /**
  * Export font as code file, returns true on success
@@ -6237,10 +5881,10 @@ function ExportFontAsCode(font, fileName) {
     font.texture.format,
     font.recs,
     font.glyphs,
-    fileName
-  )
+    fileName,
+  );
 }
-raylib.ExportFontAsCode = ExportFontAsCode
+raylib.ExportFontAsCode = ExportFontAsCode;
 
 /**
  * Draw current FPS
@@ -6251,12 +5895,9 @@ raylib.ExportFontAsCode = ExportFontAsCode
  * @return {undefined}
  */
 function DrawFPS(posX, posY) {
-  return r.BindDrawFPS(
-    posX,
-    posY
-  )
+  return r.BindDrawFPS(posX, posY);
 }
-raylib.DrawFPS = DrawFPS
+raylib.DrawFPS = DrawFPS;
 
 /**
  * Draw text (using default font)
@@ -6278,10 +5919,10 @@ function DrawText(text, posX, posY, fontSize, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawText = DrawText
+raylib.DrawText = DrawText;
 
 /**
  * Draw text using font and additional parameters
@@ -6315,10 +5956,10 @@ function DrawTextEx(font, text, position, fontSize, spacing, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawTextEx = DrawTextEx
+raylib.DrawTextEx = DrawTextEx;
 
 /**
  * Draw text using Font and pro parameters (rotation)
@@ -6334,7 +5975,16 @@ raylib.DrawTextEx = DrawTextEx
  *
  * @return {undefined}
  */
-function DrawTextPro(font, text, position, origin, rotation, fontSize, spacing, tint) {
+function DrawTextPro(
+  font,
+  text,
+  position,
+  origin,
+  rotation,
+  fontSize,
+  spacing,
+  tint,
+) {
   return r.BindDrawTextPro(
     font.baseSize,
     font.glyphCount,
@@ -6357,10 +6007,10 @@ function DrawTextPro(font, text, position, origin, rotation, fontSize, spacing, 
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawTextPro = DrawTextPro
+raylib.DrawTextPro = DrawTextPro;
 
 /**
  * Draw one character (codepoint)
@@ -6392,10 +6042,10 @@ function DrawTextCodepoint(font, codepoint, position, fontSize, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawTextCodepoint = DrawTextCodepoint
+raylib.DrawTextCodepoint = DrawTextCodepoint;
 
 /**
  * Draw multiple character (codepoint)
@@ -6410,7 +6060,15 @@ raylib.DrawTextCodepoint = DrawTextCodepoint
  *
  * @return {undefined}
  */
-function DrawTextCodepoints(font, codepoints, codepointCount, position, fontSize, spacing, tint) {
+function DrawTextCodepoints(
+  font,
+  codepoints,
+  codepointCount,
+  position,
+  fontSize,
+  spacing,
+  tint,
+) {
   return r.BindDrawTextCodepoints(
     font.baseSize,
     font.glyphCount,
@@ -6431,10 +6089,10 @@ function DrawTextCodepoints(font, codepoints, codepointCount, position, fontSize
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawTextCodepoints = DrawTextCodepoints
+raylib.DrawTextCodepoints = DrawTextCodepoints;
 
 /**
  * Set vertical line spacing when drawing with line-breaks
@@ -6444,11 +6102,9 @@ raylib.DrawTextCodepoints = DrawTextCodepoints
  * @return {undefined}
  */
 function SetTextLineSpacing(spacing) {
-  return r.BindSetTextLineSpacing(
-    spacing
-  )
+  return r.BindSetTextLineSpacing(spacing);
 }
-raylib.SetTextLineSpacing = SetTextLineSpacing
+raylib.SetTextLineSpacing = SetTextLineSpacing;
 
 /**
  * Measure string width for default font
@@ -6459,12 +6115,9 @@ raylib.SetTextLineSpacing = SetTextLineSpacing
  * @return {number} The resulting int.
  */
 function MeasureText(text, fontSize) {
-  return r.BindMeasureText(
-    text,
-    fontSize
-  )
+  return r.BindMeasureText(text, fontSize);
 }
-raylib.MeasureText = MeasureText
+raylib.MeasureText = MeasureText;
 
 /**
  * Measure string size for Font
@@ -6490,10 +6143,10 @@ function MeasureTextEx(font, text, fontSize, spacing) {
     font.glyphs,
     text,
     fontSize,
-    spacing
-  )
+    spacing,
+  );
 }
-raylib.MeasureTextEx = MeasureTextEx
+raylib.MeasureTextEx = MeasureTextEx;
 
 /**
  * Get glyph index position in font for a codepoint (unicode character), fallback to '?' if not found
@@ -6515,10 +6168,10 @@ function GetGlyphIndex(font, codepoint) {
     font.texture.format,
     font.recs,
     font.glyphs,
-    codepoint
-  )
+    codepoint,
+  );
 }
-raylib.GetGlyphIndex = GetGlyphIndex
+raylib.GetGlyphIndex = GetGlyphIndex;
 
 /**
  * Get glyph font info data for a codepoint (unicode character), fallback to '?' if not found
@@ -6540,10 +6193,10 @@ function GetGlyphInfo(font, codepoint) {
     font.texture.format,
     font.recs,
     font.glyphs,
-    codepoint
-  )
+    codepoint,
+  );
 }
-raylib.GetGlyphInfo = GetGlyphInfo
+raylib.GetGlyphInfo = GetGlyphInfo;
 
 /**
  * Get glyph rectangle in font atlas for a codepoint (unicode character), fallback to '?' if not found
@@ -6565,10 +6218,10 @@ function GetGlyphAtlasRec(font, codepoint) {
     font.texture.format,
     font.recs,
     font.glyphs,
-    codepoint
-  )
+    codepoint,
+  );
 }
-raylib.GetGlyphAtlasRec = GetGlyphAtlasRec
+raylib.GetGlyphAtlasRec = GetGlyphAtlasRec;
 
 /**
  * Load UTF-8 text encoded from codepoints array
@@ -6579,12 +6232,9 @@ raylib.GetGlyphAtlasRec = GetGlyphAtlasRec
  * @return {string} The resulting char *.
  */
 function LoadUTF8(codepoints, length) {
-  return r.BindLoadUTF8(
-    codepoints,
-    length
-  )
+  return r.BindLoadUTF8(codepoints, length);
 }
-raylib.LoadUTF8 = LoadUTF8
+raylib.LoadUTF8 = LoadUTF8;
 
 /**
  * Unload UTF-8 text encoded from codepoints array
@@ -6594,11 +6244,9 @@ raylib.LoadUTF8 = LoadUTF8
  * @return {undefined}
  */
 function UnloadUTF8(text) {
-  return r.BindUnloadUTF8(
-    text
-  )
+  return r.BindUnloadUTF8(text);
 }
-raylib.UnloadUTF8 = UnloadUTF8
+raylib.UnloadUTF8 = UnloadUTF8;
 
 /**
  * Load all codepoints from a UTF-8 text string, codepoints count returned by parameter
@@ -6609,12 +6257,9 @@ raylib.UnloadUTF8 = UnloadUTF8
  * @return {number} The resulting int *.
  */
 function LoadCodepoints(text, count) {
-  return r.BindLoadCodepoints(
-    text,
-    count
-  )
+  return r.BindLoadCodepoints(text, count);
 }
-raylib.LoadCodepoints = LoadCodepoints
+raylib.LoadCodepoints = LoadCodepoints;
 
 /**
  * Unload codepoints data from memory
@@ -6624,11 +6269,9 @@ raylib.LoadCodepoints = LoadCodepoints
  * @return {undefined}
  */
 function UnloadCodepoints(codepoints) {
-  return r.BindUnloadCodepoints(
-    codepoints
-  )
+  return r.BindUnloadCodepoints(codepoints);
 }
-raylib.UnloadCodepoints = UnloadCodepoints
+raylib.UnloadCodepoints = UnloadCodepoints;
 
 /**
  * Get total number of codepoints in a UTF-8 encoded string
@@ -6638,11 +6281,9 @@ raylib.UnloadCodepoints = UnloadCodepoints
  * @return {number} The resulting int.
  */
 function GetCodepointCount(text) {
-  return r.BindGetCodepointCount(
-    text
-  )
+  return r.BindGetCodepointCount(text);
 }
-raylib.GetCodepointCount = GetCodepointCount
+raylib.GetCodepointCount = GetCodepointCount;
 
 /**
  * Get next codepoint in a UTF-8 encoded string, 0x3f('?') is returned on failure
@@ -6653,12 +6294,9 @@ raylib.GetCodepointCount = GetCodepointCount
  * @return {number} The resulting int.
  */
 function GetCodepoint(text, codepointSize) {
-  return r.BindGetCodepoint(
-    text,
-    codepointSize
-  )
+  return r.BindGetCodepoint(text, codepointSize);
 }
-raylib.GetCodepoint = GetCodepoint
+raylib.GetCodepoint = GetCodepoint;
 
 /**
  * Get next codepoint in a UTF-8 encoded string, 0x3f('?') is returned on failure
@@ -6669,12 +6307,9 @@ raylib.GetCodepoint = GetCodepoint
  * @return {number} The resulting int.
  */
 function GetCodepointNext(text, codepointSize) {
-  return r.BindGetCodepointNext(
-    text,
-    codepointSize
-  )
+  return r.BindGetCodepointNext(text, codepointSize);
 }
-raylib.GetCodepointNext = GetCodepointNext
+raylib.GetCodepointNext = GetCodepointNext;
 
 /**
  * Get previous codepoint in a UTF-8 encoded string, 0x3f('?') is returned on failure
@@ -6685,12 +6320,9 @@ raylib.GetCodepointNext = GetCodepointNext
  * @return {number} The resulting int.
  */
 function GetCodepointPrevious(text, codepointSize) {
-  return r.BindGetCodepointPrevious(
-    text,
-    codepointSize
-  )
+  return r.BindGetCodepointPrevious(text, codepointSize);
 }
-raylib.GetCodepointPrevious = GetCodepointPrevious
+raylib.GetCodepointPrevious = GetCodepointPrevious;
 
 /**
  * Encode one codepoint into UTF-8 byte array (array length returned as parameter)
@@ -6701,12 +6333,9 @@ raylib.GetCodepointPrevious = GetCodepointPrevious
  * @return {string} The resulting const char *.
  */
 function CodepointToUTF8(codepoint, utf8Size) {
-  return r.BindCodepointToUTF8(
-    codepoint,
-    utf8Size
-  )
+  return r.BindCodepointToUTF8(codepoint, utf8Size);
 }
-raylib.CodepointToUTF8 = CodepointToUTF8
+raylib.CodepointToUTF8 = CodepointToUTF8;
 
 /**
  * Copy one string to another, returns bytes copied
@@ -6717,12 +6346,9 @@ raylib.CodepointToUTF8 = CodepointToUTF8
  * @return {number} The resulting int.
  */
 function TextCopy(dst, src) {
-  return r.BindTextCopy(
-    dst,
-    src
-  )
+  return r.BindTextCopy(dst, src);
 }
-raylib.TextCopy = TextCopy
+raylib.TextCopy = TextCopy;
 
 /**
  * Check if two text string are equal
@@ -6733,12 +6359,9 @@ raylib.TextCopy = TextCopy
  * @return {boolean} The resulting bool.
  */
 function TextIsEqual(text1, text2) {
-  return r.BindTextIsEqual(
-    text1,
-    text2
-  )
+  return r.BindTextIsEqual(text1, text2);
 }
-raylib.TextIsEqual = TextIsEqual
+raylib.TextIsEqual = TextIsEqual;
 
 /**
  * Get text length, checks for '\0' ending
@@ -6748,11 +6371,9 @@ raylib.TextIsEqual = TextIsEqual
  * @return {number} The resulting unsigned int.
  */
 function TextLength(text) {
-  return r.BindTextLength(
-    text
-  )
+  return r.BindTextLength(text);
 }
-raylib.TextLength = TextLength
+raylib.TextLength = TextLength;
 
 /**
  * Get a piece of a text string
@@ -6764,13 +6385,9 @@ raylib.TextLength = TextLength
  * @return {string} The resulting const char *.
  */
 function TextSubtext(text, position, length) {
-  return r.BindTextSubtext(
-    text,
-    position,
-    length
-  )
+  return r.BindTextSubtext(text, position, length);
 }
-raylib.TextSubtext = TextSubtext
+raylib.TextSubtext = TextSubtext;
 
 /**
  * Replace text string (WARNING: memory must be freed!)
@@ -6782,13 +6399,9 @@ raylib.TextSubtext = TextSubtext
  * @return {string} The resulting char *.
  */
 function TextReplace(text, replace, by) {
-  return r.BindTextReplace(
-    text,
-    replace,
-    by
-  )
+  return r.BindTextReplace(text, replace, by);
 }
-raylib.TextReplace = TextReplace
+raylib.TextReplace = TextReplace;
 
 /**
  * Insert text in a position (WARNING: memory must be freed!)
@@ -6800,13 +6413,9 @@ raylib.TextReplace = TextReplace
  * @return {string} The resulting char *.
  */
 function TextInsert(text, insert, position) {
-  return r.BindTextInsert(
-    text,
-    insert,
-    position
-  )
+  return r.BindTextInsert(text, insert, position);
 }
-raylib.TextInsert = TextInsert
+raylib.TextInsert = TextInsert;
 
 /**
  * Join text strings with delimiter
@@ -6818,13 +6427,9 @@ raylib.TextInsert = TextInsert
  * @return {string} The resulting const char *.
  */
 function TextJoin(textList, count, delimiter) {
-  return r.BindTextJoin(
-    textList,
-    count,
-    delimiter
-  )
+  return r.BindTextJoin(textList, count, delimiter);
 }
-raylib.TextJoin = TextJoin
+raylib.TextJoin = TextJoin;
 
 /**
  * Split text into multiple strings
@@ -6836,13 +6441,9 @@ raylib.TextJoin = TextJoin
  * @return {number} The resulting const char **.
  */
 function TextSplit(text, delimiter, count) {
-  return r.BindTextSplit(
-    text,
-    delimiter,
-    count
-  )
+  return r.BindTextSplit(text, delimiter, count);
 }
-raylib.TextSplit = TextSplit
+raylib.TextSplit = TextSplit;
 
 /**
  * Append text at specific position and move cursor!
@@ -6854,13 +6455,9 @@ raylib.TextSplit = TextSplit
  * @return {undefined}
  */
 function TextAppend(text, append, position) {
-  return r.BindTextAppend(
-    text,
-    append,
-    position
-  )
+  return r.BindTextAppend(text, append, position);
 }
-raylib.TextAppend = TextAppend
+raylib.TextAppend = TextAppend;
 
 /**
  * Find first text occurrence within a string
@@ -6871,12 +6468,9 @@ raylib.TextAppend = TextAppend
  * @return {number} The resulting int.
  */
 function TextFindIndex(text, find) {
-  return r.BindTextFindIndex(
-    text,
-    find
-  )
+  return r.BindTextFindIndex(text, find);
 }
-raylib.TextFindIndex = TextFindIndex
+raylib.TextFindIndex = TextFindIndex;
 
 /**
  * Get upper case version of provided string
@@ -6886,11 +6480,9 @@ raylib.TextFindIndex = TextFindIndex
  * @return {string} The resulting const char *.
  */
 function TextToUpper(text) {
-  return r.BindTextToUpper(
-    text
-  )
+  return r.BindTextToUpper(text);
 }
-raylib.TextToUpper = TextToUpper
+raylib.TextToUpper = TextToUpper;
 
 /**
  * Get lower case version of provided string
@@ -6900,11 +6492,9 @@ raylib.TextToUpper = TextToUpper
  * @return {string} The resulting const char *.
  */
 function TextToLower(text) {
-  return r.BindTextToLower(
-    text
-  )
+  return r.BindTextToLower(text);
 }
-raylib.TextToLower = TextToLower
+raylib.TextToLower = TextToLower;
 
 /**
  * Get Pascal case notation version of provided string
@@ -6914,11 +6504,9 @@ raylib.TextToLower = TextToLower
  * @return {string} The resulting const char *.
  */
 function TextToPascal(text) {
-  return r.BindTextToPascal(
-    text
-  )
+  return r.BindTextToPascal(text);
 }
-raylib.TextToPascal = TextToPascal
+raylib.TextToPascal = TextToPascal;
 
 /**
  * Get Snake case notation version of provided string
@@ -6928,11 +6516,9 @@ raylib.TextToPascal = TextToPascal
  * @return {string} The resulting const char *.
  */
 function TextToSnake(text) {
-  return r.BindTextToSnake(
-    text
-  )
+  return r.BindTextToSnake(text);
 }
-raylib.TextToSnake = TextToSnake
+raylib.TextToSnake = TextToSnake;
 
 /**
  * Get Camel case notation version of provided string
@@ -6942,11 +6528,9 @@ raylib.TextToSnake = TextToSnake
  * @return {string} The resulting const char *.
  */
 function TextToCamel(text) {
-  return r.BindTextToCamel(
-    text
-  )
+  return r.BindTextToCamel(text);
 }
-raylib.TextToCamel = TextToCamel
+raylib.TextToCamel = TextToCamel;
 
 /**
  * Get integer value from text (negative values not supported)
@@ -6956,11 +6540,9 @@ raylib.TextToCamel = TextToCamel
  * @return {number} The resulting int.
  */
 function TextToInteger(text) {
-  return r.BindTextToInteger(
-    text
-  )
+  return r.BindTextToInteger(text);
 }
-raylib.TextToInteger = TextToInteger
+raylib.TextToInteger = TextToInteger;
 
 /**
  * Get float value from text (negative values not supported)
@@ -6970,11 +6552,9 @@ raylib.TextToInteger = TextToInteger
  * @return {number} The resulting float.
  */
 function TextToFloat(text) {
-  return r.BindTextToFloat(
-    text
-  )
+  return r.BindTextToFloat(text);
 }
-raylib.TextToFloat = TextToFloat
+raylib.TextToFloat = TextToFloat;
 
 /**
  * Draw a line in 3D world space
@@ -6996,10 +6576,10 @@ function DrawLine3D(startPos, endPos, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawLine3D = DrawLine3D
+raylib.DrawLine3D = DrawLine3D;
 
 /**
  * Draw a point in 3D space, actually a small line
@@ -7017,10 +6597,10 @@ function DrawPoint3D(position, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawPoint3D = DrawPoint3D
+raylib.DrawPoint3D = DrawPoint3D;
 
 /**
  * Draw a circle in 3D world space
@@ -7046,10 +6626,10 @@ function DrawCircle3D(center, radius, rotationAxis, rotationAngle, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCircle3D = DrawCircle3D
+raylib.DrawCircle3D = DrawCircle3D;
 
 /**
  * Draw a color-filled triangle (vertex in counter-clockwise order!)
@@ -7075,10 +6655,10 @@ function DrawTriangle3D(v1, v2, v3, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawTriangle3D = DrawTriangle3D
+raylib.DrawTriangle3D = DrawTriangle3D;
 
 /**
  * Draw a triangle strip defined by points
@@ -7096,10 +6676,10 @@ function DrawTriangleStrip3D(points, pointCount, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawTriangleStrip3D = DrawTriangleStrip3D
+raylib.DrawTriangleStrip3D = DrawTriangleStrip3D;
 
 /**
  * Draw cube
@@ -7123,10 +6703,10 @@ function DrawCube(position, width, height, length, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCube = DrawCube
+raylib.DrawCube = DrawCube;
 
 /**
  * Draw cube (Vector version)
@@ -7148,10 +6728,10 @@ function DrawCubeV(position, size, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCubeV = DrawCubeV
+raylib.DrawCubeV = DrawCubeV;
 
 /**
  * Draw cube wires
@@ -7175,10 +6755,10 @@ function DrawCubeWires(position, width, height, length, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCubeWires = DrawCubeWires
+raylib.DrawCubeWires = DrawCubeWires;
 
 /**
  * Draw cube wires (Vector version)
@@ -7200,10 +6780,10 @@ function DrawCubeWiresV(position, size, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCubeWiresV = DrawCubeWiresV
+raylib.DrawCubeWiresV = DrawCubeWiresV;
 
 /**
  * Draw sphere
@@ -7223,10 +6803,10 @@ function DrawSphere(centerPos, radius, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSphere = DrawSphere
+raylib.DrawSphere = DrawSphere;
 
 /**
  * Draw sphere with extended parameters
@@ -7250,10 +6830,10 @@ function DrawSphereEx(centerPos, radius, rings, slices, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSphereEx = DrawSphereEx
+raylib.DrawSphereEx = DrawSphereEx;
 
 /**
  * Draw sphere wires
@@ -7277,10 +6857,10 @@ function DrawSphereWires(centerPos, radius, rings, slices, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawSphereWires = DrawSphereWires
+raylib.DrawSphereWires = DrawSphereWires;
 
 /**
  * Draw a cylinder/cone
@@ -7294,7 +6874,14 @@ raylib.DrawSphereWires = DrawSphereWires
  *
  * @return {undefined}
  */
-function DrawCylinder(position, radiusTop, radiusBottom, height, slices, color) {
+function DrawCylinder(
+  position,
+  radiusTop,
+  radiusBottom,
+  height,
+  slices,
+  color,
+) {
   return r.BindDrawCylinder(
     position.x,
     position.y,
@@ -7306,10 +6893,10 @@ function DrawCylinder(position, radiusTop, radiusBottom, height, slices, color) 
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCylinder = DrawCylinder
+raylib.DrawCylinder = DrawCylinder;
 
 /**
  * Draw a cylinder with base at startPos and top at endPos
@@ -7323,7 +6910,14 @@ raylib.DrawCylinder = DrawCylinder
  *
  * @return {undefined}
  */
-function DrawCylinderEx(startPos, endPos, startRadius, endRadius, sides, color) {
+function DrawCylinderEx(
+  startPos,
+  endPos,
+  startRadius,
+  endRadius,
+  sides,
+  color,
+) {
   return r.BindDrawCylinderEx(
     startPos.x,
     startPos.y,
@@ -7337,10 +6931,10 @@ function DrawCylinderEx(startPos, endPos, startRadius, endRadius, sides, color) 
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCylinderEx = DrawCylinderEx
+raylib.DrawCylinderEx = DrawCylinderEx;
 
 /**
  * Draw a cylinder/cone wires
@@ -7354,7 +6948,14 @@ raylib.DrawCylinderEx = DrawCylinderEx
  *
  * @return {undefined}
  */
-function DrawCylinderWires(position, radiusTop, radiusBottom, height, slices, color) {
+function DrawCylinderWires(
+  position,
+  radiusTop,
+  radiusBottom,
+  height,
+  slices,
+  color,
+) {
   return r.BindDrawCylinderWires(
     position.x,
     position.y,
@@ -7366,10 +6967,10 @@ function DrawCylinderWires(position, radiusTop, radiusBottom, height, slices, co
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCylinderWires = DrawCylinderWires
+raylib.DrawCylinderWires = DrawCylinderWires;
 
 /**
  * Draw a cylinder wires with base at startPos and top at endPos
@@ -7383,7 +6984,14 @@ raylib.DrawCylinderWires = DrawCylinderWires
  *
  * @return {undefined}
  */
-function DrawCylinderWiresEx(startPos, endPos, startRadius, endRadius, sides, color) {
+function DrawCylinderWiresEx(
+  startPos,
+  endPos,
+  startRadius,
+  endRadius,
+  sides,
+  color,
+) {
   return r.BindDrawCylinderWiresEx(
     startPos.x,
     startPos.y,
@@ -7397,10 +7005,10 @@ function DrawCylinderWiresEx(startPos, endPos, startRadius, endRadius, sides, co
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCylinderWiresEx = DrawCylinderWiresEx
+raylib.DrawCylinderWiresEx = DrawCylinderWiresEx;
 
 /**
  * Draw a capsule with the center of its sphere caps at startPos and endPos
@@ -7428,10 +7036,10 @@ function DrawCapsule(startPos, endPos, radius, slices, rings, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCapsule = DrawCapsule
+raylib.DrawCapsule = DrawCapsule;
 
 /**
  * Draw capsule wireframe with the center of its sphere caps at startPos and endPos
@@ -7459,10 +7067,10 @@ function DrawCapsuleWires(startPos, endPos, radius, slices, rings, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawCapsuleWires = DrawCapsuleWires
+raylib.DrawCapsuleWires = DrawCapsuleWires;
 
 /**
  * Draw a plane XZ
@@ -7483,10 +7091,10 @@ function DrawPlane(centerPos, size, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawPlane = DrawPlane
+raylib.DrawPlane = DrawPlane;
 
 /**
  * Draw a ray line
@@ -7507,10 +7115,10 @@ function DrawRay(ray, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawRay = DrawRay
+raylib.DrawRay = DrawRay;
 
 /**
  * Draw a grid (centered at (0, 0, 0))
@@ -7521,12 +7129,9 @@ raylib.DrawRay = DrawRay
  * @return {undefined}
  */
 function DrawGrid(slices, spacing) {
-  return r.BindDrawGrid(
-    slices,
-    spacing
-  )
+  return r.BindDrawGrid(slices, spacing);
 }
-raylib.DrawGrid = DrawGrid
+raylib.DrawGrid = DrawGrid;
 
 /**
  * Load model from files (meshes and materials)
@@ -7536,11 +7141,9 @@ raylib.DrawGrid = DrawGrid
  * @return {Model} The resulting Model.
  */
 function LoadModel(fileName) {
-  return r.BindLoadModel(
-    fileName
-  )
+  return r.BindLoadModel(fileName);
 }
-raylib.LoadModel = LoadModel
+raylib.LoadModel = LoadModel;
 
 /**
  * Load model from generated mesh (default material)
@@ -7567,10 +7170,10 @@ function LoadModelFromMesh(mesh) {
     mesh.boneMatrices,
     mesh.boneCount,
     mesh.vaoId,
-    mesh.vboId
-  )
+    mesh.vboId,
+  );
 }
-raylib.LoadModelFromMesh = LoadModelFromMesh
+raylib.LoadModelFromMesh = LoadModelFromMesh;
 
 /**
  * Check if a model is valid (loaded in GPU, VAO/VBOs)
@@ -7604,10 +7207,10 @@ function IsModelValid(model) {
     model.meshMaterial,
     model.boneCount,
     model.bones,
-    model.bindPose
-  )
+    model.bindPose,
+  );
 }
-raylib.IsModelValid = IsModelValid
+raylib.IsModelValid = IsModelValid;
 
 /**
  * Unload model (including meshes) from memory (RAM and/or VRAM)
@@ -7641,10 +7244,10 @@ function UnloadModel(model) {
     model.meshMaterial,
     model.boneCount,
     model.bones,
-    model.bindPose
-  )
+    model.bindPose,
+  );
 }
-raylib.UnloadModel = UnloadModel
+raylib.UnloadModel = UnloadModel;
 
 /**
  * Compute model bounding box limits (considers all meshes)
@@ -7678,10 +7281,10 @@ function GetModelBoundingBox(model) {
     model.meshMaterial,
     model.boneCount,
     model.bones,
-    model.bindPose
-  )
+    model.bindPose,
+  );
 }
-raylib.GetModelBoundingBox = GetModelBoundingBox
+raylib.GetModelBoundingBox = GetModelBoundingBox;
 
 /**
  * Draw a model (with texture if set)
@@ -7726,10 +7329,10 @@ function DrawModel(model, position, scale, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawModel = DrawModel
+raylib.DrawModel = DrawModel;
 
 /**
  * Draw a model with extended parameters
@@ -7743,7 +7346,14 @@ raylib.DrawModel = DrawModel
  *
  * @return {undefined}
  */
-function DrawModelEx(model, position, rotationAxis, rotationAngle, scale, tint) {
+function DrawModelEx(
+  model,
+  position,
+  rotationAxis,
+  rotationAngle,
+  scale,
+  tint,
+) {
   return r.BindDrawModelEx(
     model.transform.m0,
     model.transform.m4,
@@ -7782,10 +7392,10 @@ function DrawModelEx(model, position, rotationAxis, rotationAngle, scale, tint) 
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawModelEx = DrawModelEx
+raylib.DrawModelEx = DrawModelEx;
 
 /**
  * Draw a model wires (with texture if set)
@@ -7830,10 +7440,10 @@ function DrawModelWires(model, position, scale, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawModelWires = DrawModelWires
+raylib.DrawModelWires = DrawModelWires;
 
 /**
  * Draw a model wires (with texture if set) with extended parameters
@@ -7847,7 +7457,14 @@ raylib.DrawModelWires = DrawModelWires
  *
  * @return {undefined}
  */
-function DrawModelWiresEx(model, position, rotationAxis, rotationAngle, scale, tint) {
+function DrawModelWiresEx(
+  model,
+  position,
+  rotationAxis,
+  rotationAngle,
+  scale,
+  tint,
+) {
   return r.BindDrawModelWiresEx(
     model.transform.m0,
     model.transform.m4,
@@ -7886,10 +7503,10 @@ function DrawModelWiresEx(model, position, rotationAxis, rotationAngle, scale, t
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawModelWiresEx = DrawModelWiresEx
+raylib.DrawModelWiresEx = DrawModelWiresEx;
 
 /**
  * Draw a model as points
@@ -7934,10 +7551,10 @@ function DrawModelPoints(model, position, scale, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawModelPoints = DrawModelPoints
+raylib.DrawModelPoints = DrawModelPoints;
 
 /**
  * Draw a model as points with extended parameters
@@ -7951,7 +7568,14 @@ raylib.DrawModelPoints = DrawModelPoints
  *
  * @return {undefined}
  */
-function DrawModelPointsEx(model, position, rotationAxis, rotationAngle, scale, tint) {
+function DrawModelPointsEx(
+  model,
+  position,
+  rotationAxis,
+  rotationAngle,
+  scale,
+  tint,
+) {
   return r.BindDrawModelPointsEx(
     model.transform.m0,
     model.transform.m4,
@@ -7990,10 +7614,10 @@ function DrawModelPointsEx(model, position, rotationAxis, rotationAngle, scale, 
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawModelPointsEx = DrawModelPointsEx
+raylib.DrawModelPointsEx = DrawModelPointsEx;
 
 /**
  * Draw bounding box (wires)
@@ -8014,10 +7638,10 @@ function DrawBoundingBox(box, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.DrawBoundingBox = DrawBoundingBox
+raylib.DrawBoundingBox = DrawBoundingBox;
 
 /**
  * Draw a billboard texture
@@ -8055,10 +7679,10 @@ function DrawBillboard(camera, texture, position, scale, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawBillboard = DrawBillboard
+raylib.DrawBillboard = DrawBillboard;
 
 /**
  * Draw a billboard texture defined by source
@@ -8102,10 +7726,10 @@ function DrawBillboardRec(camera, texture, source, position, size, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawBillboardRec = DrawBillboardRec
+raylib.DrawBillboardRec = DrawBillboardRec;
 
 /**
  * Draw a billboard texture defined by source and rotation
@@ -8122,7 +7746,17 @@ raylib.DrawBillboardRec = DrawBillboardRec
  *
  * @return {undefined}
  */
-function DrawBillboardPro(camera, texture, source, position, up, size, origin, rotation, tint) {
+function DrawBillboardPro(
+  camera,
+  texture,
+  source,
+  position,
+  up,
+  size,
+  origin,
+  rotation,
+  tint,
+) {
   return r.BindDrawBillboardPro(
     camera.position.x,
     camera.position.y,
@@ -8158,10 +7792,10 @@ function DrawBillboardPro(camera, texture, source, position, up, size, origin, r
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
+    tint.a,
+  );
 }
-raylib.DrawBillboardPro = DrawBillboardPro
+raylib.DrawBillboardPro = DrawBillboardPro;
 
 /**
  * Update mesh vertex data in GPU for a specific buffer index
@@ -8196,10 +7830,10 @@ function UpdateMeshBuffer(mesh, index, data, dataSize, offset) {
     index,
     data,
     dataSize,
-    offset
-  )
+    offset,
+  );
 }
-raylib.UpdateMeshBuffer = UpdateMeshBuffer
+raylib.UpdateMeshBuffer = UpdateMeshBuffer;
 
 /**
  * Unload mesh data from CPU and GPU
@@ -8226,10 +7860,10 @@ function UnloadMesh(mesh) {
     mesh.boneMatrices,
     mesh.boneCount,
     mesh.vaoId,
-    mesh.vboId
-  )
+    mesh.vboId,
+  );
 }
-raylib.UnloadMesh = UnloadMesh
+raylib.UnloadMesh = UnloadMesh;
 
 /**
  * Compute mesh bounding box limits
@@ -8256,10 +7890,10 @@ function GetMeshBoundingBox(mesh) {
     mesh.boneMatrices,
     mesh.boneCount,
     mesh.vaoId,
-    mesh.vboId
-  )
+    mesh.vboId,
+  );
 }
-raylib.GetMeshBoundingBox = GetMeshBoundingBox
+raylib.GetMeshBoundingBox = GetMeshBoundingBox;
 
 /**
  * Export mesh data to file, returns true on success
@@ -8288,10 +7922,10 @@ function ExportMesh(mesh, fileName) {
     mesh.boneCount,
     mesh.vaoId,
     mesh.vboId,
-    fileName
-  )
+    fileName,
+  );
 }
-raylib.ExportMesh = ExportMesh
+raylib.ExportMesh = ExportMesh;
 
 /**
  * Export mesh as code file (.h) defining multiple arrays of vertex attributes
@@ -8320,10 +7954,10 @@ function ExportMeshAsCode(mesh, fileName) {
     mesh.boneCount,
     mesh.vaoId,
     mesh.vboId,
-    fileName
-  )
+    fileName,
+  );
 }
-raylib.ExportMeshAsCode = ExportMeshAsCode
+raylib.ExportMeshAsCode = ExportMeshAsCode;
 
 /**
  * Generate polygonal mesh
@@ -8334,12 +7968,9 @@ raylib.ExportMeshAsCode = ExportMeshAsCode
  * @return {Mesh} The resulting Mesh.
  */
 function GenMeshPoly(sides, radius) {
-  return r.BindGenMeshPoly(
-    sides,
-    radius
-  )
+  return r.BindGenMeshPoly(sides, radius);
 }
-raylib.GenMeshPoly = GenMeshPoly
+raylib.GenMeshPoly = GenMeshPoly;
 
 /**
  * Generate plane mesh (with subdivisions)
@@ -8352,14 +7983,9 @@ raylib.GenMeshPoly = GenMeshPoly
  * @return {Mesh} The resulting Mesh.
  */
 function GenMeshPlane(width, length, resX, resZ) {
-  return r.BindGenMeshPlane(
-    width,
-    length,
-    resX,
-    resZ
-  )
+  return r.BindGenMeshPlane(width, length, resX, resZ);
 }
-raylib.GenMeshPlane = GenMeshPlane
+raylib.GenMeshPlane = GenMeshPlane;
 
 /**
  * Generate cuboid mesh
@@ -8371,13 +7997,9 @@ raylib.GenMeshPlane = GenMeshPlane
  * @return {Mesh} The resulting Mesh.
  */
 function GenMeshCube(width, height, length) {
-  return r.BindGenMeshCube(
-    width,
-    height,
-    length
-  )
+  return r.BindGenMeshCube(width, height, length);
 }
-raylib.GenMeshCube = GenMeshCube
+raylib.GenMeshCube = GenMeshCube;
 
 /**
  * Generate sphere mesh (standard sphere)
@@ -8389,13 +8011,9 @@ raylib.GenMeshCube = GenMeshCube
  * @return {Mesh} The resulting Mesh.
  */
 function GenMeshSphere(radius, rings, slices) {
-  return r.BindGenMeshSphere(
-    radius,
-    rings,
-    slices
-  )
+  return r.BindGenMeshSphere(radius, rings, slices);
 }
-raylib.GenMeshSphere = GenMeshSphere
+raylib.GenMeshSphere = GenMeshSphere;
 
 /**
  * Generate half-sphere mesh (no bottom cap)
@@ -8407,13 +8025,9 @@ raylib.GenMeshSphere = GenMeshSphere
  * @return {Mesh} The resulting Mesh.
  */
 function GenMeshHemiSphere(radius, rings, slices) {
-  return r.BindGenMeshHemiSphere(
-    radius,
-    rings,
-    slices
-  )
+  return r.BindGenMeshHemiSphere(radius, rings, slices);
 }
-raylib.GenMeshHemiSphere = GenMeshHemiSphere
+raylib.GenMeshHemiSphere = GenMeshHemiSphere;
 
 /**
  * Generate cylinder mesh
@@ -8425,13 +8039,9 @@ raylib.GenMeshHemiSphere = GenMeshHemiSphere
  * @return {Mesh} The resulting Mesh.
  */
 function GenMeshCylinder(radius, height, slices) {
-  return r.BindGenMeshCylinder(
-    radius,
-    height,
-    slices
-  )
+  return r.BindGenMeshCylinder(radius, height, slices);
 }
-raylib.GenMeshCylinder = GenMeshCylinder
+raylib.GenMeshCylinder = GenMeshCylinder;
 
 /**
  * Generate cone/pyramid mesh
@@ -8443,13 +8053,9 @@ raylib.GenMeshCylinder = GenMeshCylinder
  * @return {Mesh} The resulting Mesh.
  */
 function GenMeshCone(radius, height, slices) {
-  return r.BindGenMeshCone(
-    radius,
-    height,
-    slices
-  )
+  return r.BindGenMeshCone(radius, height, slices);
 }
-raylib.GenMeshCone = GenMeshCone
+raylib.GenMeshCone = GenMeshCone;
 
 /**
  * Generate torus mesh
@@ -8462,14 +8068,9 @@ raylib.GenMeshCone = GenMeshCone
  * @return {Mesh} The resulting Mesh.
  */
 function GenMeshTorus(radius, size, radSeg, sides) {
-  return r.BindGenMeshTorus(
-    radius,
-    size,
-    radSeg,
-    sides
-  )
+  return r.BindGenMeshTorus(radius, size, radSeg, sides);
 }
-raylib.GenMeshTorus = GenMeshTorus
+raylib.GenMeshTorus = GenMeshTorus;
 
 /**
  * Generate trefoil knot mesh
@@ -8482,14 +8083,9 @@ raylib.GenMeshTorus = GenMeshTorus
  * @return {Mesh} The resulting Mesh.
  */
 function GenMeshKnot(radius, size, radSeg, sides) {
-  return r.BindGenMeshKnot(
-    radius,
-    size,
-    radSeg,
-    sides
-  )
+  return r.BindGenMeshKnot(radius, size, radSeg, sides);
 }
-raylib.GenMeshKnot = GenMeshKnot
+raylib.GenMeshKnot = GenMeshKnot;
 
 /**
  * Generate heightmap mesh from image data
@@ -8508,10 +8104,10 @@ function GenMeshHeightmap(heightmap, size) {
     heightmap.format,
     size.x,
     size.y,
-    size.z
-  )
+    size.z,
+  );
 }
-raylib.GenMeshHeightmap = GenMeshHeightmap
+raylib.GenMeshHeightmap = GenMeshHeightmap;
 
 /**
  * Generate cubes-based map mesh from image data
@@ -8530,10 +8126,10 @@ function GenMeshCubicmap(cubicmap, cubeSize) {
     cubicmap.format,
     cubeSize.x,
     cubeSize.y,
-    cubeSize.z
-  )
+    cubeSize.z,
+  );
 }
-raylib.GenMeshCubicmap = GenMeshCubicmap
+raylib.GenMeshCubicmap = GenMeshCubicmap;
 
 /**
  * Check collision between two spheres
@@ -8554,10 +8150,10 @@ function CheckCollisionSpheres(center1, radius1, center2, radius2) {
     center2.x,
     center2.y,
     center2.z,
-    radius2
-  )
+    radius2,
+  );
 }
-raylib.CheckCollisionSpheres = CheckCollisionSpheres
+raylib.CheckCollisionSpheres = CheckCollisionSpheres;
 
 /**
  * Check collision between two bounding boxes
@@ -8580,10 +8176,10 @@ function CheckCollisionBoxes(box1, box2) {
     box2.min.z,
     box2.max.x,
     box2.max.y,
-    box2.max.z
-  )
+    box2.max.z,
+  );
 }
-raylib.CheckCollisionBoxes = CheckCollisionBoxes
+raylib.CheckCollisionBoxes = CheckCollisionBoxes;
 
 /**
  * Check collision between box and sphere
@@ -8605,10 +8201,10 @@ function CheckCollisionBoxSphere(box, center, radius) {
     center.x,
     center.y,
     center.z,
-    radius
-  )
+    radius,
+  );
 }
-raylib.CheckCollisionBoxSphere = CheckCollisionBoxSphere
+raylib.CheckCollisionBoxSphere = CheckCollisionBoxSphere;
 
 /**
  * Get collision info between ray and sphere
@@ -8630,10 +8226,10 @@ function GetRayCollisionSphere(ray, center, radius) {
     center.x,
     center.y,
     center.z,
-    radius
-  )
+    radius,
+  );
 }
-raylib.GetRayCollisionSphere = GetRayCollisionSphere
+raylib.GetRayCollisionSphere = GetRayCollisionSphere;
 
 /**
  * Get collision info between ray and box
@@ -8656,10 +8252,10 @@ function GetRayCollisionBox(ray, box) {
     box.min.z,
     box.max.x,
     box.max.y,
-    box.max.z
-  )
+    box.max.z,
+  );
 }
-raylib.GetRayCollisionBox = GetRayCollisionBox
+raylib.GetRayCollisionBox = GetRayCollisionBox;
 
 /**
  * Get collision info between ray and mesh
@@ -8710,10 +8306,10 @@ function GetRayCollisionMesh(ray, mesh, transform) {
     transform.m3,
     transform.m7,
     transform.m11,
-    transform.m15
-  )
+    transform.m15,
+  );
 }
-raylib.GetRayCollisionMesh = GetRayCollisionMesh
+raylib.GetRayCollisionMesh = GetRayCollisionMesh;
 
 /**
  * Get collision info between ray and triangle
@@ -8741,10 +8337,10 @@ function GetRayCollisionTriangle(ray, p1, p2, p3) {
     p2.z,
     p3.x,
     p3.y,
-    p3.z
-  )
+    p3.z,
+  );
 }
-raylib.GetRayCollisionTriangle = GetRayCollisionTriangle
+raylib.GetRayCollisionTriangle = GetRayCollisionTriangle;
 
 /**
  * Get collision info between ray and quad
@@ -8776,10 +8372,10 @@ function GetRayCollisionQuad(ray, p1, p2, p3, p4) {
     p3.z,
     p4.x,
     p4.y,
-    p4.z
-  )
+    p4.z,
+  );
 }
-raylib.GetRayCollisionQuad = GetRayCollisionQuad
+raylib.GetRayCollisionQuad = GetRayCollisionQuad;
 
 /**
  * Initialize audio device and context
@@ -8787,9 +8383,9 @@ raylib.GetRayCollisionQuad = GetRayCollisionQuad
  * @return {undefined}
  */
 function InitAudioDevice() {
-  return r.BindInitAudioDevice()
+  return r.BindInitAudioDevice();
 }
-raylib.InitAudioDevice = InitAudioDevice
+raylib.InitAudioDevice = InitAudioDevice;
 
 /**
  * Close the audio device and context
@@ -8797,9 +8393,9 @@ raylib.InitAudioDevice = InitAudioDevice
  * @return {undefined}
  */
 function CloseAudioDevice() {
-  return r.BindCloseAudioDevice()
+  return r.BindCloseAudioDevice();
 }
-raylib.CloseAudioDevice = CloseAudioDevice
+raylib.CloseAudioDevice = CloseAudioDevice;
 
 /**
  * Check if audio device has been initialized successfully
@@ -8807,9 +8403,9 @@ raylib.CloseAudioDevice = CloseAudioDevice
  * @return {boolean} The resulting bool.
  */
 function IsAudioDeviceReady() {
-  return r.BindIsAudioDeviceReady()
+  return r.BindIsAudioDeviceReady();
 }
-raylib.IsAudioDeviceReady = IsAudioDeviceReady
+raylib.IsAudioDeviceReady = IsAudioDeviceReady;
 
 /**
  * Set master volume (listener)
@@ -8819,11 +8415,9 @@ raylib.IsAudioDeviceReady = IsAudioDeviceReady
  * @return {undefined}
  */
 function SetMasterVolume(volume) {
-  return r.BindSetMasterVolume(
-    volume
-  )
+  return r.BindSetMasterVolume(volume);
 }
-raylib.SetMasterVolume = SetMasterVolume
+raylib.SetMasterVolume = SetMasterVolume;
 
 /**
  * Get master volume (listener)
@@ -8831,9 +8425,9 @@ raylib.SetMasterVolume = SetMasterVolume
  * @return {number} The resulting float.
  */
 function GetMasterVolume() {
-  return r.BindGetMasterVolume()
+  return r.BindGetMasterVolume();
 }
-raylib.GetMasterVolume = GetMasterVolume
+raylib.GetMasterVolume = GetMasterVolume;
 
 /**
  * Load wave data from file
@@ -8843,11 +8437,9 @@ raylib.GetMasterVolume = GetMasterVolume
  * @return {Wave} The resulting Wave.
  */
 function LoadWave(fileName) {
-  return r.BindLoadWave(
-    fileName
-  )
+  return r.BindLoadWave(fileName);
 }
-raylib.LoadWave = LoadWave
+raylib.LoadWave = LoadWave;
 
 /**
  * Load wave from memory buffer, fileType refers to extension: i.e. '.wav'
@@ -8859,13 +8451,9 @@ raylib.LoadWave = LoadWave
  * @return {Wave} The resulting Wave.
  */
 function LoadWaveFromMemory(fileType, fileData, dataSize) {
-  return r.BindLoadWaveFromMemory(
-    fileType,
-    fileData,
-    dataSize
-  )
+  return r.BindLoadWaveFromMemory(fileType, fileData, dataSize);
 }
-raylib.LoadWaveFromMemory = LoadWaveFromMemory
+raylib.LoadWaveFromMemory = LoadWaveFromMemory;
 
 /**
  * Checks if wave data is valid (data loaded and parameters)
@@ -8880,10 +8468,10 @@ function IsWaveValid(wave) {
     wave.sampleRate,
     wave.sampleSize,
     wave.channels,
-    wave.data
-  )
+    wave.data,
+  );
 }
-raylib.IsWaveValid = IsWaveValid
+raylib.IsWaveValid = IsWaveValid;
 
 /**
  * Load sound from file
@@ -8893,11 +8481,9 @@ raylib.IsWaveValid = IsWaveValid
  * @return {Sound} The resulting Sound.
  */
 function LoadSound(fileName) {
-  return r.BindLoadSound(
-    fileName
-  )
+  return r.BindLoadSound(fileName);
 }
-raylib.LoadSound = LoadSound
+raylib.LoadSound = LoadSound;
 
 /**
  * Load sound from wave data
@@ -8912,10 +8498,10 @@ function LoadSoundFromWave(wave) {
     wave.sampleRate,
     wave.sampleSize,
     wave.channels,
-    wave.data
-  )
+    wave.data,
+  );
 }
-raylib.LoadSoundFromWave = LoadSoundFromWave
+raylib.LoadSoundFromWave = LoadSoundFromWave;
 
 /**
  * Create a new sound that shares the same sample data as the source sound, does not own the sound data
@@ -8931,10 +8517,10 @@ function LoadSoundAlias(source) {
     source.stream.sampleRate,
     source.stream.sampleSize,
     source.stream.channels,
-    source.frameCount
-  )
+    source.frameCount,
+  );
 }
-raylib.LoadSoundAlias = LoadSoundAlias
+raylib.LoadSoundAlias = LoadSoundAlias;
 
 /**
  * Checks if a sound is valid (data loaded and buffers initialized)
@@ -8950,10 +8536,10 @@ function IsSoundValid(sound) {
     sound.stream.sampleRate,
     sound.stream.sampleSize,
     sound.stream.channels,
-    sound.frameCount
-  )
+    sound.frameCount,
+  );
 }
-raylib.IsSoundValid = IsSoundValid
+raylib.IsSoundValid = IsSoundValid;
 
 /**
  * Update sound buffer with new data
@@ -8973,10 +8559,10 @@ function UpdateSound(sound, data, sampleCount) {
     sound.stream.channels,
     sound.frameCount,
     data,
-    sampleCount
-  )
+    sampleCount,
+  );
 }
-raylib.UpdateSound = UpdateSound
+raylib.UpdateSound = UpdateSound;
 
 /**
  * Unload wave data
@@ -8991,10 +8577,10 @@ function UnloadWave(wave) {
     wave.sampleRate,
     wave.sampleSize,
     wave.channels,
-    wave.data
-  )
+    wave.data,
+  );
 }
-raylib.UnloadWave = UnloadWave
+raylib.UnloadWave = UnloadWave;
 
 /**
  * Unload sound
@@ -9010,10 +8596,10 @@ function UnloadSound(sound) {
     sound.stream.sampleRate,
     sound.stream.sampleSize,
     sound.stream.channels,
-    sound.frameCount
-  )
+    sound.frameCount,
+  );
 }
-raylib.UnloadSound = UnloadSound
+raylib.UnloadSound = UnloadSound;
 
 /**
  * Unload a sound alias (does not deallocate sample data)
@@ -9029,10 +8615,10 @@ function UnloadSoundAlias(alias) {
     alias.stream.sampleRate,
     alias.stream.sampleSize,
     alias.stream.channels,
-    alias.frameCount
-  )
+    alias.frameCount,
+  );
 }
-raylib.UnloadSoundAlias = UnloadSoundAlias
+raylib.UnloadSoundAlias = UnloadSoundAlias;
 
 /**
  * Export wave data to file, returns true on success
@@ -9049,10 +8635,10 @@ function ExportWave(wave, fileName) {
     wave.sampleSize,
     wave.channels,
     wave.data,
-    fileName
-  )
+    fileName,
+  );
 }
-raylib.ExportWave = ExportWave
+raylib.ExportWave = ExportWave;
 
 /**
  * Export wave sample data to code (.h), returns true on success
@@ -9069,10 +8655,10 @@ function ExportWaveAsCode(wave, fileName) {
     wave.sampleSize,
     wave.channels,
     wave.data,
-    fileName
-  )
+    fileName,
+  );
 }
-raylib.ExportWaveAsCode = ExportWaveAsCode
+raylib.ExportWaveAsCode = ExportWaveAsCode;
 
 /**
  * Play a sound
@@ -9088,10 +8674,10 @@ function PlaySound(sound) {
     sound.stream.sampleRate,
     sound.stream.sampleSize,
     sound.stream.channels,
-    sound.frameCount
-  )
+    sound.frameCount,
+  );
 }
-raylib.PlaySound = PlaySound
+raylib.PlaySound = PlaySound;
 
 /**
  * Stop playing a sound
@@ -9107,10 +8693,10 @@ function StopSound(sound) {
     sound.stream.sampleRate,
     sound.stream.sampleSize,
     sound.stream.channels,
-    sound.frameCount
-  )
+    sound.frameCount,
+  );
 }
-raylib.StopSound = StopSound
+raylib.StopSound = StopSound;
 
 /**
  * Pause a sound
@@ -9126,10 +8712,10 @@ function PauseSound(sound) {
     sound.stream.sampleRate,
     sound.stream.sampleSize,
     sound.stream.channels,
-    sound.frameCount
-  )
+    sound.frameCount,
+  );
 }
-raylib.PauseSound = PauseSound
+raylib.PauseSound = PauseSound;
 
 /**
  * Resume a paused sound
@@ -9145,10 +8731,10 @@ function ResumeSound(sound) {
     sound.stream.sampleRate,
     sound.stream.sampleSize,
     sound.stream.channels,
-    sound.frameCount
-  )
+    sound.frameCount,
+  );
 }
-raylib.ResumeSound = ResumeSound
+raylib.ResumeSound = ResumeSound;
 
 /**
  * Check if a sound is currently playing
@@ -9164,10 +8750,10 @@ function IsSoundPlaying(sound) {
     sound.stream.sampleRate,
     sound.stream.sampleSize,
     sound.stream.channels,
-    sound.frameCount
-  )
+    sound.frameCount,
+  );
 }
-raylib.IsSoundPlaying = IsSoundPlaying
+raylib.IsSoundPlaying = IsSoundPlaying;
 
 /**
  * Set volume for a sound (1.0 is max level)
@@ -9185,10 +8771,10 @@ function SetSoundVolume(sound, volume) {
     sound.stream.sampleSize,
     sound.stream.channels,
     sound.frameCount,
-    volume
-  )
+    volume,
+  );
 }
-raylib.SetSoundVolume = SetSoundVolume
+raylib.SetSoundVolume = SetSoundVolume;
 
 /**
  * Set pitch for a sound (1.0 is base level)
@@ -9206,10 +8792,10 @@ function SetSoundPitch(sound, pitch) {
     sound.stream.sampleSize,
     sound.stream.channels,
     sound.frameCount,
-    pitch
-  )
+    pitch,
+  );
 }
-raylib.SetSoundPitch = SetSoundPitch
+raylib.SetSoundPitch = SetSoundPitch;
 
 /**
  * Set pan for a sound (0.5 is center)
@@ -9227,10 +8813,10 @@ function SetSoundPan(sound, pan) {
     sound.stream.sampleSize,
     sound.stream.channels,
     sound.frameCount,
-    pan
-  )
+    pan,
+  );
 }
-raylib.SetSoundPan = SetSoundPan
+raylib.SetSoundPan = SetSoundPan;
 
 /**
  * Copy a wave to a new wave
@@ -9245,10 +8831,10 @@ function WaveCopy(wave) {
     wave.sampleRate,
     wave.sampleSize,
     wave.channels,
-    wave.data
-  )
+    wave.data,
+  );
 }
-raylib.WaveCopy = WaveCopy
+raylib.WaveCopy = WaveCopy;
 
 /**
  * Load samples data from wave as a 32bit float data array
@@ -9263,10 +8849,10 @@ function LoadWaveSamples(wave) {
     wave.sampleRate,
     wave.sampleSize,
     wave.channels,
-    wave.data
-  )
+    wave.data,
+  );
 }
-raylib.LoadWaveSamples = LoadWaveSamples
+raylib.LoadWaveSamples = LoadWaveSamples;
 
 /**
  * Unload samples data loaded with LoadWaveSamples()
@@ -9276,11 +8862,9 @@ raylib.LoadWaveSamples = LoadWaveSamples
  * @return {undefined}
  */
 function UnloadWaveSamples(samples) {
-  return r.BindUnloadWaveSamples(
-    samples
-  )
+  return r.BindUnloadWaveSamples(samples);
 }
-raylib.UnloadWaveSamples = UnloadWaveSamples
+raylib.UnloadWaveSamples = UnloadWaveSamples;
 
 /**
  * Load music stream from file
@@ -9290,11 +8874,9 @@ raylib.UnloadWaveSamples = UnloadWaveSamples
  * @return {Music} The resulting Music.
  */
 function LoadMusicStream(fileName) {
-  return r.BindLoadMusicStream(
-    fileName
-  )
+  return r.BindLoadMusicStream(fileName);
 }
-raylib.LoadMusicStream = LoadMusicStream
+raylib.LoadMusicStream = LoadMusicStream;
 
 /**
  * Load music stream from data
@@ -9306,13 +8888,9 @@ raylib.LoadMusicStream = LoadMusicStream
  * @return {Music} The resulting Music.
  */
 function LoadMusicStreamFromMemory(fileType, data, dataSize) {
-  return r.BindLoadMusicStreamFromMemory(
-    fileType,
-    data,
-    dataSize
-  )
+  return r.BindLoadMusicStreamFromMemory(fileType, data, dataSize);
 }
-raylib.LoadMusicStreamFromMemory = LoadMusicStreamFromMemory
+raylib.LoadMusicStreamFromMemory = LoadMusicStreamFromMemory;
 
 /**
  * Checks if a music stream is valid (context and buffers initialized)
@@ -9331,10 +8909,10 @@ function IsMusicValid(music) {
     music.frameCount,
     music.looping,
     music.ctxType,
-    music.ctxData
-  )
+    music.ctxData,
+  );
 }
-raylib.IsMusicValid = IsMusicValid
+raylib.IsMusicValid = IsMusicValid;
 
 /**
  * Unload music stream
@@ -9353,10 +8931,10 @@ function UnloadMusicStream(music) {
     music.frameCount,
     music.looping,
     music.ctxType,
-    music.ctxData
-  )
+    music.ctxData,
+  );
 }
-raylib.UnloadMusicStream = UnloadMusicStream
+raylib.UnloadMusicStream = UnloadMusicStream;
 
 /**
  * Start music playing
@@ -9375,10 +8953,10 @@ function PlayMusicStream(music) {
     music.frameCount,
     music.looping,
     music.ctxType,
-    music.ctxData
-  )
+    music.ctxData,
+  );
 }
-raylib.PlayMusicStream = PlayMusicStream
+raylib.PlayMusicStream = PlayMusicStream;
 
 /**
  * Check if music is playing
@@ -9397,10 +8975,10 @@ function IsMusicStreamPlaying(music) {
     music.frameCount,
     music.looping,
     music.ctxType,
-    music.ctxData
-  )
+    music.ctxData,
+  );
 }
-raylib.IsMusicStreamPlaying = IsMusicStreamPlaying
+raylib.IsMusicStreamPlaying = IsMusicStreamPlaying;
 
 /**
  * Updates buffers for music streaming
@@ -9419,10 +8997,10 @@ function UpdateMusicStream(music) {
     music.frameCount,
     music.looping,
     music.ctxType,
-    music.ctxData
-  )
+    music.ctxData,
+  );
 }
-raylib.UpdateMusicStream = UpdateMusicStream
+raylib.UpdateMusicStream = UpdateMusicStream;
 
 /**
  * Stop music playing
@@ -9441,10 +9019,10 @@ function StopMusicStream(music) {
     music.frameCount,
     music.looping,
     music.ctxType,
-    music.ctxData
-  )
+    music.ctxData,
+  );
 }
-raylib.StopMusicStream = StopMusicStream
+raylib.StopMusicStream = StopMusicStream;
 
 /**
  * Pause music playing
@@ -9463,10 +9041,10 @@ function PauseMusicStream(music) {
     music.frameCount,
     music.looping,
     music.ctxType,
-    music.ctxData
-  )
+    music.ctxData,
+  );
 }
-raylib.PauseMusicStream = PauseMusicStream
+raylib.PauseMusicStream = PauseMusicStream;
 
 /**
  * Resume playing paused music
@@ -9485,10 +9063,10 @@ function ResumeMusicStream(music) {
     music.frameCount,
     music.looping,
     music.ctxType,
-    music.ctxData
-  )
+    music.ctxData,
+  );
 }
-raylib.ResumeMusicStream = ResumeMusicStream
+raylib.ResumeMusicStream = ResumeMusicStream;
 
 /**
  * Seek music to a position (in seconds)
@@ -9509,10 +9087,10 @@ function SeekMusicStream(music, position) {
     music.looping,
     music.ctxType,
     music.ctxData,
-    position
-  )
+    position,
+  );
 }
-raylib.SeekMusicStream = SeekMusicStream
+raylib.SeekMusicStream = SeekMusicStream;
 
 /**
  * Set volume for music (1.0 is max level)
@@ -9533,10 +9111,10 @@ function SetMusicVolume(music, volume) {
     music.looping,
     music.ctxType,
     music.ctxData,
-    volume
-  )
+    volume,
+  );
 }
-raylib.SetMusicVolume = SetMusicVolume
+raylib.SetMusicVolume = SetMusicVolume;
 
 /**
  * Set pitch for a music (1.0 is base level)
@@ -9557,10 +9135,10 @@ function SetMusicPitch(music, pitch) {
     music.looping,
     music.ctxType,
     music.ctxData,
-    pitch
-  )
+    pitch,
+  );
 }
-raylib.SetMusicPitch = SetMusicPitch
+raylib.SetMusicPitch = SetMusicPitch;
 
 /**
  * Set pan for a music (0.5 is center)
@@ -9581,10 +9159,10 @@ function SetMusicPan(music, pan) {
     music.looping,
     music.ctxType,
     music.ctxData,
-    pan
-  )
+    pan,
+  );
 }
-raylib.SetMusicPan = SetMusicPan
+raylib.SetMusicPan = SetMusicPan;
 
 /**
  * Get music time length (in seconds)
@@ -9603,10 +9181,10 @@ function GetMusicTimeLength(music) {
     music.frameCount,
     music.looping,
     music.ctxType,
-    music.ctxData
-  )
+    music.ctxData,
+  );
 }
-raylib.GetMusicTimeLength = GetMusicTimeLength
+raylib.GetMusicTimeLength = GetMusicTimeLength;
 
 /**
  * Get current music time played (in seconds)
@@ -9625,10 +9203,10 @@ function GetMusicTimePlayed(music) {
     music.frameCount,
     music.looping,
     music.ctxType,
-    music.ctxData
-  )
+    music.ctxData,
+  );
 }
-raylib.GetMusicTimePlayed = GetMusicTimePlayed
+raylib.GetMusicTimePlayed = GetMusicTimePlayed;
 
 /**
  * Load audio stream (to stream raw audio pcm data)
@@ -9640,13 +9218,9 @@ raylib.GetMusicTimePlayed = GetMusicTimePlayed
  * @return {AudioStream} The resulting AudioStream.
  */
 function LoadAudioStream(sampleRate, sampleSize, channels) {
-  return r.BindLoadAudioStream(
-    sampleRate,
-    sampleSize,
-    channels
-  )
+  return r.BindLoadAudioStream(sampleRate, sampleSize, channels);
 }
-raylib.LoadAudioStream = LoadAudioStream
+raylib.LoadAudioStream = LoadAudioStream;
 
 /**
  * Checks if an audio stream is valid (buffers initialized)
@@ -9661,10 +9235,10 @@ function IsAudioStreamValid(stream) {
     stream.processor,
     stream.sampleRate,
     stream.sampleSize,
-    stream.channels
-  )
+    stream.channels,
+  );
 }
-raylib.IsAudioStreamValid = IsAudioStreamValid
+raylib.IsAudioStreamValid = IsAudioStreamValid;
 
 /**
  * Unload audio stream and free memory
@@ -9679,10 +9253,10 @@ function UnloadAudioStream(stream) {
     stream.processor,
     stream.sampleRate,
     stream.sampleSize,
-    stream.channels
-  )
+    stream.channels,
+  );
 }
-raylib.UnloadAudioStream = UnloadAudioStream
+raylib.UnloadAudioStream = UnloadAudioStream;
 
 /**
  * Update audio stream buffers with data
@@ -9701,10 +9275,10 @@ function UpdateAudioStream(stream, data, frameCount) {
     stream.sampleSize,
     stream.channels,
     data,
-    frameCount
-  )
+    frameCount,
+  );
 }
-raylib.UpdateAudioStream = UpdateAudioStream
+raylib.UpdateAudioStream = UpdateAudioStream;
 
 /**
  * Check if any audio stream buffers requires refill
@@ -9719,10 +9293,10 @@ function IsAudioStreamProcessed(stream) {
     stream.processor,
     stream.sampleRate,
     stream.sampleSize,
-    stream.channels
-  )
+    stream.channels,
+  );
 }
-raylib.IsAudioStreamProcessed = IsAudioStreamProcessed
+raylib.IsAudioStreamProcessed = IsAudioStreamProcessed;
 
 /**
  * Play audio stream
@@ -9737,10 +9311,10 @@ function PlayAudioStream(stream) {
     stream.processor,
     stream.sampleRate,
     stream.sampleSize,
-    stream.channels
-  )
+    stream.channels,
+  );
 }
-raylib.PlayAudioStream = PlayAudioStream
+raylib.PlayAudioStream = PlayAudioStream;
 
 /**
  * Pause audio stream
@@ -9755,10 +9329,10 @@ function PauseAudioStream(stream) {
     stream.processor,
     stream.sampleRate,
     stream.sampleSize,
-    stream.channels
-  )
+    stream.channels,
+  );
 }
-raylib.PauseAudioStream = PauseAudioStream
+raylib.PauseAudioStream = PauseAudioStream;
 
 /**
  * Resume audio stream
@@ -9773,10 +9347,10 @@ function ResumeAudioStream(stream) {
     stream.processor,
     stream.sampleRate,
     stream.sampleSize,
-    stream.channels
-  )
+    stream.channels,
+  );
 }
-raylib.ResumeAudioStream = ResumeAudioStream
+raylib.ResumeAudioStream = ResumeAudioStream;
 
 /**
  * Check if audio stream is playing
@@ -9791,10 +9365,10 @@ function IsAudioStreamPlaying(stream) {
     stream.processor,
     stream.sampleRate,
     stream.sampleSize,
-    stream.channels
-  )
+    stream.channels,
+  );
 }
-raylib.IsAudioStreamPlaying = IsAudioStreamPlaying
+raylib.IsAudioStreamPlaying = IsAudioStreamPlaying;
 
 /**
  * Stop audio stream
@@ -9809,10 +9383,10 @@ function StopAudioStream(stream) {
     stream.processor,
     stream.sampleRate,
     stream.sampleSize,
-    stream.channels
-  )
+    stream.channels,
+  );
 }
-raylib.StopAudioStream = StopAudioStream
+raylib.StopAudioStream = StopAudioStream;
 
 /**
  * Set volume for audio stream (1.0 is max level)
@@ -9829,10 +9403,10 @@ function SetAudioStreamVolume(stream, volume) {
     stream.sampleRate,
     stream.sampleSize,
     stream.channels,
-    volume
-  )
+    volume,
+  );
 }
-raylib.SetAudioStreamVolume = SetAudioStreamVolume
+raylib.SetAudioStreamVolume = SetAudioStreamVolume;
 
 /**
  * Set pitch for audio stream (1.0 is base level)
@@ -9849,10 +9423,10 @@ function SetAudioStreamPitch(stream, pitch) {
     stream.sampleRate,
     stream.sampleSize,
     stream.channels,
-    pitch
-  )
+    pitch,
+  );
 }
-raylib.SetAudioStreamPitch = SetAudioStreamPitch
+raylib.SetAudioStreamPitch = SetAudioStreamPitch;
 
 /**
  * Set pan for audio stream (0.5 is centered)
@@ -9869,10 +9443,10 @@ function SetAudioStreamPan(stream, pan) {
     stream.sampleRate,
     stream.sampleSize,
     stream.channels,
-    pan
-  )
+    pan,
+  );
 }
-raylib.SetAudioStreamPan = SetAudioStreamPan
+raylib.SetAudioStreamPan = SetAudioStreamPan;
 
 /**
  * Default size for new audio streams
@@ -9882,11 +9456,9 @@ raylib.SetAudioStreamPan = SetAudioStreamPan
  * @return {undefined}
  */
 function SetAudioStreamBufferSizeDefault(size) {
-  return r.BindSetAudioStreamBufferSizeDefault(
-    size
-  )
+  return r.BindSetAudioStreamBufferSizeDefault(size);
 }
-raylib.SetAudioStreamBufferSizeDefault = SetAudioStreamBufferSizeDefault
+raylib.SetAudioStreamBufferSizeDefault = SetAudioStreamBufferSizeDefault;
 
 /**
  * Ease: Linear
@@ -9899,14 +9471,9 @@ raylib.SetAudioStreamBufferSizeDefault = SetAudioStreamBufferSizeDefault
  * @return {number} The resulting float.
  */
 function EaseLinearNone(t, b, c, d) {
-  return r.BindEaseLinearNone(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseLinearNone(t, b, c, d);
 }
-raylib.EaseLinearNone = EaseLinearNone
+raylib.EaseLinearNone = EaseLinearNone;
 
 /**
  * Ease: Linear In
@@ -9919,14 +9486,9 @@ raylib.EaseLinearNone = EaseLinearNone
  * @return {number} The resulting float.
  */
 function EaseLinearIn(t, b, c, d) {
-  return r.BindEaseLinearIn(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseLinearIn(t, b, c, d);
 }
-raylib.EaseLinearIn = EaseLinearIn
+raylib.EaseLinearIn = EaseLinearIn;
 
 /**
  * Ease: Linear Out
@@ -9939,14 +9501,9 @@ raylib.EaseLinearIn = EaseLinearIn
  * @return {number} The resulting float.
  */
 function EaseLinearOut(t, b, c, d) {
-  return r.BindEaseLinearOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseLinearOut(t, b, c, d);
 }
-raylib.EaseLinearOut = EaseLinearOut
+raylib.EaseLinearOut = EaseLinearOut;
 
 /**
  * Ease: Linear In Out
@@ -9959,14 +9516,9 @@ raylib.EaseLinearOut = EaseLinearOut
  * @return {number} The resulting float.
  */
 function EaseLinearInOut(t, b, c, d) {
-  return r.BindEaseLinearInOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseLinearInOut(t, b, c, d);
 }
-raylib.EaseLinearInOut = EaseLinearInOut
+raylib.EaseLinearInOut = EaseLinearInOut;
 
 /**
  * Ease: Sine In
@@ -9979,14 +9531,9 @@ raylib.EaseLinearInOut = EaseLinearInOut
  * @return {number} The resulting float.
  */
 function EaseSineIn(t, b, c, d) {
-  return r.BindEaseSineIn(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseSineIn(t, b, c, d);
 }
-raylib.EaseSineIn = EaseSineIn
+raylib.EaseSineIn = EaseSineIn;
 
 /**
  * Ease: Sine Out
@@ -9999,14 +9546,9 @@ raylib.EaseSineIn = EaseSineIn
  * @return {number} The resulting float.
  */
 function EaseSineOut(t, b, c, d) {
-  return r.BindEaseSineOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseSineOut(t, b, c, d);
 }
-raylib.EaseSineOut = EaseSineOut
+raylib.EaseSineOut = EaseSineOut;
 
 /**
  * Ease: Sine Out
@@ -10019,14 +9561,9 @@ raylib.EaseSineOut = EaseSineOut
  * @return {number} The resulting float.
  */
 function EaseSineInOut(t, b, c, d) {
-  return r.BindEaseSineInOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseSineInOut(t, b, c, d);
 }
-raylib.EaseSineInOut = EaseSineInOut
+raylib.EaseSineInOut = EaseSineInOut;
 
 /**
  * Ease: Circular In
@@ -10039,14 +9576,9 @@ raylib.EaseSineInOut = EaseSineInOut
  * @return {number} The resulting float.
  */
 function EaseCircIn(t, b, c, d) {
-  return r.BindEaseCircIn(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseCircIn(t, b, c, d);
 }
-raylib.EaseCircIn = EaseCircIn
+raylib.EaseCircIn = EaseCircIn;
 
 /**
  * Ease: Circular Out
@@ -10059,14 +9591,9 @@ raylib.EaseCircIn = EaseCircIn
  * @return {number} The resulting float.
  */
 function EaseCircOut(t, b, c, d) {
-  return r.BindEaseCircOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseCircOut(t, b, c, d);
 }
-raylib.EaseCircOut = EaseCircOut
+raylib.EaseCircOut = EaseCircOut;
 
 /**
  * Ease: Circular In Out
@@ -10079,14 +9606,9 @@ raylib.EaseCircOut = EaseCircOut
  * @return {number} The resulting float.
  */
 function EaseCircInOut(t, b, c, d) {
-  return r.BindEaseCircInOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseCircInOut(t, b, c, d);
 }
-raylib.EaseCircInOut = EaseCircInOut
+raylib.EaseCircInOut = EaseCircInOut;
 
 /**
  * Ease: Cubic In
@@ -10099,14 +9621,9 @@ raylib.EaseCircInOut = EaseCircInOut
  * @return {number} The resulting float.
  */
 function EaseCubicIn(t, b, c, d) {
-  return r.BindEaseCubicIn(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseCubicIn(t, b, c, d);
 }
-raylib.EaseCubicIn = EaseCubicIn
+raylib.EaseCubicIn = EaseCubicIn;
 
 /**
  * Ease: Cubic Out
@@ -10119,14 +9636,9 @@ raylib.EaseCubicIn = EaseCubicIn
  * @return {number} The resulting float.
  */
 function EaseCubicOut(t, b, c, d) {
-  return r.BindEaseCubicOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseCubicOut(t, b, c, d);
 }
-raylib.EaseCubicOut = EaseCubicOut
+raylib.EaseCubicOut = EaseCubicOut;
 
 /**
  * Ease: Cubic In Out
@@ -10139,14 +9651,9 @@ raylib.EaseCubicOut = EaseCubicOut
  * @return {number} The resulting float.
  */
 function EaseCubicInOut(t, b, c, d) {
-  return r.BindEaseCubicInOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseCubicInOut(t, b, c, d);
 }
-raylib.EaseCubicInOut = EaseCubicInOut
+raylib.EaseCubicInOut = EaseCubicInOut;
 
 /**
  * Ease: Quadratic In
@@ -10159,14 +9666,9 @@ raylib.EaseCubicInOut = EaseCubicInOut
  * @return {number} The resulting float.
  */
 function EaseQuadIn(t, b, c, d) {
-  return r.BindEaseQuadIn(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseQuadIn(t, b, c, d);
 }
-raylib.EaseQuadIn = EaseQuadIn
+raylib.EaseQuadIn = EaseQuadIn;
 
 /**
  * Ease: Quadratic Out
@@ -10179,14 +9681,9 @@ raylib.EaseQuadIn = EaseQuadIn
  * @return {number} The resulting float.
  */
 function EaseQuadOut(t, b, c, d) {
-  return r.BindEaseQuadOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseQuadOut(t, b, c, d);
 }
-raylib.EaseQuadOut = EaseQuadOut
+raylib.EaseQuadOut = EaseQuadOut;
 
 /**
  * Ease: Quadratic In Out
@@ -10199,14 +9696,9 @@ raylib.EaseQuadOut = EaseQuadOut
  * @return {number} The resulting float.
  */
 function EaseQuadInOut(t, b, c, d) {
-  return r.BindEaseQuadInOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseQuadInOut(t, b, c, d);
 }
-raylib.EaseQuadInOut = EaseQuadInOut
+raylib.EaseQuadInOut = EaseQuadInOut;
 
 /**
  * Ease: Exponential In
@@ -10219,14 +9711,9 @@ raylib.EaseQuadInOut = EaseQuadInOut
  * @return {number} The resulting float.
  */
 function EaseExpoIn(t, b, c, d) {
-  return r.BindEaseExpoIn(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseExpoIn(t, b, c, d);
 }
-raylib.EaseExpoIn = EaseExpoIn
+raylib.EaseExpoIn = EaseExpoIn;
 
 /**
  * Ease: Exponential Out
@@ -10239,14 +9726,9 @@ raylib.EaseExpoIn = EaseExpoIn
  * @return {number} The resulting float.
  */
 function EaseExpoOut(t, b, c, d) {
-  return r.BindEaseExpoOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseExpoOut(t, b, c, d);
 }
-raylib.EaseExpoOut = EaseExpoOut
+raylib.EaseExpoOut = EaseExpoOut;
 
 /**
  * Ease: Exponential In Out
@@ -10259,14 +9741,9 @@ raylib.EaseExpoOut = EaseExpoOut
  * @return {number} The resulting float.
  */
 function EaseExpoInOut(t, b, c, d) {
-  return r.BindEaseExpoInOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseExpoInOut(t, b, c, d);
 }
-raylib.EaseExpoInOut = EaseExpoInOut
+raylib.EaseExpoInOut = EaseExpoInOut;
 
 /**
  * Ease: Back In
@@ -10279,14 +9756,9 @@ raylib.EaseExpoInOut = EaseExpoInOut
  * @return {number} The resulting float.
  */
 function EaseBackIn(t, b, c, d) {
-  return r.BindEaseBackIn(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseBackIn(t, b, c, d);
 }
-raylib.EaseBackIn = EaseBackIn
+raylib.EaseBackIn = EaseBackIn;
 
 /**
  * Ease: Back Out
@@ -10299,14 +9771,9 @@ raylib.EaseBackIn = EaseBackIn
  * @return {number} The resulting float.
  */
 function EaseBackOut(t, b, c, d) {
-  return r.BindEaseBackOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseBackOut(t, b, c, d);
 }
-raylib.EaseBackOut = EaseBackOut
+raylib.EaseBackOut = EaseBackOut;
 
 /**
  * Ease: Back In Out
@@ -10319,14 +9786,9 @@ raylib.EaseBackOut = EaseBackOut
  * @return {number} The resulting float.
  */
 function EaseBackInOut(t, b, c, d) {
-  return r.BindEaseBackInOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseBackInOut(t, b, c, d);
 }
-raylib.EaseBackInOut = EaseBackInOut
+raylib.EaseBackInOut = EaseBackInOut;
 
 /**
  * Ease: Bounce Out
@@ -10339,14 +9801,9 @@ raylib.EaseBackInOut = EaseBackInOut
  * @return {number} The resulting float.
  */
 function EaseBounceOut(t, b, c, d) {
-  return r.BindEaseBounceOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseBounceOut(t, b, c, d);
 }
-raylib.EaseBounceOut = EaseBounceOut
+raylib.EaseBounceOut = EaseBounceOut;
 
 /**
  * Ease: Bounce In
@@ -10359,14 +9816,9 @@ raylib.EaseBounceOut = EaseBounceOut
  * @return {number} The resulting float.
  */
 function EaseBounceIn(t, b, c, d) {
-  return r.BindEaseBounceIn(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseBounceIn(t, b, c, d);
 }
-raylib.EaseBounceIn = EaseBounceIn
+raylib.EaseBounceIn = EaseBounceIn;
 
 /**
  * Ease: Bounce In Out
@@ -10379,14 +9831,9 @@ raylib.EaseBounceIn = EaseBounceIn
  * @return {number} The resulting float.
  */
 function EaseBounceInOut(t, b, c, d) {
-  return r.BindEaseBounceInOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseBounceInOut(t, b, c, d);
 }
-raylib.EaseBounceInOut = EaseBounceInOut
+raylib.EaseBounceInOut = EaseBounceInOut;
 
 /**
  * Ease: Elastic In
@@ -10399,14 +9846,9 @@ raylib.EaseBounceInOut = EaseBounceInOut
  * @return {number} The resulting float.
  */
 function EaseElasticIn(t, b, c, d) {
-  return r.BindEaseElasticIn(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseElasticIn(t, b, c, d);
 }
-raylib.EaseElasticIn = EaseElasticIn
+raylib.EaseElasticIn = EaseElasticIn;
 
 /**
  * Ease: Elastic Out
@@ -10419,14 +9861,9 @@ raylib.EaseElasticIn = EaseElasticIn
  * @return {number} The resulting float.
  */
 function EaseElasticOut(t, b, c, d) {
-  return r.BindEaseElasticOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseElasticOut(t, b, c, d);
 }
-raylib.EaseElasticOut = EaseElasticOut
+raylib.EaseElasticOut = EaseElasticOut;
 
 /**
  * Ease: Elastic In Out
@@ -10439,228 +9876,129 @@ raylib.EaseElasticOut = EaseElasticOut
  * @return {number} The resulting float.
  */
 function EaseElasticInOut(t, b, c, d) {
-  return r.BindEaseElasticInOut(
-    t,
-    b,
-    c,
-    d
-  )
+  return r.BindEaseElasticInOut(t, b, c, d);
 }
-raylib.EaseElasticInOut = EaseElasticInOut
+raylib.EaseElasticInOut = EaseElasticInOut;
 
 function Clamp(value, min, max) {
-  return r.BindClamp(
-    value,
-    min,
-    max
-  )
+  return r.BindClamp(value, min, max);
 }
-raylib.Clamp = Clamp
+raylib.Clamp = Clamp;
 
 function Lerp(start, end, amount) {
-  return r.BindLerp(
-    start,
-    end,
-    amount
-  )
+  return r.BindLerp(start, end, amount);
 }
-raylib.Lerp = Lerp
+raylib.Lerp = Lerp;
 
 function Normalize(value, start, end) {
-  return r.BindNormalize(
-    value,
-    start,
-    end
-  )
+  return r.BindNormalize(value, start, end);
 }
-raylib.Normalize = Normalize
+raylib.Normalize = Normalize;
 
 function Remap(value, inputStart, inputEnd, outputStart, outputEnd) {
-  return r.BindRemap(
-    value,
-    inputStart,
-    inputEnd,
-    outputStart,
-    outputEnd
-  )
+  return r.BindRemap(value, inputStart, inputEnd, outputStart, outputEnd);
 }
-raylib.Remap = Remap
+raylib.Remap = Remap;
 
 function Wrap(value, min, max) {
-  return r.BindWrap(
-    value,
-    min,
-    max
-  )
+  return r.BindWrap(value, min, max);
 }
-raylib.Wrap = Wrap
+raylib.Wrap = Wrap;
 
 function FloatEquals(x, y) {
-  return r.BindFloatEquals(
-    x,
-    y
-  )
+  return r.BindFloatEquals(x, y);
 }
-raylib.FloatEquals = FloatEquals
+raylib.FloatEquals = FloatEquals;
 
 function Vector2Zero() {
-  return r.BindVector2Zero()
+  return r.BindVector2Zero();
 }
-raylib.Vector2Zero = Vector2Zero
+raylib.Vector2Zero = Vector2Zero;
 
 function Vector2One() {
-  return r.BindVector2One()
+  return r.BindVector2One();
 }
-raylib.Vector2One = Vector2One
+raylib.Vector2One = Vector2One;
 
 function Vector2Add(v1, v2) {
-  return r.BindVector2Add(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y
-  )
+  return r.BindVector2Add(v1.x, v1.y, v2.x, v2.y);
 }
-raylib.Vector2Add = Vector2Add
+raylib.Vector2Add = Vector2Add;
 
 function Vector2AddValue(v, add) {
-  return r.BindVector2AddValue(
-    v.x,
-    v.y,
-    add
-  )
+  return r.BindVector2AddValue(v.x, v.y, add);
 }
-raylib.Vector2AddValue = Vector2AddValue
+raylib.Vector2AddValue = Vector2AddValue;
 
 function Vector2Subtract(v1, v2) {
-  return r.BindVector2Subtract(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y
-  )
+  return r.BindVector2Subtract(v1.x, v1.y, v2.x, v2.y);
 }
-raylib.Vector2Subtract = Vector2Subtract
+raylib.Vector2Subtract = Vector2Subtract;
 
 function Vector2SubtractValue(v, sub) {
-  return r.BindVector2SubtractValue(
-    v.x,
-    v.y,
-    sub
-  )
+  return r.BindVector2SubtractValue(v.x, v.y, sub);
 }
-raylib.Vector2SubtractValue = Vector2SubtractValue
+raylib.Vector2SubtractValue = Vector2SubtractValue;
 
 function Vector2Length(v) {
-  return r.BindVector2Length(
-    v.x,
-    v.y
-  )
+  return r.BindVector2Length(v.x, v.y);
 }
-raylib.Vector2Length = Vector2Length
+raylib.Vector2Length = Vector2Length;
 
 function Vector2LengthSqr(v) {
-  return r.BindVector2LengthSqr(
-    v.x,
-    v.y
-  )
+  return r.BindVector2LengthSqr(v.x, v.y);
 }
-raylib.Vector2LengthSqr = Vector2LengthSqr
+raylib.Vector2LengthSqr = Vector2LengthSqr;
 
 function Vector2DotProduct(v1, v2) {
-  return r.BindVector2DotProduct(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y
-  )
+  return r.BindVector2DotProduct(v1.x, v1.y, v2.x, v2.y);
 }
-raylib.Vector2DotProduct = Vector2DotProduct
+raylib.Vector2DotProduct = Vector2DotProduct;
 
 function Vector2Distance(v1, v2) {
-  return r.BindVector2Distance(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y
-  )
+  return r.BindVector2Distance(v1.x, v1.y, v2.x, v2.y);
 }
-raylib.Vector2Distance = Vector2Distance
+raylib.Vector2Distance = Vector2Distance;
 
 function Vector2DistanceSqr(v1, v2) {
-  return r.BindVector2DistanceSqr(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y
-  )
+  return r.BindVector2DistanceSqr(v1.x, v1.y, v2.x, v2.y);
 }
-raylib.Vector2DistanceSqr = Vector2DistanceSqr
+raylib.Vector2DistanceSqr = Vector2DistanceSqr;
 
 function Vector2Angle(v1, v2) {
-  return r.BindVector2Angle(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y
-  )
+  return r.BindVector2Angle(v1.x, v1.y, v2.x, v2.y);
 }
-raylib.Vector2Angle = Vector2Angle
+raylib.Vector2Angle = Vector2Angle;
 
 function Vector2LineAngle(start, end) {
-  return r.BindVector2LineAngle(
-    start.x,
-    start.y,
-    end.x,
-    end.y
-  )
+  return r.BindVector2LineAngle(start.x, start.y, end.x, end.y);
 }
-raylib.Vector2LineAngle = Vector2LineAngle
+raylib.Vector2LineAngle = Vector2LineAngle;
 
 function Vector2Scale(v, scale) {
-  return r.BindVector2Scale(
-    v.x,
-    v.y,
-    scale
-  )
+  return r.BindVector2Scale(v.x, v.y, scale);
 }
-raylib.Vector2Scale = Vector2Scale
+raylib.Vector2Scale = Vector2Scale;
 
 function Vector2Multiply(v1, v2) {
-  return r.BindVector2Multiply(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y
-  )
+  return r.BindVector2Multiply(v1.x, v1.y, v2.x, v2.y);
 }
-raylib.Vector2Multiply = Vector2Multiply
+raylib.Vector2Multiply = Vector2Multiply;
 
 function Vector2Negate(v) {
-  return r.BindVector2Negate(
-    v.x,
-    v.y
-  )
+  return r.BindVector2Negate(v.x, v.y);
 }
-raylib.Vector2Negate = Vector2Negate
+raylib.Vector2Negate = Vector2Negate;
 
 function Vector2Divide(v1, v2) {
-  return r.BindVector2Divide(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y
-  )
+  return r.BindVector2Divide(v1.x, v1.y, v2.x, v2.y);
 }
-raylib.Vector2Divide = Vector2Divide
+raylib.Vector2Divide = Vector2Divide;
 
 function Vector2Normalize(v) {
-  return r.BindVector2Normalize(
-    v.x,
-    v.y
-  )
+  return r.BindVector2Normalize(v.x, v.y);
 }
-raylib.Vector2Normalize = Vector2Normalize
+raylib.Vector2Normalize = Vector2Normalize;
 
 function Vector2Transform(v, mat) {
   return r.BindVector2Transform(
@@ -10681,343 +10019,175 @@ function Vector2Transform(v, mat) {
     mat.m3,
     mat.m7,
     mat.m11,
-    mat.m15
-  )
+    mat.m15,
+  );
 }
-raylib.Vector2Transform = Vector2Transform
+raylib.Vector2Transform = Vector2Transform;
 
 function Vector2Lerp(v1, v2, amount) {
-  return r.BindVector2Lerp(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y,
-    amount
-  )
+  return r.BindVector2Lerp(v1.x, v1.y, v2.x, v2.y, amount);
 }
-raylib.Vector2Lerp = Vector2Lerp
+raylib.Vector2Lerp = Vector2Lerp;
 
 function Vector2Reflect(v, normal) {
-  return r.BindVector2Reflect(
-    v.x,
-    v.y,
-    normal.x,
-    normal.y
-  )
+  return r.BindVector2Reflect(v.x, v.y, normal.x, normal.y);
 }
-raylib.Vector2Reflect = Vector2Reflect
+raylib.Vector2Reflect = Vector2Reflect;
 
 function Vector2Min(v1, v2) {
-  return r.BindVector2Min(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y
-  )
+  return r.BindVector2Min(v1.x, v1.y, v2.x, v2.y);
 }
-raylib.Vector2Min = Vector2Min
+raylib.Vector2Min = Vector2Min;
 
 function Vector2Max(v1, v2) {
-  return r.BindVector2Max(
-    v1.x,
-    v1.y,
-    v2.x,
-    v2.y
-  )
+  return r.BindVector2Max(v1.x, v1.y, v2.x, v2.y);
 }
-raylib.Vector2Max = Vector2Max
+raylib.Vector2Max = Vector2Max;
 
 function Vector2Rotate(v, angle) {
-  return r.BindVector2Rotate(
-    v.x,
-    v.y,
-    angle
-  )
+  return r.BindVector2Rotate(v.x, v.y, angle);
 }
-raylib.Vector2Rotate = Vector2Rotate
+raylib.Vector2Rotate = Vector2Rotate;
 
 function Vector2MoveTowards(v, target, maxDistance) {
-  return r.BindVector2MoveTowards(
-    v.x,
-    v.y,
-    target.x,
-    target.y,
-    maxDistance
-  )
+  return r.BindVector2MoveTowards(v.x, v.y, target.x, target.y, maxDistance);
 }
-raylib.Vector2MoveTowards = Vector2MoveTowards
+raylib.Vector2MoveTowards = Vector2MoveTowards;
 
 function Vector2Invert(v) {
-  return r.BindVector2Invert(
-    v.x,
-    v.y
-  )
+  return r.BindVector2Invert(v.x, v.y);
 }
-raylib.Vector2Invert = Vector2Invert
+raylib.Vector2Invert = Vector2Invert;
 
 function Vector2Clamp(v, min, max) {
-  return r.BindVector2Clamp(
-    v.x,
-    v.y,
-    min.x,
-    min.y,
-    max.x,
-    max.y
-  )
+  return r.BindVector2Clamp(v.x, v.y, min.x, min.y, max.x, max.y);
 }
-raylib.Vector2Clamp = Vector2Clamp
+raylib.Vector2Clamp = Vector2Clamp;
 
 function Vector2ClampValue(v, min, max) {
-  return r.BindVector2ClampValue(
-    v.x,
-    v.y,
-    min,
-    max
-  )
+  return r.BindVector2ClampValue(v.x, v.y, min, max);
 }
-raylib.Vector2ClampValue = Vector2ClampValue
+raylib.Vector2ClampValue = Vector2ClampValue;
 
 function Vector2Equals(p, q) {
-  return r.BindVector2Equals(
-    p.x,
-    p.y,
-    q.x,
-    q.y
-  )
+  return r.BindVector2Equals(p.x, p.y, q.x, q.y);
 }
-raylib.Vector2Equals = Vector2Equals
+raylib.Vector2Equals = Vector2Equals;
 
 function Vector2Refract(v, n, r) {
-  return r.BindVector2Refract(
-    v.x,
-    v.y,
-    n.x,
-    n.y,
-    r
-  )
+  return r.BindVector2Refract(v.x, v.y, n.x, n.y, r);
 }
-raylib.Vector2Refract = Vector2Refract
+raylib.Vector2Refract = Vector2Refract;
 
 function Vector3Zero() {
-  return r.BindVector3Zero()
+  return r.BindVector3Zero();
 }
-raylib.Vector3Zero = Vector3Zero
+raylib.Vector3Zero = Vector3Zero;
 
 function Vector3One() {
-  return r.BindVector3One()
+  return r.BindVector3One();
 }
-raylib.Vector3One = Vector3One
+raylib.Vector3One = Vector3One;
 
 function Vector3Add(v1, v2) {
-  return r.BindVector3Add(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3Add(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3Add = Vector3Add
+raylib.Vector3Add = Vector3Add;
 
 function Vector3AddValue(v, add) {
-  return r.BindVector3AddValue(
-    v.x,
-    v.y,
-    v.z,
-    add
-  )
+  return r.BindVector3AddValue(v.x, v.y, v.z, add);
 }
-raylib.Vector3AddValue = Vector3AddValue
+raylib.Vector3AddValue = Vector3AddValue;
 
 function Vector3Subtract(v1, v2) {
-  return r.BindVector3Subtract(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3Subtract(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3Subtract = Vector3Subtract
+raylib.Vector3Subtract = Vector3Subtract;
 
 function Vector3SubtractValue(v, sub) {
-  return r.BindVector3SubtractValue(
-    v.x,
-    v.y,
-    v.z,
-    sub
-  )
+  return r.BindVector3SubtractValue(v.x, v.y, v.z, sub);
 }
-raylib.Vector3SubtractValue = Vector3SubtractValue
+raylib.Vector3SubtractValue = Vector3SubtractValue;
 
 function Vector3Scale(v, scalar) {
-  return r.BindVector3Scale(
-    v.x,
-    v.y,
-    v.z,
-    scalar
-  )
+  return r.BindVector3Scale(v.x, v.y, v.z, scalar);
 }
-raylib.Vector3Scale = Vector3Scale
+raylib.Vector3Scale = Vector3Scale;
 
 function Vector3Multiply(v1, v2) {
-  return r.BindVector3Multiply(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3Multiply(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3Multiply = Vector3Multiply
+raylib.Vector3Multiply = Vector3Multiply;
 
 function Vector3CrossProduct(v1, v2) {
-  return r.BindVector3CrossProduct(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3CrossProduct(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3CrossProduct = Vector3CrossProduct
+raylib.Vector3CrossProduct = Vector3CrossProduct;
 
 function Vector3Perpendicular(v) {
-  return r.BindVector3Perpendicular(
-    v.x,
-    v.y,
-    v.z
-  )
+  return r.BindVector3Perpendicular(v.x, v.y, v.z);
 }
-raylib.Vector3Perpendicular = Vector3Perpendicular
+raylib.Vector3Perpendicular = Vector3Perpendicular;
 
 function Vector3Length(v) {
-  return r.BindVector3Length(
-    v
-  )
+  return r.BindVector3Length(v);
 }
-raylib.Vector3Length = Vector3Length
+raylib.Vector3Length = Vector3Length;
 
 function Vector3LengthSqr(v) {
-  return r.BindVector3LengthSqr(
-    v
-  )
+  return r.BindVector3LengthSqr(v);
 }
-raylib.Vector3LengthSqr = Vector3LengthSqr
+raylib.Vector3LengthSqr = Vector3LengthSqr;
 
 function Vector3DotProduct(v1, v2) {
-  return r.BindVector3DotProduct(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3DotProduct(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3DotProduct = Vector3DotProduct
+raylib.Vector3DotProduct = Vector3DotProduct;
 
 function Vector3Distance(v1, v2) {
-  return r.BindVector3Distance(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3Distance(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3Distance = Vector3Distance
+raylib.Vector3Distance = Vector3Distance;
 
 function Vector3DistanceSqr(v1, v2) {
-  return r.BindVector3DistanceSqr(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3DistanceSqr(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3DistanceSqr = Vector3DistanceSqr
+raylib.Vector3DistanceSqr = Vector3DistanceSqr;
 
 function Vector3Angle(v1, v2) {
-  return r.BindVector3Angle(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3Angle(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3Angle = Vector3Angle
+raylib.Vector3Angle = Vector3Angle;
 
 function Vector3Negate(v) {
-  return r.BindVector3Negate(
-    v.x,
-    v.y,
-    v.z
-  )
+  return r.BindVector3Negate(v.x, v.y, v.z);
 }
-raylib.Vector3Negate = Vector3Negate
+raylib.Vector3Negate = Vector3Negate;
 
 function Vector3Divide(v1, v2) {
-  return r.BindVector3Divide(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3Divide(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3Divide = Vector3Divide
+raylib.Vector3Divide = Vector3Divide;
 
 function Vector3Normalize(v) {
-  return r.BindVector3Normalize(
-    v.x,
-    v.y,
-    v.z
-  )
+  return r.BindVector3Normalize(v.x, v.y, v.z);
 }
-raylib.Vector3Normalize = Vector3Normalize
+raylib.Vector3Normalize = Vector3Normalize;
 
 function Vector3Project(v1, v2) {
-  return r.BindVector3Project(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3Project(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3Project = Vector3Project
+raylib.Vector3Project = Vector3Project;
 
 function Vector3Reject(v1, v2) {
-  return r.BindVector3Reject(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3Reject(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3Reject = Vector3Reject
+raylib.Vector3Reject = Vector3Reject;
 
 function Vector3OrthoNormalize(v1, v2) {
-  return r.BindVector3OrthoNormalize(
-    v1,
-    v2
-  )
+  return r.BindVector3OrthoNormalize(v1, v2);
 }
-raylib.Vector3OrthoNormalize = Vector3OrthoNormalize
+raylib.Vector3OrthoNormalize = Vector3OrthoNormalize;
 
 function Vector3Transform(v, mat) {
   return r.BindVector3Transform(
@@ -11039,20 +10209,15 @@ function Vector3Transform(v, mat) {
     mat.m3,
     mat.m7,
     mat.m11,
-    mat.m15
-  )
+    mat.m15,
+  );
 }
-raylib.Vector3Transform = Vector3Transform
+raylib.Vector3Transform = Vector3Transform;
 
 function Vector3RotateByQuaternion(v, q) {
-  return r.BindVector3RotateByQuaternion(
-    v.x,
-    v.y,
-    v.z,
-    q
-  )
+  return r.BindVector3RotateByQuaternion(v.x, v.y, v.z, q);
 }
-raylib.Vector3RotateByQuaternion = Vector3RotateByQuaternion
+raylib.Vector3RotateByQuaternion = Vector3RotateByQuaternion;
 
 function Vector3RotateByAxisAngle(v, axis, angle) {
   return r.BindVector3RotateByAxisAngle(
@@ -11062,10 +10227,10 @@ function Vector3RotateByAxisAngle(v, axis, angle) {
     axis.x,
     axis.y,
     axis.z,
-    angle
-  )
+    angle,
+  );
 }
-raylib.Vector3RotateByAxisAngle = Vector3RotateByAxisAngle
+raylib.Vector3RotateByAxisAngle = Vector3RotateByAxisAngle;
 
 function Vector3MoveTowards(v, target, maxDistance) {
   return r.BindVector3MoveTowards(
@@ -11075,23 +10240,15 @@ function Vector3MoveTowards(v, target, maxDistance) {
     target.x,
     target.y,
     target.z,
-    maxDistance
-  )
+    maxDistance,
+  );
 }
-raylib.Vector3MoveTowards = Vector3MoveTowards
+raylib.Vector3MoveTowards = Vector3MoveTowards;
 
 function Vector3Lerp(v1, v2, amount) {
-  return r.BindVector3Lerp(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z,
-    amount
-  )
+  return r.BindVector3Lerp(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z, amount);
 }
-raylib.Vector3Lerp = Vector3Lerp
+raylib.Vector3Lerp = Vector3Lerp;
 
 function Vector3CubicHermite(v1, tangent1, v2, tangent2, amount) {
   return r.BindVector3CubicHermite(
@@ -11107,46 +10264,25 @@ function Vector3CubicHermite(v1, tangent1, v2, tangent2, amount) {
     tangent2.x,
     tangent2.y,
     tangent2.z,
-    amount
-  )
+    amount,
+  );
 }
-raylib.Vector3CubicHermite = Vector3CubicHermite
+raylib.Vector3CubicHermite = Vector3CubicHermite;
 
 function Vector3Reflect(v, normal) {
-  return r.BindVector3Reflect(
-    v.x,
-    v.y,
-    v.z,
-    normal.x,
-    normal.y,
-    normal.z
-  )
+  return r.BindVector3Reflect(v.x, v.y, v.z, normal.x, normal.y, normal.z);
 }
-raylib.Vector3Reflect = Vector3Reflect
+raylib.Vector3Reflect = Vector3Reflect;
 
 function Vector3Min(v1, v2) {
-  return r.BindVector3Min(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3Min(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3Min = Vector3Min
+raylib.Vector3Min = Vector3Min;
 
 function Vector3Max(v1, v2) {
-  return r.BindVector3Max(
-    v1.x,
-    v1.y,
-    v1.z,
-    v2.x,
-    v2.y,
-    v2.z
-  )
+  return r.BindVector3Max(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
 }
-raylib.Vector3Max = Vector3Max
+raylib.Vector3Max = Vector3Max;
 
 function Vector3Barycenter(p, a, b, c) {
   return r.BindVector3Barycenter(
@@ -11161,10 +10297,10 @@ function Vector3Barycenter(p, a, b, c) {
     b.z,
     c.x,
     c.y,
-    c.z
-  )
+    c.z,
+  );
 }
-raylib.Vector3Barycenter = Vector3Barycenter
+raylib.Vector3Barycenter = Vector3Barycenter;
 
 function Vector3Unproject(source, projection, view) {
   return r.BindVector3Unproject(
@@ -11202,19 +10338,15 @@ function Vector3Unproject(source, projection, view) {
     view.m3,
     view.m7,
     view.m11,
-    view.m15
-  )
+    view.m15,
+  );
 }
-raylib.Vector3Unproject = Vector3Unproject
+raylib.Vector3Unproject = Vector3Unproject;
 
 function Vector3Invert(v) {
-  return r.BindVector3Invert(
-    v.x,
-    v.y,
-    v.z
-  )
+  return r.BindVector3Invert(v.x, v.y, v.z);
 }
-raylib.Vector3Invert = Vector3Invert
+raylib.Vector3Invert = Vector3Invert;
 
 function Vector3Clamp(v, min, max) {
   return r.BindVector3Clamp(
@@ -11226,126 +10358,65 @@ function Vector3Clamp(v, min, max) {
     min.z,
     max.x,
     max.y,
-    max.z
-  )
+    max.z,
+  );
 }
-raylib.Vector3Clamp = Vector3Clamp
+raylib.Vector3Clamp = Vector3Clamp;
 
 function Vector3ClampValue(v, min, max) {
-  return r.BindVector3ClampValue(
-    v.x,
-    v.y,
-    v.z,
-    min,
-    max
-  )
+  return r.BindVector3ClampValue(v.x, v.y, v.z, min, max);
 }
-raylib.Vector3ClampValue = Vector3ClampValue
+raylib.Vector3ClampValue = Vector3ClampValue;
 
 function Vector3Equals(p, q) {
-  return r.BindVector3Equals(
-    p.x,
-    p.y,
-    p.z,
-    q.x,
-    q.y,
-    q.z
-  )
+  return r.BindVector3Equals(p.x, p.y, p.z, q.x, q.y, q.z);
 }
-raylib.Vector3Equals = Vector3Equals
+raylib.Vector3Equals = Vector3Equals;
 
 function Vector3Refract(v, n, r) {
-  return r.BindVector3Refract(
-    v.x,
-    v.y,
-    v.z,
-    n.x,
-    n.y,
-    n.z,
-    r
-  )
+  return r.BindVector3Refract(v.x, v.y, v.z, n.x, n.y, n.z, r);
 }
-raylib.Vector3Refract = Vector3Refract
+raylib.Vector3Refract = Vector3Refract;
 
 function Vector4Zero() {
-  return r.BindVector4Zero()
+  return r.BindVector4Zero();
 }
-raylib.Vector4Zero = Vector4Zero
+raylib.Vector4Zero = Vector4Zero;
 
 function Vector4One() {
-  return r.BindVector4One()
+  return r.BindVector4One();
 }
-raylib.Vector4One = Vector4One
+raylib.Vector4One = Vector4One;
 
 function Vector4Add(v1, v2) {
-  return r.BindVector4Add(
-    v1.x,
-    v1.y,
-    v1.z,
-    v1.w,
-    v2.x,
-    v2.y,
-    v2.z,
-    v2.w
-  )
+  return r.BindVector4Add(v1.x, v1.y, v1.z, v1.w, v2.x, v2.y, v2.z, v2.w);
 }
-raylib.Vector4Add = Vector4Add
+raylib.Vector4Add = Vector4Add;
 
 function Vector4AddValue(v, add) {
-  return r.BindVector4AddValue(
-    v.x,
-    v.y,
-    v.z,
-    v.w,
-    add
-  )
+  return r.BindVector4AddValue(v.x, v.y, v.z, v.w, add);
 }
-raylib.Vector4AddValue = Vector4AddValue
+raylib.Vector4AddValue = Vector4AddValue;
 
 function Vector4Subtract(v1, v2) {
-  return r.BindVector4Subtract(
-    v1.x,
-    v1.y,
-    v1.z,
-    v1.w,
-    v2.x,
-    v2.y,
-    v2.z,
-    v2.w
-  )
+  return r.BindVector4Subtract(v1.x, v1.y, v1.z, v1.w, v2.x, v2.y, v2.z, v2.w);
 }
-raylib.Vector4Subtract = Vector4Subtract
+raylib.Vector4Subtract = Vector4Subtract;
 
 function Vector4SubtractValue(v, add) {
-  return r.BindVector4SubtractValue(
-    v.x,
-    v.y,
-    v.z,
-    v.w,
-    add
-  )
+  return r.BindVector4SubtractValue(v.x, v.y, v.z, v.w, add);
 }
-raylib.Vector4SubtractValue = Vector4SubtractValue
+raylib.Vector4SubtractValue = Vector4SubtractValue;
 
 function Vector4Length(v) {
-  return r.BindVector4Length(
-    v.x,
-    v.y,
-    v.z,
-    v.w
-  )
+  return r.BindVector4Length(v.x, v.y, v.z, v.w);
 }
-raylib.Vector4Length = Vector4Length
+raylib.Vector4Length = Vector4Length;
 
 function Vector4LengthSqr(v) {
-  return r.BindVector4LengthSqr(
-    v.x,
-    v.y,
-    v.z,
-    v.w
-  )
+  return r.BindVector4LengthSqr(v.x, v.y, v.z, v.w);
 }
-raylib.Vector4LengthSqr = Vector4LengthSqr
+raylib.Vector4LengthSqr = Vector4LengthSqr;
 
 function Vector4DotProduct(v1, v2) {
   return r.BindVector4DotProduct(
@@ -11356,24 +10427,15 @@ function Vector4DotProduct(v1, v2) {
     v2.x,
     v2.y,
     v2.z,
-    v2.w
-  )
+    v2.w,
+  );
 }
-raylib.Vector4DotProduct = Vector4DotProduct
+raylib.Vector4DotProduct = Vector4DotProduct;
 
 function Vector4Distance(v1, v2) {
-  return r.BindVector4Distance(
-    v1.x,
-    v1.y,
-    v1.z,
-    v1.w,
-    v2.x,
-    v2.y,
-    v2.z,
-    v2.w
-  )
+  return r.BindVector4Distance(v1.x, v1.y, v1.z, v1.w, v2.x, v2.y, v2.z, v2.w);
 }
-raylib.Vector4Distance = Vector4Distance
+raylib.Vector4Distance = Vector4Distance;
 
 function Vector4DistanceSqr(v1, v2) {
   return r.BindVector4DistanceSqr(
@@ -11384,97 +10446,45 @@ function Vector4DistanceSqr(v1, v2) {
     v2.x,
     v2.y,
     v2.z,
-    v2.w
-  )
+    v2.w,
+  );
 }
-raylib.Vector4DistanceSqr = Vector4DistanceSqr
+raylib.Vector4DistanceSqr = Vector4DistanceSqr;
 
 function Vector4Scale(v, scale) {
-  return r.BindVector4Scale(
-    v.x,
-    v.y,
-    v.z,
-    v.w,
-    scale
-  )
+  return r.BindVector4Scale(v.x, v.y, v.z, v.w, scale);
 }
-raylib.Vector4Scale = Vector4Scale
+raylib.Vector4Scale = Vector4Scale;
 
 function Vector4Multiply(v1, v2) {
-  return r.BindVector4Multiply(
-    v1.x,
-    v1.y,
-    v1.z,
-    v1.w,
-    v2.x,
-    v2.y,
-    v2.z,
-    v2.w
-  )
+  return r.BindVector4Multiply(v1.x, v1.y, v1.z, v1.w, v2.x, v2.y, v2.z, v2.w);
 }
-raylib.Vector4Multiply = Vector4Multiply
+raylib.Vector4Multiply = Vector4Multiply;
 
 function Vector4Negate(v) {
-  return r.BindVector4Negate(
-    v.x,
-    v.y,
-    v.z,
-    v.w
-  )
+  return r.BindVector4Negate(v.x, v.y, v.z, v.w);
 }
-raylib.Vector4Negate = Vector4Negate
+raylib.Vector4Negate = Vector4Negate;
 
 function Vector4Divide(v1, v2) {
-  return r.BindVector4Divide(
-    v1.x,
-    v1.y,
-    v1.z,
-    v1.w,
-    v2.x,
-    v2.y,
-    v2.z,
-    v2.w
-  )
+  return r.BindVector4Divide(v1.x, v1.y, v1.z, v1.w, v2.x, v2.y, v2.z, v2.w);
 }
-raylib.Vector4Divide = Vector4Divide
+raylib.Vector4Divide = Vector4Divide;
 
 function Vector4Normalize(v) {
-  return r.BindVector4Normalize(
-    v.x,
-    v.y,
-    v.z,
-    v.w
-  )
+  return r.BindVector4Normalize(v.x, v.y, v.z, v.w);
 }
-raylib.Vector4Normalize = Vector4Normalize
+raylib.Vector4Normalize = Vector4Normalize;
 
 function Vector4Min(v1, v2) {
-  return r.BindVector4Min(
-    v1.x,
-    v1.y,
-    v1.z,
-    v1.w,
-    v2.x,
-    v2.y,
-    v2.z,
-    v2.w
-  )
+  return r.BindVector4Min(v1.x, v1.y, v1.z, v1.w, v2.x, v2.y, v2.z, v2.w);
 }
-raylib.Vector4Min = Vector4Min
+raylib.Vector4Min = Vector4Min;
 
 function Vector4Max(v1, v2) {
-  return r.BindVector4Max(
-    v1.x,
-    v1.y,
-    v1.z,
-    v1.w,
-    v2.x,
-    v2.y,
-    v2.z,
-    v2.w
-  )
+  return r.BindVector4Max(v1.x, v1.y, v1.z, v1.w, v2.x, v2.y, v2.z, v2.w);
 }
-raylib.Vector4Max = Vector4Max
+raylib.Vector4Max = Vector4Max;
 
 function Vector4Lerp(v1, v2, amount) {
   return r.BindVector4Lerp(
@@ -11486,10 +10496,10 @@ function Vector4Lerp(v1, v2, amount) {
     v2.y,
     v2.z,
     v2.w,
-    amount
-  )
+    amount,
+  );
 }
-raylib.Vector4Lerp = Vector4Lerp
+raylib.Vector4Lerp = Vector4Lerp;
 
 function Vector4MoveTowards(v, target, maxDistance) {
   return r.BindVector4MoveTowards(
@@ -11501,34 +10511,20 @@ function Vector4MoveTowards(v, target, maxDistance) {
     target.y,
     target.z,
     target.w,
-    maxDistance
-  )
+    maxDistance,
+  );
 }
-raylib.Vector4MoveTowards = Vector4MoveTowards
+raylib.Vector4MoveTowards = Vector4MoveTowards;
 
 function Vector4Invert(v) {
-  return r.BindVector4Invert(
-    v.x,
-    v.y,
-    v.z,
-    v.w
-  )
+  return r.BindVector4Invert(v.x, v.y, v.z, v.w);
 }
-raylib.Vector4Invert = Vector4Invert
+raylib.Vector4Invert = Vector4Invert;
 
 function Vector4Equals(p, q) {
-  return r.BindVector4Equals(
-    p.x,
-    p.y,
-    p.z,
-    p.w,
-    q.x,
-    q.y,
-    q.z,
-    q.w
-  )
+  return r.BindVector4Equals(p.x, p.y, p.z, p.w, q.x, q.y, q.z, q.w);
 }
-raylib.Vector4Equals = Vector4Equals
+raylib.Vector4Equals = Vector4Equals;
 
 function MatrixDeterminant(mat) {
   return r.BindMatrixDeterminant(
@@ -11547,10 +10543,10 @@ function MatrixDeterminant(mat) {
     mat.m3,
     mat.m7,
     mat.m11,
-    mat.m15
-  )
+    mat.m15,
+  );
 }
-raylib.MatrixDeterminant = MatrixDeterminant
+raylib.MatrixDeterminant = MatrixDeterminant;
 
 function MatrixTrace(mat) {
   return r.BindMatrixTrace(
@@ -11569,10 +10565,10 @@ function MatrixTrace(mat) {
     mat.m3,
     mat.m7,
     mat.m11,
-    mat.m15
-  )
+    mat.m15,
+  );
 }
-raylib.MatrixTrace = MatrixTrace
+raylib.MatrixTrace = MatrixTrace;
 
 function MatrixTranspose(mat) {
   return r.BindMatrixTranspose(
@@ -11591,10 +10587,10 @@ function MatrixTranspose(mat) {
     mat.m3,
     mat.m7,
     mat.m11,
-    mat.m15
-  )
+    mat.m15,
+  );
 }
-raylib.MatrixTranspose = MatrixTranspose
+raylib.MatrixTranspose = MatrixTranspose;
 
 function MatrixInvert(mat) {
   return r.BindMatrixInvert(
@@ -11613,15 +10609,15 @@ function MatrixInvert(mat) {
     mat.m3,
     mat.m7,
     mat.m11,
-    mat.m15
-  )
+    mat.m15,
+  );
 }
-raylib.MatrixInvert = MatrixInvert
+raylib.MatrixInvert = MatrixInvert;
 
 function MatrixIdentity() {
-  return r.BindMatrixIdentity()
+  return r.BindMatrixIdentity();
 }
-raylib.MatrixIdentity = MatrixIdentity
+raylib.MatrixIdentity = MatrixIdentity;
 
 function MatrixAdd(left, right) {
   return r.BindMatrixAdd(
@@ -11656,10 +10652,10 @@ function MatrixAdd(left, right) {
     right.m3,
     right.m7,
     right.m11,
-    right.m15
-  )
+    right.m15,
+  );
 }
-raylib.MatrixAdd = MatrixAdd
+raylib.MatrixAdd = MatrixAdd;
 
 function MatrixSubtract(left, right) {
   return r.BindMatrixSubtract(
@@ -11694,10 +10690,10 @@ function MatrixSubtract(left, right) {
     right.m3,
     right.m7,
     right.m11,
-    right.m15
-  )
+    right.m15,
+  );
 }
-raylib.MatrixSubtract = MatrixSubtract
+raylib.MatrixSubtract = MatrixSubtract;
 
 function MatrixMultiply(left, right) {
   return r.BindMatrixMultiply(
@@ -11732,111 +10728,65 @@ function MatrixMultiply(left, right) {
     right.m3,
     right.m7,
     right.m11,
-    right.m15
-  )
+    right.m15,
+  );
 }
-raylib.MatrixMultiply = MatrixMultiply
+raylib.MatrixMultiply = MatrixMultiply;
 
 function MatrixTranslate(x, y, z) {
-  return r.BindMatrixTranslate(
-    x,
-    y,
-    z
-  )
+  return r.BindMatrixTranslate(x, y, z);
 }
-raylib.MatrixTranslate = MatrixTranslate
+raylib.MatrixTranslate = MatrixTranslate;
 
 function MatrixRotate(axis, angle) {
-  return r.BindMatrixRotate(
-    axis.x,
-    axis.y,
-    axis.z,
-    angle
-  )
+  return r.BindMatrixRotate(axis.x, axis.y, axis.z, angle);
 }
-raylib.MatrixRotate = MatrixRotate
+raylib.MatrixRotate = MatrixRotate;
 
 function MatrixRotateX(angle) {
-  return r.BindMatrixRotateX(
-    angle
-  )
+  return r.BindMatrixRotateX(angle);
 }
-raylib.MatrixRotateX = MatrixRotateX
+raylib.MatrixRotateX = MatrixRotateX;
 
 function MatrixRotateY(angle) {
-  return r.BindMatrixRotateY(
-    angle
-  )
+  return r.BindMatrixRotateY(angle);
 }
-raylib.MatrixRotateY = MatrixRotateY
+raylib.MatrixRotateY = MatrixRotateY;
 
 function MatrixRotateZ(angle) {
-  return r.BindMatrixRotateZ(
-    angle
-  )
+  return r.BindMatrixRotateZ(angle);
 }
-raylib.MatrixRotateZ = MatrixRotateZ
+raylib.MatrixRotateZ = MatrixRotateZ;
 
 function MatrixRotateXYZ(angle) {
-  return r.BindMatrixRotateXYZ(
-    angle.x,
-    angle.y,
-    angle.z
-  )
+  return r.BindMatrixRotateXYZ(angle.x, angle.y, angle.z);
 }
-raylib.MatrixRotateXYZ = MatrixRotateXYZ
+raylib.MatrixRotateXYZ = MatrixRotateXYZ;
 
 function MatrixRotateZYX(angle) {
-  return r.BindMatrixRotateZYX(
-    angle.x,
-    angle.y,
-    angle.z
-  )
+  return r.BindMatrixRotateZYX(angle.x, angle.y, angle.z);
 }
-raylib.MatrixRotateZYX = MatrixRotateZYX
+raylib.MatrixRotateZYX = MatrixRotateZYX;
 
 function MatrixScale(x, y, z) {
-  return r.BindMatrixScale(
-    x,
-    y,
-    z
-  )
+  return r.BindMatrixScale(x, y, z);
 }
-raylib.MatrixScale = MatrixScale
+raylib.MatrixScale = MatrixScale;
 
 function MatrixFrustum(left, right, bottom, top, nearPlane, farPlane) {
-  return r.BindMatrixFrustum(
-    left,
-    right,
-    bottom,
-    top,
-    nearPlane,
-    farPlane
-  )
+  return r.BindMatrixFrustum(left, right, bottom, top, nearPlane, farPlane);
 }
-raylib.MatrixFrustum = MatrixFrustum
+raylib.MatrixFrustum = MatrixFrustum;
 
 function MatrixPerspective(fovY, aspect, nearPlane, farPlane) {
-  return r.BindMatrixPerspective(
-    fovY,
-    aspect,
-    nearPlane,
-    farPlane
-  )
+  return r.BindMatrixPerspective(fovY, aspect, nearPlane, farPlane);
 }
-raylib.MatrixPerspective = MatrixPerspective
+raylib.MatrixPerspective = MatrixPerspective;
 
 function MatrixOrtho(left, right, bottom, top, nearPlane, farPlane) {
-  return r.BindMatrixOrtho(
-    left,
-    right,
-    bottom,
-    top,
-    nearPlane,
-    farPlane
-  )
+  return r.BindMatrixOrtho(left, right, bottom, top, nearPlane, farPlane);
 }
-raylib.MatrixOrtho = MatrixOrtho
+raylib.MatrixOrtho = MatrixOrtho;
 
 function MatrixLookAt(eye, target, up) {
   return r.BindMatrixLookAt(
@@ -11848,130 +10798,85 @@ function MatrixLookAt(eye, target, up) {
     target.z,
     up.x,
     up.y,
-    up.z
-  )
+    up.z,
+  );
 }
-raylib.MatrixLookAt = MatrixLookAt
+raylib.MatrixLookAt = MatrixLookAt;
 
 function QuaternionAdd(q1, q2) {
-  return r.BindQuaternionAdd(
-    q1,
-    q2
-  )
+  return r.BindQuaternionAdd(q1, q2);
 }
-raylib.QuaternionAdd = QuaternionAdd
+raylib.QuaternionAdd = QuaternionAdd;
 
 function QuaternionAddValue(q, add) {
-  return r.BindQuaternionAddValue(
-    q,
-    add
-  )
+  return r.BindQuaternionAddValue(q, add);
 }
-raylib.QuaternionAddValue = QuaternionAddValue
+raylib.QuaternionAddValue = QuaternionAddValue;
 
 function QuaternionSubtract(q1, q2) {
-  return r.BindQuaternionSubtract(
-    q1,
-    q2
-  )
+  return r.BindQuaternionSubtract(q1, q2);
 }
-raylib.QuaternionSubtract = QuaternionSubtract
+raylib.QuaternionSubtract = QuaternionSubtract;
 
 function QuaternionSubtractValue(q, sub) {
-  return r.BindQuaternionSubtractValue(
-    q,
-    sub
-  )
+  return r.BindQuaternionSubtractValue(q, sub);
 }
-raylib.QuaternionSubtractValue = QuaternionSubtractValue
+raylib.QuaternionSubtractValue = QuaternionSubtractValue;
 
 function QuaternionIdentity() {
-  return r.BindQuaternionIdentity()
+  return r.BindQuaternionIdentity();
 }
-raylib.QuaternionIdentity = QuaternionIdentity
+raylib.QuaternionIdentity = QuaternionIdentity;
 
 function QuaternionLength(q) {
-  return r.BindQuaternionLength(
-    q
-  )
+  return r.BindQuaternionLength(q);
 }
-raylib.QuaternionLength = QuaternionLength
+raylib.QuaternionLength = QuaternionLength;
 
 function QuaternionNormalize(q) {
-  return r.BindQuaternionNormalize(
-    q
-  )
+  return r.BindQuaternionNormalize(q);
 }
-raylib.QuaternionNormalize = QuaternionNormalize
+raylib.QuaternionNormalize = QuaternionNormalize;
 
 function QuaternionInvert(q) {
-  return r.BindQuaternionInvert(
-    q
-  )
+  return r.BindQuaternionInvert(q);
 }
-raylib.QuaternionInvert = QuaternionInvert
+raylib.QuaternionInvert = QuaternionInvert;
 
 function QuaternionMultiply(q1, q2) {
-  return r.BindQuaternionMultiply(
-    q1,
-    q2
-  )
+  return r.BindQuaternionMultiply(q1, q2);
 }
-raylib.QuaternionMultiply = QuaternionMultiply
+raylib.QuaternionMultiply = QuaternionMultiply;
 
 function QuaternionScale(q, mul) {
-  return r.BindQuaternionScale(
-    q,
-    mul
-  )
+  return r.BindQuaternionScale(q, mul);
 }
-raylib.QuaternionScale = QuaternionScale
+raylib.QuaternionScale = QuaternionScale;
 
 function QuaternionDivide(q1, q2) {
-  return r.BindQuaternionDivide(
-    q1,
-    q2
-  )
+  return r.BindQuaternionDivide(q1, q2);
 }
-raylib.QuaternionDivide = QuaternionDivide
+raylib.QuaternionDivide = QuaternionDivide;
 
 function QuaternionLerp(q1, q2, amount) {
-  return r.BindQuaternionLerp(
-    q1,
-    q2,
-    amount
-  )
+  return r.BindQuaternionLerp(q1, q2, amount);
 }
-raylib.QuaternionLerp = QuaternionLerp
+raylib.QuaternionLerp = QuaternionLerp;
 
 function QuaternionNlerp(q1, q2, amount) {
-  return r.BindQuaternionNlerp(
-    q1,
-    q2,
-    amount
-  )
+  return r.BindQuaternionNlerp(q1, q2, amount);
 }
-raylib.QuaternionNlerp = QuaternionNlerp
+raylib.QuaternionNlerp = QuaternionNlerp;
 
 function QuaternionSlerp(q1, q2, amount) {
-  return r.BindQuaternionSlerp(
-    q1,
-    q2,
-    amount
-  )
+  return r.BindQuaternionSlerp(q1, q2, amount);
 }
-raylib.QuaternionSlerp = QuaternionSlerp
+raylib.QuaternionSlerp = QuaternionSlerp;
 
 function QuaternionCubicHermiteSpline(q1, outTangent1, q2, inTangent2, t) {
-  return r.BindQuaternionCubicHermiteSpline(
-    q1,
-    outTangent1,
-    q2,
-    inTangent2,
-    t
-  )
+  return r.BindQuaternionCubicHermiteSpline(q1, outTangent1, q2, inTangent2, t);
 }
-raylib.QuaternionCubicHermiteSpline = QuaternionCubicHermiteSpline
+raylib.QuaternionCubicHermiteSpline = QuaternionCubicHermiteSpline;
 
 function QuaternionFromVector3ToVector3(from, to) {
   return r.BindQuaternionFromVector3ToVector3(
@@ -11980,10 +10885,10 @@ function QuaternionFromVector3ToVector3(from, to) {
     from.z,
     to.x,
     to.y,
-    to.z
-  )
+    to.z,
+  );
 }
-raylib.QuaternionFromVector3ToVector3 = QuaternionFromVector3ToVector3
+raylib.QuaternionFromVector3ToVector3 = QuaternionFromVector3ToVector3;
 
 function QuaternionFromMatrix(mat) {
   return r.BindQuaternionFromMatrix(
@@ -12002,52 +10907,35 @@ function QuaternionFromMatrix(mat) {
     mat.m3,
     mat.m7,
     mat.m11,
-    mat.m15
-  )
+    mat.m15,
+  );
 }
-raylib.QuaternionFromMatrix = QuaternionFromMatrix
+raylib.QuaternionFromMatrix = QuaternionFromMatrix;
 
 function QuaternionToMatrix(q) {
-  return r.BindQuaternionToMatrix(
-    q
-  )
+  return r.BindQuaternionToMatrix(q);
 }
-raylib.QuaternionToMatrix = QuaternionToMatrix
+raylib.QuaternionToMatrix = QuaternionToMatrix;
 
 function QuaternionFromAxisAngle(axis, angle) {
-  return r.BindQuaternionFromAxisAngle(
-    axis.x,
-    axis.y,
-    axis.z,
-    angle
-  )
+  return r.BindQuaternionFromAxisAngle(axis.x, axis.y, axis.z, angle);
 }
-raylib.QuaternionFromAxisAngle = QuaternionFromAxisAngle
+raylib.QuaternionFromAxisAngle = QuaternionFromAxisAngle;
 
 function QuaternionToAxisAngle(q, outAxis, outAngle) {
-  return r.BindQuaternionToAxisAngle(
-    q,
-    outAxis,
-    outAngle
-  )
+  return r.BindQuaternionToAxisAngle(q, outAxis, outAngle);
 }
-raylib.QuaternionToAxisAngle = QuaternionToAxisAngle
+raylib.QuaternionToAxisAngle = QuaternionToAxisAngle;
 
 function QuaternionFromEuler(pitch, yaw, roll) {
-  return r.BindQuaternionFromEuler(
-    pitch,
-    yaw,
-    roll
-  )
+  return r.BindQuaternionFromEuler(pitch, yaw, roll);
 }
-raylib.QuaternionFromEuler = QuaternionFromEuler
+raylib.QuaternionFromEuler = QuaternionFromEuler;
 
 function QuaternionToEuler(q) {
-  return r.BindQuaternionToEuler(
-    q
-  )
+  return r.BindQuaternionToEuler(q);
 }
-raylib.QuaternionToEuler = QuaternionToEuler
+raylib.QuaternionToEuler = QuaternionToEuler;
 
 function QuaternionTransform(q, mat) {
   return r.BindQuaternionTransform(
@@ -12067,18 +10955,15 @@ function QuaternionTransform(q, mat) {
     mat.m3,
     mat.m7,
     mat.m11,
-    mat.m15
-  )
+    mat.m15,
+  );
 }
-raylib.QuaternionTransform = QuaternionTransform
+raylib.QuaternionTransform = QuaternionTransform;
 
 function QuaternionEquals(p, q) {
-  return r.BindQuaternionEquals(
-    p,
-    q
-  )
+  return r.BindQuaternionEquals(p, q);
 }
-raylib.QuaternionEquals = QuaternionEquals
+raylib.QuaternionEquals = QuaternionEquals;
 
 function MatrixDecompose(mat, translation, rotation, scale) {
   return r.BindMatrixDecompose(
@@ -12100,10 +10985,10 @@ function MatrixDecompose(mat, translation, rotation, scale) {
     mat.m15,
     translation,
     rotation,
-    scale
-  )
+    scale,
+  );
 }
-raylib.MatrixDecompose = MatrixDecompose
+raylib.MatrixDecompose = MatrixDecompose;
 
 /**
  * Enable gui controls (global state)
@@ -12111,9 +10996,9 @@ raylib.MatrixDecompose = MatrixDecompose
  * @return {undefined}
  */
 function GuiEnable() {
-  return r.BindGuiEnable()
+  return r.BindGuiEnable();
 }
-raylib.GuiEnable = GuiEnable
+raylib.GuiEnable = GuiEnable;
 
 /**
  * Disable gui controls (global state)
@@ -12121,9 +11006,9 @@ raylib.GuiEnable = GuiEnable
  * @return {undefined}
  */
 function GuiDisable() {
-  return r.BindGuiDisable()
+  return r.BindGuiDisable();
 }
-raylib.GuiDisable = GuiDisable
+raylib.GuiDisable = GuiDisable;
 
 /**
  * Lock gui controls (global state)
@@ -12131,9 +11016,9 @@ raylib.GuiDisable = GuiDisable
  * @return {undefined}
  */
 function GuiLock() {
-  return r.BindGuiLock()
+  return r.BindGuiLock();
 }
-raylib.GuiLock = GuiLock
+raylib.GuiLock = GuiLock;
 
 /**
  * Unlock gui controls (global state)
@@ -12141,9 +11026,9 @@ raylib.GuiLock = GuiLock
  * @return {undefined}
  */
 function GuiUnlock() {
-  return r.BindGuiUnlock()
+  return r.BindGuiUnlock();
 }
-raylib.GuiUnlock = GuiUnlock
+raylib.GuiUnlock = GuiUnlock;
 
 /**
  * Check if gui is locked (global state)
@@ -12151,9 +11036,9 @@ raylib.GuiUnlock = GuiUnlock
  * @return {boolean} The resulting bool.
  */
 function GuiIsLocked() {
-  return r.BindGuiIsLocked()
+  return r.BindGuiIsLocked();
 }
-raylib.GuiIsLocked = GuiIsLocked
+raylib.GuiIsLocked = GuiIsLocked;
 
 /**
  * Set gui controls alpha (global state), alpha goes from 0.0f to 1.0f
@@ -12163,11 +11048,9 @@ raylib.GuiIsLocked = GuiIsLocked
  * @return {undefined}
  */
 function GuiSetAlpha(alpha) {
-  return r.BindGuiSetAlpha(
-    alpha
-  )
+  return r.BindGuiSetAlpha(alpha);
 }
-raylib.GuiSetAlpha = GuiSetAlpha
+raylib.GuiSetAlpha = GuiSetAlpha;
 
 /**
  * Set gui state (global state)
@@ -12177,11 +11060,9 @@ raylib.GuiSetAlpha = GuiSetAlpha
  * @return {undefined}
  */
 function GuiSetState(state) {
-  return r.BindGuiSetState(
-    state
-  )
+  return r.BindGuiSetState(state);
 }
-raylib.GuiSetState = GuiSetState
+raylib.GuiSetState = GuiSetState;
 
 /**
  * Get gui state (global state)
@@ -12189,9 +11070,9 @@ raylib.GuiSetState = GuiSetState
  * @return {number} The resulting int.
  */
 function GuiGetState() {
-  return r.BindGuiGetState()
+  return r.BindGuiGetState();
 }
-raylib.GuiGetState = GuiGetState
+raylib.GuiGetState = GuiGetState;
 
 /**
  * Set gui custom font (global state)
@@ -12211,10 +11092,10 @@ function GuiSetFont(font) {
     font.texture.mipmaps,
     font.texture.format,
     font.recs,
-    font.glyphs
-  )
+    font.glyphs,
+  );
 }
-raylib.GuiSetFont = GuiSetFont
+raylib.GuiSetFont = GuiSetFont;
 
 /**
  * Get gui custom font (global state)
@@ -12222,9 +11103,9 @@ raylib.GuiSetFont = GuiSetFont
  * @return {Font} The resulting Font.
  */
 function GuiGetFont() {
-  return r.BindGuiGetFont()
+  return r.BindGuiGetFont();
 }
-raylib.GuiGetFont = GuiGetFont
+raylib.GuiGetFont = GuiGetFont;
 
 /**
  * Set one style property
@@ -12236,13 +11117,9 @@ raylib.GuiGetFont = GuiGetFont
  * @return {undefined}
  */
 function GuiSetStyle(control, property, value) {
-  return r.BindGuiSetStyle(
-    control,
-    property,
-    value
-  )
+  return r.BindGuiSetStyle(control, property, value);
 }
-raylib.GuiSetStyle = GuiSetStyle
+raylib.GuiSetStyle = GuiSetStyle;
 
 /**
  * Get one style property
@@ -12253,12 +11130,9 @@ raylib.GuiSetStyle = GuiSetStyle
  * @return {number} The resulting int.
  */
 function GuiGetStyle(control, property) {
-  return r.BindGuiGetStyle(
-    control,
-    property
-  )
+  return r.BindGuiGetStyle(control, property);
 }
-raylib.GuiGetStyle = GuiGetStyle
+raylib.GuiGetStyle = GuiGetStyle;
 
 /**
  * Load style file over global style variable (.rgs)
@@ -12268,11 +11142,9 @@ raylib.GuiGetStyle = GuiGetStyle
  * @return {undefined}
  */
 function GuiLoadStyle(fileName) {
-  return r.BindGuiLoadStyle(
-    fileName
-  )
+  return r.BindGuiLoadStyle(fileName);
 }
-raylib.GuiLoadStyle = GuiLoadStyle
+raylib.GuiLoadStyle = GuiLoadStyle;
 
 /**
  * Load style default over global style
@@ -12280,9 +11152,9 @@ raylib.GuiLoadStyle = GuiLoadStyle
  * @return {undefined}
  */
 function GuiLoadStyleDefault() {
-  return r.BindGuiLoadStyleDefault()
+  return r.BindGuiLoadStyleDefault();
 }
-raylib.GuiLoadStyleDefault = GuiLoadStyleDefault
+raylib.GuiLoadStyleDefault = GuiLoadStyleDefault;
 
 /**
  * Enable gui tooltips (global state)
@@ -12290,9 +11162,9 @@ raylib.GuiLoadStyleDefault = GuiLoadStyleDefault
  * @return {undefined}
  */
 function GuiEnableTooltip() {
-  return r.BindGuiEnableTooltip()
+  return r.BindGuiEnableTooltip();
 }
-raylib.GuiEnableTooltip = GuiEnableTooltip
+raylib.GuiEnableTooltip = GuiEnableTooltip;
 
 /**
  * Disable gui tooltips (global state)
@@ -12300,9 +11172,9 @@ raylib.GuiEnableTooltip = GuiEnableTooltip
  * @return {undefined}
  */
 function GuiDisableTooltip() {
-  return r.BindGuiDisableTooltip()
+  return r.BindGuiDisableTooltip();
 }
-raylib.GuiDisableTooltip = GuiDisableTooltip
+raylib.GuiDisableTooltip = GuiDisableTooltip;
 
 /**
  * Set tooltip string
@@ -12312,11 +11184,9 @@ raylib.GuiDisableTooltip = GuiDisableTooltip
  * @return {undefined}
  */
 function GuiSetTooltip(tooltip) {
-  return r.BindGuiSetTooltip(
-    tooltip
-  )
+  return r.BindGuiSetTooltip(tooltip);
 }
-raylib.GuiSetTooltip = GuiSetTooltip
+raylib.GuiSetTooltip = GuiSetTooltip;
 
 /**
  * Get text with icon id prepended (if supported)
@@ -12327,12 +11197,9 @@ raylib.GuiSetTooltip = GuiSetTooltip
  * @return {string} The resulting const char *.
  */
 function GuiIconText(iconId, text) {
-  return r.BindGuiIconText(
-    iconId,
-    text
-  )
+  return r.BindGuiIconText(iconId, text);
 }
-raylib.GuiIconText = GuiIconText
+raylib.GuiIconText = GuiIconText;
 
 /**
  * Set default icon drawing size
@@ -12342,11 +11209,9 @@ raylib.GuiIconText = GuiIconText
  * @return {undefined}
  */
 function GuiSetIconScale(scale) {
-  return r.BindGuiSetIconScale(
-    scale
-  )
+  return r.BindGuiSetIconScale(scale);
 }
-raylib.GuiSetIconScale = GuiSetIconScale
+raylib.GuiSetIconScale = GuiSetIconScale;
 
 /**
  * Get raygui icons data pointer
@@ -12354,9 +11219,9 @@ raylib.GuiSetIconScale = GuiSetIconScale
  * @return {number} The resulting unsigned int *.
  */
 function GuiGetIcons() {
-  return r.BindGuiGetIcons()
+  return r.BindGuiGetIcons();
 }
-raylib.GuiGetIcons = GuiGetIcons
+raylib.GuiGetIcons = GuiGetIcons;
 
 /**
  * Load raygui icons file (.rgi) into internal icons data
@@ -12367,12 +11232,9 @@ raylib.GuiGetIcons = GuiGetIcons
  * @return {number} The resulting char **.
  */
 function GuiLoadIcons(fileName, loadIconsName) {
-  return r.BindGuiLoadIcons(
-    fileName,
-    loadIconsName
-  )
+  return r.BindGuiLoadIcons(fileName, loadIconsName);
 }
-raylib.GuiLoadIcons = GuiLoadIcons
+raylib.GuiLoadIcons = GuiLoadIcons;
 
 /**
  * Draw icon using pixel size at specified position
@@ -12394,10 +11256,10 @@ function GuiDrawIcon(iconId, posX, posY, pixelSize, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
+    color.a,
+  );
 }
-raylib.GuiDrawIcon = GuiDrawIcon
+raylib.GuiDrawIcon = GuiDrawIcon;
 
 /**
  * Window Box control, shows a window that can be closed
@@ -12413,10 +11275,10 @@ function GuiWindowBox(bounds, title) {
     bounds.y,
     bounds.width,
     bounds.height,
-    title
-  )
+    title,
+  );
 }
-raylib.GuiWindowBox = GuiWindowBox
+raylib.GuiWindowBox = GuiWindowBox;
 
 /**
  * Group Box control with text name
@@ -12432,10 +11294,10 @@ function GuiGroupBox(bounds, text) {
     bounds.y,
     bounds.width,
     bounds.height,
-    text
-  )
+    text,
+  );
 }
-raylib.GuiGroupBox = GuiGroupBox
+raylib.GuiGroupBox = GuiGroupBox;
 
 /**
  * Line separator control, could contain text
@@ -12446,15 +11308,9 @@ raylib.GuiGroupBox = GuiGroupBox
  * @return {number} The resulting int.
  */
 function GuiLine(bounds, text) {
-  return r.BindGuiLine(
-    bounds.x,
-    bounds.y,
-    bounds.width,
-    bounds.height,
-    text
-  )
+  return r.BindGuiLine(bounds.x, bounds.y, bounds.width, bounds.height, text);
 }
-raylib.GuiLine = GuiLine
+raylib.GuiLine = GuiLine;
 
 /**
  * Panel control, useful to group controls
@@ -12465,15 +11321,9 @@ raylib.GuiLine = GuiLine
  * @return {number} The resulting int.
  */
 function GuiPanel(bounds, text) {
-  return r.BindGuiPanel(
-    bounds.x,
-    bounds.y,
-    bounds.width,
-    bounds.height,
-    text
-  )
+  return r.BindGuiPanel(bounds.x, bounds.y, bounds.width, bounds.height, text);
 }
-raylib.GuiPanel = GuiPanel
+raylib.GuiPanel = GuiPanel;
 
 /**
  * Tab Bar control, returns TAB to be closed or -1
@@ -12493,10 +11343,10 @@ function GuiTabBar(bounds, text, count, active) {
     bounds.height,
     text,
     count,
-    active
-  )
+    active,
+  );
 }
-raylib.GuiTabBar = GuiTabBar
+raylib.GuiTabBar = GuiTabBar;
 
 /**
  * Scroll Panel control
@@ -12521,10 +11371,10 @@ function GuiScrollPanel(bounds, text, content, scroll, view) {
     content.width,
     content.height,
     scroll,
-    view
-  )
+    view,
+  );
 }
-raylib.GuiScrollPanel = GuiScrollPanel
+raylib.GuiScrollPanel = GuiScrollPanel;
 
 /**
  * Label control
@@ -12535,15 +11385,9 @@ raylib.GuiScrollPanel = GuiScrollPanel
  * @return {number} The resulting int.
  */
 function GuiLabel(bounds, text) {
-  return r.BindGuiLabel(
-    bounds.x,
-    bounds.y,
-    bounds.width,
-    bounds.height,
-    text
-  )
+  return r.BindGuiLabel(bounds.x, bounds.y, bounds.width, bounds.height, text);
 }
-raylib.GuiLabel = GuiLabel
+raylib.GuiLabel = GuiLabel;
 
 /**
  * Button control, returns true when clicked
@@ -12554,15 +11398,9 @@ raylib.GuiLabel = GuiLabel
  * @return {number} The resulting int.
  */
 function GuiButton(bounds, text) {
-  return r.BindGuiButton(
-    bounds.x,
-    bounds.y,
-    bounds.width,
-    bounds.height,
-    text
-  )
+  return r.BindGuiButton(bounds.x, bounds.y, bounds.width, bounds.height, text);
 }
-raylib.GuiButton = GuiButton
+raylib.GuiButton = GuiButton;
 
 /**
  * Label button control, returns true when clicked
@@ -12578,10 +11416,10 @@ function GuiLabelButton(bounds, text) {
     bounds.y,
     bounds.width,
     bounds.height,
-    text
-  )
+    text,
+  );
 }
-raylib.GuiLabelButton = GuiLabelButton
+raylib.GuiLabelButton = GuiLabelButton;
 
 /**
  * Toggle Button control
@@ -12599,10 +11437,10 @@ function GuiToggle(bounds, text, active) {
     bounds.width,
     bounds.height,
     text,
-    active
-  )
+    active,
+  );
 }
-raylib.GuiToggle = GuiToggle
+raylib.GuiToggle = GuiToggle;
 
 /**
  * Toggle Group control
@@ -12620,10 +11458,10 @@ function GuiToggleGroup(bounds, text, active) {
     bounds.width,
     bounds.height,
     text,
-    active
-  )
+    active,
+  );
 }
-raylib.GuiToggleGroup = GuiToggleGroup
+raylib.GuiToggleGroup = GuiToggleGroup;
 
 /**
  * Toggle Slider control
@@ -12641,10 +11479,10 @@ function GuiToggleSlider(bounds, text, active) {
     bounds.width,
     bounds.height,
     text,
-    active
-  )
+    active,
+  );
 }
-raylib.GuiToggleSlider = GuiToggleSlider
+raylib.GuiToggleSlider = GuiToggleSlider;
 
 /**
  * Check Box control, returns true when active
@@ -12662,10 +11500,10 @@ function GuiCheckBox(bounds, text, checked) {
     bounds.width,
     bounds.height,
     text,
-    checked
-  )
+    checked,
+  );
 }
-raylib.GuiCheckBox = GuiCheckBox
+raylib.GuiCheckBox = GuiCheckBox;
 
 /**
  * Combo Box control
@@ -12683,10 +11521,10 @@ function GuiComboBox(bounds, text, active) {
     bounds.width,
     bounds.height,
     text,
-    active
-  )
+    active,
+  );
 }
-raylib.GuiComboBox = GuiComboBox
+raylib.GuiComboBox = GuiComboBox;
 
 /**
  * Dropdown Box control
@@ -12706,10 +11544,10 @@ function GuiDropdownBox(bounds, text, active, editMode) {
     bounds.height,
     text,
     active,
-    editMode
-  )
+    editMode,
+  );
 }
-raylib.GuiDropdownBox = GuiDropdownBox
+raylib.GuiDropdownBox = GuiDropdownBox;
 
 /**
  * Spinner control
@@ -12733,10 +11571,10 @@ function GuiSpinner(bounds, text, value, minValue, maxValue, editMode) {
     value,
     minValue,
     maxValue,
-    editMode
-  )
+    editMode,
+  );
 }
-raylib.GuiSpinner = GuiSpinner
+raylib.GuiSpinner = GuiSpinner;
 
 /**
  * Value Box control, updates input text with numbers
@@ -12760,10 +11598,10 @@ function GuiValueBox(bounds, text, value, minValue, maxValue, editMode) {
     value,
     minValue,
     maxValue,
-    editMode
-  )
+    editMode,
+  );
 }
-raylib.GuiValueBox = GuiValueBox
+raylib.GuiValueBox = GuiValueBox;
 
 /**
  * Value box control for float values
@@ -12785,10 +11623,10 @@ function GuiValueBoxFloat(bounds, text, textValue, value, editMode) {
     text,
     textValue,
     value,
-    editMode
-  )
+    editMode,
+  );
 }
-raylib.GuiValueBoxFloat = GuiValueBoxFloat
+raylib.GuiValueBoxFloat = GuiValueBoxFloat;
 
 /**
  * Text Box control, updates input text
@@ -12808,10 +11646,10 @@ function GuiTextBox(bounds, text, textSize, editMode) {
     bounds.height,
     text,
     textSize,
-    editMode
-  )
+    editMode,
+  );
 }
-raylib.GuiTextBox = GuiTextBox
+raylib.GuiTextBox = GuiTextBox;
 
 /**
  * Slider control
@@ -12835,10 +11673,10 @@ function GuiSlider(bounds, textLeft, textRight, value, minValue, maxValue) {
     textRight,
     value,
     minValue,
-    maxValue
-  )
+    maxValue,
+  );
 }
-raylib.GuiSlider = GuiSlider
+raylib.GuiSlider = GuiSlider;
 
 /**
  * Slider Bar control
@@ -12862,10 +11700,10 @@ function GuiSliderBar(bounds, textLeft, textRight, value, minValue, maxValue) {
     textRight,
     value,
     minValue,
-    maxValue
-  )
+    maxValue,
+  );
 }
-raylib.GuiSliderBar = GuiSliderBar
+raylib.GuiSliderBar = GuiSliderBar;
 
 /**
  * Progress Bar control
@@ -12879,7 +11717,14 @@ raylib.GuiSliderBar = GuiSliderBar
  *
  * @return {number} The resulting int.
  */
-function GuiProgressBar(bounds, textLeft, textRight, value, minValue, maxValue) {
+function GuiProgressBar(
+  bounds,
+  textLeft,
+  textRight,
+  value,
+  minValue,
+  maxValue,
+) {
   return r.BindGuiProgressBar(
     bounds.x,
     bounds.y,
@@ -12889,10 +11734,10 @@ function GuiProgressBar(bounds, textLeft, textRight, value, minValue, maxValue) 
     textRight,
     value,
     minValue,
-    maxValue
-  )
+    maxValue,
+  );
 }
-raylib.GuiProgressBar = GuiProgressBar
+raylib.GuiProgressBar = GuiProgressBar;
 
 /**
  * Status Bar control, shows info text
@@ -12908,10 +11753,10 @@ function GuiStatusBar(bounds, text) {
     bounds.y,
     bounds.width,
     bounds.height,
-    text
-  )
+    text,
+  );
 }
-raylib.GuiStatusBar = GuiStatusBar
+raylib.GuiStatusBar = GuiStatusBar;
 
 /**
  * Dummy control for placeholders
@@ -12927,10 +11772,10 @@ function GuiDummyRec(bounds, text) {
     bounds.y,
     bounds.width,
     bounds.height,
-    text
-  )
+    text,
+  );
 }
-raylib.GuiDummyRec = GuiDummyRec
+raylib.GuiDummyRec = GuiDummyRec;
 
 /**
  * Grid control
@@ -12952,10 +11797,10 @@ function GuiGrid(bounds, text, spacing, subdivs, mouseCell) {
     text,
     spacing,
     subdivs,
-    mouseCell
-  )
+    mouseCell,
+  );
 }
-raylib.GuiGrid = GuiGrid
+raylib.GuiGrid = GuiGrid;
 
 /**
  * List View control
@@ -12975,10 +11820,10 @@ function GuiListView(bounds, text, scrollIndex, active) {
     bounds.height,
     text,
     scrollIndex,
-    active
-  )
+    active,
+  );
 }
-raylib.GuiListView = GuiListView
+raylib.GuiListView = GuiListView;
 
 /**
  * List View with extended parameters
@@ -13002,10 +11847,10 @@ function GuiListViewEx(bounds, text, count, scrollIndex, active, focus) {
     count,
     scrollIndex,
     active,
-    focus
-  )
+    focus,
+  );
 }
-raylib.GuiListViewEx = GuiListViewEx
+raylib.GuiListViewEx = GuiListViewEx;
 
 /**
  * Message Box control, displays a message
@@ -13025,10 +11870,10 @@ function GuiMessageBox(bounds, title, message, buttons) {
     bounds.height,
     title,
     message,
-    buttons
-  )
+    buttons,
+  );
 }
-raylib.GuiMessageBox = GuiMessageBox
+raylib.GuiMessageBox = GuiMessageBox;
 
 /**
  * Text Input Box control, ask for text, supports secret
@@ -13043,7 +11888,15 @@ raylib.GuiMessageBox = GuiMessageBox
  *
  * @return {number} The resulting int.
  */
-function GuiTextInputBox(bounds, title, message, buttons, text, textMaxSize, secretViewActive) {
+function GuiTextInputBox(
+  bounds,
+  title,
+  message,
+  buttons,
+  text,
+  textMaxSize,
+  secretViewActive,
+) {
   return r.BindGuiTextInputBox(
     bounds.x,
     bounds.y,
@@ -13054,10 +11907,10 @@ function GuiTextInputBox(bounds, title, message, buttons, text, textMaxSize, sec
     buttons,
     text,
     textMaxSize,
-    secretViewActive
-  )
+    secretViewActive,
+  );
 }
-raylib.GuiTextInputBox = GuiTextInputBox
+raylib.GuiTextInputBox = GuiTextInputBox;
 
 /**
  * Color Picker control (multiple color controls)
@@ -13075,10 +11928,10 @@ function GuiColorPicker(bounds, text, color) {
     bounds.width,
     bounds.height,
     text,
-    color
-  )
+    color,
+  );
 }
-raylib.GuiColorPicker = GuiColorPicker
+raylib.GuiColorPicker = GuiColorPicker;
 
 /**
  * Color Panel control
@@ -13096,10 +11949,10 @@ function GuiColorPanel(bounds, text, color) {
     bounds.width,
     bounds.height,
     text,
-    color
-  )
+    color,
+  );
 }
-raylib.GuiColorPanel = GuiColorPanel
+raylib.GuiColorPanel = GuiColorPanel;
 
 /**
  * Color Bar Alpha control
@@ -13117,10 +11970,10 @@ function GuiColorBarAlpha(bounds, text, alpha) {
     bounds.width,
     bounds.height,
     text,
-    alpha
-  )
+    alpha,
+  );
 }
-raylib.GuiColorBarAlpha = GuiColorBarAlpha
+raylib.GuiColorBarAlpha = GuiColorBarAlpha;
 
 /**
  * Color Bar Hue control
@@ -13138,10 +11991,10 @@ function GuiColorBarHue(bounds, text, value) {
     bounds.width,
     bounds.height,
     text,
-    value
-  )
+    value,
+  );
 }
-raylib.GuiColorBarHue = GuiColorBarHue
+raylib.GuiColorBarHue = GuiColorBarHue;
 
 /**
  * Color Picker control that avoids conversion to RGB on each call (multiple color controls)
@@ -13159,10 +12012,10 @@ function GuiColorPickerHSV(bounds, text, colorHsv) {
     bounds.width,
     bounds.height,
     text,
-    colorHsv
-  )
+    colorHsv,
+  );
 }
-raylib.GuiColorPickerHSV = GuiColorPickerHSV
+raylib.GuiColorPickerHSV = GuiColorPickerHSV;
 
 /**
  * Color Panel control that updates Hue-Saturation-Value color value, used by GuiColorPickerHSV()
@@ -13180,10 +12033,10 @@ function GuiColorPanelHSV(bounds, text, colorHsv) {
     bounds.width,
     bounds.height,
     text,
-    colorHsv
-  )
+    colorHsv,
+  );
 }
-raylib.GuiColorPanelHSV = GuiColorPanelHSV
+raylib.GuiColorPanelHSV = GuiColorPanelHSV;
 
 /**
  * Choose the current matrix to be transformed
@@ -13193,11 +12046,9 @@ raylib.GuiColorPanelHSV = GuiColorPanelHSV
  * @return {undefined}
  */
 function rlMatrixMode(mode) {
-  return r.BindrlMatrixMode(
-    mode
-  )
+  return r.BindrlMatrixMode(mode);
 }
-raylib.rlMatrixMode = rlMatrixMode
+raylib.rlMatrixMode = rlMatrixMode;
 
 /**
  * Push the current matrix to stack
@@ -13205,9 +12056,9 @@ raylib.rlMatrixMode = rlMatrixMode
  * @return {undefined}
  */
 function rlPushMatrix() {
-  return r.BindrlPushMatrix()
+  return r.BindrlPushMatrix();
 }
-raylib.rlPushMatrix = rlPushMatrix
+raylib.rlPushMatrix = rlPushMatrix;
 
 /**
  * Pop latest inserted matrix from stack
@@ -13215,9 +12066,9 @@ raylib.rlPushMatrix = rlPushMatrix
  * @return {undefined}
  */
 function rlPopMatrix() {
-  return r.BindrlPopMatrix()
+  return r.BindrlPopMatrix();
 }
-raylib.rlPopMatrix = rlPopMatrix
+raylib.rlPopMatrix = rlPopMatrix;
 
 /**
  * Reset current matrix to identity matrix
@@ -13225,9 +12076,9 @@ raylib.rlPopMatrix = rlPopMatrix
  * @return {undefined}
  */
 function rlLoadIdentity() {
-  return r.BindrlLoadIdentity()
+  return r.BindrlLoadIdentity();
 }
-raylib.rlLoadIdentity = rlLoadIdentity
+raylib.rlLoadIdentity = rlLoadIdentity;
 
 /**
  * Multiply the current matrix by a translation matrix
@@ -13239,13 +12090,9 @@ raylib.rlLoadIdentity = rlLoadIdentity
  * @return {undefined}
  */
 function rlTranslatef(x, y, z) {
-  return r.BindrlTranslatef(
-    x,
-    y,
-    z
-  )
+  return r.BindrlTranslatef(x, y, z);
 }
-raylib.rlTranslatef = rlTranslatef
+raylib.rlTranslatef = rlTranslatef;
 
 /**
  * Multiply the current matrix by a rotation matrix
@@ -13258,14 +12105,9 @@ raylib.rlTranslatef = rlTranslatef
  * @return {undefined}
  */
 function rlRotatef(angle, x, y, z) {
-  return r.BindrlRotatef(
-    angle,
-    x,
-    y,
-    z
-  )
+  return r.BindrlRotatef(angle, x, y, z);
 }
-raylib.rlRotatef = rlRotatef
+raylib.rlRotatef = rlRotatef;
 
 /**
  * Multiply the current matrix by a scaling matrix
@@ -13277,13 +12119,9 @@ raylib.rlRotatef = rlRotatef
  * @return {undefined}
  */
 function rlScalef(x, y, z) {
-  return r.BindrlScalef(
-    x,
-    y,
-    z
-  )
+  return r.BindrlScalef(x, y, z);
 }
-raylib.rlScalef = rlScalef
+raylib.rlScalef = rlScalef;
 
 /**
  * Multiply the current matrix by another matrix
@@ -13293,35 +12131,19 @@ raylib.rlScalef = rlScalef
  * @return {undefined}
  */
 function rlMultMatrixf(matf) {
-  return r.BindrlMultMatrixf(
-    matf
-  )
+  return r.BindrlMultMatrixf(matf);
 }
-raylib.rlMultMatrixf = rlMultMatrixf
+raylib.rlMultMatrixf = rlMultMatrixf;
 
 function rlFrustum(left, right, bottom, top, znear, zfar) {
-  return r.BindrlFrustum(
-    left,
-    right,
-    bottom,
-    top,
-    znear,
-    zfar
-  )
+  return r.BindrlFrustum(left, right, bottom, top, znear, zfar);
 }
-raylib.rlFrustum = rlFrustum
+raylib.rlFrustum = rlFrustum;
 
 function rlOrtho(left, right, bottom, top, znear, zfar) {
-  return r.BindrlOrtho(
-    left,
-    right,
-    bottom,
-    top,
-    znear,
-    zfar
-  )
+  return r.BindrlOrtho(left, right, bottom, top, znear, zfar);
 }
-raylib.rlOrtho = rlOrtho
+raylib.rlOrtho = rlOrtho;
 
 /**
  * Set the viewport area
@@ -13334,14 +12156,9 @@ raylib.rlOrtho = rlOrtho
  * @return {undefined}
  */
 function rlViewport(x, y, width, height) {
-  return r.BindrlViewport(
-    x,
-    y,
-    width,
-    height
-  )
+  return r.BindrlViewport(x, y, width, height);
 }
-raylib.rlViewport = rlViewport
+raylib.rlViewport = rlViewport;
 
 /**
  * Set clip planes distances
@@ -13352,12 +12169,9 @@ raylib.rlViewport = rlViewport
  * @return {undefined}
  */
 function rlSetClipPlanes(nearPlane, farPlane) {
-  return r.BindrlSetClipPlanes(
-    nearPlane,
-    farPlane
-  )
+  return r.BindrlSetClipPlanes(nearPlane, farPlane);
 }
-raylib.rlSetClipPlanes = rlSetClipPlanes
+raylib.rlSetClipPlanes = rlSetClipPlanes;
 
 /**
  * Get cull plane distance near
@@ -13365,9 +12179,9 @@ raylib.rlSetClipPlanes = rlSetClipPlanes
  * @return {number} The resulting double.
  */
 function rlGetCullDistanceNear() {
-  return r.BindrlGetCullDistanceNear()
+  return r.BindrlGetCullDistanceNear();
 }
-raylib.rlGetCullDistanceNear = rlGetCullDistanceNear
+raylib.rlGetCullDistanceNear = rlGetCullDistanceNear;
 
 /**
  * Get cull plane distance far
@@ -13375,9 +12189,9 @@ raylib.rlGetCullDistanceNear = rlGetCullDistanceNear
  * @return {number} The resulting double.
  */
 function rlGetCullDistanceFar() {
-  return r.BindrlGetCullDistanceFar()
+  return r.BindrlGetCullDistanceFar();
 }
-raylib.rlGetCullDistanceFar = rlGetCullDistanceFar
+raylib.rlGetCullDistanceFar = rlGetCullDistanceFar;
 
 /**
  * Initialize drawing mode (how to organize vertex)
@@ -13387,11 +12201,9 @@ raylib.rlGetCullDistanceFar = rlGetCullDistanceFar
  * @return {undefined}
  */
 function rlBegin(mode) {
-  return r.BindrlBegin(
-    mode
-  )
+  return r.BindrlBegin(mode);
 }
-raylib.rlBegin = rlBegin
+raylib.rlBegin = rlBegin;
 
 /**
  * Finish vertex providing
@@ -13399,9 +12211,9 @@ raylib.rlBegin = rlBegin
  * @return {undefined}
  */
 function rlEnd() {
-  return r.BindrlEnd()
+  return r.BindrlEnd();
 }
-raylib.rlEnd = rlEnd
+raylib.rlEnd = rlEnd;
 
 /**
  * Define one vertex (position) - 2 int
@@ -13412,12 +12224,9 @@ raylib.rlEnd = rlEnd
  * @return {undefined}
  */
 function rlVertex2i(x, y) {
-  return r.BindrlVertex2i(
-    x,
-    y
-  )
+  return r.BindrlVertex2i(x, y);
 }
-raylib.rlVertex2i = rlVertex2i
+raylib.rlVertex2i = rlVertex2i;
 
 /**
  * Define one vertex (position) - 2 float
@@ -13428,12 +12237,9 @@ raylib.rlVertex2i = rlVertex2i
  * @return {undefined}
  */
 function rlVertex2f(x, y) {
-  return r.BindrlVertex2f(
-    x,
-    y
-  )
+  return r.BindrlVertex2f(x, y);
 }
-raylib.rlVertex2f = rlVertex2f
+raylib.rlVertex2f = rlVertex2f;
 
 /**
  * Define one vertex (position) - 3 float
@@ -13445,13 +12251,9 @@ raylib.rlVertex2f = rlVertex2f
  * @return {undefined}
  */
 function rlVertex3f(x, y, z) {
-  return r.BindrlVertex3f(
-    x,
-    y,
-    z
-  )
+  return r.BindrlVertex3f(x, y, z);
 }
-raylib.rlVertex3f = rlVertex3f
+raylib.rlVertex3f = rlVertex3f;
 
 /**
  * Define one vertex (texture coordinate) - 2 float
@@ -13462,12 +12264,9 @@ raylib.rlVertex3f = rlVertex3f
  * @return {undefined}
  */
 function rlTexCoord2f(x, y) {
-  return r.BindrlTexCoord2f(
-    x,
-    y
-  )
+  return r.BindrlTexCoord2f(x, y);
 }
-raylib.rlTexCoord2f = rlTexCoord2f
+raylib.rlTexCoord2f = rlTexCoord2f;
 
 /**
  * Define one vertex (normal) - 3 float
@@ -13479,13 +12278,9 @@ raylib.rlTexCoord2f = rlTexCoord2f
  * @return {undefined}
  */
 function rlNormal3f(x, y, z) {
-  return r.BindrlNormal3f(
-    x,
-    y,
-    z
-  )
+  return r.BindrlNormal3f(x, y, z);
 }
-raylib.rlNormal3f = rlNormal3f
+raylib.rlNormal3f = rlNormal3f;
 
 /**
  * Define one vertex (color) - 4 byte
@@ -13498,14 +12293,9 @@ raylib.rlNormal3f = rlNormal3f
  * @return {undefined}
  */
 function rlColor4ub(r, g, b, a) {
-  return r.BindrlColor4ub(
-    r,
-    g,
-    b,
-    a
-  )
+  return r.BindrlColor4ub(r, g, b, a);
 }
-raylib.rlColor4ub = rlColor4ub
+raylib.rlColor4ub = rlColor4ub;
 
 /**
  * Define one vertex (color) - 3 float
@@ -13517,13 +12307,9 @@ raylib.rlColor4ub = rlColor4ub
  * @return {undefined}
  */
 function rlColor3f(x, y, z) {
-  return r.BindrlColor3f(
-    x,
-    y,
-    z
-  )
+  return r.BindrlColor3f(x, y, z);
 }
-raylib.rlColor3f = rlColor3f
+raylib.rlColor3f = rlColor3f;
 
 /**
  * Define one vertex (color) - 4 float
@@ -13536,14 +12322,9 @@ raylib.rlColor3f = rlColor3f
  * @return {undefined}
  */
 function rlColor4f(x, y, z, w) {
-  return r.BindrlColor4f(
-    x,
-    y,
-    z,
-    w
-  )
+  return r.BindrlColor4f(x, y, z, w);
 }
-raylib.rlColor4f = rlColor4f
+raylib.rlColor4f = rlColor4f;
 
 /**
  * Enable vertex array (VAO, if supported)
@@ -13553,11 +12334,9 @@ raylib.rlColor4f = rlColor4f
  * @return {boolean} The resulting bool.
  */
 function rlEnableVertexArray(vaoId) {
-  return r.BindrlEnableVertexArray(
-    vaoId
-  )
+  return r.BindrlEnableVertexArray(vaoId);
 }
-raylib.rlEnableVertexArray = rlEnableVertexArray
+raylib.rlEnableVertexArray = rlEnableVertexArray;
 
 /**
  * Disable vertex array (VAO, if supported)
@@ -13565,9 +12344,9 @@ raylib.rlEnableVertexArray = rlEnableVertexArray
  * @return {undefined}
  */
 function rlDisableVertexArray() {
-  return r.BindrlDisableVertexArray()
+  return r.BindrlDisableVertexArray();
 }
-raylib.rlDisableVertexArray = rlDisableVertexArray
+raylib.rlDisableVertexArray = rlDisableVertexArray;
 
 /**
  * Enable vertex buffer (VBO)
@@ -13577,11 +12356,9 @@ raylib.rlDisableVertexArray = rlDisableVertexArray
  * @return {undefined}
  */
 function rlEnableVertexBuffer(id) {
-  return r.BindrlEnableVertexBuffer(
-    id
-  )
+  return r.BindrlEnableVertexBuffer(id);
 }
-raylib.rlEnableVertexBuffer = rlEnableVertexBuffer
+raylib.rlEnableVertexBuffer = rlEnableVertexBuffer;
 
 /**
  * Disable vertex buffer (VBO)
@@ -13589,9 +12366,9 @@ raylib.rlEnableVertexBuffer = rlEnableVertexBuffer
  * @return {undefined}
  */
 function rlDisableVertexBuffer() {
-  return r.BindrlDisableVertexBuffer()
+  return r.BindrlDisableVertexBuffer();
 }
-raylib.rlDisableVertexBuffer = rlDisableVertexBuffer
+raylib.rlDisableVertexBuffer = rlDisableVertexBuffer;
 
 /**
  * Enable vertex buffer element (VBO element)
@@ -13601,11 +12378,9 @@ raylib.rlDisableVertexBuffer = rlDisableVertexBuffer
  * @return {undefined}
  */
 function rlEnableVertexBufferElement(id) {
-  return r.BindrlEnableVertexBufferElement(
-    id
-  )
+  return r.BindrlEnableVertexBufferElement(id);
 }
-raylib.rlEnableVertexBufferElement = rlEnableVertexBufferElement
+raylib.rlEnableVertexBufferElement = rlEnableVertexBufferElement;
 
 /**
  * Disable vertex buffer element (VBO element)
@@ -13613,9 +12388,9 @@ raylib.rlEnableVertexBufferElement = rlEnableVertexBufferElement
  * @return {undefined}
  */
 function rlDisableVertexBufferElement() {
-  return r.BindrlDisableVertexBufferElement()
+  return r.BindrlDisableVertexBufferElement();
 }
-raylib.rlDisableVertexBufferElement = rlDisableVertexBufferElement
+raylib.rlDisableVertexBufferElement = rlDisableVertexBufferElement;
 
 /**
  * Enable vertex attribute index
@@ -13625,11 +12400,9 @@ raylib.rlDisableVertexBufferElement = rlDisableVertexBufferElement
  * @return {undefined}
  */
 function rlEnableVertexAttribute(index) {
-  return r.BindrlEnableVertexAttribute(
-    index
-  )
+  return r.BindrlEnableVertexAttribute(index);
 }
-raylib.rlEnableVertexAttribute = rlEnableVertexAttribute
+raylib.rlEnableVertexAttribute = rlEnableVertexAttribute;
 
 /**
  * Disable vertex attribute index
@@ -13639,11 +12412,9 @@ raylib.rlEnableVertexAttribute = rlEnableVertexAttribute
  * @return {undefined}
  */
 function rlDisableVertexAttribute(index) {
-  return r.BindrlDisableVertexAttribute(
-    index
-  )
+  return r.BindrlDisableVertexAttribute(index);
 }
-raylib.rlDisableVertexAttribute = rlDisableVertexAttribute
+raylib.rlDisableVertexAttribute = rlDisableVertexAttribute;
 
 /**
  * Select and active a texture slot
@@ -13653,11 +12424,9 @@ raylib.rlDisableVertexAttribute = rlDisableVertexAttribute
  * @return {undefined}
  */
 function rlActiveTextureSlot(slot) {
-  return r.BindrlActiveTextureSlot(
-    slot
-  )
+  return r.BindrlActiveTextureSlot(slot);
 }
-raylib.rlActiveTextureSlot = rlActiveTextureSlot
+raylib.rlActiveTextureSlot = rlActiveTextureSlot;
 
 /**
  * Enable texture
@@ -13667,11 +12436,9 @@ raylib.rlActiveTextureSlot = rlActiveTextureSlot
  * @return {undefined}
  */
 function rlEnableTexture(id) {
-  return r.BindrlEnableTexture(
-    id
-  )
+  return r.BindrlEnableTexture(id);
 }
-raylib.rlEnableTexture = rlEnableTexture
+raylib.rlEnableTexture = rlEnableTexture;
 
 /**
  * Disable texture
@@ -13679,9 +12446,9 @@ raylib.rlEnableTexture = rlEnableTexture
  * @return {undefined}
  */
 function rlDisableTexture() {
-  return r.BindrlDisableTexture()
+  return r.BindrlDisableTexture();
 }
-raylib.rlDisableTexture = rlDisableTexture
+raylib.rlDisableTexture = rlDisableTexture;
 
 /**
  * Enable texture cubemap
@@ -13691,11 +12458,9 @@ raylib.rlDisableTexture = rlDisableTexture
  * @return {undefined}
  */
 function rlEnableTextureCubemap(id) {
-  return r.BindrlEnableTextureCubemap(
-    id
-  )
+  return r.BindrlEnableTextureCubemap(id);
 }
-raylib.rlEnableTextureCubemap = rlEnableTextureCubemap
+raylib.rlEnableTextureCubemap = rlEnableTextureCubemap;
 
 /**
  * Disable texture cubemap
@@ -13703,9 +12468,9 @@ raylib.rlEnableTextureCubemap = rlEnableTextureCubemap
  * @return {undefined}
  */
 function rlDisableTextureCubemap() {
-  return r.BindrlDisableTextureCubemap()
+  return r.BindrlDisableTextureCubemap();
 }
-raylib.rlDisableTextureCubemap = rlDisableTextureCubemap
+raylib.rlDisableTextureCubemap = rlDisableTextureCubemap;
 
 /**
  * Set texture parameters (filter, wrap)
@@ -13717,13 +12482,9 @@ raylib.rlDisableTextureCubemap = rlDisableTextureCubemap
  * @return {undefined}
  */
 function rlTextureParameters(id, param, value) {
-  return r.BindrlTextureParameters(
-    id,
-    param,
-    value
-  )
+  return r.BindrlTextureParameters(id, param, value);
 }
-raylib.rlTextureParameters = rlTextureParameters
+raylib.rlTextureParameters = rlTextureParameters;
 
 /**
  * Set cubemap parameters (filter, wrap)
@@ -13735,13 +12496,9 @@ raylib.rlTextureParameters = rlTextureParameters
  * @return {undefined}
  */
 function rlCubemapParameters(id, param, value) {
-  return r.BindrlCubemapParameters(
-    id,
-    param,
-    value
-  )
+  return r.BindrlCubemapParameters(id, param, value);
 }
-raylib.rlCubemapParameters = rlCubemapParameters
+raylib.rlCubemapParameters = rlCubemapParameters;
 
 /**
  * Enable shader program
@@ -13751,11 +12508,9 @@ raylib.rlCubemapParameters = rlCubemapParameters
  * @return {undefined}
  */
 function rlEnableShader(id) {
-  return r.BindrlEnableShader(
-    id
-  )
+  return r.BindrlEnableShader(id);
 }
-raylib.rlEnableShader = rlEnableShader
+raylib.rlEnableShader = rlEnableShader;
 
 /**
  * Disable shader program
@@ -13763,9 +12518,9 @@ raylib.rlEnableShader = rlEnableShader
  * @return {undefined}
  */
 function rlDisableShader() {
-  return r.BindrlDisableShader()
+  return r.BindrlDisableShader();
 }
-raylib.rlDisableShader = rlDisableShader
+raylib.rlDisableShader = rlDisableShader;
 
 /**
  * Enable render texture (fbo)
@@ -13775,11 +12530,9 @@ raylib.rlDisableShader = rlDisableShader
  * @return {undefined}
  */
 function rlEnableFramebuffer(id) {
-  return r.BindrlEnableFramebuffer(
-    id
-  )
+  return r.BindrlEnableFramebuffer(id);
 }
-raylib.rlEnableFramebuffer = rlEnableFramebuffer
+raylib.rlEnableFramebuffer = rlEnableFramebuffer;
 
 /**
  * Disable render texture (fbo), return to default framebuffer
@@ -13787,9 +12540,9 @@ raylib.rlEnableFramebuffer = rlEnableFramebuffer
  * @return {undefined}
  */
 function rlDisableFramebuffer() {
-  return r.BindrlDisableFramebuffer()
+  return r.BindrlDisableFramebuffer();
 }
-raylib.rlDisableFramebuffer = rlDisableFramebuffer
+raylib.rlDisableFramebuffer = rlDisableFramebuffer;
 
 /**
  * Get the currently active render texture (fbo), 0 for default framebuffer
@@ -13797,9 +12550,9 @@ raylib.rlDisableFramebuffer = rlDisableFramebuffer
  * @return {number} The resulting unsigned int.
  */
 function rlGetActiveFramebuffer() {
-  return r.BindrlGetActiveFramebuffer()
+  return r.BindrlGetActiveFramebuffer();
 }
-raylib.rlGetActiveFramebuffer = rlGetActiveFramebuffer
+raylib.rlGetActiveFramebuffer = rlGetActiveFramebuffer;
 
 /**
  * Activate multiple draw color buffers
@@ -13809,11 +12562,9 @@ raylib.rlGetActiveFramebuffer = rlGetActiveFramebuffer
  * @return {undefined}
  */
 function rlActiveDrawBuffers(count) {
-  return r.BindrlActiveDrawBuffers(
-    count
-  )
+  return r.BindrlActiveDrawBuffers(count);
 }
-raylib.rlActiveDrawBuffers = rlActiveDrawBuffers
+raylib.rlActiveDrawBuffers = rlActiveDrawBuffers;
 
 /**
  * Blit active framebuffer to main framebuffer
@@ -13830,7 +12581,17 @@ raylib.rlActiveDrawBuffers = rlActiveDrawBuffers
  *
  * @return {undefined}
  */
-function rlBlitFramebuffer(srcX, srcY, srcWidth, srcHeight, dstX, dstY, dstWidth, dstHeight, bufferMask) {
+function rlBlitFramebuffer(
+  srcX,
+  srcY,
+  srcWidth,
+  srcHeight,
+  dstX,
+  dstY,
+  dstWidth,
+  dstHeight,
+  bufferMask,
+) {
   return r.BindrlBlitFramebuffer(
     srcX,
     srcY,
@@ -13840,10 +12601,10 @@ function rlBlitFramebuffer(srcX, srcY, srcWidth, srcHeight, dstX, dstY, dstWidth
     dstY,
     dstWidth,
     dstHeight,
-    bufferMask
-  )
+    bufferMask,
+  );
 }
-raylib.rlBlitFramebuffer = rlBlitFramebuffer
+raylib.rlBlitFramebuffer = rlBlitFramebuffer;
 
 /**
  * Bind framebuffer (FBO)
@@ -13854,12 +12615,9 @@ raylib.rlBlitFramebuffer = rlBlitFramebuffer
  * @return {undefined}
  */
 function rlBindFramebuffer(target, framebuffer) {
-  return r.BindrlBindFramebuffer(
-    target,
-    framebuffer
-  )
+  return r.BindrlBindFramebuffer(target, framebuffer);
 }
-raylib.rlBindFramebuffer = rlBindFramebuffer
+raylib.rlBindFramebuffer = rlBindFramebuffer;
 
 /**
  * Enable color blending
@@ -13867,9 +12625,9 @@ raylib.rlBindFramebuffer = rlBindFramebuffer
  * @return {undefined}
  */
 function rlEnableColorBlend() {
-  return r.BindrlEnableColorBlend()
+  return r.BindrlEnableColorBlend();
 }
-raylib.rlEnableColorBlend = rlEnableColorBlend
+raylib.rlEnableColorBlend = rlEnableColorBlend;
 
 /**
  * Disable color blending
@@ -13877,9 +12635,9 @@ raylib.rlEnableColorBlend = rlEnableColorBlend
  * @return {undefined}
  */
 function rlDisableColorBlend() {
-  return r.BindrlDisableColorBlend()
+  return r.BindrlDisableColorBlend();
 }
-raylib.rlDisableColorBlend = rlDisableColorBlend
+raylib.rlDisableColorBlend = rlDisableColorBlend;
 
 /**
  * Enable depth test
@@ -13887,9 +12645,9 @@ raylib.rlDisableColorBlend = rlDisableColorBlend
  * @return {undefined}
  */
 function rlEnableDepthTest() {
-  return r.BindrlEnableDepthTest()
+  return r.BindrlEnableDepthTest();
 }
-raylib.rlEnableDepthTest = rlEnableDepthTest
+raylib.rlEnableDepthTest = rlEnableDepthTest;
 
 /**
  * Disable depth test
@@ -13897,9 +12655,9 @@ raylib.rlEnableDepthTest = rlEnableDepthTest
  * @return {undefined}
  */
 function rlDisableDepthTest() {
-  return r.BindrlDisableDepthTest()
+  return r.BindrlDisableDepthTest();
 }
-raylib.rlDisableDepthTest = rlDisableDepthTest
+raylib.rlDisableDepthTest = rlDisableDepthTest;
 
 /**
  * Enable depth write
@@ -13907,9 +12665,9 @@ raylib.rlDisableDepthTest = rlDisableDepthTest
  * @return {undefined}
  */
 function rlEnableDepthMask() {
-  return r.BindrlEnableDepthMask()
+  return r.BindrlEnableDepthMask();
 }
-raylib.rlEnableDepthMask = rlEnableDepthMask
+raylib.rlEnableDepthMask = rlEnableDepthMask;
 
 /**
  * Disable depth write
@@ -13917,9 +12675,9 @@ raylib.rlEnableDepthMask = rlEnableDepthMask
  * @return {undefined}
  */
 function rlDisableDepthMask() {
-  return r.BindrlDisableDepthMask()
+  return r.BindrlDisableDepthMask();
 }
-raylib.rlDisableDepthMask = rlDisableDepthMask
+raylib.rlDisableDepthMask = rlDisableDepthMask;
 
 /**
  * Enable backface culling
@@ -13927,9 +12685,9 @@ raylib.rlDisableDepthMask = rlDisableDepthMask
  * @return {undefined}
  */
 function rlEnableBackfaceCulling() {
-  return r.BindrlEnableBackfaceCulling()
+  return r.BindrlEnableBackfaceCulling();
 }
-raylib.rlEnableBackfaceCulling = rlEnableBackfaceCulling
+raylib.rlEnableBackfaceCulling = rlEnableBackfaceCulling;
 
 /**
  * Disable backface culling
@@ -13937,9 +12695,9 @@ raylib.rlEnableBackfaceCulling = rlEnableBackfaceCulling
  * @return {undefined}
  */
 function rlDisableBackfaceCulling() {
-  return r.BindrlDisableBackfaceCulling()
+  return r.BindrlDisableBackfaceCulling();
 }
-raylib.rlDisableBackfaceCulling = rlDisableBackfaceCulling
+raylib.rlDisableBackfaceCulling = rlDisableBackfaceCulling;
 
 /**
  * Color mask control
@@ -13952,14 +12710,9 @@ raylib.rlDisableBackfaceCulling = rlDisableBackfaceCulling
  * @return {undefined}
  */
 function rlColorMask(r, g, b, a) {
-  return r.BindrlColorMask(
-    r,
-    g,
-    b,
-    a
-  )
+  return r.BindrlColorMask(r, g, b, a);
 }
-raylib.rlColorMask = rlColorMask
+raylib.rlColorMask = rlColorMask;
 
 /**
  * Set face culling mode
@@ -13969,11 +12722,9 @@ raylib.rlColorMask = rlColorMask
  * @return {undefined}
  */
 function rlSetCullFace(mode) {
-  return r.BindrlSetCullFace(
-    mode
-  )
+  return r.BindrlSetCullFace(mode);
 }
-raylib.rlSetCullFace = rlSetCullFace
+raylib.rlSetCullFace = rlSetCullFace;
 
 /**
  * Enable scissor test
@@ -13981,9 +12732,9 @@ raylib.rlSetCullFace = rlSetCullFace
  * @return {undefined}
  */
 function rlEnableScissorTest() {
-  return r.BindrlEnableScissorTest()
+  return r.BindrlEnableScissorTest();
 }
-raylib.rlEnableScissorTest = rlEnableScissorTest
+raylib.rlEnableScissorTest = rlEnableScissorTest;
 
 /**
  * Disable scissor test
@@ -13991,9 +12742,9 @@ raylib.rlEnableScissorTest = rlEnableScissorTest
  * @return {undefined}
  */
 function rlDisableScissorTest() {
-  return r.BindrlDisableScissorTest()
+  return r.BindrlDisableScissorTest();
 }
-raylib.rlDisableScissorTest = rlDisableScissorTest
+raylib.rlDisableScissorTest = rlDisableScissorTest;
 
 /**
  * Scissor test
@@ -14006,14 +12757,9 @@ raylib.rlDisableScissorTest = rlDisableScissorTest
  * @return {undefined}
  */
 function rlScissor(x, y, width, height) {
-  return r.BindrlScissor(
-    x,
-    y,
-    width,
-    height
-  )
+  return r.BindrlScissor(x, y, width, height);
 }
-raylib.rlScissor = rlScissor
+raylib.rlScissor = rlScissor;
 
 /**
  * Enable wire mode
@@ -14021,9 +12767,9 @@ raylib.rlScissor = rlScissor
  * @return {undefined}
  */
 function rlEnableWireMode() {
-  return r.BindrlEnableWireMode()
+  return r.BindrlEnableWireMode();
 }
-raylib.rlEnableWireMode = rlEnableWireMode
+raylib.rlEnableWireMode = rlEnableWireMode;
 
 /**
  * Enable point mode
@@ -14031,9 +12777,9 @@ raylib.rlEnableWireMode = rlEnableWireMode
  * @return {undefined}
  */
 function rlEnablePointMode() {
-  return r.BindrlEnablePointMode()
+  return r.BindrlEnablePointMode();
 }
-raylib.rlEnablePointMode = rlEnablePointMode
+raylib.rlEnablePointMode = rlEnablePointMode;
 
 /**
  * Disable wire (and point) mode
@@ -14041,9 +12787,9 @@ raylib.rlEnablePointMode = rlEnablePointMode
  * @return {undefined}
  */
 function rlDisableWireMode() {
-  return r.BindrlDisableWireMode()
+  return r.BindrlDisableWireMode();
 }
-raylib.rlDisableWireMode = rlDisableWireMode
+raylib.rlDisableWireMode = rlDisableWireMode;
 
 /**
  * Set the line drawing width
@@ -14053,11 +12799,9 @@ raylib.rlDisableWireMode = rlDisableWireMode
  * @return {undefined}
  */
 function rlSetLineWidth(width) {
-  return r.BindrlSetLineWidth(
-    width
-  )
+  return r.BindrlSetLineWidth(width);
 }
-raylib.rlSetLineWidth = rlSetLineWidth
+raylib.rlSetLineWidth = rlSetLineWidth;
 
 /**
  * Get the line drawing width
@@ -14065,9 +12809,9 @@ raylib.rlSetLineWidth = rlSetLineWidth
  * @return {number} The resulting float.
  */
 function rlGetLineWidth() {
-  return r.BindrlGetLineWidth()
+  return r.BindrlGetLineWidth();
 }
-raylib.rlGetLineWidth = rlGetLineWidth
+raylib.rlGetLineWidth = rlGetLineWidth;
 
 /**
  * Enable line aliasing
@@ -14075,9 +12819,9 @@ raylib.rlGetLineWidth = rlGetLineWidth
  * @return {undefined}
  */
 function rlEnableSmoothLines() {
-  return r.BindrlEnableSmoothLines()
+  return r.BindrlEnableSmoothLines();
 }
-raylib.rlEnableSmoothLines = rlEnableSmoothLines
+raylib.rlEnableSmoothLines = rlEnableSmoothLines;
 
 /**
  * Disable line aliasing
@@ -14085,9 +12829,9 @@ raylib.rlEnableSmoothLines = rlEnableSmoothLines
  * @return {undefined}
  */
 function rlDisableSmoothLines() {
-  return r.BindrlDisableSmoothLines()
+  return r.BindrlDisableSmoothLines();
 }
-raylib.rlDisableSmoothLines = rlDisableSmoothLines
+raylib.rlDisableSmoothLines = rlDisableSmoothLines;
 
 /**
  * Enable stereo rendering
@@ -14095,9 +12839,9 @@ raylib.rlDisableSmoothLines = rlDisableSmoothLines
  * @return {undefined}
  */
 function rlEnableStereoRender() {
-  return r.BindrlEnableStereoRender()
+  return r.BindrlEnableStereoRender();
 }
-raylib.rlEnableStereoRender = rlEnableStereoRender
+raylib.rlEnableStereoRender = rlEnableStereoRender;
 
 /**
  * Disable stereo rendering
@@ -14105,9 +12849,9 @@ raylib.rlEnableStereoRender = rlEnableStereoRender
  * @return {undefined}
  */
 function rlDisableStereoRender() {
-  return r.BindrlDisableStereoRender()
+  return r.BindrlDisableStereoRender();
 }
-raylib.rlDisableStereoRender = rlDisableStereoRender
+raylib.rlDisableStereoRender = rlDisableStereoRender;
 
 /**
  * Check if stereo render is enabled
@@ -14115,9 +12859,9 @@ raylib.rlDisableStereoRender = rlDisableStereoRender
  * @return {boolean} The resulting bool.
  */
 function rlIsStereoRenderEnabled() {
-  return r.BindrlIsStereoRenderEnabled()
+  return r.BindrlIsStereoRenderEnabled();
 }
-raylib.rlIsStereoRenderEnabled = rlIsStereoRenderEnabled
+raylib.rlIsStereoRenderEnabled = rlIsStereoRenderEnabled;
 
 /**
  * Clear color buffer with color
@@ -14130,14 +12874,9 @@ raylib.rlIsStereoRenderEnabled = rlIsStereoRenderEnabled
  * @return {undefined}
  */
 function rlClearColor(r, g, b, a) {
-  return r.BindrlClearColor(
-    r,
-    g,
-    b,
-    a
-  )
+  return r.BindrlClearColor(r, g, b, a);
 }
-raylib.rlClearColor = rlClearColor
+raylib.rlClearColor = rlClearColor;
 
 /**
  * Clear used screen buffers (color and depth)
@@ -14145,9 +12884,9 @@ raylib.rlClearColor = rlClearColor
  * @return {undefined}
  */
 function rlClearScreenBuffers() {
-  return r.BindrlClearScreenBuffers()
+  return r.BindrlClearScreenBuffers();
 }
-raylib.rlClearScreenBuffers = rlClearScreenBuffers
+raylib.rlClearScreenBuffers = rlClearScreenBuffers;
 
 /**
  * Check and log OpenGL error codes
@@ -14155,9 +12894,9 @@ raylib.rlClearScreenBuffers = rlClearScreenBuffers
  * @return {undefined}
  */
 function rlCheckErrors() {
-  return r.BindrlCheckErrors()
+  return r.BindrlCheckErrors();
 }
-raylib.rlCheckErrors = rlCheckErrors
+raylib.rlCheckErrors = rlCheckErrors;
 
 /**
  * Set blending mode
@@ -14167,11 +12906,9 @@ raylib.rlCheckErrors = rlCheckErrors
  * @return {undefined}
  */
 function rlSetBlendMode(mode) {
-  return r.BindrlSetBlendMode(
-    mode
-  )
+  return r.BindrlSetBlendMode(mode);
 }
-raylib.rlSetBlendMode = rlSetBlendMode
+raylib.rlSetBlendMode = rlSetBlendMode;
 
 /**
  * Set blending mode factor and equation (using OpenGL factors)
@@ -14183,13 +12920,9 @@ raylib.rlSetBlendMode = rlSetBlendMode
  * @return {undefined}
  */
 function rlSetBlendFactors(glSrcFactor, glDstFactor, glEquation) {
-  return r.BindrlSetBlendFactors(
-    glSrcFactor,
-    glDstFactor,
-    glEquation
-  )
+  return r.BindrlSetBlendFactors(glSrcFactor, glDstFactor, glEquation);
 }
-raylib.rlSetBlendFactors = rlSetBlendFactors
+raylib.rlSetBlendFactors = rlSetBlendFactors;
 
 /**
  * Set blending mode factors and equations separately (using OpenGL factors)
@@ -14203,17 +12936,24 @@ raylib.rlSetBlendFactors = rlSetBlendFactors
  *
  * @return {undefined}
  */
-function rlSetBlendFactorsSeparate(glSrcRGB, glDstRGB, glSrcAlpha, glDstAlpha, glEqRGB, glEqAlpha) {
+function rlSetBlendFactorsSeparate(
+  glSrcRGB,
+  glDstRGB,
+  glSrcAlpha,
+  glDstAlpha,
+  glEqRGB,
+  glEqAlpha,
+) {
   return r.BindrlSetBlendFactorsSeparate(
     glSrcRGB,
     glDstRGB,
     glSrcAlpha,
     glDstAlpha,
     glEqRGB,
-    glEqAlpha
-  )
+    glEqAlpha,
+  );
 }
-raylib.rlSetBlendFactorsSeparate = rlSetBlendFactorsSeparate
+raylib.rlSetBlendFactorsSeparate = rlSetBlendFactorsSeparate;
 
 /**
  * Initialize rlgl (buffers, shaders, textures, states)
@@ -14224,12 +12964,9 @@ raylib.rlSetBlendFactorsSeparate = rlSetBlendFactorsSeparate
  * @return {undefined}
  */
 function rlglInit(width, height) {
-  return r.BindrlglInit(
-    width,
-    height
-  )
+  return r.BindrlglInit(width, height);
 }
-raylib.rlglInit = rlglInit
+raylib.rlglInit = rlglInit;
 
 /**
  * De-initialize rlgl (buffers, shaders, textures)
@@ -14237,9 +12974,9 @@ raylib.rlglInit = rlglInit
  * @return {undefined}
  */
 function rlglClose() {
-  return r.BindrlglClose()
+  return r.BindrlglClose();
 }
-raylib.rlglClose = rlglClose
+raylib.rlglClose = rlglClose;
 
 /**
  * Load OpenGL extensions (loader function required)
@@ -14249,11 +12986,9 @@ raylib.rlglClose = rlglClose
  * @return {undefined}
  */
 function rlLoadExtensions(loader) {
-  return r.BindrlLoadExtensions(
-    loader
-  )
+  return r.BindrlLoadExtensions(loader);
 }
-raylib.rlLoadExtensions = rlLoadExtensions
+raylib.rlLoadExtensions = rlLoadExtensions;
 
 /**
  * Get current OpenGL version
@@ -14261,9 +12996,9 @@ raylib.rlLoadExtensions = rlLoadExtensions
  * @return {number} The resulting int.
  */
 function rlGetVersion() {
-  return r.BindrlGetVersion()
+  return r.BindrlGetVersion();
 }
-raylib.rlGetVersion = rlGetVersion
+raylib.rlGetVersion = rlGetVersion;
 
 /**
  * Set current framebuffer width
@@ -14273,11 +13008,9 @@ raylib.rlGetVersion = rlGetVersion
  * @return {undefined}
  */
 function rlSetFramebufferWidth(width) {
-  return r.BindrlSetFramebufferWidth(
-    width
-  )
+  return r.BindrlSetFramebufferWidth(width);
 }
-raylib.rlSetFramebufferWidth = rlSetFramebufferWidth
+raylib.rlSetFramebufferWidth = rlSetFramebufferWidth;
 
 /**
  * Get default framebuffer width
@@ -14285,9 +13018,9 @@ raylib.rlSetFramebufferWidth = rlSetFramebufferWidth
  * @return {number} The resulting int.
  */
 function rlGetFramebufferWidth() {
-  return r.BindrlGetFramebufferWidth()
+  return r.BindrlGetFramebufferWidth();
 }
-raylib.rlGetFramebufferWidth = rlGetFramebufferWidth
+raylib.rlGetFramebufferWidth = rlGetFramebufferWidth;
 
 /**
  * Set current framebuffer height
@@ -14297,11 +13030,9 @@ raylib.rlGetFramebufferWidth = rlGetFramebufferWidth
  * @return {undefined}
  */
 function rlSetFramebufferHeight(height) {
-  return r.BindrlSetFramebufferHeight(
-    height
-  )
+  return r.BindrlSetFramebufferHeight(height);
 }
-raylib.rlSetFramebufferHeight = rlSetFramebufferHeight
+raylib.rlSetFramebufferHeight = rlSetFramebufferHeight;
 
 /**
  * Get default framebuffer height
@@ -14309,9 +13040,9 @@ raylib.rlSetFramebufferHeight = rlSetFramebufferHeight
  * @return {number} The resulting int.
  */
 function rlGetFramebufferHeight() {
-  return r.BindrlGetFramebufferHeight()
+  return r.BindrlGetFramebufferHeight();
 }
-raylib.rlGetFramebufferHeight = rlGetFramebufferHeight
+raylib.rlGetFramebufferHeight = rlGetFramebufferHeight;
 
 /**
  * Get default texture id
@@ -14319,9 +13050,9 @@ raylib.rlGetFramebufferHeight = rlGetFramebufferHeight
  * @return {number} The resulting unsigned int.
  */
 function rlGetTextureIdDefault() {
-  return r.BindrlGetTextureIdDefault()
+  return r.BindrlGetTextureIdDefault();
 }
-raylib.rlGetTextureIdDefault = rlGetTextureIdDefault
+raylib.rlGetTextureIdDefault = rlGetTextureIdDefault;
 
 /**
  * Get default shader id
@@ -14329,9 +13060,9 @@ raylib.rlGetTextureIdDefault = rlGetTextureIdDefault
  * @return {number} The resulting unsigned int.
  */
 function rlGetShaderIdDefault() {
-  return r.BindrlGetShaderIdDefault()
+  return r.BindrlGetShaderIdDefault();
 }
-raylib.rlGetShaderIdDefault = rlGetShaderIdDefault
+raylib.rlGetShaderIdDefault = rlGetShaderIdDefault;
 
 /**
  * Get default shader locations
@@ -14339,9 +13070,9 @@ raylib.rlGetShaderIdDefault = rlGetShaderIdDefault
  * @return {number} The resulting int *.
  */
 function rlGetShaderLocsDefault() {
-  return r.BindrlGetShaderLocsDefault()
+  return r.BindrlGetShaderLocsDefault();
 }
-raylib.rlGetShaderLocsDefault = rlGetShaderLocsDefault
+raylib.rlGetShaderLocsDefault = rlGetShaderLocsDefault;
 
 /**
  * Load a render batch system
@@ -14352,12 +13083,9 @@ raylib.rlGetShaderLocsDefault = rlGetShaderLocsDefault
  * @return {rlRenderBatch} The resulting rlRenderBatch.
  */
 function rlLoadRenderBatch(numBuffers, bufferElements) {
-  return r.BindrlLoadRenderBatch(
-    numBuffers,
-    bufferElements
-  )
+  return r.BindrlLoadRenderBatch(numBuffers, bufferElements);
 }
-raylib.rlLoadRenderBatch = rlLoadRenderBatch
+raylib.rlLoadRenderBatch = rlLoadRenderBatch;
 
 /**
  * Unload render batch system
@@ -14373,10 +13101,10 @@ function rlUnloadRenderBatch(batch) {
     batch.vertexBuffer,
     batch.draws,
     batch.drawCounter,
-    batch.currentDepth
-  )
+    batch.currentDepth,
+  );
 }
-raylib.rlUnloadRenderBatch = rlUnloadRenderBatch
+raylib.rlUnloadRenderBatch = rlUnloadRenderBatch;
 
 /**
  * Draw render batch data (Update->Draw->Reset)
@@ -14386,11 +13114,9 @@ raylib.rlUnloadRenderBatch = rlUnloadRenderBatch
  * @return {undefined}
  */
 function rlDrawRenderBatch(batch) {
-  return r.BindrlDrawRenderBatch(
-    batch
-  )
+  return r.BindrlDrawRenderBatch(batch);
 }
-raylib.rlDrawRenderBatch = rlDrawRenderBatch
+raylib.rlDrawRenderBatch = rlDrawRenderBatch;
 
 /**
  * Set the active render batch for rlgl (NULL for default internal)
@@ -14400,11 +13126,9 @@ raylib.rlDrawRenderBatch = rlDrawRenderBatch
  * @return {undefined}
  */
 function rlSetRenderBatchActive(batch) {
-  return r.BindrlSetRenderBatchActive(
-    batch
-  )
+  return r.BindrlSetRenderBatchActive(batch);
 }
-raylib.rlSetRenderBatchActive = rlSetRenderBatchActive
+raylib.rlSetRenderBatchActive = rlSetRenderBatchActive;
 
 /**
  * Update and draw internal render batch
@@ -14412,9 +13136,9 @@ raylib.rlSetRenderBatchActive = rlSetRenderBatchActive
  * @return {undefined}
  */
 function rlDrawRenderBatchActive() {
-  return r.BindrlDrawRenderBatchActive()
+  return r.BindrlDrawRenderBatchActive();
 }
-raylib.rlDrawRenderBatchActive = rlDrawRenderBatchActive
+raylib.rlDrawRenderBatchActive = rlDrawRenderBatchActive;
 
 /**
  * Check internal buffer overflow for a given number of vertex
@@ -14424,11 +13148,9 @@ raylib.rlDrawRenderBatchActive = rlDrawRenderBatchActive
  * @return {boolean} The resulting bool.
  */
 function rlCheckRenderBatchLimit(vCount) {
-  return r.BindrlCheckRenderBatchLimit(
-    vCount
-  )
+  return r.BindrlCheckRenderBatchLimit(vCount);
 }
-raylib.rlCheckRenderBatchLimit = rlCheckRenderBatchLimit
+raylib.rlCheckRenderBatchLimit = rlCheckRenderBatchLimit;
 
 /**
  * Set current texture for render batch and check buffers limits
@@ -14438,11 +13160,9 @@ raylib.rlCheckRenderBatchLimit = rlCheckRenderBatchLimit
  * @return {undefined}
  */
 function rlSetTexture(id) {
-  return r.BindrlSetTexture(
-    id
-  )
+  return r.BindrlSetTexture(id);
 }
-raylib.rlSetTexture = rlSetTexture
+raylib.rlSetTexture = rlSetTexture;
 
 /**
  * Load vertex array (vao) if supported
@@ -14450,9 +13170,9 @@ raylib.rlSetTexture = rlSetTexture
  * @return {number} The resulting unsigned int.
  */
 function rlLoadVertexArray() {
-  return r.BindrlLoadVertexArray()
+  return r.BindrlLoadVertexArray();
 }
-raylib.rlLoadVertexArray = rlLoadVertexArray
+raylib.rlLoadVertexArray = rlLoadVertexArray;
 
 /**
  * Load a vertex buffer object
@@ -14464,13 +13184,9 @@ raylib.rlLoadVertexArray = rlLoadVertexArray
  * @return {number} The resulting unsigned int.
  */
 function rlLoadVertexBuffer(buffer, size, dynamic) {
-  return r.BindrlLoadVertexBuffer(
-    buffer,
-    size,
-    dynamic
-  )
+  return r.BindrlLoadVertexBuffer(buffer, size, dynamic);
 }
-raylib.rlLoadVertexBuffer = rlLoadVertexBuffer
+raylib.rlLoadVertexBuffer = rlLoadVertexBuffer;
 
 /**
  * Load vertex buffer elements object
@@ -14482,13 +13198,9 @@ raylib.rlLoadVertexBuffer = rlLoadVertexBuffer
  * @return {number} The resulting unsigned int.
  */
 function rlLoadVertexBufferElement(buffer, size, dynamic) {
-  return r.BindrlLoadVertexBufferElement(
-    buffer,
-    size,
-    dynamic
-  )
+  return r.BindrlLoadVertexBufferElement(buffer, size, dynamic);
 }
-raylib.rlLoadVertexBufferElement = rlLoadVertexBufferElement
+raylib.rlLoadVertexBufferElement = rlLoadVertexBufferElement;
 
 /**
  * Update vertex buffer object data on GPU buffer
@@ -14501,14 +13213,9 @@ raylib.rlLoadVertexBufferElement = rlLoadVertexBufferElement
  * @return {undefined}
  */
 function rlUpdateVertexBuffer(bufferId, data, dataSize, offset) {
-  return r.BindrlUpdateVertexBuffer(
-    bufferId,
-    data,
-    dataSize,
-    offset
-  )
+  return r.BindrlUpdateVertexBuffer(bufferId, data, dataSize, offset);
 }
-raylib.rlUpdateVertexBuffer = rlUpdateVertexBuffer
+raylib.rlUpdateVertexBuffer = rlUpdateVertexBuffer;
 
 /**
  * Update vertex buffer elements data on GPU buffer
@@ -14521,14 +13228,9 @@ raylib.rlUpdateVertexBuffer = rlUpdateVertexBuffer
  * @return {undefined}
  */
 function rlUpdateVertexBufferElements(id, data, dataSize, offset) {
-  return r.BindrlUpdateVertexBufferElements(
-    id,
-    data,
-    dataSize,
-    offset
-  )
+  return r.BindrlUpdateVertexBufferElements(id, data, dataSize, offset);
 }
-raylib.rlUpdateVertexBufferElements = rlUpdateVertexBufferElements
+raylib.rlUpdateVertexBufferElements = rlUpdateVertexBufferElements;
 
 /**
  * Unload vertex array (vao)
@@ -14538,11 +13240,9 @@ raylib.rlUpdateVertexBufferElements = rlUpdateVertexBufferElements
  * @return {undefined}
  */
 function rlUnloadVertexArray(vaoId) {
-  return r.BindrlUnloadVertexArray(
-    vaoId
-  )
+  return r.BindrlUnloadVertexArray(vaoId);
 }
-raylib.rlUnloadVertexArray = rlUnloadVertexArray
+raylib.rlUnloadVertexArray = rlUnloadVertexArray;
 
 /**
  * Unload vertex buffer object
@@ -14552,11 +13252,9 @@ raylib.rlUnloadVertexArray = rlUnloadVertexArray
  * @return {undefined}
  */
 function rlUnloadVertexBuffer(vboId) {
-  return r.BindrlUnloadVertexBuffer(
-    vboId
-  )
+  return r.BindrlUnloadVertexBuffer(vboId);
 }
-raylib.rlUnloadVertexBuffer = rlUnloadVertexBuffer
+raylib.rlUnloadVertexBuffer = rlUnloadVertexBuffer;
 
 /**
  * Set vertex attribute data configuration
@@ -14570,17 +13268,24 @@ raylib.rlUnloadVertexBuffer = rlUnloadVertexBuffer
  *
  * @return {undefined}
  */
-function rlSetVertexAttribute(index, compSize, type, normalized, stride, offset) {
+function rlSetVertexAttribute(
+  index,
+  compSize,
+  type,
+  normalized,
+  stride,
+  offset,
+) {
   return r.BindrlSetVertexAttribute(
     index,
     compSize,
     type,
     normalized,
     stride,
-    offset
-  )
+    offset,
+  );
 }
-raylib.rlSetVertexAttribute = rlSetVertexAttribute
+raylib.rlSetVertexAttribute = rlSetVertexAttribute;
 
 /**
  * Set vertex attribute data divisor
@@ -14591,12 +13296,9 @@ raylib.rlSetVertexAttribute = rlSetVertexAttribute
  * @return {undefined}
  */
 function rlSetVertexAttributeDivisor(index, divisor) {
-  return r.BindrlSetVertexAttributeDivisor(
-    index,
-    divisor
-  )
+  return r.BindrlSetVertexAttributeDivisor(index, divisor);
 }
-raylib.rlSetVertexAttributeDivisor = rlSetVertexAttributeDivisor
+raylib.rlSetVertexAttributeDivisor = rlSetVertexAttributeDivisor;
 
 /**
  * Set vertex attribute default value, when attribute to provided
@@ -14609,14 +13311,9 @@ raylib.rlSetVertexAttributeDivisor = rlSetVertexAttributeDivisor
  * @return {undefined}
  */
 function rlSetVertexAttributeDefault(locIndex, value, attribType, count) {
-  return r.BindrlSetVertexAttributeDefault(
-    locIndex,
-    value,
-    attribType,
-    count
-  )
+  return r.BindrlSetVertexAttributeDefault(locIndex, value, attribType, count);
 }
-raylib.rlSetVertexAttributeDefault = rlSetVertexAttributeDefault
+raylib.rlSetVertexAttributeDefault = rlSetVertexAttributeDefault;
 
 /**
  * Draw vertex array (currently active vao)
@@ -14627,12 +13324,9 @@ raylib.rlSetVertexAttributeDefault = rlSetVertexAttributeDefault
  * @return {undefined}
  */
 function rlDrawVertexArray(offset, count) {
-  return r.BindrlDrawVertexArray(
-    offset,
-    count
-  )
+  return r.BindrlDrawVertexArray(offset, count);
 }
-raylib.rlDrawVertexArray = rlDrawVertexArray
+raylib.rlDrawVertexArray = rlDrawVertexArray;
 
 /**
  * Draw vertex array elements
@@ -14644,13 +13338,9 @@ raylib.rlDrawVertexArray = rlDrawVertexArray
  * @return {undefined}
  */
 function rlDrawVertexArrayElements(offset, count, buffer) {
-  return r.BindrlDrawVertexArrayElements(
-    offset,
-    count,
-    buffer
-  )
+  return r.BindrlDrawVertexArrayElements(offset, count, buffer);
 }
-raylib.rlDrawVertexArrayElements = rlDrawVertexArrayElements
+raylib.rlDrawVertexArrayElements = rlDrawVertexArrayElements;
 
 /**
  * Draw vertex array (currently active vao) with instancing
@@ -14662,13 +13352,9 @@ raylib.rlDrawVertexArrayElements = rlDrawVertexArrayElements
  * @return {undefined}
  */
 function rlDrawVertexArrayInstanced(offset, count, instances) {
-  return r.BindrlDrawVertexArrayInstanced(
-    offset,
-    count,
-    instances
-  )
+  return r.BindrlDrawVertexArrayInstanced(offset, count, instances);
 }
-raylib.rlDrawVertexArrayInstanced = rlDrawVertexArrayInstanced
+raylib.rlDrawVertexArrayInstanced = rlDrawVertexArrayInstanced;
 
 /**
  * Draw vertex array elements with instancing
@@ -14685,10 +13371,10 @@ function rlDrawVertexArrayElementsInstanced(offset, count, buffer, instances) {
     offset,
     count,
     buffer,
-    instances
-  )
+    instances,
+  );
 }
-raylib.rlDrawVertexArrayElementsInstanced = rlDrawVertexArrayElementsInstanced
+raylib.rlDrawVertexArrayElementsInstanced = rlDrawVertexArrayElementsInstanced;
 
 /**
  * Load texture data
@@ -14702,15 +13388,9 @@ raylib.rlDrawVertexArrayElementsInstanced = rlDrawVertexArrayElementsInstanced
  * @return {number} The resulting unsigned int.
  */
 function rlLoadTexture(data, width, height, format, mipmapCount) {
-  return r.BindrlLoadTexture(
-    data,
-    width,
-    height,
-    format,
-    mipmapCount
-  )
+  return r.BindrlLoadTexture(data, width, height, format, mipmapCount);
 }
-raylib.rlLoadTexture = rlLoadTexture
+raylib.rlLoadTexture = rlLoadTexture;
 
 /**
  * Load depth texture/renderbuffer (to be attached to fbo)
@@ -14722,13 +13402,9 @@ raylib.rlLoadTexture = rlLoadTexture
  * @return {number} The resulting unsigned int.
  */
 function rlLoadTextureDepth(width, height, useRenderBuffer) {
-  return r.BindrlLoadTextureDepth(
-    width,
-    height,
-    useRenderBuffer
-  )
+  return r.BindrlLoadTextureDepth(width, height, useRenderBuffer);
 }
-raylib.rlLoadTextureDepth = rlLoadTextureDepth
+raylib.rlLoadTextureDepth = rlLoadTextureDepth;
 
 /**
  * Load texture cubemap data
@@ -14741,14 +13417,9 @@ raylib.rlLoadTextureDepth = rlLoadTextureDepth
  * @return {number} The resulting unsigned int.
  */
 function rlLoadTextureCubemap(data, size, format, mipmapCount) {
-  return r.BindrlLoadTextureCubemap(
-    data,
-    size,
-    format,
-    mipmapCount
-  )
+  return r.BindrlLoadTextureCubemap(data, size, format, mipmapCount);
 }
-raylib.rlLoadTextureCubemap = rlLoadTextureCubemap
+raylib.rlLoadTextureCubemap = rlLoadTextureCubemap;
 
 /**
  * Update texture with new data on GPU
@@ -14771,10 +13442,10 @@ function rlUpdateTexture(id, offsetX, offsetY, width, height, format, data) {
     width,
     height,
     format,
-    data
-  )
+    data,
+  );
 }
-raylib.rlUpdateTexture = rlUpdateTexture
+raylib.rlUpdateTexture = rlUpdateTexture;
 
 /**
  * Get OpenGL internal formats
@@ -14791,10 +13462,10 @@ function rlGetGlTextureFormats(format, glInternalFormat, glFormat, glType) {
     format,
     glInternalFormat,
     glFormat,
-    glType
-  )
+    glType,
+  );
 }
-raylib.rlGetGlTextureFormats = rlGetGlTextureFormats
+raylib.rlGetGlTextureFormats = rlGetGlTextureFormats;
 
 /**
  * Get name string for pixel format
@@ -14804,11 +13475,9 @@ raylib.rlGetGlTextureFormats = rlGetGlTextureFormats
  * @return {string} The resulting const char *.
  */
 function rlGetPixelFormatName(format) {
-  return r.BindrlGetPixelFormatName(
-    format
-  )
+  return r.BindrlGetPixelFormatName(format);
 }
-raylib.rlGetPixelFormatName = rlGetPixelFormatName
+raylib.rlGetPixelFormatName = rlGetPixelFormatName;
 
 /**
  * Unload texture from GPU memory
@@ -14818,11 +13487,9 @@ raylib.rlGetPixelFormatName = rlGetPixelFormatName
  * @return {undefined}
  */
 function rlUnloadTexture(id) {
-  return r.BindrlUnloadTexture(
-    id
-  )
+  return r.BindrlUnloadTexture(id);
 }
-raylib.rlUnloadTexture = rlUnloadTexture
+raylib.rlUnloadTexture = rlUnloadTexture;
 
 /**
  * Generate mipmap data for selected texture
@@ -14836,15 +13503,9 @@ raylib.rlUnloadTexture = rlUnloadTexture
  * @return {undefined}
  */
 function rlGenTextureMipmaps(id, width, height, format, mipmaps) {
-  return r.BindrlGenTextureMipmaps(
-    id,
-    width,
-    height,
-    format,
-    mipmaps
-  )
+  return r.BindrlGenTextureMipmaps(id, width, height, format, mipmaps);
 }
-raylib.rlGenTextureMipmaps = rlGenTextureMipmaps
+raylib.rlGenTextureMipmaps = rlGenTextureMipmaps;
 
 /**
  * Read texture pixel data
@@ -14857,14 +13518,9 @@ raylib.rlGenTextureMipmaps = rlGenTextureMipmaps
  * @return {number} The resulting void *.
  */
 function rlReadTexturePixels(id, width, height, format) {
-  return r.BindrlReadTexturePixels(
-    id,
-    width,
-    height,
-    format
-  )
+  return r.BindrlReadTexturePixels(id, width, height, format);
 }
-raylib.rlReadTexturePixels = rlReadTexturePixels
+raylib.rlReadTexturePixels = rlReadTexturePixels;
 
 /**
  * Read screen pixel data (color buffer)
@@ -14875,12 +13531,9 @@ raylib.rlReadTexturePixels = rlReadTexturePixels
  * @return {Buffer} The resulting unsigned char *.
  */
 function rlReadScreenPixels(width, height) {
-  return r.BindrlReadScreenPixels(
-    width,
-    height
-  )
+  return r.BindrlReadScreenPixels(width, height);
 }
-raylib.rlReadScreenPixels = rlReadScreenPixels
+raylib.rlReadScreenPixels = rlReadScreenPixels;
 
 /**
  * Load an empty framebuffer
@@ -14888,9 +13541,9 @@ raylib.rlReadScreenPixels = rlReadScreenPixels
  * @return {number} The resulting unsigned int.
  */
 function rlLoadFramebuffer() {
-  return r.BindrlLoadFramebuffer()
+  return r.BindrlLoadFramebuffer();
 }
-raylib.rlLoadFramebuffer = rlLoadFramebuffer
+raylib.rlLoadFramebuffer = rlLoadFramebuffer;
 
 /**
  * Attach texture/renderbuffer to a framebuffer
@@ -14904,15 +13557,9 @@ raylib.rlLoadFramebuffer = rlLoadFramebuffer
  * @return {undefined}
  */
 function rlFramebufferAttach(fboId, texId, attachType, texType, mipLevel) {
-  return r.BindrlFramebufferAttach(
-    fboId,
-    texId,
-    attachType,
-    texType,
-    mipLevel
-  )
+  return r.BindrlFramebufferAttach(fboId, texId, attachType, texType, mipLevel);
 }
-raylib.rlFramebufferAttach = rlFramebufferAttach
+raylib.rlFramebufferAttach = rlFramebufferAttach;
 
 /**
  * Verify framebuffer is complete
@@ -14922,11 +13569,9 @@ raylib.rlFramebufferAttach = rlFramebufferAttach
  * @return {boolean} The resulting bool.
  */
 function rlFramebufferComplete(id) {
-  return r.BindrlFramebufferComplete(
-    id
-  )
+  return r.BindrlFramebufferComplete(id);
 }
-raylib.rlFramebufferComplete = rlFramebufferComplete
+raylib.rlFramebufferComplete = rlFramebufferComplete;
 
 /**
  * Delete framebuffer from GPU
@@ -14936,11 +13581,9 @@ raylib.rlFramebufferComplete = rlFramebufferComplete
  * @return {undefined}
  */
 function rlUnloadFramebuffer(id) {
-  return r.BindrlUnloadFramebuffer(
-    id
-  )
+  return r.BindrlUnloadFramebuffer(id);
 }
-raylib.rlUnloadFramebuffer = rlUnloadFramebuffer
+raylib.rlUnloadFramebuffer = rlUnloadFramebuffer;
 
 /**
  * Load shader from code strings
@@ -14951,12 +13594,9 @@ raylib.rlUnloadFramebuffer = rlUnloadFramebuffer
  * @return {number} The resulting unsigned int.
  */
 function rlLoadShaderCode(vsCode, fsCode) {
-  return r.BindrlLoadShaderCode(
-    vsCode,
-    fsCode
-  )
+  return r.BindrlLoadShaderCode(vsCode, fsCode);
 }
-raylib.rlLoadShaderCode = rlLoadShaderCode
+raylib.rlLoadShaderCode = rlLoadShaderCode;
 
 /**
  * Compile custom shader and return shader id (type: RL_VERTEX_SHADER, RL_FRAGMENT_SHADER, RL_COMPUTE_SHADER)
@@ -14967,12 +13607,9 @@ raylib.rlLoadShaderCode = rlLoadShaderCode
  * @return {number} The resulting unsigned int.
  */
 function rlCompileShader(shaderCode, type) {
-  return r.BindrlCompileShader(
-    shaderCode,
-    type
-  )
+  return r.BindrlCompileShader(shaderCode, type);
 }
-raylib.rlCompileShader = rlCompileShader
+raylib.rlCompileShader = rlCompileShader;
 
 /**
  * Load custom shader program
@@ -14983,12 +13620,9 @@ raylib.rlCompileShader = rlCompileShader
  * @return {number} The resulting unsigned int.
  */
 function rlLoadShaderProgram(vShaderId, fShaderId) {
-  return r.BindrlLoadShaderProgram(
-    vShaderId,
-    fShaderId
-  )
+  return r.BindrlLoadShaderProgram(vShaderId, fShaderId);
 }
-raylib.rlLoadShaderProgram = rlLoadShaderProgram
+raylib.rlLoadShaderProgram = rlLoadShaderProgram;
 
 /**
  * Unload shader program
@@ -14998,11 +13632,9 @@ raylib.rlLoadShaderProgram = rlLoadShaderProgram
  * @return {undefined}
  */
 function rlUnloadShaderProgram(id) {
-  return r.BindrlUnloadShaderProgram(
-    id
-  )
+  return r.BindrlUnloadShaderProgram(id);
 }
-raylib.rlUnloadShaderProgram = rlUnloadShaderProgram
+raylib.rlUnloadShaderProgram = rlUnloadShaderProgram;
 
 /**
  * Get shader location uniform
@@ -15013,12 +13645,9 @@ raylib.rlUnloadShaderProgram = rlUnloadShaderProgram
  * @return {number} The resulting int.
  */
 function rlGetLocationUniform(shaderId, uniformName) {
-  return r.BindrlGetLocationUniform(
-    shaderId,
-    uniformName
-  )
+  return r.BindrlGetLocationUniform(shaderId, uniformName);
 }
-raylib.rlGetLocationUniform = rlGetLocationUniform
+raylib.rlGetLocationUniform = rlGetLocationUniform;
 
 /**
  * Get shader location attribute
@@ -15029,12 +13658,9 @@ raylib.rlGetLocationUniform = rlGetLocationUniform
  * @return {number} The resulting int.
  */
 function rlGetLocationAttrib(shaderId, attribName) {
-  return r.BindrlGetLocationAttrib(
-    shaderId,
-    attribName
-  )
+  return r.BindrlGetLocationAttrib(shaderId, attribName);
 }
-raylib.rlGetLocationAttrib = rlGetLocationAttrib
+raylib.rlGetLocationAttrib = rlGetLocationAttrib;
 
 /**
  * Set shader value uniform
@@ -15047,14 +13673,9 @@ raylib.rlGetLocationAttrib = rlGetLocationAttrib
  * @return {undefined}
  */
 function rlSetUniform(locIndex, value, uniformType, count) {
-  return r.BindrlSetUniform(
-    locIndex,
-    value,
-    uniformType,
-    count
-  )
+  return r.BindrlSetUniform(locIndex, value, uniformType, count);
 }
-raylib.rlSetUniform = rlSetUniform
+raylib.rlSetUniform = rlSetUniform;
 
 /**
  * Set shader value matrix
@@ -15082,10 +13703,10 @@ function rlSetUniformMatrix(locIndex, mat) {
     mat.m3,
     mat.m7,
     mat.m11,
-    mat.m15
-  )
+    mat.m15,
+  );
 }
-raylib.rlSetUniformMatrix = rlSetUniformMatrix
+raylib.rlSetUniformMatrix = rlSetUniformMatrix;
 
 /**
  * Set shader value matrices
@@ -15097,13 +13718,9 @@ raylib.rlSetUniformMatrix = rlSetUniformMatrix
  * @return {undefined}
  */
 function rlSetUniformMatrices(locIndex, mat, count) {
-  return r.BindrlSetUniformMatrices(
-    locIndex,
-    mat,
-    count
-  )
+  return r.BindrlSetUniformMatrices(locIndex, mat, count);
 }
-raylib.rlSetUniformMatrices = rlSetUniformMatrices
+raylib.rlSetUniformMatrices = rlSetUniformMatrices;
 
 /**
  * Set shader value sampler
@@ -15114,12 +13731,9 @@ raylib.rlSetUniformMatrices = rlSetUniformMatrices
  * @return {undefined}
  */
 function rlSetUniformSampler(locIndex, textureId) {
-  return r.BindrlSetUniformSampler(
-    locIndex,
-    textureId
-  )
+  return r.BindrlSetUniformSampler(locIndex, textureId);
 }
-raylib.rlSetUniformSampler = rlSetUniformSampler
+raylib.rlSetUniformSampler = rlSetUniformSampler;
 
 /**
  * Set shader currently active (id and locations)
@@ -15130,12 +13744,9 @@ raylib.rlSetUniformSampler = rlSetUniformSampler
  * @return {undefined}
  */
 function rlSetShader(id, locs) {
-  return r.BindrlSetShader(
-    id,
-    locs
-  )
+  return r.BindrlSetShader(id, locs);
 }
-raylib.rlSetShader = rlSetShader
+raylib.rlSetShader = rlSetShader;
 
 /**
  * Load compute shader program
@@ -15145,11 +13756,9 @@ raylib.rlSetShader = rlSetShader
  * @return {number} The resulting unsigned int.
  */
 function rlLoadComputeShaderProgram(shaderId) {
-  return r.BindrlLoadComputeShaderProgram(
-    shaderId
-  )
+  return r.BindrlLoadComputeShaderProgram(shaderId);
 }
-raylib.rlLoadComputeShaderProgram = rlLoadComputeShaderProgram
+raylib.rlLoadComputeShaderProgram = rlLoadComputeShaderProgram;
 
 /**
  * Dispatch compute shader (equivalent to *draw* for graphics pipeline)
@@ -15161,13 +13770,9 @@ raylib.rlLoadComputeShaderProgram = rlLoadComputeShaderProgram
  * @return {undefined}
  */
 function rlComputeShaderDispatch(groupX, groupY, groupZ) {
-  return r.BindrlComputeShaderDispatch(
-    groupX,
-    groupY,
-    groupZ
-  )
+  return r.BindrlComputeShaderDispatch(groupX, groupY, groupZ);
 }
-raylib.rlComputeShaderDispatch = rlComputeShaderDispatch
+raylib.rlComputeShaderDispatch = rlComputeShaderDispatch;
 
 /**
  * Load shader storage buffer object (SSBO)
@@ -15179,13 +13784,9 @@ raylib.rlComputeShaderDispatch = rlComputeShaderDispatch
  * @return {number} The resulting unsigned int.
  */
 function rlLoadShaderBuffer(size, data, usageHint) {
-  return r.BindrlLoadShaderBuffer(
-    size,
-    data,
-    usageHint
-  )
+  return r.BindrlLoadShaderBuffer(size, data, usageHint);
 }
-raylib.rlLoadShaderBuffer = rlLoadShaderBuffer
+raylib.rlLoadShaderBuffer = rlLoadShaderBuffer;
 
 /**
  * Unload shader storage buffer object (SSBO)
@@ -15195,11 +13796,9 @@ raylib.rlLoadShaderBuffer = rlLoadShaderBuffer
  * @return {undefined}
  */
 function rlUnloadShaderBuffer(ssboId) {
-  return r.BindrlUnloadShaderBuffer(
-    ssboId
-  )
+  return r.BindrlUnloadShaderBuffer(ssboId);
 }
-raylib.rlUnloadShaderBuffer = rlUnloadShaderBuffer
+raylib.rlUnloadShaderBuffer = rlUnloadShaderBuffer;
 
 /**
  * Update SSBO buffer data
@@ -15212,14 +13811,9 @@ raylib.rlUnloadShaderBuffer = rlUnloadShaderBuffer
  * @return {undefined}
  */
 function rlUpdateShaderBuffer(id, data, dataSize, offset) {
-  return r.BindrlUpdateShaderBuffer(
-    id,
-    data,
-    dataSize,
-    offset
-  )
+  return r.BindrlUpdateShaderBuffer(id, data, dataSize, offset);
 }
-raylib.rlUpdateShaderBuffer = rlUpdateShaderBuffer
+raylib.rlUpdateShaderBuffer = rlUpdateShaderBuffer;
 
 /**
  * Bind SSBO buffer
@@ -15230,12 +13824,9 @@ raylib.rlUpdateShaderBuffer = rlUpdateShaderBuffer
  * @return {undefined}
  */
 function rlBindShaderBuffer(id, index) {
-  return r.BindrlBindShaderBuffer(
-    id,
-    index
-  )
+  return r.BindrlBindShaderBuffer(id, index);
 }
-raylib.rlBindShaderBuffer = rlBindShaderBuffer
+raylib.rlBindShaderBuffer = rlBindShaderBuffer;
 
 /**
  * Read SSBO buffer data (GPU->CPU)
@@ -15248,14 +13839,9 @@ raylib.rlBindShaderBuffer = rlBindShaderBuffer
  * @return {undefined}
  */
 function rlReadShaderBuffer(id, dest, count, offset) {
-  return r.BindrlReadShaderBuffer(
-    id,
-    dest,
-    count,
-    offset
-  )
+  return r.BindrlReadShaderBuffer(id, dest, count, offset);
 }
-raylib.rlReadShaderBuffer = rlReadShaderBuffer
+raylib.rlReadShaderBuffer = rlReadShaderBuffer;
 
 /**
  * Copy SSBO data between buffers
@@ -15269,15 +13855,9 @@ raylib.rlReadShaderBuffer = rlReadShaderBuffer
  * @return {undefined}
  */
 function rlCopyShaderBuffer(destId, srcId, destOffset, srcOffset, count) {
-  return r.BindrlCopyShaderBuffer(
-    destId,
-    srcId,
-    destOffset,
-    srcOffset,
-    count
-  )
+  return r.BindrlCopyShaderBuffer(destId, srcId, destOffset, srcOffset, count);
 }
-raylib.rlCopyShaderBuffer = rlCopyShaderBuffer
+raylib.rlCopyShaderBuffer = rlCopyShaderBuffer;
 
 /**
  * Get SSBO buffer size
@@ -15287,11 +13867,9 @@ raylib.rlCopyShaderBuffer = rlCopyShaderBuffer
  * @return {number} The resulting unsigned int.
  */
 function rlGetShaderBufferSize(id) {
-  return r.BindrlGetShaderBufferSize(
-    id
-  )
+  return r.BindrlGetShaderBufferSize(id);
 }
-raylib.rlGetShaderBufferSize = rlGetShaderBufferSize
+raylib.rlGetShaderBufferSize = rlGetShaderBufferSize;
 
 /**
  * Bind image texture
@@ -15304,14 +13882,9 @@ raylib.rlGetShaderBufferSize = rlGetShaderBufferSize
  * @return {undefined}
  */
 function rlBindImageTexture(id, index, format, readonly) {
-  return r.BindrlBindImageTexture(
-    id,
-    index,
-    format,
-    readonly
-  )
+  return r.BindrlBindImageTexture(id, index, format, readonly);
 }
-raylib.rlBindImageTexture = rlBindImageTexture
+raylib.rlBindImageTexture = rlBindImageTexture;
 
 /**
  * Get internal modelview matrix
@@ -15319,9 +13892,9 @@ raylib.rlBindImageTexture = rlBindImageTexture
  * @return {Matrix} The resulting Matrix.
  */
 function rlGetMatrixModelview() {
-  return r.BindrlGetMatrixModelview()
+  return r.BindrlGetMatrixModelview();
 }
-raylib.rlGetMatrixModelview = rlGetMatrixModelview
+raylib.rlGetMatrixModelview = rlGetMatrixModelview;
 
 /**
  * Get internal projection matrix
@@ -15329,9 +13902,9 @@ raylib.rlGetMatrixModelview = rlGetMatrixModelview
  * @return {Matrix} The resulting Matrix.
  */
 function rlGetMatrixProjection() {
-  return r.BindrlGetMatrixProjection()
+  return r.BindrlGetMatrixProjection();
 }
-raylib.rlGetMatrixProjection = rlGetMatrixProjection
+raylib.rlGetMatrixProjection = rlGetMatrixProjection;
 
 /**
  * Get internal accumulated transform matrix
@@ -15339,9 +13912,9 @@ raylib.rlGetMatrixProjection = rlGetMatrixProjection
  * @return {Matrix} The resulting Matrix.
  */
 function rlGetMatrixTransform() {
-  return r.BindrlGetMatrixTransform()
+  return r.BindrlGetMatrixTransform();
 }
-raylib.rlGetMatrixTransform = rlGetMatrixTransform
+raylib.rlGetMatrixTransform = rlGetMatrixTransform;
 
 /**
  * Get internal projection matrix for stereo render (selected eye)
@@ -15351,11 +13924,9 @@ raylib.rlGetMatrixTransform = rlGetMatrixTransform
  * @return {Matrix} The resulting Matrix.
  */
 function rlGetMatrixProjectionStereo(eye) {
-  return r.BindrlGetMatrixProjectionStereo(
-    eye
-  )
+  return r.BindrlGetMatrixProjectionStereo(eye);
 }
-raylib.rlGetMatrixProjectionStereo = rlGetMatrixProjectionStereo
+raylib.rlGetMatrixProjectionStereo = rlGetMatrixProjectionStereo;
 
 /**
  * Get internal view offset matrix for stereo render (selected eye)
@@ -15365,11 +13936,9 @@ raylib.rlGetMatrixProjectionStereo = rlGetMatrixProjectionStereo
  * @return {Matrix} The resulting Matrix.
  */
 function rlGetMatrixViewOffsetStereo(eye) {
-  return r.BindrlGetMatrixViewOffsetStereo(
-    eye
-  )
+  return r.BindrlGetMatrixViewOffsetStereo(eye);
 }
-raylib.rlGetMatrixViewOffsetStereo = rlGetMatrixViewOffsetStereo
+raylib.rlGetMatrixViewOffsetStereo = rlGetMatrixViewOffsetStereo;
 
 /**
  * Set a custom projection matrix (replaces internal projection matrix)
@@ -15395,10 +13964,10 @@ function rlSetMatrixProjection(proj) {
     proj.m3,
     proj.m7,
     proj.m11,
-    proj.m15
-  )
+    proj.m15,
+  );
 }
-raylib.rlSetMatrixProjection = rlSetMatrixProjection
+raylib.rlSetMatrixProjection = rlSetMatrixProjection;
 
 /**
  * Set a custom modelview matrix (replaces internal modelview matrix)
@@ -15424,10 +13993,10 @@ function rlSetMatrixModelview(view) {
     view.m3,
     view.m7,
     view.m11,
-    view.m15
-  )
+    view.m15,
+  );
 }
-raylib.rlSetMatrixModelview = rlSetMatrixModelview
+raylib.rlSetMatrixModelview = rlSetMatrixModelview;
 
 /**
  * Set eyes projection matrices for stereo rendering
@@ -15470,10 +14039,10 @@ function rlSetMatrixProjectionStereo(right, left) {
     left.m3,
     left.m7,
     left.m11,
-    left.m15
-  )
+    left.m15,
+  );
 }
-raylib.rlSetMatrixProjectionStereo = rlSetMatrixProjectionStereo
+raylib.rlSetMatrixProjectionStereo = rlSetMatrixProjectionStereo;
 
 /**
  * Set eyes view offsets matrices for stereo rendering
@@ -15516,10 +14085,10 @@ function rlSetMatrixViewOffsetStereo(right, left) {
     left.m3,
     left.m7,
     left.m11,
-    left.m15
-  )
+    left.m15,
+  );
 }
-raylib.rlSetMatrixViewOffsetStereo = rlSetMatrixViewOffsetStereo
+raylib.rlSetMatrixViewOffsetStereo = rlSetMatrixViewOffsetStereo;
 
 /**
  * Load and draw a cube
@@ -15527,9 +14096,9 @@ raylib.rlSetMatrixViewOffsetStereo = rlSetMatrixViewOffsetStereo
  * @return {undefined}
  */
 function rlLoadDrawCube() {
-  return r.BindrlLoadDrawCube()
+  return r.BindrlLoadDrawCube();
 }
-raylib.rlLoadDrawCube = rlLoadDrawCube
+raylib.rlLoadDrawCube = rlLoadDrawCube;
 
 /**
  * Load and draw a quad
@@ -15537,9 +14106,9 @@ raylib.rlLoadDrawCube = rlLoadDrawCube
  * @return {undefined}
  */
 function rlLoadDrawQuad() {
-  return r.BindrlLoadDrawQuad()
+  return r.BindrlLoadDrawQuad();
 }
-raylib.rlLoadDrawQuad = rlLoadDrawQuad
+raylib.rlLoadDrawQuad = rlLoadDrawQuad;
 
 /**
  * Update camera position for selected mode
@@ -15562,15 +14131,15 @@ function UpdateCamera(camera, mode) {
     camera.up.z,
     camera.fovy,
     camera.projection,
-    mode
-  )
-  if (typeof obj !== 'undefined') {
+    mode,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      camera[key] = obj[key]
+      camera[key] = obj[key];
     }
   }
 }
-raylib.UpdateCamera = UpdateCamera
+raylib.UpdateCamera = UpdateCamera;
 
 /**
  * Convert image data to desired format
@@ -15587,15 +14156,15 @@ function ImageFormat(image, newFormat) {
     image.height,
     image.mipmaps,
     image.format,
-    newFormat
-  )
-  if (typeof obj !== 'undefined') {
+    newFormat,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageFormat = ImageFormat
+raylib.ImageFormat = ImageFormat;
 
 /**
  * Convert image to POT (power-of-two)
@@ -15615,15 +14184,15 @@ function ImageToPOT(image, fill) {
     fill.r,
     fill.g,
     fill.b,
-    fill.a
-  )
-  if (typeof obj !== 'undefined') {
+    fill.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageToPOT = ImageToPOT
+raylib.ImageToPOT = ImageToPOT;
 
 /**
  * Crop an image to a defined rectangle
@@ -15643,15 +14212,15 @@ function ImageCrop(image, crop) {
     crop.x,
     crop.y,
     crop.width,
-    crop.height
-  )
-  if (typeof obj !== 'undefined') {
+    crop.height,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageCrop = ImageCrop
+raylib.ImageCrop = ImageCrop;
 
 /**
  * Crop image depending on alpha value
@@ -15668,15 +14237,15 @@ function ImageAlphaCrop(image, threshold) {
     image.height,
     image.mipmaps,
     image.format,
-    threshold
-  )
-  if (typeof obj !== 'undefined') {
+    threshold,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageAlphaCrop = ImageAlphaCrop
+raylib.ImageAlphaCrop = ImageAlphaCrop;
 
 /**
  * Clear alpha channel to desired color
@@ -15698,15 +14267,15 @@ function ImageAlphaClear(image, color, threshold) {
     color.g,
     color.b,
     color.a,
-    threshold
-  )
-  if (typeof obj !== 'undefined') {
+    threshold,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageAlphaClear = ImageAlphaClear
+raylib.ImageAlphaClear = ImageAlphaClear;
 
 /**
  * Apply alpha mask to image
@@ -15727,15 +14296,15 @@ function ImageAlphaMask(image, alphaMask) {
     alphaMask.width,
     alphaMask.height,
     alphaMask.mipmaps,
-    alphaMask.format
-  )
-  if (typeof obj !== 'undefined') {
+    alphaMask.format,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageAlphaMask = ImageAlphaMask
+raylib.ImageAlphaMask = ImageAlphaMask;
 
 /**
  * Premultiply alpha channel
@@ -15750,15 +14319,15 @@ function ImageAlphaPremultiply(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
-  if (typeof obj !== 'undefined') {
+    image.format,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageAlphaPremultiply = ImageAlphaPremultiply
+raylib.ImageAlphaPremultiply = ImageAlphaPremultiply;
 
 /**
  * Resize image (Bicubic scaling algorithm)
@@ -15777,15 +14346,15 @@ function ImageResize(image, newWidth, newHeight) {
     image.mipmaps,
     image.format,
     newWidth,
-    newHeight
-  )
-  if (typeof obj !== 'undefined') {
+    newHeight,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageResize = ImageResize
+raylib.ImageResize = ImageResize;
 
 /**
  * Resize image (Nearest-Neighbor scaling algorithm)
@@ -15804,15 +14373,15 @@ function ImageResizeNN(image, newWidth, newHeight) {
     image.mipmaps,
     image.format,
     newWidth,
-    newHeight
-  )
-  if (typeof obj !== 'undefined') {
+    newHeight,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageResizeNN = ImageResizeNN
+raylib.ImageResizeNN = ImageResizeNN;
 
 /**
  * Resize canvas and fill with color
@@ -15840,15 +14409,15 @@ function ImageResizeCanvas(image, newWidth, newHeight, offsetX, offsetY, fill) {
     fill.r,
     fill.g,
     fill.b,
-    fill.a
-  )
-  if (typeof obj !== 'undefined') {
+    fill.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageResizeCanvas = ImageResizeCanvas
+raylib.ImageResizeCanvas = ImageResizeCanvas;
 
 /**
  * Compute all mipmap levels for a provided image
@@ -15863,15 +14432,15 @@ function ImageMipmaps(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
-  if (typeof obj !== 'undefined') {
+    image.format,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageMipmaps = ImageMipmaps
+raylib.ImageMipmaps = ImageMipmaps;
 
 /**
  * Dither image data to 16bpp or lower (Floyd-Steinberg dithering)
@@ -15894,15 +14463,15 @@ function ImageDither(image, rBpp, gBpp, bBpp, aBpp) {
     rBpp,
     gBpp,
     bBpp,
-    aBpp
-  )
-  if (typeof obj !== 'undefined') {
+    aBpp,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageDither = ImageDither
+raylib.ImageDither = ImageDither;
 
 /**
  * Flip image vertically
@@ -15917,15 +14486,15 @@ function ImageFlipVertical(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
-  if (typeof obj !== 'undefined') {
+    image.format,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageFlipVertical = ImageFlipVertical
+raylib.ImageFlipVertical = ImageFlipVertical;
 
 /**
  * Flip image horizontally
@@ -15940,15 +14509,15 @@ function ImageFlipHorizontal(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
-  if (typeof obj !== 'undefined') {
+    image.format,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageFlipHorizontal = ImageFlipHorizontal
+raylib.ImageFlipHorizontal = ImageFlipHorizontal;
 
 /**
  * Rotate image clockwise 90deg
@@ -15963,15 +14532,15 @@ function ImageRotateCW(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
-  if (typeof obj !== 'undefined') {
+    image.format,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageRotateCW = ImageRotateCW
+raylib.ImageRotateCW = ImageRotateCW;
 
 /**
  * Rotate image counter-clockwise 90deg
@@ -15986,15 +14555,15 @@ function ImageRotateCCW(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
-  if (typeof obj !== 'undefined') {
+    image.format,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageRotateCCW = ImageRotateCCW
+raylib.ImageRotateCCW = ImageRotateCCW;
 
 /**
  * Modify image color: tint
@@ -16014,15 +14583,15 @@ function ImageColorTint(image, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageColorTint = ImageColorTint
+raylib.ImageColorTint = ImageColorTint;
 
 /**
  * Modify image color: invert
@@ -16037,15 +14606,15 @@ function ImageColorInvert(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
-  if (typeof obj !== 'undefined') {
+    image.format,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageColorInvert = ImageColorInvert
+raylib.ImageColorInvert = ImageColorInvert;
 
 /**
  * Modify image color: grayscale
@@ -16060,15 +14629,15 @@ function ImageColorGrayscale(image) {
     image.width,
     image.height,
     image.mipmaps,
-    image.format
-  )
-  if (typeof obj !== 'undefined') {
+    image.format,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageColorGrayscale = ImageColorGrayscale
+raylib.ImageColorGrayscale = ImageColorGrayscale;
 
 /**
  * Modify image color: contrast (-100 to 100)
@@ -16085,15 +14654,15 @@ function ImageColorContrast(image, contrast) {
     image.height,
     image.mipmaps,
     image.format,
-    contrast
-  )
-  if (typeof obj !== 'undefined') {
+    contrast,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageColorContrast = ImageColorContrast
+raylib.ImageColorContrast = ImageColorContrast;
 
 /**
  * Modify image color: brightness (-255 to 255)
@@ -16110,15 +14679,15 @@ function ImageColorBrightness(image, brightness) {
     image.height,
     image.mipmaps,
     image.format,
-    brightness
-  )
-  if (typeof obj !== 'undefined') {
+    brightness,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageColorBrightness = ImageColorBrightness
+raylib.ImageColorBrightness = ImageColorBrightness;
 
 /**
  * Modify image color: replace color
@@ -16143,15 +14712,15 @@ function ImageColorReplace(image, color, replace) {
     replace.r,
     replace.g,
     replace.b,
-    replace.a
-  )
-  if (typeof obj !== 'undefined') {
+    replace.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      image[key] = obj[key]
+      image[key] = obj[key];
     }
   }
 }
-raylib.ImageColorReplace = ImageColorReplace
+raylib.ImageColorReplace = ImageColorReplace;
 
 /**
  * Clear image background with given color
@@ -16171,15 +14740,15 @@ function ImageClearBackground(dst, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageClearBackground = ImageClearBackground
+raylib.ImageClearBackground = ImageClearBackground;
 
 /**
  * Draw pixel within an image
@@ -16203,15 +14772,15 @@ function ImageDrawPixel(dst, posX, posY, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawPixel = ImageDrawPixel
+raylib.ImageDrawPixel = ImageDrawPixel;
 
 /**
  * Draw pixel within an image (Vector version)
@@ -16234,15 +14803,15 @@ function ImageDrawPixelV(dst, position, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawPixelV = ImageDrawPixelV
+raylib.ImageDrawPixelV = ImageDrawPixelV;
 
 /**
  * Draw line within an image
@@ -16270,15 +14839,15 @@ function ImageDrawLine(dst, startPosX, startPosY, endPosX, endPosY, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawLine = ImageDrawLine
+raylib.ImageDrawLine = ImageDrawLine;
 
 /**
  * Draw line within an image (Vector version)
@@ -16304,15 +14873,15 @@ function ImageDrawLineV(dst, start, end, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawLineV = ImageDrawLineV
+raylib.ImageDrawLineV = ImageDrawLineV;
 
 /**
  * Draw a filled circle within an image
@@ -16338,15 +14907,15 @@ function ImageDrawCircle(dst, centerX, centerY, radius, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawCircle = ImageDrawCircle
+raylib.ImageDrawCircle = ImageDrawCircle;
 
 /**
  * Draw a filled circle within an image (Vector version)
@@ -16371,15 +14940,15 @@ function ImageDrawCircleV(dst, center, radius, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawCircleV = ImageDrawCircleV
+raylib.ImageDrawCircleV = ImageDrawCircleV;
 
 /**
  * Draw rectangle within an image
@@ -16407,15 +14976,15 @@ function ImageDrawRectangle(dst, posX, posY, width, height, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawRectangle = ImageDrawRectangle
+raylib.ImageDrawRectangle = ImageDrawRectangle;
 
 /**
  * Draw rectangle within an image (Vector version)
@@ -16441,15 +15010,15 @@ function ImageDrawRectangleV(dst, position, size, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawRectangleV = ImageDrawRectangleV
+raylib.ImageDrawRectangleV = ImageDrawRectangleV;
 
 /**
  * Draw rectangle within an image
@@ -16474,15 +15043,15 @@ function ImageDrawRectangleRec(dst, rec, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawRectangleRec = ImageDrawRectangleRec
+raylib.ImageDrawRectangleRec = ImageDrawRectangleRec;
 
 /**
  * Draw rectangle lines within an image
@@ -16509,15 +15078,15 @@ function ImageDrawRectangleLines(dst, rec, thick, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawRectangleLines = ImageDrawRectangleLines
+raylib.ImageDrawRectangleLines = ImageDrawRectangleLines;
 
 /**
  * Draw a source image within a destination image (tint applied to source)
@@ -16553,15 +15122,15 @@ function ImageDraw(dst, src, srcRec, dstRec, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
-  if (typeof obj !== 'undefined') {
+    tint.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDraw = ImageDraw
+raylib.ImageDraw = ImageDraw;
 
 /**
  * Draw text (using default font) within an image (destination)
@@ -16589,15 +15158,15 @@ function ImageDrawText(dst, text, posX, posY, fontSize, color) {
     color.r,
     color.g,
     color.b,
-    color.a
-  )
-  if (typeof obj !== 'undefined') {
+    color.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawText = ImageDrawText
+raylib.ImageDrawText = ImageDrawText;
 
 /**
  * Draw text (custom sprite font) within an image (destination)
@@ -16637,15 +15206,15 @@ function ImageDrawTextEx(dst, font, text, position, fontSize, spacing, tint) {
     tint.r,
     tint.g,
     tint.b,
-    tint.a
-  )
-  if (typeof obj !== 'undefined') {
+    tint.a,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      dst[key] = obj[key]
+      dst[key] = obj[key];
     }
   }
 }
-raylib.ImageDrawTextEx = ImageDrawTextEx
+raylib.ImageDrawTextEx = ImageDrawTextEx;
 
 /**
  * Generate GPU mipmaps for a texture
@@ -16660,15 +15229,15 @@ function GenTextureMipmaps(texture) {
     texture.width,
     texture.height,
     texture.mipmaps,
-    texture.format
-  )
-  if (typeof obj !== 'undefined') {
+    texture.format,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      texture[key] = obj[key]
+      texture[key] = obj[key];
     }
   }
 }
-raylib.GenTextureMipmaps = GenTextureMipmaps
+raylib.GenTextureMipmaps = GenTextureMipmaps;
 
 /**
  * Upload mesh vertex data in GPU and provide VAO/VBO ids
@@ -16697,15 +15266,15 @@ function UploadMesh(mesh, dynamic) {
     mesh.boneCount,
     mesh.vaoId,
     mesh.vboId,
-    dynamic
-  )
-  if (typeof obj !== 'undefined') {
+    dynamic,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      mesh[key] = obj[key]
+      mesh[key] = obj[key];
     }
   }
 }
-raylib.UploadMesh = UploadMesh
+raylib.UploadMesh = UploadMesh;
 
 /**
  * Compute mesh tangents
@@ -16732,15 +15301,15 @@ function GenMeshTangents(mesh) {
     mesh.boneMatrices,
     mesh.boneCount,
     mesh.vaoId,
-    mesh.vboId
-  )
-  if (typeof obj !== 'undefined') {
+    mesh.vboId,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      mesh[key] = obj[key]
+      mesh[key] = obj[key];
     }
   }
 }
-raylib.GenMeshTangents = GenMeshTangents
+raylib.GenMeshTangents = GenMeshTangents;
 
 /**
  * Set material for a mesh
@@ -16778,15 +15347,15 @@ function SetModelMeshMaterial(model, meshId, materialId) {
     model.bones,
     model.bindPose,
     meshId,
-    materialId
-  )
-  if (typeof obj !== 'undefined') {
+    materialId,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      model[key] = obj[key]
+      model[key] = obj[key];
     }
   }
 }
-raylib.SetModelMeshMaterial = SetModelMeshMaterial
+raylib.SetModelMeshMaterial = SetModelMeshMaterial;
 
 /**
  * Crop a wave to defined frames range
@@ -16805,15 +15374,15 @@ function WaveCrop(wave, initFrame, finalFrame) {
     wave.channels,
     wave.data,
     initFrame,
-    finalFrame
-  )
-  if (typeof obj !== 'undefined') {
+    finalFrame,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      wave[key] = obj[key]
+      wave[key] = obj[key];
     }
   }
 }
-raylib.WaveCrop = WaveCrop
+raylib.WaveCrop = WaveCrop;
 
 /**
  * Convert wave data to desired format
@@ -16834,15 +15403,15 @@ function WaveFormat(wave, sampleRate, sampleSize, channels) {
     wave.data,
     sampleRate,
     sampleSize,
-    channels
-  )
-  if (typeof obj !== 'undefined') {
+    channels,
+  );
+  if (typeof obj !== "undefined") {
     for (const key in obj) {
-      wave[key] = obj[key]
+      wave[key] = obj[key];
     }
   }
 }
-raylib.WaveFormat = WaveFormat
+raylib.WaveFormat = WaveFormat;
 
 /**
  * Color, 4 components, R8G8B8A8 (32bit)
@@ -16854,10 +15423,10 @@ raylib.WaveFormat = WaveFormat
  *
  * @return {Color} The new Color.
  */
-function Color(r,g,b,a) {
-  return {r,g,b,a}
+function Color(r, g, b, a) {
+  return { r, g, b, a };
 }
-raylib.Color = Color
+raylib.Color = Color;
 
 /**
  * Vector2, 2 components
@@ -16867,10 +15436,10 @@ raylib.Color = Color
  *
  * @return {Vector2} The new Vector2.
  */
-function Vector2(x,y) {
-  return {x,y}
+function Vector2(x, y) {
+  return { x, y };
 }
-raylib.Vector2 = Vector2
+raylib.Vector2 = Vector2;
 
 /**
  * Vector3, 3 components
@@ -16881,10 +15450,10 @@ raylib.Vector2 = Vector2
  *
  * @return {Vector3} The new Vector3.
  */
-function Vector3(x,y,z) {
-  return {x,y,z}
+function Vector3(x, y, z) {
+  return { x, y, z };
 }
-raylib.Vector3 = Vector3
+raylib.Vector3 = Vector3;
 
 /**
  * Vector4, 4 components
@@ -16896,10 +15465,10 @@ raylib.Vector3 = Vector3
  *
  * @return {Vector4} The new Vector4.
  */
-function Vector4(x,y,z,w) {
-  return {x,y,z,w}
+function Vector4(x, y, z, w) {
+  return { x, y, z, w };
 }
-raylib.Vector4 = Vector4
+raylib.Vector4 = Vector4;
 
 /**
  * Rectangle, 4 components
@@ -16911,10 +15480,10 @@ raylib.Vector4 = Vector4
  *
  * @return {Rectangle} The new Rectangle.
  */
-function Rectangle(x,y,width,height) {
-  return {x,y,width,height}
+function Rectangle(x, y, width, height) {
+  return { x, y, width, height };
 }
-raylib.Rectangle = Rectangle
+raylib.Rectangle = Rectangle;
 
 /**
  * Camera2D, defines position/orientation in 2d space
@@ -16926,10 +15495,10 @@ raylib.Rectangle = Rectangle
  *
  * @return {Camera2D} The new Camera2D.
  */
-function Camera2D(offset,target,rotation,zoom) {
-  return {offset,target,rotation,zoom}
+function Camera2D(offset, target, rotation, zoom) {
+  return { offset, target, rotation, zoom };
 }
-raylib.Camera2D = Camera2D
+raylib.Camera2D = Camera2D;
 
 /**
  * Camera, defines position/orientation in 3d space
@@ -16942,59 +15511,49 @@ raylib.Camera2D = Camera2D
  *
  * @return {Camera3D} The new Camera3D.
  */
-function Camera3D(position,target,up,fovy,projection) {
-  return {position,target,up,fovy,projection}
+function Camera3D(position, target, up, fovy, projection) {
+  return { position, target, up, fovy, projection };
 }
-raylib.Camera3D = Camera3D
-raylib.Camera = raylib.Camera3D
+raylib.Camera3D = Camera3D;
+raylib.Camera = raylib.Camera3D;
 
 // WRAPPED TYPED SHADER FUNCTIONS
 
 /**
  * Set shader uniform value float
- * 
+ *
  * @param {Shader} shader
  * @param {number} locIndex
  * @param {number} value
- * 
+ *
  * @returns {undefined}
  */
 function SetShaderFloat(shader, locIndex, value) {
-  return r.BindSetShaderFloat(
-    shader.id,
-    shader.locs,
-    locIndex,
-    value
-  )
+  return r.BindSetShaderFloat(shader.id, shader.locs, locIndex, value);
 }
-raylib.SetShaderFloat = SetShaderFloat
+raylib.SetShaderFloat = SetShaderFloat;
 
 /**
  * Set shader uniform value float
- * 
+ *
  * @param {Shader} shader
  * @param {number} locIndex
  * @param {number} value
- * 
+ *
  * @returns {undefined}
  */
 function SetShaderInt(shader, locIndex, value) {
-  return r.BindSetShaderInt(
-    shader.id,
-    shader.locs,
-    locIndex,
-    value
-  )
+  return r.BindSetShaderInt(shader.id, shader.locs, locIndex, value);
 }
-raylib.SetShaderInt = SetShaderInt
+raylib.SetShaderInt = SetShaderInt;
 
 /**
  * Set shader uniform value vector2
- * 
+ *
  * @param {Shader} shader
  * @param {number} locIndex
  * @param {Vector2} value
- * 
+ *
  * @returns {undefined}
  */
 function SetShaderVec2(shader, locIndex, value) {
@@ -17003,18 +15562,18 @@ function SetShaderVec2(shader, locIndex, value) {
     shader.locs,
     locIndex,
     value.x,
-    value.y
-  )
+    value.y,
+  );
 }
-raylib.SetShaderVec2 = SetShaderVec2
+raylib.SetShaderVec2 = SetShaderVec2;
 
 /**
  * Set shader uniform value vector3
- * 
+ *
  * @param {Shader} shader
  * @param {number} locIndex
  * @param {Vector3} value
- * 
+ *
  * @returns {undefined}
  */
 function SetShaderVec3(shader, locIndex, value) {
@@ -17024,18 +15583,18 @@ function SetShaderVec3(shader, locIndex, value) {
     locIndex,
     value.x,
     value.y,
-    value.z
-  )
+    value.z,
+  );
 }
-raylib.SetShaderVec3 = SetShaderVec3
+raylib.SetShaderVec3 = SetShaderVec3;
 
 /**
  * Set shader uniform value vector4
- * 
+ *
  * @param {Shader} shader
  * @param {number} locIndex
  * @param {Vector4} value
- * 
+ *
  * @returns {undefined}
  */
 function SetShaderVec4(shader, locIndex, value) {
@@ -17046,10 +15605,10 @@ function SetShaderVec4(shader, locIndex, value) {
     value.x,
     value.y,
     value.z,
-    value.w
-  )
+    value.w,
+  );
 }
-raylib.SetShaderVec4 = SetShaderVec4
+raylib.SetShaderVec4 = SetShaderVec4;
 
 /**
  * Set to try enabling V-Sync on GPU
@@ -17057,7 +15616,7 @@ raylib.SetShaderVec4 = SetShaderVec4
  * @type {number}
  * @constant
  */
-raylib.FLAG_VSYNC_HINT = 64
+raylib.FLAG_VSYNC_HINT = 64;
 
 /**
  * Set to run program in fullscreen
@@ -17065,7 +15624,7 @@ raylib.FLAG_VSYNC_HINT = 64
  * @type {number}
  * @constant
  */
-raylib.FLAG_FULLSCREEN_MODE = 2
+raylib.FLAG_FULLSCREEN_MODE = 2;
 
 /**
  * Set to allow resizable window
@@ -17073,7 +15632,7 @@ raylib.FLAG_FULLSCREEN_MODE = 2
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_RESIZABLE = 4
+raylib.FLAG_WINDOW_RESIZABLE = 4;
 
 /**
  * Set to disable window decoration (frame and buttons)
@@ -17081,7 +15640,7 @@ raylib.FLAG_WINDOW_RESIZABLE = 4
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_UNDECORATED = 8
+raylib.FLAG_WINDOW_UNDECORATED = 8;
 
 /**
  * Set to hide window
@@ -17089,7 +15648,7 @@ raylib.FLAG_WINDOW_UNDECORATED = 8
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_HIDDEN = 128
+raylib.FLAG_WINDOW_HIDDEN = 128;
 
 /**
  * Set to minimize window (iconify)
@@ -17097,7 +15656,7 @@ raylib.FLAG_WINDOW_HIDDEN = 128
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_MINIMIZED = 512
+raylib.FLAG_WINDOW_MINIMIZED = 512;
 
 /**
  * Set to maximize window (expanded to monitor)
@@ -17105,7 +15664,7 @@ raylib.FLAG_WINDOW_MINIMIZED = 512
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_MAXIMIZED = 1024
+raylib.FLAG_WINDOW_MAXIMIZED = 1024;
 
 /**
  * Set to window non focused
@@ -17113,7 +15672,7 @@ raylib.FLAG_WINDOW_MAXIMIZED = 1024
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_UNFOCUSED = 2048
+raylib.FLAG_WINDOW_UNFOCUSED = 2048;
 
 /**
  * Set to window always on top
@@ -17121,7 +15680,7 @@ raylib.FLAG_WINDOW_UNFOCUSED = 2048
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_TOPMOST = 4096
+raylib.FLAG_WINDOW_TOPMOST = 4096;
 
 /**
  * Set to allow windows running while minimized
@@ -17129,7 +15688,7 @@ raylib.FLAG_WINDOW_TOPMOST = 4096
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_ALWAYS_RUN = 256
+raylib.FLAG_WINDOW_ALWAYS_RUN = 256;
 
 /**
  * Set to allow transparent framebuffer
@@ -17137,7 +15696,7 @@ raylib.FLAG_WINDOW_ALWAYS_RUN = 256
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_TRANSPARENT = 16
+raylib.FLAG_WINDOW_TRANSPARENT = 16;
 
 /**
  * Set to support HighDPI
@@ -17145,7 +15704,7 @@ raylib.FLAG_WINDOW_TRANSPARENT = 16
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_HIGHDPI = 8192
+raylib.FLAG_WINDOW_HIGHDPI = 8192;
 
 /**
  * Set to support mouse passthrough, only supported when FLAG_WINDOW_UNDECORATED
@@ -17153,7 +15712,7 @@ raylib.FLAG_WINDOW_HIGHDPI = 8192
  * @type {number}
  * @constant
  */
-raylib.FLAG_WINDOW_MOUSE_PASSTHROUGH = 16384
+raylib.FLAG_WINDOW_MOUSE_PASSTHROUGH = 16384;
 
 /**
  * Set to run program in borderless windowed mode
@@ -17161,7 +15720,7 @@ raylib.FLAG_WINDOW_MOUSE_PASSTHROUGH = 16384
  * @type {number}
  * @constant
  */
-raylib.FLAG_BORDERLESS_WINDOWED_MODE = 32768
+raylib.FLAG_BORDERLESS_WINDOWED_MODE = 32768;
 
 /**
  * Set to try enabling MSAA 4X
@@ -17169,7 +15728,7 @@ raylib.FLAG_BORDERLESS_WINDOWED_MODE = 32768
  * @type {number}
  * @constant
  */
-raylib.FLAG_MSAA_4X_HINT = 32
+raylib.FLAG_MSAA_4X_HINT = 32;
 
 /**
  * Set to try enabling interlaced video format (for V3D)
@@ -17177,7 +15736,7 @@ raylib.FLAG_MSAA_4X_HINT = 32
  * @type {number}
  * @constant
  */
-raylib.FLAG_INTERLACED_HINT = 65536
+raylib.FLAG_INTERLACED_HINT = 65536;
 
 /**
  * Display all logs
@@ -17185,7 +15744,7 @@ raylib.FLAG_INTERLACED_HINT = 65536
  * @type {number}
  * @constant
  */
-raylib.LOG_ALL = 0
+raylib.LOG_ALL = 0;
 
 /**
  * Trace logging, intended for internal use only
@@ -17193,7 +15752,7 @@ raylib.LOG_ALL = 0
  * @type {number}
  * @constant
  */
-raylib.LOG_TRACE = 1
+raylib.LOG_TRACE = 1;
 
 /**
  * Debug logging, used for internal debugging, it should be disabled on release builds
@@ -17201,7 +15760,7 @@ raylib.LOG_TRACE = 1
  * @type {number}
  * @constant
  */
-raylib.LOG_DEBUG = 2
+raylib.LOG_DEBUG = 2;
 
 /**
  * Info logging, used for program execution info
@@ -17209,7 +15768,7 @@ raylib.LOG_DEBUG = 2
  * @type {number}
  * @constant
  */
-raylib.LOG_INFO = 3
+raylib.LOG_INFO = 3;
 
 /**
  * Warning logging, used on recoverable failures
@@ -17217,7 +15776,7 @@ raylib.LOG_INFO = 3
  * @type {number}
  * @constant
  */
-raylib.LOG_WARNING = 4
+raylib.LOG_WARNING = 4;
 
 /**
  * Error logging, used on unrecoverable failures
@@ -17225,7 +15784,7 @@ raylib.LOG_WARNING = 4
  * @type {number}
  * @constant
  */
-raylib.LOG_ERROR = 5
+raylib.LOG_ERROR = 5;
 
 /**
  * Fatal logging, used to abort program: exit(EXIT_FAILURE)
@@ -17233,7 +15792,7 @@ raylib.LOG_ERROR = 5
  * @type {number}
  * @constant
  */
-raylib.LOG_FATAL = 6
+raylib.LOG_FATAL = 6;
 
 /**
  * Disable logging
@@ -17241,7 +15800,7 @@ raylib.LOG_FATAL = 6
  * @type {number}
  * @constant
  */
-raylib.LOG_NONE = 7
+raylib.LOG_NONE = 7;
 
 /**
  * Key: NULL, used for no key pressed
@@ -17249,7 +15808,7 @@ raylib.LOG_NONE = 7
  * @type {number}
  * @constant
  */
-raylib.KEY_NULL = 0
+raylib.KEY_NULL = 0;
 
 /**
  * Key: '
@@ -17257,7 +15816,7 @@ raylib.KEY_NULL = 0
  * @type {number}
  * @constant
  */
-raylib.KEY_APOSTROPHE = 39
+raylib.KEY_APOSTROPHE = 39;
 
 /**
  * Key: ,
@@ -17265,7 +15824,7 @@ raylib.KEY_APOSTROPHE = 39
  * @type {number}
  * @constant
  */
-raylib.KEY_COMMA = 44
+raylib.KEY_COMMA = 44;
 
 /**
  * Key: -
@@ -17273,7 +15832,7 @@ raylib.KEY_COMMA = 44
  * @type {number}
  * @constant
  */
-raylib.KEY_MINUS = 45
+raylib.KEY_MINUS = 45;
 
 /**
  * Key: .
@@ -17281,7 +15840,7 @@ raylib.KEY_MINUS = 45
  * @type {number}
  * @constant
  */
-raylib.KEY_PERIOD = 46
+raylib.KEY_PERIOD = 46;
 
 /**
  * Key: /
@@ -17289,7 +15848,7 @@ raylib.KEY_PERIOD = 46
  * @type {number}
  * @constant
  */
-raylib.KEY_SLASH = 47
+raylib.KEY_SLASH = 47;
 
 /**
  * Key: 0
@@ -17297,7 +15856,7 @@ raylib.KEY_SLASH = 47
  * @type {number}
  * @constant
  */
-raylib.KEY_ZERO = 48
+raylib.KEY_ZERO = 48;
 
 /**
  * Key: 1
@@ -17305,7 +15864,7 @@ raylib.KEY_ZERO = 48
  * @type {number}
  * @constant
  */
-raylib.KEY_ONE = 49
+raylib.KEY_ONE = 49;
 
 /**
  * Key: 2
@@ -17313,7 +15872,7 @@ raylib.KEY_ONE = 49
  * @type {number}
  * @constant
  */
-raylib.KEY_TWO = 50
+raylib.KEY_TWO = 50;
 
 /**
  * Key: 3
@@ -17321,7 +15880,7 @@ raylib.KEY_TWO = 50
  * @type {number}
  * @constant
  */
-raylib.KEY_THREE = 51
+raylib.KEY_THREE = 51;
 
 /**
  * Key: 4
@@ -17329,7 +15888,7 @@ raylib.KEY_THREE = 51
  * @type {number}
  * @constant
  */
-raylib.KEY_FOUR = 52
+raylib.KEY_FOUR = 52;
 
 /**
  * Key: 5
@@ -17337,7 +15896,7 @@ raylib.KEY_FOUR = 52
  * @type {number}
  * @constant
  */
-raylib.KEY_FIVE = 53
+raylib.KEY_FIVE = 53;
 
 /**
  * Key: 6
@@ -17345,7 +15904,7 @@ raylib.KEY_FIVE = 53
  * @type {number}
  * @constant
  */
-raylib.KEY_SIX = 54
+raylib.KEY_SIX = 54;
 
 /**
  * Key: 7
@@ -17353,7 +15912,7 @@ raylib.KEY_SIX = 54
  * @type {number}
  * @constant
  */
-raylib.KEY_SEVEN = 55
+raylib.KEY_SEVEN = 55;
 
 /**
  * Key: 8
@@ -17361,7 +15920,7 @@ raylib.KEY_SEVEN = 55
  * @type {number}
  * @constant
  */
-raylib.KEY_EIGHT = 56
+raylib.KEY_EIGHT = 56;
 
 /**
  * Key: 9
@@ -17369,7 +15928,7 @@ raylib.KEY_EIGHT = 56
  * @type {number}
  * @constant
  */
-raylib.KEY_NINE = 57
+raylib.KEY_NINE = 57;
 
 /**
  * Key: ;
@@ -17377,7 +15936,7 @@ raylib.KEY_NINE = 57
  * @type {number}
  * @constant
  */
-raylib.KEY_SEMICOLON = 59
+raylib.KEY_SEMICOLON = 59;
 
 /**
  * Key: =
@@ -17385,7 +15944,7 @@ raylib.KEY_SEMICOLON = 59
  * @type {number}
  * @constant
  */
-raylib.KEY_EQUAL = 61
+raylib.KEY_EQUAL = 61;
 
 /**
  * Key: A | a
@@ -17393,7 +15952,7 @@ raylib.KEY_EQUAL = 61
  * @type {number}
  * @constant
  */
-raylib.KEY_A = 65
+raylib.KEY_A = 65;
 
 /**
  * Key: B | b
@@ -17401,7 +15960,7 @@ raylib.KEY_A = 65
  * @type {number}
  * @constant
  */
-raylib.KEY_B = 66
+raylib.KEY_B = 66;
 
 /**
  * Key: C | c
@@ -17409,7 +15968,7 @@ raylib.KEY_B = 66
  * @type {number}
  * @constant
  */
-raylib.KEY_C = 67
+raylib.KEY_C = 67;
 
 /**
  * Key: D | d
@@ -17417,7 +15976,7 @@ raylib.KEY_C = 67
  * @type {number}
  * @constant
  */
-raylib.KEY_D = 68
+raylib.KEY_D = 68;
 
 /**
  * Key: E | e
@@ -17425,7 +15984,7 @@ raylib.KEY_D = 68
  * @type {number}
  * @constant
  */
-raylib.KEY_E = 69
+raylib.KEY_E = 69;
 
 /**
  * Key: F | f
@@ -17433,7 +15992,7 @@ raylib.KEY_E = 69
  * @type {number}
  * @constant
  */
-raylib.KEY_F = 70
+raylib.KEY_F = 70;
 
 /**
  * Key: G | g
@@ -17441,7 +16000,7 @@ raylib.KEY_F = 70
  * @type {number}
  * @constant
  */
-raylib.KEY_G = 71
+raylib.KEY_G = 71;
 
 /**
  * Key: H | h
@@ -17449,7 +16008,7 @@ raylib.KEY_G = 71
  * @type {number}
  * @constant
  */
-raylib.KEY_H = 72
+raylib.KEY_H = 72;
 
 /**
  * Key: I | i
@@ -17457,7 +16016,7 @@ raylib.KEY_H = 72
  * @type {number}
  * @constant
  */
-raylib.KEY_I = 73
+raylib.KEY_I = 73;
 
 /**
  * Key: J | j
@@ -17465,7 +16024,7 @@ raylib.KEY_I = 73
  * @type {number}
  * @constant
  */
-raylib.KEY_J = 74
+raylib.KEY_J = 74;
 
 /**
  * Key: K | k
@@ -17473,7 +16032,7 @@ raylib.KEY_J = 74
  * @type {number}
  * @constant
  */
-raylib.KEY_K = 75
+raylib.KEY_K = 75;
 
 /**
  * Key: L | l
@@ -17481,7 +16040,7 @@ raylib.KEY_K = 75
  * @type {number}
  * @constant
  */
-raylib.KEY_L = 76
+raylib.KEY_L = 76;
 
 /**
  * Key: M | m
@@ -17489,7 +16048,7 @@ raylib.KEY_L = 76
  * @type {number}
  * @constant
  */
-raylib.KEY_M = 77
+raylib.KEY_M = 77;
 
 /**
  * Key: N | n
@@ -17497,7 +16056,7 @@ raylib.KEY_M = 77
  * @type {number}
  * @constant
  */
-raylib.KEY_N = 78
+raylib.KEY_N = 78;
 
 /**
  * Key: O | o
@@ -17505,7 +16064,7 @@ raylib.KEY_N = 78
  * @type {number}
  * @constant
  */
-raylib.KEY_O = 79
+raylib.KEY_O = 79;
 
 /**
  * Key: P | p
@@ -17513,7 +16072,7 @@ raylib.KEY_O = 79
  * @type {number}
  * @constant
  */
-raylib.KEY_P = 80
+raylib.KEY_P = 80;
 
 /**
  * Key: Q | q
@@ -17521,7 +16080,7 @@ raylib.KEY_P = 80
  * @type {number}
  * @constant
  */
-raylib.KEY_Q = 81
+raylib.KEY_Q = 81;
 
 /**
  * Key: R | r
@@ -17529,7 +16088,7 @@ raylib.KEY_Q = 81
  * @type {number}
  * @constant
  */
-raylib.KEY_R = 82
+raylib.KEY_R = 82;
 
 /**
  * Key: S | s
@@ -17537,7 +16096,7 @@ raylib.KEY_R = 82
  * @type {number}
  * @constant
  */
-raylib.KEY_S = 83
+raylib.KEY_S = 83;
 
 /**
  * Key: T | t
@@ -17545,7 +16104,7 @@ raylib.KEY_S = 83
  * @type {number}
  * @constant
  */
-raylib.KEY_T = 84
+raylib.KEY_T = 84;
 
 /**
  * Key: U | u
@@ -17553,7 +16112,7 @@ raylib.KEY_T = 84
  * @type {number}
  * @constant
  */
-raylib.KEY_U = 85
+raylib.KEY_U = 85;
 
 /**
  * Key: V | v
@@ -17561,7 +16120,7 @@ raylib.KEY_U = 85
  * @type {number}
  * @constant
  */
-raylib.KEY_V = 86
+raylib.KEY_V = 86;
 
 /**
  * Key: W | w
@@ -17569,7 +16128,7 @@ raylib.KEY_V = 86
  * @type {number}
  * @constant
  */
-raylib.KEY_W = 87
+raylib.KEY_W = 87;
 
 /**
  * Key: X | x
@@ -17577,7 +16136,7 @@ raylib.KEY_W = 87
  * @type {number}
  * @constant
  */
-raylib.KEY_X = 88
+raylib.KEY_X = 88;
 
 /**
  * Key: Y | y
@@ -17585,7 +16144,7 @@ raylib.KEY_X = 88
  * @type {number}
  * @constant
  */
-raylib.KEY_Y = 89
+raylib.KEY_Y = 89;
 
 /**
  * Key: Z | z
@@ -17593,7 +16152,7 @@ raylib.KEY_Y = 89
  * @type {number}
  * @constant
  */
-raylib.KEY_Z = 90
+raylib.KEY_Z = 90;
 
 /**
  * Key: [
@@ -17601,7 +16160,7 @@ raylib.KEY_Z = 90
  * @type {number}
  * @constant
  */
-raylib.KEY_LEFT_BRACKET = 91
+raylib.KEY_LEFT_BRACKET = 91;
 
 /**
  * Key: '\'
@@ -17609,7 +16168,7 @@ raylib.KEY_LEFT_BRACKET = 91
  * @type {number}
  * @constant
  */
-raylib.KEY_BACKSLASH = 92
+raylib.KEY_BACKSLASH = 92;
 
 /**
  * Key: ]
@@ -17617,7 +16176,7 @@ raylib.KEY_BACKSLASH = 92
  * @type {number}
  * @constant
  */
-raylib.KEY_RIGHT_BRACKET = 93
+raylib.KEY_RIGHT_BRACKET = 93;
 
 /**
  * Key: `
@@ -17625,7 +16184,7 @@ raylib.KEY_RIGHT_BRACKET = 93
  * @type {number}
  * @constant
  */
-raylib.KEY_GRAVE = 96
+raylib.KEY_GRAVE = 96;
 
 /**
  * Key: Space
@@ -17633,7 +16192,7 @@ raylib.KEY_GRAVE = 96
  * @type {number}
  * @constant
  */
-raylib.KEY_SPACE = 32
+raylib.KEY_SPACE = 32;
 
 /**
  * Key: Esc
@@ -17641,7 +16200,7 @@ raylib.KEY_SPACE = 32
  * @type {number}
  * @constant
  */
-raylib.KEY_ESCAPE = 256
+raylib.KEY_ESCAPE = 256;
 
 /**
  * Key: Enter
@@ -17649,7 +16208,7 @@ raylib.KEY_ESCAPE = 256
  * @type {number}
  * @constant
  */
-raylib.KEY_ENTER = 257
+raylib.KEY_ENTER = 257;
 
 /**
  * Key: Tab
@@ -17657,7 +16216,7 @@ raylib.KEY_ENTER = 257
  * @type {number}
  * @constant
  */
-raylib.KEY_TAB = 258
+raylib.KEY_TAB = 258;
 
 /**
  * Key: Backspace
@@ -17665,7 +16224,7 @@ raylib.KEY_TAB = 258
  * @type {number}
  * @constant
  */
-raylib.KEY_BACKSPACE = 259
+raylib.KEY_BACKSPACE = 259;
 
 /**
  * Key: Ins
@@ -17673,7 +16232,7 @@ raylib.KEY_BACKSPACE = 259
  * @type {number}
  * @constant
  */
-raylib.KEY_INSERT = 260
+raylib.KEY_INSERT = 260;
 
 /**
  * Key: Del
@@ -17681,7 +16240,7 @@ raylib.KEY_INSERT = 260
  * @type {number}
  * @constant
  */
-raylib.KEY_DELETE = 261
+raylib.KEY_DELETE = 261;
 
 /**
  * Key: Cursor right
@@ -17689,7 +16248,7 @@ raylib.KEY_DELETE = 261
  * @type {number}
  * @constant
  */
-raylib.KEY_RIGHT = 262
+raylib.KEY_RIGHT = 262;
 
 /**
  * Key: Cursor left
@@ -17697,7 +16256,7 @@ raylib.KEY_RIGHT = 262
  * @type {number}
  * @constant
  */
-raylib.KEY_LEFT = 263
+raylib.KEY_LEFT = 263;
 
 /**
  * Key: Cursor down
@@ -17705,7 +16264,7 @@ raylib.KEY_LEFT = 263
  * @type {number}
  * @constant
  */
-raylib.KEY_DOWN = 264
+raylib.KEY_DOWN = 264;
 
 /**
  * Key: Cursor up
@@ -17713,7 +16272,7 @@ raylib.KEY_DOWN = 264
  * @type {number}
  * @constant
  */
-raylib.KEY_UP = 265
+raylib.KEY_UP = 265;
 
 /**
  * Key: Page up
@@ -17721,7 +16280,7 @@ raylib.KEY_UP = 265
  * @type {number}
  * @constant
  */
-raylib.KEY_PAGE_UP = 266
+raylib.KEY_PAGE_UP = 266;
 
 /**
  * Key: Page down
@@ -17729,7 +16288,7 @@ raylib.KEY_PAGE_UP = 266
  * @type {number}
  * @constant
  */
-raylib.KEY_PAGE_DOWN = 267
+raylib.KEY_PAGE_DOWN = 267;
 
 /**
  * Key: Home
@@ -17737,7 +16296,7 @@ raylib.KEY_PAGE_DOWN = 267
  * @type {number}
  * @constant
  */
-raylib.KEY_HOME = 268
+raylib.KEY_HOME = 268;
 
 /**
  * Key: End
@@ -17745,7 +16304,7 @@ raylib.KEY_HOME = 268
  * @type {number}
  * @constant
  */
-raylib.KEY_END = 269
+raylib.KEY_END = 269;
 
 /**
  * Key: Caps lock
@@ -17753,7 +16312,7 @@ raylib.KEY_END = 269
  * @type {number}
  * @constant
  */
-raylib.KEY_CAPS_LOCK = 280
+raylib.KEY_CAPS_LOCK = 280;
 
 /**
  * Key: Scroll down
@@ -17761,7 +16320,7 @@ raylib.KEY_CAPS_LOCK = 280
  * @type {number}
  * @constant
  */
-raylib.KEY_SCROLL_LOCK = 281
+raylib.KEY_SCROLL_LOCK = 281;
 
 /**
  * Key: Num lock
@@ -17769,7 +16328,7 @@ raylib.KEY_SCROLL_LOCK = 281
  * @type {number}
  * @constant
  */
-raylib.KEY_NUM_LOCK = 282
+raylib.KEY_NUM_LOCK = 282;
 
 /**
  * Key: Print screen
@@ -17777,7 +16336,7 @@ raylib.KEY_NUM_LOCK = 282
  * @type {number}
  * @constant
  */
-raylib.KEY_PRINT_SCREEN = 283
+raylib.KEY_PRINT_SCREEN = 283;
 
 /**
  * Key: Pause
@@ -17785,7 +16344,7 @@ raylib.KEY_PRINT_SCREEN = 283
  * @type {number}
  * @constant
  */
-raylib.KEY_PAUSE = 284
+raylib.KEY_PAUSE = 284;
 
 /**
  * Key: F1
@@ -17793,7 +16352,7 @@ raylib.KEY_PAUSE = 284
  * @type {number}
  * @constant
  */
-raylib.KEY_F1 = 290
+raylib.KEY_F1 = 290;
 
 /**
  * Key: F2
@@ -17801,7 +16360,7 @@ raylib.KEY_F1 = 290
  * @type {number}
  * @constant
  */
-raylib.KEY_F2 = 291
+raylib.KEY_F2 = 291;
 
 /**
  * Key: F3
@@ -17809,7 +16368,7 @@ raylib.KEY_F2 = 291
  * @type {number}
  * @constant
  */
-raylib.KEY_F3 = 292
+raylib.KEY_F3 = 292;
 
 /**
  * Key: F4
@@ -17817,7 +16376,7 @@ raylib.KEY_F3 = 292
  * @type {number}
  * @constant
  */
-raylib.KEY_F4 = 293
+raylib.KEY_F4 = 293;
 
 /**
  * Key: F5
@@ -17825,7 +16384,7 @@ raylib.KEY_F4 = 293
  * @type {number}
  * @constant
  */
-raylib.KEY_F5 = 294
+raylib.KEY_F5 = 294;
 
 /**
  * Key: F6
@@ -17833,7 +16392,7 @@ raylib.KEY_F5 = 294
  * @type {number}
  * @constant
  */
-raylib.KEY_F6 = 295
+raylib.KEY_F6 = 295;
 
 /**
  * Key: F7
@@ -17841,7 +16400,7 @@ raylib.KEY_F6 = 295
  * @type {number}
  * @constant
  */
-raylib.KEY_F7 = 296
+raylib.KEY_F7 = 296;
 
 /**
  * Key: F8
@@ -17849,7 +16408,7 @@ raylib.KEY_F7 = 296
  * @type {number}
  * @constant
  */
-raylib.KEY_F8 = 297
+raylib.KEY_F8 = 297;
 
 /**
  * Key: F9
@@ -17857,7 +16416,7 @@ raylib.KEY_F8 = 297
  * @type {number}
  * @constant
  */
-raylib.KEY_F9 = 298
+raylib.KEY_F9 = 298;
 
 /**
  * Key: F10
@@ -17865,7 +16424,7 @@ raylib.KEY_F9 = 298
  * @type {number}
  * @constant
  */
-raylib.KEY_F10 = 299
+raylib.KEY_F10 = 299;
 
 /**
  * Key: F11
@@ -17873,7 +16432,7 @@ raylib.KEY_F10 = 299
  * @type {number}
  * @constant
  */
-raylib.KEY_F11 = 300
+raylib.KEY_F11 = 300;
 
 /**
  * Key: F12
@@ -17881,7 +16440,7 @@ raylib.KEY_F11 = 300
  * @type {number}
  * @constant
  */
-raylib.KEY_F12 = 301
+raylib.KEY_F12 = 301;
 
 /**
  * Key: Shift left
@@ -17889,7 +16448,7 @@ raylib.KEY_F12 = 301
  * @type {number}
  * @constant
  */
-raylib.KEY_LEFT_SHIFT = 340
+raylib.KEY_LEFT_SHIFT = 340;
 
 /**
  * Key: Control left
@@ -17897,7 +16456,7 @@ raylib.KEY_LEFT_SHIFT = 340
  * @type {number}
  * @constant
  */
-raylib.KEY_LEFT_CONTROL = 341
+raylib.KEY_LEFT_CONTROL = 341;
 
 /**
  * Key: Alt left
@@ -17905,7 +16464,7 @@ raylib.KEY_LEFT_CONTROL = 341
  * @type {number}
  * @constant
  */
-raylib.KEY_LEFT_ALT = 342
+raylib.KEY_LEFT_ALT = 342;
 
 /**
  * Key: Super left
@@ -17913,7 +16472,7 @@ raylib.KEY_LEFT_ALT = 342
  * @type {number}
  * @constant
  */
-raylib.KEY_LEFT_SUPER = 343
+raylib.KEY_LEFT_SUPER = 343;
 
 /**
  * Key: Shift right
@@ -17921,7 +16480,7 @@ raylib.KEY_LEFT_SUPER = 343
  * @type {number}
  * @constant
  */
-raylib.KEY_RIGHT_SHIFT = 344
+raylib.KEY_RIGHT_SHIFT = 344;
 
 /**
  * Key: Control right
@@ -17929,7 +16488,7 @@ raylib.KEY_RIGHT_SHIFT = 344
  * @type {number}
  * @constant
  */
-raylib.KEY_RIGHT_CONTROL = 345
+raylib.KEY_RIGHT_CONTROL = 345;
 
 /**
  * Key: Alt right
@@ -17937,7 +16496,7 @@ raylib.KEY_RIGHT_CONTROL = 345
  * @type {number}
  * @constant
  */
-raylib.KEY_RIGHT_ALT = 346
+raylib.KEY_RIGHT_ALT = 346;
 
 /**
  * Key: Super right
@@ -17945,7 +16504,7 @@ raylib.KEY_RIGHT_ALT = 346
  * @type {number}
  * @constant
  */
-raylib.KEY_RIGHT_SUPER = 347
+raylib.KEY_RIGHT_SUPER = 347;
 
 /**
  * Key: KB menu
@@ -17953,7 +16512,7 @@ raylib.KEY_RIGHT_SUPER = 347
  * @type {number}
  * @constant
  */
-raylib.KEY_KB_MENU = 348
+raylib.KEY_KB_MENU = 348;
 
 /**
  * Key: Keypad 0
@@ -17961,7 +16520,7 @@ raylib.KEY_KB_MENU = 348
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_0 = 320
+raylib.KEY_KP_0 = 320;
 
 /**
  * Key: Keypad 1
@@ -17969,7 +16528,7 @@ raylib.KEY_KP_0 = 320
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_1 = 321
+raylib.KEY_KP_1 = 321;
 
 /**
  * Key: Keypad 2
@@ -17977,7 +16536,7 @@ raylib.KEY_KP_1 = 321
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_2 = 322
+raylib.KEY_KP_2 = 322;
 
 /**
  * Key: Keypad 3
@@ -17985,7 +16544,7 @@ raylib.KEY_KP_2 = 322
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_3 = 323
+raylib.KEY_KP_3 = 323;
 
 /**
  * Key: Keypad 4
@@ -17993,7 +16552,7 @@ raylib.KEY_KP_3 = 323
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_4 = 324
+raylib.KEY_KP_4 = 324;
 
 /**
  * Key: Keypad 5
@@ -18001,7 +16560,7 @@ raylib.KEY_KP_4 = 324
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_5 = 325
+raylib.KEY_KP_5 = 325;
 
 /**
  * Key: Keypad 6
@@ -18009,7 +16568,7 @@ raylib.KEY_KP_5 = 325
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_6 = 326
+raylib.KEY_KP_6 = 326;
 
 /**
  * Key: Keypad 7
@@ -18017,7 +16576,7 @@ raylib.KEY_KP_6 = 326
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_7 = 327
+raylib.KEY_KP_7 = 327;
 
 /**
  * Key: Keypad 8
@@ -18025,7 +16584,7 @@ raylib.KEY_KP_7 = 327
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_8 = 328
+raylib.KEY_KP_8 = 328;
 
 /**
  * Key: Keypad 9
@@ -18033,7 +16592,7 @@ raylib.KEY_KP_8 = 328
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_9 = 329
+raylib.KEY_KP_9 = 329;
 
 /**
  * Key: Keypad .
@@ -18041,7 +16600,7 @@ raylib.KEY_KP_9 = 329
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_DECIMAL = 330
+raylib.KEY_KP_DECIMAL = 330;
 
 /**
  * Key: Keypad /
@@ -18049,7 +16608,7 @@ raylib.KEY_KP_DECIMAL = 330
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_DIVIDE = 331
+raylib.KEY_KP_DIVIDE = 331;
 
 /**
  * Key: Keypad *
@@ -18057,7 +16616,7 @@ raylib.KEY_KP_DIVIDE = 331
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_MULTIPLY = 332
+raylib.KEY_KP_MULTIPLY = 332;
 
 /**
  * Key: Keypad -
@@ -18065,7 +16624,7 @@ raylib.KEY_KP_MULTIPLY = 332
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_SUBTRACT = 333
+raylib.KEY_KP_SUBTRACT = 333;
 
 /**
  * Key: Keypad +
@@ -18073,7 +16632,7 @@ raylib.KEY_KP_SUBTRACT = 333
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_ADD = 334
+raylib.KEY_KP_ADD = 334;
 
 /**
  * Key: Keypad Enter
@@ -18081,7 +16640,7 @@ raylib.KEY_KP_ADD = 334
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_ENTER = 335
+raylib.KEY_KP_ENTER = 335;
 
 /**
  * Key: Keypad =
@@ -18089,7 +16648,7 @@ raylib.KEY_KP_ENTER = 335
  * @type {number}
  * @constant
  */
-raylib.KEY_KP_EQUAL = 336
+raylib.KEY_KP_EQUAL = 336;
 
 /**
  * Key: Android back button
@@ -18097,7 +16656,7 @@ raylib.KEY_KP_EQUAL = 336
  * @type {number}
  * @constant
  */
-raylib.KEY_BACK = 4
+raylib.KEY_BACK = 4;
 
 /**
  * Key: Android menu button
@@ -18105,7 +16664,7 @@ raylib.KEY_BACK = 4
  * @type {number}
  * @constant
  */
-raylib.KEY_MENU = 5
+raylib.KEY_MENU = 5;
 
 /**
  * Key: Android volume up button
@@ -18113,7 +16672,7 @@ raylib.KEY_MENU = 5
  * @type {number}
  * @constant
  */
-raylib.KEY_VOLUME_UP = 24
+raylib.KEY_VOLUME_UP = 24;
 
 /**
  * Key: Android volume down button
@@ -18121,7 +16680,7 @@ raylib.KEY_VOLUME_UP = 24
  * @type {number}
  * @constant
  */
-raylib.KEY_VOLUME_DOWN = 25
+raylib.KEY_VOLUME_DOWN = 25;
 
 /**
  * Mouse button left
@@ -18129,7 +16688,7 @@ raylib.KEY_VOLUME_DOWN = 25
  * @type {number}
  * @constant
  */
-raylib.MOUSE_BUTTON_LEFT = 0
+raylib.MOUSE_BUTTON_LEFT = 0;
 
 /**
  * Mouse button right
@@ -18137,7 +16696,7 @@ raylib.MOUSE_BUTTON_LEFT = 0
  * @type {number}
  * @constant
  */
-raylib.MOUSE_BUTTON_RIGHT = 1
+raylib.MOUSE_BUTTON_RIGHT = 1;
 
 /**
  * Mouse button middle (pressed wheel)
@@ -18145,7 +16704,7 @@ raylib.MOUSE_BUTTON_RIGHT = 1
  * @type {number}
  * @constant
  */
-raylib.MOUSE_BUTTON_MIDDLE = 2
+raylib.MOUSE_BUTTON_MIDDLE = 2;
 
 /**
  * Mouse button side (advanced mouse device)
@@ -18153,7 +16712,7 @@ raylib.MOUSE_BUTTON_MIDDLE = 2
  * @type {number}
  * @constant
  */
-raylib.MOUSE_BUTTON_SIDE = 3
+raylib.MOUSE_BUTTON_SIDE = 3;
 
 /**
  * Mouse button extra (advanced mouse device)
@@ -18161,7 +16720,7 @@ raylib.MOUSE_BUTTON_SIDE = 3
  * @type {number}
  * @constant
  */
-raylib.MOUSE_BUTTON_EXTRA = 4
+raylib.MOUSE_BUTTON_EXTRA = 4;
 
 /**
  * Mouse button forward (advanced mouse device)
@@ -18169,7 +16728,7 @@ raylib.MOUSE_BUTTON_EXTRA = 4
  * @type {number}
  * @constant
  */
-raylib.MOUSE_BUTTON_FORWARD = 5
+raylib.MOUSE_BUTTON_FORWARD = 5;
 
 /**
  * Mouse button back (advanced mouse device)
@@ -18177,7 +16736,7 @@ raylib.MOUSE_BUTTON_FORWARD = 5
  * @type {number}
  * @constant
  */
-raylib.MOUSE_BUTTON_BACK = 6
+raylib.MOUSE_BUTTON_BACK = 6;
 
 /**
  * Default pointer shape
@@ -18185,7 +16744,7 @@ raylib.MOUSE_BUTTON_BACK = 6
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_DEFAULT = 0
+raylib.MOUSE_CURSOR_DEFAULT = 0;
 
 /**
  * Arrow shape
@@ -18193,7 +16752,7 @@ raylib.MOUSE_CURSOR_DEFAULT = 0
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_ARROW = 1
+raylib.MOUSE_CURSOR_ARROW = 1;
 
 /**
  * Text writing cursor shape
@@ -18201,7 +16760,7 @@ raylib.MOUSE_CURSOR_ARROW = 1
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_IBEAM = 2
+raylib.MOUSE_CURSOR_IBEAM = 2;
 
 /**
  * Cross shape
@@ -18209,7 +16768,7 @@ raylib.MOUSE_CURSOR_IBEAM = 2
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_CROSSHAIR = 3
+raylib.MOUSE_CURSOR_CROSSHAIR = 3;
 
 /**
  * Pointing hand cursor
@@ -18217,7 +16776,7 @@ raylib.MOUSE_CURSOR_CROSSHAIR = 3
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_POINTING_HAND = 4
+raylib.MOUSE_CURSOR_POINTING_HAND = 4;
 
 /**
  * Horizontal resize/move arrow shape
@@ -18225,7 +16784,7 @@ raylib.MOUSE_CURSOR_POINTING_HAND = 4
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_RESIZE_EW = 5
+raylib.MOUSE_CURSOR_RESIZE_EW = 5;
 
 /**
  * Vertical resize/move arrow shape
@@ -18233,7 +16792,7 @@ raylib.MOUSE_CURSOR_RESIZE_EW = 5
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_RESIZE_NS = 6
+raylib.MOUSE_CURSOR_RESIZE_NS = 6;
 
 /**
  * Top-left to bottom-right diagonal resize/move arrow shape
@@ -18241,7 +16800,7 @@ raylib.MOUSE_CURSOR_RESIZE_NS = 6
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_RESIZE_NWSE = 7
+raylib.MOUSE_CURSOR_RESIZE_NWSE = 7;
 
 /**
  * The top-right to bottom-left diagonal resize/move arrow shape
@@ -18249,7 +16808,7 @@ raylib.MOUSE_CURSOR_RESIZE_NWSE = 7
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_RESIZE_NESW = 8
+raylib.MOUSE_CURSOR_RESIZE_NESW = 8;
 
 /**
  * The omnidirectional resize/move cursor shape
@@ -18257,7 +16816,7 @@ raylib.MOUSE_CURSOR_RESIZE_NESW = 8
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_RESIZE_ALL = 9
+raylib.MOUSE_CURSOR_RESIZE_ALL = 9;
 
 /**
  * The operation-not-allowed shape
@@ -18265,7 +16824,7 @@ raylib.MOUSE_CURSOR_RESIZE_ALL = 9
  * @type {number}
  * @constant
  */
-raylib.MOUSE_CURSOR_NOT_ALLOWED = 10
+raylib.MOUSE_CURSOR_NOT_ALLOWED = 10;
 
 /**
  * Unknown button, just for error checking
@@ -18273,7 +16832,7 @@ raylib.MOUSE_CURSOR_NOT_ALLOWED = 10
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_UNKNOWN = 0
+raylib.GAMEPAD_BUTTON_UNKNOWN = 0;
 
 /**
  * Gamepad left DPAD up button
@@ -18281,7 +16840,7 @@ raylib.GAMEPAD_BUTTON_UNKNOWN = 0
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_LEFT_FACE_UP = 1
+raylib.GAMEPAD_BUTTON_LEFT_FACE_UP = 1;
 
 /**
  * Gamepad left DPAD right button
@@ -18289,7 +16848,7 @@ raylib.GAMEPAD_BUTTON_LEFT_FACE_UP = 1
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_LEFT_FACE_RIGHT = 2
+raylib.GAMEPAD_BUTTON_LEFT_FACE_RIGHT = 2;
 
 /**
  * Gamepad left DPAD down button
@@ -18297,7 +16856,7 @@ raylib.GAMEPAD_BUTTON_LEFT_FACE_RIGHT = 2
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_LEFT_FACE_DOWN = 3
+raylib.GAMEPAD_BUTTON_LEFT_FACE_DOWN = 3;
 
 /**
  * Gamepad left DPAD left button
@@ -18305,7 +16864,7 @@ raylib.GAMEPAD_BUTTON_LEFT_FACE_DOWN = 3
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_LEFT_FACE_LEFT = 4
+raylib.GAMEPAD_BUTTON_LEFT_FACE_LEFT = 4;
 
 /**
  * Gamepad right button up (i.e. PS3: Triangle, Xbox: Y)
@@ -18313,7 +16872,7 @@ raylib.GAMEPAD_BUTTON_LEFT_FACE_LEFT = 4
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_RIGHT_FACE_UP = 5
+raylib.GAMEPAD_BUTTON_RIGHT_FACE_UP = 5;
 
 /**
  * Gamepad right button right (i.e. PS3: Circle, Xbox: B)
@@ -18321,7 +16880,7 @@ raylib.GAMEPAD_BUTTON_RIGHT_FACE_UP = 5
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_RIGHT_FACE_RIGHT = 6
+raylib.GAMEPAD_BUTTON_RIGHT_FACE_RIGHT = 6;
 
 /**
  * Gamepad right button down (i.e. PS3: Cross, Xbox: A)
@@ -18329,7 +16888,7 @@ raylib.GAMEPAD_BUTTON_RIGHT_FACE_RIGHT = 6
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_RIGHT_FACE_DOWN = 7
+raylib.GAMEPAD_BUTTON_RIGHT_FACE_DOWN = 7;
 
 /**
  * Gamepad right button left (i.e. PS3: Square, Xbox: X)
@@ -18337,7 +16896,7 @@ raylib.GAMEPAD_BUTTON_RIGHT_FACE_DOWN = 7
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_RIGHT_FACE_LEFT = 8
+raylib.GAMEPAD_BUTTON_RIGHT_FACE_LEFT = 8;
 
 /**
  * Gamepad top/back trigger left (first), it could be a trailing button
@@ -18345,7 +16904,7 @@ raylib.GAMEPAD_BUTTON_RIGHT_FACE_LEFT = 8
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_LEFT_TRIGGER_1 = 9
+raylib.GAMEPAD_BUTTON_LEFT_TRIGGER_1 = 9;
 
 /**
  * Gamepad top/back trigger left (second), it could be a trailing button
@@ -18353,7 +16912,7 @@ raylib.GAMEPAD_BUTTON_LEFT_TRIGGER_1 = 9
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_LEFT_TRIGGER_2 = 10
+raylib.GAMEPAD_BUTTON_LEFT_TRIGGER_2 = 10;
 
 /**
  * Gamepad top/back trigger right (first), it could be a trailing button
@@ -18361,7 +16920,7 @@ raylib.GAMEPAD_BUTTON_LEFT_TRIGGER_2 = 10
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_RIGHT_TRIGGER_1 = 11
+raylib.GAMEPAD_BUTTON_RIGHT_TRIGGER_1 = 11;
 
 /**
  * Gamepad top/back trigger right (second), it could be a trailing button
@@ -18369,7 +16928,7 @@ raylib.GAMEPAD_BUTTON_RIGHT_TRIGGER_1 = 11
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_RIGHT_TRIGGER_2 = 12
+raylib.GAMEPAD_BUTTON_RIGHT_TRIGGER_2 = 12;
 
 /**
  * Gamepad center buttons, left one (i.e. PS3: Select)
@@ -18377,7 +16936,7 @@ raylib.GAMEPAD_BUTTON_RIGHT_TRIGGER_2 = 12
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_MIDDLE_LEFT = 13
+raylib.GAMEPAD_BUTTON_MIDDLE_LEFT = 13;
 
 /**
  * Gamepad center buttons, middle one (i.e. PS3: PS, Xbox: XBOX)
@@ -18385,7 +16944,7 @@ raylib.GAMEPAD_BUTTON_MIDDLE_LEFT = 13
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_MIDDLE = 14
+raylib.GAMEPAD_BUTTON_MIDDLE = 14;
 
 /**
  * Gamepad center buttons, right one (i.e. PS3: Start)
@@ -18393,7 +16952,7 @@ raylib.GAMEPAD_BUTTON_MIDDLE = 14
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_MIDDLE_RIGHT = 15
+raylib.GAMEPAD_BUTTON_MIDDLE_RIGHT = 15;
 
 /**
  * Gamepad joystick pressed button left
@@ -18401,7 +16960,7 @@ raylib.GAMEPAD_BUTTON_MIDDLE_RIGHT = 15
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_LEFT_THUMB = 16
+raylib.GAMEPAD_BUTTON_LEFT_THUMB = 16;
 
 /**
  * Gamepad joystick pressed button right
@@ -18409,7 +16968,7 @@ raylib.GAMEPAD_BUTTON_LEFT_THUMB = 16
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_BUTTON_RIGHT_THUMB = 17
+raylib.GAMEPAD_BUTTON_RIGHT_THUMB = 17;
 
 /**
  * Gamepad left stick X axis
@@ -18417,7 +16976,7 @@ raylib.GAMEPAD_BUTTON_RIGHT_THUMB = 17
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_AXIS_LEFT_X = 0
+raylib.GAMEPAD_AXIS_LEFT_X = 0;
 
 /**
  * Gamepad left stick Y axis
@@ -18425,7 +16984,7 @@ raylib.GAMEPAD_AXIS_LEFT_X = 0
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_AXIS_LEFT_Y = 1
+raylib.GAMEPAD_AXIS_LEFT_Y = 1;
 
 /**
  * Gamepad right stick X axis
@@ -18433,7 +16992,7 @@ raylib.GAMEPAD_AXIS_LEFT_Y = 1
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_AXIS_RIGHT_X = 2
+raylib.GAMEPAD_AXIS_RIGHT_X = 2;
 
 /**
  * Gamepad right stick Y axis
@@ -18441,7 +17000,7 @@ raylib.GAMEPAD_AXIS_RIGHT_X = 2
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_AXIS_RIGHT_Y = 3
+raylib.GAMEPAD_AXIS_RIGHT_Y = 3;
 
 /**
  * Gamepad back trigger left, pressure level: [1..-1]
@@ -18449,7 +17008,7 @@ raylib.GAMEPAD_AXIS_RIGHT_Y = 3
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_AXIS_LEFT_TRIGGER = 4
+raylib.GAMEPAD_AXIS_LEFT_TRIGGER = 4;
 
 /**
  * Gamepad back trigger right, pressure level: [1..-1]
@@ -18457,7 +17016,7 @@ raylib.GAMEPAD_AXIS_LEFT_TRIGGER = 4
  * @type {number}
  * @constant
  */
-raylib.GAMEPAD_AXIS_RIGHT_TRIGGER = 5
+raylib.GAMEPAD_AXIS_RIGHT_TRIGGER = 5;
 
 /**
  * Albedo material (same as: MATERIAL_MAP_DIFFUSE)
@@ -18465,7 +17024,7 @@ raylib.GAMEPAD_AXIS_RIGHT_TRIGGER = 5
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_ALBEDO = 0
+raylib.MATERIAL_MAP_ALBEDO = 0;
 
 /**
  * Metalness material (same as: MATERIAL_MAP_SPECULAR)
@@ -18473,7 +17032,7 @@ raylib.MATERIAL_MAP_ALBEDO = 0
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_METALNESS = 1
+raylib.MATERIAL_MAP_METALNESS = 1;
 
 /**
  * Normal material
@@ -18481,7 +17040,7 @@ raylib.MATERIAL_MAP_METALNESS = 1
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_NORMAL = 2
+raylib.MATERIAL_MAP_NORMAL = 2;
 
 /**
  * Roughness material
@@ -18489,7 +17048,7 @@ raylib.MATERIAL_MAP_NORMAL = 2
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_ROUGHNESS = 3
+raylib.MATERIAL_MAP_ROUGHNESS = 3;
 
 /**
  * Ambient occlusion material
@@ -18497,7 +17056,7 @@ raylib.MATERIAL_MAP_ROUGHNESS = 3
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_OCCLUSION = 4
+raylib.MATERIAL_MAP_OCCLUSION = 4;
 
 /**
  * Emission material
@@ -18505,7 +17064,7 @@ raylib.MATERIAL_MAP_OCCLUSION = 4
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_EMISSION = 5
+raylib.MATERIAL_MAP_EMISSION = 5;
 
 /**
  * Heightmap material
@@ -18513,7 +17072,7 @@ raylib.MATERIAL_MAP_EMISSION = 5
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_HEIGHT = 6
+raylib.MATERIAL_MAP_HEIGHT = 6;
 
 /**
  * Cubemap material (NOTE: Uses GL_TEXTURE_CUBE_MAP)
@@ -18521,7 +17080,7 @@ raylib.MATERIAL_MAP_HEIGHT = 6
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_CUBEMAP = 7
+raylib.MATERIAL_MAP_CUBEMAP = 7;
 
 /**
  * Irradiance material (NOTE: Uses GL_TEXTURE_CUBE_MAP)
@@ -18529,7 +17088,7 @@ raylib.MATERIAL_MAP_CUBEMAP = 7
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_IRRADIANCE = 8
+raylib.MATERIAL_MAP_IRRADIANCE = 8;
 
 /**
  * Prefilter material (NOTE: Uses GL_TEXTURE_CUBE_MAP)
@@ -18537,7 +17096,7 @@ raylib.MATERIAL_MAP_IRRADIANCE = 8
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_PREFILTER = 9
+raylib.MATERIAL_MAP_PREFILTER = 9;
 
 /**
  * Brdf material
@@ -18545,7 +17104,7 @@ raylib.MATERIAL_MAP_PREFILTER = 9
  * @type {number}
  * @constant
  */
-raylib.MATERIAL_MAP_BRDF = 10
+raylib.MATERIAL_MAP_BRDF = 10;
 
 /**
  * Shader location: vertex attribute: position
@@ -18553,7 +17112,7 @@ raylib.MATERIAL_MAP_BRDF = 10
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_VERTEX_POSITION = 0
+raylib.SHADER_LOC_VERTEX_POSITION = 0;
 
 /**
  * Shader location: vertex attribute: texcoord01
@@ -18561,7 +17120,7 @@ raylib.SHADER_LOC_VERTEX_POSITION = 0
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_VERTEX_TEXCOORD01 = 1
+raylib.SHADER_LOC_VERTEX_TEXCOORD01 = 1;
 
 /**
  * Shader location: vertex attribute: texcoord02
@@ -18569,7 +17128,7 @@ raylib.SHADER_LOC_VERTEX_TEXCOORD01 = 1
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_VERTEX_TEXCOORD02 = 2
+raylib.SHADER_LOC_VERTEX_TEXCOORD02 = 2;
 
 /**
  * Shader location: vertex attribute: normal
@@ -18577,7 +17136,7 @@ raylib.SHADER_LOC_VERTEX_TEXCOORD02 = 2
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_VERTEX_NORMAL = 3
+raylib.SHADER_LOC_VERTEX_NORMAL = 3;
 
 /**
  * Shader location: vertex attribute: tangent
@@ -18585,7 +17144,7 @@ raylib.SHADER_LOC_VERTEX_NORMAL = 3
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_VERTEX_TANGENT = 4
+raylib.SHADER_LOC_VERTEX_TANGENT = 4;
 
 /**
  * Shader location: vertex attribute: color
@@ -18593,7 +17152,7 @@ raylib.SHADER_LOC_VERTEX_TANGENT = 4
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_VERTEX_COLOR = 5
+raylib.SHADER_LOC_VERTEX_COLOR = 5;
 
 /**
  * Shader location: matrix uniform: model-view-projection
@@ -18601,7 +17160,7 @@ raylib.SHADER_LOC_VERTEX_COLOR = 5
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MATRIX_MVP = 6
+raylib.SHADER_LOC_MATRIX_MVP = 6;
 
 /**
  * Shader location: matrix uniform: view (camera transform)
@@ -18609,7 +17168,7 @@ raylib.SHADER_LOC_MATRIX_MVP = 6
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MATRIX_VIEW = 7
+raylib.SHADER_LOC_MATRIX_VIEW = 7;
 
 /**
  * Shader location: matrix uniform: projection
@@ -18617,7 +17176,7 @@ raylib.SHADER_LOC_MATRIX_VIEW = 7
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MATRIX_PROJECTION = 8
+raylib.SHADER_LOC_MATRIX_PROJECTION = 8;
 
 /**
  * Shader location: matrix uniform: model (transform)
@@ -18625,7 +17184,7 @@ raylib.SHADER_LOC_MATRIX_PROJECTION = 8
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MATRIX_MODEL = 9
+raylib.SHADER_LOC_MATRIX_MODEL = 9;
 
 /**
  * Shader location: matrix uniform: normal
@@ -18633,7 +17192,7 @@ raylib.SHADER_LOC_MATRIX_MODEL = 9
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MATRIX_NORMAL = 10
+raylib.SHADER_LOC_MATRIX_NORMAL = 10;
 
 /**
  * Shader location: vector uniform: view
@@ -18641,7 +17200,7 @@ raylib.SHADER_LOC_MATRIX_NORMAL = 10
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_VECTOR_VIEW = 11
+raylib.SHADER_LOC_VECTOR_VIEW = 11;
 
 /**
  * Shader location: vector uniform: diffuse color
@@ -18649,7 +17208,7 @@ raylib.SHADER_LOC_VECTOR_VIEW = 11
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_COLOR_DIFFUSE = 12
+raylib.SHADER_LOC_COLOR_DIFFUSE = 12;
 
 /**
  * Shader location: vector uniform: specular color
@@ -18657,7 +17216,7 @@ raylib.SHADER_LOC_COLOR_DIFFUSE = 12
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_COLOR_SPECULAR = 13
+raylib.SHADER_LOC_COLOR_SPECULAR = 13;
 
 /**
  * Shader location: vector uniform: ambient color
@@ -18665,7 +17224,7 @@ raylib.SHADER_LOC_COLOR_SPECULAR = 13
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_COLOR_AMBIENT = 14
+raylib.SHADER_LOC_COLOR_AMBIENT = 14;
 
 /**
  * Shader location: sampler2d texture: albedo (same as: SHADER_LOC_MAP_DIFFUSE)
@@ -18673,7 +17232,7 @@ raylib.SHADER_LOC_COLOR_AMBIENT = 14
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_ALBEDO = 15
+raylib.SHADER_LOC_MAP_ALBEDO = 15;
 
 /**
  * Shader location: sampler2d texture: metalness (same as: SHADER_LOC_MAP_SPECULAR)
@@ -18681,7 +17240,7 @@ raylib.SHADER_LOC_MAP_ALBEDO = 15
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_METALNESS = 16
+raylib.SHADER_LOC_MAP_METALNESS = 16;
 
 /**
  * Shader location: sampler2d texture: normal
@@ -18689,7 +17248,7 @@ raylib.SHADER_LOC_MAP_METALNESS = 16
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_NORMAL = 17
+raylib.SHADER_LOC_MAP_NORMAL = 17;
 
 /**
  * Shader location: sampler2d texture: roughness
@@ -18697,7 +17256,7 @@ raylib.SHADER_LOC_MAP_NORMAL = 17
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_ROUGHNESS = 18
+raylib.SHADER_LOC_MAP_ROUGHNESS = 18;
 
 /**
  * Shader location: sampler2d texture: occlusion
@@ -18705,7 +17264,7 @@ raylib.SHADER_LOC_MAP_ROUGHNESS = 18
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_OCCLUSION = 19
+raylib.SHADER_LOC_MAP_OCCLUSION = 19;
 
 /**
  * Shader location: sampler2d texture: emission
@@ -18713,7 +17272,7 @@ raylib.SHADER_LOC_MAP_OCCLUSION = 19
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_EMISSION = 20
+raylib.SHADER_LOC_MAP_EMISSION = 20;
 
 /**
  * Shader location: sampler2d texture: height
@@ -18721,7 +17280,7 @@ raylib.SHADER_LOC_MAP_EMISSION = 20
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_HEIGHT = 21
+raylib.SHADER_LOC_MAP_HEIGHT = 21;
 
 /**
  * Shader location: samplerCube texture: cubemap
@@ -18729,7 +17288,7 @@ raylib.SHADER_LOC_MAP_HEIGHT = 21
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_CUBEMAP = 22
+raylib.SHADER_LOC_MAP_CUBEMAP = 22;
 
 /**
  * Shader location: samplerCube texture: irradiance
@@ -18737,7 +17296,7 @@ raylib.SHADER_LOC_MAP_CUBEMAP = 22
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_IRRADIANCE = 23
+raylib.SHADER_LOC_MAP_IRRADIANCE = 23;
 
 /**
  * Shader location: samplerCube texture: prefilter
@@ -18745,7 +17304,7 @@ raylib.SHADER_LOC_MAP_IRRADIANCE = 23
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_PREFILTER = 24
+raylib.SHADER_LOC_MAP_PREFILTER = 24;
 
 /**
  * Shader location: sampler2d texture: brdf
@@ -18753,7 +17312,7 @@ raylib.SHADER_LOC_MAP_PREFILTER = 24
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_MAP_BRDF = 25
+raylib.SHADER_LOC_MAP_BRDF = 25;
 
 /**
  * Shader location: vertex attribute: boneIds
@@ -18761,7 +17320,7 @@ raylib.SHADER_LOC_MAP_BRDF = 25
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_VERTEX_BONEIDS = 26
+raylib.SHADER_LOC_VERTEX_BONEIDS = 26;
 
 /**
  * Shader location: vertex attribute: boneWeights
@@ -18769,7 +17328,7 @@ raylib.SHADER_LOC_VERTEX_BONEIDS = 26
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_VERTEX_BONEWEIGHTS = 27
+raylib.SHADER_LOC_VERTEX_BONEWEIGHTS = 27;
 
 /**
  * Shader location: array of matrices uniform: boneMatrices
@@ -18777,7 +17336,7 @@ raylib.SHADER_LOC_VERTEX_BONEWEIGHTS = 27
  * @type {number}
  * @constant
  */
-raylib.SHADER_LOC_BONE_MATRICES = 28
+raylib.SHADER_LOC_BONE_MATRICES = 28;
 
 /**
  * Shader uniform type: float
@@ -18785,7 +17344,7 @@ raylib.SHADER_LOC_BONE_MATRICES = 28
  * @type {number}
  * @constant
  */
-raylib.SHADER_UNIFORM_FLOAT = 0
+raylib.SHADER_UNIFORM_FLOAT = 0;
 
 /**
  * Shader uniform type: vec2 (2 float)
@@ -18793,7 +17352,7 @@ raylib.SHADER_UNIFORM_FLOAT = 0
  * @type {number}
  * @constant
  */
-raylib.SHADER_UNIFORM_VEC2 = 1
+raylib.SHADER_UNIFORM_VEC2 = 1;
 
 /**
  * Shader uniform type: vec3 (3 float)
@@ -18801,7 +17360,7 @@ raylib.SHADER_UNIFORM_VEC2 = 1
  * @type {number}
  * @constant
  */
-raylib.SHADER_UNIFORM_VEC3 = 2
+raylib.SHADER_UNIFORM_VEC3 = 2;
 
 /**
  * Shader uniform type: vec4 (4 float)
@@ -18809,7 +17368,7 @@ raylib.SHADER_UNIFORM_VEC3 = 2
  * @type {number}
  * @constant
  */
-raylib.SHADER_UNIFORM_VEC4 = 3
+raylib.SHADER_UNIFORM_VEC4 = 3;
 
 /**
  * Shader uniform type: int
@@ -18817,7 +17376,7 @@ raylib.SHADER_UNIFORM_VEC4 = 3
  * @type {number}
  * @constant
  */
-raylib.SHADER_UNIFORM_INT = 4
+raylib.SHADER_UNIFORM_INT = 4;
 
 /**
  * Shader uniform type: ivec2 (2 int)
@@ -18825,7 +17384,7 @@ raylib.SHADER_UNIFORM_INT = 4
  * @type {number}
  * @constant
  */
-raylib.SHADER_UNIFORM_IVEC2 = 5
+raylib.SHADER_UNIFORM_IVEC2 = 5;
 
 /**
  * Shader uniform type: ivec3 (3 int)
@@ -18833,7 +17392,7 @@ raylib.SHADER_UNIFORM_IVEC2 = 5
  * @type {number}
  * @constant
  */
-raylib.SHADER_UNIFORM_IVEC3 = 6
+raylib.SHADER_UNIFORM_IVEC3 = 6;
 
 /**
  * Shader uniform type: ivec4 (4 int)
@@ -18841,7 +17400,7 @@ raylib.SHADER_UNIFORM_IVEC3 = 6
  * @type {number}
  * @constant
  */
-raylib.SHADER_UNIFORM_IVEC4 = 7
+raylib.SHADER_UNIFORM_IVEC4 = 7;
 
 /**
  * Shader uniform type: sampler2d
@@ -18849,7 +17408,7 @@ raylib.SHADER_UNIFORM_IVEC4 = 7
  * @type {number}
  * @constant
  */
-raylib.SHADER_UNIFORM_SAMPLER2D = 8
+raylib.SHADER_UNIFORM_SAMPLER2D = 8;
 
 /**
  * Shader attribute type: float
@@ -18857,7 +17416,7 @@ raylib.SHADER_UNIFORM_SAMPLER2D = 8
  * @type {number}
  * @constant
  */
-raylib.SHADER_ATTRIB_FLOAT = 0
+raylib.SHADER_ATTRIB_FLOAT = 0;
 
 /**
  * Shader attribute type: vec2 (2 float)
@@ -18865,7 +17424,7 @@ raylib.SHADER_ATTRIB_FLOAT = 0
  * @type {number}
  * @constant
  */
-raylib.SHADER_ATTRIB_VEC2 = 1
+raylib.SHADER_ATTRIB_VEC2 = 1;
 
 /**
  * Shader attribute type: vec3 (3 float)
@@ -18873,7 +17432,7 @@ raylib.SHADER_ATTRIB_VEC2 = 1
  * @type {number}
  * @constant
  */
-raylib.SHADER_ATTRIB_VEC3 = 2
+raylib.SHADER_ATTRIB_VEC3 = 2;
 
 /**
  * Shader attribute type: vec4 (4 float)
@@ -18881,7 +17440,7 @@ raylib.SHADER_ATTRIB_VEC3 = 2
  * @type {number}
  * @constant
  */
-raylib.SHADER_ATTRIB_VEC4 = 3
+raylib.SHADER_ATTRIB_VEC4 = 3;
 
 /**
  * 8 bit per pixel (no alpha)
@@ -18889,7 +17448,7 @@ raylib.SHADER_ATTRIB_VEC4 = 3
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_GRAYSCALE = 1
+raylib.PIXELFORMAT_UNCOMPRESSED_GRAYSCALE = 1;
 
 /**
  * 8*2 bpp (2 channels)
@@ -18897,7 +17456,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_GRAYSCALE = 1
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_GRAY_ALPHA = 2
+raylib.PIXELFORMAT_UNCOMPRESSED_GRAY_ALPHA = 2;
 
 /**
  * 16 bpp
@@ -18905,7 +17464,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_GRAY_ALPHA = 2
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R5G6B5 = 3
+raylib.PIXELFORMAT_UNCOMPRESSED_R5G6B5 = 3;
 
 /**
  * 24 bpp
@@ -18913,7 +17472,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R5G6B5 = 3
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R8G8B8 = 4
+raylib.PIXELFORMAT_UNCOMPRESSED_R8G8B8 = 4;
 
 /**
  * 16 bpp (1 bit alpha)
@@ -18921,7 +17480,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R8G8B8 = 4
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R5G5B5A1 = 5
+raylib.PIXELFORMAT_UNCOMPRESSED_R5G5B5A1 = 5;
 
 /**
  * 16 bpp (4 bit alpha)
@@ -18929,7 +17488,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R5G5B5A1 = 5
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R4G4B4A4 = 6
+raylib.PIXELFORMAT_UNCOMPRESSED_R4G4B4A4 = 6;
 
 /**
  * 32 bpp
@@ -18937,7 +17496,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R4G4B4A4 = 6
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R8G8B8A8 = 7
+raylib.PIXELFORMAT_UNCOMPRESSED_R8G8B8A8 = 7;
 
 /**
  * 32 bpp (1 channel - float)
@@ -18945,7 +17504,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R8G8B8A8 = 7
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R32 = 8
+raylib.PIXELFORMAT_UNCOMPRESSED_R32 = 8;
 
 /**
  * 32*3 bpp (3 channels - float)
@@ -18953,7 +17512,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R32 = 8
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R32G32B32 = 9
+raylib.PIXELFORMAT_UNCOMPRESSED_R32G32B32 = 9;
 
 /**
  * 32*4 bpp (4 channels - float)
@@ -18961,7 +17520,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R32G32B32 = 9
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R32G32B32A32 = 10
+raylib.PIXELFORMAT_UNCOMPRESSED_R32G32B32A32 = 10;
 
 /**
  * 16 bpp (1 channel - half float)
@@ -18969,7 +17528,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R32G32B32A32 = 10
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R16 = 11
+raylib.PIXELFORMAT_UNCOMPRESSED_R16 = 11;
 
 /**
  * 16*3 bpp (3 channels - half float)
@@ -18977,7 +17536,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R16 = 11
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R16G16B16 = 12
+raylib.PIXELFORMAT_UNCOMPRESSED_R16G16B16 = 12;
 
 /**
  * 16*4 bpp (4 channels - half float)
@@ -18985,7 +17544,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R16G16B16 = 12
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_UNCOMPRESSED_R16G16B16A16 = 13
+raylib.PIXELFORMAT_UNCOMPRESSED_R16G16B16A16 = 13;
 
 /**
  * 4 bpp (no alpha)
@@ -18993,7 +17552,7 @@ raylib.PIXELFORMAT_UNCOMPRESSED_R16G16B16A16 = 13
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_DXT1_RGB = 14
+raylib.PIXELFORMAT_COMPRESSED_DXT1_RGB = 14;
 
 /**
  * 4 bpp (1 bit alpha)
@@ -19001,7 +17560,7 @@ raylib.PIXELFORMAT_COMPRESSED_DXT1_RGB = 14
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_DXT1_RGBA = 15
+raylib.PIXELFORMAT_COMPRESSED_DXT1_RGBA = 15;
 
 /**
  * 8 bpp
@@ -19009,7 +17568,7 @@ raylib.PIXELFORMAT_COMPRESSED_DXT1_RGBA = 15
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_DXT3_RGBA = 16
+raylib.PIXELFORMAT_COMPRESSED_DXT3_RGBA = 16;
 
 /**
  * 8 bpp
@@ -19017,7 +17576,7 @@ raylib.PIXELFORMAT_COMPRESSED_DXT3_RGBA = 16
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_DXT5_RGBA = 17
+raylib.PIXELFORMAT_COMPRESSED_DXT5_RGBA = 17;
 
 /**
  * 4 bpp
@@ -19025,7 +17584,7 @@ raylib.PIXELFORMAT_COMPRESSED_DXT5_RGBA = 17
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_ETC1_RGB = 18
+raylib.PIXELFORMAT_COMPRESSED_ETC1_RGB = 18;
 
 /**
  * 4 bpp
@@ -19033,7 +17592,7 @@ raylib.PIXELFORMAT_COMPRESSED_ETC1_RGB = 18
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_ETC2_RGB = 19
+raylib.PIXELFORMAT_COMPRESSED_ETC2_RGB = 19;
 
 /**
  * 8 bpp
@@ -19041,7 +17600,7 @@ raylib.PIXELFORMAT_COMPRESSED_ETC2_RGB = 19
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_ETC2_EAC_RGBA = 20
+raylib.PIXELFORMAT_COMPRESSED_ETC2_EAC_RGBA = 20;
 
 /**
  * 4 bpp
@@ -19049,7 +17608,7 @@ raylib.PIXELFORMAT_COMPRESSED_ETC2_EAC_RGBA = 20
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_PVRT_RGB = 21
+raylib.PIXELFORMAT_COMPRESSED_PVRT_RGB = 21;
 
 /**
  * 4 bpp
@@ -19057,7 +17616,7 @@ raylib.PIXELFORMAT_COMPRESSED_PVRT_RGB = 21
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_PVRT_RGBA = 22
+raylib.PIXELFORMAT_COMPRESSED_PVRT_RGBA = 22;
 
 /**
  * 8 bpp
@@ -19065,7 +17624,7 @@ raylib.PIXELFORMAT_COMPRESSED_PVRT_RGBA = 22
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_ASTC_4x4_RGBA = 23
+raylib.PIXELFORMAT_COMPRESSED_ASTC_4x4_RGBA = 23;
 
 /**
  * 2 bpp
@@ -19073,7 +17632,7 @@ raylib.PIXELFORMAT_COMPRESSED_ASTC_4x4_RGBA = 23
  * @type {number}
  * @constant
  */
-raylib.PIXELFORMAT_COMPRESSED_ASTC_8x8_RGBA = 24
+raylib.PIXELFORMAT_COMPRESSED_ASTC_8x8_RGBA = 24;
 
 /**
  * No filter, just pixel approximation
@@ -19081,7 +17640,7 @@ raylib.PIXELFORMAT_COMPRESSED_ASTC_8x8_RGBA = 24
  * @type {number}
  * @constant
  */
-raylib.TEXTURE_FILTER_POINT = 0
+raylib.TEXTURE_FILTER_POINT = 0;
 
 /**
  * Linear filtering
@@ -19089,7 +17648,7 @@ raylib.TEXTURE_FILTER_POINT = 0
  * @type {number}
  * @constant
  */
-raylib.TEXTURE_FILTER_BILINEAR = 1
+raylib.TEXTURE_FILTER_BILINEAR = 1;
 
 /**
  * Trilinear filtering (linear with mipmaps)
@@ -19097,7 +17656,7 @@ raylib.TEXTURE_FILTER_BILINEAR = 1
  * @type {number}
  * @constant
  */
-raylib.TEXTURE_FILTER_TRILINEAR = 2
+raylib.TEXTURE_FILTER_TRILINEAR = 2;
 
 /**
  * Anisotropic filtering 4x
@@ -19105,7 +17664,7 @@ raylib.TEXTURE_FILTER_TRILINEAR = 2
  * @type {number}
  * @constant
  */
-raylib.TEXTURE_FILTER_ANISOTROPIC_4X = 3
+raylib.TEXTURE_FILTER_ANISOTROPIC_4X = 3;
 
 /**
  * Anisotropic filtering 8x
@@ -19113,7 +17672,7 @@ raylib.TEXTURE_FILTER_ANISOTROPIC_4X = 3
  * @type {number}
  * @constant
  */
-raylib.TEXTURE_FILTER_ANISOTROPIC_8X = 4
+raylib.TEXTURE_FILTER_ANISOTROPIC_8X = 4;
 
 /**
  * Anisotropic filtering 16x
@@ -19121,7 +17680,7 @@ raylib.TEXTURE_FILTER_ANISOTROPIC_8X = 4
  * @type {number}
  * @constant
  */
-raylib.TEXTURE_FILTER_ANISOTROPIC_16X = 5
+raylib.TEXTURE_FILTER_ANISOTROPIC_16X = 5;
 
 /**
  * Repeats texture in tiled mode
@@ -19129,7 +17688,7 @@ raylib.TEXTURE_FILTER_ANISOTROPIC_16X = 5
  * @type {number}
  * @constant
  */
-raylib.TEXTURE_WRAP_REPEAT = 0
+raylib.TEXTURE_WRAP_REPEAT = 0;
 
 /**
  * Clamps texture to edge pixel in tiled mode
@@ -19137,7 +17696,7 @@ raylib.TEXTURE_WRAP_REPEAT = 0
  * @type {number}
  * @constant
  */
-raylib.TEXTURE_WRAP_CLAMP = 1
+raylib.TEXTURE_WRAP_CLAMP = 1;
 
 /**
  * Mirrors and repeats the texture in tiled mode
@@ -19145,7 +17704,7 @@ raylib.TEXTURE_WRAP_CLAMP = 1
  * @type {number}
  * @constant
  */
-raylib.TEXTURE_WRAP_MIRROR_REPEAT = 2
+raylib.TEXTURE_WRAP_MIRROR_REPEAT = 2;
 
 /**
  * Mirrors and clamps to border the texture in tiled mode
@@ -19153,7 +17712,7 @@ raylib.TEXTURE_WRAP_MIRROR_REPEAT = 2
  * @type {number}
  * @constant
  */
-raylib.TEXTURE_WRAP_MIRROR_CLAMP = 3
+raylib.TEXTURE_WRAP_MIRROR_CLAMP = 3;
 
 /**
  * Automatically detect layout type
@@ -19161,7 +17720,7 @@ raylib.TEXTURE_WRAP_MIRROR_CLAMP = 3
  * @type {number}
  * @constant
  */
-raylib.CUBEMAP_LAYOUT_AUTO_DETECT = 0
+raylib.CUBEMAP_LAYOUT_AUTO_DETECT = 0;
 
 /**
  * Layout is defined by a vertical line with faces
@@ -19169,7 +17728,7 @@ raylib.CUBEMAP_LAYOUT_AUTO_DETECT = 0
  * @type {number}
  * @constant
  */
-raylib.CUBEMAP_LAYOUT_LINE_VERTICAL = 1
+raylib.CUBEMAP_LAYOUT_LINE_VERTICAL = 1;
 
 /**
  * Layout is defined by a horizontal line with faces
@@ -19177,7 +17736,7 @@ raylib.CUBEMAP_LAYOUT_LINE_VERTICAL = 1
  * @type {number}
  * @constant
  */
-raylib.CUBEMAP_LAYOUT_LINE_HORIZONTAL = 2
+raylib.CUBEMAP_LAYOUT_LINE_HORIZONTAL = 2;
 
 /**
  * Layout is defined by a 3x4 cross with cubemap faces
@@ -19185,7 +17744,7 @@ raylib.CUBEMAP_LAYOUT_LINE_HORIZONTAL = 2
  * @type {number}
  * @constant
  */
-raylib.CUBEMAP_LAYOUT_CROSS_THREE_BY_FOUR = 3
+raylib.CUBEMAP_LAYOUT_CROSS_THREE_BY_FOUR = 3;
 
 /**
  * Layout is defined by a 4x3 cross with cubemap faces
@@ -19193,7 +17752,7 @@ raylib.CUBEMAP_LAYOUT_CROSS_THREE_BY_FOUR = 3
  * @type {number}
  * @constant
  */
-raylib.CUBEMAP_LAYOUT_CROSS_FOUR_BY_THREE = 4
+raylib.CUBEMAP_LAYOUT_CROSS_FOUR_BY_THREE = 4;
 
 /**
  * Default font generation, anti-aliased
@@ -19201,7 +17760,7 @@ raylib.CUBEMAP_LAYOUT_CROSS_FOUR_BY_THREE = 4
  * @type {number}
  * @constant
  */
-raylib.FONT_DEFAULT = 0
+raylib.FONT_DEFAULT = 0;
 
 /**
  * Bitmap font generation, no anti-aliasing
@@ -19209,7 +17768,7 @@ raylib.FONT_DEFAULT = 0
  * @type {number}
  * @constant
  */
-raylib.FONT_BITMAP = 1
+raylib.FONT_BITMAP = 1;
 
 /**
  * SDF font generation, requires external shader
@@ -19217,7 +17776,7 @@ raylib.FONT_BITMAP = 1
  * @type {number}
  * @constant
  */
-raylib.FONT_SDF = 2
+raylib.FONT_SDF = 2;
 
 /**
  * Blend textures considering alpha (default)
@@ -19225,7 +17784,7 @@ raylib.FONT_SDF = 2
  * @type {number}
  * @constant
  */
-raylib.BLEND_ALPHA = 0
+raylib.BLEND_ALPHA = 0;
 
 /**
  * Blend textures adding colors
@@ -19233,7 +17792,7 @@ raylib.BLEND_ALPHA = 0
  * @type {number}
  * @constant
  */
-raylib.BLEND_ADDITIVE = 1
+raylib.BLEND_ADDITIVE = 1;
 
 /**
  * Blend textures multiplying colors
@@ -19241,7 +17800,7 @@ raylib.BLEND_ADDITIVE = 1
  * @type {number}
  * @constant
  */
-raylib.BLEND_MULTIPLIED = 2
+raylib.BLEND_MULTIPLIED = 2;
 
 /**
  * Blend textures adding colors (alternative)
@@ -19249,7 +17808,7 @@ raylib.BLEND_MULTIPLIED = 2
  * @type {number}
  * @constant
  */
-raylib.BLEND_ADD_COLORS = 3
+raylib.BLEND_ADD_COLORS = 3;
 
 /**
  * Blend textures subtracting colors (alternative)
@@ -19257,7 +17816,7 @@ raylib.BLEND_ADD_COLORS = 3
  * @type {number}
  * @constant
  */
-raylib.BLEND_SUBTRACT_COLORS = 4
+raylib.BLEND_SUBTRACT_COLORS = 4;
 
 /**
  * Blend premultiplied textures considering alpha
@@ -19265,7 +17824,7 @@ raylib.BLEND_SUBTRACT_COLORS = 4
  * @type {number}
  * @constant
  */
-raylib.BLEND_ALPHA_PREMULTIPLY = 5
+raylib.BLEND_ALPHA_PREMULTIPLY = 5;
 
 /**
  * Blend textures using custom src/dst factors (use rlSetBlendFactors())
@@ -19273,7 +17832,7 @@ raylib.BLEND_ALPHA_PREMULTIPLY = 5
  * @type {number}
  * @constant
  */
-raylib.BLEND_CUSTOM = 6
+raylib.BLEND_CUSTOM = 6;
 
 /**
  * Blend textures using custom rgb/alpha separate src/dst factors (use rlSetBlendFactorsSeparate())
@@ -19281,7 +17840,7 @@ raylib.BLEND_CUSTOM = 6
  * @type {number}
  * @constant
  */
-raylib.BLEND_CUSTOM_SEPARATE = 7
+raylib.BLEND_CUSTOM_SEPARATE = 7;
 
 /**
  * No gesture
@@ -19289,7 +17848,7 @@ raylib.BLEND_CUSTOM_SEPARATE = 7
  * @type {number}
  * @constant
  */
-raylib.GESTURE_NONE = 0
+raylib.GESTURE_NONE = 0;
 
 /**
  * Tap gesture
@@ -19297,7 +17856,7 @@ raylib.GESTURE_NONE = 0
  * @type {number}
  * @constant
  */
-raylib.GESTURE_TAP = 1
+raylib.GESTURE_TAP = 1;
 
 /**
  * Double tap gesture
@@ -19305,7 +17864,7 @@ raylib.GESTURE_TAP = 1
  * @type {number}
  * @constant
  */
-raylib.GESTURE_DOUBLETAP = 2
+raylib.GESTURE_DOUBLETAP = 2;
 
 /**
  * Hold gesture
@@ -19313,7 +17872,7 @@ raylib.GESTURE_DOUBLETAP = 2
  * @type {number}
  * @constant
  */
-raylib.GESTURE_HOLD = 4
+raylib.GESTURE_HOLD = 4;
 
 /**
  * Drag gesture
@@ -19321,7 +17880,7 @@ raylib.GESTURE_HOLD = 4
  * @type {number}
  * @constant
  */
-raylib.GESTURE_DRAG = 8
+raylib.GESTURE_DRAG = 8;
 
 /**
  * Swipe right gesture
@@ -19329,7 +17888,7 @@ raylib.GESTURE_DRAG = 8
  * @type {number}
  * @constant
  */
-raylib.GESTURE_SWIPE_RIGHT = 16
+raylib.GESTURE_SWIPE_RIGHT = 16;
 
 /**
  * Swipe left gesture
@@ -19337,7 +17896,7 @@ raylib.GESTURE_SWIPE_RIGHT = 16
  * @type {number}
  * @constant
  */
-raylib.GESTURE_SWIPE_LEFT = 32
+raylib.GESTURE_SWIPE_LEFT = 32;
 
 /**
  * Swipe up gesture
@@ -19345,7 +17904,7 @@ raylib.GESTURE_SWIPE_LEFT = 32
  * @type {number}
  * @constant
  */
-raylib.GESTURE_SWIPE_UP = 64
+raylib.GESTURE_SWIPE_UP = 64;
 
 /**
  * Swipe down gesture
@@ -19353,7 +17912,7 @@ raylib.GESTURE_SWIPE_UP = 64
  * @type {number}
  * @constant
  */
-raylib.GESTURE_SWIPE_DOWN = 128
+raylib.GESTURE_SWIPE_DOWN = 128;
 
 /**
  * Pinch in gesture
@@ -19361,7 +17920,7 @@ raylib.GESTURE_SWIPE_DOWN = 128
  * @type {number}
  * @constant
  */
-raylib.GESTURE_PINCH_IN = 256
+raylib.GESTURE_PINCH_IN = 256;
 
 /**
  * Pinch out gesture
@@ -19369,7 +17928,7 @@ raylib.GESTURE_PINCH_IN = 256
  * @type {number}
  * @constant
  */
-raylib.GESTURE_PINCH_OUT = 512
+raylib.GESTURE_PINCH_OUT = 512;
 
 /**
  * Camera custom, controlled by user (UpdateCamera() does nothing)
@@ -19377,7 +17936,7 @@ raylib.GESTURE_PINCH_OUT = 512
  * @type {number}
  * @constant
  */
-raylib.CAMERA_CUSTOM = 0
+raylib.CAMERA_CUSTOM = 0;
 
 /**
  * Camera free mode
@@ -19385,7 +17944,7 @@ raylib.CAMERA_CUSTOM = 0
  * @type {number}
  * @constant
  */
-raylib.CAMERA_FREE = 1
+raylib.CAMERA_FREE = 1;
 
 /**
  * Camera orbital, around target, zoom supported
@@ -19393,7 +17952,7 @@ raylib.CAMERA_FREE = 1
  * @type {number}
  * @constant
  */
-raylib.CAMERA_ORBITAL = 2
+raylib.CAMERA_ORBITAL = 2;
 
 /**
  * Camera first person
@@ -19401,7 +17960,7 @@ raylib.CAMERA_ORBITAL = 2
  * @type {number}
  * @constant
  */
-raylib.CAMERA_FIRST_PERSON = 3
+raylib.CAMERA_FIRST_PERSON = 3;
 
 /**
  * Camera third person
@@ -19409,7 +17968,7 @@ raylib.CAMERA_FIRST_PERSON = 3
  * @type {number}
  * @constant
  */
-raylib.CAMERA_THIRD_PERSON = 4
+raylib.CAMERA_THIRD_PERSON = 4;
 
 /**
  * Perspective projection
@@ -19417,7 +17976,7 @@ raylib.CAMERA_THIRD_PERSON = 4
  * @type {number}
  * @constant
  */
-raylib.CAMERA_PERSPECTIVE = 0
+raylib.CAMERA_PERSPECTIVE = 0;
 
 /**
  * Orthographic projection
@@ -19425,7 +17984,7 @@ raylib.CAMERA_PERSPECTIVE = 0
  * @type {number}
  * @constant
  */
-raylib.CAMERA_ORTHOGRAPHIC = 1
+raylib.CAMERA_ORTHOGRAPHIC = 1;
 
 /**
  * Npatch layout: 3x3 tiles
@@ -19433,7 +17992,7 @@ raylib.CAMERA_ORTHOGRAPHIC = 1
  * @type {number}
  * @constant
  */
-raylib.NPATCH_NINE_PATCH = 0
+raylib.NPATCH_NINE_PATCH = 0;
 
 /**
  * Npatch layout: 1x3 tiles
@@ -19441,7 +18000,7 @@ raylib.NPATCH_NINE_PATCH = 0
  * @type {number}
  * @constant
  */
-raylib.NPATCH_THREE_PATCH_VERTICAL = 1
+raylib.NPATCH_THREE_PATCH_VERTICAL = 1;
 
 /**
  * Npatch layout: 3x1 tiles
@@ -19449,119 +18008,119 @@ raylib.NPATCH_THREE_PATCH_VERTICAL = 1
  * @type {number}
  * @constant
  */
-raylib.NPATCH_THREE_PATCH_HORIZONTAL = 2
+raylib.NPATCH_THREE_PATCH_HORIZONTAL = 2;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.STATE_NORMAL = 0
+raylib.STATE_NORMAL = 0;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.STATE_FOCUSED = 1
+raylib.STATE_FOCUSED = 1;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.STATE_PRESSED = 2
+raylib.STATE_PRESSED = 2;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.STATE_DISABLED = 3
+raylib.STATE_DISABLED = 3;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.TEXT_ALIGN_LEFT = 0
+raylib.TEXT_ALIGN_LEFT = 0;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.TEXT_ALIGN_CENTER = 1
+raylib.TEXT_ALIGN_CENTER = 1;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.TEXT_ALIGN_RIGHT = 2
+raylib.TEXT_ALIGN_RIGHT = 2;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.TEXT_ALIGN_TOP = 0
+raylib.TEXT_ALIGN_TOP = 0;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.TEXT_ALIGN_MIDDLE = 1
+raylib.TEXT_ALIGN_MIDDLE = 1;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.TEXT_ALIGN_BOTTOM = 2
+raylib.TEXT_ALIGN_BOTTOM = 2;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.TEXT_WRAP_NONE = 0
+raylib.TEXT_WRAP_NONE = 0;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.TEXT_WRAP_CHAR = 1
+raylib.TEXT_WRAP_CHAR = 1;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.TEXT_WRAP_WORD = 2
+raylib.TEXT_WRAP_WORD = 2;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.DEFAULT = 0
+raylib.DEFAULT = 0;
 
 /**
  * Used also for: LABELBUTTON
@@ -19569,15 +18128,15 @@ raylib.DEFAULT = 0
  * @type {number}
  * @constant
  */
-raylib.LABEL = 1
+raylib.LABEL = 1;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.BUTTON = 2
+raylib.BUTTON = 2;
 
 /**
  * Used also for: TOGGLEGROUP
@@ -19585,7 +18144,7 @@ raylib.BUTTON = 2
  * @type {number}
  * @constant
  */
-raylib.TOGGLE = 3
+raylib.TOGGLE = 3;
 
 /**
  * Used also for: SLIDERBAR, TOGGLESLIDER
@@ -19593,39 +18152,39 @@ raylib.TOGGLE = 3
  * @type {number}
  * @constant
  */
-raylib.SLIDER = 4
+raylib.SLIDER = 4;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.PROGRESSBAR = 5
+raylib.PROGRESSBAR = 5;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.CHECKBOX = 6
+raylib.CHECKBOX = 6;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.COMBOBOX = 7
+raylib.COMBOBOX = 7;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.DROPDOWNBOX = 8
+raylib.DROPDOWNBOX = 8;
 
 /**
  * Used also for: TEXTBOXMULTI
@@ -19633,15 +18192,15 @@ raylib.DROPDOWNBOX = 8
  * @type {number}
  * @constant
  */
-raylib.TEXTBOX = 9
+raylib.TEXTBOX = 9;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.VALUEBOX = 10
+raylib.VALUEBOX = 10;
 
 /**
  * Uses: BUTTON, VALUEBOX
@@ -19649,39 +18208,39 @@ raylib.VALUEBOX = 10
  * @type {number}
  * @constant
  */
-raylib.SPINNER = 11
+raylib.SPINNER = 11;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.LISTVIEW = 12
+raylib.LISTVIEW = 12;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.COLORPICKER = 13
+raylib.COLORPICKER = 13;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.SCROLLBAR = 14
+raylib.SCROLLBAR = 14;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.STATUSBAR = 15
+raylib.STATUSBAR = 15;
 
 /**
  * Control border color in STATE_NORMAL
@@ -19689,7 +18248,7 @@ raylib.STATUSBAR = 15
  * @type {number}
  * @constant
  */
-raylib.BORDER_COLOR_NORMAL = 0
+raylib.BORDER_COLOR_NORMAL = 0;
 
 /**
  * Control base color in STATE_NORMAL
@@ -19697,7 +18256,7 @@ raylib.BORDER_COLOR_NORMAL = 0
  * @type {number}
  * @constant
  */
-raylib.BASE_COLOR_NORMAL = 1
+raylib.BASE_COLOR_NORMAL = 1;
 
 /**
  * Control text color in STATE_NORMAL
@@ -19705,7 +18264,7 @@ raylib.BASE_COLOR_NORMAL = 1
  * @type {number}
  * @constant
  */
-raylib.TEXT_COLOR_NORMAL = 2
+raylib.TEXT_COLOR_NORMAL = 2;
 
 /**
  * Control border color in STATE_FOCUSED
@@ -19713,7 +18272,7 @@ raylib.TEXT_COLOR_NORMAL = 2
  * @type {number}
  * @constant
  */
-raylib.BORDER_COLOR_FOCUSED = 3
+raylib.BORDER_COLOR_FOCUSED = 3;
 
 /**
  * Control base color in STATE_FOCUSED
@@ -19721,7 +18280,7 @@ raylib.BORDER_COLOR_FOCUSED = 3
  * @type {number}
  * @constant
  */
-raylib.BASE_COLOR_FOCUSED = 4
+raylib.BASE_COLOR_FOCUSED = 4;
 
 /**
  * Control text color in STATE_FOCUSED
@@ -19729,7 +18288,7 @@ raylib.BASE_COLOR_FOCUSED = 4
  * @type {number}
  * @constant
  */
-raylib.TEXT_COLOR_FOCUSED = 5
+raylib.TEXT_COLOR_FOCUSED = 5;
 
 /**
  * Control border color in STATE_PRESSED
@@ -19737,7 +18296,7 @@ raylib.TEXT_COLOR_FOCUSED = 5
  * @type {number}
  * @constant
  */
-raylib.BORDER_COLOR_PRESSED = 6
+raylib.BORDER_COLOR_PRESSED = 6;
 
 /**
  * Control base color in STATE_PRESSED
@@ -19745,7 +18304,7 @@ raylib.BORDER_COLOR_PRESSED = 6
  * @type {number}
  * @constant
  */
-raylib.BASE_COLOR_PRESSED = 7
+raylib.BASE_COLOR_PRESSED = 7;
 
 /**
  * Control text color in STATE_PRESSED
@@ -19753,7 +18312,7 @@ raylib.BASE_COLOR_PRESSED = 7
  * @type {number}
  * @constant
  */
-raylib.TEXT_COLOR_PRESSED = 8
+raylib.TEXT_COLOR_PRESSED = 8;
 
 /**
  * Control border color in STATE_DISABLED
@@ -19761,7 +18320,7 @@ raylib.TEXT_COLOR_PRESSED = 8
  * @type {number}
  * @constant
  */
-raylib.BORDER_COLOR_DISABLED = 9
+raylib.BORDER_COLOR_DISABLED = 9;
 
 /**
  * Control base color in STATE_DISABLED
@@ -19769,7 +18328,7 @@ raylib.BORDER_COLOR_DISABLED = 9
  * @type {number}
  * @constant
  */
-raylib.BASE_COLOR_DISABLED = 10
+raylib.BASE_COLOR_DISABLED = 10;
 
 /**
  * Control text color in STATE_DISABLED
@@ -19777,7 +18336,7 @@ raylib.BASE_COLOR_DISABLED = 10
  * @type {number}
  * @constant
  */
-raylib.TEXT_COLOR_DISABLED = 11
+raylib.TEXT_COLOR_DISABLED = 11;
 
 /**
  * Control border size, 0 for no border
@@ -19785,7 +18344,7 @@ raylib.TEXT_COLOR_DISABLED = 11
  * @type {number}
  * @constant
  */
-raylib.BORDER_WIDTH = 12
+raylib.BORDER_WIDTH = 12;
 
 /**
  * Control text padding, not considering border
@@ -19793,7 +18352,7 @@ raylib.BORDER_WIDTH = 12
  * @type {number}
  * @constant
  */
-raylib.TEXT_PADDING = 13
+raylib.TEXT_PADDING = 13;
 
 /**
  * Control text horizontal alignment inside control text bound (after border and padding)
@@ -19801,7 +18360,7 @@ raylib.TEXT_PADDING = 13
  * @type {number}
  * @constant
  */
-raylib.TEXT_ALIGNMENT = 14
+raylib.TEXT_ALIGNMENT = 14;
 
 /**
  * Text size (glyphs max height)
@@ -19809,7 +18368,7 @@ raylib.TEXT_ALIGNMENT = 14
  * @type {number}
  * @constant
  */
-raylib.TEXT_SIZE = 16
+raylib.TEXT_SIZE = 16;
 
 /**
  * Text spacing between glyphs
@@ -19817,7 +18376,7 @@ raylib.TEXT_SIZE = 16
  * @type {number}
  * @constant
  */
-raylib.TEXT_SPACING = 17
+raylib.TEXT_SPACING = 17;
 
 /**
  * Line control color
@@ -19825,7 +18384,7 @@ raylib.TEXT_SPACING = 17
  * @type {number}
  * @constant
  */
-raylib.LINE_COLOR = 18
+raylib.LINE_COLOR = 18;
 
 /**
  * Background color
@@ -19833,7 +18392,7 @@ raylib.LINE_COLOR = 18
  * @type {number}
  * @constant
  */
-raylib.BACKGROUND_COLOR = 19
+raylib.BACKGROUND_COLOR = 19;
 
 /**
  * Text spacing between lines
@@ -19841,7 +18400,7 @@ raylib.BACKGROUND_COLOR = 19
  * @type {number}
  * @constant
  */
-raylib.TEXT_LINE_SPACING = 20
+raylib.TEXT_LINE_SPACING = 20;
 
 /**
  * Text vertical alignment inside text bounds (after border and padding)
@@ -19849,7 +18408,7 @@ raylib.TEXT_LINE_SPACING = 20
  * @type {number}
  * @constant
  */
-raylib.TEXT_ALIGNMENT_VERTICAL = 21
+raylib.TEXT_ALIGNMENT_VERTICAL = 21;
 
 /**
  * Text wrap-mode inside text bounds
@@ -19857,7 +18416,7 @@ raylib.TEXT_ALIGNMENT_VERTICAL = 21
  * @type {number}
  * @constant
  */
-raylib.TEXT_WRAP_MODE = 22
+raylib.TEXT_WRAP_MODE = 22;
 
 /**
  * ToggleGroup separation between toggles
@@ -19865,7 +18424,7 @@ raylib.TEXT_WRAP_MODE = 22
  * @type {number}
  * @constant
  */
-raylib.GROUP_PADDING = 16
+raylib.GROUP_PADDING = 16;
 
 /**
  * Slider size of internal bar
@@ -19873,7 +18432,7 @@ raylib.GROUP_PADDING = 16
  * @type {number}
  * @constant
  */
-raylib.SLIDER_WIDTH = 16
+raylib.SLIDER_WIDTH = 16;
 
 /**
  * Slider/SliderBar internal bar padding
@@ -19881,7 +18440,7 @@ raylib.SLIDER_WIDTH = 16
  * @type {number}
  * @constant
  */
-raylib.SLIDER_PADDING = 17
+raylib.SLIDER_PADDING = 17;
 
 /**
  * ProgressBar internal padding
@@ -19889,7 +18448,7 @@ raylib.SLIDER_PADDING = 17
  * @type {number}
  * @constant
  */
-raylib.PROGRESS_PADDING = 16
+raylib.PROGRESS_PADDING = 16;
 
 /**
  * ScrollBar arrows size
@@ -19897,7 +18456,7 @@ raylib.PROGRESS_PADDING = 16
  * @type {number}
  * @constant
  */
-raylib.ARROWS_SIZE = 16
+raylib.ARROWS_SIZE = 16;
 
 /**
  * ScrollBar arrows visible
@@ -19905,7 +18464,7 @@ raylib.ARROWS_SIZE = 16
  * @type {number}
  * @constant
  */
-raylib.ARROWS_VISIBLE = 17
+raylib.ARROWS_VISIBLE = 17;
 
 /**
  * ScrollBar slider internal padding
@@ -19913,7 +18472,7 @@ raylib.ARROWS_VISIBLE = 17
  * @type {number}
  * @constant
  */
-raylib.SCROLL_SLIDER_PADDING = 18
+raylib.SCROLL_SLIDER_PADDING = 18;
 
 /**
  * ScrollBar slider size
@@ -19921,7 +18480,7 @@ raylib.SCROLL_SLIDER_PADDING = 18
  * @type {number}
  * @constant
  */
-raylib.SCROLL_SLIDER_SIZE = 19
+raylib.SCROLL_SLIDER_SIZE = 19;
 
 /**
  * ScrollBar scroll padding from arrows
@@ -19929,7 +18488,7 @@ raylib.SCROLL_SLIDER_SIZE = 19
  * @type {number}
  * @constant
  */
-raylib.SCROLL_PADDING = 20
+raylib.SCROLL_PADDING = 20;
 
 /**
  * ScrollBar scrolling speed
@@ -19937,7 +18496,7 @@ raylib.SCROLL_PADDING = 20
  * @type {number}
  * @constant
  */
-raylib.SCROLL_SPEED = 21
+raylib.SCROLL_SPEED = 21;
 
 /**
  * CheckBox internal check padding
@@ -19945,7 +18504,7 @@ raylib.SCROLL_SPEED = 21
  * @type {number}
  * @constant
  */
-raylib.CHECK_PADDING = 16
+raylib.CHECK_PADDING = 16;
 
 /**
  * ComboBox right button width
@@ -19953,7 +18512,7 @@ raylib.CHECK_PADDING = 16
  * @type {number}
  * @constant
  */
-raylib.COMBO_BUTTON_WIDTH = 16
+raylib.COMBO_BUTTON_WIDTH = 16;
 
 /**
  * ComboBox button separation
@@ -19961,7 +18520,7 @@ raylib.COMBO_BUTTON_WIDTH = 16
  * @type {number}
  * @constant
  */
-raylib.COMBO_BUTTON_SPACING = 17
+raylib.COMBO_BUTTON_SPACING = 17;
 
 /**
  * DropdownBox arrow separation from border and items
@@ -19969,7 +18528,7 @@ raylib.COMBO_BUTTON_SPACING = 17
  * @type {number}
  * @constant
  */
-raylib.ARROW_PADDING = 16
+raylib.ARROW_PADDING = 16;
 
 /**
  * DropdownBox items separation
@@ -19977,7 +18536,7 @@ raylib.ARROW_PADDING = 16
  * @type {number}
  * @constant
  */
-raylib.DROPDOWN_ITEMS_SPACING = 17
+raylib.DROPDOWN_ITEMS_SPACING = 17;
 
 /**
  * DropdownBox arrow hidden
@@ -19985,7 +18544,7 @@ raylib.DROPDOWN_ITEMS_SPACING = 17
  * @type {number}
  * @constant
  */
-raylib.DROPDOWN_ARROW_HIDDEN = 18
+raylib.DROPDOWN_ARROW_HIDDEN = 18;
 
 /**
  * DropdownBox roll up flag (default rolls down)
@@ -19993,7 +18552,7 @@ raylib.DROPDOWN_ARROW_HIDDEN = 18
  * @type {number}
  * @constant
  */
-raylib.DROPDOWN_ROLL_UP = 19
+raylib.DROPDOWN_ROLL_UP = 19;
 
 /**
  * TextBox in read-only mode: 0-text editable, 1-text no-editable
@@ -20001,7 +18560,7 @@ raylib.DROPDOWN_ROLL_UP = 19
  * @type {number}
  * @constant
  */
-raylib.TEXT_READONLY = 16
+raylib.TEXT_READONLY = 16;
 
 /**
  * Spinner left/right buttons width
@@ -20009,7 +18568,7 @@ raylib.TEXT_READONLY = 16
  * @type {number}
  * @constant
  */
-raylib.SPIN_BUTTON_WIDTH = 16
+raylib.SPIN_BUTTON_WIDTH = 16;
 
 /**
  * Spinner buttons separation
@@ -20017,7 +18576,7 @@ raylib.SPIN_BUTTON_WIDTH = 16
  * @type {number}
  * @constant
  */
-raylib.SPIN_BUTTON_SPACING = 17
+raylib.SPIN_BUTTON_SPACING = 17;
 
 /**
  * ListView items height
@@ -20025,7 +18584,7 @@ raylib.SPIN_BUTTON_SPACING = 17
  * @type {number}
  * @constant
  */
-raylib.LIST_ITEMS_HEIGHT = 16
+raylib.LIST_ITEMS_HEIGHT = 16;
 
 /**
  * ListView items separation
@@ -20033,7 +18592,7 @@ raylib.LIST_ITEMS_HEIGHT = 16
  * @type {number}
  * @constant
  */
-raylib.LIST_ITEMS_SPACING = 17
+raylib.LIST_ITEMS_SPACING = 17;
 
 /**
  * ListView scrollbar size (usually width)
@@ -20041,7 +18600,7 @@ raylib.LIST_ITEMS_SPACING = 17
  * @type {number}
  * @constant
  */
-raylib.SCROLLBAR_WIDTH = 18
+raylib.SCROLLBAR_WIDTH = 18;
 
 /**
  * ListView scrollbar side (0-SCROLLBAR_LEFT_SIDE, 1-SCROLLBAR_RIGHT_SIDE)
@@ -20049,7 +18608,7 @@ raylib.SCROLLBAR_WIDTH = 18
  * @type {number}
  * @constant
  */
-raylib.SCROLLBAR_SIDE = 19
+raylib.SCROLLBAR_SIDE = 19;
 
 /**
  * ListView items border width
@@ -20057,15 +18616,15 @@ raylib.SCROLLBAR_SIDE = 19
  * @type {number}
  * @constant
  */
-raylib.LIST_ITEMS_BORDER_WIDTH = 20
+raylib.LIST_ITEMS_BORDER_WIDTH = 20;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.COLOR_SELECTOR_SIZE = 16
+raylib.COLOR_SELECTOR_SIZE = 16;
 
 /**
  * ColorPicker right hue bar width
@@ -20073,7 +18632,7 @@ raylib.COLOR_SELECTOR_SIZE = 16
  * @type {number}
  * @constant
  */
-raylib.HUEBAR_WIDTH = 17
+raylib.HUEBAR_WIDTH = 17;
 
 /**
  * ColorPicker right hue bar separation from panel
@@ -20081,7 +18640,7 @@ raylib.HUEBAR_WIDTH = 17
  * @type {number}
  * @constant
  */
-raylib.HUEBAR_PADDING = 18
+raylib.HUEBAR_PADDING = 18;
 
 /**
  * ColorPicker right hue bar selector height
@@ -20089,7 +18648,7 @@ raylib.HUEBAR_PADDING = 18
  * @type {number}
  * @constant
  */
-raylib.HUEBAR_SELECTOR_HEIGHT = 19
+raylib.HUEBAR_SELECTOR_HEIGHT = 19;
 
 /**
  * ColorPicker right hue bar selector overflow
@@ -20097,2055 +18656,2055 @@ raylib.HUEBAR_SELECTOR_HEIGHT = 19
  * @type {number}
  * @constant
  */
-raylib.HUEBAR_SELECTOR_OVERFLOW = 20
+raylib.HUEBAR_SELECTOR_OVERFLOW = 20;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_NONE = 0
+raylib.ICON_NONE = 0;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FOLDER_FILE_OPEN = 1
+raylib.ICON_FOLDER_FILE_OPEN = 1;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE_SAVE_CLASSIC = 2
+raylib.ICON_FILE_SAVE_CLASSIC = 2;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FOLDER_OPEN = 3
+raylib.ICON_FOLDER_OPEN = 3;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FOLDER_SAVE = 4
+raylib.ICON_FOLDER_SAVE = 4;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE_OPEN = 5
+raylib.ICON_FILE_OPEN = 5;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE_SAVE = 6
+raylib.ICON_FILE_SAVE = 6;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE_EXPORT = 7
+raylib.ICON_FILE_EXPORT = 7;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE_ADD = 8
+raylib.ICON_FILE_ADD = 8;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE_DELETE = 9
+raylib.ICON_FILE_DELETE = 9;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILETYPE_TEXT = 10
+raylib.ICON_FILETYPE_TEXT = 10;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILETYPE_AUDIO = 11
+raylib.ICON_FILETYPE_AUDIO = 11;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILETYPE_IMAGE = 12
+raylib.ICON_FILETYPE_IMAGE = 12;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILETYPE_PLAY = 13
+raylib.ICON_FILETYPE_PLAY = 13;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILETYPE_VIDEO = 14
+raylib.ICON_FILETYPE_VIDEO = 14;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILETYPE_INFO = 15
+raylib.ICON_FILETYPE_INFO = 15;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE_COPY = 16
+raylib.ICON_FILE_COPY = 16;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE_CUT = 17
+raylib.ICON_FILE_CUT = 17;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE_PASTE = 18
+raylib.ICON_FILE_PASTE = 18;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_HAND = 19
+raylib.ICON_CURSOR_HAND = 19;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_POINTER = 20
+raylib.ICON_CURSOR_POINTER = 20;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_CLASSIC = 21
+raylib.ICON_CURSOR_CLASSIC = 21;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_PENCIL = 22
+raylib.ICON_PENCIL = 22;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_PENCIL_BIG = 23
+raylib.ICON_PENCIL_BIG = 23;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BRUSH_CLASSIC = 24
+raylib.ICON_BRUSH_CLASSIC = 24;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BRUSH_PAINTER = 25
+raylib.ICON_BRUSH_PAINTER = 25;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_WATER_DROP = 26
+raylib.ICON_WATER_DROP = 26;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_COLOR_PICKER = 27
+raylib.ICON_COLOR_PICKER = 27;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_RUBBER = 28
+raylib.ICON_RUBBER = 28;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_COLOR_BUCKET = 29
+raylib.ICON_COLOR_BUCKET = 29;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_TEXT_T = 30
+raylib.ICON_TEXT_T = 30;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_TEXT_A = 31
+raylib.ICON_TEXT_A = 31;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_SCALE = 32
+raylib.ICON_SCALE = 32;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_RESIZE = 33
+raylib.ICON_RESIZE = 33;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILTER_POINT = 34
+raylib.ICON_FILTER_POINT = 34;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILTER_BILINEAR = 35
+raylib.ICON_FILTER_BILINEAR = 35;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CROP = 36
+raylib.ICON_CROP = 36;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CROP_ALPHA = 37
+raylib.ICON_CROP_ALPHA = 37;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_SQUARE_TOGGLE = 38
+raylib.ICON_SQUARE_TOGGLE = 38;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_SYMMETRY = 39
+raylib.ICON_SYMMETRY = 39;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_SYMMETRY_HORIZONTAL = 40
+raylib.ICON_SYMMETRY_HORIZONTAL = 40;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_SYMMETRY_VERTICAL = 41
+raylib.ICON_SYMMETRY_VERTICAL = 41;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_LENS = 42
+raylib.ICON_LENS = 42;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_LENS_BIG = 43
+raylib.ICON_LENS_BIG = 43;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_EYE_ON = 44
+raylib.ICON_EYE_ON = 44;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_EYE_OFF = 45
+raylib.ICON_EYE_OFF = 45;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILTER_TOP = 46
+raylib.ICON_FILTER_TOP = 46;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILTER = 47
+raylib.ICON_FILTER = 47;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_TARGET_POINT = 48
+raylib.ICON_TARGET_POINT = 48;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_TARGET_SMALL = 49
+raylib.ICON_TARGET_SMALL = 49;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_TARGET_BIG = 50
+raylib.ICON_TARGET_BIG = 50;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_TARGET_MOVE = 51
+raylib.ICON_TARGET_MOVE = 51;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_MOVE = 52
+raylib.ICON_CURSOR_MOVE = 52;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_SCALE = 53
+raylib.ICON_CURSOR_SCALE = 53;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_SCALE_RIGHT = 54
+raylib.ICON_CURSOR_SCALE_RIGHT = 54;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_SCALE_LEFT = 55
+raylib.ICON_CURSOR_SCALE_LEFT = 55;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_UNDO = 56
+raylib.ICON_UNDO = 56;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_REDO = 57
+raylib.ICON_REDO = 57;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_REREDO = 58
+raylib.ICON_REREDO = 58;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_MUTATE = 59
+raylib.ICON_MUTATE = 59;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_ROTATE = 60
+raylib.ICON_ROTATE = 60;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_REPEAT = 61
+raylib.ICON_REPEAT = 61;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_SHUFFLE = 62
+raylib.ICON_SHUFFLE = 62;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_EMPTYBOX = 63
+raylib.ICON_EMPTYBOX = 63;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_TARGET = 64
+raylib.ICON_TARGET = 64;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_TARGET_SMALL_FILL = 65
+raylib.ICON_TARGET_SMALL_FILL = 65;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_TARGET_BIG_FILL = 66
+raylib.ICON_TARGET_BIG_FILL = 66;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_TARGET_MOVE_FILL = 67
+raylib.ICON_TARGET_MOVE_FILL = 67;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_MOVE_FILL = 68
+raylib.ICON_CURSOR_MOVE_FILL = 68;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_SCALE_FILL = 69
+raylib.ICON_CURSOR_SCALE_FILL = 69;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_SCALE_RIGHT_FILL = 70
+raylib.ICON_CURSOR_SCALE_RIGHT_FILL = 70;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CURSOR_SCALE_LEFT_FILL = 71
+raylib.ICON_CURSOR_SCALE_LEFT_FILL = 71;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_UNDO_FILL = 72
+raylib.ICON_UNDO_FILL = 72;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_REDO_FILL = 73
+raylib.ICON_REDO_FILL = 73;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_REREDO_FILL = 74
+raylib.ICON_REREDO_FILL = 74;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_MUTATE_FILL = 75
+raylib.ICON_MUTATE_FILL = 75;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_ROTATE_FILL = 76
+raylib.ICON_ROTATE_FILL = 76;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_REPEAT_FILL = 77
+raylib.ICON_REPEAT_FILL = 77;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_SHUFFLE_FILL = 78
+raylib.ICON_SHUFFLE_FILL = 78;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_EMPTYBOX_SMALL = 79
+raylib.ICON_EMPTYBOX_SMALL = 79;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX = 80
+raylib.ICON_BOX = 80;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_TOP = 81
+raylib.ICON_BOX_TOP = 81;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_TOP_RIGHT = 82
+raylib.ICON_BOX_TOP_RIGHT = 82;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_RIGHT = 83
+raylib.ICON_BOX_RIGHT = 83;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_BOTTOM_RIGHT = 84
+raylib.ICON_BOX_BOTTOM_RIGHT = 84;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_BOTTOM = 85
+raylib.ICON_BOX_BOTTOM = 85;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_BOTTOM_LEFT = 86
+raylib.ICON_BOX_BOTTOM_LEFT = 86;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_LEFT = 87
+raylib.ICON_BOX_LEFT = 87;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_TOP_LEFT = 88
+raylib.ICON_BOX_TOP_LEFT = 88;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_CENTER = 89
+raylib.ICON_BOX_CENTER = 89;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_CIRCLE_MASK = 90
+raylib.ICON_BOX_CIRCLE_MASK = 90;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_POT = 91
+raylib.ICON_POT = 91;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_ALPHA_MULTIPLY = 92
+raylib.ICON_ALPHA_MULTIPLY = 92;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_ALPHA_CLEAR = 93
+raylib.ICON_ALPHA_CLEAR = 93;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_DITHERING = 94
+raylib.ICON_DITHERING = 94;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_MIPMAPS = 95
+raylib.ICON_MIPMAPS = 95;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_GRID = 96
+raylib.ICON_BOX_GRID = 96;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_GRID = 97
+raylib.ICON_GRID = 97;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_CORNERS_SMALL = 98
+raylib.ICON_BOX_CORNERS_SMALL = 98;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_CORNERS_BIG = 99
+raylib.ICON_BOX_CORNERS_BIG = 99;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FOUR_BOXES = 100
+raylib.ICON_FOUR_BOXES = 100;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_GRID_FILL = 101
+raylib.ICON_GRID_FILL = 101;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_MULTISIZE = 102
+raylib.ICON_BOX_MULTISIZE = 102;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_ZOOM_SMALL = 103
+raylib.ICON_ZOOM_SMALL = 103;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_ZOOM_MEDIUM = 104
+raylib.ICON_ZOOM_MEDIUM = 104;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_ZOOM_BIG = 105
+raylib.ICON_ZOOM_BIG = 105;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_ZOOM_ALL = 106
+raylib.ICON_ZOOM_ALL = 106;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_ZOOM_CENTER = 107
+raylib.ICON_ZOOM_CENTER = 107;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_DOTS_SMALL = 108
+raylib.ICON_BOX_DOTS_SMALL = 108;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_DOTS_BIG = 109
+raylib.ICON_BOX_DOTS_BIG = 109;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_CONCENTRIC = 110
+raylib.ICON_BOX_CONCENTRIC = 110;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BOX_GRID_BIG = 111
+raylib.ICON_BOX_GRID_BIG = 111;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_OK_TICK = 112
+raylib.ICON_OK_TICK = 112;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CROSS = 113
+raylib.ICON_CROSS = 113;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_ARROW_LEFT = 114
+raylib.ICON_ARROW_LEFT = 114;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_ARROW_RIGHT = 115
+raylib.ICON_ARROW_RIGHT = 115;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_ARROW_DOWN = 116
+raylib.ICON_ARROW_DOWN = 116;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_ARROW_UP = 117
+raylib.ICON_ARROW_UP = 117;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_ARROW_LEFT_FILL = 118
+raylib.ICON_ARROW_LEFT_FILL = 118;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_ARROW_RIGHT_FILL = 119
+raylib.ICON_ARROW_RIGHT_FILL = 119;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_ARROW_DOWN_FILL = 120
+raylib.ICON_ARROW_DOWN_FILL = 120;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_ARROW_UP_FILL = 121
+raylib.ICON_ARROW_UP_FILL = 121;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_AUDIO = 122
+raylib.ICON_AUDIO = 122;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FX = 123
+raylib.ICON_FX = 123;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_WAVE = 124
+raylib.ICON_WAVE = 124;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_WAVE_SINUS = 125
+raylib.ICON_WAVE_SINUS = 125;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_WAVE_SQUARE = 126
+raylib.ICON_WAVE_SQUARE = 126;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_WAVE_TRIANGULAR = 127
+raylib.ICON_WAVE_TRIANGULAR = 127;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CROSS_SMALL = 128
+raylib.ICON_CROSS_SMALL = 128;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_PLAYER_PREVIOUS = 129
+raylib.ICON_PLAYER_PREVIOUS = 129;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_PLAYER_PLAY_BACK = 130
+raylib.ICON_PLAYER_PLAY_BACK = 130;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_PLAYER_PLAY = 131
+raylib.ICON_PLAYER_PLAY = 131;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_PLAYER_PAUSE = 132
+raylib.ICON_PLAYER_PAUSE = 132;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_PLAYER_STOP = 133
+raylib.ICON_PLAYER_STOP = 133;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_PLAYER_NEXT = 134
+raylib.ICON_PLAYER_NEXT = 134;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_PLAYER_RECORD = 135
+raylib.ICON_PLAYER_RECORD = 135;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_MAGNET = 136
+raylib.ICON_MAGNET = 136;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_LOCK_CLOSE = 137
+raylib.ICON_LOCK_CLOSE = 137;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_LOCK_OPEN = 138
+raylib.ICON_LOCK_OPEN = 138;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CLOCK = 139
+raylib.ICON_CLOCK = 139;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_TOOLS = 140
+raylib.ICON_TOOLS = 140;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_GEAR = 141
+raylib.ICON_GEAR = 141;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_GEAR_BIG = 142
+raylib.ICON_GEAR_BIG = 142;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BIN = 143
+raylib.ICON_BIN = 143;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_HAND_POINTER = 144
+raylib.ICON_HAND_POINTER = 144;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_LASER = 145
+raylib.ICON_LASER = 145;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_COIN = 146
+raylib.ICON_COIN = 146;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_EXPLOSION = 147
+raylib.ICON_EXPLOSION = 147;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_1UP = 148
+raylib.ICON_1UP = 148;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_PLAYER = 149
+raylib.ICON_PLAYER = 149;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_PLAYER_JUMP = 150
+raylib.ICON_PLAYER_JUMP = 150;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_KEY = 151
+raylib.ICON_KEY = 151;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_DEMON = 152
+raylib.ICON_DEMON = 152;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_TEXT_POPUP = 153
+raylib.ICON_TEXT_POPUP = 153;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_GEAR_EX = 154
+raylib.ICON_GEAR_EX = 154;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CRACK = 155
+raylib.ICON_CRACK = 155;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CRACK_POINTS = 156
+raylib.ICON_CRACK_POINTS = 156;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_STAR = 157
+raylib.ICON_STAR = 157;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_DOOR = 158
+raylib.ICON_DOOR = 158;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_EXIT = 159
+raylib.ICON_EXIT = 159;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_MODE_2D = 160
+raylib.ICON_MODE_2D = 160;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_MODE_3D = 161
+raylib.ICON_MODE_3D = 161;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CUBE = 162
+raylib.ICON_CUBE = 162;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CUBE_FACE_TOP = 163
+raylib.ICON_CUBE_FACE_TOP = 163;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CUBE_FACE_LEFT = 164
+raylib.ICON_CUBE_FACE_LEFT = 164;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CUBE_FACE_FRONT = 165
+raylib.ICON_CUBE_FACE_FRONT = 165;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CUBE_FACE_BOTTOM = 166
+raylib.ICON_CUBE_FACE_BOTTOM = 166;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CUBE_FACE_RIGHT = 167
+raylib.ICON_CUBE_FACE_RIGHT = 167;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CUBE_FACE_BACK = 168
+raylib.ICON_CUBE_FACE_BACK = 168;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CAMERA = 169
+raylib.ICON_CAMERA = 169;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_SPECIAL = 170
+raylib.ICON_SPECIAL = 170;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_LINK_NET = 171
+raylib.ICON_LINK_NET = 171;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_LINK_BOXES = 172
+raylib.ICON_LINK_BOXES = 172;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_LINK_MULTI = 173
+raylib.ICON_LINK_MULTI = 173;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_LINK = 174
+raylib.ICON_LINK = 174;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_LINK_BROKE = 175
+raylib.ICON_LINK_BROKE = 175;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_TEXT_NOTES = 176
+raylib.ICON_TEXT_NOTES = 176;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_NOTEBOOK = 177
+raylib.ICON_NOTEBOOK = 177;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_SUITCASE = 178
+raylib.ICON_SUITCASE = 178;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_SUITCASE_ZIP = 179
+raylib.ICON_SUITCASE_ZIP = 179;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_MAILBOX = 180
+raylib.ICON_MAILBOX = 180;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_MONITOR = 181
+raylib.ICON_MONITOR = 181;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_PRINTER = 182
+raylib.ICON_PRINTER = 182;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_PHOTO_CAMERA = 183
+raylib.ICON_PHOTO_CAMERA = 183;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_PHOTO_CAMERA_FLASH = 184
+raylib.ICON_PHOTO_CAMERA_FLASH = 184;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_HOUSE = 185
+raylib.ICON_HOUSE = 185;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_HEART = 186
+raylib.ICON_HEART = 186;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CORNER = 187
+raylib.ICON_CORNER = 187;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_VERTICAL_BARS = 188
+raylib.ICON_VERTICAL_BARS = 188;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_VERTICAL_BARS_FILL = 189
+raylib.ICON_VERTICAL_BARS_FILL = 189;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_LIFE_BARS = 190
+raylib.ICON_LIFE_BARS = 190;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_INFO = 191
+raylib.ICON_INFO = 191;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CROSSLINE = 192
+raylib.ICON_CROSSLINE = 192;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_HELP = 193
+raylib.ICON_HELP = 193;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILETYPE_ALPHA = 194
+raylib.ICON_FILETYPE_ALPHA = 194;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILETYPE_HOME = 195
+raylib.ICON_FILETYPE_HOME = 195;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_LAYERS_VISIBLE = 196
+raylib.ICON_LAYERS_VISIBLE = 196;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_LAYERS = 197
+raylib.ICON_LAYERS = 197;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_WINDOW = 198
+raylib.ICON_WINDOW = 198;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_HIDPI = 199
+raylib.ICON_HIDPI = 199;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILETYPE_BINARY = 200
+raylib.ICON_FILETYPE_BINARY = 200;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_HEX = 201
+raylib.ICON_HEX = 201;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_SHIELD = 202
+raylib.ICON_SHIELD = 202;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE_NEW = 203
+raylib.ICON_FILE_NEW = 203;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FOLDER_ADD = 204
+raylib.ICON_FOLDER_ADD = 204;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_ALARM = 205
+raylib.ICON_ALARM = 205;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_CPU = 206
+raylib.ICON_CPU = 206;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_ROM = 207
+raylib.ICON_ROM = 207;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_STEP_OVER = 208
+raylib.ICON_STEP_OVER = 208;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_STEP_INTO = 209
+raylib.ICON_STEP_INTO = 209;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_STEP_OUT = 210
+raylib.ICON_STEP_OUT = 210;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_RESTART = 211
+raylib.ICON_RESTART = 211;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BREAKPOINT_ON = 212
+raylib.ICON_BREAKPOINT_ON = 212;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_BREAKPOINT_OFF = 213
+raylib.ICON_BREAKPOINT_OFF = 213;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_BURGER_MENU = 214
+raylib.ICON_BURGER_MENU = 214;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_CASE_SENSITIVE = 215
+raylib.ICON_CASE_SENSITIVE = 215;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_REG_EXP = 216
+raylib.ICON_REG_EXP = 216;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_FOLDER = 217
+raylib.ICON_FOLDER = 217;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_FILE = 218
+raylib.ICON_FILE = 218;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_SAND_TIMER = 219
+raylib.ICON_SAND_TIMER = 219;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_WARNING = 220
+raylib.ICON_WARNING = 220;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_HELP_BOX = 221
+raylib.ICON_HELP_BOX = 221;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_INFO_BOX = 222
+raylib.ICON_INFO_BOX = 222;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_PRIORITY = 223
+raylib.ICON_PRIORITY = 223;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_LAYERS_ISO = 224
+raylib.ICON_LAYERS_ISO = 224;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_LAYERS2 = 225
+raylib.ICON_LAYERS2 = 225;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_MLAYERS = 226
+raylib.ICON_MLAYERS = 226;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_MAPS = 227
+raylib.ICON_MAPS = 227;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_HOT = 228
+raylib.ICON_HOT = 228;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_229 = 229
+raylib.ICON_229 = 229;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_230 = 230
+raylib.ICON_230 = 230;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_231 = 231
+raylib.ICON_231 = 231;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_232 = 232
+raylib.ICON_232 = 232;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_233 = 233
+raylib.ICON_233 = 233;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_234 = 234
+raylib.ICON_234 = 234;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_235 = 235
+raylib.ICON_235 = 235;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_236 = 236
+raylib.ICON_236 = 236;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_237 = 237
+raylib.ICON_237 = 237;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_238 = 238
+raylib.ICON_238 = 238;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_239 = 239
+raylib.ICON_239 = 239;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_240 = 240
+raylib.ICON_240 = 240;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_241 = 241
+raylib.ICON_241 = 241;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_242 = 242
+raylib.ICON_242 = 242;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_243 = 243
+raylib.ICON_243 = 243;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_244 = 244
+raylib.ICON_244 = 244;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_245 = 245
+raylib.ICON_245 = 245;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_246 = 246
+raylib.ICON_246 = 246;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_247 = 247
+raylib.ICON_247 = 247;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_248 = 248
+raylib.ICON_248 = 248;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_249 = 249
+raylib.ICON_249 = 249;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_250 = 250
+raylib.ICON_250 = 250;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_251 = 251
+raylib.ICON_251 = 251;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_252 = 252
+raylib.ICON_252 = 252;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_253 = 253
+raylib.ICON_253 = 253;
 
 /**
- * 
  *
+ *
  * @type {number}
  * @constant
  */
-raylib.ICON_254 = 254
+raylib.ICON_254 = 254;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.ICON_255 = 255
+raylib.ICON_255 = 255;
 
 /**
  * OpenGL 1.1
@@ -22153,7 +20712,7 @@ raylib.ICON_255 = 255
  * @type {number}
  * @constant
  */
-raylib.RL_OPENGL_11 = 1
+raylib.RL_OPENGL_11 = 1;
 
 /**
  * OpenGL 2.1 (GLSL 120)
@@ -22161,7 +20720,7 @@ raylib.RL_OPENGL_11 = 1
  * @type {number}
  * @constant
  */
-raylib.RL_OPENGL_21 = 2
+raylib.RL_OPENGL_21 = 2;
 
 /**
  * OpenGL 3.3 (GLSL 330)
@@ -22169,7 +20728,7 @@ raylib.RL_OPENGL_21 = 2
  * @type {number}
  * @constant
  */
-raylib.RL_OPENGL_33 = 3
+raylib.RL_OPENGL_33 = 3;
 
 /**
  * OpenGL 4.3 (using GLSL 330)
@@ -22177,7 +20736,7 @@ raylib.RL_OPENGL_33 = 3
  * @type {number}
  * @constant
  */
-raylib.RL_OPENGL_43 = 4
+raylib.RL_OPENGL_43 = 4;
 
 /**
  * OpenGL ES 2.0 (GLSL 100)
@@ -22185,7 +20744,7 @@ raylib.RL_OPENGL_43 = 4
  * @type {number}
  * @constant
  */
-raylib.RL_OPENGL_ES_20 = 5
+raylib.RL_OPENGL_ES_20 = 5;
 
 /**
  * OpenGL ES 3.0 (GLSL 300 es)
@@ -22193,7 +20752,7 @@ raylib.RL_OPENGL_ES_20 = 5
  * @type {number}
  * @constant
  */
-raylib.RL_OPENGL_ES_30 = 6
+raylib.RL_OPENGL_ES_30 = 6;
 
 /**
  * Display all logs
@@ -22201,7 +20760,7 @@ raylib.RL_OPENGL_ES_30 = 6
  * @type {number}
  * @constant
  */
-raylib.RL_LOG_ALL = 0
+raylib.RL_LOG_ALL = 0;
 
 /**
  * Trace logging, intended for internal use only
@@ -22209,7 +20768,7 @@ raylib.RL_LOG_ALL = 0
  * @type {number}
  * @constant
  */
-raylib.RL_LOG_TRACE = 1
+raylib.RL_LOG_TRACE = 1;
 
 /**
  * Debug logging, used for internal debugging, it should be disabled on release builds
@@ -22217,7 +20776,7 @@ raylib.RL_LOG_TRACE = 1
  * @type {number}
  * @constant
  */
-raylib.RL_LOG_DEBUG = 2
+raylib.RL_LOG_DEBUG = 2;
 
 /**
  * Info logging, used for program execution info
@@ -22225,7 +20784,7 @@ raylib.RL_LOG_DEBUG = 2
  * @type {number}
  * @constant
  */
-raylib.RL_LOG_INFO = 3
+raylib.RL_LOG_INFO = 3;
 
 /**
  * Warning logging, used on recoverable failures
@@ -22233,7 +20792,7 @@ raylib.RL_LOG_INFO = 3
  * @type {number}
  * @constant
  */
-raylib.RL_LOG_WARNING = 4
+raylib.RL_LOG_WARNING = 4;
 
 /**
  * Error logging, used on unrecoverable failures
@@ -22241,7 +20800,7 @@ raylib.RL_LOG_WARNING = 4
  * @type {number}
  * @constant
  */
-raylib.RL_LOG_ERROR = 5
+raylib.RL_LOG_ERROR = 5;
 
 /**
  * Fatal logging, used to abort program: exit(EXIT_FAILURE)
@@ -22249,7 +20808,7 @@ raylib.RL_LOG_ERROR = 5
  * @type {number}
  * @constant
  */
-raylib.RL_LOG_FATAL = 6
+raylib.RL_LOG_FATAL = 6;
 
 /**
  * Disable logging
@@ -22257,7 +20816,7 @@ raylib.RL_LOG_FATAL = 6
  * @type {number}
  * @constant
  */
-raylib.RL_LOG_NONE = 7
+raylib.RL_LOG_NONE = 7;
 
 /**
  * 8 bit per pixel (no alpha)
@@ -22265,7 +20824,7 @@ raylib.RL_LOG_NONE = 7
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_GRAYSCALE = 1
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_GRAYSCALE = 1;
 
 /**
  * 8*2 bpp (2 channels)
@@ -22273,7 +20832,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_GRAYSCALE = 1
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_GRAY_ALPHA = 2
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_GRAY_ALPHA = 2;
 
 /**
  * 16 bpp
@@ -22281,7 +20840,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_GRAY_ALPHA = 2
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R5G6B5 = 3
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R5G6B5 = 3;
 
 /**
  * 24 bpp
@@ -22289,7 +20848,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R5G6B5 = 3
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R8G8B8 = 4
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R8G8B8 = 4;
 
 /**
  * 16 bpp (1 bit alpha)
@@ -22297,7 +20856,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R8G8B8 = 4
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R5G5B5A1 = 5
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R5G5B5A1 = 5;
 
 /**
  * 16 bpp (4 bit alpha)
@@ -22305,7 +20864,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R5G5B5A1 = 5
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R4G4B4A4 = 6
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R4G4B4A4 = 6;
 
 /**
  * 32 bpp
@@ -22313,7 +20872,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R4G4B4A4 = 6
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R8G8B8A8 = 7
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R8G8B8A8 = 7;
 
 /**
  * 32 bpp (1 channel - float)
@@ -22321,7 +20880,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R8G8B8A8 = 7
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R32 = 8
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R32 = 8;
 
 /**
  * 32*3 bpp (3 channels - float)
@@ -22329,7 +20888,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R32 = 8
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R32G32B32 = 9
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R32G32B32 = 9;
 
 /**
  * 32*4 bpp (4 channels - float)
@@ -22337,7 +20896,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R32G32B32 = 9
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R32G32B32A32 = 10
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R32G32B32A32 = 10;
 
 /**
  * 16 bpp (1 channel - half float)
@@ -22345,7 +20904,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R32G32B32A32 = 10
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R16 = 11
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R16 = 11;
 
 /**
  * 16*3 bpp (3 channels - half float)
@@ -22353,7 +20912,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R16 = 11
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R16G16B16 = 12
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R16G16B16 = 12;
 
 /**
  * 16*4 bpp (4 channels - half float)
@@ -22361,7 +20920,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R16G16B16 = 12
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_UNCOMPRESSED_R16G16B16A16 = 13
+raylib.RL_PIXELFORMAT_UNCOMPRESSED_R16G16B16A16 = 13;
 
 /**
  * 4 bpp (no alpha)
@@ -22369,7 +20928,7 @@ raylib.RL_PIXELFORMAT_UNCOMPRESSED_R16G16B16A16 = 13
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_DXT1_RGB = 14
+raylib.RL_PIXELFORMAT_COMPRESSED_DXT1_RGB = 14;
 
 /**
  * 4 bpp (1 bit alpha)
@@ -22377,7 +20936,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_DXT1_RGB = 14
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_DXT1_RGBA = 15
+raylib.RL_PIXELFORMAT_COMPRESSED_DXT1_RGBA = 15;
 
 /**
  * 8 bpp
@@ -22385,7 +20944,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_DXT1_RGBA = 15
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_DXT3_RGBA = 16
+raylib.RL_PIXELFORMAT_COMPRESSED_DXT3_RGBA = 16;
 
 /**
  * 8 bpp
@@ -22393,7 +20952,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_DXT3_RGBA = 16
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_DXT5_RGBA = 17
+raylib.RL_PIXELFORMAT_COMPRESSED_DXT5_RGBA = 17;
 
 /**
  * 4 bpp
@@ -22401,7 +20960,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_DXT5_RGBA = 17
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_ETC1_RGB = 18
+raylib.RL_PIXELFORMAT_COMPRESSED_ETC1_RGB = 18;
 
 /**
  * 4 bpp
@@ -22409,7 +20968,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_ETC1_RGB = 18
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_ETC2_RGB = 19
+raylib.RL_PIXELFORMAT_COMPRESSED_ETC2_RGB = 19;
 
 /**
  * 8 bpp
@@ -22417,7 +20976,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_ETC2_RGB = 19
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_ETC2_EAC_RGBA = 20
+raylib.RL_PIXELFORMAT_COMPRESSED_ETC2_EAC_RGBA = 20;
 
 /**
  * 4 bpp
@@ -22425,7 +20984,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_ETC2_EAC_RGBA = 20
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_PVRT_RGB = 21
+raylib.RL_PIXELFORMAT_COMPRESSED_PVRT_RGB = 21;
 
 /**
  * 4 bpp
@@ -22433,7 +20992,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_PVRT_RGB = 21
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_PVRT_RGBA = 22
+raylib.RL_PIXELFORMAT_COMPRESSED_PVRT_RGBA = 22;
 
 /**
  * 8 bpp
@@ -22441,7 +21000,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_PVRT_RGBA = 22
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_ASTC_4x4_RGBA = 23
+raylib.RL_PIXELFORMAT_COMPRESSED_ASTC_4x4_RGBA = 23;
 
 /**
  * 2 bpp
@@ -22449,7 +21008,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_ASTC_4x4_RGBA = 23
  * @type {number}
  * @constant
  */
-raylib.RL_PIXELFORMAT_COMPRESSED_ASTC_8x8_RGBA = 24
+raylib.RL_PIXELFORMAT_COMPRESSED_ASTC_8x8_RGBA = 24;
 
 /**
  * No filter, just pixel approximation
@@ -22457,7 +21016,7 @@ raylib.RL_PIXELFORMAT_COMPRESSED_ASTC_8x8_RGBA = 24
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_POINT = 0
+raylib.RL_TEXTURE_FILTER_POINT = 0;
 
 /**
  * Linear filtering
@@ -22465,7 +21024,7 @@ raylib.RL_TEXTURE_FILTER_POINT = 0
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_BILINEAR = 1
+raylib.RL_TEXTURE_FILTER_BILINEAR = 1;
 
 /**
  * Trilinear filtering (linear with mipmaps)
@@ -22473,7 +21032,7 @@ raylib.RL_TEXTURE_FILTER_BILINEAR = 1
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_TRILINEAR = 2
+raylib.RL_TEXTURE_FILTER_TRILINEAR = 2;
 
 /**
  * Anisotropic filtering 4x
@@ -22481,7 +21040,7 @@ raylib.RL_TEXTURE_FILTER_TRILINEAR = 2
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_ANISOTROPIC_4X = 3
+raylib.RL_TEXTURE_FILTER_ANISOTROPIC_4X = 3;
 
 /**
  * Anisotropic filtering 8x
@@ -22489,7 +21048,7 @@ raylib.RL_TEXTURE_FILTER_ANISOTROPIC_4X = 3
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_ANISOTROPIC_8X = 4
+raylib.RL_TEXTURE_FILTER_ANISOTROPIC_8X = 4;
 
 /**
  * Anisotropic filtering 16x
@@ -22497,7 +21056,7 @@ raylib.RL_TEXTURE_FILTER_ANISOTROPIC_8X = 4
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_ANISOTROPIC_16X = 5
+raylib.RL_TEXTURE_FILTER_ANISOTROPIC_16X = 5;
 
 /**
  * Blend textures considering alpha (default)
@@ -22505,7 +21064,7 @@ raylib.RL_TEXTURE_FILTER_ANISOTROPIC_16X = 5
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_ALPHA = 0
+raylib.RL_BLEND_ALPHA = 0;
 
 /**
  * Blend textures adding colors
@@ -22513,7 +21072,7 @@ raylib.RL_BLEND_ALPHA = 0
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_ADDITIVE = 1
+raylib.RL_BLEND_ADDITIVE = 1;
 
 /**
  * Blend textures multiplying colors
@@ -22521,7 +21080,7 @@ raylib.RL_BLEND_ADDITIVE = 1
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_MULTIPLIED = 2
+raylib.RL_BLEND_MULTIPLIED = 2;
 
 /**
  * Blend textures adding colors (alternative)
@@ -22529,7 +21088,7 @@ raylib.RL_BLEND_MULTIPLIED = 2
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_ADD_COLORS = 3
+raylib.RL_BLEND_ADD_COLORS = 3;
 
 /**
  * Blend textures subtracting colors (alternative)
@@ -22537,7 +21096,7 @@ raylib.RL_BLEND_ADD_COLORS = 3
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_SUBTRACT_COLORS = 4
+raylib.RL_BLEND_SUBTRACT_COLORS = 4;
 
 /**
  * Blend premultiplied textures considering alpha
@@ -22545,7 +21104,7 @@ raylib.RL_BLEND_SUBTRACT_COLORS = 4
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_ALPHA_PREMULTIPLY = 5
+raylib.RL_BLEND_ALPHA_PREMULTIPLY = 5;
 
 /**
  * Blend textures using custom src/dst factors (use rlSetBlendFactors())
@@ -22553,7 +21112,7 @@ raylib.RL_BLEND_ALPHA_PREMULTIPLY = 5
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_CUSTOM = 6
+raylib.RL_BLEND_CUSTOM = 6;
 
 /**
  * Blend textures using custom src/dst factors (use rlSetBlendFactorsSeparate())
@@ -22561,7 +21120,7 @@ raylib.RL_BLEND_CUSTOM = 6
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_CUSTOM_SEPARATE = 7
+raylib.RL_BLEND_CUSTOM_SEPARATE = 7;
 
 /**
  * Shader location: vertex attribute: position
@@ -22569,7 +21128,7 @@ raylib.RL_BLEND_CUSTOM_SEPARATE = 7
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_VERTEX_POSITION = 0
+raylib.RL_SHADER_LOC_VERTEX_POSITION = 0;
 
 /**
  * Shader location: vertex attribute: texcoord01
@@ -22577,7 +21136,7 @@ raylib.RL_SHADER_LOC_VERTEX_POSITION = 0
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_VERTEX_TEXCOORD01 = 1
+raylib.RL_SHADER_LOC_VERTEX_TEXCOORD01 = 1;
 
 /**
  * Shader location: vertex attribute: texcoord02
@@ -22585,7 +21144,7 @@ raylib.RL_SHADER_LOC_VERTEX_TEXCOORD01 = 1
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_VERTEX_TEXCOORD02 = 2
+raylib.RL_SHADER_LOC_VERTEX_TEXCOORD02 = 2;
 
 /**
  * Shader location: vertex attribute: normal
@@ -22593,7 +21152,7 @@ raylib.RL_SHADER_LOC_VERTEX_TEXCOORD02 = 2
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_VERTEX_NORMAL = 3
+raylib.RL_SHADER_LOC_VERTEX_NORMAL = 3;
 
 /**
  * Shader location: vertex attribute: tangent
@@ -22601,7 +21160,7 @@ raylib.RL_SHADER_LOC_VERTEX_NORMAL = 3
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_VERTEX_TANGENT = 4
+raylib.RL_SHADER_LOC_VERTEX_TANGENT = 4;
 
 /**
  * Shader location: vertex attribute: color
@@ -22609,7 +21168,7 @@ raylib.RL_SHADER_LOC_VERTEX_TANGENT = 4
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_VERTEX_COLOR = 5
+raylib.RL_SHADER_LOC_VERTEX_COLOR = 5;
 
 /**
  * Shader location: matrix uniform: model-view-projection
@@ -22617,7 +21176,7 @@ raylib.RL_SHADER_LOC_VERTEX_COLOR = 5
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MATRIX_MVP = 6
+raylib.RL_SHADER_LOC_MATRIX_MVP = 6;
 
 /**
  * Shader location: matrix uniform: view (camera transform)
@@ -22625,7 +21184,7 @@ raylib.RL_SHADER_LOC_MATRIX_MVP = 6
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MATRIX_VIEW = 7
+raylib.RL_SHADER_LOC_MATRIX_VIEW = 7;
 
 /**
  * Shader location: matrix uniform: projection
@@ -22633,7 +21192,7 @@ raylib.RL_SHADER_LOC_MATRIX_VIEW = 7
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MATRIX_PROJECTION = 8
+raylib.RL_SHADER_LOC_MATRIX_PROJECTION = 8;
 
 /**
  * Shader location: matrix uniform: model (transform)
@@ -22641,7 +21200,7 @@ raylib.RL_SHADER_LOC_MATRIX_PROJECTION = 8
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MATRIX_MODEL = 9
+raylib.RL_SHADER_LOC_MATRIX_MODEL = 9;
 
 /**
  * Shader location: matrix uniform: normal
@@ -22649,7 +21208,7 @@ raylib.RL_SHADER_LOC_MATRIX_MODEL = 9
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MATRIX_NORMAL = 10
+raylib.RL_SHADER_LOC_MATRIX_NORMAL = 10;
 
 /**
  * Shader location: vector uniform: view
@@ -22657,7 +21216,7 @@ raylib.RL_SHADER_LOC_MATRIX_NORMAL = 10
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_VECTOR_VIEW = 11
+raylib.RL_SHADER_LOC_VECTOR_VIEW = 11;
 
 /**
  * Shader location: vector uniform: diffuse color
@@ -22665,7 +21224,7 @@ raylib.RL_SHADER_LOC_VECTOR_VIEW = 11
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_COLOR_DIFFUSE = 12
+raylib.RL_SHADER_LOC_COLOR_DIFFUSE = 12;
 
 /**
  * Shader location: vector uniform: specular color
@@ -22673,7 +21232,7 @@ raylib.RL_SHADER_LOC_COLOR_DIFFUSE = 12
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_COLOR_SPECULAR = 13
+raylib.RL_SHADER_LOC_COLOR_SPECULAR = 13;
 
 /**
  * Shader location: vector uniform: ambient color
@@ -22681,7 +21240,7 @@ raylib.RL_SHADER_LOC_COLOR_SPECULAR = 13
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_COLOR_AMBIENT = 14
+raylib.RL_SHADER_LOC_COLOR_AMBIENT = 14;
 
 /**
  * Shader location: sampler2d texture: albedo (same as: RL_SHADER_LOC_MAP_DIFFUSE)
@@ -22689,7 +21248,7 @@ raylib.RL_SHADER_LOC_COLOR_AMBIENT = 14
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_ALBEDO = 15
+raylib.RL_SHADER_LOC_MAP_ALBEDO = 15;
 
 /**
  * Shader location: sampler2d texture: metalness (same as: RL_SHADER_LOC_MAP_SPECULAR)
@@ -22697,7 +21256,7 @@ raylib.RL_SHADER_LOC_MAP_ALBEDO = 15
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_METALNESS = 16
+raylib.RL_SHADER_LOC_MAP_METALNESS = 16;
 
 /**
  * Shader location: sampler2d texture: normal
@@ -22705,7 +21264,7 @@ raylib.RL_SHADER_LOC_MAP_METALNESS = 16
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_NORMAL = 17
+raylib.RL_SHADER_LOC_MAP_NORMAL = 17;
 
 /**
  * Shader location: sampler2d texture: roughness
@@ -22713,7 +21272,7 @@ raylib.RL_SHADER_LOC_MAP_NORMAL = 17
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_ROUGHNESS = 18
+raylib.RL_SHADER_LOC_MAP_ROUGHNESS = 18;
 
 /**
  * Shader location: sampler2d texture: occlusion
@@ -22721,7 +21280,7 @@ raylib.RL_SHADER_LOC_MAP_ROUGHNESS = 18
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_OCCLUSION = 19
+raylib.RL_SHADER_LOC_MAP_OCCLUSION = 19;
 
 /**
  * Shader location: sampler2d texture: emission
@@ -22729,7 +21288,7 @@ raylib.RL_SHADER_LOC_MAP_OCCLUSION = 19
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_EMISSION = 20
+raylib.RL_SHADER_LOC_MAP_EMISSION = 20;
 
 /**
  * Shader location: sampler2d texture: height
@@ -22737,7 +21296,7 @@ raylib.RL_SHADER_LOC_MAP_EMISSION = 20
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_HEIGHT = 21
+raylib.RL_SHADER_LOC_MAP_HEIGHT = 21;
 
 /**
  * Shader location: samplerCube texture: cubemap
@@ -22745,7 +21304,7 @@ raylib.RL_SHADER_LOC_MAP_HEIGHT = 21
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_CUBEMAP = 22
+raylib.RL_SHADER_LOC_MAP_CUBEMAP = 22;
 
 /**
  * Shader location: samplerCube texture: irradiance
@@ -22753,7 +21312,7 @@ raylib.RL_SHADER_LOC_MAP_CUBEMAP = 22
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_IRRADIANCE = 23
+raylib.RL_SHADER_LOC_MAP_IRRADIANCE = 23;
 
 /**
  * Shader location: samplerCube texture: prefilter
@@ -22761,7 +21320,7 @@ raylib.RL_SHADER_LOC_MAP_IRRADIANCE = 23
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_PREFILTER = 24
+raylib.RL_SHADER_LOC_MAP_PREFILTER = 24;
 
 /**
  * Shader location: sampler2d texture: brdf
@@ -22769,7 +21328,7 @@ raylib.RL_SHADER_LOC_MAP_PREFILTER = 24
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_LOC_MAP_BRDF = 25
+raylib.RL_SHADER_LOC_MAP_BRDF = 25;
 
 /**
  * Shader uniform type: float
@@ -22777,7 +21336,7 @@ raylib.RL_SHADER_LOC_MAP_BRDF = 25
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_FLOAT = 0
+raylib.RL_SHADER_UNIFORM_FLOAT = 0;
 
 /**
  * Shader uniform type: vec2 (2 float)
@@ -22785,7 +21344,7 @@ raylib.RL_SHADER_UNIFORM_FLOAT = 0
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_VEC2 = 1
+raylib.RL_SHADER_UNIFORM_VEC2 = 1;
 
 /**
  * Shader uniform type: vec3 (3 float)
@@ -22793,7 +21352,7 @@ raylib.RL_SHADER_UNIFORM_VEC2 = 1
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_VEC3 = 2
+raylib.RL_SHADER_UNIFORM_VEC3 = 2;
 
 /**
  * Shader uniform type: vec4 (4 float)
@@ -22801,7 +21360,7 @@ raylib.RL_SHADER_UNIFORM_VEC3 = 2
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_VEC4 = 3
+raylib.RL_SHADER_UNIFORM_VEC4 = 3;
 
 /**
  * Shader uniform type: int
@@ -22809,7 +21368,7 @@ raylib.RL_SHADER_UNIFORM_VEC4 = 3
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_INT = 4
+raylib.RL_SHADER_UNIFORM_INT = 4;
 
 /**
  * Shader uniform type: ivec2 (2 int)
@@ -22817,7 +21376,7 @@ raylib.RL_SHADER_UNIFORM_INT = 4
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_IVEC2 = 5
+raylib.RL_SHADER_UNIFORM_IVEC2 = 5;
 
 /**
  * Shader uniform type: ivec3 (3 int)
@@ -22825,7 +21384,7 @@ raylib.RL_SHADER_UNIFORM_IVEC2 = 5
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_IVEC3 = 6
+raylib.RL_SHADER_UNIFORM_IVEC3 = 6;
 
 /**
  * Shader uniform type: ivec4 (4 int)
@@ -22833,7 +21392,7 @@ raylib.RL_SHADER_UNIFORM_IVEC3 = 6
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_IVEC4 = 7
+raylib.RL_SHADER_UNIFORM_IVEC4 = 7;
 
 /**
  * Shader uniform type: unsigned int
@@ -22841,7 +21400,7 @@ raylib.RL_SHADER_UNIFORM_IVEC4 = 7
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_UINT = 8
+raylib.RL_SHADER_UNIFORM_UINT = 8;
 
 /**
  * Shader uniform type: uivec2 (2 unsigned int)
@@ -22849,7 +21408,7 @@ raylib.RL_SHADER_UNIFORM_UINT = 8
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_UIVEC2 = 9
+raylib.RL_SHADER_UNIFORM_UIVEC2 = 9;
 
 /**
  * Shader uniform type: uivec3 (3 unsigned int)
@@ -22857,7 +21416,7 @@ raylib.RL_SHADER_UNIFORM_UIVEC2 = 9
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_UIVEC3 = 10
+raylib.RL_SHADER_UNIFORM_UIVEC3 = 10;
 
 /**
  * Shader uniform type: uivec4 (4 unsigned int)
@@ -22865,7 +21424,7 @@ raylib.RL_SHADER_UNIFORM_UIVEC3 = 10
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_UIVEC4 = 11
+raylib.RL_SHADER_UNIFORM_UIVEC4 = 11;
 
 /**
  * Shader uniform type: sampler2d
@@ -22873,7 +21432,7 @@ raylib.RL_SHADER_UNIFORM_UIVEC4 = 11
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_UNIFORM_SAMPLER2D = 12
+raylib.RL_SHADER_UNIFORM_SAMPLER2D = 12;
 
 /**
  * Shader attribute type: float
@@ -22881,7 +21440,7 @@ raylib.RL_SHADER_UNIFORM_SAMPLER2D = 12
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_ATTRIB_FLOAT = 0
+raylib.RL_SHADER_ATTRIB_FLOAT = 0;
 
 /**
  * Shader attribute type: vec2 (2 float)
@@ -22889,7 +21448,7 @@ raylib.RL_SHADER_ATTRIB_FLOAT = 0
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_ATTRIB_VEC2 = 1
+raylib.RL_SHADER_ATTRIB_VEC2 = 1;
 
 /**
  * Shader attribute type: vec3 (3 float)
@@ -22897,7 +21456,7 @@ raylib.RL_SHADER_ATTRIB_VEC2 = 1
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_ATTRIB_VEC3 = 2
+raylib.RL_SHADER_ATTRIB_VEC3 = 2;
 
 /**
  * Shader attribute type: vec4 (4 float)
@@ -22905,7 +21464,7 @@ raylib.RL_SHADER_ATTRIB_VEC3 = 2
  * @type {number}
  * @constant
  */
-raylib.RL_SHADER_ATTRIB_VEC4 = 3
+raylib.RL_SHADER_ATTRIB_VEC4 = 3;
 
 /**
  * Framebuffer attachment type: color 0
@@ -22913,7 +21472,7 @@ raylib.RL_SHADER_ATTRIB_VEC4 = 3
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_COLOR_CHANNEL0 = 0
+raylib.RL_ATTACHMENT_COLOR_CHANNEL0 = 0;
 
 /**
  * Framebuffer attachment type: color 1
@@ -22921,7 +21480,7 @@ raylib.RL_ATTACHMENT_COLOR_CHANNEL0 = 0
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_COLOR_CHANNEL1 = 1
+raylib.RL_ATTACHMENT_COLOR_CHANNEL1 = 1;
 
 /**
  * Framebuffer attachment type: color 2
@@ -22929,7 +21488,7 @@ raylib.RL_ATTACHMENT_COLOR_CHANNEL1 = 1
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_COLOR_CHANNEL2 = 2
+raylib.RL_ATTACHMENT_COLOR_CHANNEL2 = 2;
 
 /**
  * Framebuffer attachment type: color 3
@@ -22937,7 +21496,7 @@ raylib.RL_ATTACHMENT_COLOR_CHANNEL2 = 2
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_COLOR_CHANNEL3 = 3
+raylib.RL_ATTACHMENT_COLOR_CHANNEL3 = 3;
 
 /**
  * Framebuffer attachment type: color 4
@@ -22945,7 +21504,7 @@ raylib.RL_ATTACHMENT_COLOR_CHANNEL3 = 3
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_COLOR_CHANNEL4 = 4
+raylib.RL_ATTACHMENT_COLOR_CHANNEL4 = 4;
 
 /**
  * Framebuffer attachment type: color 5
@@ -22953,7 +21512,7 @@ raylib.RL_ATTACHMENT_COLOR_CHANNEL4 = 4
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_COLOR_CHANNEL5 = 5
+raylib.RL_ATTACHMENT_COLOR_CHANNEL5 = 5;
 
 /**
  * Framebuffer attachment type: color 6
@@ -22961,7 +21520,7 @@ raylib.RL_ATTACHMENT_COLOR_CHANNEL5 = 5
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_COLOR_CHANNEL6 = 6
+raylib.RL_ATTACHMENT_COLOR_CHANNEL6 = 6;
 
 /**
  * Framebuffer attachment type: color 7
@@ -22969,7 +21528,7 @@ raylib.RL_ATTACHMENT_COLOR_CHANNEL6 = 6
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_COLOR_CHANNEL7 = 7
+raylib.RL_ATTACHMENT_COLOR_CHANNEL7 = 7;
 
 /**
  * Framebuffer attachment type: depth
@@ -22977,7 +21536,7 @@ raylib.RL_ATTACHMENT_COLOR_CHANNEL7 = 7
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_DEPTH = 100
+raylib.RL_ATTACHMENT_DEPTH = 100;
 
 /**
  * Framebuffer attachment type: stencil
@@ -22985,7 +21544,7 @@ raylib.RL_ATTACHMENT_DEPTH = 100
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_STENCIL = 200
+raylib.RL_ATTACHMENT_STENCIL = 200;
 
 /**
  * Framebuffer texture attachment type: cubemap, +X side
@@ -22993,7 +21552,7 @@ raylib.RL_ATTACHMENT_STENCIL = 200
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_CUBEMAP_POSITIVE_X = 0
+raylib.RL_ATTACHMENT_CUBEMAP_POSITIVE_X = 0;
 
 /**
  * Framebuffer texture attachment type: cubemap, -X side
@@ -23001,7 +21560,7 @@ raylib.RL_ATTACHMENT_CUBEMAP_POSITIVE_X = 0
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_CUBEMAP_NEGATIVE_X = 1
+raylib.RL_ATTACHMENT_CUBEMAP_NEGATIVE_X = 1;
 
 /**
  * Framebuffer texture attachment type: cubemap, +Y side
@@ -23009,7 +21568,7 @@ raylib.RL_ATTACHMENT_CUBEMAP_NEGATIVE_X = 1
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_CUBEMAP_POSITIVE_Y = 2
+raylib.RL_ATTACHMENT_CUBEMAP_POSITIVE_Y = 2;
 
 /**
  * Framebuffer texture attachment type: cubemap, -Y side
@@ -23017,7 +21576,7 @@ raylib.RL_ATTACHMENT_CUBEMAP_POSITIVE_Y = 2
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_CUBEMAP_NEGATIVE_Y = 3
+raylib.RL_ATTACHMENT_CUBEMAP_NEGATIVE_Y = 3;
 
 /**
  * Framebuffer texture attachment type: cubemap, +Z side
@@ -23025,7 +21584,7 @@ raylib.RL_ATTACHMENT_CUBEMAP_NEGATIVE_Y = 3
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_CUBEMAP_POSITIVE_Z = 4
+raylib.RL_ATTACHMENT_CUBEMAP_POSITIVE_Z = 4;
 
 /**
  * Framebuffer texture attachment type: cubemap, -Z side
@@ -23033,7 +21592,7 @@ raylib.RL_ATTACHMENT_CUBEMAP_POSITIVE_Z = 4
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_CUBEMAP_NEGATIVE_Z = 5
+raylib.RL_ATTACHMENT_CUBEMAP_NEGATIVE_Z = 5;
 
 /**
  * Framebuffer texture attachment type: texture2d
@@ -23041,7 +21600,7 @@ raylib.RL_ATTACHMENT_CUBEMAP_NEGATIVE_Z = 5
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_TEXTURE2D = 100
+raylib.RL_ATTACHMENT_TEXTURE2D = 100;
 
 /**
  * Framebuffer texture attachment type: renderbuffer
@@ -23049,31 +21608,31 @@ raylib.RL_ATTACHMENT_TEXTURE2D = 100
  * @type {number}
  * @constant
  */
-raylib.RL_ATTACHMENT_RENDERBUFFER = 200
+raylib.RL_ATTACHMENT_RENDERBUFFER = 200;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_CULL_FACE_FRONT = 0
+raylib.RL_CULL_FACE_FRONT = 0;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_CULL_FACE_BACK = 1
+raylib.RL_CULL_FACE_BACK = 1;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_BATCH_BUFFER_ELEMENTS = 8192
+raylib.RL_DEFAULT_BATCH_BUFFER_ELEMENTS = 8192;
 
 /**
  * Default number of batch buffers (multi-buffering)
@@ -23081,7 +21640,7 @@ raylib.RL_DEFAULT_BATCH_BUFFER_ELEMENTS = 8192
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_BATCH_BUFFERS = 1
+raylib.RL_DEFAULT_BATCH_BUFFERS = 1;
 
 /**
  * Default number of batch draw calls (by state changes: mode, texture)
@@ -23089,7 +21648,7 @@ raylib.RL_DEFAULT_BATCH_BUFFERS = 1
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_BATCH_DRAWCALLS = 256
+raylib.RL_DEFAULT_BATCH_DRAWCALLS = 256;
 
 /**
  * Maximum number of textures units that can be activated on batch drawing (SetShaderValueTexture())
@@ -23097,7 +21656,7 @@ raylib.RL_DEFAULT_BATCH_DRAWCALLS = 256
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_BATCH_MAX_TEXTURE_UNITS = 4
+raylib.RL_DEFAULT_BATCH_MAX_TEXTURE_UNITS = 4;
 
 /**
  * Maximum size of Matrix stack
@@ -23105,7 +21664,7 @@ raylib.RL_DEFAULT_BATCH_MAX_TEXTURE_UNITS = 4
  * @type {number}
  * @constant
  */
-raylib.RL_MAX_MATRIX_STACK_SIZE = 32
+raylib.RL_MAX_MATRIX_STACK_SIZE = 32;
 
 /**
  * Maximum number of shader locations supported
@@ -23113,7 +21672,7 @@ raylib.RL_MAX_MATRIX_STACK_SIZE = 32
  * @type {number}
  * @constant
  */
-raylib.RL_MAX_SHADER_LOCATIONS = 32
+raylib.RL_MAX_SHADER_LOCATIONS = 32;
 
 /**
  * GL_TEXTURE_WRAP_S
@@ -23121,7 +21680,7 @@ raylib.RL_MAX_SHADER_LOCATIONS = 32
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_WRAP_S = 10242
+raylib.RL_TEXTURE_WRAP_S = 10242;
 
 /**
  * GL_TEXTURE_WRAP_T
@@ -23129,7 +21688,7 @@ raylib.RL_TEXTURE_WRAP_S = 10242
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_WRAP_T = 10243
+raylib.RL_TEXTURE_WRAP_T = 10243;
 
 /**
  * GL_TEXTURE_MAG_FILTER
@@ -23137,7 +21696,7 @@ raylib.RL_TEXTURE_WRAP_T = 10243
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_MAG_FILTER = 10240
+raylib.RL_TEXTURE_MAG_FILTER = 10240;
 
 /**
  * GL_TEXTURE_MIN_FILTER
@@ -23145,7 +21704,7 @@ raylib.RL_TEXTURE_MAG_FILTER = 10240
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_MIN_FILTER = 10241
+raylib.RL_TEXTURE_MIN_FILTER = 10241;
 
 /**
  * GL_NEAREST
@@ -23153,7 +21712,7 @@ raylib.RL_TEXTURE_MIN_FILTER = 10241
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_NEAREST = 9728
+raylib.RL_TEXTURE_FILTER_NEAREST = 9728;
 
 /**
  * GL_LINEAR
@@ -23161,7 +21720,7 @@ raylib.RL_TEXTURE_FILTER_NEAREST = 9728
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_LINEAR = 9729
+raylib.RL_TEXTURE_FILTER_LINEAR = 9729;
 
 /**
  * GL_NEAREST_MIPMAP_NEAREST
@@ -23169,7 +21728,7 @@ raylib.RL_TEXTURE_FILTER_LINEAR = 9729
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_MIP_NEAREST = 9984
+raylib.RL_TEXTURE_FILTER_MIP_NEAREST = 9984;
 
 /**
  * GL_NEAREST_MIPMAP_LINEAR
@@ -23177,7 +21736,7 @@ raylib.RL_TEXTURE_FILTER_MIP_NEAREST = 9984
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_NEAREST_MIP_LINEAR = 9986
+raylib.RL_TEXTURE_FILTER_NEAREST_MIP_LINEAR = 9986;
 
 /**
  * GL_LINEAR_MIPMAP_NEAREST
@@ -23185,7 +21744,7 @@ raylib.RL_TEXTURE_FILTER_NEAREST_MIP_LINEAR = 9986
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_LINEAR_MIP_NEAREST = 9985
+raylib.RL_TEXTURE_FILTER_LINEAR_MIP_NEAREST = 9985;
 
 /**
  * GL_LINEAR_MIPMAP_LINEAR
@@ -23193,7 +21752,7 @@ raylib.RL_TEXTURE_FILTER_LINEAR_MIP_NEAREST = 9985
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_MIP_LINEAR = 9987
+raylib.RL_TEXTURE_FILTER_MIP_LINEAR = 9987;
 
 /**
  * Anisotropic filter (custom identifier)
@@ -23201,7 +21760,7 @@ raylib.RL_TEXTURE_FILTER_MIP_LINEAR = 9987
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_FILTER_ANISOTROPIC = 12288
+raylib.RL_TEXTURE_FILTER_ANISOTROPIC = 12288;
 
 /**
  * Texture mipmap bias, percentage ratio (custom identifier)
@@ -23209,7 +21768,7 @@ raylib.RL_TEXTURE_FILTER_ANISOTROPIC = 12288
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_MIPMAP_BIAS_RATIO = 16384
+raylib.RL_TEXTURE_MIPMAP_BIAS_RATIO = 16384;
 
 /**
  * GL_REPEAT
@@ -23217,7 +21776,7 @@ raylib.RL_TEXTURE_MIPMAP_BIAS_RATIO = 16384
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_WRAP_REPEAT = 10497
+raylib.RL_TEXTURE_WRAP_REPEAT = 10497;
 
 /**
  * GL_CLAMP_TO_EDGE
@@ -23225,7 +21784,7 @@ raylib.RL_TEXTURE_WRAP_REPEAT = 10497
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_WRAP_CLAMP = 33071
+raylib.RL_TEXTURE_WRAP_CLAMP = 33071;
 
 /**
  * GL_MIRRORED_REPEAT
@@ -23233,7 +21792,7 @@ raylib.RL_TEXTURE_WRAP_CLAMP = 33071
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_WRAP_MIRROR_REPEAT = 33648
+raylib.RL_TEXTURE_WRAP_MIRROR_REPEAT = 33648;
 
 /**
  * GL_MIRROR_CLAMP_EXT
@@ -23241,7 +21800,7 @@ raylib.RL_TEXTURE_WRAP_MIRROR_REPEAT = 33648
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE_WRAP_MIRROR_CLAMP = 34626
+raylib.RL_TEXTURE_WRAP_MIRROR_CLAMP = 34626;
 
 /**
  * GL_MODELVIEW
@@ -23249,7 +21808,7 @@ raylib.RL_TEXTURE_WRAP_MIRROR_CLAMP = 34626
  * @type {number}
  * @constant
  */
-raylib.RL_MODELVIEW = 5888
+raylib.RL_MODELVIEW = 5888;
 
 /**
  * GL_PROJECTION
@@ -23257,7 +21816,7 @@ raylib.RL_MODELVIEW = 5888
  * @type {number}
  * @constant
  */
-raylib.RL_PROJECTION = 5889
+raylib.RL_PROJECTION = 5889;
 
 /**
  * GL_TEXTURE
@@ -23265,7 +21824,7 @@ raylib.RL_PROJECTION = 5889
  * @type {number}
  * @constant
  */
-raylib.RL_TEXTURE = 5890
+raylib.RL_TEXTURE = 5890;
 
 /**
  * GL_LINES
@@ -23273,7 +21832,7 @@ raylib.RL_TEXTURE = 5890
  * @type {number}
  * @constant
  */
-raylib.RL_LINES = 1
+raylib.RL_LINES = 1;
 
 /**
  * GL_TRIANGLES
@@ -23281,7 +21840,7 @@ raylib.RL_LINES = 1
  * @type {number}
  * @constant
  */
-raylib.RL_TRIANGLES = 4
+raylib.RL_TRIANGLES = 4;
 
 /**
  * GL_QUADS
@@ -23289,7 +21848,7 @@ raylib.RL_TRIANGLES = 4
  * @type {number}
  * @constant
  */
-raylib.RL_QUADS = 7
+raylib.RL_QUADS = 7;
 
 /**
  * GL_UNSIGNED_BYTE
@@ -23297,7 +21856,7 @@ raylib.RL_QUADS = 7
  * @type {number}
  * @constant
  */
-raylib.RL_UNSIGNED_BYTE = 5121
+raylib.RL_UNSIGNED_BYTE = 5121;
 
 /**
  * GL_FLOAT
@@ -23305,7 +21864,7 @@ raylib.RL_UNSIGNED_BYTE = 5121
  * @type {number}
  * @constant
  */
-raylib.RL_FLOAT = 5126
+raylib.RL_FLOAT = 5126;
 
 /**
  * GL_STREAM_DRAW
@@ -23313,7 +21872,7 @@ raylib.RL_FLOAT = 5126
  * @type {number}
  * @constant
  */
-raylib.RL_STREAM_DRAW = 35040
+raylib.RL_STREAM_DRAW = 35040;
 
 /**
  * GL_STREAM_READ
@@ -23321,7 +21880,7 @@ raylib.RL_STREAM_DRAW = 35040
  * @type {number}
  * @constant
  */
-raylib.RL_STREAM_READ = 35041
+raylib.RL_STREAM_READ = 35041;
 
 /**
  * GL_STREAM_COPY
@@ -23329,7 +21888,7 @@ raylib.RL_STREAM_READ = 35041
  * @type {number}
  * @constant
  */
-raylib.RL_STREAM_COPY = 35042
+raylib.RL_STREAM_COPY = 35042;
 
 /**
  * GL_STATIC_DRAW
@@ -23337,7 +21896,7 @@ raylib.RL_STREAM_COPY = 35042
  * @type {number}
  * @constant
  */
-raylib.RL_STATIC_DRAW = 35044
+raylib.RL_STATIC_DRAW = 35044;
 
 /**
  * GL_STATIC_READ
@@ -23345,7 +21904,7 @@ raylib.RL_STATIC_DRAW = 35044
  * @type {number}
  * @constant
  */
-raylib.RL_STATIC_READ = 35045
+raylib.RL_STATIC_READ = 35045;
 
 /**
  * GL_STATIC_COPY
@@ -23353,7 +21912,7 @@ raylib.RL_STATIC_READ = 35045
  * @type {number}
  * @constant
  */
-raylib.RL_STATIC_COPY = 35046
+raylib.RL_STATIC_COPY = 35046;
 
 /**
  * GL_DYNAMIC_DRAW
@@ -23361,7 +21920,7 @@ raylib.RL_STATIC_COPY = 35046
  * @type {number}
  * @constant
  */
-raylib.RL_DYNAMIC_DRAW = 35048
+raylib.RL_DYNAMIC_DRAW = 35048;
 
 /**
  * GL_DYNAMIC_READ
@@ -23369,7 +21928,7 @@ raylib.RL_DYNAMIC_DRAW = 35048
  * @type {number}
  * @constant
  */
-raylib.RL_DYNAMIC_READ = 35049
+raylib.RL_DYNAMIC_READ = 35049;
 
 /**
  * GL_DYNAMIC_COPY
@@ -23377,7 +21936,7 @@ raylib.RL_DYNAMIC_READ = 35049
  * @type {number}
  * @constant
  */
-raylib.RL_DYNAMIC_COPY = 35050
+raylib.RL_DYNAMIC_COPY = 35050;
 
 /**
  * GL_FRAGMENT_SHADER
@@ -23385,7 +21944,7 @@ raylib.RL_DYNAMIC_COPY = 35050
  * @type {number}
  * @constant
  */
-raylib.RL_FRAGMENT_SHADER = 35632
+raylib.RL_FRAGMENT_SHADER = 35632;
 
 /**
  * GL_VERTEX_SHADER
@@ -23393,7 +21952,7 @@ raylib.RL_FRAGMENT_SHADER = 35632
  * @type {number}
  * @constant
  */
-raylib.RL_VERTEX_SHADER = 35633
+raylib.RL_VERTEX_SHADER = 35633;
 
 /**
  * GL_COMPUTE_SHADER
@@ -23401,7 +21960,7 @@ raylib.RL_VERTEX_SHADER = 35633
  * @type {number}
  * @constant
  */
-raylib.RL_COMPUTE_SHADER = 37305
+raylib.RL_COMPUTE_SHADER = 37305;
 
 /**
  * GL_ZERO
@@ -23409,7 +21968,7 @@ raylib.RL_COMPUTE_SHADER = 37305
  * @type {number}
  * @constant
  */
-raylib.RL_ZERO = 0
+raylib.RL_ZERO = 0;
 
 /**
  * GL_ONE
@@ -23417,7 +21976,7 @@ raylib.RL_ZERO = 0
  * @type {number}
  * @constant
  */
-raylib.RL_ONE = 1
+raylib.RL_ONE = 1;
 
 /**
  * GL_SRC_COLOR
@@ -23425,7 +21984,7 @@ raylib.RL_ONE = 1
  * @type {number}
  * @constant
  */
-raylib.RL_SRC_COLOR = 768
+raylib.RL_SRC_COLOR = 768;
 
 /**
  * GL_ONE_MINUS_SRC_COLOR
@@ -23433,7 +21992,7 @@ raylib.RL_SRC_COLOR = 768
  * @type {number}
  * @constant
  */
-raylib.RL_ONE_MINUS_SRC_COLOR = 769
+raylib.RL_ONE_MINUS_SRC_COLOR = 769;
 
 /**
  * GL_SRC_ALPHA
@@ -23441,7 +22000,7 @@ raylib.RL_ONE_MINUS_SRC_COLOR = 769
  * @type {number}
  * @constant
  */
-raylib.RL_SRC_ALPHA = 770
+raylib.RL_SRC_ALPHA = 770;
 
 /**
  * GL_ONE_MINUS_SRC_ALPHA
@@ -23449,7 +22008,7 @@ raylib.RL_SRC_ALPHA = 770
  * @type {number}
  * @constant
  */
-raylib.RL_ONE_MINUS_SRC_ALPHA = 771
+raylib.RL_ONE_MINUS_SRC_ALPHA = 771;
 
 /**
  * GL_DST_ALPHA
@@ -23457,7 +22016,7 @@ raylib.RL_ONE_MINUS_SRC_ALPHA = 771
  * @type {number}
  * @constant
  */
-raylib.RL_DST_ALPHA = 772
+raylib.RL_DST_ALPHA = 772;
 
 /**
  * GL_ONE_MINUS_DST_ALPHA
@@ -23465,7 +22024,7 @@ raylib.RL_DST_ALPHA = 772
  * @type {number}
  * @constant
  */
-raylib.RL_ONE_MINUS_DST_ALPHA = 773
+raylib.RL_ONE_MINUS_DST_ALPHA = 773;
 
 /**
  * GL_DST_COLOR
@@ -23473,7 +22032,7 @@ raylib.RL_ONE_MINUS_DST_ALPHA = 773
  * @type {number}
  * @constant
  */
-raylib.RL_DST_COLOR = 774
+raylib.RL_DST_COLOR = 774;
 
 /**
  * GL_ONE_MINUS_DST_COLOR
@@ -23481,7 +22040,7 @@ raylib.RL_DST_COLOR = 774
  * @type {number}
  * @constant
  */
-raylib.RL_ONE_MINUS_DST_COLOR = 775
+raylib.RL_ONE_MINUS_DST_COLOR = 775;
 
 /**
  * GL_SRC_ALPHA_SATURATE
@@ -23489,7 +22048,7 @@ raylib.RL_ONE_MINUS_DST_COLOR = 775
  * @type {number}
  * @constant
  */
-raylib.RL_SRC_ALPHA_SATURATE = 776
+raylib.RL_SRC_ALPHA_SATURATE = 776;
 
 /**
  * GL_CONSTANT_COLOR
@@ -23497,7 +22056,7 @@ raylib.RL_SRC_ALPHA_SATURATE = 776
  * @type {number}
  * @constant
  */
-raylib.RL_CONSTANT_COLOR = 32769
+raylib.RL_CONSTANT_COLOR = 32769;
 
 /**
  * GL_ONE_MINUS_CONSTANT_COLOR
@@ -23505,7 +22064,7 @@ raylib.RL_CONSTANT_COLOR = 32769
  * @type {number}
  * @constant
  */
-raylib.RL_ONE_MINUS_CONSTANT_COLOR = 32770
+raylib.RL_ONE_MINUS_CONSTANT_COLOR = 32770;
 
 /**
  * GL_CONSTANT_ALPHA
@@ -23513,7 +22072,7 @@ raylib.RL_ONE_MINUS_CONSTANT_COLOR = 32770
  * @type {number}
  * @constant
  */
-raylib.RL_CONSTANT_ALPHA = 32771
+raylib.RL_CONSTANT_ALPHA = 32771;
 
 /**
  * GL_ONE_MINUS_CONSTANT_ALPHA
@@ -23521,7 +22080,7 @@ raylib.RL_CONSTANT_ALPHA = 32771
  * @type {number}
  * @constant
  */
-raylib.RL_ONE_MINUS_CONSTANT_ALPHA = 32772
+raylib.RL_ONE_MINUS_CONSTANT_ALPHA = 32772;
 
 /**
  * GL_FUNC_ADD
@@ -23529,7 +22088,7 @@ raylib.RL_ONE_MINUS_CONSTANT_ALPHA = 32772
  * @type {number}
  * @constant
  */
-raylib.RL_FUNC_ADD = 32774
+raylib.RL_FUNC_ADD = 32774;
 
 /**
  * GL_MIN
@@ -23537,7 +22096,7 @@ raylib.RL_FUNC_ADD = 32774
  * @type {number}
  * @constant
  */
-raylib.RL_MIN = 32775
+raylib.RL_MIN = 32775;
 
 /**
  * GL_MAX
@@ -23545,7 +22104,7 @@ raylib.RL_MIN = 32775
  * @type {number}
  * @constant
  */
-raylib.RL_MAX = 32776
+raylib.RL_MAX = 32776;
 
 /**
  * GL_FUNC_SUBTRACT
@@ -23553,7 +22112,7 @@ raylib.RL_MAX = 32776
  * @type {number}
  * @constant
  */
-raylib.RL_FUNC_SUBTRACT = 32778
+raylib.RL_FUNC_SUBTRACT = 32778;
 
 /**
  * GL_FUNC_REVERSE_SUBTRACT
@@ -23561,7 +22120,7 @@ raylib.RL_FUNC_SUBTRACT = 32778
  * @type {number}
  * @constant
  */
-raylib.RL_FUNC_REVERSE_SUBTRACT = 32779
+raylib.RL_FUNC_REVERSE_SUBTRACT = 32779;
 
 /**
  * GL_BLEND_EQUATION
@@ -23569,7 +22128,7 @@ raylib.RL_FUNC_REVERSE_SUBTRACT = 32779
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_EQUATION = 32777
+raylib.RL_BLEND_EQUATION = 32777;
 
 /**
  * GL_BLEND_EQUATION_RGB   // (Same as BLEND_EQUATION)
@@ -23577,7 +22136,7 @@ raylib.RL_BLEND_EQUATION = 32777
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_EQUATION_RGB = 32777
+raylib.RL_BLEND_EQUATION_RGB = 32777;
 
 /**
  * GL_BLEND_EQUATION_ALPHA
@@ -23585,7 +22144,7 @@ raylib.RL_BLEND_EQUATION_RGB = 32777
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_EQUATION_ALPHA = 34877
+raylib.RL_BLEND_EQUATION_ALPHA = 34877;
 
 /**
  * GL_BLEND_DST_RGB
@@ -23593,7 +22152,7 @@ raylib.RL_BLEND_EQUATION_ALPHA = 34877
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_DST_RGB = 32968
+raylib.RL_BLEND_DST_RGB = 32968;
 
 /**
  * GL_BLEND_SRC_RGB
@@ -23601,7 +22160,7 @@ raylib.RL_BLEND_DST_RGB = 32968
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_SRC_RGB = 32969
+raylib.RL_BLEND_SRC_RGB = 32969;
 
 /**
  * GL_BLEND_DST_ALPHA
@@ -23609,7 +22168,7 @@ raylib.RL_BLEND_SRC_RGB = 32969
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_DST_ALPHA = 32970
+raylib.RL_BLEND_DST_ALPHA = 32970;
 
 /**
  * GL_BLEND_SRC_ALPHA
@@ -23617,7 +22176,7 @@ raylib.RL_BLEND_DST_ALPHA = 32970
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_SRC_ALPHA = 32971
+raylib.RL_BLEND_SRC_ALPHA = 32971;
 
 /**
  * GL_BLEND_COLOR
@@ -23625,7 +22184,7 @@ raylib.RL_BLEND_SRC_ALPHA = 32971
  * @type {number}
  * @constant
  */
-raylib.RL_BLEND_COLOR = 32773
+raylib.RL_BLEND_COLOR = 32773;
 
 /**
  * GL_READ_FRAMEBUFFER
@@ -23633,7 +22192,7 @@ raylib.RL_BLEND_COLOR = 32773
  * @type {number}
  * @constant
  */
-raylib.RL_READ_FRAMEBUFFER = 36008
+raylib.RL_READ_FRAMEBUFFER = 36008;
 
 /**
  * GL_DRAW_FRAMEBUFFER
@@ -23641,105 +22200,105 @@ raylib.RL_READ_FRAMEBUFFER = 36008
  * @type {number}
  * @constant
  */
-raylib.RL_DRAW_FRAMEBUFFER = 36009
+raylib.RL_DRAW_FRAMEBUFFER = 36009;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_POSITION = 0
+raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_POSITION = 0;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_TEXCOORD = 1
+raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_TEXCOORD = 1;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_NORMAL = 2
+raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_NORMAL = 2;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_COLOR = 3
+raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_COLOR = 3;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_TANGENT = 4
+raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_TANGENT = 4;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_TEXCOORD2 = 5
+raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_TEXCOORD2 = 5;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_INDICES = 6
+raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_INDICES = 6;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_BONEIDS = 7
+raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_BONEIDS = 7;
 
 /**
- * 
+ *
  *
  * @type {number}
  * @constant
  */
-raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_BONEWEIGHTS = 8
+raylib.RL_DEFAULT_SHADER_ATTRIB_LOCATION_BONEWEIGHTS = 8;
 
-raylib.LIGHTGRAY = { r: 200, g: 200, b: 200, a: 255 }
-raylib.GRAY = { r: 130, g: 130, b: 130, a: 255 }
-raylib.DARKGRAY = { r: 80, g: 80, b: 80, a: 255 }
-raylib.YELLOW = { r: 253, g: 249, b: 0, a: 255 }
-raylib.GOLD = { r: 255, g: 203, b: 0, a: 255 }
-raylib.ORANGE = { r: 255, g: 161, b: 0, a: 255 }
-raylib.PINK = { r: 255, g: 109, b: 194, a: 255 }
-raylib.RED = { r: 230, g: 41, b: 55, a: 255 }
-raylib.MAROON = { r: 190, g: 33, b: 55, a: 255 }
-raylib.GREEN = { r: 0, g: 228, b: 48, a: 255 }
-raylib.LIME = { r: 0, g: 158, b: 47, a: 255 }
-raylib.DARKGREEN = { r: 0, g: 117, b: 44, a: 255 }
-raylib.SKYBLUE = { r: 102, g: 191, b: 255, a: 255 }
-raylib.BLUE = { r: 0, g: 121, b: 241, a: 255 }
-raylib.DARKBLUE = { r: 0, g: 82, b: 172, a: 255 }
-raylib.PURPLE = { r: 200, g: 122, b: 255, a: 255 }
-raylib.VIOLET = { r: 135, g: 60, b: 190, a: 255 }
-raylib.DARKPURPLE = { r: 112, g: 31, b: 126, a: 255 }
-raylib.BEIGE = { r: 211, g: 176, b: 131, a: 255 }
-raylib.BROWN = { r: 127, g: 106, b: 79, a: 255 }
-raylib.DARKBROWN = { r: 76, g: 63, b: 47, a: 255 }
-raylib.WHITE = { r: 255, g: 255, b: 255, a: 255 }
-raylib.BLACK = { r: 0, g: 0, b: 0, a: 255 }
-raylib.BLANK = { r: 0, g: 0, b: 0, a: 0 }
-raylib.MAGENTA = { r: 255, g: 0, b: 255, a: 255 }
-raylib.RAYWHITE = { r: 245, g: 245, b: 245, a: 255 }
+raylib.LIGHTGRAY = { r: 200, g: 200, b: 200, a: 255 };
+raylib.GRAY = { r: 130, g: 130, b: 130, a: 255 };
+raylib.DARKGRAY = { r: 80, g: 80, b: 80, a: 255 };
+raylib.YELLOW = { r: 253, g: 249, b: 0, a: 255 };
+raylib.GOLD = { r: 255, g: 203, b: 0, a: 255 };
+raylib.ORANGE = { r: 255, g: 161, b: 0, a: 255 };
+raylib.PINK = { r: 255, g: 109, b: 194, a: 255 };
+raylib.RED = { r: 230, g: 41, b: 55, a: 255 };
+raylib.MAROON = { r: 190, g: 33, b: 55, a: 255 };
+raylib.GREEN = { r: 0, g: 228, b: 48, a: 255 };
+raylib.LIME = { r: 0, g: 158, b: 47, a: 255 };
+raylib.DARKGREEN = { r: 0, g: 117, b: 44, a: 255 };
+raylib.SKYBLUE = { r: 102, g: 191, b: 255, a: 255 };
+raylib.BLUE = { r: 0, g: 121, b: 241, a: 255 };
+raylib.DARKBLUE = { r: 0, g: 82, b: 172, a: 255 };
+raylib.PURPLE = { r: 200, g: 122, b: 255, a: 255 };
+raylib.VIOLET = { r: 135, g: 60, b: 190, a: 255 };
+raylib.DARKPURPLE = { r: 112, g: 31, b: 126, a: 255 };
+raylib.BEIGE = { r: 211, g: 176, b: 131, a: 255 };
+raylib.BROWN = { r: 127, g: 106, b: 79, a: 255 };
+raylib.DARKBROWN = { r: 76, g: 63, b: 47, a: 255 };
+raylib.WHITE = { r: 255, g: 255, b: 255, a: 255 };
+raylib.BLACK = { r: 0, g: 0, b: 0, a: 255 };
+raylib.BLANK = { r: 0, g: 0, b: 0, a: 0 };
+raylib.MAGENTA = { r: 255, g: 0, b: 255, a: 255 };
+raylib.RAYWHITE = { r: 245, g: 245, b: 245, a: 255 };
 
-module.exports = raylib
+module.exports = raylib;

@@ -1,5 +1,3 @@
-
-
 ```cpp
 void BindDrawPixelV(const Napi::CallbackInfo& info, int& index) {
 	// create an index variable to index into info[] with
@@ -24,7 +22,7 @@ Napi::Value BindWindowShouldClose(const Napi::CallbackInfo& info) {
 ```cpp
 Napi::Object BindLoadTexture(const Napi::CallbackInfo& info) {
 	int index = -1;
-	return ToValue(info.Env(), 
+	return ToValue(info.Env(),
 		LoadTexture(
 			StringFromValue(info, index)
 		)

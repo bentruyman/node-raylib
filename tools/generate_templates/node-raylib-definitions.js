@@ -3,13 +3,13 @@ const ArgumentTypeConversion = require("./ArgumentTypeConversion");
 const FunctionDefinition = (func) => {
   return `/** ${func.description} */
   export function ${func.name}(${
-    !func.params
-      ? ""
-      : func.params
+    func.params
+      ? func.params
           .map(
-            (param) => `${param.name}: ${ArgumentTypeConversion(param.type)}`
+            (param) => `${param.name}: ${ArgumentTypeConversion(param.type)}`,
           )
           .join(", ")
+      : ""
   }): ${ArgumentTypeConversion(func.returnType)}
   `;
 };
@@ -23,16 +23,16 @@ const StructInterface = (struct) => {
         (field) =>
           `/** ${field.description}. (${field.type}) */\n    ${
             field.name
-          }: ${ArgumentTypeConversion(field.type)}`
+          }: ${ArgumentTypeConversion(field.type)}`,
       )
       .join("\n    ")}
   }`;
 };
 
-module.exports = ({ functions, structs, enums, blocklist }) => {
+const generateDefinitions = ({ functions, structs, enums, blocklist }) => {
   return `// GENERATED CODE: DO NOT MODIFY
 declare module "raylib" {
-  ${structs.map(StructInterface).join("\n  ")}
+  ${structs.map((struct) => StructInterface(struct)).join("\n  ")}
 
   /** RenderTexture, fbo for texture rendering */
   export type RenderTexture2D = RenderTexture
@@ -50,7 +50,7 @@ declare module "raylib" {
   export type Quaternion = Vector4
   ${functions
     .filter(({ name }) => !blocklist.includes(name))
-    .map(FunctionDefinition)
+    .map((func) => FunctionDefinition(func))
     .join("\n  ")}
 
   /** Set shader uniform float */
@@ -98,7 +98,7 @@ declare module "raylib" {
       return e.values
         .map(
           (v) =>
-            `  /** ${v.description} */\n  export const ${v.name} = ${v.value}`
+            `  /** ${v.description} */\n  export const ${v.name} = ${v.value}`,
         )
         .join("\n");
     })
@@ -135,3 +135,5 @@ declare module "raylib" {
 }
 `;
 };
+
+module.exports = generateDefinitions;

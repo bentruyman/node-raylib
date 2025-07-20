@@ -103,7 +103,7 @@ const UnwrappedFuncArguments = (structs, func) => {
  */
 const FromValue = (structs, struct) => `
 inline ${struct.name} ${SanitizeTypeName(
-  struct.name
+  struct.name,
 )}FromValue(const Napi::CallbackInfo& info, int index) {
   return {
     ${UnwrappedStructProperties(structs, struct)}
@@ -120,7 +120,7 @@ inline Napi::Value ToValue(Napi::Env env, ${struct.name} obj) {
   Napi::Object out = Napi::Object::New(env);
   ${struct.fields
     .map(
-      (field) => `out.Set("${field.name}", ToValue(env, obj.${field.name}));`
+      (field) => `out.Set("${field.name}", ToValue(env, obj.${field.name}));`,
     )
     .join("\n  ")}
   return out;
@@ -168,8 +168,9 @@ Napi::Value Bind${func.name}(const Napi::CallbackInfo& info) {
     ${
       func.params.length === 1
         ? "&obj\n"
-        : ["&obj"].concat(
-            func.params
+        : [
+            "&obj",
+            ...(func.params
               ?.filter((param, index) => index !== 0)
               .map((param) => {
                 const out = `${
@@ -177,9 +178,8 @@ Napi::Value Bind${func.name}(const Napi::CallbackInfo& info) {
                 } ${SanitizeTypeName(param.type)}FromValue(info, ${length})`;
                 length += TypeUnwrappedLength(structs, param.type);
                 return out;
-              })
-              .join(",\n      ")
-          )
+              }) || []),
+          ].join(",\n      ")
     }
   );
   return ToValue(info.Env(), obj);
@@ -194,7 +194,13 @@ Napi::Value Bind${func.name}(const Napi::CallbackInfo& info) {
 const ExportFunctionBinding = (func) =>
   `exports.Set("Bind${func.name}", Napi::Function::New(env, Bind${func.name}));`;
 
-module.exports = ({ functions, structs, enums, blocklist, byreflist }) => `
+const generateBindings = ({
+  functions,
+  structs,
+  _enums,
+  blocklist,
+  byreflist,
+}) => `
 // GENERATED CODE: DO NOT MODIFY
 #include <string>
 #include <napi.h>
@@ -317,7 +323,7 @@ ${structs
       !blocklist.includes(name) &&
       name !== "rlVertexBuffer" &&
       name !== "AutomationEvent" &&
-      name !== "ModelAnimation"
+      name !== "ModelAnimation",
   )
   .map((struct) => {
     return FromValue(structs, struct);
@@ -326,7 +332,7 @@ ${structs
 // Convert structs to Napi::Objects for output to JS
 ${structs
   .filter(({ name }) => !blocklist.includes(name))
-  .map(ToValue)
+  .map((struct) => ToValue(struct))
   .join("\n")}
 
 inline Texture2D Texture2DFromValue(const Napi::CallbackInfo& info, int index) {
@@ -445,7 +451,7 @@ Napi::Object Init(Napi::Env env, Napi::Object exports) {
 
   ${functions
     .filter(({ name }) => !blocklist.includes(name))
-    .map(ExportFunctionBinding)
+    .map((func) => ExportFunctionBinding(func))
     .join("\n  ")}
 
   exports.Set("BindSetShaderFloat", Napi::Function::New(env, BindSetShaderFloat));
@@ -459,3 +465,5 @@ Napi::Object Init(Napi::Env env, Napi::Object exports) {
 
 NODE_API_MODULE(addon, Init);
 `;
+
+module.exports = generateBindings;

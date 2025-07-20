@@ -2424,32 +2424,37 @@
 <a name="InitWindow"></a>
 
 ## InitWindow(width, height, title) ⇒ <code>undefined</code>
+
 Initialize window and OpenGL context
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| title | <code>string</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
+| title  | <code>string</code> |
 
 <a name="CloseWindow"></a>
 
 ## CloseWindow() ⇒ <code>undefined</code>
+
 Close window and unload OpenGL context
 
 **Kind**: global function  
 <a name="WindowShouldClose"></a>
 
 ## WindowShouldClose() ⇒ <code>boolean</code>
-Check if application should close (KEY_ESCAPE pressed or windows close icon clicked)
+
+Check if application should close (KEY_ESCAPE pressed or windows close icon
+clicked)
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - The resulting bool.  
 <a name="IsWindowReady"></a>
 
 ## IsWindowReady() ⇒ <code>boolean</code>
+
 Check if window has been initialized successfully
 
 **Kind**: global function  
@@ -2457,6 +2462,7 @@ Check if window has been initialized successfully
 <a name="IsWindowFullscreen"></a>
 
 ## IsWindowFullscreen() ⇒ <code>boolean</code>
+
 Check if window is currently fullscreen
 
 **Kind**: global function  
@@ -2464,6 +2470,7 @@ Check if window is currently fullscreen
 <a name="IsWindowHidden"></a>
 
 ## IsWindowHidden() ⇒ <code>boolean</code>
+
 Check if window is currently hidden
 
 **Kind**: global function  
@@ -2471,6 +2478,7 @@ Check if window is currently hidden
 <a name="IsWindowMinimized"></a>
 
 ## IsWindowMinimized() ⇒ <code>boolean</code>
+
 Check if window is currently minimized
 
 **Kind**: global function  
@@ -2478,6 +2486,7 @@ Check if window is currently minimized
 <a name="IsWindowMaximized"></a>
 
 ## IsWindowMaximized() ⇒ <code>boolean</code>
+
 Check if window is currently maximized
 
 **Kind**: global function  
@@ -2485,6 +2494,7 @@ Check if window is currently maximized
 <a name="IsWindowFocused"></a>
 
 ## IsWindowFocused() ⇒ <code>boolean</code>
+
 Check if window is currently focused
 
 **Kind**: global function  
@@ -2492,6 +2502,7 @@ Check if window is currently focused
 <a name="IsWindowResized"></a>
 
 ## IsWindowResized() ⇒ <code>boolean</code>
+
 Check if window has been resized last frame
 
 **Kind**: global function  
@@ -2499,187 +2510,209 @@ Check if window has been resized last frame
 <a name="IsWindowState"></a>
 
 ## IsWindowState(flag) ⇒ <code>boolean</code>
+
 Check if one specific window flag is enabled
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| flag | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| flag  | <code>number</code> |
 
 <a name="SetWindowState"></a>
 
 ## SetWindowState(flags) ⇒ <code>undefined</code>
+
 Set window configuration state using flags
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| flags | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| flags | <code>number</code> |
 
 <a name="ClearWindowState"></a>
 
 ## ClearWindowState(flags) ⇒ <code>undefined</code>
+
 Clear window configuration state flags
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| flags | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| flags | <code>number</code> |
 
 <a name="ToggleFullscreen"></a>
 
 ## ToggleFullscreen() ⇒ <code>undefined</code>
-Toggle window state: fullscreen/windowed, resizes monitor to match window resolution
+
+Toggle window state: fullscreen/windowed, resizes monitor to match window
+resolution
 
 **Kind**: global function  
 <a name="ToggleBorderlessWindowed"></a>
 
 ## ToggleBorderlessWindowed() ⇒ <code>undefined</code>
-Toggle window state: borderless windowed, resizes window to match monitor resolution
+
+Toggle window state: borderless windowed, resizes window to match monitor
+resolution
 
 **Kind**: global function  
 <a name="MaximizeWindow"></a>
 
 ## MaximizeWindow() ⇒ <code>undefined</code>
+
 Set window state: maximized, if resizable
 
 **Kind**: global function  
 <a name="MinimizeWindow"></a>
 
 ## MinimizeWindow() ⇒ <code>undefined</code>
+
 Set window state: minimized, if resizable
 
 **Kind**: global function  
 <a name="RestoreWindow"></a>
 
 ## RestoreWindow() ⇒ <code>undefined</code>
+
 Set window state: not minimized/maximized
 
 **Kind**: global function  
 <a name="SetWindowIcon"></a>
 
 ## SetWindowIcon(image) ⇒ <code>undefined</code>
+
 Set icon for window (single image, RGBA 32bit)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="SetWindowIcons"></a>
 
 ## SetWindowIcons(images, count) ⇒ <code>undefined</code>
+
 Set icon for window (multiple images, RGBA 32bit)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| images | <code>number</code> | 
-| count | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| images | <code>number</code> |
+| count  | <code>number</code> |
 
 <a name="SetWindowTitle"></a>
 
 ## SetWindowTitle(title) ⇒ <code>undefined</code>
+
 Set title for window
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| title | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| title | <code>string</code> |
 
 <a name="SetWindowPosition"></a>
 
 ## SetWindowPosition(x, y) ⇒ <code>undefined</code>
+
 Set window position on screen
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
 
 <a name="SetWindowMonitor"></a>
 
 ## SetWindowMonitor(monitor) ⇒ <code>undefined</code>
+
 Set monitor for the current window
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| monitor | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| monitor | <code>number</code> |
 
 <a name="SetWindowMinSize"></a>
 
 ## SetWindowMinSize(width, height) ⇒ <code>undefined</code>
+
 Set window minimum dimensions (for FLAG_WINDOW_RESIZABLE)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
 
 <a name="SetWindowMaxSize"></a>
 
 ## SetWindowMaxSize(width, height) ⇒ <code>undefined</code>
+
 Set window maximum dimensions (for FLAG_WINDOW_RESIZABLE)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
 
 <a name="SetWindowSize"></a>
 
 ## SetWindowSize(width, height) ⇒ <code>undefined</code>
+
 Set window dimensions
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
 
 <a name="SetWindowOpacity"></a>
 
 ## SetWindowOpacity(opacity) ⇒ <code>undefined</code>
+
 Set window opacity [0.0f..1.0f]
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| opacity | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| opacity | <code>number</code> |
 
 <a name="SetWindowFocused"></a>
 
 ## SetWindowFocused() ⇒ <code>undefined</code>
+
 Set window focused
 
 **Kind**: global function  
 <a name="GetWindowHandle"></a>
 
 ## GetWindowHandle() ⇒ <code>number</code>
+
 Get native window handle
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting void *.  
+**Returns**: <code>number</code> - The resulting void \*.  
 <a name="GetScreenWidth"></a>
 
 ## GetScreenWidth() ⇒ <code>number</code>
+
 Get current screen width
 
 **Kind**: global function  
@@ -2687,6 +2720,7 @@ Get current screen width
 <a name="GetScreenHeight"></a>
 
 ## GetScreenHeight() ⇒ <code>number</code>
+
 Get current screen height
 
 **Kind**: global function  
@@ -2694,6 +2728,7 @@ Get current screen height
 <a name="GetRenderWidth"></a>
 
 ## GetRenderWidth() ⇒ <code>number</code>
+
 Get current render width (it considers HiDPI)
 
 **Kind**: global function  
@@ -2701,6 +2736,7 @@ Get current render width (it considers HiDPI)
 <a name="GetRenderHeight"></a>
 
 ## GetRenderHeight() ⇒ <code>number</code>
+
 Get current render height (it considers HiDPI)
 
 **Kind**: global function  
@@ -2708,6 +2744,7 @@ Get current render height (it considers HiDPI)
 <a name="GetMonitorCount"></a>
 
 ## GetMonitorCount() ⇒ <code>number</code>
+
 Get number of connected monitors
 
 **Kind**: global function  
@@ -2715,6 +2752,7 @@ Get number of connected monitors
 <a name="GetCurrentMonitor"></a>
 
 ## GetCurrentMonitor() ⇒ <code>number</code>
+
 Get current monitor where window is placed
 
 **Kind**: global function  
@@ -2722,78 +2760,85 @@ Get current monitor where window is placed
 <a name="GetMonitorPosition"></a>
 
 ## GetMonitorPosition(monitor) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get specified monitor position
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| monitor | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| monitor | <code>number</code> |
 
 <a name="GetMonitorWidth"></a>
 
 ## GetMonitorWidth(monitor) ⇒ <code>number</code>
+
 Get specified monitor width (current video mode used by monitor)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| monitor | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| monitor | <code>number</code> |
 
 <a name="GetMonitorHeight"></a>
 
 ## GetMonitorHeight(monitor) ⇒ <code>number</code>
+
 Get specified monitor height (current video mode used by monitor)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| monitor | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| monitor | <code>number</code> |
 
 <a name="GetMonitorPhysicalWidth"></a>
 
 ## GetMonitorPhysicalWidth(monitor) ⇒ <code>number</code>
+
 Get specified monitor physical width in millimetres
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| monitor | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| monitor | <code>number</code> |
 
 <a name="GetMonitorPhysicalHeight"></a>
 
 ## GetMonitorPhysicalHeight(monitor) ⇒ <code>number</code>
+
 Get specified monitor physical height in millimetres
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| monitor | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| monitor | <code>number</code> |
 
 <a name="GetMonitorRefreshRate"></a>
 
 ## GetMonitorRefreshRate(monitor) ⇒ <code>number</code>
+
 Get specified monitor refresh rate
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| monitor | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| monitor | <code>number</code> |
 
 <a name="GetWindowPosition"></a>
 
 ## GetWindowPosition() ⇒ [<code>Vector2</code>](#Vector2)
+
 Get window position XY on monitor
 
 **Kind**: global function  
@@ -2801,6 +2846,7 @@ Get window position XY on monitor
 <a name="GetWindowScaleDPI"></a>
 
 ## GetWindowScaleDPI() ⇒ [<code>Vector2</code>](#Vector2)
+
 Get window scale DPI factor
 
 **Kind**: global function  
@@ -2808,36 +2854,40 @@ Get window scale DPI factor
 <a name="GetMonitorName"></a>
 
 ## GetMonitorName(monitor) ⇒ <code>string</code>
+
 Get the human-readable, UTF-8 encoded name of the specified monitor
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| monitor | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| monitor | <code>number</code> |
 
 <a name="SetClipboardText"></a>
 
 ## SetClipboardText(text) ⇒ <code>undefined</code>
+
 Set clipboard text content
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="GetClipboardText"></a>
 
 ## GetClipboardText() ⇒ <code>string</code>
+
 Get clipboard text content
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.  
 <a name="GetClipboardImage"></a>
 
 ## GetClipboardImage() ⇒ <code>Image</code>
+
 Get clipboard image content
 
 **Kind**: global function  
@@ -2845,30 +2895,35 @@ Get clipboard image content
 <a name="EnableEventWaiting"></a>
 
 ## EnableEventWaiting() ⇒ <code>undefined</code>
+
 Enable waiting for events on EndDrawing(), no automatic event polling
 
 **Kind**: global function  
 <a name="DisableEventWaiting"></a>
 
 ## DisableEventWaiting() ⇒ <code>undefined</code>
+
 Disable waiting for events on EndDrawing(), automatic events polling
 
 **Kind**: global function  
 <a name="ShowCursor"></a>
 
 ## ShowCursor() ⇒ <code>undefined</code>
+
 Shows cursor
 
 **Kind**: global function  
 <a name="HideCursor"></a>
 
 ## HideCursor() ⇒ <code>undefined</code>
+
 Hides cursor
 
 **Kind**: global function  
 <a name="IsCursorHidden"></a>
 
 ## IsCursorHidden() ⇒ <code>boolean</code>
+
 Check if cursor is not visible
 
 **Kind**: global function  
@@ -2876,18 +2931,21 @@ Check if cursor is not visible
 <a name="EnableCursor"></a>
 
 ## EnableCursor() ⇒ <code>undefined</code>
+
 Enables cursor (unlock cursor)
 
 **Kind**: global function  
 <a name="DisableCursor"></a>
 
 ## DisableCursor() ⇒ <code>undefined</code>
+
 Disables cursor (lock cursor)
 
 **Kind**: global function  
 <a name="IsCursorOnScreen"></a>
 
 ## IsCursorOnScreen() ⇒ <code>boolean</code>
+
 Check if cursor is on the screen
 
 **Kind**: global function  
@@ -2895,358 +2953,392 @@ Check if cursor is on the screen
 <a name="ClearBackground"></a>
 
 ## ClearBackground(color) ⇒ <code>undefined</code>
+
 Set background color (framebuffer clear color)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| color | [<code>Color</code>](#Color) |
 
 <a name="BeginDrawing"></a>
 
 ## BeginDrawing() ⇒ <code>undefined</code>
+
 Setup canvas (framebuffer) to start drawing
 
 **Kind**: global function  
 <a name="EndDrawing"></a>
 
 ## EndDrawing() ⇒ <code>undefined</code>
+
 End canvas drawing and swap buffers (double buffering)
 
 **Kind**: global function  
 <a name="BeginMode2D"></a>
 
 ## BeginMode2D(camera) ⇒ <code>undefined</code>
+
 Begin 2D mode with custom camera (2D)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| camera | [<code>Camera2D</code>](#Camera2D) | 
+| Param  | Type                               |
+| ------ | ---------------------------------- |
+| camera | [<code>Camera2D</code>](#Camera2D) |
 
 <a name="EndMode2D"></a>
 
 ## EndMode2D() ⇒ <code>undefined</code>
+
 Ends 2D mode with custom camera
 
 **Kind**: global function  
 <a name="BeginMode3D"></a>
 
 ## BeginMode3D(camera) ⇒ <code>undefined</code>
+
 Begin 3D mode with custom camera (3D)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| camera | [<code>Camera3D</code>](#Camera3D) | 
+| Param  | Type                               |
+| ------ | ---------------------------------- |
+| camera | [<code>Camera3D</code>](#Camera3D) |
 
 <a name="EndMode3D"></a>
 
 ## EndMode3D() ⇒ <code>undefined</code>
+
 Ends 3D mode and returns to default 2D orthographic mode
 
 **Kind**: global function  
 <a name="BeginTextureMode"></a>
 
 ## BeginTextureMode(target) ⇒ <code>undefined</code>
+
 Begin drawing to render texture
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| target | <code>RenderTexture</code> | 
+| Param  | Type                       |
+| ------ | -------------------------- |
+| target | <code>RenderTexture</code> |
 
 <a name="EndTextureMode"></a>
 
 ## EndTextureMode() ⇒ <code>undefined</code>
+
 Ends drawing to render texture
 
 **Kind**: global function  
 <a name="BeginShaderMode"></a>
 
 ## BeginShaderMode(shader) ⇒ <code>undefined</code>
+
 Begin custom shader drawing
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| shader | <code>Shader</code> |
 
 <a name="EndShaderMode"></a>
 
 ## EndShaderMode() ⇒ <code>undefined</code>
+
 End custom shader drawing (use default shader)
 
 **Kind**: global function  
 <a name="BeginBlendMode"></a>
 
 ## BeginBlendMode(mode) ⇒ <code>undefined</code>
+
 Begin blending mode (alpha, additive, multiplied, subtract, custom)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| mode | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| mode  | <code>number</code> |
 
 <a name="EndBlendMode"></a>
 
 ## EndBlendMode() ⇒ <code>undefined</code>
+
 End blending mode (reset to default: alpha blending)
 
 **Kind**: global function  
 <a name="BeginScissorMode"></a>
 
 ## BeginScissorMode(x, y, width, height) ⇒ <code>undefined</code>
+
 Begin scissor mode (define screen area for following drawing)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| x      | <code>number</code> |
+| y      | <code>number</code> |
+| width  | <code>number</code> |
+| height | <code>number</code> |
 
 <a name="EndScissorMode"></a>
 
 ## EndScissorMode() ⇒ <code>undefined</code>
+
 End scissor mode
 
 **Kind**: global function  
 <a name="EndVrStereoMode"></a>
 
 ## EndVrStereoMode() ⇒ <code>undefined</code>
+
 End stereo rendering (requires VR simulator)
 
 **Kind**: global function  
 <a name="LoadShader"></a>
 
 ## LoadShader(vsFileName, fsFileName) ⇒ <code>Shader</code>
+
 Load shader from files and bind default locations
 
 **Kind**: global function  
-**Returns**: <code>Shader</code> - The resulting Shader.  
+**Returns**: <code>Shader</code> - The resulting Shader.
 
-| Param | Type |
-| --- | --- |
-| vsFileName | <code>string</code> | 
-| fsFileName | <code>string</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| vsFileName | <code>string</code> |
+| fsFileName | <code>string</code> |
 
 <a name="LoadShaderFromMemory"></a>
 
 ## LoadShaderFromMemory(vsCode, fsCode) ⇒ <code>Shader</code>
+
 Load shader from code strings and bind default locations
 
 **Kind**: global function  
-**Returns**: <code>Shader</code> - The resulting Shader.  
+**Returns**: <code>Shader</code> - The resulting Shader.
 
-| Param | Type |
-| --- | --- |
-| vsCode | <code>string</code> | 
-| fsCode | <code>string</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| vsCode | <code>string</code> |
+| fsCode | <code>string</code> |
 
 <a name="IsShaderValid"></a>
 
 ## IsShaderValid(shader) ⇒ <code>boolean</code>
+
 Check if a shader is valid (loaded on GPU)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| shader | <code>Shader</code> |
 
 <a name="GetShaderLocation"></a>
 
 ## GetShaderLocation(shader, uniformName) ⇒ <code>number</code>
+
 Get shader uniform location
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
-| uniformName | <code>string</code> | 
+| Param       | Type                |
+| ----------- | ------------------- |
+| shader      | <code>Shader</code> |
+| uniformName | <code>string</code> |
 
 <a name="GetShaderLocationAttrib"></a>
 
 ## GetShaderLocationAttrib(shader, attribName) ⇒ <code>number</code>
+
 Get shader attribute location
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
-| attribName | <code>string</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| shader     | <code>Shader</code> |
+| attribName | <code>string</code> |
 
 <a name="SetShaderValueMatrix"></a>
 
 ## SetShaderValueMatrix(shader, locIndex, mat) ⇒ <code>undefined</code>
+
 Set shader uniform value (matrix 4x4)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
-| locIndex | <code>number</code> | 
-| mat | <code>Matrix</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| shader   | <code>Shader</code> |
+| locIndex | <code>number</code> |
+| mat      | <code>Matrix</code> |
 
 <a name="SetShaderValueTexture"></a>
 
 ## SetShaderValueTexture(shader, locIndex, texture) ⇒ <code>undefined</code>
+
 Set shader uniform value for texture (sampler2d)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
-| locIndex | <code>number</code> | 
-| texture | <code>Texture</code> | 
+| Param    | Type                 |
+| -------- | -------------------- |
+| shader   | <code>Shader</code>  |
+| locIndex | <code>number</code>  |
+| texture  | <code>Texture</code> |
 
 <a name="UnloadShader"></a>
 
 ## UnloadShader(shader) ⇒ <code>undefined</code>
+
 Unload shader from GPU memory (VRAM)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| shader | <code>Shader</code> |
 
 <a name="GetScreenToWorldRay"></a>
 
 ## GetScreenToWorldRay(position, camera) ⇒ <code>Ray</code>
+
 Get a ray trace from screen position (i.e mouse)
 
 **Kind**: global function  
-**Returns**: <code>Ray</code> - The resulting Ray.  
+**Returns**: <code>Ray</code> - The resulting Ray.
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector2</code>](#Vector2) | 
-| camera | [<code>Camera3D</code>](#Camera3D) | 
+| Param    | Type                               |
+| -------- | ---------------------------------- |
+| position | [<code>Vector2</code>](#Vector2)   |
+| camera   | [<code>Camera3D</code>](#Camera3D) |
 
 <a name="GetScreenToWorldRayEx"></a>
 
 ## GetScreenToWorldRayEx(position, camera, width, height) ⇒ <code>Ray</code>
+
 Get a ray trace from screen position (i.e mouse) in a viewport
 
 **Kind**: global function  
-**Returns**: <code>Ray</code> - The resulting Ray.  
+**Returns**: <code>Ray</code> - The resulting Ray.
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector2</code>](#Vector2) | 
-| camera | [<code>Camera3D</code>](#Camera3D) | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param    | Type                               |
+| -------- | ---------------------------------- |
+| position | [<code>Vector2</code>](#Vector2)   |
+| camera   | [<code>Camera3D</code>](#Camera3D) |
+| width    | <code>number</code>                |
+| height   | <code>number</code>                |
 
 <a name="GetWorldToScreen"></a>
 
 ## GetWorldToScreen(position, camera) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get the screen space position for a 3d world space position
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector3</code>](#Vector3) | 
-| camera | [<code>Camera3D</code>](#Camera3D) | 
+| Param    | Type                               |
+| -------- | ---------------------------------- |
+| position | [<code>Vector3</code>](#Vector3)   |
+| camera   | [<code>Camera3D</code>](#Camera3D) |
 
 <a name="GetWorldToScreenEx"></a>
 
 ## GetWorldToScreenEx(position, camera, width, height) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get size position for a 3d world space position
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector3</code>](#Vector3) | 
-| camera | [<code>Camera3D</code>](#Camera3D) | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param    | Type                               |
+| -------- | ---------------------------------- |
+| position | [<code>Vector3</code>](#Vector3)   |
+| camera   | [<code>Camera3D</code>](#Camera3D) |
+| width    | <code>number</code>                |
+| height   | <code>number</code>                |
 
 <a name="GetWorldToScreen2D"></a>
 
 ## GetWorldToScreen2D(position, camera) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get the screen space position for a 2d camera world space position
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector2</code>](#Vector2) | 
-| camera | [<code>Camera2D</code>](#Camera2D) | 
+| Param    | Type                               |
+| -------- | ---------------------------------- |
+| position | [<code>Vector2</code>](#Vector2)   |
+| camera   | [<code>Camera2D</code>](#Camera2D) |
 
 <a name="GetScreenToWorld2D"></a>
 
 ## GetScreenToWorld2D(position, camera) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get the world space position for a 2d camera screen space position
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector2</code>](#Vector2) | 
-| camera | [<code>Camera2D</code>](#Camera2D) | 
+| Param    | Type                               |
+| -------- | ---------------------------------- |
+| position | [<code>Vector2</code>](#Vector2)   |
+| camera   | [<code>Camera2D</code>](#Camera2D) |
 
 <a name="GetCameraMatrix"></a>
 
 ## GetCameraMatrix(camera) ⇒ <code>Matrix</code>
+
 Get camera transform matrix (view matrix)
 
 **Kind**: global function  
-**Returns**: <code>Matrix</code> - The resulting Matrix.  
+**Returns**: <code>Matrix</code> - The resulting Matrix.
 
-| Param | Type |
-| --- | --- |
-| camera | [<code>Camera3D</code>](#Camera3D) | 
+| Param  | Type                               |
+| ------ | ---------------------------------- |
+| camera | [<code>Camera3D</code>](#Camera3D) |
 
 <a name="GetCameraMatrix2D"></a>
 
 ## GetCameraMatrix2D(camera) ⇒ <code>Matrix</code>
+
 Get camera 2d transform matrix
 
 **Kind**: global function  
-**Returns**: <code>Matrix</code> - The resulting Matrix.  
+**Returns**: <code>Matrix</code> - The resulting Matrix.
 
-| Param | Type |
-| --- | --- |
-| camera | [<code>Camera2D</code>](#Camera2D) | 
+| Param  | Type                               |
+| ------ | ---------------------------------- |
+| camera | [<code>Camera2D</code>](#Camera2D) |
 
 <a name="SetTargetFPS"></a>
 
 ## SetTargetFPS(fps) ⇒ <code>undefined</code>
+
 Set target FPS (maximum)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| fps | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| fps   | <code>number</code> |
 
 <a name="GetFrameTime"></a>
 
 ## GetFrameTime() ⇒ <code>number</code>
+
 Get time in seconds for last frame drawn (delta time)
 
 **Kind**: global function  
@@ -3254,6 +3346,7 @@ Get time in seconds for last frame drawn (delta time)
 <a name="GetTime"></a>
 
 ## GetTime() ⇒ <code>number</code>
+
 Get elapsed time in seconds since InitWindow()
 
 **Kind**: global function  
@@ -3261,6 +3354,7 @@ Get elapsed time in seconds since InitWindow()
 <a name="GetFPS"></a>
 
 ## GetFPS() ⇒ <code>number</code>
+
 Get current FPS
 
 **Kind**: global function  
@@ -3268,454 +3362,496 @@ Get current FPS
 <a name="SwapScreenBuffer"></a>
 
 ## SwapScreenBuffer() ⇒ <code>undefined</code>
+
 Swap back buffer with front buffer (screen drawing)
 
 **Kind**: global function  
 <a name="PollInputEvents"></a>
 
 ## PollInputEvents() ⇒ <code>undefined</code>
+
 Register all input events
 
 **Kind**: global function  
 <a name="WaitTime"></a>
 
 ## WaitTime(seconds) ⇒ <code>undefined</code>
+
 Wait for some time (halt program execution)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| seconds | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| seconds | <code>number</code> |
 
 <a name="SetRandomSeed"></a>
 
 ## SetRandomSeed(seed) ⇒ <code>undefined</code>
+
 Set the seed for the random number generator
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| seed | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| seed  | <code>number</code> |
 
 <a name="GetRandomValue"></a>
 
 ## GetRandomValue(min, max) ⇒ <code>number</code>
+
 Get a random value between min and max (both included)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| min | <code>number</code> | 
-| max | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| min   | <code>number</code> |
+| max   | <code>number</code> |
 
 <a name="LoadRandomSequence"></a>
 
 ## LoadRandomSequence(count, min, max) ⇒ <code>number</code>
+
 Load random values sequence, no values repeated
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int *.  
+**Returns**: <code>number</code> - The resulting int \*.
 
-| Param | Type |
-| --- | --- |
-| count | <code>number</code> | 
-| min | <code>number</code> | 
-| max | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| count | <code>number</code> |
+| min   | <code>number</code> |
+| max   | <code>number</code> |
 
 <a name="UnloadRandomSequence"></a>
 
 ## UnloadRandomSequence(sequence) ⇒ <code>undefined</code>
+
 Unload random values sequence
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| sequence | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| sequence | <code>number</code> |
 
 <a name="TakeScreenshot"></a>
 
 ## TakeScreenshot(fileName) ⇒ <code>undefined</code>
+
 Takes a screenshot of current screen (filename extension defines format)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="SetConfigFlags"></a>
 
 ## SetConfigFlags(flags) ⇒ <code>undefined</code>
+
 Setup init configuration flags (view FLAGS)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| flags | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| flags | <code>number</code> |
 
 <a name="OpenURL"></a>
 
 ## OpenURL(url) ⇒ <code>undefined</code>
+
 Open URL with default system browser (if available)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| url | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| url   | <code>string</code> |
 
 <a name="SetTraceLogLevel"></a>
 
 ## SetTraceLogLevel(logLevel) ⇒ <code>undefined</code>
+
 Set the current threshold (minimum) log level
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| logLevel | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| logLevel | <code>number</code> |
 
 <a name="MemAlloc"></a>
 
 ## MemAlloc(size) ⇒ <code>number</code>
+
 Internal memory allocator
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting void *.  
+**Returns**: <code>number</code> - The resulting void \*.
 
-| Param | Type |
-| --- | --- |
-| size | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| size  | <code>number</code> |
 
 <a name="MemRealloc"></a>
 
 ## MemRealloc(ptr, size) ⇒ <code>number</code>
+
 Internal memory reallocator
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting void *.  
+**Returns**: <code>number</code> - The resulting void \*.
 
-| Param | Type |
-| --- | --- |
-| ptr | <code>number</code> | 
-| size | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| ptr   | <code>number</code> |
+| size  | <code>number</code> |
 
 <a name="MemFree"></a>
 
 ## MemFree(ptr) ⇒ <code>undefined</code>
+
 Internal memory free
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| ptr | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| ptr   | <code>number</code> |
 
 <a name="LoadFileData"></a>
 
 ## LoadFileData(fileName, dataSize) ⇒ <code>Buffer</code>
+
 Load file data as byte array (read)
 
 **Kind**: global function  
-**Returns**: <code>Buffer</code> - The resulting unsigned char *.  
+**Returns**: <code>Buffer</code> - The resulting unsigned char \*.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
-| dataSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
+| dataSize | <code>number</code> |
 
 <a name="UnloadFileData"></a>
 
 ## UnloadFileData(data) ⇒ <code>undefined</code>
+
 Unload file data allocated by LoadFileData()
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| data | <code>Buffer</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| data  | <code>Buffer</code> |
 
 <a name="SaveFileData"></a>
 
 ## SaveFileData(fileName, data, dataSize) ⇒ <code>boolean</code>
+
 Save data to file from byte array (write), returns true on success
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
-| data | <code>number</code> | 
-| dataSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
+| data     | <code>number</code> |
+| dataSize | <code>number</code> |
 
 <a name="ExportDataAsCode"></a>
 
 ## ExportDataAsCode(data, dataSize, fileName) ⇒ <code>boolean</code>
+
 Export data to code (.h), returns true on success
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| data | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| data     | <code>Buffer</code> |
+| dataSize | <code>number</code> |
+| fileName | <code>string</code> |
 
 <a name="LoadFileText"></a>
 
 ## LoadFileText(fileName) ⇒ <code>string</code>
+
 Load text data from file (read), returns a '\0' terminated string
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting char *.  
+**Returns**: <code>string</code> - The resulting char \*.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="UnloadFileText"></a>
 
 ## UnloadFileText(text) ⇒ <code>undefined</code>
+
 Unload file text data allocated by LoadFileText()
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="SaveFileText"></a>
 
 ## SaveFileText(fileName, text) ⇒ <code>boolean</code>
-Save text data to file (write), string must be '\0' terminated, returns true on success
+
+Save text data to file (write), string must be '\0' terminated, returns true on
+success
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
-| text | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
+| text     | <code>string</code> |
 
 <a name="FileExists"></a>
 
 ## FileExists(fileName) ⇒ <code>boolean</code>
+
 Check if file exists
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="DirectoryExists"></a>
 
 ## DirectoryExists(dirPath) ⇒ <code>boolean</code>
+
 Check if a directory path exists
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| dirPath | <code>string</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| dirPath | <code>string</code> |
 
 <a name="IsFileExtension"></a>
 
 ## IsFileExtension(fileName, ext) ⇒ <code>boolean</code>
+
 Check file extension (including point: .png, .wav)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
-| ext | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
+| ext      | <code>string</code> |
 
 <a name="GetFileLength"></a>
 
 ## GetFileLength(fileName) ⇒ <code>number</code>
+
 Get file length in bytes (NOTE: GetFileSize() conflicts with windows.h)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="GetFileExtension"></a>
 
 ## GetFileExtension(fileName) ⇒ <code>string</code>
+
 Get pointer to extension for a filename string (includes dot: '.png')
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="GetFileName"></a>
 
 ## GetFileName(filePath) ⇒ <code>string</code>
+
 Get pointer to filename for a path string
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| filePath | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| filePath | <code>string</code> |
 
 <a name="GetFileNameWithoutExt"></a>
 
 ## GetFileNameWithoutExt(filePath) ⇒ <code>string</code>
+
 Get filename string without extension (uses static string)
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| filePath | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| filePath | <code>string</code> |
 
 <a name="GetDirectoryPath"></a>
 
 ## GetDirectoryPath(filePath) ⇒ <code>string</code>
+
 Get full path for a given fileName with path (uses static string)
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| filePath | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| filePath | <code>string</code> |
 
 <a name="GetPrevDirectoryPath"></a>
 
 ## GetPrevDirectoryPath(dirPath) ⇒ <code>string</code>
+
 Get previous directory path for a given path (uses static string)
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| dirPath | <code>string</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| dirPath | <code>string</code> |
 
 <a name="GetWorkingDirectory"></a>
 
 ## GetWorkingDirectory() ⇒ <code>string</code>
+
 Get current working directory (uses static string)
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.  
 <a name="GetApplicationDirectory"></a>
 
 ## GetApplicationDirectory() ⇒ <code>string</code>
+
 Get the directory of the running application (uses static string)
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.  
 <a name="MakeDirectory"></a>
 
 ## MakeDirectory(dirPath) ⇒ <code>number</code>
+
 Create directories (including full path requested), returns 0 on success
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| dirPath | <code>string</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| dirPath | <code>string</code> |
 
 <a name="ChangeDirectory"></a>
 
 ## ChangeDirectory(dir) ⇒ <code>boolean</code>
+
 Change working directory, return true on success
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| dir | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| dir   | <code>string</code> |
 
 <a name="IsPathFile"></a>
 
 ## IsPathFile(path) ⇒ <code>boolean</code>
+
 Check if a given path is a file or a directory
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| path | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| path  | <code>string</code> |
 
 <a name="IsFileNameValid"></a>
 
 ## IsFileNameValid(fileName) ⇒ <code>boolean</code>
+
 Check if fileName is valid for the platform/OS
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="LoadDirectoryFiles"></a>
 
 ## LoadDirectoryFiles(dirPath) ⇒ <code>FilePathList</code>
+
 Load directory filepaths
 
 **Kind**: global function  
-**Returns**: <code>FilePathList</code> - The resulting FilePathList.  
+**Returns**: <code>FilePathList</code> - The resulting FilePathList.
 
-| Param | Type |
-| --- | --- |
-| dirPath | <code>string</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| dirPath | <code>string</code> |
 
 <a name="LoadDirectoryFilesEx"></a>
 
 ## LoadDirectoryFilesEx(basePath, filter, scanSubdirs) ⇒ <code>FilePathList</code>
-Load directory filepaths with extension filtering and recursive directory scan. Use 'DIR' in the filter string to include directories in the result
+
+Load directory filepaths with extension filtering and recursive directory scan.
+Use 'DIR' in the filter string to include directories in the result
 
 **Kind**: global function  
-**Returns**: <code>FilePathList</code> - The resulting FilePathList.  
+**Returns**: <code>FilePathList</code> - The resulting FilePathList.
 
-| Param | Type |
-| --- | --- |
-| basePath | <code>string</code> | 
-| filter | <code>string</code> | 
-| scanSubdirs | <code>boolean</code> | 
+| Param       | Type                 |
+| ----------- | -------------------- |
+| basePath    | <code>string</code>  |
+| filter      | <code>string</code>  |
+| scanSubdirs | <code>boolean</code> |
 
 <a name="UnloadDirectoryFiles"></a>
 
 ## UnloadDirectoryFiles(files) ⇒ <code>undefined</code>
+
 Unload filepaths
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| files | <code>FilePathList</code> | 
+| Param | Type                      |
+| ----- | ------------------------- |
+| files | <code>FilePathList</code> |
 
 <a name="IsFileDropped"></a>
 
 ## IsFileDropped() ⇒ <code>boolean</code>
+
 Check if a file has been dropped into window
 
 **Kind**: global function  
@@ -3723,6 +3859,7 @@ Check if a file has been dropped into window
 <a name="LoadDroppedFiles"></a>
 
 ## LoadDroppedFiles() ⇒ <code>FilePathList</code>
+
 Load dropped filepaths
 
 **Kind**: global function  
@@ -3730,365 +3867,401 @@ Load dropped filepaths
 <a name="UnloadDroppedFiles"></a>
 
 ## UnloadDroppedFiles(files) ⇒ <code>undefined</code>
+
 Unload dropped filepaths
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| files | <code>FilePathList</code> | 
+| Param | Type                      |
+| ----- | ------------------------- |
+| files | <code>FilePathList</code> |
 
 <a name="GetFileModTime"></a>
 
 ## GetFileModTime(fileName) ⇒ <code>number</code>
+
 Get file modification time (last write time)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting long.  
+**Returns**: <code>number</code> - The resulting long.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="CompressData"></a>
 
 ## CompressData(data, dataSize, compDataSize) ⇒ <code>Buffer</code>
+
 Compress data (DEFLATE algorithm), memory must be MemFree()
 
 **Kind**: global function  
-**Returns**: <code>Buffer</code> - The resulting unsigned char *.  
+**Returns**: <code>Buffer</code> - The resulting unsigned char \*.
 
-| Param | Type |
-| --- | --- |
-| data | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
-| compDataSize | <code>number</code> | 
+| Param        | Type                |
+| ------------ | ------------------- |
+| data         | <code>Buffer</code> |
+| dataSize     | <code>number</code> |
+| compDataSize | <code>number</code> |
 
 <a name="DecompressData"></a>
 
 ## DecompressData(compData, compDataSize, dataSize) ⇒ <code>Buffer</code>
+
 Decompress data (DEFLATE algorithm), memory must be MemFree()
 
 **Kind**: global function  
-**Returns**: <code>Buffer</code> - The resulting unsigned char *.  
+**Returns**: <code>Buffer</code> - The resulting unsigned char \*.
 
-| Param | Type |
-| --- | --- |
-| compData | <code>Buffer</code> | 
-| compDataSize | <code>number</code> | 
-| dataSize | <code>number</code> | 
+| Param        | Type                |
+| ------------ | ------------------- |
+| compData     | <code>Buffer</code> |
+| compDataSize | <code>number</code> |
+| dataSize     | <code>number</code> |
 
 <a name="EncodeDataBase64"></a>
 
 ## EncodeDataBase64(data, dataSize, outputSize) ⇒ <code>string</code>
+
 Encode data to Base64 string, memory must be MemFree()
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting char *.  
+**Returns**: <code>string</code> - The resulting char \*.
 
-| Param | Type |
-| --- | --- |
-| data | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
-| outputSize | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| data       | <code>Buffer</code> |
+| dataSize   | <code>number</code> |
+| outputSize | <code>number</code> |
 
 <a name="DecodeDataBase64"></a>
 
 ## DecodeDataBase64(data, outputSize) ⇒ <code>Buffer</code>
+
 Decode Base64 string data, memory must be MemFree()
 
 **Kind**: global function  
-**Returns**: <code>Buffer</code> - The resulting unsigned char *.  
+**Returns**: <code>Buffer</code> - The resulting unsigned char \*.
 
-| Param | Type |
-| --- | --- |
-| data | <code>Buffer</code> | 
-| outputSize | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| data       | <code>Buffer</code> |
+| outputSize | <code>number</code> |
 
 <a name="ComputeCRC32"></a>
 
 ## ComputeCRC32(data, dataSize) ⇒ <code>number</code>
+
 Compute CRC32 hash code
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| data | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| data     | <code>Buffer</code> |
+| dataSize | <code>number</code> |
 
 <a name="ComputeMD5"></a>
 
 ## ComputeMD5(data, dataSize) ⇒ <code>number</code>
+
 Compute MD5 hash code, returns static int[4] (16 bytes)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int *.  
+**Returns**: <code>number</code> - The resulting unsigned int \*.
 
-| Param | Type |
-| --- | --- |
-| data | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| data     | <code>Buffer</code> |
+| dataSize | <code>number</code> |
 
 <a name="ComputeSHA1"></a>
 
 ## ComputeSHA1(data, dataSize) ⇒ <code>number</code>
+
 Compute SHA1 hash code, returns static int[5] (20 bytes)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int *.  
+**Returns**: <code>number</code> - The resulting unsigned int \*.
 
-| Param | Type |
-| --- | --- |
-| data | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| data     | <code>Buffer</code> |
+| dataSize | <code>number</code> |
 
 <a name="LoadAutomationEventList"></a>
 
 ## LoadAutomationEventList(fileName) ⇒ <code>AutomationEventList</code>
-Load automation events list from file, NULL for empty list, capacity = MAX_AUTOMATION_EVENTS
+
+Load automation events list from file, NULL for empty list, capacity =
+MAX_AUTOMATION_EVENTS
 
 **Kind**: global function  
-**Returns**: <code>AutomationEventList</code> - The resulting AutomationEventList.  
+**Returns**: <code>AutomationEventList</code> - The resulting
+AutomationEventList.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="UnloadAutomationEventList"></a>
 
 ## UnloadAutomationEventList(list) ⇒ <code>undefined</code>
+
 Unload automation events list from file
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| list | <code>AutomationEventList</code> | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| list  | <code>AutomationEventList</code> |
 
 <a name="ExportAutomationEventList"></a>
 
 ## ExportAutomationEventList(list, fileName) ⇒ <code>boolean</code>
+
 Export automation events list as text file
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| list | <code>AutomationEventList</code> | 
-| fileName | <code>string</code> | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| list     | <code>AutomationEventList</code> |
+| fileName | <code>string</code>              |
 
 <a name="SetAutomationEventList"></a>
 
 ## SetAutomationEventList(list) ⇒ <code>undefined</code>
+
 Set automation event list to record to
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| list | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| list  | <code>number</code> |
 
 <a name="SetAutomationEventBaseFrame"></a>
 
 ## SetAutomationEventBaseFrame(frame) ⇒ <code>undefined</code>
+
 Set automation event internal base frame to start recording
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| frame | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| frame | <code>number</code> |
 
 <a name="StartAutomationEventRecording"></a>
 
 ## StartAutomationEventRecording() ⇒ <code>undefined</code>
+
 Start recording automation events (AutomationEventList must be set)
 
 **Kind**: global function  
 <a name="StopAutomationEventRecording"></a>
 
 ## StopAutomationEventRecording() ⇒ <code>undefined</code>
+
 Stop recording automation events
 
 **Kind**: global function  
 <a name="PlayAutomationEvent"></a>
 
 ## PlayAutomationEvent(event) ⇒ <code>undefined</code>
+
 Play a recorded automation event
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| event | <code>AutomationEvent</code> | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| event | <code>AutomationEvent</code> |
 
 <a name="IsKeyPressed"></a>
 
 ## IsKeyPressed(key) ⇒ <code>boolean</code>
+
 Check if a key has been pressed once
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| key | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| key   | <code>number</code> |
 
 <a name="IsKeyPressedRepeat"></a>
 
 ## IsKeyPressedRepeat(key) ⇒ <code>boolean</code>
+
 Check if a key has been pressed again
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| key | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| key   | <code>number</code> |
 
 <a name="IsKeyDown"></a>
 
 ## IsKeyDown(key) ⇒ <code>boolean</code>
+
 Check if a key is being pressed
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| key | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| key   | <code>number</code> |
 
 <a name="IsKeyReleased"></a>
 
 ## IsKeyReleased(key) ⇒ <code>boolean</code>
+
 Check if a key has been released once
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| key | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| key   | <code>number</code> |
 
 <a name="IsKeyUp"></a>
 
 ## IsKeyUp(key) ⇒ <code>boolean</code>
+
 Check if a key is NOT being pressed
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| key | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| key   | <code>number</code> |
 
 <a name="GetKeyPressed"></a>
 
 ## GetKeyPressed() ⇒ <code>number</code>
-Get key pressed (keycode), call it multiple times for keys queued, returns 0 when the queue is empty
+
+Get key pressed (keycode), call it multiple times for keys queued, returns 0
+when the queue is empty
 
 **Kind**: global function  
 **Returns**: <code>number</code> - The resulting int.  
 <a name="GetCharPressed"></a>
 
 ## GetCharPressed() ⇒ <code>number</code>
-Get char pressed (unicode), call it multiple times for chars queued, returns 0 when the queue is empty
+
+Get char pressed (unicode), call it multiple times for chars queued, returns 0
+when the queue is empty
 
 **Kind**: global function  
 **Returns**: <code>number</code> - The resulting int.  
 <a name="SetExitKey"></a>
 
 ## SetExitKey(key) ⇒ <code>undefined</code>
+
 Set a custom key to exit program (default is ESC)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| key | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| key   | <code>number</code> |
 
 <a name="IsGamepadAvailable"></a>
 
 ## IsGamepadAvailable(gamepad) ⇒ <code>boolean</code>
+
 Check if a gamepad is available
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| gamepad | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| gamepad | <code>number</code> |
 
 <a name="GetGamepadName"></a>
 
 ## GetGamepadName(gamepad) ⇒ <code>string</code>
+
 Get gamepad internal name id
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| gamepad | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| gamepad | <code>number</code> |
 
 <a name="IsGamepadButtonPressed"></a>
 
 ## IsGamepadButtonPressed(gamepad, button) ⇒ <code>boolean</code>
+
 Check if a gamepad button has been pressed once
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| gamepad | <code>number</code> | 
-| button | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| gamepad | <code>number</code> |
+| button  | <code>number</code> |
 
 <a name="IsGamepadButtonDown"></a>
 
 ## IsGamepadButtonDown(gamepad, button) ⇒ <code>boolean</code>
+
 Check if a gamepad button is being pressed
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| gamepad | <code>number</code> | 
-| button | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| gamepad | <code>number</code> |
+| button  | <code>number</code> |
 
 <a name="IsGamepadButtonReleased"></a>
 
 ## IsGamepadButtonReleased(gamepad, button) ⇒ <code>boolean</code>
+
 Check if a gamepad button has been released once
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| gamepad | <code>number</code> | 
-| button | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| gamepad | <code>number</code> |
+| button  | <code>number</code> |
 
 <a name="IsGamepadButtonUp"></a>
 
 ## IsGamepadButtonUp(gamepad, button) ⇒ <code>boolean</code>
+
 Check if a gamepad button is NOT being pressed
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| gamepad | <code>number</code> | 
-| button | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| gamepad | <code>number</code> |
+| button  | <code>number</code> |
 
 <a name="GetGamepadButtonPressed"></a>
 
 ## GetGamepadButtonPressed() ⇒ <code>number</code>
+
 Get the last gamepad button pressed
 
 **Kind**: global function  
@@ -4096,105 +4269,114 @@ Get the last gamepad button pressed
 <a name="GetGamepadAxisCount"></a>
 
 ## GetGamepadAxisCount(gamepad) ⇒ <code>number</code>
+
 Get gamepad axis count for a gamepad
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| gamepad | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| gamepad | <code>number</code> |
 
 <a name="GetGamepadAxisMovement"></a>
 
 ## GetGamepadAxisMovement(gamepad, axis) ⇒ <code>number</code>
+
 Get axis movement value for a gamepad axis
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| gamepad | <code>number</code> | 
-| axis | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| gamepad | <code>number</code> |
+| axis    | <code>number</code> |
 
 <a name="SetGamepadMappings"></a>
 
 ## SetGamepadMappings(mappings) ⇒ <code>number</code>
+
 Set internal gamepad mappings (SDL_GameControllerDB)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| mappings | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| mappings | <code>string</code> |
 
 <a name="SetGamepadVibration"></a>
 
 ## SetGamepadVibration(gamepad, leftMotor, rightMotor, duration) ⇒ <code>undefined</code>
+
 Set gamepad vibration for both motors (duration in seconds)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| gamepad | <code>number</code> | 
-| leftMotor | <code>number</code> | 
-| rightMotor | <code>number</code> | 
-| duration | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| gamepad    | <code>number</code> |
+| leftMotor  | <code>number</code> |
+| rightMotor | <code>number</code> |
+| duration   | <code>number</code> |
 
 <a name="IsMouseButtonPressed"></a>
 
 ## IsMouseButtonPressed(button) ⇒ <code>boolean</code>
+
 Check if a mouse button has been pressed once
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| button | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| button | <code>number</code> |
 
 <a name="IsMouseButtonDown"></a>
 
 ## IsMouseButtonDown(button) ⇒ <code>boolean</code>
+
 Check if a mouse button is being pressed
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| button | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| button | <code>number</code> |
 
 <a name="IsMouseButtonReleased"></a>
 
 ## IsMouseButtonReleased(button) ⇒ <code>boolean</code>
+
 Check if a mouse button has been released once
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| button | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| button | <code>number</code> |
 
 <a name="IsMouseButtonUp"></a>
 
 ## IsMouseButtonUp(button) ⇒ <code>boolean</code>
+
 Check if a mouse button is NOT being pressed
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| button | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| button | <code>number</code> |
 
 <a name="GetMouseX"></a>
 
 ## GetMouseX() ⇒ <code>number</code>
+
 Get mouse position X
 
 **Kind**: global function  
@@ -4202,6 +4384,7 @@ Get mouse position X
 <a name="GetMouseY"></a>
 
 ## GetMouseY() ⇒ <code>number</code>
+
 Get mouse position Y
 
 **Kind**: global function  
@@ -4209,6 +4392,7 @@ Get mouse position Y
 <a name="GetMousePosition"></a>
 
 ## GetMousePosition() ⇒ [<code>Vector2</code>](#Vector2)
+
 Get mouse position XY
 
 **Kind**: global function  
@@ -4216,6 +4400,7 @@ Get mouse position XY
 <a name="GetMouseDelta"></a>
 
 ## GetMouseDelta() ⇒ [<code>Vector2</code>](#Vector2)
+
 Get mouse delta between frames
 
 **Kind**: global function  
@@ -4223,42 +4408,46 @@ Get mouse delta between frames
 <a name="SetMousePosition"></a>
 
 ## SetMousePosition(x, y) ⇒ <code>undefined</code>
+
 Set mouse position XY
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
 
 <a name="SetMouseOffset"></a>
 
 ## SetMouseOffset(offsetX, offsetY) ⇒ <code>undefined</code>
+
 Set mouse offset
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| offsetX | <code>number</code> | 
-| offsetY | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| offsetX | <code>number</code> |
+| offsetY | <code>number</code> |
 
 <a name="SetMouseScale"></a>
 
 ## SetMouseScale(scaleX, scaleY) ⇒ <code>undefined</code>
+
 Set mouse scaling
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| scaleX | <code>number</code> | 
-| scaleY | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| scaleX | <code>number</code> |
+| scaleY | <code>number</code> |
 
 <a name="GetMouseWheelMove"></a>
 
 ## GetMouseWheelMove() ⇒ <code>number</code>
+
 Get mouse wheel movement for X or Y, whichever is larger
 
 **Kind**: global function  
@@ -4266,6 +4455,7 @@ Get mouse wheel movement for X or Y, whichever is larger
 <a name="GetMouseWheelMoveV"></a>
 
 ## GetMouseWheelMoveV() ⇒ [<code>Vector2</code>](#Vector2)
+
 Get mouse wheel movement for both X and Y
 
 **Kind**: global function  
@@ -4273,17 +4463,19 @@ Get mouse wheel movement for both X and Y
 <a name="SetMouseCursor"></a>
 
 ## SetMouseCursor(cursor) ⇒ <code>undefined</code>
+
 Set mouse cursor
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| cursor | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| cursor | <code>number</code> |
 
 <a name="GetTouchX"></a>
 
 ## GetTouchX() ⇒ <code>number</code>
+
 Get touch position X for touch point 0 (relative to screen size)
 
 **Kind**: global function  
@@ -4291,6 +4483,7 @@ Get touch position X for touch point 0 (relative to screen size)
 <a name="GetTouchY"></a>
 
 ## GetTouchY() ⇒ <code>number</code>
+
 Get touch position Y for touch point 0 (relative to screen size)
 
 **Kind**: global function  
@@ -4298,30 +4491,33 @@ Get touch position Y for touch point 0 (relative to screen size)
 <a name="GetTouchPosition"></a>
 
 ## GetTouchPosition(index) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get touch position XY for a touch point index (relative to screen size)
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| index | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| index | <code>number</code> |
 
 <a name="GetTouchPointId"></a>
 
 ## GetTouchPointId(index) ⇒ <code>number</code>
+
 Get touch point identifier for given index
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| index | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| index | <code>number</code> |
 
 <a name="GetTouchPointCount"></a>
 
 ## GetTouchPointCount() ⇒ <code>number</code>
+
 Get number of touch points
 
 **Kind**: global function  
@@ -4329,29 +4525,32 @@ Get number of touch points
 <a name="SetGesturesEnabled"></a>
 
 ## SetGesturesEnabled(flags) ⇒ <code>undefined</code>
+
 Enable a set of gestures using flags
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| flags | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| flags | <code>number</code> |
 
 <a name="IsGestureDetected"></a>
 
 ## IsGestureDetected(gesture) ⇒ <code>boolean</code>
+
 Check if a gesture have been detected
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| gesture | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| gesture | <code>number</code> |
 
 <a name="GetGestureDetected"></a>
 
 ## GetGestureDetected() ⇒ <code>number</code>
+
 Get latest detected gesture
 
 **Kind**: global function  
@@ -4359,6 +4558,7 @@ Get latest detected gesture
 <a name="GetGestureHoldDuration"></a>
 
 ## GetGestureHoldDuration() ⇒ <code>number</code>
+
 Get gesture hold time in seconds
 
 **Kind**: global function  
@@ -4366,6 +4566,7 @@ Get gesture hold time in seconds
 <a name="GetGestureDragVector"></a>
 
 ## GetGestureDragVector() ⇒ [<code>Vector2</code>](#Vector2)
+
 Get gesture drag vector
 
 **Kind**: global function  
@@ -4373,6 +4574,7 @@ Get gesture drag vector
 <a name="GetGestureDragAngle"></a>
 
 ## GetGestureDragAngle() ⇒ <code>number</code>
+
 Get gesture drag angle
 
 **Kind**: global function  
@@ -4380,6 +4582,7 @@ Get gesture drag angle
 <a name="GetGesturePinchVector"></a>
 
 ## GetGesturePinchVector() ⇒ [<code>Vector2</code>](#Vector2)
+
 Get gesture pinch delta
 
 **Kind**: global function  
@@ -4387,6 +4590,7 @@ Get gesture pinch delta
 <a name="GetGesturePinchAngle"></a>
 
 ## GetGesturePinchAngle() ⇒ <code>number</code>
+
 Get gesture pinch angle
 
 **Kind**: global function  
@@ -4394,32 +4598,35 @@ Get gesture pinch angle
 <a name="UpdateCameraPro"></a>
 
 ## UpdateCameraPro(camera, movement, rotation, zoom) ⇒ <code>undefined</code>
+
 Update camera movement/rotation
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| camera | <code>number</code> | 
-| movement | [<code>Vector3</code>](#Vector3) | 
-| rotation | [<code>Vector3</code>](#Vector3) | 
-| zoom | <code>number</code> | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| camera   | <code>number</code>              |
+| movement | [<code>Vector3</code>](#Vector3) |
+| rotation | [<code>Vector3</code>](#Vector3) |
+| zoom     | <code>number</code>              |
 
 <a name="SetShapesTexture"></a>
 
 ## SetShapesTexture(texture, source) ⇒ <code>undefined</code>
+
 Set texture and rectangle to be used on shapes drawing
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| source | [<code>Rectangle</code>](#Rectangle) | 
+| Param   | Type                                 |
+| ------- | ------------------------------------ |
+| texture | <code>Texture</code>                 |
+| source  | [<code>Rectangle</code>](#Rectangle) |
 
 <a name="GetShapesTexture"></a>
 
 ## GetShapesTexture() ⇒ <code>Texture2D</code>
+
 Get texture that is used for shapes drawing
 
 **Kind**: global function  
@@ -4427,6 +4634,7 @@ Get texture that is used for shapes drawing
 <a name="GetShapesTextureRectangle"></a>
 
 ## GetShapesTextureRectangle() ⇒ [<code>Rectangle</code>](#Rectangle)
+
 Get texture source rectangle that is used for shapes drawing
 
 **Kind**: global function  
@@ -4434,1000 +4642,1074 @@ Get texture source rectangle that is used for shapes drawing
 <a name="DrawPixel"></a>
 
 ## DrawPixel(posX, posY, color) ⇒ <code>undefined</code>
+
 Draw a pixel using geometry [Can be slow, use with care]
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| posX  | <code>number</code>          |
+| posY  | <code>number</code>          |
+| color | [<code>Color</code>](#Color) |
 
 <a name="DrawPixelV"></a>
 
 ## DrawPixelV(position, color) ⇒ <code>undefined</code>
+
 Draw a pixel using geometry (Vector version) [Can be slow, use with care]
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| position | [<code>Vector2</code>](#Vector2) |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawLine"></a>
 
 ## DrawLine(startPosX, startPosY, endPosX, endPosY, color) ⇒ <code>undefined</code>
+
 Draw a line
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| startPosX | <code>number</code> | 
-| startPosY | <code>number</code> | 
-| endPosX | <code>number</code> | 
-| endPosY | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                         |
+| --------- | ---------------------------- |
+| startPosX | <code>number</code>          |
+| startPosY | <code>number</code>          |
+| endPosX   | <code>number</code>          |
+| endPosY   | <code>number</code>          |
+| color     | [<code>Color</code>](#Color) |
 
 <a name="DrawLineV"></a>
 
 ## DrawLineV(startPos, endPos, color) ⇒ <code>undefined</code>
+
 Draw a line (using gl lines)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| startPos | [<code>Vector2</code>](#Vector2) | 
-| endPos | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| startPos | [<code>Vector2</code>](#Vector2) |
+| endPos   | [<code>Vector2</code>](#Vector2) |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawLineEx"></a>
 
 ## DrawLineEx(startPos, endPos, thick, color) ⇒ <code>undefined</code>
+
 Draw a line (using triangles/quads)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| startPos | [<code>Vector2</code>](#Vector2) | 
-| endPos | [<code>Vector2</code>](#Vector2) | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| startPos | [<code>Vector2</code>](#Vector2) |
+| endPos   | [<code>Vector2</code>](#Vector2) |
+| thick    | <code>number</code>              |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawLineStrip"></a>
 
 ## DrawLineStrip(points, pointCount, color) ⇒ <code>undefined</code>
+
 Draw lines sequence (using gl lines)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="DrawLineBezier"></a>
 
 ## DrawLineBezier(startPos, endPos, thick, color) ⇒ <code>undefined</code>
+
 Draw line segment cubic-bezier in-out interpolation
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| startPos | [<code>Vector2</code>](#Vector2) | 
-| endPos | [<code>Vector2</code>](#Vector2) | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| startPos | [<code>Vector2</code>](#Vector2) |
+| endPos   | [<code>Vector2</code>](#Vector2) |
+| thick    | <code>number</code>              |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawCircle"></a>
 
 ## DrawCircle(centerX, centerY, radius, color) ⇒ <code>undefined</code>
+
 Draw a color-filled circle
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| centerX | <code>number</code> | 
-| centerY | <code>number</code> | 
-| radius | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| centerX | <code>number</code>          |
+| centerY | <code>number</code>          |
+| radius  | <code>number</code>          |
+| color   | [<code>Color</code>](#Color) |
 
 <a name="DrawCircleSector"></a>
 
 ## DrawCircleSector(center, radius, startAngle, endAngle, segments, color) ⇒ <code>undefined</code>
+
 Draw a piece of a circle
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| radius | <code>number</code> | 
-| startAngle | <code>number</code> | 
-| endAngle | <code>number</code> | 
-| segments | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param      | Type                             |
+| ---------- | -------------------------------- |
+| center     | [<code>Vector2</code>](#Vector2) |
+| radius     | <code>number</code>              |
+| startAngle | <code>number</code>              |
+| endAngle   | <code>number</code>              |
+| segments   | <code>number</code>              |
+| color      | [<code>Color</code>](#Color)     |
 
 <a name="DrawCircleSectorLines"></a>
 
 ## DrawCircleSectorLines(center, radius, startAngle, endAngle, segments, color) ⇒ <code>undefined</code>
+
 Draw circle sector outline
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| radius | <code>number</code> | 
-| startAngle | <code>number</code> | 
-| endAngle | <code>number</code> | 
-| segments | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param      | Type                             |
+| ---------- | -------------------------------- |
+| center     | [<code>Vector2</code>](#Vector2) |
+| radius     | <code>number</code>              |
+| startAngle | <code>number</code>              |
+| endAngle   | <code>number</code>              |
+| segments   | <code>number</code>              |
+| color      | [<code>Color</code>](#Color)     |
 
 <a name="DrawCircleGradient"></a>
 
 ## DrawCircleGradient(centerX, centerY, radius, inner, outer) ⇒ <code>undefined</code>
+
 Draw a gradient-filled circle
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| centerX | <code>number</code> | 
-| centerY | <code>number</code> | 
-| radius | <code>number</code> | 
-| inner | [<code>Color</code>](#Color) | 
-| outer | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| centerX | <code>number</code>          |
+| centerY | <code>number</code>          |
+| radius  | <code>number</code>          |
+| inner   | [<code>Color</code>](#Color) |
+| outer   | [<code>Color</code>](#Color) |
 
 <a name="DrawCircleV"></a>
 
 ## DrawCircleV(center, radius, color) ⇒ <code>undefined</code>
+
 Draw a color-filled circle (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| radius | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param  | Type                             |
+| ------ | -------------------------------- |
+| center | [<code>Vector2</code>](#Vector2) |
+| radius | <code>number</code>              |
+| color  | [<code>Color</code>](#Color)     |
 
 <a name="DrawCircleLines"></a>
 
 ## DrawCircleLines(centerX, centerY, radius, color) ⇒ <code>undefined</code>
+
 Draw circle outline
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| centerX | <code>number</code> | 
-| centerY | <code>number</code> | 
-| radius | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| centerX | <code>number</code>          |
+| centerY | <code>number</code>          |
+| radius  | <code>number</code>          |
+| color   | [<code>Color</code>](#Color) |
 
 <a name="DrawCircleLinesV"></a>
 
 ## DrawCircleLinesV(center, radius, color) ⇒ <code>undefined</code>
+
 Draw circle outline (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| radius | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param  | Type                             |
+| ------ | -------------------------------- |
+| center | [<code>Vector2</code>](#Vector2) |
+| radius | <code>number</code>              |
+| color  | [<code>Color</code>](#Color)     |
 
 <a name="DrawEllipse"></a>
 
 ## DrawEllipse(centerX, centerY, radiusH, radiusV, color) ⇒ <code>undefined</code>
+
 Draw ellipse
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| centerX | <code>number</code> | 
-| centerY | <code>number</code> | 
-| radiusH | <code>number</code> | 
-| radiusV | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| centerX | <code>number</code>          |
+| centerY | <code>number</code>          |
+| radiusH | <code>number</code>          |
+| radiusV | <code>number</code>          |
+| color   | [<code>Color</code>](#Color) |
 
 <a name="DrawEllipseLines"></a>
 
 ## DrawEllipseLines(centerX, centerY, radiusH, radiusV, color) ⇒ <code>undefined</code>
+
 Draw ellipse outline
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| centerX | <code>number</code> | 
-| centerY | <code>number</code> | 
-| radiusH | <code>number</code> | 
-| radiusV | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| centerX | <code>number</code>          |
+| centerY | <code>number</code>          |
+| radiusH | <code>number</code>          |
+| radiusV | <code>number</code>          |
+| color   | [<code>Color</code>](#Color) |
 
 <a name="DrawRing"></a>
 
 ## DrawRing(center, innerRadius, outerRadius, startAngle, endAngle, segments, color) ⇒ <code>undefined</code>
+
 Draw ring
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| innerRadius | <code>number</code> | 
-| outerRadius | <code>number</code> | 
-| startAngle | <code>number</code> | 
-| endAngle | <code>number</code> | 
-| segments | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param       | Type                             |
+| ----------- | -------------------------------- |
+| center      | [<code>Vector2</code>](#Vector2) |
+| innerRadius | <code>number</code>              |
+| outerRadius | <code>number</code>              |
+| startAngle  | <code>number</code>              |
+| endAngle    | <code>number</code>              |
+| segments    | <code>number</code>              |
+| color       | [<code>Color</code>](#Color)     |
 
 <a name="DrawRingLines"></a>
 
 ## DrawRingLines(center, innerRadius, outerRadius, startAngle, endAngle, segments, color) ⇒ <code>undefined</code>
+
 Draw ring outline
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| innerRadius | <code>number</code> | 
-| outerRadius | <code>number</code> | 
-| startAngle | <code>number</code> | 
-| endAngle | <code>number</code> | 
-| segments | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param       | Type                             |
+| ----------- | -------------------------------- |
+| center      | [<code>Vector2</code>](#Vector2) |
+| innerRadius | <code>number</code>              |
+| outerRadius | <code>number</code>              |
+| startAngle  | <code>number</code>              |
+| endAngle    | <code>number</code>              |
+| segments    | <code>number</code>              |
+| color       | [<code>Color</code>](#Color)     |
 
 <a name="DrawRectangle"></a>
 
 ## DrawRectangle(posX, posY, width, height, color) ⇒ <code>undefined</code>
+
 Draw a color-filled rectangle
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param  | Type                         |
+| ------ | ---------------------------- |
+| posX   | <code>number</code>          |
+| posY   | <code>number</code>          |
+| width  | <code>number</code>          |
+| height | <code>number</code>          |
+| color  | [<code>Color</code>](#Color) |
 
 <a name="DrawRectangleV"></a>
 
 ## DrawRectangleV(position, size, color) ⇒ <code>undefined</code>
+
 Draw a color-filled rectangle (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector2</code>](#Vector2) | 
-| size | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| position | [<code>Vector2</code>](#Vector2) |
+| size     | [<code>Vector2</code>](#Vector2) |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawRectangleRec"></a>
 
 ## DrawRectangleRec(rec, color) ⇒ <code>undefined</code>
+
 Draw a color-filled rectangle
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| rec | [<code>Rectangle</code>](#Rectangle) | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                                 |
+| ----- | ------------------------------------ |
+| rec   | [<code>Rectangle</code>](#Rectangle) |
+| color | [<code>Color</code>](#Color)         |
 
 <a name="DrawRectanglePro"></a>
 
 ## DrawRectanglePro(rec, origin, rotation, color) ⇒ <code>undefined</code>
+
 Draw a color-filled rectangle with pro parameters
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| rec | [<code>Rectangle</code>](#Rectangle) | 
-| origin | [<code>Vector2</code>](#Vector2) | 
-| rotation | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| rec      | [<code>Rectangle</code>](#Rectangle) |
+| origin   | [<code>Vector2</code>](#Vector2)     |
+| rotation | <code>number</code>                  |
+| color    | [<code>Color</code>](#Color)         |
 
 <a name="DrawRectangleGradientV"></a>
 
 ## DrawRectangleGradientV(posX, posY, width, height, top, bottom) ⇒ <code>undefined</code>
+
 Draw a vertical-gradient-filled rectangle
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| top | [<code>Color</code>](#Color) | 
-| bottom | [<code>Color</code>](#Color) | 
+| Param  | Type                         |
+| ------ | ---------------------------- |
+| posX   | <code>number</code>          |
+| posY   | <code>number</code>          |
+| width  | <code>number</code>          |
+| height | <code>number</code>          |
+| top    | [<code>Color</code>](#Color) |
+| bottom | [<code>Color</code>](#Color) |
 
 <a name="DrawRectangleGradientH"></a>
 
 ## DrawRectangleGradientH(posX, posY, width, height, left, right) ⇒ <code>undefined</code>
+
 Draw a horizontal-gradient-filled rectangle
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| left | [<code>Color</code>](#Color) | 
-| right | [<code>Color</code>](#Color) | 
+| Param  | Type                         |
+| ------ | ---------------------------- |
+| posX   | <code>number</code>          |
+| posY   | <code>number</code>          |
+| width  | <code>number</code>          |
+| height | <code>number</code>          |
+| left   | [<code>Color</code>](#Color) |
+| right  | [<code>Color</code>](#Color) |
 
 <a name="DrawRectangleGradientEx"></a>
 
 ## DrawRectangleGradientEx(rec, topLeft, bottomLeft, topRight, bottomRight) ⇒ <code>undefined</code>
+
 Draw a gradient-filled rectangle with custom vertex colors
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| rec | [<code>Rectangle</code>](#Rectangle) | 
-| topLeft | [<code>Color</code>](#Color) | 
-| bottomLeft | [<code>Color</code>](#Color) | 
-| topRight | [<code>Color</code>](#Color) | 
-| bottomRight | [<code>Color</code>](#Color) | 
+| Param       | Type                                 |
+| ----------- | ------------------------------------ |
+| rec         | [<code>Rectangle</code>](#Rectangle) |
+| topLeft     | [<code>Color</code>](#Color)         |
+| bottomLeft  | [<code>Color</code>](#Color)         |
+| topRight    | [<code>Color</code>](#Color)         |
+| bottomRight | [<code>Color</code>](#Color)         |
 
 <a name="DrawRectangleLines"></a>
 
 ## DrawRectangleLines(posX, posY, width, height, color) ⇒ <code>undefined</code>
+
 Draw rectangle outline
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param  | Type                         |
+| ------ | ---------------------------- |
+| posX   | <code>number</code>          |
+| posY   | <code>number</code>          |
+| width  | <code>number</code>          |
+| height | <code>number</code>          |
+| color  | [<code>Color</code>](#Color) |
 
 <a name="DrawRectangleLinesEx"></a>
 
 ## DrawRectangleLinesEx(rec, lineThick, color) ⇒ <code>undefined</code>
+
 Draw rectangle outline with extended parameters
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| rec | [<code>Rectangle</code>](#Rectangle) | 
-| lineThick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                                 |
+| --------- | ------------------------------------ |
+| rec       | [<code>Rectangle</code>](#Rectangle) |
+| lineThick | <code>number</code>                  |
+| color     | [<code>Color</code>](#Color)         |
 
 <a name="DrawRectangleRounded"></a>
 
 ## DrawRectangleRounded(rec, roundness, segments, color) ⇒ <code>undefined</code>
+
 Draw rectangle with rounded edges
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| rec | [<code>Rectangle</code>](#Rectangle) | 
-| roundness | <code>number</code> | 
-| segments | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                                 |
+| --------- | ------------------------------------ |
+| rec       | [<code>Rectangle</code>](#Rectangle) |
+| roundness | <code>number</code>                  |
+| segments  | <code>number</code>                  |
+| color     | [<code>Color</code>](#Color)         |
 
 <a name="DrawRectangleRoundedLines"></a>
 
 ## DrawRectangleRoundedLines(rec, roundness, segments, color) ⇒ <code>undefined</code>
+
 Draw rectangle lines with rounded edges
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| rec | [<code>Rectangle</code>](#Rectangle) | 
-| roundness | <code>number</code> | 
-| segments | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                                 |
+| --------- | ------------------------------------ |
+| rec       | [<code>Rectangle</code>](#Rectangle) |
+| roundness | <code>number</code>                  |
+| segments  | <code>number</code>                  |
+| color     | [<code>Color</code>](#Color)         |
 
 <a name="DrawRectangleRoundedLinesEx"></a>
 
 ## DrawRectangleRoundedLinesEx(rec, roundness, segments, lineThick, color) ⇒ <code>undefined</code>
+
 Draw rectangle with rounded edges outline
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| rec | [<code>Rectangle</code>](#Rectangle) | 
-| roundness | <code>number</code> | 
-| segments | <code>number</code> | 
-| lineThick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                                 |
+| --------- | ------------------------------------ |
+| rec       | [<code>Rectangle</code>](#Rectangle) |
+| roundness | <code>number</code>                  |
+| segments  | <code>number</code>                  |
+| lineThick | <code>number</code>                  |
+| color     | [<code>Color</code>](#Color)         |
 
 <a name="DrawTriangle"></a>
 
 ## DrawTriangle(v1, v2, v3, color) ⇒ <code>undefined</code>
+
 Draw a color-filled triangle (vertex in counter-clockwise order!)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| v1 | [<code>Vector2</code>](#Vector2) | 
-| v2 | [<code>Vector2</code>](#Vector2) | 
-| v3 | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| v1    | [<code>Vector2</code>](#Vector2) |
+| v2    | [<code>Vector2</code>](#Vector2) |
+| v3    | [<code>Vector2</code>](#Vector2) |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="DrawTriangleLines"></a>
 
 ## DrawTriangleLines(v1, v2, v3, color) ⇒ <code>undefined</code>
+
 Draw triangle outline (vertex in counter-clockwise order!)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| v1 | [<code>Vector2</code>](#Vector2) | 
-| v2 | [<code>Vector2</code>](#Vector2) | 
-| v3 | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| v1    | [<code>Vector2</code>](#Vector2) |
+| v2    | [<code>Vector2</code>](#Vector2) |
+| v3    | [<code>Vector2</code>](#Vector2) |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="DrawTriangleFan"></a>
 
 ## DrawTriangleFan(points, pointCount, color) ⇒ <code>undefined</code>
+
 Draw a triangle fan defined by points (first vertex is the center)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="DrawTriangleStrip"></a>
 
 ## DrawTriangleStrip(points, pointCount, color) ⇒ <code>undefined</code>
+
 Draw a triangle strip defined by points
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="DrawPoly"></a>
 
 ## DrawPoly(center, sides, radius, rotation, color) ⇒ <code>undefined</code>
+
 Draw a regular polygon (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| sides | <code>number</code> | 
-| radius | <code>number</code> | 
-| rotation | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| center   | [<code>Vector2</code>](#Vector2) |
+| sides    | <code>number</code>              |
+| radius   | <code>number</code>              |
+| rotation | <code>number</code>              |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawPolyLines"></a>
 
 ## DrawPolyLines(center, sides, radius, rotation, color) ⇒ <code>undefined</code>
+
 Draw a polygon outline of n sides
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| sides | <code>number</code> | 
-| radius | <code>number</code> | 
-| rotation | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| center   | [<code>Vector2</code>](#Vector2) |
+| sides    | <code>number</code>              |
+| radius   | <code>number</code>              |
+| rotation | <code>number</code>              |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawPolyLinesEx"></a>
 
 ## DrawPolyLinesEx(center, sides, radius, rotation, lineThick, color) ⇒ <code>undefined</code>
+
 Draw a polygon outline of n sides with extended parameters
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| sides | <code>number</code> | 
-| radius | <code>number</code> | 
-| rotation | <code>number</code> | 
-| lineThick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                             |
+| --------- | -------------------------------- |
+| center    | [<code>Vector2</code>](#Vector2) |
+| sides     | <code>number</code>              |
+| radius    | <code>number</code>              |
+| rotation  | <code>number</code>              |
+| lineThick | <code>number</code>              |
+| color     | [<code>Color</code>](#Color)     |
 
 <a name="DrawSplineLinear"></a>
 
 ## DrawSplineLinear(points, pointCount, thick, color) ⇒ <code>undefined</code>
+
 Draw spline: Linear, minimum 2 points
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| thick      | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="DrawSplineBasis"></a>
 
 ## DrawSplineBasis(points, pointCount, thick, color) ⇒ <code>undefined</code>
+
 Draw spline: B-Spline, minimum 4 points
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| thick      | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="DrawSplineCatmullRom"></a>
 
 ## DrawSplineCatmullRom(points, pointCount, thick, color) ⇒ <code>undefined</code>
+
 Draw spline: Catmull-Rom, minimum 4 points
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| thick      | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="DrawSplineBezierQuadratic"></a>
 
 ## DrawSplineBezierQuadratic(points, pointCount, thick, color) ⇒ <code>undefined</code>
-Draw spline: Quadratic Bezier, minimum 3 points (1 control point): [p1, c2, p3, c4...]
 
-**Kind**: global function  
+Draw spline: Quadratic Bezier, minimum 3 points (1 control point): [p1, c2, p3,
+c4...]
 
-| Param | Type |
-| --- | --- |
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+**Kind**: global function
+
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| thick      | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="DrawSplineBezierCubic"></a>
 
 ## DrawSplineBezierCubic(points, pointCount, thick, color) ⇒ <code>undefined</code>
-Draw spline: Cubic Bezier, minimum 4 points (2 control points): [p1, c2, c3, p4, c5, c6...]
 
-**Kind**: global function  
+Draw spline: Cubic Bezier, minimum 4 points (2 control points): [p1, c2, c3, p4,
+c5, c6...]
 
-| Param | Type |
-| --- | --- |
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+**Kind**: global function
+
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| thick      | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="DrawSplineSegmentLinear"></a>
 
 ## DrawSplineSegmentLinear(p1, p2, thick, color) ⇒ <code>undefined</code>
+
 Draw spline segment: Linear, 2 points
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| p2 | [<code>Vector2</code>](#Vector2) | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| p1    | [<code>Vector2</code>](#Vector2) |
+| p2    | [<code>Vector2</code>](#Vector2) |
+| thick | <code>number</code>              |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="DrawSplineSegmentBasis"></a>
 
 ## DrawSplineSegmentBasis(p1, p2, p3, p4, thick, color) ⇒ <code>undefined</code>
+
 Draw spline segment: B-Spline, 4 points
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| p2 | [<code>Vector2</code>](#Vector2) | 
-| p3 | [<code>Vector2</code>](#Vector2) | 
-| p4 | [<code>Vector2</code>](#Vector2) | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| p1    | [<code>Vector2</code>](#Vector2) |
+| p2    | [<code>Vector2</code>](#Vector2) |
+| p3    | [<code>Vector2</code>](#Vector2) |
+| p4    | [<code>Vector2</code>](#Vector2) |
+| thick | <code>number</code>              |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="DrawSplineSegmentCatmullRom"></a>
 
 ## DrawSplineSegmentCatmullRom(p1, p2, p3, p4, thick, color) ⇒ <code>undefined</code>
+
 Draw spline segment: Catmull-Rom, 4 points
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| p2 | [<code>Vector2</code>](#Vector2) | 
-| p3 | [<code>Vector2</code>](#Vector2) | 
-| p4 | [<code>Vector2</code>](#Vector2) | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| p1    | [<code>Vector2</code>](#Vector2) |
+| p2    | [<code>Vector2</code>](#Vector2) |
+| p3    | [<code>Vector2</code>](#Vector2) |
+| p4    | [<code>Vector2</code>](#Vector2) |
+| thick | <code>number</code>              |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="DrawSplineSegmentBezierQuadratic"></a>
 
 ## DrawSplineSegmentBezierQuadratic(p1, c2, p3, thick, color) ⇒ <code>undefined</code>
+
 Draw spline segment: Quadratic Bezier, 2 points, 1 control point
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| c2 | [<code>Vector2</code>](#Vector2) | 
-| p3 | [<code>Vector2</code>](#Vector2) | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| p1    | [<code>Vector2</code>](#Vector2) |
+| c2    | [<code>Vector2</code>](#Vector2) |
+| p3    | [<code>Vector2</code>](#Vector2) |
+| thick | <code>number</code>              |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="DrawSplineSegmentBezierCubic"></a>
 
 ## DrawSplineSegmentBezierCubic(p1, c2, c3, p4, thick, color) ⇒ <code>undefined</code>
+
 Draw spline segment: Cubic Bezier, 2 points, 2 control points
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| c2 | [<code>Vector2</code>](#Vector2) | 
-| c3 | [<code>Vector2</code>](#Vector2) | 
-| p4 | [<code>Vector2</code>](#Vector2) | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| p1    | [<code>Vector2</code>](#Vector2) |
+| c2    | [<code>Vector2</code>](#Vector2) |
+| c3    | [<code>Vector2</code>](#Vector2) |
+| p4    | [<code>Vector2</code>](#Vector2) |
+| thick | <code>number</code>              |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="GetSplinePointLinear"></a>
 
 ## GetSplinePointLinear(startPos, endPos, t) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get (evaluate) spline point: Linear
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| startPos | [<code>Vector2</code>](#Vector2) | 
-| endPos | [<code>Vector2</code>](#Vector2) | 
-| t | <code>number</code> | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| startPos | [<code>Vector2</code>](#Vector2) |
+| endPos   | [<code>Vector2</code>](#Vector2) |
+| t        | <code>number</code>              |
 
 <a name="GetSplinePointBasis"></a>
 
 ## GetSplinePointBasis(p1, p2, p3, p4, t) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get (evaluate) spline point: B-Spline
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| p2 | [<code>Vector2</code>](#Vector2) | 
-| p3 | [<code>Vector2</code>](#Vector2) | 
-| p4 | [<code>Vector2</code>](#Vector2) | 
-| t | <code>number</code> | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| p1    | [<code>Vector2</code>](#Vector2) |
+| p2    | [<code>Vector2</code>](#Vector2) |
+| p3    | [<code>Vector2</code>](#Vector2) |
+| p4    | [<code>Vector2</code>](#Vector2) |
+| t     | <code>number</code>              |
 
 <a name="GetSplinePointCatmullRom"></a>
 
 ## GetSplinePointCatmullRom(p1, p2, p3, p4, t) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get (evaluate) spline point: Catmull-Rom
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| p2 | [<code>Vector2</code>](#Vector2) | 
-| p3 | [<code>Vector2</code>](#Vector2) | 
-| p4 | [<code>Vector2</code>](#Vector2) | 
-| t | <code>number</code> | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| p1    | [<code>Vector2</code>](#Vector2) |
+| p2    | [<code>Vector2</code>](#Vector2) |
+| p3    | [<code>Vector2</code>](#Vector2) |
+| p4    | [<code>Vector2</code>](#Vector2) |
+| t     | <code>number</code>              |
 
 <a name="GetSplinePointBezierQuad"></a>
 
 ## GetSplinePointBezierQuad(p1, c2, p3, t) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get (evaluate) spline point: Quadratic Bezier
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| c2 | [<code>Vector2</code>](#Vector2) | 
-| p3 | [<code>Vector2</code>](#Vector2) | 
-| t | <code>number</code> | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| p1    | [<code>Vector2</code>](#Vector2) |
+| c2    | [<code>Vector2</code>](#Vector2) |
+| p3    | [<code>Vector2</code>](#Vector2) |
+| t     | <code>number</code>              |
 
 <a name="GetSplinePointBezierCubic"></a>
 
 ## GetSplinePointBezierCubic(p1, c2, c3, p4, t) ⇒ [<code>Vector2</code>](#Vector2)
+
 Get (evaluate) spline point: Cubic Bezier
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| c2 | [<code>Vector2</code>](#Vector2) | 
-| c3 | [<code>Vector2</code>](#Vector2) | 
-| p4 | [<code>Vector2</code>](#Vector2) | 
-| t | <code>number</code> | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| p1    | [<code>Vector2</code>](#Vector2) |
+| c2    | [<code>Vector2</code>](#Vector2) |
+| c3    | [<code>Vector2</code>](#Vector2) |
+| p4    | [<code>Vector2</code>](#Vector2) |
+| t     | <code>number</code>              |
 
 <a name="CheckCollisionRecs"></a>
 
 ## CheckCollisionRecs(rec1, rec2) ⇒ <code>boolean</code>
+
 Check collision between two rectangles
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| rec1 | [<code>Rectangle</code>](#Rectangle) | 
-| rec2 | [<code>Rectangle</code>](#Rectangle) | 
+| Param | Type                                 |
+| ----- | ------------------------------------ |
+| rec1  | [<code>Rectangle</code>](#Rectangle) |
+| rec2  | [<code>Rectangle</code>](#Rectangle) |
 
 <a name="CheckCollisionCircles"></a>
 
 ## CheckCollisionCircles(center1, radius1, center2, radius2) ⇒ <code>boolean</code>
+
 Check collision between two circles
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| center1 | [<code>Vector2</code>](#Vector2) | 
-| radius1 | <code>number</code> | 
-| center2 | [<code>Vector2</code>](#Vector2) | 
-| radius2 | <code>number</code> | 
+| Param   | Type                             |
+| ------- | -------------------------------- |
+| center1 | [<code>Vector2</code>](#Vector2) |
+| radius1 | <code>number</code>              |
+| center2 | [<code>Vector2</code>](#Vector2) |
+| radius2 | <code>number</code>              |
 
 <a name="CheckCollisionCircleRec"></a>
 
 ## CheckCollisionCircleRec(center, radius, rec) ⇒ <code>boolean</code>
+
 Check collision between circle and rectangle
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| radius | <code>number</code> | 
-| rec | [<code>Rectangle</code>](#Rectangle) | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| center | [<code>Vector2</code>](#Vector2)     |
+| radius | <code>number</code>                  |
+| rec    | [<code>Rectangle</code>](#Rectangle) |
 
 <a name="CheckCollisionCircleLine"></a>
 
 ## CheckCollisionCircleLine(center, radius, p1, p2) ⇒ <code>boolean</code>
+
 Check if circle collides with a line created betweeen two points [p1] and [p2]
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector2</code>](#Vector2) | 
-| radius | <code>number</code> | 
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| p2 | [<code>Vector2</code>](#Vector2) | 
+| Param  | Type                             |
+| ------ | -------------------------------- |
+| center | [<code>Vector2</code>](#Vector2) |
+| radius | <code>number</code>              |
+| p1     | [<code>Vector2</code>](#Vector2) |
+| p2     | [<code>Vector2</code>](#Vector2) |
 
 <a name="CheckCollisionPointRec"></a>
 
 ## CheckCollisionPointRec(point, rec) ⇒ <code>boolean</code>
+
 Check if point is inside rectangle
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| point | [<code>Vector2</code>](#Vector2) | 
-| rec | [<code>Rectangle</code>](#Rectangle) | 
+| Param | Type                                 |
+| ----- | ------------------------------------ |
+| point | [<code>Vector2</code>](#Vector2)     |
+| rec   | [<code>Rectangle</code>](#Rectangle) |
 
 <a name="CheckCollisionPointCircle"></a>
 
 ## CheckCollisionPointCircle(point, center, radius) ⇒ <code>boolean</code>
+
 Check if point is inside circle
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| point | [<code>Vector2</code>](#Vector2) | 
-| center | [<code>Vector2</code>](#Vector2) | 
-| radius | <code>number</code> | 
+| Param  | Type                             |
+| ------ | -------------------------------- |
+| point  | [<code>Vector2</code>](#Vector2) |
+| center | [<code>Vector2</code>](#Vector2) |
+| radius | <code>number</code>              |
 
 <a name="CheckCollisionPointTriangle"></a>
 
 ## CheckCollisionPointTriangle(point, p1, p2, p3) ⇒ <code>boolean</code>
+
 Check if point is inside a triangle
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| point | [<code>Vector2</code>](#Vector2) | 
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| p2 | [<code>Vector2</code>](#Vector2) | 
-| p3 | [<code>Vector2</code>](#Vector2) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| point | [<code>Vector2</code>](#Vector2) |
+| p1    | [<code>Vector2</code>](#Vector2) |
+| p2    | [<code>Vector2</code>](#Vector2) |
+| p3    | [<code>Vector2</code>](#Vector2) |
 
 <a name="CheckCollisionPointLine"></a>
 
 ## CheckCollisionPointLine(point, p1, p2, threshold) ⇒ <code>boolean</code>
-Check if point belongs to line created between two points [p1] and [p2] with defined margin in pixels [threshold]
+
+Check if point belongs to line created between two points [p1] and [p2] with
+defined margin in pixels [threshold]
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| point | [<code>Vector2</code>](#Vector2) | 
-| p1 | [<code>Vector2</code>](#Vector2) | 
-| p2 | [<code>Vector2</code>](#Vector2) | 
-| threshold | <code>number</code> | 
+| Param     | Type                             |
+| --------- | -------------------------------- |
+| point     | [<code>Vector2</code>](#Vector2) |
+| p1        | [<code>Vector2</code>](#Vector2) |
+| p2        | [<code>Vector2</code>](#Vector2) |
+| threshold | <code>number</code>              |
 
 <a name="CheckCollisionPointPoly"></a>
 
 ## CheckCollisionPointPoly(point, points, pointCount) ⇒ <code>boolean</code>
+
 Check if point is within a polygon described by array of vertices
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| point | [<code>Vector2</code>](#Vector2) | 
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
+| Param      | Type                             |
+| ---------- | -------------------------------- |
+| point      | [<code>Vector2</code>](#Vector2) |
+| points     | <code>number</code>              |
+| pointCount | <code>number</code>              |
 
 <a name="CheckCollisionLines"></a>
 
 ## CheckCollisionLines(startPos1, endPos1, startPos2, endPos2, collisionPoint) ⇒ <code>boolean</code>
-Check the collision between two lines defined by two points each, returns collision point by reference
+
+Check the collision between two lines defined by two points each, returns
+collision point by reference
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| startPos1 | [<code>Vector2</code>](#Vector2) | 
-| endPos1 | [<code>Vector2</code>](#Vector2) | 
-| startPos2 | [<code>Vector2</code>](#Vector2) | 
-| endPos2 | [<code>Vector2</code>](#Vector2) | 
-| collisionPoint | <code>number</code> | 
+| Param          | Type                             |
+| -------------- | -------------------------------- |
+| startPos1      | [<code>Vector2</code>](#Vector2) |
+| endPos1        | [<code>Vector2</code>](#Vector2) |
+| startPos2      | [<code>Vector2</code>](#Vector2) |
+| endPos2        | [<code>Vector2</code>](#Vector2) |
+| collisionPoint | <code>number</code>              |
 
 <a name="GetCollisionRec"></a>
 
 ## GetCollisionRec(rec1, rec2) ⇒ [<code>Rectangle</code>](#Rectangle)
+
 Get collision rectangle for two rectangles collision
 
 **Kind**: global function  
-**Returns**: [<code>Rectangle</code>](#Rectangle) - The resulting Rectangle.  
+**Returns**: [<code>Rectangle</code>](#Rectangle) - The resulting Rectangle.
 
-| Param | Type |
-| --- | --- |
-| rec1 | [<code>Rectangle</code>](#Rectangle) | 
-| rec2 | [<code>Rectangle</code>](#Rectangle) | 
+| Param | Type                                 |
+| ----- | ------------------------------------ |
+| rec1  | [<code>Rectangle</code>](#Rectangle) |
+| rec2  | [<code>Rectangle</code>](#Rectangle) |
 
 <a name="LoadImage"></a>
 
 ## LoadImage(fileName) ⇒ <code>Image</code>
+
 Load image from file into CPU memory (RAM)
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="LoadImageRaw"></a>
 
 ## LoadImageRaw(fileName, width, height, format, headerSize) ⇒ <code>Image</code>
+
 Load image from RAW file data
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| format | <code>number</code> | 
-| headerSize | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| fileName   | <code>string</code> |
+| width      | <code>number</code> |
+| height     | <code>number</code> |
+| format     | <code>number</code> |
+| headerSize | <code>number</code> |
 
 <a name="LoadImageAnim"></a>
 
 ## LoadImageAnim(fileName, frames) ⇒ <code>Image</code>
+
 Load image sequence from file (frames appended to image.data)
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
-| frames | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
+| frames   | <code>number</code> |
 
 <a name="LoadImageAnimFromMemory"></a>
 
 ## LoadImageAnimFromMemory(fileType, fileData, dataSize, frames) ⇒ <code>Image</code>
+
 Load image sequence from memory buffer
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| fileType | <code>string</code> | 
-| fileData | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
-| frames | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileType | <code>string</code> |
+| fileData | <code>Buffer</code> |
+| dataSize | <code>number</code> |
+| frames   | <code>number</code> |
 
 <a name="LoadImageFromMemory"></a>
 
 ## LoadImageFromMemory(fileType, fileData, dataSize) ⇒ <code>Image</code>
+
 Load image from memory buffer, fileType refers to extension: i.e. '.png'
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| fileType | <code>string</code> | 
-| fileData | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileType | <code>string</code> |
+| fileData | <code>Buffer</code> |
+| dataSize | <code>number</code> |
 
 <a name="LoadImageFromTexture"></a>
 
 ## LoadImageFromTexture(texture) ⇒ <code>Image</code>
+
 Load image from GPU texture data
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
+| Param   | Type                 |
+| ------- | -------------------- |
+| texture | <code>Texture</code> |
 
 <a name="LoadImageFromScreen"></a>
 
 ## LoadImageFromScreen() ⇒ <code>Image</code>
+
 Load image from screen buffer and (screenshot)
 
 **Kind**: global function  
@@ -5435,958 +5717,1032 @@ Load image from screen buffer and (screenshot)
 <a name="IsImageValid"></a>
 
 ## IsImageValid(image) ⇒ <code>boolean</code>
+
 Check if an image is valid (data and parameters)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="UnloadImage"></a>
 
 ## UnloadImage(image) ⇒ <code>undefined</code>
+
 Unload image from CPU memory (RAM)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="ExportImage"></a>
 
 ## ExportImage(image, fileName) ⇒ <code>boolean</code>
+
 Export image data to file, returns true on success
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| image    | <code>Image</code>  |
+| fileName | <code>string</code> |
 
 <a name="ExportImageToMemory"></a>
 
 ## ExportImageToMemory(image, fileType, fileSize) ⇒ <code>Buffer</code>
+
 Export image to memory buffer
 
 **Kind**: global function  
-**Returns**: <code>Buffer</code> - The resulting unsigned char *.  
+**Returns**: <code>Buffer</code> - The resulting unsigned char \*.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| fileType | <code>string</code> | 
-| fileSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| image    | <code>Image</code>  |
+| fileType | <code>string</code> |
+| fileSize | <code>number</code> |
 
 <a name="ExportImageAsCode"></a>
 
 ## ExportImageAsCode(image, fileName) ⇒ <code>boolean</code>
+
 Export image as code file defining an array of bytes, returns true on success
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| image    | <code>Image</code>  |
+| fileName | <code>string</code> |
 
 <a name="GenImageColor"></a>
 
 ## GenImageColor(width, height, color) ⇒ <code>Image</code>
+
 Generate image: plain color
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param  | Type                         |
+| ------ | ---------------------------- |
+| width  | <code>number</code>          |
+| height | <code>number</code>          |
+| color  | [<code>Color</code>](#Color) |
 
 <a name="GenImageGradientLinear"></a>
 
 ## GenImageGradientLinear(width, height, direction, start, end) ⇒ <code>Image</code>
-Generate image: linear gradient, direction in degrees [0..360], 0=Vertical gradient
+
+Generate image: linear gradient, direction in degrees [0..360], 0=Vertical
+gradient
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| direction | <code>number</code> | 
-| start | [<code>Color</code>](#Color) | 
-| end | [<code>Color</code>](#Color) | 
+| Param     | Type                         |
+| --------- | ---------------------------- |
+| width     | <code>number</code>          |
+| height    | <code>number</code>          |
+| direction | <code>number</code>          |
+| start     | [<code>Color</code>](#Color) |
+| end       | [<code>Color</code>](#Color) |
 
 <a name="GenImageGradientRadial"></a>
 
 ## GenImageGradientRadial(width, height, density, inner, outer) ⇒ <code>Image</code>
+
 Generate image: radial gradient
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| density | <code>number</code> | 
-| inner | [<code>Color</code>](#Color) | 
-| outer | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| width   | <code>number</code>          |
+| height  | <code>number</code>          |
+| density | <code>number</code>          |
+| inner   | [<code>Color</code>](#Color) |
+| outer   | [<code>Color</code>](#Color) |
 
 <a name="GenImageGradientSquare"></a>
 
 ## GenImageGradientSquare(width, height, density, inner, outer) ⇒ <code>Image</code>
+
 Generate image: square gradient
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| density | <code>number</code> | 
-| inner | [<code>Color</code>](#Color) | 
-| outer | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| width   | <code>number</code>          |
+| height  | <code>number</code>          |
+| density | <code>number</code>          |
+| inner   | [<code>Color</code>](#Color) |
+| outer   | [<code>Color</code>](#Color) |
 
 <a name="GenImageChecked"></a>
 
 ## GenImageChecked(width, height, checksX, checksY, col1, col2) ⇒ <code>Image</code>
+
 Generate image: checked
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| checksX | <code>number</code> | 
-| checksY | <code>number</code> | 
-| col1 | [<code>Color</code>](#Color) | 
-| col2 | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| width   | <code>number</code>          |
+| height  | <code>number</code>          |
+| checksX | <code>number</code>          |
+| checksY | <code>number</code>          |
+| col1    | [<code>Color</code>](#Color) |
+| col2    | [<code>Color</code>](#Color) |
 
 <a name="GenImageWhiteNoise"></a>
 
 ## GenImageWhiteNoise(width, height, factor) ⇒ <code>Image</code>
+
 Generate image: white noise
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| factor | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
+| factor | <code>number</code> |
 
 <a name="GenImagePerlinNoise"></a>
 
 ## GenImagePerlinNoise(width, height, offsetX, offsetY, scale) ⇒ <code>Image</code>
+
 Generate image: perlin noise
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| offsetX | <code>number</code> | 
-| offsetY | <code>number</code> | 
-| scale | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| width   | <code>number</code> |
+| height  | <code>number</code> |
+| offsetX | <code>number</code> |
+| offsetY | <code>number</code> |
+| scale   | <code>number</code> |
 
 <a name="GenImageCellular"></a>
 
 ## GenImageCellular(width, height, tileSize) ⇒ <code>Image</code>
+
 Generate image: cellular algorithm, bigger tileSize means bigger cells
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| tileSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| width    | <code>number</code> |
+| height   | <code>number</code> |
+| tileSize | <code>number</code> |
 
 <a name="GenImageText"></a>
 
 ## GenImageText(width, height, text) ⇒ <code>Image</code>
+
 Generate image: grayscale image from text data
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| text | <code>string</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
+| text   | <code>string</code> |
 
 <a name="ImageCopy"></a>
 
 ## ImageCopy(image) ⇒ <code>Image</code>
+
 Create an image duplicate (useful for transformations)
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="ImageFromImage"></a>
 
 ## ImageFromImage(image, rec) ⇒ <code>Image</code>
+
 Create an image from another image piece
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| rec | [<code>Rectangle</code>](#Rectangle) | 
+| Param | Type                                 |
+| ----- | ------------------------------------ |
+| image | <code>Image</code>                   |
+| rec   | [<code>Rectangle</code>](#Rectangle) |
 
 <a name="ImageFromChannel"></a>
 
 ## ImageFromChannel(image, selectedChannel) ⇒ <code>Image</code>
+
 Create an image from a selected channel of another image (GRAYSCALE)
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| selectedChannel | <code>number</code> | 
+| Param           | Type                |
+| --------------- | ------------------- |
+| image           | <code>Image</code>  |
+| selectedChannel | <code>number</code> |
 
 <a name="ImageText"></a>
 
 ## ImageText(text, fontSize, color) ⇒ <code>Image</code>
+
 Create an image from text (default font)
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| fontSize | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                         |
+| -------- | ---------------------------- |
+| text     | <code>string</code>          |
+| fontSize | <code>number</code>          |
+| color    | [<code>Color</code>](#Color) |
 
 <a name="ImageTextEx"></a>
 
 ## ImageTextEx(font, text, fontSize, spacing, tint) ⇒ <code>Image</code>
+
 Create an image from text (custom sprite font)
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
-| text | <code>string</code> | 
-| fontSize | <code>number</code> | 
-| spacing | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                         |
+| -------- | ---------------------------- |
+| font     | <code>Font</code>            |
+| text     | <code>string</code>          |
+| fontSize | <code>number</code>          |
+| spacing  | <code>number</code>          |
+| tint     | [<code>Color</code>](#Color) |
 
 <a name="ImageBlurGaussian"></a>
 
 ## ImageBlurGaussian(image, blurSize) ⇒ <code>undefined</code>
+
 Apply Gaussian blur using a box blur approximation
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>number</code> | 
-| blurSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| image    | <code>number</code> |
+| blurSize | <code>number</code> |
 
 <a name="ImageKernelConvolution"></a>
 
 ## ImageKernelConvolution(image, kernel, kernelSize) ⇒ <code>undefined</code>
+
 Apply custom square convolution kernel to image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>number</code> | 
-| kernel | <code>number</code> | 
-| kernelSize | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| image      | <code>number</code> |
+| kernel     | <code>number</code> |
+| kernelSize | <code>number</code> |
 
 <a name="ImageRotate"></a>
 
 ## ImageRotate(image, degrees) ⇒ <code>undefined</code>
+
 Rotate image by input angle in degrees (-359 to 359)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>number</code> | 
-| degrees | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| image   | <code>number</code> |
+| degrees | <code>number</code> |
 
 <a name="LoadImageColors"></a>
 
 ## LoadImageColors(image) ⇒ <code>number</code>
+
 Load color data from image as a Color array (RGBA - 32bit)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting Color *.  
+**Returns**: <code>number</code> - The resulting Color \*.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="LoadImagePalette"></a>
 
 ## LoadImagePalette(image, maxPaletteSize, colorCount) ⇒ <code>number</code>
+
 Load colors palette from image as a Color array (RGBA - 32bit)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting Color *.  
+**Returns**: <code>number</code> - The resulting Color \*.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| maxPaletteSize | <code>number</code> | 
-| colorCount | <code>number</code> | 
+| Param          | Type                |
+| -------------- | ------------------- |
+| image          | <code>Image</code>  |
+| maxPaletteSize | <code>number</code> |
+| colorCount     | <code>number</code> |
 
 <a name="UnloadImageColors"></a>
 
 ## UnloadImageColors(colors) ⇒ <code>undefined</code>
+
 Unload color data loaded with LoadImageColors()
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| colors | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| colors | <code>number</code> |
 
 <a name="UnloadImagePalette"></a>
 
 ## UnloadImagePalette(colors) ⇒ <code>undefined</code>
+
 Unload colors palette loaded with LoadImagePalette()
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| colors | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| colors | <code>number</code> |
 
 <a name="GetImageAlphaBorder"></a>
 
 ## GetImageAlphaBorder(image, threshold) ⇒ [<code>Rectangle</code>](#Rectangle)
+
 Get image alpha border rectangle
 
 **Kind**: global function  
-**Returns**: [<code>Rectangle</code>](#Rectangle) - The resulting Rectangle.  
+**Returns**: [<code>Rectangle</code>](#Rectangle) - The resulting Rectangle.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| threshold | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| image     | <code>Image</code>  |
+| threshold | <code>number</code> |
 
 <a name="GetImageColor"></a>
 
 ## GetImageColor(image, x, y) ⇒ [<code>Color</code>](#Color)
+
 Get image pixel color at (x, y) position
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| x | <code>number</code> | 
-| y | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| image | <code>Image</code>  |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
 
 <a name="ImageDrawLineEx"></a>
 
 ## ImageDrawLineEx(dst, start, end, thick, color) ⇒ <code>undefined</code>
+
 Draw a line defining thickness within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>number</code> | 
-| start | [<code>Vector2</code>](#Vector2) | 
-| end | [<code>Vector2</code>](#Vector2) | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| dst   | <code>number</code>              |
+| start | [<code>Vector2</code>](#Vector2) |
+| end   | [<code>Vector2</code>](#Vector2) |
+| thick | <code>number</code>              |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="ImageDrawCircleLines"></a>
 
 ## ImageDrawCircleLines(dst, centerX, centerY, radius, color) ⇒ <code>undefined</code>
+
 Draw circle outline within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>number</code> | 
-| centerX | <code>number</code> | 
-| centerY | <code>number</code> | 
-| radius | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| dst     | <code>number</code>          |
+| centerX | <code>number</code>          |
+| centerY | <code>number</code>          |
+| radius  | <code>number</code>          |
+| color   | [<code>Color</code>](#Color) |
 
 <a name="ImageDrawCircleLinesV"></a>
 
 ## ImageDrawCircleLinesV(dst, center, radius, color) ⇒ <code>undefined</code>
+
 Draw circle outline within an image (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>number</code> | 
-| center | [<code>Vector2</code>](#Vector2) | 
-| radius | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param  | Type                             |
+| ------ | -------------------------------- |
+| dst    | <code>number</code>              |
+| center | [<code>Vector2</code>](#Vector2) |
+| radius | <code>number</code>              |
+| color  | [<code>Color</code>](#Color)     |
 
 <a name="ImageDrawTriangle"></a>
 
 ## ImageDrawTriangle(dst, v1, v2, v3, color) ⇒ <code>undefined</code>
+
 Draw triangle within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>number</code> | 
-| v1 | [<code>Vector2</code>](#Vector2) | 
-| v2 | [<code>Vector2</code>](#Vector2) | 
-| v3 | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| dst   | <code>number</code>              |
+| v1    | [<code>Vector2</code>](#Vector2) |
+| v2    | [<code>Vector2</code>](#Vector2) |
+| v3    | [<code>Vector2</code>](#Vector2) |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="ImageDrawTriangleEx"></a>
 
 ## ImageDrawTriangleEx(dst, v1, v2, v3, c1, c2, c3) ⇒ <code>undefined</code>
+
 Draw triangle with interpolated colors within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>number</code> | 
-| v1 | [<code>Vector2</code>](#Vector2) | 
-| v2 | [<code>Vector2</code>](#Vector2) | 
-| v3 | [<code>Vector2</code>](#Vector2) | 
-| c1 | [<code>Color</code>](#Color) | 
-| c2 | [<code>Color</code>](#Color) | 
-| c3 | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| dst   | <code>number</code>              |
+| v1    | [<code>Vector2</code>](#Vector2) |
+| v2    | [<code>Vector2</code>](#Vector2) |
+| v3    | [<code>Vector2</code>](#Vector2) |
+| c1    | [<code>Color</code>](#Color)     |
+| c2    | [<code>Color</code>](#Color)     |
+| c3    | [<code>Color</code>](#Color)     |
 
 <a name="ImageDrawTriangleLines"></a>
 
 ## ImageDrawTriangleLines(dst, v1, v2, v3, color) ⇒ <code>undefined</code>
+
 Draw triangle outline within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>number</code> | 
-| v1 | [<code>Vector2</code>](#Vector2) | 
-| v2 | [<code>Vector2</code>](#Vector2) | 
-| v3 | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| dst   | <code>number</code>              |
+| v1    | [<code>Vector2</code>](#Vector2) |
+| v2    | [<code>Vector2</code>](#Vector2) |
+| v3    | [<code>Vector2</code>](#Vector2) |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="ImageDrawTriangleFan"></a>
 
 ## ImageDrawTriangleFan(dst, points, pointCount, color) ⇒ <code>undefined</code>
-Draw a triangle fan defined by points within an image (first vertex is the center)
 
-**Kind**: global function  
+Draw a triangle fan defined by points within an image (first vertex is the
+center)
 
-| Param | Type |
-| --- | --- |
-| dst | <code>number</code> | 
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+**Kind**: global function
+
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| dst        | <code>number</code>          |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="ImageDrawTriangleStrip"></a>
 
 ## ImageDrawTriangleStrip(dst, points, pointCount, color) ⇒ <code>undefined</code>
+
 Draw a triangle strip defined by points within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>number</code> | 
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| dst        | <code>number</code>          |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="LoadTexture"></a>
 
 ## LoadTexture(fileName) ⇒ <code>Texture2D</code>
+
 Load texture from file into GPU memory (VRAM)
 
 **Kind**: global function  
-**Returns**: <code>Texture2D</code> - The resulting Texture2D.  
+**Returns**: <code>Texture2D</code> - The resulting Texture2D.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="LoadTextureFromImage"></a>
 
 ## LoadTextureFromImage(image) ⇒ <code>Texture2D</code>
+
 Load texture from image data
 
 **Kind**: global function  
-**Returns**: <code>Texture2D</code> - The resulting Texture2D.  
+**Returns**: <code>Texture2D</code> - The resulting Texture2D.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="LoadTextureCubemap"></a>
 
 ## LoadTextureCubemap(image, layout) ⇒ <code>TextureCubemap</code>
+
 Load cubemap from image, multiple image cubemap layouts supported
 
 **Kind**: global function  
-**Returns**: <code>TextureCubemap</code> - The resulting TextureCubemap.  
+**Returns**: <code>TextureCubemap</code> - The resulting TextureCubemap.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| layout | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| image  | <code>Image</code>  |
+| layout | <code>number</code> |
 
 <a name="LoadRenderTexture"></a>
 
 ## LoadRenderTexture(width, height) ⇒ <code>RenderTexture2D</code>
+
 Load texture for rendering (framebuffer)
 
 **Kind**: global function  
-**Returns**: <code>RenderTexture2D</code> - The resulting RenderTexture2D.  
+**Returns**: <code>RenderTexture2D</code> - The resulting RenderTexture2D.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
 
 <a name="IsTextureValid"></a>
 
 ## IsTextureValid(texture) ⇒ <code>boolean</code>
+
 Check if a texture is valid (loaded in GPU)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
+| Param   | Type                 |
+| ------- | -------------------- |
+| texture | <code>Texture</code> |
 
 <a name="UnloadTexture"></a>
 
 ## UnloadTexture(texture) ⇒ <code>undefined</code>
+
 Unload texture from GPU memory (VRAM)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
+| Param   | Type                 |
+| ------- | -------------------- |
+| texture | <code>Texture</code> |
 
 <a name="IsRenderTextureValid"></a>
 
 ## IsRenderTextureValid(target) ⇒ <code>boolean</code>
+
 Check if a render texture is valid (loaded in GPU)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| target | <code>RenderTexture</code> | 
+| Param  | Type                       |
+| ------ | -------------------------- |
+| target | <code>RenderTexture</code> |
 
 <a name="UnloadRenderTexture"></a>
 
 ## UnloadRenderTexture(target) ⇒ <code>undefined</code>
+
 Unload render texture from GPU memory (VRAM)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| target | <code>RenderTexture</code> | 
+| Param  | Type                       |
+| ------ | -------------------------- |
+| target | <code>RenderTexture</code> |
 
 <a name="UpdateTexture"></a>
 
 ## UpdateTexture(texture, pixels) ⇒ <code>undefined</code>
+
 Update GPU texture with new data
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| pixels | <code>number</code> | 
+| Param   | Type                 |
+| ------- | -------------------- |
+| texture | <code>Texture</code> |
+| pixels  | <code>number</code>  |
 
 <a name="UpdateTextureRec"></a>
 
 ## UpdateTextureRec(texture, rec, pixels) ⇒ <code>undefined</code>
+
 Update GPU texture rectangle with new data
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| rec | [<code>Rectangle</code>](#Rectangle) | 
-| pixels | <code>number</code> | 
+| Param   | Type                                 |
+| ------- | ------------------------------------ |
+| texture | <code>Texture</code>                 |
+| rec     | [<code>Rectangle</code>](#Rectangle) |
+| pixels  | <code>number</code>                  |
 
 <a name="SetTextureFilter"></a>
 
 ## SetTextureFilter(texture, filter) ⇒ <code>undefined</code>
+
 Set texture scaling filter mode
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| filter | <code>number</code> | 
+| Param   | Type                 |
+| ------- | -------------------- |
+| texture | <code>Texture</code> |
+| filter  | <code>number</code>  |
 
 <a name="SetTextureWrap"></a>
 
 ## SetTextureWrap(texture, wrap) ⇒ <code>undefined</code>
+
 Set texture wrapping mode
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| wrap | <code>number</code> | 
+| Param   | Type                 |
+| ------- | -------------------- |
+| texture | <code>Texture</code> |
+| wrap    | <code>number</code>  |
 
 <a name="DrawTexture"></a>
 
 ## DrawTexture(texture, posX, posY, tint) ⇒ <code>undefined</code>
+
 Draw a Texture2D
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| texture | <code>Texture</code>         |
+| posX    | <code>number</code>          |
+| posY    | <code>number</code>          |
+| tint    | [<code>Color</code>](#Color) |
 
 <a name="DrawTextureV"></a>
 
 ## DrawTextureV(texture, position, tint) ⇒ <code>undefined</code>
+
 Draw a Texture2D with position defined as Vector2
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| position | [<code>Vector2</code>](#Vector2) | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| texture  | <code>Texture</code>             |
+| position | [<code>Vector2</code>](#Vector2) |
+| tint     | [<code>Color</code>](#Color)     |
 
 <a name="DrawTextureEx"></a>
 
 ## DrawTextureEx(texture, position, rotation, scale, tint) ⇒ <code>undefined</code>
+
 Draw a Texture2D with extended parameters
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| position | [<code>Vector2</code>](#Vector2) | 
-| rotation | <code>number</code> | 
-| scale | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| texture  | <code>Texture</code>             |
+| position | [<code>Vector2</code>](#Vector2) |
+| rotation | <code>number</code>              |
+| scale    | <code>number</code>              |
+| tint     | [<code>Color</code>](#Color)     |
 
 <a name="DrawTextureRec"></a>
 
 ## DrawTextureRec(texture, source, position, tint) ⇒ <code>undefined</code>
+
 Draw a part of a texture defined by a rectangle
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| source | [<code>Rectangle</code>](#Rectangle) | 
-| position | [<code>Vector2</code>](#Vector2) | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| texture  | <code>Texture</code>                 |
+| source   | [<code>Rectangle</code>](#Rectangle) |
+| position | [<code>Vector2</code>](#Vector2)     |
+| tint     | [<code>Color</code>](#Color)         |
 
 <a name="DrawTexturePro"></a>
 
 ## DrawTexturePro(texture, source, dest, origin, rotation, tint) ⇒ <code>undefined</code>
+
 Draw a part of a texture defined by a rectangle with 'pro' parameters
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| source | [<code>Rectangle</code>](#Rectangle) | 
-| dest | [<code>Rectangle</code>](#Rectangle) | 
-| origin | [<code>Vector2</code>](#Vector2) | 
-| rotation | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| texture  | <code>Texture</code>                 |
+| source   | [<code>Rectangle</code>](#Rectangle) |
+| dest     | [<code>Rectangle</code>](#Rectangle) |
+| origin   | [<code>Vector2</code>](#Vector2)     |
+| rotation | <code>number</code>                  |
+| tint     | [<code>Color</code>](#Color)         |
 
 <a name="DrawTextureNPatch"></a>
 
 ## DrawTextureNPatch(texture, nPatchInfo, dest, origin, rotation, tint) ⇒ <code>undefined</code>
+
 Draws a texture (or part of it) that stretches or shrinks nicely
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
-| nPatchInfo | <code>NPatchInfo</code> | 
-| dest | [<code>Rectangle</code>](#Rectangle) | 
-| origin | [<code>Vector2</code>](#Vector2) | 
-| rotation | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param      | Type                                 |
+| ---------- | ------------------------------------ |
+| texture    | <code>Texture</code>                 |
+| nPatchInfo | <code>NPatchInfo</code>              |
+| dest       | [<code>Rectangle</code>](#Rectangle) |
+| origin     | [<code>Vector2</code>](#Vector2)     |
+| rotation   | <code>number</code>                  |
+| tint       | [<code>Color</code>](#Color)         |
 
 <a name="ColorIsEqual"></a>
 
 ## ColorIsEqual(col1, col2) ⇒ <code>boolean</code>
+
 Check if two colors are equal
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| col1 | [<code>Color</code>](#Color) | 
-| col2 | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| col1  | [<code>Color</code>](#Color) |
+| col2  | [<code>Color</code>](#Color) |
 
 <a name="Fade"></a>
 
 ## Fade(color, alpha) ⇒ [<code>Color</code>](#Color)
+
 Get color with alpha applied, alpha goes from 0.0f to 1.0f
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| color | [<code>Color</code>](#Color) | 
-| alpha | <code>number</code> | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| color | [<code>Color</code>](#Color) |
+| alpha | <code>number</code>          |
 
 <a name="ColorToInt"></a>
 
 ## ColorToInt(color) ⇒ <code>number</code>
+
 Get hexadecimal value for a Color (0xRRGGBBAA)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| color | [<code>Color</code>](#Color) |
 
 <a name="ColorNormalize"></a>
 
 ## ColorNormalize(color) ⇒ [<code>Vector4</code>](#Vector4)
+
 Get Color normalized as float [0..1]
 
 **Kind**: global function  
-**Returns**: [<code>Vector4</code>](#Vector4) - The resulting Vector4.  
+**Returns**: [<code>Vector4</code>](#Vector4) - The resulting Vector4.
 
-| Param | Type |
-| --- | --- |
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| color | [<code>Color</code>](#Color) |
 
 <a name="ColorFromNormalized"></a>
 
 ## ColorFromNormalized(normalized) ⇒ [<code>Color</code>](#Color)
+
 Get Color from normalized values [0..1]
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| normalized | [<code>Vector4</code>](#Vector4) | 
+| Param      | Type                             |
+| ---------- | -------------------------------- |
+| normalized | [<code>Vector4</code>](#Vector4) |
 
 <a name="ColorToHSV"></a>
 
 ## ColorToHSV(color) ⇒ [<code>Vector3</code>](#Vector3)
+
 Get HSV values for a Color, hue [0..360], saturation/value [0..1]
 
 **Kind**: global function  
-**Returns**: [<code>Vector3</code>](#Vector3) - The resulting Vector3.  
+**Returns**: [<code>Vector3</code>](#Vector3) - The resulting Vector3.
 
-| Param | Type |
-| --- | --- |
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| color | [<code>Color</code>](#Color) |
 
 <a name="ColorFromHSV"></a>
 
 ## ColorFromHSV(hue, saturation, value) ⇒ [<code>Color</code>](#Color)
+
 Get a Color from HSV values, hue [0..360], saturation/value [0..1]
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| hue | <code>number</code> | 
-| saturation | <code>number</code> | 
-| value | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| hue        | <code>number</code> |
+| saturation | <code>number</code> |
+| value      | <code>number</code> |
 
 <a name="ColorTint"></a>
 
 ## ColorTint(color, tint) ⇒ [<code>Color</code>](#Color)
+
 Get color multiplied with another color
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| color | [<code>Color</code>](#Color) | 
-| tint | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| color | [<code>Color</code>](#Color) |
+| tint  | [<code>Color</code>](#Color) |
 
 <a name="ColorBrightness"></a>
 
 ## ColorBrightness(color, factor) ⇒ [<code>Color</code>](#Color)
+
 Get color with brightness correction, brightness factor goes from -1.0f to 1.0f
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| color | [<code>Color</code>](#Color) | 
-| factor | <code>number</code> | 
+| Param  | Type                         |
+| ------ | ---------------------------- |
+| color  | [<code>Color</code>](#Color) |
+| factor | <code>number</code>          |
 
 <a name="ColorContrast"></a>
 
 ## ColorContrast(color, contrast) ⇒ [<code>Color</code>](#Color)
+
 Get color with contrast correction, contrast values between -1.0f and 1.0f
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| color | [<code>Color</code>](#Color) | 
-| contrast | <code>number</code> | 
+| Param    | Type                         |
+| -------- | ---------------------------- |
+| color    | [<code>Color</code>](#Color) |
+| contrast | <code>number</code>          |
 
 <a name="ColorAlpha"></a>
 
 ## ColorAlpha(color, alpha) ⇒ [<code>Color</code>](#Color)
+
 Get color with alpha applied, alpha goes from 0.0f to 1.0f
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| color | [<code>Color</code>](#Color) | 
-| alpha | <code>number</code> | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| color | [<code>Color</code>](#Color) |
+| alpha | <code>number</code>          |
 
 <a name="ColorAlphaBlend"></a>
 
 ## ColorAlphaBlend(dst, src, tint) ⇒ [<code>Color</code>](#Color)
+
 Get src alpha-blended into dst color with tint
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| dst | [<code>Color</code>](#Color) | 
-| src | [<code>Color</code>](#Color) | 
-| tint | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| dst   | [<code>Color</code>](#Color) |
+| src   | [<code>Color</code>](#Color) |
+| tint  | [<code>Color</code>](#Color) |
 
 <a name="ColorLerp"></a>
 
 ## ColorLerp(color1, color2, factor) ⇒ [<code>Color</code>](#Color)
+
 Get color lerp interpolation between two colors, factor [0.0f..1.0f]
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| color1 | [<code>Color</code>](#Color) | 
-| color2 | [<code>Color</code>](#Color) | 
-| factor | <code>number</code> | 
+| Param  | Type                         |
+| ------ | ---------------------------- |
+| color1 | [<code>Color</code>](#Color) |
+| color2 | [<code>Color</code>](#Color) |
+| factor | <code>number</code>          |
 
 <a name="GetColor"></a>
 
 ## GetColor(hexValue) ⇒ [<code>Color</code>](#Color)
+
 Get Color structure from hexadecimal value
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| hexValue | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| hexValue | <code>number</code> |
 
 <a name="GetPixelColor"></a>
 
 ## GetPixelColor(srcPtr, format) ⇒ [<code>Color</code>](#Color)
+
 Get Color from a source pixel pointer of certain format
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The resulting Color.  
+**Returns**: [<code>Color</code>](#Color) - The resulting Color.
 
-| Param | Type |
-| --- | --- |
-| srcPtr | <code>number</code> | 
-| format | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| srcPtr | <code>number</code> |
+| format | <code>number</code> |
 
 <a name="SetPixelColor"></a>
 
 ## SetPixelColor(dstPtr, color, format) ⇒ <code>undefined</code>
+
 Set color formatted into destination pixel pointer
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dstPtr | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
-| format | <code>number</code> | 
+| Param  | Type                         |
+| ------ | ---------------------------- |
+| dstPtr | <code>number</code>          |
+| color  | [<code>Color</code>](#Color) |
+| format | <code>number</code>          |
 
 <a name="GetPixelDataSize"></a>
 
 ## GetPixelDataSize(width, height, format) ⇒ <code>number</code>
+
 Get pixel data size in bytes for certain format
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| format | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
+| format | <code>number</code> |
 
 <a name="GetFontDefault"></a>
 
 ## GetFontDefault() ⇒ <code>Font</code>
+
 Get the default Font
 
 **Kind**: global function  
@@ -6394,1576 +6750,1700 @@ Get the default Font
 <a name="LoadFont"></a>
 
 ## LoadFont(fileName) ⇒ <code>Font</code>
+
 Load font from file into GPU memory (VRAM)
 
 **Kind**: global function  
-**Returns**: <code>Font</code> - The resulting Font.  
+**Returns**: <code>Font</code> - The resulting Font.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="LoadFontEx"></a>
 
 ## LoadFontEx(fileName, fontSize, codepoints, codepointCount) ⇒ <code>Font</code>
-Load font from file with extended parameters, use NULL for codepoints and 0 for codepointCount to load the default character set, font size is provided in pixels height
+
+Load font from file with extended parameters, use NULL for codepoints and 0 for
+codepointCount to load the default character set, font size is provided in
+pixels height
 
 **Kind**: global function  
-**Returns**: <code>Font</code> - The resulting Font.  
+**Returns**: <code>Font</code> - The resulting Font.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
-| fontSize | <code>number</code> | 
-| codepoints | <code>number</code> | 
-| codepointCount | <code>number</code> | 
+| Param          | Type                |
+| -------------- | ------------------- |
+| fileName       | <code>string</code> |
+| fontSize       | <code>number</code> |
+| codepoints     | <code>number</code> |
+| codepointCount | <code>number</code> |
 
 <a name="LoadFontFromImage"></a>
 
 ## LoadFontFromImage(image, key, firstChar) ⇒ <code>Font</code>
+
 Load font from Image (XNA style)
 
 **Kind**: global function  
-**Returns**: <code>Font</code> - The resulting Font.  
+**Returns**: <code>Font</code> - The resulting Font.
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| key | [<code>Color</code>](#Color) | 
-| firstChar | <code>number</code> | 
+| Param     | Type                         |
+| --------- | ---------------------------- |
+| image     | <code>Image</code>           |
+| key       | [<code>Color</code>](#Color) |
+| firstChar | <code>number</code>          |
 
 <a name="LoadFontFromMemory"></a>
 
 ## LoadFontFromMemory(fileType, fileData, dataSize, fontSize, codepoints, codepointCount) ⇒ <code>Font</code>
+
 Load font from memory buffer, fileType refers to extension: i.e. '.ttf'
 
 **Kind**: global function  
-**Returns**: <code>Font</code> - The resulting Font.  
+**Returns**: <code>Font</code> - The resulting Font.
 
-| Param | Type |
-| --- | --- |
-| fileType | <code>string</code> | 
-| fileData | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
-| fontSize | <code>number</code> | 
-| codepoints | <code>number</code> | 
-| codepointCount | <code>number</code> | 
+| Param          | Type                |
+| -------------- | ------------------- |
+| fileType       | <code>string</code> |
+| fileData       | <code>Buffer</code> |
+| dataSize       | <code>number</code> |
+| fontSize       | <code>number</code> |
+| codepoints     | <code>number</code> |
+| codepointCount | <code>number</code> |
 
 <a name="IsFontValid"></a>
 
 ## IsFontValid(font) ⇒ <code>boolean</code>
+
 Check if a font is valid (font data loaded, WARNING: GPU texture not checked)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| font  | <code>Font</code> |
 
 <a name="LoadFontData"></a>
 
 ## LoadFontData(fileData, dataSize, fontSize, codepoints, codepointCount, type) ⇒ <code>number</code>
+
 Load font data for further use
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting GlyphInfo *.  
+**Returns**: <code>number</code> - The resulting GlyphInfo \*.
 
-| Param | Type |
-| --- | --- |
-| fileData | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
-| fontSize | <code>number</code> | 
-| codepoints | <code>number</code> | 
-| codepointCount | <code>number</code> | 
-| type | <code>number</code> | 
+| Param          | Type                |
+| -------------- | ------------------- |
+| fileData       | <code>Buffer</code> |
+| dataSize       | <code>number</code> |
+| fontSize       | <code>number</code> |
+| codepoints     | <code>number</code> |
+| codepointCount | <code>number</code> |
+| type           | <code>number</code> |
 
 <a name="GenImageFontAtlas"></a>
 
 ## GenImageFontAtlas(glyphs, glyphRecs, glyphCount, fontSize, padding, packMethod) ⇒ <code>Image</code>
+
 Generate image font atlas using chars info
 
 **Kind**: global function  
-**Returns**: <code>Image</code> - The resulting Image.  
+**Returns**: <code>Image</code> - The resulting Image.
 
-| Param | Type |
-| --- | --- |
-| glyphs | <code>number</code> | 
-| glyphRecs | <code>number</code> | 
-| glyphCount | <code>number</code> | 
-| fontSize | <code>number</code> | 
-| padding | <code>number</code> | 
-| packMethod | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| glyphs     | <code>number</code> |
+| glyphRecs  | <code>number</code> |
+| glyphCount | <code>number</code> |
+| fontSize   | <code>number</code> |
+| padding    | <code>number</code> |
+| packMethod | <code>number</code> |
 
 <a name="UnloadFontData"></a>
 
 ## UnloadFontData(glyphs, glyphCount) ⇒ <code>undefined</code>
+
 Unload font chars info data (RAM)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| glyphs | <code>number</code> | 
-| glyphCount | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| glyphs     | <code>number</code> |
+| glyphCount | <code>number</code> |
 
 <a name="UnloadFont"></a>
 
 ## UnloadFont(font) ⇒ <code>undefined</code>
+
 Unload font from GPU memory (VRAM)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| font  | <code>Font</code> |
 
 <a name="ExportFontAsCode"></a>
 
 ## ExportFontAsCode(font, fileName) ⇒ <code>boolean</code>
+
 Export font as code file, returns true on success
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| font     | <code>Font</code>   |
+| fileName | <code>string</code> |
 
 <a name="DrawFPS"></a>
 
 ## DrawFPS(posX, posY) ⇒ <code>undefined</code>
+
 Draw current FPS
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| posX  | <code>number</code> |
+| posY  | <code>number</code> |
 
 <a name="DrawText"></a>
 
 ## DrawText(text, posX, posY, fontSize, color) ⇒ <code>undefined</code>
+
 Draw text (using default font)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| fontSize | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                         |
+| -------- | ---------------------------- |
+| text     | <code>string</code>          |
+| posX     | <code>number</code>          |
+| posY     | <code>number</code>          |
+| fontSize | <code>number</code>          |
+| color    | [<code>Color</code>](#Color) |
 
 <a name="DrawTextEx"></a>
 
 ## DrawTextEx(font, text, position, fontSize, spacing, tint) ⇒ <code>undefined</code>
+
 Draw text using font and additional parameters
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
-| text | <code>string</code> | 
-| position | [<code>Vector2</code>](#Vector2) | 
-| fontSize | <code>number</code> | 
-| spacing | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| font     | <code>Font</code>                |
+| text     | <code>string</code>              |
+| position | [<code>Vector2</code>](#Vector2) |
+| fontSize | <code>number</code>              |
+| spacing  | <code>number</code>              |
+| tint     | [<code>Color</code>](#Color)     |
 
 <a name="DrawTextPro"></a>
 
 ## DrawTextPro(font, text, position, origin, rotation, fontSize, spacing, tint) ⇒ <code>undefined</code>
+
 Draw text using Font and pro parameters (rotation)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
-| text | <code>string</code> | 
-| position | [<code>Vector2</code>](#Vector2) | 
-| origin | [<code>Vector2</code>](#Vector2) | 
-| rotation | <code>number</code> | 
-| fontSize | <code>number</code> | 
-| spacing | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| font     | <code>Font</code>                |
+| text     | <code>string</code>              |
+| position | [<code>Vector2</code>](#Vector2) |
+| origin   | [<code>Vector2</code>](#Vector2) |
+| rotation | <code>number</code>              |
+| fontSize | <code>number</code>              |
+| spacing  | <code>number</code>              |
+| tint     | [<code>Color</code>](#Color)     |
 
 <a name="DrawTextCodepoint"></a>
 
 ## DrawTextCodepoint(font, codepoint, position, fontSize, tint) ⇒ <code>undefined</code>
+
 Draw one character (codepoint)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
-| codepoint | <code>number</code> | 
-| position | [<code>Vector2</code>](#Vector2) | 
-| fontSize | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param     | Type                             |
+| --------- | -------------------------------- |
+| font      | <code>Font</code>                |
+| codepoint | <code>number</code>              |
+| position  | [<code>Vector2</code>](#Vector2) |
+| fontSize  | <code>number</code>              |
+| tint      | [<code>Color</code>](#Color)     |
 
 <a name="DrawTextCodepoints"></a>
 
 ## DrawTextCodepoints(font, codepoints, codepointCount, position, fontSize, spacing, tint) ⇒ <code>undefined</code>
+
 Draw multiple character (codepoint)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
-| codepoints | <code>number</code> | 
-| codepointCount | <code>number</code> | 
-| position | [<code>Vector2</code>](#Vector2) | 
-| fontSize | <code>number</code> | 
-| spacing | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param          | Type                             |
+| -------------- | -------------------------------- |
+| font           | <code>Font</code>                |
+| codepoints     | <code>number</code>              |
+| codepointCount | <code>number</code>              |
+| position       | [<code>Vector2</code>](#Vector2) |
+| fontSize       | <code>number</code>              |
+| spacing        | <code>number</code>              |
+| tint           | [<code>Color</code>](#Color)     |
 
 <a name="SetTextLineSpacing"></a>
 
 ## SetTextLineSpacing(spacing) ⇒ <code>undefined</code>
+
 Set vertical line spacing when drawing with line-breaks
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| spacing | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| spacing | <code>number</code> |
 
 <a name="MeasureText"></a>
 
 ## MeasureText(text, fontSize) ⇒ <code>number</code>
+
 Measure string width for default font
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| fontSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| text     | <code>string</code> |
+| fontSize | <code>number</code> |
 
 <a name="MeasureTextEx"></a>
 
 ## MeasureTextEx(font, text, fontSize, spacing) ⇒ [<code>Vector2</code>](#Vector2)
+
 Measure string size for Font
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The resulting Vector2.
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
-| text | <code>string</code> | 
-| fontSize | <code>number</code> | 
-| spacing | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| font     | <code>Font</code>   |
+| text     | <code>string</code> |
+| fontSize | <code>number</code> |
+| spacing  | <code>number</code> |
 
 <a name="GetGlyphIndex"></a>
 
 ## GetGlyphIndex(font, codepoint) ⇒ <code>number</code>
-Get glyph index position in font for a codepoint (unicode character), fallback to '?' if not found
+
+Get glyph index position in font for a codepoint (unicode character), fallback
+to '?' if not found
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
-| codepoint | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| font      | <code>Font</code>   |
+| codepoint | <code>number</code> |
 
 <a name="GetGlyphInfo"></a>
 
 ## GetGlyphInfo(font, codepoint) ⇒ <code>GlyphInfo</code>
-Get glyph font info data for a codepoint (unicode character), fallback to '?' if not found
+
+Get glyph font info data for a codepoint (unicode character), fallback to '?' if
+not found
 
 **Kind**: global function  
-**Returns**: <code>GlyphInfo</code> - The resulting GlyphInfo.  
+**Returns**: <code>GlyphInfo</code> - The resulting GlyphInfo.
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
-| codepoint | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| font      | <code>Font</code>   |
+| codepoint | <code>number</code> |
 
 <a name="GetGlyphAtlasRec"></a>
 
 ## GetGlyphAtlasRec(font, codepoint) ⇒ [<code>Rectangle</code>](#Rectangle)
-Get glyph rectangle in font atlas for a codepoint (unicode character), fallback to '?' if not found
+
+Get glyph rectangle in font atlas for a codepoint (unicode character), fallback
+to '?' if not found
 
 **Kind**: global function  
-**Returns**: [<code>Rectangle</code>](#Rectangle) - The resulting Rectangle.  
+**Returns**: [<code>Rectangle</code>](#Rectangle) - The resulting Rectangle.
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
-| codepoint | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| font      | <code>Font</code>   |
+| codepoint | <code>number</code> |
 
 <a name="LoadUTF8"></a>
 
 ## LoadUTF8(codepoints, length) ⇒ <code>string</code>
+
 Load UTF-8 text encoded from codepoints array
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting char *.  
+**Returns**: <code>string</code> - The resulting char \*.
 
-| Param | Type |
-| --- | --- |
-| codepoints | <code>number</code> | 
-| length | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| codepoints | <code>number</code> |
+| length     | <code>number</code> |
 
 <a name="UnloadUTF8"></a>
 
 ## UnloadUTF8(text) ⇒ <code>undefined</code>
+
 Unload UTF-8 text encoded from codepoints array
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="LoadCodepoints"></a>
 
 ## LoadCodepoints(text, count) ⇒ <code>number</code>
-Load all codepoints from a UTF-8 text string, codepoints count returned by parameter
+
+Load all codepoints from a UTF-8 text string, codepoints count returned by
+parameter
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int *.  
+**Returns**: <code>number</code> - The resulting int \*.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| count | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
+| count | <code>number</code> |
 
 <a name="UnloadCodepoints"></a>
 
 ## UnloadCodepoints(codepoints) ⇒ <code>undefined</code>
+
 Unload codepoints data from memory
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| codepoints | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| codepoints | <code>number</code> |
 
 <a name="GetCodepointCount"></a>
 
 ## GetCodepointCount(text) ⇒ <code>number</code>
+
 Get total number of codepoints in a UTF-8 encoded string
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="GetCodepoint"></a>
 
 ## GetCodepoint(text, codepointSize) ⇒ <code>number</code>
+
 Get next codepoint in a UTF-8 encoded string, 0x3f('?') is returned on failure
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| codepointSize | <code>number</code> | 
+| Param         | Type                |
+| ------------- | ------------------- |
+| text          | <code>string</code> |
+| codepointSize | <code>number</code> |
 
 <a name="GetCodepointNext"></a>
 
 ## GetCodepointNext(text, codepointSize) ⇒ <code>number</code>
+
 Get next codepoint in a UTF-8 encoded string, 0x3f('?') is returned on failure
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| codepointSize | <code>number</code> | 
+| Param         | Type                |
+| ------------- | ------------------- |
+| text          | <code>string</code> |
+| codepointSize | <code>number</code> |
 
 <a name="GetCodepointPrevious"></a>
 
 ## GetCodepointPrevious(text, codepointSize) ⇒ <code>number</code>
-Get previous codepoint in a UTF-8 encoded string, 0x3f('?') is returned on failure
+
+Get previous codepoint in a UTF-8 encoded string, 0x3f('?') is returned on
+failure
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| codepointSize | <code>number</code> | 
+| Param         | Type                |
+| ------------- | ------------------- |
+| text          | <code>string</code> |
+| codepointSize | <code>number</code> |
 
 <a name="CodepointToUTF8"></a>
 
 ## CodepointToUTF8(codepoint, utf8Size) ⇒ <code>string</code>
+
 Encode one codepoint into UTF-8 byte array (array length returned as parameter)
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| codepoint | <code>number</code> | 
-| utf8Size | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| codepoint | <code>number</code> |
+| utf8Size  | <code>number</code> |
 
 <a name="TextCopy"></a>
 
 ## TextCopy(dst, src) ⇒ <code>number</code>
+
 Copy one string to another, returns bytes copied
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| dst | <code>string</code> | 
-| src | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| dst   | <code>string</code> |
+| src   | <code>string</code> |
 
 <a name="TextIsEqual"></a>
 
 ## TextIsEqual(text1, text2) ⇒ <code>boolean</code>
+
 Check if two text string are equal
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| text1 | <code>string</code> | 
-| text2 | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text1 | <code>string</code> |
+| text2 | <code>string</code> |
 
 <a name="TextLength"></a>
 
 ## TextLength(text) ⇒ <code>number</code>
+
 Get text length, checks for '\0' ending
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="TextSubtext"></a>
 
 ## TextSubtext(text, position, length) ⇒ <code>string</code>
+
 Get a piece of a text string
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| position | <code>number</code> | 
-| length | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| text     | <code>string</code> |
+| position | <code>number</code> |
+| length   | <code>number</code> |
 
 <a name="TextReplace"></a>
 
 ## TextReplace(text, replace, by) ⇒ <code>string</code>
+
 Replace text string (WARNING: memory must be freed!)
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting char *.  
+**Returns**: <code>string</code> - The resulting char \*.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| replace | <code>string</code> | 
-| by | <code>string</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| text    | <code>string</code> |
+| replace | <code>string</code> |
+| by      | <code>string</code> |
 
 <a name="TextInsert"></a>
 
 ## TextInsert(text, insert, position) ⇒ <code>string</code>
+
 Insert text in a position (WARNING: memory must be freed!)
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting char *.  
+**Returns**: <code>string</code> - The resulting char \*.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| insert | <code>string</code> | 
-| position | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| text     | <code>string</code> |
+| insert   | <code>string</code> |
+| position | <code>number</code> |
 
 <a name="TextJoin"></a>
 
 ## TextJoin(textList, count, delimiter) ⇒ <code>string</code>
+
 Join text strings with delimiter
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| textList | <code>number</code> | 
-| count | <code>number</code> | 
-| delimiter | <code>string</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| textList  | <code>number</code> |
+| count     | <code>number</code> |
+| delimiter | <code>string</code> |
 
 <a name="TextSplit"></a>
 
 ## TextSplit(text, delimiter, count) ⇒ <code>number</code>
+
 Split text into multiple strings
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting const char **.  
+**Returns**: <code>number</code> - The resulting const char \*\*.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| delimiter | <code>string</code> | 
-| count | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| text      | <code>string</code> |
+| delimiter | <code>string</code> |
+| count     | <code>number</code> |
 
 <a name="TextAppend"></a>
 
 ## TextAppend(text, append, position) ⇒ <code>undefined</code>
+
 Append text at specific position and move cursor!
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| append | <code>string</code> | 
-| position | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| text     | <code>string</code> |
+| append   | <code>string</code> |
+| position | <code>number</code> |
 
 <a name="TextFindIndex"></a>
 
 ## TextFindIndex(text, find) ⇒ <code>number</code>
+
 Find first text occurrence within a string
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
-| find | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
+| find  | <code>string</code> |
 
 <a name="TextToUpper"></a>
 
 ## TextToUpper(text) ⇒ <code>string</code>
+
 Get upper case version of provided string
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="TextToLower"></a>
 
 ## TextToLower(text) ⇒ <code>string</code>
+
 Get lower case version of provided string
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="TextToPascal"></a>
 
 ## TextToPascal(text) ⇒ <code>string</code>
+
 Get Pascal case notation version of provided string
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="TextToSnake"></a>
 
 ## TextToSnake(text) ⇒ <code>string</code>
+
 Get Snake case notation version of provided string
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="TextToCamel"></a>
 
 ## TextToCamel(text) ⇒ <code>string</code>
+
 Get Camel case notation version of provided string
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="TextToInteger"></a>
 
 ## TextToInteger(text) ⇒ <code>number</code>
+
 Get integer value from text (negative values not supported)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="TextToFloat"></a>
 
 ## TextToFloat(text) ⇒ <code>number</code>
+
 Get float value from text (negative values not supported)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| text | <code>string</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| text  | <code>string</code> |
 
 <a name="DrawLine3D"></a>
 
 ## DrawLine3D(startPos, endPos, color) ⇒ <code>undefined</code>
+
 Draw a line in 3D world space
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| startPos | [<code>Vector3</code>](#Vector3) | 
-| endPos | [<code>Vector3</code>](#Vector3) | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| startPos | [<code>Vector3</code>](#Vector3) |
+| endPos   | [<code>Vector3</code>](#Vector3) |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawPoint3D"></a>
 
 ## DrawPoint3D(position, color) ⇒ <code>undefined</code>
+
 Draw a point in 3D space, actually a small line
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector3</code>](#Vector3) | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| position | [<code>Vector3</code>](#Vector3) |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawCircle3D"></a>
 
 ## DrawCircle3D(center, radius, rotationAxis, rotationAngle, color) ⇒ <code>undefined</code>
+
 Draw a circle in 3D world space
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| center | [<code>Vector3</code>](#Vector3) | 
-| radius | <code>number</code> | 
-| rotationAxis | [<code>Vector3</code>](#Vector3) | 
-| rotationAngle | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param         | Type                             |
+| ------------- | -------------------------------- |
+| center        | [<code>Vector3</code>](#Vector3) |
+| radius        | <code>number</code>              |
+| rotationAxis  | [<code>Vector3</code>](#Vector3) |
+| rotationAngle | <code>number</code>              |
+| color         | [<code>Color</code>](#Color)     |
 
 <a name="DrawTriangle3D"></a>
 
 ## DrawTriangle3D(v1, v2, v3, color) ⇒ <code>undefined</code>
+
 Draw a color-filled triangle (vertex in counter-clockwise order!)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| v1 | [<code>Vector3</code>](#Vector3) | 
-| v2 | [<code>Vector3</code>](#Vector3) | 
-| v3 | [<code>Vector3</code>](#Vector3) | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| v1    | [<code>Vector3</code>](#Vector3) |
+| v2    | [<code>Vector3</code>](#Vector3) |
+| v3    | [<code>Vector3</code>](#Vector3) |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="DrawTriangleStrip3D"></a>
 
 ## DrawTriangleStrip3D(points, pointCount, color) ⇒ <code>undefined</code>
+
 Draw a triangle strip defined by points
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| points | <code>number</code> | 
-| pointCount | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param      | Type                         |
+| ---------- | ---------------------------- |
+| points     | <code>number</code>          |
+| pointCount | <code>number</code>          |
+| color      | [<code>Color</code>](#Color) |
 
 <a name="DrawCube"></a>
 
 ## DrawCube(position, width, height, length, color) ⇒ <code>undefined</code>
+
 Draw cube
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector3</code>](#Vector3) | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| length | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| position | [<code>Vector3</code>](#Vector3) |
+| width    | <code>number</code>              |
+| height   | <code>number</code>              |
+| length   | <code>number</code>              |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawCubeV"></a>
 
 ## DrawCubeV(position, size, color) ⇒ <code>undefined</code>
+
 Draw cube (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector3</code>](#Vector3) | 
-| size | [<code>Vector3</code>](#Vector3) | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| position | [<code>Vector3</code>](#Vector3) |
+| size     | [<code>Vector3</code>](#Vector3) |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawCubeWires"></a>
 
 ## DrawCubeWires(position, width, height, length, color) ⇒ <code>undefined</code>
+
 Draw cube wires
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector3</code>](#Vector3) | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| length | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| position | [<code>Vector3</code>](#Vector3) |
+| width    | <code>number</code>              |
+| height   | <code>number</code>              |
+| length   | <code>number</code>              |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawCubeWiresV"></a>
 
 ## DrawCubeWiresV(position, size, color) ⇒ <code>undefined</code>
+
 Draw cube wires (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector3</code>](#Vector3) | 
-| size | [<code>Vector3</code>](#Vector3) | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| position | [<code>Vector3</code>](#Vector3) |
+| size     | [<code>Vector3</code>](#Vector3) |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawSphere"></a>
 
 ## DrawSphere(centerPos, radius, color) ⇒ <code>undefined</code>
+
 Draw sphere
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| centerPos | [<code>Vector3</code>](#Vector3) | 
-| radius | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                             |
+| --------- | -------------------------------- |
+| centerPos | [<code>Vector3</code>](#Vector3) |
+| radius    | <code>number</code>              |
+| color     | [<code>Color</code>](#Color)     |
 
 <a name="DrawSphereEx"></a>
 
 ## DrawSphereEx(centerPos, radius, rings, slices, color) ⇒ <code>undefined</code>
+
 Draw sphere with extended parameters
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| centerPos | [<code>Vector3</code>](#Vector3) | 
-| radius | <code>number</code> | 
-| rings | <code>number</code> | 
-| slices | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                             |
+| --------- | -------------------------------- |
+| centerPos | [<code>Vector3</code>](#Vector3) |
+| radius    | <code>number</code>              |
+| rings     | <code>number</code>              |
+| slices    | <code>number</code>              |
+| color     | [<code>Color</code>](#Color)     |
 
 <a name="DrawSphereWires"></a>
 
 ## DrawSphereWires(centerPos, radius, rings, slices, color) ⇒ <code>undefined</code>
+
 Draw sphere wires
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| centerPos | [<code>Vector3</code>](#Vector3) | 
-| radius | <code>number</code> | 
-| rings | <code>number</code> | 
-| slices | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                             |
+| --------- | -------------------------------- |
+| centerPos | [<code>Vector3</code>](#Vector3) |
+| radius    | <code>number</code>              |
+| rings     | <code>number</code>              |
+| slices    | <code>number</code>              |
+| color     | [<code>Color</code>](#Color)     |
 
 <a name="DrawCylinder"></a>
 
 ## DrawCylinder(position, radiusTop, radiusBottom, height, slices, color) ⇒ <code>undefined</code>
+
 Draw a cylinder/cone
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector3</code>](#Vector3) | 
-| radiusTop | <code>number</code> | 
-| radiusBottom | <code>number</code> | 
-| height | <code>number</code> | 
-| slices | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param        | Type                             |
+| ------------ | -------------------------------- |
+| position     | [<code>Vector3</code>](#Vector3) |
+| radiusTop    | <code>number</code>              |
+| radiusBottom | <code>number</code>              |
+| height       | <code>number</code>              |
+| slices       | <code>number</code>              |
+| color        | [<code>Color</code>](#Color)     |
 
 <a name="DrawCylinderEx"></a>
 
 ## DrawCylinderEx(startPos, endPos, startRadius, endRadius, sides, color) ⇒ <code>undefined</code>
+
 Draw a cylinder with base at startPos and top at endPos
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| startPos | [<code>Vector3</code>](#Vector3) | 
-| endPos | [<code>Vector3</code>](#Vector3) | 
-| startRadius | <code>number</code> | 
-| endRadius | <code>number</code> | 
-| sides | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param       | Type                             |
+| ----------- | -------------------------------- |
+| startPos    | [<code>Vector3</code>](#Vector3) |
+| endPos      | [<code>Vector3</code>](#Vector3) |
+| startRadius | <code>number</code>              |
+| endRadius   | <code>number</code>              |
+| sides       | <code>number</code>              |
+| color       | [<code>Color</code>](#Color)     |
 
 <a name="DrawCylinderWires"></a>
 
 ## DrawCylinderWires(position, radiusTop, radiusBottom, height, slices, color) ⇒ <code>undefined</code>
+
 Draw a cylinder/cone wires
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| position | [<code>Vector3</code>](#Vector3) | 
-| radiusTop | <code>number</code> | 
-| radiusBottom | <code>number</code> | 
-| height | <code>number</code> | 
-| slices | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param        | Type                             |
+| ------------ | -------------------------------- |
+| position     | [<code>Vector3</code>](#Vector3) |
+| radiusTop    | <code>number</code>              |
+| radiusBottom | <code>number</code>              |
+| height       | <code>number</code>              |
+| slices       | <code>number</code>              |
+| color        | [<code>Color</code>](#Color)     |
 
 <a name="DrawCylinderWiresEx"></a>
 
 ## DrawCylinderWiresEx(startPos, endPos, startRadius, endRadius, sides, color) ⇒ <code>undefined</code>
+
 Draw a cylinder wires with base at startPos and top at endPos
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| startPos | [<code>Vector3</code>](#Vector3) | 
-| endPos | [<code>Vector3</code>](#Vector3) | 
-| startRadius | <code>number</code> | 
-| endRadius | <code>number</code> | 
-| sides | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param       | Type                             |
+| ----------- | -------------------------------- |
+| startPos    | [<code>Vector3</code>](#Vector3) |
+| endPos      | [<code>Vector3</code>](#Vector3) |
+| startRadius | <code>number</code>              |
+| endRadius   | <code>number</code>              |
+| sides       | <code>number</code>              |
+| color       | [<code>Color</code>](#Color)     |
 
 <a name="DrawCapsule"></a>
 
 ## DrawCapsule(startPos, endPos, radius, slices, rings, color) ⇒ <code>undefined</code>
+
 Draw a capsule with the center of its sphere caps at startPos and endPos
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| startPos | [<code>Vector3</code>](#Vector3) | 
-| endPos | [<code>Vector3</code>](#Vector3) | 
-| radius | <code>number</code> | 
-| slices | <code>number</code> | 
-| rings | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| startPos | [<code>Vector3</code>](#Vector3) |
+| endPos   | [<code>Vector3</code>](#Vector3) |
+| radius   | <code>number</code>              |
+| slices   | <code>number</code>              |
+| rings    | <code>number</code>              |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawCapsuleWires"></a>
 
 ## DrawCapsuleWires(startPos, endPos, radius, slices, rings, color) ⇒ <code>undefined</code>
+
 Draw capsule wireframe with the center of its sphere caps at startPos and endPos
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| startPos | [<code>Vector3</code>](#Vector3) | 
-| endPos | [<code>Vector3</code>](#Vector3) | 
-| radius | <code>number</code> | 
-| slices | <code>number</code> | 
-| rings | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| startPos | [<code>Vector3</code>](#Vector3) |
+| endPos   | [<code>Vector3</code>](#Vector3) |
+| radius   | <code>number</code>              |
+| slices   | <code>number</code>              |
+| rings    | <code>number</code>              |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="DrawPlane"></a>
 
 ## DrawPlane(centerPos, size, color) ⇒ <code>undefined</code>
+
 Draw a plane XZ
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| centerPos | [<code>Vector3</code>](#Vector3) | 
-| size | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                             |
+| --------- | -------------------------------- |
+| centerPos | [<code>Vector3</code>](#Vector3) |
+| size      | [<code>Vector2</code>](#Vector2) |
+| color     | [<code>Color</code>](#Color)     |
 
 <a name="DrawRay"></a>
 
 ## DrawRay(ray, color) ⇒ <code>undefined</code>
+
 Draw a ray line
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| ray | <code>Ray</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| ray   | <code>Ray</code>             |
+| color | [<code>Color</code>](#Color) |
 
 <a name="DrawGrid"></a>
 
 ## DrawGrid(slices, spacing) ⇒ <code>undefined</code>
+
 Draw a grid (centered at (0, 0, 0))
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| slices | <code>number</code> | 
-| spacing | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| slices  | <code>number</code> |
+| spacing | <code>number</code> |
 
 <a name="LoadModel"></a>
 
 ## LoadModel(fileName) ⇒ <code>Model</code>
+
 Load model from files (meshes and materials)
 
 **Kind**: global function  
-**Returns**: <code>Model</code> - The resulting Model.  
+**Returns**: <code>Model</code> - The resulting Model.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="LoadModelFromMesh"></a>
 
 ## LoadModelFromMesh(mesh) ⇒ <code>Model</code>
+
 Load model from generated mesh (default material)
 
 **Kind**: global function  
-**Returns**: <code>Model</code> - The resulting Model.  
+**Returns**: <code>Model</code> - The resulting Model.
 
-| Param | Type |
-| --- | --- |
-| mesh | <code>Mesh</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| mesh  | <code>Mesh</code> |
 
 <a name="IsModelValid"></a>
 
 ## IsModelValid(model) ⇒ <code>boolean</code>
+
 Check if a model is valid (loaded in GPU, VAO/VBOs)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| model | <code>Model</code> |
 
 <a name="UnloadModel"></a>
 
 ## UnloadModel(model) ⇒ <code>undefined</code>
+
 Unload model (including meshes) from memory (RAM and/or VRAM)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| model | <code>Model</code> |
 
 <a name="GetModelBoundingBox"></a>
 
 ## GetModelBoundingBox(model) ⇒ <code>BoundingBox</code>
+
 Compute model bounding box limits (considers all meshes)
 
 **Kind**: global function  
-**Returns**: <code>BoundingBox</code> - The resulting BoundingBox.  
+**Returns**: <code>BoundingBox</code> - The resulting BoundingBox.
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| model | <code>Model</code> |
 
 <a name="DrawModel"></a>
 
 ## DrawModel(model, position, scale, tint) ⇒ <code>undefined</code>
+
 Draw a model (with texture if set)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
-| position | [<code>Vector3</code>](#Vector3) | 
-| scale | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| model    | <code>Model</code>               |
+| position | [<code>Vector3</code>](#Vector3) |
+| scale    | <code>number</code>              |
+| tint     | [<code>Color</code>](#Color)     |
 
 <a name="DrawModelEx"></a>
 
 ## DrawModelEx(model, position, rotationAxis, rotationAngle, scale, tint) ⇒ <code>undefined</code>
+
 Draw a model with extended parameters
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
-| position | [<code>Vector3</code>](#Vector3) | 
-| rotationAxis | [<code>Vector3</code>](#Vector3) | 
-| rotationAngle | <code>number</code> | 
-| scale | [<code>Vector3</code>](#Vector3) | 
-| tint | [<code>Color</code>](#Color) | 
+| Param         | Type                             |
+| ------------- | -------------------------------- |
+| model         | <code>Model</code>               |
+| position      | [<code>Vector3</code>](#Vector3) |
+| rotationAxis  | [<code>Vector3</code>](#Vector3) |
+| rotationAngle | <code>number</code>              |
+| scale         | [<code>Vector3</code>](#Vector3) |
+| tint          | [<code>Color</code>](#Color)     |
 
 <a name="DrawModelWires"></a>
 
 ## DrawModelWires(model, position, scale, tint) ⇒ <code>undefined</code>
+
 Draw a model wires (with texture if set)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
-| position | [<code>Vector3</code>](#Vector3) | 
-| scale | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| model    | <code>Model</code>               |
+| position | [<code>Vector3</code>](#Vector3) |
+| scale    | <code>number</code>              |
+| tint     | [<code>Color</code>](#Color)     |
 
 <a name="DrawModelWiresEx"></a>
 
 ## DrawModelWiresEx(model, position, rotationAxis, rotationAngle, scale, tint) ⇒ <code>undefined</code>
+
 Draw a model wires (with texture if set) with extended parameters
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
-| position | [<code>Vector3</code>](#Vector3) | 
-| rotationAxis | [<code>Vector3</code>](#Vector3) | 
-| rotationAngle | <code>number</code> | 
-| scale | [<code>Vector3</code>](#Vector3) | 
-| tint | [<code>Color</code>](#Color) | 
+| Param         | Type                             |
+| ------------- | -------------------------------- |
+| model         | <code>Model</code>               |
+| position      | [<code>Vector3</code>](#Vector3) |
+| rotationAxis  | [<code>Vector3</code>](#Vector3) |
+| rotationAngle | <code>number</code>              |
+| scale         | [<code>Vector3</code>](#Vector3) |
+| tint          | [<code>Color</code>](#Color)     |
 
 <a name="DrawModelPoints"></a>
 
 ## DrawModelPoints(model, position, scale, tint) ⇒ <code>undefined</code>
+
 Draw a model as points
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
-| position | [<code>Vector3</code>](#Vector3) | 
-| scale | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| model    | <code>Model</code>               |
+| position | [<code>Vector3</code>](#Vector3) |
+| scale    | <code>number</code>              |
+| tint     | [<code>Color</code>](#Color)     |
 
 <a name="DrawModelPointsEx"></a>
 
 ## DrawModelPointsEx(model, position, rotationAxis, rotationAngle, scale, tint) ⇒ <code>undefined</code>
+
 Draw a model as points with extended parameters
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
-| position | [<code>Vector3</code>](#Vector3) | 
-| rotationAxis | [<code>Vector3</code>](#Vector3) | 
-| rotationAngle | <code>number</code> | 
-| scale | [<code>Vector3</code>](#Vector3) | 
-| tint | [<code>Color</code>](#Color) | 
+| Param         | Type                             |
+| ------------- | -------------------------------- |
+| model         | <code>Model</code>               |
+| position      | [<code>Vector3</code>](#Vector3) |
+| rotationAxis  | [<code>Vector3</code>](#Vector3) |
+| rotationAngle | <code>number</code>              |
+| scale         | [<code>Vector3</code>](#Vector3) |
+| tint          | [<code>Color</code>](#Color)     |
 
 <a name="DrawBoundingBox"></a>
 
 ## DrawBoundingBox(box, color) ⇒ <code>undefined</code>
+
 Draw bounding box (wires)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| box | <code>BoundingBox</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| box   | <code>BoundingBox</code>     |
+| color | [<code>Color</code>](#Color) |
 
 <a name="DrawBillboard"></a>
 
 ## DrawBillboard(camera, texture, position, scale, tint) ⇒ <code>undefined</code>
+
 Draw a billboard texture
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| camera | [<code>Camera3D</code>](#Camera3D) | 
-| texture | <code>Texture</code> | 
-| position | [<code>Vector3</code>](#Vector3) | 
-| scale | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                               |
+| -------- | ---------------------------------- |
+| camera   | [<code>Camera3D</code>](#Camera3D) |
+| texture  | <code>Texture</code>               |
+| position | [<code>Vector3</code>](#Vector3)   |
+| scale    | <code>number</code>                |
+| tint     | [<code>Color</code>](#Color)       |
 
 <a name="DrawBillboardRec"></a>
 
 ## DrawBillboardRec(camera, texture, source, position, size, tint) ⇒ <code>undefined</code>
+
 Draw a billboard texture defined by source
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| camera | [<code>Camera3D</code>](#Camera3D) | 
-| texture | <code>Texture</code> | 
-| source | [<code>Rectangle</code>](#Rectangle) | 
-| position | [<code>Vector3</code>](#Vector3) | 
-| size | [<code>Vector2</code>](#Vector2) | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| camera   | [<code>Camera3D</code>](#Camera3D)   |
+| texture  | <code>Texture</code>                 |
+| source   | [<code>Rectangle</code>](#Rectangle) |
+| position | [<code>Vector3</code>](#Vector3)     |
+| size     | [<code>Vector2</code>](#Vector2)     |
+| tint     | [<code>Color</code>](#Color)         |
 
 <a name="DrawBillboardPro"></a>
 
 ## DrawBillboardPro(camera, texture, source, position, up, size, origin, rotation, tint) ⇒ <code>undefined</code>
+
 Draw a billboard texture defined by source and rotation
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| camera | [<code>Camera3D</code>](#Camera3D) | 
-| texture | <code>Texture</code> | 
-| source | [<code>Rectangle</code>](#Rectangle) | 
-| position | [<code>Vector3</code>](#Vector3) | 
-| up | [<code>Vector3</code>](#Vector3) | 
-| size | [<code>Vector2</code>](#Vector2) | 
-| origin | [<code>Vector2</code>](#Vector2) | 
-| rotation | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| camera   | [<code>Camera3D</code>](#Camera3D)   |
+| texture  | <code>Texture</code>                 |
+| source   | [<code>Rectangle</code>](#Rectangle) |
+| position | [<code>Vector3</code>](#Vector3)     |
+| up       | [<code>Vector3</code>](#Vector3)     |
+| size     | [<code>Vector2</code>](#Vector2)     |
+| origin   | [<code>Vector2</code>](#Vector2)     |
+| rotation | <code>number</code>                  |
+| tint     | [<code>Color</code>](#Color)         |
 
 <a name="UpdateMeshBuffer"></a>
 
 ## UpdateMeshBuffer(mesh, index, data, dataSize, offset) ⇒ <code>undefined</code>
+
 Update mesh vertex data in GPU for a specific buffer index
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| mesh | <code>Mesh</code> | 
-| index | <code>number</code> | 
-| data | <code>number</code> | 
-| dataSize | <code>number</code> | 
-| offset | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| mesh     | <code>Mesh</code>   |
+| index    | <code>number</code> |
+| data     | <code>number</code> |
+| dataSize | <code>number</code> |
+| offset   | <code>number</code> |
 
 <a name="UnloadMesh"></a>
 
 ## UnloadMesh(mesh) ⇒ <code>undefined</code>
+
 Unload mesh data from CPU and GPU
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| mesh | <code>Mesh</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| mesh  | <code>Mesh</code> |
 
 <a name="GetMeshBoundingBox"></a>
 
 ## GetMeshBoundingBox(mesh) ⇒ <code>BoundingBox</code>
+
 Compute mesh bounding box limits
 
 **Kind**: global function  
-**Returns**: <code>BoundingBox</code> - The resulting BoundingBox.  
+**Returns**: <code>BoundingBox</code> - The resulting BoundingBox.
 
-| Param | Type |
-| --- | --- |
-| mesh | <code>Mesh</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| mesh  | <code>Mesh</code> |
 
 <a name="ExportMesh"></a>
 
 ## ExportMesh(mesh, fileName) ⇒ <code>boolean</code>
+
 Export mesh data to file, returns true on success
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| mesh | <code>Mesh</code> | 
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| mesh     | <code>Mesh</code>   |
+| fileName | <code>string</code> |
 
 <a name="ExportMeshAsCode"></a>
 
 ## ExportMeshAsCode(mesh, fileName) ⇒ <code>boolean</code>
+
 Export mesh as code file (.h) defining multiple arrays of vertex attributes
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| mesh | <code>Mesh</code> | 
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| mesh     | <code>Mesh</code>   |
+| fileName | <code>string</code> |
 
 <a name="GenMeshPoly"></a>
 
 ## GenMeshPoly(sides, radius) ⇒ <code>Mesh</code>
+
 Generate polygonal mesh
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| sides | <code>number</code> | 
-| radius | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| sides  | <code>number</code> |
+| radius | <code>number</code> |
 
 <a name="GenMeshPlane"></a>
 
 ## GenMeshPlane(width, length, resX, resZ) ⇒ <code>Mesh</code>
+
 Generate plane mesh (with subdivisions)
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| length | <code>number</code> | 
-| resX | <code>number</code> | 
-| resZ | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| length | <code>number</code> |
+| resX   | <code>number</code> |
+| resZ   | <code>number</code> |
 
 <a name="GenMeshCube"></a>
 
 ## GenMeshCube(width, height, length) ⇒ <code>Mesh</code>
+
 Generate cuboid mesh
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| length | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
+| length | <code>number</code> |
 
 <a name="GenMeshSphere"></a>
 
 ## GenMeshSphere(radius, rings, slices) ⇒ <code>Mesh</code>
+
 Generate sphere mesh (standard sphere)
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| radius | <code>number</code> | 
-| rings | <code>number</code> | 
-| slices | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| radius | <code>number</code> |
+| rings  | <code>number</code> |
+| slices | <code>number</code> |
 
 <a name="GenMeshHemiSphere"></a>
 
 ## GenMeshHemiSphere(radius, rings, slices) ⇒ <code>Mesh</code>
+
 Generate half-sphere mesh (no bottom cap)
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| radius | <code>number</code> | 
-| rings | <code>number</code> | 
-| slices | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| radius | <code>number</code> |
+| rings  | <code>number</code> |
+| slices | <code>number</code> |
 
 <a name="GenMeshCylinder"></a>
 
 ## GenMeshCylinder(radius, height, slices) ⇒ <code>Mesh</code>
+
 Generate cylinder mesh
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| radius | <code>number</code> | 
-| height | <code>number</code> | 
-| slices | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| radius | <code>number</code> |
+| height | <code>number</code> |
+| slices | <code>number</code> |
 
 <a name="GenMeshCone"></a>
 
 ## GenMeshCone(radius, height, slices) ⇒ <code>Mesh</code>
+
 Generate cone/pyramid mesh
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| radius | <code>number</code> | 
-| height | <code>number</code> | 
-| slices | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| radius | <code>number</code> |
+| height | <code>number</code> |
+| slices | <code>number</code> |
 
 <a name="GenMeshTorus"></a>
 
 ## GenMeshTorus(radius, size, radSeg, sides) ⇒ <code>Mesh</code>
+
 Generate torus mesh
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| radius | <code>number</code> | 
-| size | <code>number</code> | 
-| radSeg | <code>number</code> | 
-| sides | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| radius | <code>number</code> |
+| size   | <code>number</code> |
+| radSeg | <code>number</code> |
+| sides  | <code>number</code> |
 
 <a name="GenMeshKnot"></a>
 
 ## GenMeshKnot(radius, size, radSeg, sides) ⇒ <code>Mesh</code>
+
 Generate trefoil knot mesh
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| radius | <code>number</code> | 
-| size | <code>number</code> | 
-| radSeg | <code>number</code> | 
-| sides | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| radius | <code>number</code> |
+| size   | <code>number</code> |
+| radSeg | <code>number</code> |
+| sides  | <code>number</code> |
 
 <a name="GenMeshHeightmap"></a>
 
 ## GenMeshHeightmap(heightmap, size) ⇒ <code>Mesh</code>
+
 Generate heightmap mesh from image data
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| heightmap | <code>Image</code> | 
-| size | [<code>Vector3</code>](#Vector3) | 
+| Param     | Type                             |
+| --------- | -------------------------------- |
+| heightmap | <code>Image</code>               |
+| size      | [<code>Vector3</code>](#Vector3) |
 
 <a name="GenMeshCubicmap"></a>
 
 ## GenMeshCubicmap(cubicmap, cubeSize) ⇒ <code>Mesh</code>
+
 Generate cubes-based map mesh from image data
 
 **Kind**: global function  
-**Returns**: <code>Mesh</code> - The resulting Mesh.  
+**Returns**: <code>Mesh</code> - The resulting Mesh.
 
-| Param | Type |
-| --- | --- |
-| cubicmap | <code>Image</code> | 
-| cubeSize | [<code>Vector3</code>](#Vector3) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| cubicmap | <code>Image</code>               |
+| cubeSize | [<code>Vector3</code>](#Vector3) |
 
 <a name="LoadModelAnimations"></a>
 
 ## LoadModelAnimations(fileName, animCount) ⇒ <code>number</code>
+
 Load model animations from file
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting ModelAnimation *.  
+**Returns**: <code>number</code> - The resulting ModelAnimation \*.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
-| animCount | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| fileName  | <code>string</code> |
+| animCount | <code>number</code> |
 
 <a name="UpdateModelAnimation"></a>
 
 ## UpdateModelAnimation(model, anim, frame) ⇒ <code>undefined</code>
+
 Update model animation pose (CPU)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
-| anim | <code>ModelAnimation</code> | 
-| frame | <code>number</code> | 
+| Param | Type                        |
+| ----- | --------------------------- |
+| model | <code>Model</code>          |
+| anim  | <code>ModelAnimation</code> |
+| frame | <code>number</code>         |
 
 <a name="UpdateModelAnimationBones"></a>
 
 ## UpdateModelAnimationBones(model, anim, frame) ⇒ <code>undefined</code>
+
 Update model animation mesh bone matrices (GPU skinning)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
-| anim | <code>ModelAnimation</code> | 
-| frame | <code>number</code> | 
+| Param | Type                        |
+| ----- | --------------------------- |
+| model | <code>Model</code>          |
+| anim  | <code>ModelAnimation</code> |
+| frame | <code>number</code>         |
 
 <a name="UnloadModelAnimation"></a>
 
 ## UnloadModelAnimation(anim) ⇒ <code>undefined</code>
+
 Unload animation data
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| anim | <code>ModelAnimation</code> | 
+| Param | Type                        |
+| ----- | --------------------------- |
+| anim  | <code>ModelAnimation</code> |
 
 <a name="UnloadModelAnimations"></a>
 
 ## UnloadModelAnimations(animations, animCount) ⇒ <code>undefined</code>
+
 Unload animation array data
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| animations | <code>number</code> | 
-| animCount | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| animations | <code>number</code> |
+| animCount  | <code>number</code> |
 
 <a name="IsModelAnimationValid"></a>
 
 ## IsModelAnimationValid(model, anim) ⇒ <code>boolean</code>
+
 Check model animation skeleton match
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
-| anim | <code>ModelAnimation</code> | 
+| Param | Type                        |
+| ----- | --------------------------- |
+| model | <code>Model</code>          |
+| anim  | <code>ModelAnimation</code> |
 
 <a name="CheckCollisionSpheres"></a>
 
 ## CheckCollisionSpheres(center1, radius1, center2, radius2) ⇒ <code>boolean</code>
+
 Check collision between two spheres
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| center1 | [<code>Vector3</code>](#Vector3) | 
-| radius1 | <code>number</code> | 
-| center2 | [<code>Vector3</code>](#Vector3) | 
-| radius2 | <code>number</code> | 
+| Param   | Type                             |
+| ------- | -------------------------------- |
+| center1 | [<code>Vector3</code>](#Vector3) |
+| radius1 | <code>number</code>              |
+| center2 | [<code>Vector3</code>](#Vector3) |
+| radius2 | <code>number</code>              |
 
 <a name="CheckCollisionBoxes"></a>
 
 ## CheckCollisionBoxes(box1, box2) ⇒ <code>boolean</code>
+
 Check collision between two bounding boxes
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| box1 | <code>BoundingBox</code> | 
-| box2 | <code>BoundingBox</code> | 
+| Param | Type                     |
+| ----- | ------------------------ |
+| box1  | <code>BoundingBox</code> |
+| box2  | <code>BoundingBox</code> |
 
 <a name="CheckCollisionBoxSphere"></a>
 
 ## CheckCollisionBoxSphere(box, center, radius) ⇒ <code>boolean</code>
+
 Check collision between box and sphere
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| box | <code>BoundingBox</code> | 
-| center | [<code>Vector3</code>](#Vector3) | 
-| radius | <code>number</code> | 
+| Param  | Type                             |
+| ------ | -------------------------------- |
+| box    | <code>BoundingBox</code>         |
+| center | [<code>Vector3</code>](#Vector3) |
+| radius | <code>number</code>              |
 
 <a name="GetRayCollisionSphere"></a>
 
 ## GetRayCollisionSphere(ray, center, radius) ⇒ <code>RayCollision</code>
+
 Get collision info between ray and sphere
 
 **Kind**: global function  
-**Returns**: <code>RayCollision</code> - The resulting RayCollision.  
+**Returns**: <code>RayCollision</code> - The resulting RayCollision.
 
-| Param | Type |
-| --- | --- |
-| ray | <code>Ray</code> | 
-| center | [<code>Vector3</code>](#Vector3) | 
-| radius | <code>number</code> | 
+| Param  | Type                             |
+| ------ | -------------------------------- |
+| ray    | <code>Ray</code>                 |
+| center | [<code>Vector3</code>](#Vector3) |
+| radius | <code>number</code>              |
 
 <a name="GetRayCollisionBox"></a>
 
 ## GetRayCollisionBox(ray, box) ⇒ <code>RayCollision</code>
+
 Get collision info between ray and box
 
 **Kind**: global function  
-**Returns**: <code>RayCollision</code> - The resulting RayCollision.  
+**Returns**: <code>RayCollision</code> - The resulting RayCollision.
 
-| Param | Type |
-| --- | --- |
-| ray | <code>Ray</code> | 
-| box | <code>BoundingBox</code> | 
+| Param | Type                     |
+| ----- | ------------------------ |
+| ray   | <code>Ray</code>         |
+| box   | <code>BoundingBox</code> |
 
 <a name="GetRayCollisionMesh"></a>
 
 ## GetRayCollisionMesh(ray, mesh, transform) ⇒ <code>RayCollision</code>
+
 Get collision info between ray and mesh
 
 **Kind**: global function  
-**Returns**: <code>RayCollision</code> - The resulting RayCollision.  
+**Returns**: <code>RayCollision</code> - The resulting RayCollision.
 
-| Param | Type |
-| --- | --- |
-| ray | <code>Ray</code> | 
-| mesh | <code>Mesh</code> | 
-| transform | <code>Matrix</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| ray       | <code>Ray</code>    |
+| mesh      | <code>Mesh</code>   |
+| transform | <code>Matrix</code> |
 
 <a name="GetRayCollisionTriangle"></a>
 
 ## GetRayCollisionTriangle(ray, p1, p2, p3) ⇒ <code>RayCollision</code>
+
 Get collision info between ray and triangle
 
 **Kind**: global function  
-**Returns**: <code>RayCollision</code> - The resulting RayCollision.  
+**Returns**: <code>RayCollision</code> - The resulting RayCollision.
 
-| Param | Type |
-| --- | --- |
-| ray | <code>Ray</code> | 
-| p1 | [<code>Vector3</code>](#Vector3) | 
-| p2 | [<code>Vector3</code>](#Vector3) | 
-| p3 | [<code>Vector3</code>](#Vector3) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| ray   | <code>Ray</code>                 |
+| p1    | [<code>Vector3</code>](#Vector3) |
+| p2    | [<code>Vector3</code>](#Vector3) |
+| p3    | [<code>Vector3</code>](#Vector3) |
 
 <a name="GetRayCollisionQuad"></a>
 
 ## GetRayCollisionQuad(ray, p1, p2, p3, p4) ⇒ <code>RayCollision</code>
+
 Get collision info between ray and quad
 
 **Kind**: global function  
-**Returns**: <code>RayCollision</code> - The resulting RayCollision.  
+**Returns**: <code>RayCollision</code> - The resulting RayCollision.
 
-| Param | Type |
-| --- | --- |
-| ray | <code>Ray</code> | 
-| p1 | [<code>Vector3</code>](#Vector3) | 
-| p2 | [<code>Vector3</code>](#Vector3) | 
-| p3 | [<code>Vector3</code>](#Vector3) | 
-| p4 | [<code>Vector3</code>](#Vector3) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| ray   | <code>Ray</code>                 |
+| p1    | [<code>Vector3</code>](#Vector3) |
+| p2    | [<code>Vector3</code>](#Vector3) |
+| p3    | [<code>Vector3</code>](#Vector3) |
+| p4    | [<code>Vector3</code>](#Vector3) |
 
 <a name="InitAudioDevice"></a>
 
 ## InitAudioDevice() ⇒ <code>undefined</code>
+
 Initialize audio device and context
 
 **Kind**: global function  
 <a name="CloseAudioDevice"></a>
 
 ## CloseAudioDevice() ⇒ <code>undefined</code>
+
 Close the audio device and context
 
 **Kind**: global function  
 <a name="IsAudioDeviceReady"></a>
 
 ## IsAudioDeviceReady() ⇒ <code>boolean</code>
+
 Check if audio device has been initialized successfully
 
 **Kind**: global function  
@@ -7971,17 +8451,19 @@ Check if audio device has been initialized successfully
 <a name="SetMasterVolume"></a>
 
 ## SetMasterVolume(volume) ⇒ <code>undefined</code>
+
 Set master volume (listener)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| volume | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| volume | <code>number</code> |
 
 <a name="GetMasterVolume"></a>
 
 ## GetMasterVolume() ⇒ <code>number</code>
+
 Get master volume (listener)
 
 **Kind**: global function  
@@ -7989,1088 +8471,1176 @@ Get master volume (listener)
 <a name="LoadWave"></a>
 
 ## LoadWave(fileName) ⇒ <code>Wave</code>
+
 Load wave data from file
 
 **Kind**: global function  
-**Returns**: <code>Wave</code> - The resulting Wave.  
+**Returns**: <code>Wave</code> - The resulting Wave.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="LoadWaveFromMemory"></a>
 
 ## LoadWaveFromMemory(fileType, fileData, dataSize) ⇒ <code>Wave</code>
+
 Load wave from memory buffer, fileType refers to extension: i.e. '.wav'
 
 **Kind**: global function  
-**Returns**: <code>Wave</code> - The resulting Wave.  
+**Returns**: <code>Wave</code> - The resulting Wave.
 
-| Param | Type |
-| --- | --- |
-| fileType | <code>string</code> | 
-| fileData | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileType | <code>string</code> |
+| fileData | <code>Buffer</code> |
+| dataSize | <code>number</code> |
 
 <a name="IsWaveValid"></a>
 
 ## IsWaveValid(wave) ⇒ <code>boolean</code>
+
 Checks if wave data is valid (data loaded and parameters)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| wave | <code>Wave</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| wave  | <code>Wave</code> |
 
 <a name="LoadSound"></a>
 
 ## LoadSound(fileName) ⇒ <code>Sound</code>
+
 Load sound from file
 
 **Kind**: global function  
-**Returns**: <code>Sound</code> - The resulting Sound.  
+**Returns**: <code>Sound</code> - The resulting Sound.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="LoadSoundFromWave"></a>
 
 ## LoadSoundFromWave(wave) ⇒ <code>Sound</code>
+
 Load sound from wave data
 
 **Kind**: global function  
-**Returns**: <code>Sound</code> - The resulting Sound.  
+**Returns**: <code>Sound</code> - The resulting Sound.
 
-| Param | Type |
-| --- | --- |
-| wave | <code>Wave</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| wave  | <code>Wave</code> |
 
 <a name="LoadSoundAlias"></a>
 
 ## LoadSoundAlias(source) ⇒ <code>Sound</code>
-Create a new sound that shares the same sample data as the source sound, does not own the sound data
+
+Create a new sound that shares the same sample data as the source sound, does
+not own the sound data
 
 **Kind**: global function  
-**Returns**: <code>Sound</code> - The resulting Sound.  
+**Returns**: <code>Sound</code> - The resulting Sound.
 
-| Param | Type |
-| --- | --- |
-| source | <code>Sound</code> | 
+| Param  | Type               |
+| ------ | ------------------ |
+| source | <code>Sound</code> |
 
 <a name="IsSoundValid"></a>
 
 ## IsSoundValid(sound) ⇒ <code>boolean</code>
+
 Checks if a sound is valid (data loaded and buffers initialized)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| sound | <code>Sound</code> |
 
 <a name="UpdateSound"></a>
 
 ## UpdateSound(sound, data, sampleCount) ⇒ <code>undefined</code>
+
 Update sound buffer with new data
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
-| data | <code>number</code> | 
-| sampleCount | <code>number</code> | 
+| Param       | Type                |
+| ----------- | ------------------- |
+| sound       | <code>Sound</code>  |
+| data        | <code>number</code> |
+| sampleCount | <code>number</code> |
 
 <a name="UnloadWave"></a>
 
 ## UnloadWave(wave) ⇒ <code>undefined</code>
+
 Unload wave data
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| wave | <code>Wave</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| wave  | <code>Wave</code> |
 
 <a name="UnloadSound"></a>
 
 ## UnloadSound(sound) ⇒ <code>undefined</code>
+
 Unload sound
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| sound | <code>Sound</code> |
 
 <a name="UnloadSoundAlias"></a>
 
 ## UnloadSoundAlias(alias) ⇒ <code>undefined</code>
+
 Unload a sound alias (does not deallocate sample data)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| alias | <code>Sound</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| alias | <code>Sound</code> |
 
 <a name="ExportWave"></a>
 
 ## ExportWave(wave, fileName) ⇒ <code>boolean</code>
+
 Export wave data to file, returns true on success
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| wave | <code>Wave</code> | 
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| wave     | <code>Wave</code>   |
+| fileName | <code>string</code> |
 
 <a name="ExportWaveAsCode"></a>
 
 ## ExportWaveAsCode(wave, fileName) ⇒ <code>boolean</code>
+
 Export wave sample data to code (.h), returns true on success
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| wave | <code>Wave</code> | 
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| wave     | <code>Wave</code>   |
+| fileName | <code>string</code> |
 
 <a name="PlaySound"></a>
 
 ## PlaySound(sound) ⇒ <code>undefined</code>
+
 Play a sound
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| sound | <code>Sound</code> |
 
 <a name="StopSound"></a>
 
 ## StopSound(sound) ⇒ <code>undefined</code>
+
 Stop playing a sound
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| sound | <code>Sound</code> |
 
 <a name="PauseSound"></a>
 
 ## PauseSound(sound) ⇒ <code>undefined</code>
+
 Pause a sound
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| sound | <code>Sound</code> |
 
 <a name="ResumeSound"></a>
 
 ## ResumeSound(sound) ⇒ <code>undefined</code>
+
 Resume a paused sound
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| sound | <code>Sound</code> |
 
 <a name="IsSoundPlaying"></a>
 
 ## IsSoundPlaying(sound) ⇒ <code>boolean</code>
+
 Check if a sound is currently playing
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| sound | <code>Sound</code> |
 
 <a name="SetSoundVolume"></a>
 
 ## SetSoundVolume(sound, volume) ⇒ <code>undefined</code>
+
 Set volume for a sound (1.0 is max level)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
-| volume | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| sound  | <code>Sound</code>  |
+| volume | <code>number</code> |
 
 <a name="SetSoundPitch"></a>
 
 ## SetSoundPitch(sound, pitch) ⇒ <code>undefined</code>
+
 Set pitch for a sound (1.0 is base level)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
-| pitch | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| sound | <code>Sound</code>  |
+| pitch | <code>number</code> |
 
 <a name="SetSoundPan"></a>
 
 ## SetSoundPan(sound, pan) ⇒ <code>undefined</code>
+
 Set pan for a sound (0.5 is center)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| sound | <code>Sound</code> | 
-| pan | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| sound | <code>Sound</code>  |
+| pan   | <code>number</code> |
 
 <a name="WaveCopy"></a>
 
 ## WaveCopy(wave) ⇒ <code>Wave</code>
+
 Copy a wave to a new wave
 
 **Kind**: global function  
-**Returns**: <code>Wave</code> - The resulting Wave.  
+**Returns**: <code>Wave</code> - The resulting Wave.
 
-| Param | Type |
-| --- | --- |
-| wave | <code>Wave</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| wave  | <code>Wave</code> |
 
 <a name="LoadWaveSamples"></a>
 
 ## LoadWaveSamples(wave) ⇒ <code>number</code>
+
 Load samples data from wave as a 32bit float data array
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float *.  
+**Returns**: <code>number</code> - The resulting float \*.
 
-| Param | Type |
-| --- | --- |
-| wave | <code>Wave</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| wave  | <code>Wave</code> |
 
 <a name="UnloadWaveSamples"></a>
 
 ## UnloadWaveSamples(samples) ⇒ <code>undefined</code>
+
 Unload samples data loaded with LoadWaveSamples()
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| samples | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| samples | <code>number</code> |
 
 <a name="LoadMusicStream"></a>
 
 ## LoadMusicStream(fileName) ⇒ <code>Music</code>
+
 Load music stream from file
 
 **Kind**: global function  
-**Returns**: <code>Music</code> - The resulting Music.  
+**Returns**: <code>Music</code> - The resulting Music.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="LoadMusicStreamFromMemory"></a>
 
 ## LoadMusicStreamFromMemory(fileType, data, dataSize) ⇒ <code>Music</code>
+
 Load music stream from data
 
 **Kind**: global function  
-**Returns**: <code>Music</code> - The resulting Music.  
+**Returns**: <code>Music</code> - The resulting Music.
 
-| Param | Type |
-| --- | --- |
-| fileType | <code>string</code> | 
-| data | <code>Buffer</code> | 
-| dataSize | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileType | <code>string</code> |
+| data     | <code>Buffer</code> |
+| dataSize | <code>number</code> |
 
 <a name="IsMusicValid"></a>
 
 ## IsMusicValid(music) ⇒ <code>boolean</code>
+
 Checks if a music stream is valid (context and buffers initialized)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| music | <code>Music</code> |
 
 <a name="UnloadMusicStream"></a>
 
 ## UnloadMusicStream(music) ⇒ <code>undefined</code>
+
 Unload music stream
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| music | <code>Music</code> |
 
 <a name="PlayMusicStream"></a>
 
 ## PlayMusicStream(music) ⇒ <code>undefined</code>
+
 Start music playing
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| music | <code>Music</code> |
 
 <a name="IsMusicStreamPlaying"></a>
 
 ## IsMusicStreamPlaying(music) ⇒ <code>boolean</code>
+
 Check if music is playing
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| music | <code>Music</code> |
 
 <a name="UpdateMusicStream"></a>
 
 ## UpdateMusicStream(music) ⇒ <code>undefined</code>
+
 Updates buffers for music streaming
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| music | <code>Music</code> |
 
 <a name="StopMusicStream"></a>
 
 ## StopMusicStream(music) ⇒ <code>undefined</code>
+
 Stop music playing
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| music | <code>Music</code> |
 
 <a name="PauseMusicStream"></a>
 
 ## PauseMusicStream(music) ⇒ <code>undefined</code>
+
 Pause music playing
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| music | <code>Music</code> |
 
 <a name="ResumeMusicStream"></a>
 
 ## ResumeMusicStream(music) ⇒ <code>undefined</code>
+
 Resume playing paused music
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| music | <code>Music</code> |
 
 <a name="SeekMusicStream"></a>
 
 ## SeekMusicStream(music, position) ⇒ <code>undefined</code>
+
 Seek music to a position (in seconds)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
-| position | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| music    | <code>Music</code>  |
+| position | <code>number</code> |
 
 <a name="SetMusicVolume"></a>
 
 ## SetMusicVolume(music, volume) ⇒ <code>undefined</code>
+
 Set volume for music (1.0 is max level)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
-| volume | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| music  | <code>Music</code>  |
+| volume | <code>number</code> |
 
 <a name="SetMusicPitch"></a>
 
 ## SetMusicPitch(music, pitch) ⇒ <code>undefined</code>
+
 Set pitch for a music (1.0 is base level)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
-| pitch | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| music | <code>Music</code>  |
+| pitch | <code>number</code> |
 
 <a name="SetMusicPan"></a>
 
 ## SetMusicPan(music, pan) ⇒ <code>undefined</code>
+
 Set pan for a music (0.5 is center)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
-| pan | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| music | <code>Music</code>  |
+| pan   | <code>number</code> |
 
 <a name="GetMusicTimeLength"></a>
 
 ## GetMusicTimeLength(music) ⇒ <code>number</code>
+
 Get music time length (in seconds)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| music | <code>Music</code> |
 
 <a name="GetMusicTimePlayed"></a>
 
 ## GetMusicTimePlayed(music) ⇒ <code>number</code>
+
 Get current music time played (in seconds)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| music | <code>Music</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| music | <code>Music</code> |
 
 <a name="LoadAudioStream"></a>
 
 ## LoadAudioStream(sampleRate, sampleSize, channels) ⇒ <code>AudioStream</code>
+
 Load audio stream (to stream raw audio pcm data)
 
 **Kind**: global function  
-**Returns**: <code>AudioStream</code> - The resulting AudioStream.  
+**Returns**: <code>AudioStream</code> - The resulting AudioStream.
 
-| Param | Type |
-| --- | --- |
-| sampleRate | <code>number</code> | 
-| sampleSize | <code>number</code> | 
-| channels | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| sampleRate | <code>number</code> |
+| sampleSize | <code>number</code> |
+| channels   | <code>number</code> |
 
 <a name="IsAudioStreamValid"></a>
 
 ## IsAudioStreamValid(stream) ⇒ <code>boolean</code>
+
 Checks if an audio stream is valid (buffers initialized)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
 
 <a name="UnloadAudioStream"></a>
 
 ## UnloadAudioStream(stream) ⇒ <code>undefined</code>
+
 Unload audio stream and free memory
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
 
 <a name="UpdateAudioStream"></a>
 
 ## UpdateAudioStream(stream, data, frameCount) ⇒ <code>undefined</code>
+
 Update audio stream buffers with data
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
-| data | <code>number</code> | 
-| frameCount | <code>number</code> | 
+| Param      | Type                     |
+| ---------- | ------------------------ |
+| stream     | <code>AudioStream</code> |
+| data       | <code>number</code>      |
+| frameCount | <code>number</code>      |
 
 <a name="IsAudioStreamProcessed"></a>
 
 ## IsAudioStreamProcessed(stream) ⇒ <code>boolean</code>
+
 Check if any audio stream buffers requires refill
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
 
 <a name="PlayAudioStream"></a>
 
 ## PlayAudioStream(stream) ⇒ <code>undefined</code>
+
 Play audio stream
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
 
 <a name="PauseAudioStream"></a>
 
 ## PauseAudioStream(stream) ⇒ <code>undefined</code>
+
 Pause audio stream
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
 
 <a name="ResumeAudioStream"></a>
 
 ## ResumeAudioStream(stream) ⇒ <code>undefined</code>
+
 Resume audio stream
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
 
 <a name="IsAudioStreamPlaying"></a>
 
 ## IsAudioStreamPlaying(stream) ⇒ <code>boolean</code>
+
 Check if audio stream is playing
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
 
 <a name="StopAudioStream"></a>
 
 ## StopAudioStream(stream) ⇒ <code>undefined</code>
+
 Stop audio stream
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
 
 <a name="SetAudioStreamVolume"></a>
 
 ## SetAudioStreamVolume(stream, volume) ⇒ <code>undefined</code>
+
 Set volume for audio stream (1.0 is max level)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
-| volume | <code>number</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
+| volume | <code>number</code>      |
 
 <a name="SetAudioStreamPitch"></a>
 
 ## SetAudioStreamPitch(stream, pitch) ⇒ <code>undefined</code>
+
 Set pitch for audio stream (1.0 is base level)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
-| pitch | <code>number</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
+| pitch  | <code>number</code>      |
 
 <a name="SetAudioStreamPan"></a>
 
 ## SetAudioStreamPan(stream, pan) ⇒ <code>undefined</code>
+
 Set pan for audio stream (0.5 is centered)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| stream | <code>AudioStream</code> | 
-| pan | <code>number</code> | 
+| Param  | Type                     |
+| ------ | ------------------------ |
+| stream | <code>AudioStream</code> |
+| pan    | <code>number</code>      |
 
 <a name="SetAudioStreamBufferSizeDefault"></a>
 
 ## SetAudioStreamBufferSizeDefault(size) ⇒ <code>undefined</code>
+
 Default size for new audio streams
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| size | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| size  | <code>number</code> |
 
 <a name="EaseLinearNone"></a>
 
 ## EaseLinearNone(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Linear
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseLinearIn"></a>
 
 ## EaseLinearIn(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Linear In
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseLinearOut"></a>
 
 ## EaseLinearOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Linear Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseLinearInOut"></a>
 
 ## EaseLinearInOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Linear In Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseSineIn"></a>
 
 ## EaseSineIn(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Sine In
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseSineOut"></a>
 
 ## EaseSineOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Sine Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseSineInOut"></a>
 
 ## EaseSineInOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Sine Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseCircIn"></a>
 
 ## EaseCircIn(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Circular In
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseCircOut"></a>
 
 ## EaseCircOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Circular Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseCircInOut"></a>
 
 ## EaseCircInOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Circular In Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseCubicIn"></a>
 
 ## EaseCubicIn(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Cubic In
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseCubicOut"></a>
 
 ## EaseCubicOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Cubic Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseCubicInOut"></a>
 
 ## EaseCubicInOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Cubic In Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseQuadIn"></a>
 
 ## EaseQuadIn(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Quadratic In
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseQuadOut"></a>
 
 ## EaseQuadOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Quadratic Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseQuadInOut"></a>
 
 ## EaseQuadInOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Quadratic In Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseExpoIn"></a>
 
 ## EaseExpoIn(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Exponential In
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseExpoOut"></a>
 
 ## EaseExpoOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Exponential Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseExpoInOut"></a>
 
 ## EaseExpoInOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Exponential In Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseBackIn"></a>
 
 ## EaseBackIn(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Back In
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseBackOut"></a>
 
 ## EaseBackOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Back Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseBackInOut"></a>
 
 ## EaseBackInOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Back In Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseBounceOut"></a>
 
 ## EaseBounceOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Bounce Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseBounceIn"></a>
 
 ## EaseBounceIn(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Bounce In
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseBounceInOut"></a>
 
 ## EaseBounceInOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Bounce In Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseElasticIn"></a>
 
 ## EaseElasticIn(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Elastic In
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseElasticOut"></a>
 
 ## EaseElasticOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Elastic Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="EaseElasticInOut"></a>
 
 ## EaseElasticInOut(t, b, c, d) ⇒ <code>number</code>
+
 Ease: Elastic In Out
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting float.  
+**Returns**: <code>number</code> - The resulting float.
 
-| Param | Type |
-| --- | --- |
-| t | <code>number</code> | 
-| b | <code>number</code> | 
-| c | <code>number</code> | 
-| d | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| t     | <code>number</code> |
+| b     | <code>number</code> |
+| c     | <code>number</code> |
+| d     | <code>number</code> |
 
 <a name="GuiEnable"></a>
 
 ## GuiEnable() ⇒ <code>undefined</code>
+
 Enable gui controls (global state)
 
 **Kind**: global function  
 <a name="GuiDisable"></a>
 
 ## GuiDisable() ⇒ <code>undefined</code>
+
 Disable gui controls (global state)
 
 **Kind**: global function  
 <a name="GuiLock"></a>
 
 ## GuiLock() ⇒ <code>undefined</code>
+
 Lock gui controls (global state)
 
 **Kind**: global function  
 <a name="GuiUnlock"></a>
 
 ## GuiUnlock() ⇒ <code>undefined</code>
+
 Unlock gui controls (global state)
 
 **Kind**: global function  
 <a name="GuiIsLocked"></a>
 
 ## GuiIsLocked() ⇒ <code>boolean</code>
+
 Check if gui is locked (global state)
 
 **Kind**: global function  
@@ -9078,28 +9648,31 @@ Check if gui is locked (global state)
 <a name="GuiSetAlpha"></a>
 
 ## GuiSetAlpha(alpha) ⇒ <code>undefined</code>
+
 Set gui controls alpha (global state), alpha goes from 0.0f to 1.0f
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| alpha | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| alpha | <code>number</code> |
 
 <a name="GuiSetState"></a>
 
 ## GuiSetState(state) ⇒ <code>undefined</code>
+
 Set gui state (global state)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| state | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| state | <code>number</code> |
 
 <a name="GuiGetState"></a>
 
 ## GuiGetState() ⇒ <code>number</code>
+
 Get gui state (global state)
 
 **Kind**: global function  
@@ -9107,17 +9680,19 @@ Get gui state (global state)
 <a name="GuiSetFont"></a>
 
 ## GuiSetFont(font) ⇒ <code>undefined</code>
+
 Set gui custom font (global state)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| font | <code>Font</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| font  | <code>Font</code> |
 
 <a name="GuiGetFont"></a>
 
 ## GuiGetFont() ⇒ <code>Font</code>
+
 Get gui custom font (global state)
 
 **Kind**: global function  
@@ -9125,751 +9700,811 @@ Get gui custom font (global state)
 <a name="GuiSetStyle"></a>
 
 ## GuiSetStyle(control, property, value) ⇒ <code>undefined</code>
+
 Set one style property
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| control | <code>number</code> | 
-| property | <code>number</code> | 
-| value | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| control  | <code>number</code> |
+| property | <code>number</code> |
+| value    | <code>number</code> |
 
 <a name="GuiGetStyle"></a>
 
 ## GuiGetStyle(control, property) ⇒ <code>number</code>
+
 Get one style property
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| control | <code>number</code> | 
-| property | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| control  | <code>number</code> |
+| property | <code>number</code> |
 
 <a name="GuiLoadStyle"></a>
 
 ## GuiLoadStyle(fileName) ⇒ <code>undefined</code>
+
 Load style file over global style variable (.rgs)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| fileName | <code>string</code> |
 
 <a name="GuiLoadStyleDefault"></a>
 
 ## GuiLoadStyleDefault() ⇒ <code>undefined</code>
+
 Load style default over global style
 
 **Kind**: global function  
 <a name="GuiEnableTooltip"></a>
 
 ## GuiEnableTooltip() ⇒ <code>undefined</code>
+
 Enable gui tooltips (global state)
 
 **Kind**: global function  
 <a name="GuiDisableTooltip"></a>
 
 ## GuiDisableTooltip() ⇒ <code>undefined</code>
+
 Disable gui tooltips (global state)
 
 **Kind**: global function  
 <a name="GuiSetTooltip"></a>
 
 ## GuiSetTooltip(tooltip) ⇒ <code>undefined</code>
+
 Set tooltip string
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| tooltip | <code>string</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| tooltip | <code>string</code> |
 
 <a name="GuiIconText"></a>
 
 ## GuiIconText(iconId, text) ⇒ <code>string</code>
+
 Get text with icon id prepended (if supported)
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| iconId | <code>number</code> | 
-| text | <code>string</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| iconId | <code>number</code> |
+| text   | <code>string</code> |
 
 <a name="GuiSetIconScale"></a>
 
 ## GuiSetIconScale(scale) ⇒ <code>undefined</code>
+
 Set default icon drawing size
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| scale | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| scale | <code>number</code> |
 
 <a name="GuiGetIcons"></a>
 
 ## GuiGetIcons() ⇒ <code>number</code>
+
 Get raygui icons data pointer
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int *.  
+**Returns**: <code>number</code> - The resulting unsigned int \*.  
 <a name="GuiLoadIcons"></a>
 
 ## GuiLoadIcons(fileName, loadIconsName) ⇒ <code>number</code>
+
 Load raygui icons file (.rgi) into internal icons data
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting char **.  
+**Returns**: <code>number</code> - The resulting char \*\*.
 
-| Param | Type |
-| --- | --- |
-| fileName | <code>string</code> | 
-| loadIconsName | <code>boolean</code> | 
+| Param         | Type                 |
+| ------------- | -------------------- |
+| fileName      | <code>string</code>  |
+| loadIconsName | <code>boolean</code> |
 
 <a name="GuiDrawIcon"></a>
 
 ## GuiDrawIcon(iconId, posX, posY, pixelSize, color) ⇒ <code>undefined</code>
+
 Draw icon using pixel size at specified position
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| iconId | <code>number</code> | 
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| pixelSize | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                         |
+| --------- | ---------------------------- |
+| iconId    | <code>number</code>          |
+| posX      | <code>number</code>          |
+| posY      | <code>number</code>          |
+| pixelSize | <code>number</code>          |
+| color     | [<code>Color</code>](#Color) |
 
 <a name="GuiWindowBox"></a>
 
 ## GuiWindowBox(bounds, title) ⇒ <code>number</code>
+
 Window Box control, shows a window that can be closed
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| title | <code>string</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| title  | <code>string</code>                  |
 
 <a name="GuiGroupBox"></a>
 
 ## GuiGroupBox(bounds, text) ⇒ <code>number</code>
+
 Group Box control with text name
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
 
 <a name="GuiLine"></a>
 
 ## GuiLine(bounds, text) ⇒ <code>number</code>
+
 Line separator control, could contain text
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
 
 <a name="GuiPanel"></a>
 
 ## GuiPanel(bounds, text) ⇒ <code>number</code>
+
 Panel control, useful to group controls
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
 
 <a name="GuiTabBar"></a>
 
 ## GuiTabBar(bounds, text, count, active) ⇒ <code>number</code>
+
 Tab Bar control, returns TAB to be closed or -1
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>number</code> | 
-| count | <code>number</code> | 
-| active | <code>number</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>number</code>                  |
+| count  | <code>number</code>                  |
+| active | <code>number</code>                  |
 
 <a name="GuiScrollPanel"></a>
 
 ## GuiScrollPanel(bounds, text, content, scroll, view) ⇒ <code>number</code>
+
 Scroll Panel control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| content | [<code>Rectangle</code>](#Rectangle) | 
-| scroll | <code>number</code> | 
-| view | <code>number</code> | 
+| Param   | Type                                 |
+| ------- | ------------------------------------ |
+| bounds  | [<code>Rectangle</code>](#Rectangle) |
+| text    | <code>string</code>                  |
+| content | [<code>Rectangle</code>](#Rectangle) |
+| scroll  | <code>number</code>                  |
+| view    | <code>number</code>                  |
 
 <a name="GuiLabel"></a>
 
 ## GuiLabel(bounds, text) ⇒ <code>number</code>
+
 Label control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
 
 <a name="GuiButton"></a>
 
 ## GuiButton(bounds, text) ⇒ <code>number</code>
+
 Button control, returns true when clicked
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
 
 <a name="GuiLabelButton"></a>
 
 ## GuiLabelButton(bounds, text) ⇒ <code>number</code>
+
 Label button control, returns true when clicked
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
 
 <a name="GuiToggle"></a>
 
 ## GuiToggle(bounds, text, active) ⇒ <code>number</code>
+
 Toggle Button control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| active | <code>number</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
+| active | <code>number</code>                  |
 
 <a name="GuiToggleGroup"></a>
 
 ## GuiToggleGroup(bounds, text, active) ⇒ <code>number</code>
+
 Toggle Group control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| active | <code>number</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
+| active | <code>number</code>                  |
 
 <a name="GuiToggleSlider"></a>
 
 ## GuiToggleSlider(bounds, text, active) ⇒ <code>number</code>
+
 Toggle Slider control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| active | <code>number</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
+| active | <code>number</code>                  |
 
 <a name="GuiCheckBox"></a>
 
 ## GuiCheckBox(bounds, text, checked) ⇒ <code>number</code>
+
 Check Box control, returns true when active
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| checked | <code>number</code> | 
+| Param   | Type                                 |
+| ------- | ------------------------------------ |
+| bounds  | [<code>Rectangle</code>](#Rectangle) |
+| text    | <code>string</code>                  |
+| checked | <code>number</code>                  |
 
 <a name="GuiComboBox"></a>
 
 ## GuiComboBox(bounds, text, active) ⇒ <code>number</code>
+
 Combo Box control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| active | <code>number</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
+| active | <code>number</code>                  |
 
 <a name="GuiDropdownBox"></a>
 
 ## GuiDropdownBox(bounds, text, active, editMode) ⇒ <code>number</code>
+
 Dropdown Box control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| active | <code>number</code> | 
-| editMode | <code>boolean</code> | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| bounds   | [<code>Rectangle</code>](#Rectangle) |
+| text     | <code>string</code>                  |
+| active   | <code>number</code>                  |
+| editMode | <code>boolean</code>                 |
 
 <a name="GuiSpinner"></a>
 
 ## GuiSpinner(bounds, text, value, minValue, maxValue, editMode) ⇒ <code>number</code>
+
 Spinner control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| value | <code>number</code> | 
-| minValue | <code>number</code> | 
-| maxValue | <code>number</code> | 
-| editMode | <code>boolean</code> | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| bounds   | [<code>Rectangle</code>](#Rectangle) |
+| text     | <code>string</code>                  |
+| value    | <code>number</code>                  |
+| minValue | <code>number</code>                  |
+| maxValue | <code>number</code>                  |
+| editMode | <code>boolean</code>                 |
 
 <a name="GuiValueBox"></a>
 
 ## GuiValueBox(bounds, text, value, minValue, maxValue, editMode) ⇒ <code>number</code>
+
 Value Box control, updates input text with numbers
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| value | <code>number</code> | 
-| minValue | <code>number</code> | 
-| maxValue | <code>number</code> | 
-| editMode | <code>boolean</code> | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| bounds   | [<code>Rectangle</code>](#Rectangle) |
+| text     | <code>string</code>                  |
+| value    | <code>number</code>                  |
+| minValue | <code>number</code>                  |
+| maxValue | <code>number</code>                  |
+| editMode | <code>boolean</code>                 |
 
 <a name="GuiValueBoxFloat"></a>
 
 ## GuiValueBoxFloat(bounds, text, textValue, value, editMode) ⇒ <code>number</code>
+
 Value box control for float values
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| textValue | <code>string</code> | 
-| value | <code>number</code> | 
-| editMode | <code>boolean</code> | 
+| Param     | Type                                 |
+| --------- | ------------------------------------ |
+| bounds    | [<code>Rectangle</code>](#Rectangle) |
+| text      | <code>string</code>                  |
+| textValue | <code>string</code>                  |
+| value     | <code>number</code>                  |
+| editMode  | <code>boolean</code>                 |
 
 <a name="GuiTextBox"></a>
 
 ## GuiTextBox(bounds, text, textSize, editMode) ⇒ <code>number</code>
+
 Text Box control, updates input text
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| textSize | <code>number</code> | 
-| editMode | <code>boolean</code> | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| bounds   | [<code>Rectangle</code>](#Rectangle) |
+| text     | <code>string</code>                  |
+| textSize | <code>number</code>                  |
+| editMode | <code>boolean</code>                 |
 
 <a name="GuiSlider"></a>
 
 ## GuiSlider(bounds, textLeft, textRight, value, minValue, maxValue) ⇒ <code>number</code>
+
 Slider control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| textLeft | <code>string</code> | 
-| textRight | <code>string</code> | 
-| value | <code>number</code> | 
-| minValue | <code>number</code> | 
-| maxValue | <code>number</code> | 
+| Param     | Type                                 |
+| --------- | ------------------------------------ |
+| bounds    | [<code>Rectangle</code>](#Rectangle) |
+| textLeft  | <code>string</code>                  |
+| textRight | <code>string</code>                  |
+| value     | <code>number</code>                  |
+| minValue  | <code>number</code>                  |
+| maxValue  | <code>number</code>                  |
 
 <a name="GuiSliderBar"></a>
 
 ## GuiSliderBar(bounds, textLeft, textRight, value, minValue, maxValue) ⇒ <code>number</code>
+
 Slider Bar control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| textLeft | <code>string</code> | 
-| textRight | <code>string</code> | 
-| value | <code>number</code> | 
-| minValue | <code>number</code> | 
-| maxValue | <code>number</code> | 
+| Param     | Type                                 |
+| --------- | ------------------------------------ |
+| bounds    | [<code>Rectangle</code>](#Rectangle) |
+| textLeft  | <code>string</code>                  |
+| textRight | <code>string</code>                  |
+| value     | <code>number</code>                  |
+| minValue  | <code>number</code>                  |
+| maxValue  | <code>number</code>                  |
 
 <a name="GuiProgressBar"></a>
 
 ## GuiProgressBar(bounds, textLeft, textRight, value, minValue, maxValue) ⇒ <code>number</code>
+
 Progress Bar control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| textLeft | <code>string</code> | 
-| textRight | <code>string</code> | 
-| value | <code>number</code> | 
-| minValue | <code>number</code> | 
-| maxValue | <code>number</code> | 
+| Param     | Type                                 |
+| --------- | ------------------------------------ |
+| bounds    | [<code>Rectangle</code>](#Rectangle) |
+| textLeft  | <code>string</code>                  |
+| textRight | <code>string</code>                  |
+| value     | <code>number</code>                  |
+| minValue  | <code>number</code>                  |
+| maxValue  | <code>number</code>                  |
 
 <a name="GuiStatusBar"></a>
 
 ## GuiStatusBar(bounds, text) ⇒ <code>number</code>
+
 Status Bar control, shows info text
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
 
 <a name="GuiDummyRec"></a>
 
 ## GuiDummyRec(bounds, text) ⇒ <code>number</code>
+
 Dummy control for placeholders
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
 
 <a name="GuiGrid"></a>
 
 ## GuiGrid(bounds, text, spacing, subdivs, mouseCell) ⇒ <code>number</code>
+
 Grid control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| spacing | <code>number</code> | 
-| subdivs | <code>number</code> | 
-| mouseCell | <code>number</code> | 
+| Param     | Type                                 |
+| --------- | ------------------------------------ |
+| bounds    | [<code>Rectangle</code>](#Rectangle) |
+| text      | <code>string</code>                  |
+| spacing   | <code>number</code>                  |
+| subdivs   | <code>number</code>                  |
+| mouseCell | <code>number</code>                  |
 
 <a name="GuiListView"></a>
 
 ## GuiListView(bounds, text, scrollIndex, active) ⇒ <code>number</code>
+
 List View control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| scrollIndex | <code>number</code> | 
-| active | <code>number</code> | 
+| Param       | Type                                 |
+| ----------- | ------------------------------------ |
+| bounds      | [<code>Rectangle</code>](#Rectangle) |
+| text        | <code>string</code>                  |
+| scrollIndex | <code>number</code>                  |
+| active      | <code>number</code>                  |
 
 <a name="GuiListViewEx"></a>
 
 ## GuiListViewEx(bounds, text, count, scrollIndex, active, focus) ⇒ <code>number</code>
+
 List View with extended parameters
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>number</code> | 
-| count | <code>number</code> | 
-| scrollIndex | <code>number</code> | 
-| active | <code>number</code> | 
-| focus | <code>number</code> | 
+| Param       | Type                                 |
+| ----------- | ------------------------------------ |
+| bounds      | [<code>Rectangle</code>](#Rectangle) |
+| text        | <code>number</code>                  |
+| count       | <code>number</code>                  |
+| scrollIndex | <code>number</code>                  |
+| active      | <code>number</code>                  |
+| focus       | <code>number</code>                  |
 
 <a name="GuiMessageBox"></a>
 
 ## GuiMessageBox(bounds, title, message, buttons) ⇒ <code>number</code>
+
 Message Box control, displays a message
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| title | <code>string</code> | 
-| message | <code>string</code> | 
-| buttons | <code>string</code> | 
+| Param   | Type                                 |
+| ------- | ------------------------------------ |
+| bounds  | [<code>Rectangle</code>](#Rectangle) |
+| title   | <code>string</code>                  |
+| message | <code>string</code>                  |
+| buttons | <code>string</code>                  |
 
 <a name="GuiTextInputBox"></a>
 
 ## GuiTextInputBox(bounds, title, message, buttons, text, textMaxSize, secretViewActive) ⇒ <code>number</code>
+
 Text Input Box control, ask for text, supports secret
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| title | <code>string</code> | 
-| message | <code>string</code> | 
-| buttons | <code>string</code> | 
-| text | <code>string</code> | 
-| textMaxSize | <code>number</code> | 
-| secretViewActive | <code>number</code> | 
+| Param            | Type                                 |
+| ---------------- | ------------------------------------ |
+| bounds           | [<code>Rectangle</code>](#Rectangle) |
+| title            | <code>string</code>                  |
+| message          | <code>string</code>                  |
+| buttons          | <code>string</code>                  |
+| text             | <code>string</code>                  |
+| textMaxSize      | <code>number</code>                  |
+| secretViewActive | <code>number</code>                  |
 
 <a name="GuiColorPicker"></a>
 
 ## GuiColorPicker(bounds, text, color) ⇒ <code>number</code>
+
 Color Picker control (multiple color controls)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| color | <code>number</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
+| color  | <code>number</code>                  |
 
 <a name="GuiColorPanel"></a>
 
 ## GuiColorPanel(bounds, text, color) ⇒ <code>number</code>
+
 Color Panel control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| color | <code>number</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
+| color  | <code>number</code>                  |
 
 <a name="GuiColorBarAlpha"></a>
 
 ## GuiColorBarAlpha(bounds, text, alpha) ⇒ <code>number</code>
+
 Color Bar Alpha control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| alpha | <code>number</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
+| alpha  | <code>number</code>                  |
 
 <a name="GuiColorBarHue"></a>
 
 ## GuiColorBarHue(bounds, text, value) ⇒ <code>number</code>
+
 Color Bar Hue control
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| value | <code>number</code> | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| bounds | [<code>Rectangle</code>](#Rectangle) |
+| text   | <code>string</code>                  |
+| value  | <code>number</code>                  |
 
 <a name="GuiColorPickerHSV"></a>
 
 ## GuiColorPickerHSV(bounds, text, colorHsv) ⇒ <code>number</code>
-Color Picker control that avoids conversion to RGB on each call (multiple color controls)
+
+Color Picker control that avoids conversion to RGB on each call (multiple color
+controls)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| colorHsv | <code>number</code> | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| bounds   | [<code>Rectangle</code>](#Rectangle) |
+| text     | <code>string</code>                  |
+| colorHsv | <code>number</code>                  |
 
 <a name="GuiColorPanelHSV"></a>
 
 ## GuiColorPanelHSV(bounds, text, colorHsv) ⇒ <code>number</code>
-Color Panel control that updates Hue-Saturation-Value color value, used by GuiColorPickerHSV()
+
+Color Panel control that updates Hue-Saturation-Value color value, used by
+GuiColorPickerHSV()
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| bounds | [<code>Rectangle</code>](#Rectangle) | 
-| text | <code>string</code> | 
-| colorHsv | <code>number</code> | 
+| Param    | Type                                 |
+| -------- | ------------------------------------ |
+| bounds   | [<code>Rectangle</code>](#Rectangle) |
+| text     | <code>string</code>                  |
+| colorHsv | <code>number</code>                  |
 
 <a name="rlMatrixMode"></a>
 
 ## rlMatrixMode(mode) ⇒ <code>undefined</code>
+
 Choose the current matrix to be transformed
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| mode | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| mode  | <code>number</code> |
 
 <a name="rlPushMatrix"></a>
 
 ## rlPushMatrix() ⇒ <code>undefined</code>
+
 Push the current matrix to stack
 
 **Kind**: global function  
 <a name="rlPopMatrix"></a>
 
 ## rlPopMatrix() ⇒ <code>undefined</code>
+
 Pop latest inserted matrix from stack
 
 **Kind**: global function  
 <a name="rlLoadIdentity"></a>
 
 ## rlLoadIdentity() ⇒ <code>undefined</code>
+
 Reset current matrix to identity matrix
 
 **Kind**: global function  
 <a name="rlTranslatef"></a>
 
 ## rlTranslatef(x, y, z) ⇒ <code>undefined</code>
+
 Multiply the current matrix by a translation matrix
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
-| z | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
+| z     | <code>number</code> |
 
 <a name="rlRotatef"></a>
 
 ## rlRotatef(angle, x, y, z) ⇒ <code>undefined</code>
+
 Multiply the current matrix by a rotation matrix
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| angle | <code>number</code> | 
-| x | <code>number</code> | 
-| y | <code>number</code> | 
-| z | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| angle | <code>number</code> |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
+| z     | <code>number</code> |
 
 <a name="rlScalef"></a>
 
 ## rlScalef(x, y, z) ⇒ <code>undefined</code>
+
 Multiply the current matrix by a scaling matrix
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
-| z | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
+| z     | <code>number</code> |
 
 <a name="rlMultMatrixf"></a>
 
 ## rlMultMatrixf(matf) ⇒ <code>undefined</code>
+
 Multiply the current matrix by another matrix
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| matf | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| matf  | <code>number</code> |
 
 <a name="rlViewport"></a>
 
 ## rlViewport(x, y, width, height) ⇒ <code>undefined</code>
+
 Set the viewport area
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| x      | <code>number</code> |
+| y      | <code>number</code> |
+| width  | <code>number</code> |
+| height | <code>number</code> |
 
 <a name="rlSetClipPlanes"></a>
 
 ## rlSetClipPlanes(nearPlane, farPlane) ⇒ <code>undefined</code>
+
 Set clip planes distances
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| nearPlane | <code>number</code> | 
-| farPlane | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| nearPlane | <code>number</code> |
+| farPlane  | <code>number</code> |
 
 <a name="rlGetCullDistanceNear"></a>
 
 ## rlGetCullDistanceNear() ⇒ <code>number</code>
+
 Get cull plane distance near
 
 **Kind**: global function  
@@ -9877,6 +10512,7 @@ Get cull plane distance near
 <a name="rlGetCullDistanceFar"></a>
 
 ## rlGetCullDistanceFar() ⇒ <code>number</code>
+
 Get cull plane distance far
 
 **Kind**: global function  
@@ -9884,305 +10520,335 @@ Get cull plane distance far
 <a name="rlBegin"></a>
 
 ## rlBegin(mode) ⇒ <code>undefined</code>
+
 Initialize drawing mode (how to organize vertex)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| mode | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| mode  | <code>number</code> |
 
 <a name="rlEnd"></a>
 
 ## rlEnd() ⇒ <code>undefined</code>
+
 Finish vertex providing
 
 **Kind**: global function  
 <a name="rlVertex2i"></a>
 
 ## rlVertex2i(x, y) ⇒ <code>undefined</code>
+
 Define one vertex (position) - 2 int
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
 
 <a name="rlVertex2f"></a>
 
 ## rlVertex2f(x, y) ⇒ <code>undefined</code>
+
 Define one vertex (position) - 2 float
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
 
 <a name="rlVertex3f"></a>
 
 ## rlVertex3f(x, y, z) ⇒ <code>undefined</code>
+
 Define one vertex (position) - 3 float
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
-| z | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
+| z     | <code>number</code> |
 
 <a name="rlTexCoord2f"></a>
 
 ## rlTexCoord2f(x, y) ⇒ <code>undefined</code>
+
 Define one vertex (texture coordinate) - 2 float
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
 
 <a name="rlNormal3f"></a>
 
 ## rlNormal3f(x, y, z) ⇒ <code>undefined</code>
+
 Define one vertex (normal) - 3 float
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
-| z | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
+| z     | <code>number</code> |
 
 <a name="rlColor4ub"></a>
 
 ## rlColor4ub(r, g, b, a) ⇒ <code>undefined</code>
+
 Define one vertex (color) - 4 byte
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| r | <code>number</code> | 
-| g | <code>number</code> | 
-| b | <code>number</code> | 
-| a | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| r     | <code>number</code> |
+| g     | <code>number</code> |
+| b     | <code>number</code> |
+| a     | <code>number</code> |
 
 <a name="rlColor3f"></a>
 
 ## rlColor3f(x, y, z) ⇒ <code>undefined</code>
+
 Define one vertex (color) - 3 float
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
-| z | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
+| z     | <code>number</code> |
 
 <a name="rlColor4f"></a>
 
 ## rlColor4f(x, y, z, w) ⇒ <code>undefined</code>
+
 Define one vertex (color) - 4 float
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
-| z | <code>number</code> | 
-| w | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| x     | <code>number</code> |
+| y     | <code>number</code> |
+| z     | <code>number</code> |
+| w     | <code>number</code> |
 
 <a name="rlEnableVertexArray"></a>
 
 ## rlEnableVertexArray(vaoId) ⇒ <code>boolean</code>
+
 Enable vertex array (VAO, if supported)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| vaoId | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| vaoId | <code>number</code> |
 
 <a name="rlDisableVertexArray"></a>
 
 ## rlDisableVertexArray() ⇒ <code>undefined</code>
+
 Disable vertex array (VAO, if supported)
 
 **Kind**: global function  
 <a name="rlEnableVertexBuffer"></a>
 
 ## rlEnableVertexBuffer(id) ⇒ <code>undefined</code>
+
 Enable vertex buffer (VBO)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlDisableVertexBuffer"></a>
 
 ## rlDisableVertexBuffer() ⇒ <code>undefined</code>
+
 Disable vertex buffer (VBO)
 
 **Kind**: global function  
 <a name="rlEnableVertexBufferElement"></a>
 
 ## rlEnableVertexBufferElement(id) ⇒ <code>undefined</code>
+
 Enable vertex buffer element (VBO element)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlDisableVertexBufferElement"></a>
 
 ## rlDisableVertexBufferElement() ⇒ <code>undefined</code>
+
 Disable vertex buffer element (VBO element)
 
 **Kind**: global function  
 <a name="rlEnableVertexAttribute"></a>
 
 ## rlEnableVertexAttribute(index) ⇒ <code>undefined</code>
+
 Enable vertex attribute index
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| index | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| index | <code>number</code> |
 
 <a name="rlDisableVertexAttribute"></a>
 
 ## rlDisableVertexAttribute(index) ⇒ <code>undefined</code>
+
 Disable vertex attribute index
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| index | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| index | <code>number</code> |
 
 <a name="rlActiveTextureSlot"></a>
 
 ## rlActiveTextureSlot(slot) ⇒ <code>undefined</code>
+
 Select and active a texture slot
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| slot | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| slot  | <code>number</code> |
 
 <a name="rlEnableTexture"></a>
 
 ## rlEnableTexture(id) ⇒ <code>undefined</code>
+
 Enable texture
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlDisableTexture"></a>
 
 ## rlDisableTexture() ⇒ <code>undefined</code>
+
 Disable texture
 
 **Kind**: global function  
 <a name="rlEnableTextureCubemap"></a>
 
 ## rlEnableTextureCubemap(id) ⇒ <code>undefined</code>
+
 Enable texture cubemap
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlDisableTextureCubemap"></a>
 
 ## rlDisableTextureCubemap() ⇒ <code>undefined</code>
+
 Disable texture cubemap
 
 **Kind**: global function  
 <a name="rlTextureParameters"></a>
 
 ## rlTextureParameters(id, param, value) ⇒ <code>undefined</code>
+
 Set texture parameters (filter, wrap)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| param | <code>number</code> | 
-| value | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
+| param | <code>number</code> |
+| value | <code>number</code> |
 
 <a name="rlCubemapParameters"></a>
 
 ## rlCubemapParameters(id, param, value) ⇒ <code>undefined</code>
+
 Set cubemap parameters (filter, wrap)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| param | <code>number</code> | 
-| value | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
+| param | <code>number</code> |
+| value | <code>number</code> |
 
 <a name="rlEnableShader"></a>
 
 ## rlEnableShader(id) ⇒ <code>undefined</code>
+
 Enable shader program
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlDisableShader"></a>
 
 ## rlDisableShader() ⇒ <code>undefined</code>
+
 Disable shader program
 
 **Kind**: global function  
 <a name="rlEnableFramebuffer"></a>
 
 ## rlEnableFramebuffer(id) ⇒ <code>undefined</code>
+
 Enable render texture (fbo)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlDisableFramebuffer"></a>
 
 ## rlDisableFramebuffer() ⇒ <code>undefined</code>
+
 Disable render texture (fbo), return to default framebuffer
 
 **Kind**: global function  
 <a name="rlGetActiveFramebuffer"></a>
 
 ## rlGetActiveFramebuffer() ⇒ <code>number</code>
+
 Get the currently active render texture (fbo), 0 for default framebuffer
 
 **Kind**: global function  
@@ -10190,176 +10856,197 @@ Get the currently active render texture (fbo), 0 for default framebuffer
 <a name="rlActiveDrawBuffers"></a>
 
 ## rlActiveDrawBuffers(count) ⇒ <code>undefined</code>
+
 Activate multiple draw color buffers
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| count | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| count | <code>number</code> |
 
 <a name="rlBlitFramebuffer"></a>
 
 ## rlBlitFramebuffer(srcX, srcY, srcWidth, srcHeight, dstX, dstY, dstWidth, dstHeight, bufferMask) ⇒ <code>undefined</code>
+
 Blit active framebuffer to main framebuffer
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| srcX | <code>number</code> | 
-| srcY | <code>number</code> | 
-| srcWidth | <code>number</code> | 
-| srcHeight | <code>number</code> | 
-| dstX | <code>number</code> | 
-| dstY | <code>number</code> | 
-| dstWidth | <code>number</code> | 
-| dstHeight | <code>number</code> | 
-| bufferMask | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| srcX       | <code>number</code> |
+| srcY       | <code>number</code> |
+| srcWidth   | <code>number</code> |
+| srcHeight  | <code>number</code> |
+| dstX       | <code>number</code> |
+| dstY       | <code>number</code> |
+| dstWidth   | <code>number</code> |
+| dstHeight  | <code>number</code> |
+| bufferMask | <code>number</code> |
 
 <a name="rlBindFramebuffer"></a>
 
 ## rlBindFramebuffer(target, framebuffer) ⇒ <code>undefined</code>
+
 Bind framebuffer (FBO)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| target | <code>number</code> | 
-| framebuffer | <code>number</code> | 
+| Param       | Type                |
+| ----------- | ------------------- |
+| target      | <code>number</code> |
+| framebuffer | <code>number</code> |
 
 <a name="rlEnableColorBlend"></a>
 
 ## rlEnableColorBlend() ⇒ <code>undefined</code>
+
 Enable color blending
 
 **Kind**: global function  
 <a name="rlDisableColorBlend"></a>
 
 ## rlDisableColorBlend() ⇒ <code>undefined</code>
+
 Disable color blending
 
 **Kind**: global function  
 <a name="rlEnableDepthTest"></a>
 
 ## rlEnableDepthTest() ⇒ <code>undefined</code>
+
 Enable depth test
 
 **Kind**: global function  
 <a name="rlDisableDepthTest"></a>
 
 ## rlDisableDepthTest() ⇒ <code>undefined</code>
+
 Disable depth test
 
 **Kind**: global function  
 <a name="rlEnableDepthMask"></a>
 
 ## rlEnableDepthMask() ⇒ <code>undefined</code>
+
 Enable depth write
 
 **Kind**: global function  
 <a name="rlDisableDepthMask"></a>
 
 ## rlDisableDepthMask() ⇒ <code>undefined</code>
+
 Disable depth write
 
 **Kind**: global function  
 <a name="rlEnableBackfaceCulling"></a>
 
 ## rlEnableBackfaceCulling() ⇒ <code>undefined</code>
+
 Enable backface culling
 
 **Kind**: global function  
 <a name="rlDisableBackfaceCulling"></a>
 
 ## rlDisableBackfaceCulling() ⇒ <code>undefined</code>
+
 Disable backface culling
 
 **Kind**: global function  
 <a name="rlColorMask"></a>
 
 ## rlColorMask(r, g, b, a) ⇒ <code>undefined</code>
+
 Color mask control
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| r | <code>boolean</code> | 
-| g | <code>boolean</code> | 
-| b | <code>boolean</code> | 
-| a | <code>boolean</code> | 
+| Param | Type                 |
+| ----- | -------------------- |
+| r     | <code>boolean</code> |
+| g     | <code>boolean</code> |
+| b     | <code>boolean</code> |
+| a     | <code>boolean</code> |
 
 <a name="rlSetCullFace"></a>
 
 ## rlSetCullFace(mode) ⇒ <code>undefined</code>
+
 Set face culling mode
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| mode | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| mode  | <code>number</code> |
 
 <a name="rlEnableScissorTest"></a>
 
 ## rlEnableScissorTest() ⇒ <code>undefined</code>
+
 Enable scissor test
 
 **Kind**: global function  
 <a name="rlDisableScissorTest"></a>
 
 ## rlDisableScissorTest() ⇒ <code>undefined</code>
+
 Disable scissor test
 
 **Kind**: global function  
 <a name="rlScissor"></a>
 
 ## rlScissor(x, y, width, height) ⇒ <code>undefined</code>
+
 Scissor test
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| x | <code>number</code> | 
-| y | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| x      | <code>number</code> |
+| y      | <code>number</code> |
+| width  | <code>number</code> |
+| height | <code>number</code> |
 
 <a name="rlEnableWireMode"></a>
 
 ## rlEnableWireMode() ⇒ <code>undefined</code>
+
 Enable wire mode
 
 **Kind**: global function  
 <a name="rlEnablePointMode"></a>
 
 ## rlEnablePointMode() ⇒ <code>undefined</code>
+
 Enable point mode
 
 **Kind**: global function  
 <a name="rlDisableWireMode"></a>
 
 ## rlDisableWireMode() ⇒ <code>undefined</code>
+
 Disable wire (and point) mode
 
 **Kind**: global function  
 <a name="rlSetLineWidth"></a>
 
 ## rlSetLineWidth(width) ⇒ <code>undefined</code>
+
 Set the line drawing width
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| width | <code>number</code> |
 
 <a name="rlGetLineWidth"></a>
 
 ## rlGetLineWidth() ⇒ <code>number</code>
+
 Get the line drawing width
 
 **Kind**: global function  
@@ -10367,30 +11054,35 @@ Get the line drawing width
 <a name="rlEnableSmoothLines"></a>
 
 ## rlEnableSmoothLines() ⇒ <code>undefined</code>
+
 Enable line aliasing
 
 **Kind**: global function  
 <a name="rlDisableSmoothLines"></a>
 
 ## rlDisableSmoothLines() ⇒ <code>undefined</code>
+
 Disable line aliasing
 
 **Kind**: global function  
 <a name="rlEnableStereoRender"></a>
 
 ## rlEnableStereoRender() ⇒ <code>undefined</code>
+
 Enable stereo rendering
 
 **Kind**: global function  
 <a name="rlDisableStereoRender"></a>
 
 ## rlDisableStereoRender() ⇒ <code>undefined</code>
+
 Disable stereo rendering
 
 **Kind**: global function  
 <a name="rlIsStereoRenderEnabled"></a>
 
 ## rlIsStereoRenderEnabled() ⇒ <code>boolean</code>
+
 Check if stereo render is enabled
 
 **Kind**: global function  
@@ -10398,101 +11090,111 @@ Check if stereo render is enabled
 <a name="rlClearColor"></a>
 
 ## rlClearColor(r, g, b, a) ⇒ <code>undefined</code>
+
 Clear color buffer with color
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| r | <code>number</code> | 
-| g | <code>number</code> | 
-| b | <code>number</code> | 
-| a | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| r     | <code>number</code> |
+| g     | <code>number</code> |
+| b     | <code>number</code> |
+| a     | <code>number</code> |
 
 <a name="rlClearScreenBuffers"></a>
 
 ## rlClearScreenBuffers() ⇒ <code>undefined</code>
+
 Clear used screen buffers (color and depth)
 
 **Kind**: global function  
 <a name="rlCheckErrors"></a>
 
 ## rlCheckErrors() ⇒ <code>undefined</code>
+
 Check and log OpenGL error codes
 
 **Kind**: global function  
 <a name="rlSetBlendMode"></a>
 
 ## rlSetBlendMode(mode) ⇒ <code>undefined</code>
+
 Set blending mode
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| mode | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| mode  | <code>number</code> |
 
 <a name="rlSetBlendFactors"></a>
 
 ## rlSetBlendFactors(glSrcFactor, glDstFactor, glEquation) ⇒ <code>undefined</code>
+
 Set blending mode factor and equation (using OpenGL factors)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| glSrcFactor | <code>number</code> | 
-| glDstFactor | <code>number</code> | 
-| glEquation | <code>number</code> | 
+| Param       | Type                |
+| ----------- | ------------------- |
+| glSrcFactor | <code>number</code> |
+| glDstFactor | <code>number</code> |
+| glEquation  | <code>number</code> |
 
 <a name="rlSetBlendFactorsSeparate"></a>
 
 ## rlSetBlendFactorsSeparate(glSrcRGB, glDstRGB, glSrcAlpha, glDstAlpha, glEqRGB, glEqAlpha) ⇒ <code>undefined</code>
+
 Set blending mode factors and equations separately (using OpenGL factors)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| glSrcRGB | <code>number</code> | 
-| glDstRGB | <code>number</code> | 
-| glSrcAlpha | <code>number</code> | 
-| glDstAlpha | <code>number</code> | 
-| glEqRGB | <code>number</code> | 
-| glEqAlpha | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| glSrcRGB   | <code>number</code> |
+| glDstRGB   | <code>number</code> |
+| glSrcAlpha | <code>number</code> |
+| glDstAlpha | <code>number</code> |
+| glEqRGB    | <code>number</code> |
+| glEqAlpha  | <code>number</code> |
 
 <a name="rlglInit"></a>
 
 ## rlglInit(width, height) ⇒ <code>undefined</code>
+
 Initialize rlgl (buffers, shaders, textures, states)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
 
 <a name="rlglClose"></a>
 
 ## rlglClose() ⇒ <code>undefined</code>
+
 De-initialize rlgl (buffers, shaders, textures)
 
 **Kind**: global function  
 <a name="rlLoadExtensions"></a>
 
 ## rlLoadExtensions(loader) ⇒ <code>undefined</code>
+
 Load OpenGL extensions (loader function required)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| loader | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| loader | <code>number</code> |
 
 <a name="rlGetVersion"></a>
 
 ## rlGetVersion() ⇒ <code>number</code>
+
 Get current OpenGL version
 
 **Kind**: global function  
@@ -10500,17 +11202,19 @@ Get current OpenGL version
 <a name="rlSetFramebufferWidth"></a>
 
 ## rlSetFramebufferWidth(width) ⇒ <code>undefined</code>
+
 Set current framebuffer width
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| width | <code>number</code> |
 
 <a name="rlGetFramebufferWidth"></a>
 
 ## rlGetFramebufferWidth() ⇒ <code>number</code>
+
 Get default framebuffer width
 
 **Kind**: global function  
@@ -10518,17 +11222,19 @@ Get default framebuffer width
 <a name="rlSetFramebufferHeight"></a>
 
 ## rlSetFramebufferHeight(height) ⇒ <code>undefined</code>
+
 Set current framebuffer height
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| height | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| height | <code>number</code> |
 
 <a name="rlGetFramebufferHeight"></a>
 
 ## rlGetFramebufferHeight() ⇒ <code>number</code>
+
 Get default framebuffer height
 
 **Kind**: global function  
@@ -10536,6 +11242,7 @@ Get default framebuffer height
 <a name="rlGetTextureIdDefault"></a>
 
 ## rlGetTextureIdDefault() ⇒ <code>number</code>
+
 Get default texture id
 
 **Kind**: global function  
@@ -10543,6 +11250,7 @@ Get default texture id
 <a name="rlGetShaderIdDefault"></a>
 
 ## rlGetShaderIdDefault() ⇒ <code>number</code>
+
 Get default shader id
 
 **Kind**: global function  
@@ -10550,88 +11258,97 @@ Get default shader id
 <a name="rlGetShaderLocsDefault"></a>
 
 ## rlGetShaderLocsDefault() ⇒ <code>number</code>
+
 Get default shader locations
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int *.  
+**Returns**: <code>number</code> - The resulting int \*.  
 <a name="rlLoadRenderBatch"></a>
 
 ## rlLoadRenderBatch(numBuffers, bufferElements) ⇒ <code>rlRenderBatch</code>
+
 Load a render batch system
 
 **Kind**: global function  
-**Returns**: <code>rlRenderBatch</code> - The resulting rlRenderBatch.  
+**Returns**: <code>rlRenderBatch</code> - The resulting rlRenderBatch.
 
-| Param | Type |
-| --- | --- |
-| numBuffers | <code>number</code> | 
-| bufferElements | <code>number</code> | 
+| Param          | Type                |
+| -------------- | ------------------- |
+| numBuffers     | <code>number</code> |
+| bufferElements | <code>number</code> |
 
 <a name="rlUnloadRenderBatch"></a>
 
 ## rlUnloadRenderBatch(batch) ⇒ <code>undefined</code>
+
 Unload render batch system
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| batch | <code>rlRenderBatch</code> | 
+| Param | Type                       |
+| ----- | -------------------------- |
+| batch | <code>rlRenderBatch</code> |
 
 <a name="rlDrawRenderBatch"></a>
 
 ## rlDrawRenderBatch(batch) ⇒ <code>undefined</code>
+
 Draw render batch data (Update->Draw->Reset)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| batch | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| batch | <code>number</code> |
 
 <a name="rlSetRenderBatchActive"></a>
 
 ## rlSetRenderBatchActive(batch) ⇒ <code>undefined</code>
+
 Set the active render batch for rlgl (NULL for default internal)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| batch | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| batch | <code>number</code> |
 
 <a name="rlDrawRenderBatchActive"></a>
 
 ## rlDrawRenderBatchActive() ⇒ <code>undefined</code>
+
 Update and draw internal render batch
 
 **Kind**: global function  
 <a name="rlCheckRenderBatchLimit"></a>
 
 ## rlCheckRenderBatchLimit(vCount) ⇒ <code>boolean</code>
+
 Check internal buffer overflow for a given number of vertex
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| vCount | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| vCount | <code>number</code> |
 
 <a name="rlSetTexture"></a>
 
 ## rlSetTexture(id) ⇒ <code>undefined</code>
+
 Set current texture for render batch and check buffers limits
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlLoadVertexArray"></a>
 
 ## rlLoadVertexArray() ⇒ <code>number</code>
+
 Load vertex array (vao) if supported
 
 **Kind**: global function  
@@ -10639,320 +11356,344 @@ Load vertex array (vao) if supported
 <a name="rlLoadVertexBuffer"></a>
 
 ## rlLoadVertexBuffer(buffer, size, dynamic) ⇒ <code>number</code>
+
 Load a vertex buffer object
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| buffer | <code>number</code> | 
-| size | <code>number</code> | 
-| dynamic | <code>boolean</code> | 
+| Param   | Type                 |
+| ------- | -------------------- |
+| buffer  | <code>number</code>  |
+| size    | <code>number</code>  |
+| dynamic | <code>boolean</code> |
 
 <a name="rlLoadVertexBufferElement"></a>
 
 ## rlLoadVertexBufferElement(buffer, size, dynamic) ⇒ <code>number</code>
+
 Load vertex buffer elements object
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| buffer | <code>number</code> | 
-| size | <code>number</code> | 
-| dynamic | <code>boolean</code> | 
+| Param   | Type                 |
+| ------- | -------------------- |
+| buffer  | <code>number</code>  |
+| size    | <code>number</code>  |
+| dynamic | <code>boolean</code> |
 
 <a name="rlUpdateVertexBuffer"></a>
 
 ## rlUpdateVertexBuffer(bufferId, data, dataSize, offset) ⇒ <code>undefined</code>
+
 Update vertex buffer object data on GPU buffer
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| bufferId | <code>number</code> | 
-| data | <code>number</code> | 
-| dataSize | <code>number</code> | 
-| offset | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| bufferId | <code>number</code> |
+| data     | <code>number</code> |
+| dataSize | <code>number</code> |
+| offset   | <code>number</code> |
 
 <a name="rlUpdateVertexBufferElements"></a>
 
 ## rlUpdateVertexBufferElements(id, data, dataSize, offset) ⇒ <code>undefined</code>
+
 Update vertex buffer elements data on GPU buffer
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| data | <code>number</code> | 
-| dataSize | <code>number</code> | 
-| offset | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| id       | <code>number</code> |
+| data     | <code>number</code> |
+| dataSize | <code>number</code> |
+| offset   | <code>number</code> |
 
 <a name="rlUnloadVertexArray"></a>
 
 ## rlUnloadVertexArray(vaoId) ⇒ <code>undefined</code>
+
 Unload vertex array (vao)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| vaoId | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| vaoId | <code>number</code> |
 
 <a name="rlUnloadVertexBuffer"></a>
 
 ## rlUnloadVertexBuffer(vboId) ⇒ <code>undefined</code>
+
 Unload vertex buffer object
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| vboId | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| vboId | <code>number</code> |
 
 <a name="rlSetVertexAttribute"></a>
 
 ## rlSetVertexAttribute(index, compSize, type, normalized, stride, offset) ⇒ <code>undefined</code>
+
 Set vertex attribute data configuration
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| index | <code>number</code> | 
-| compSize | <code>number</code> | 
-| type | <code>number</code> | 
-| normalized | <code>boolean</code> | 
-| stride | <code>number</code> | 
-| offset | <code>number</code> | 
+| Param      | Type                 |
+| ---------- | -------------------- |
+| index      | <code>number</code>  |
+| compSize   | <code>number</code>  |
+| type       | <code>number</code>  |
+| normalized | <code>boolean</code> |
+| stride     | <code>number</code>  |
+| offset     | <code>number</code>  |
 
 <a name="rlSetVertexAttributeDivisor"></a>
 
 ## rlSetVertexAttributeDivisor(index, divisor) ⇒ <code>undefined</code>
+
 Set vertex attribute data divisor
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| index | <code>number</code> | 
-| divisor | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| index   | <code>number</code> |
+| divisor | <code>number</code> |
 
 <a name="rlSetVertexAttributeDefault"></a>
 
 ## rlSetVertexAttributeDefault(locIndex, value, attribType, count) ⇒ <code>undefined</code>
+
 Set vertex attribute default value, when attribute to provided
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| locIndex | <code>number</code> | 
-| value | <code>number</code> | 
-| attribType | <code>number</code> | 
-| count | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| locIndex   | <code>number</code> |
+| value      | <code>number</code> |
+| attribType | <code>number</code> |
+| count      | <code>number</code> |
 
 <a name="rlDrawVertexArray"></a>
 
 ## rlDrawVertexArray(offset, count) ⇒ <code>undefined</code>
+
 Draw vertex array (currently active vao)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| offset | <code>number</code> | 
-| count | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| offset | <code>number</code> |
+| count  | <code>number</code> |
 
 <a name="rlDrawVertexArrayElements"></a>
 
 ## rlDrawVertexArrayElements(offset, count, buffer) ⇒ <code>undefined</code>
+
 Draw vertex array elements
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| offset | <code>number</code> | 
-| count | <code>number</code> | 
-| buffer | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| offset | <code>number</code> |
+| count  | <code>number</code> |
+| buffer | <code>number</code> |
 
 <a name="rlDrawVertexArrayInstanced"></a>
 
 ## rlDrawVertexArrayInstanced(offset, count, instances) ⇒ <code>undefined</code>
+
 Draw vertex array (currently active vao) with instancing
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| offset | <code>number</code> | 
-| count | <code>number</code> | 
-| instances | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| offset    | <code>number</code> |
+| count     | <code>number</code> |
+| instances | <code>number</code> |
 
 <a name="rlDrawVertexArrayElementsInstanced"></a>
 
 ## rlDrawVertexArrayElementsInstanced(offset, count, buffer, instances) ⇒ <code>undefined</code>
+
 Draw vertex array elements with instancing
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| offset | <code>number</code> | 
-| count | <code>number</code> | 
-| buffer | <code>number</code> | 
-| instances | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| offset    | <code>number</code> |
+| count     | <code>number</code> |
+| buffer    | <code>number</code> |
+| instances | <code>number</code> |
 
 <a name="rlLoadTexture"></a>
 
 ## rlLoadTexture(data, width, height, format, mipmapCount) ⇒ <code>number</code>
+
 Load texture data
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| data | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| format | <code>number</code> | 
-| mipmapCount | <code>number</code> | 
+| Param       | Type                |
+| ----------- | ------------------- |
+| data        | <code>number</code> |
+| width       | <code>number</code> |
+| height      | <code>number</code> |
+| format      | <code>number</code> |
+| mipmapCount | <code>number</code> |
 
 <a name="rlLoadTextureDepth"></a>
 
 ## rlLoadTextureDepth(width, height, useRenderBuffer) ⇒ <code>number</code>
+
 Load depth texture/renderbuffer (to be attached to fbo)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| useRenderBuffer | <code>boolean</code> | 
+| Param           | Type                 |
+| --------------- | -------------------- |
+| width           | <code>number</code>  |
+| height          | <code>number</code>  |
+| useRenderBuffer | <code>boolean</code> |
 
 <a name="rlLoadTextureCubemap"></a>
 
 ## rlLoadTextureCubemap(data, size, format, mipmapCount) ⇒ <code>number</code>
+
 Load texture cubemap data
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| data | <code>number</code> | 
-| size | <code>number</code> | 
-| format | <code>number</code> | 
-| mipmapCount | <code>number</code> | 
+| Param       | Type                |
+| ----------- | ------------------- |
+| data        | <code>number</code> |
+| size        | <code>number</code> |
+| format      | <code>number</code> |
+| mipmapCount | <code>number</code> |
 
 <a name="rlUpdateTexture"></a>
 
 ## rlUpdateTexture(id, offsetX, offsetY, width, height, format, data) ⇒ <code>undefined</code>
+
 Update texture with new data on GPU
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| offsetX | <code>number</code> | 
-| offsetY | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| format | <code>number</code> | 
-| data | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| id      | <code>number</code> |
+| offsetX | <code>number</code> |
+| offsetY | <code>number</code> |
+| width   | <code>number</code> |
+| height  | <code>number</code> |
+| format  | <code>number</code> |
+| data    | <code>number</code> |
 
 <a name="rlGetGlTextureFormats"></a>
 
 ## rlGetGlTextureFormats(format, glInternalFormat, glFormat, glType) ⇒ <code>undefined</code>
+
 Get OpenGL internal formats
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| format | <code>number</code> | 
-| glInternalFormat | <code>number</code> | 
-| glFormat | <code>number</code> | 
-| glType | <code>number</code> | 
+| Param            | Type                |
+| ---------------- | ------------------- |
+| format           | <code>number</code> |
+| glInternalFormat | <code>number</code> |
+| glFormat         | <code>number</code> |
+| glType           | <code>number</code> |
 
 <a name="rlGetPixelFormatName"></a>
 
 ## rlGetPixelFormatName(format) ⇒ <code>string</code>
+
 Get name string for pixel format
 
 **Kind**: global function  
-**Returns**: <code>string</code> - The resulting const char *.  
+**Returns**: <code>string</code> - The resulting const char \*.
 
-| Param | Type |
-| --- | --- |
-| format | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| format | <code>number</code> |
 
 <a name="rlUnloadTexture"></a>
 
 ## rlUnloadTexture(id) ⇒ <code>undefined</code>
+
 Unload texture from GPU memory
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlGenTextureMipmaps"></a>
 
 ## rlGenTextureMipmaps(id, width, height, format, mipmaps) ⇒ <code>undefined</code>
+
 Generate mipmap data for selected texture
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| format | <code>number</code> | 
-| mipmaps | <code>number</code> | 
+| Param   | Type                |
+| ------- | ------------------- |
+| id      | <code>number</code> |
+| width   | <code>number</code> |
+| height  | <code>number</code> |
+| format  | <code>number</code> |
+| mipmaps | <code>number</code> |
 
 <a name="rlReadTexturePixels"></a>
 
 ## rlReadTexturePixels(id, width, height, format) ⇒ <code>number</code>
+
 Read texture pixel data
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting void *.  
+**Returns**: <code>number</code> - The resulting void \*.
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| format | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| id     | <code>number</code> |
+| width  | <code>number</code> |
+| height | <code>number</code> |
+| format | <code>number</code> |
 
 <a name="rlReadScreenPixels"></a>
 
 ## rlReadScreenPixels(width, height) ⇒ <code>Buffer</code>
+
 Read screen pixel data (color buffer)
 
 **Kind**: global function  
-**Returns**: <code>Buffer</code> - The resulting unsigned char *.  
+**Returns**: <code>Buffer</code> - The resulting unsigned char \*.
 
-| Param | Type |
-| --- | --- |
-| width | <code>number</code> | 
-| height | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| width  | <code>number</code> |
+| height | <code>number</code> |
 
 <a name="rlLoadFramebuffer"></a>
 
 ## rlLoadFramebuffer() ⇒ <code>number</code>
+
 Load an empty framebuffer
 
 **Kind**: global function  
@@ -10960,314 +11701,340 @@ Load an empty framebuffer
 <a name="rlFramebufferAttach"></a>
 
 ## rlFramebufferAttach(fboId, texId, attachType, texType, mipLevel) ⇒ <code>undefined</code>
+
 Attach texture/renderbuffer to a framebuffer
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| fboId | <code>number</code> | 
-| texId | <code>number</code> | 
-| attachType | <code>number</code> | 
-| texType | <code>number</code> | 
-| mipLevel | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| fboId      | <code>number</code> |
+| texId      | <code>number</code> |
+| attachType | <code>number</code> |
+| texType    | <code>number</code> |
+| mipLevel   | <code>number</code> |
 
 <a name="rlFramebufferComplete"></a>
 
 ## rlFramebufferComplete(id) ⇒ <code>boolean</code>
+
 Verify framebuffer is complete
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - The resulting bool.  
+**Returns**: <code>boolean</code> - The resulting bool.
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlUnloadFramebuffer"></a>
 
 ## rlUnloadFramebuffer(id) ⇒ <code>undefined</code>
+
 Delete framebuffer from GPU
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlLoadShaderCode"></a>
 
 ## rlLoadShaderCode(vsCode, fsCode) ⇒ <code>number</code>
+
 Load shader from code strings
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| vsCode | <code>string</code> | 
-| fsCode | <code>string</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| vsCode | <code>string</code> |
+| fsCode | <code>string</code> |
 
 <a name="rlCompileShader"></a>
 
 ## rlCompileShader(shaderCode, type) ⇒ <code>number</code>
-Compile custom shader and return shader id (type: RL_VERTEX_SHADER, RL_FRAGMENT_SHADER, RL_COMPUTE_SHADER)
+
+Compile custom shader and return shader id (type: RL_VERTEX_SHADER,
+RL_FRAGMENT_SHADER, RL_COMPUTE_SHADER)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| shaderCode | <code>string</code> | 
-| type | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| shaderCode | <code>string</code> |
+| type       | <code>number</code> |
 
 <a name="rlLoadShaderProgram"></a>
 
 ## rlLoadShaderProgram(vShaderId, fShaderId) ⇒ <code>number</code>
+
 Load custom shader program
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| vShaderId | <code>number</code> | 
-| fShaderId | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| vShaderId | <code>number</code> |
+| fShaderId | <code>number</code> |
 
 <a name="rlUnloadShaderProgram"></a>
 
 ## rlUnloadShaderProgram(id) ⇒ <code>undefined</code>
+
 Unload shader program
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlGetLocationUniform"></a>
 
 ## rlGetLocationUniform(shaderId, uniformName) ⇒ <code>number</code>
+
 Get shader location uniform
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| shaderId | <code>number</code> | 
-| uniformName | <code>string</code> | 
+| Param       | Type                |
+| ----------- | ------------------- |
+| shaderId    | <code>number</code> |
+| uniformName | <code>string</code> |
 
 <a name="rlGetLocationAttrib"></a>
 
 ## rlGetLocationAttrib(shaderId, attribName) ⇒ <code>number</code>
+
 Get shader location attribute
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting int.  
+**Returns**: <code>number</code> - The resulting int.
 
-| Param | Type |
-| --- | --- |
-| shaderId | <code>number</code> | 
-| attribName | <code>string</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| shaderId   | <code>number</code> |
+| attribName | <code>string</code> |
 
 <a name="rlSetUniform"></a>
 
 ## rlSetUniform(locIndex, value, uniformType, count) ⇒ <code>undefined</code>
+
 Set shader value uniform
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| locIndex | <code>number</code> | 
-| value | <code>number</code> | 
-| uniformType | <code>number</code> | 
-| count | <code>number</code> | 
+| Param       | Type                |
+| ----------- | ------------------- |
+| locIndex    | <code>number</code> |
+| value       | <code>number</code> |
+| uniformType | <code>number</code> |
+| count       | <code>number</code> |
 
 <a name="rlSetUniformMatrix"></a>
 
 ## rlSetUniformMatrix(locIndex, mat) ⇒ <code>undefined</code>
+
 Set shader value matrix
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| locIndex | <code>number</code> | 
-| mat | <code>Matrix</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| locIndex | <code>number</code> |
+| mat      | <code>Matrix</code> |
 
 <a name="rlSetUniformMatrices"></a>
 
 ## rlSetUniformMatrices(locIndex, mat, count) ⇒ <code>undefined</code>
+
 Set shader value matrices
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| locIndex | <code>number</code> | 
-| mat | <code>number</code> | 
-| count | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| locIndex | <code>number</code> |
+| mat      | <code>number</code> |
+| count    | <code>number</code> |
 
 <a name="rlSetUniformSampler"></a>
 
 ## rlSetUniformSampler(locIndex, textureId) ⇒ <code>undefined</code>
+
 Set shader value sampler
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| locIndex | <code>number</code> | 
-| textureId | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| locIndex  | <code>number</code> |
+| textureId | <code>number</code> |
 
 <a name="rlSetShader"></a>
 
 ## rlSetShader(id, locs) ⇒ <code>undefined</code>
+
 Set shader currently active (id and locations)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| locs | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
+| locs  | <code>number</code> |
 
 <a name="rlLoadComputeShaderProgram"></a>
 
 ## rlLoadComputeShaderProgram(shaderId) ⇒ <code>number</code>
+
 Load compute shader program
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| shaderId | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| shaderId | <code>number</code> |
 
 <a name="rlComputeShaderDispatch"></a>
 
 ## rlComputeShaderDispatch(groupX, groupY, groupZ) ⇒ <code>undefined</code>
-Dispatch compute shader (equivalent to *draw* for graphics pipeline)
 
-**Kind**: global function  
+Dispatch compute shader (equivalent to _draw_ for graphics pipeline)
 
-| Param | Type |
-| --- | --- |
-| groupX | <code>number</code> | 
-| groupY | <code>number</code> | 
-| groupZ | <code>number</code> | 
+**Kind**: global function
+
+| Param  | Type                |
+| ------ | ------------------- |
+| groupX | <code>number</code> |
+| groupY | <code>number</code> |
+| groupZ | <code>number</code> |
 
 <a name="rlLoadShaderBuffer"></a>
 
 ## rlLoadShaderBuffer(size, data, usageHint) ⇒ <code>number</code>
+
 Load shader storage buffer object (SSBO)
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| size | <code>number</code> | 
-| data | <code>number</code> | 
-| usageHint | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| size      | <code>number</code> |
+| data      | <code>number</code> |
+| usageHint | <code>number</code> |
 
 <a name="rlUnloadShaderBuffer"></a>
 
 ## rlUnloadShaderBuffer(ssboId) ⇒ <code>undefined</code>
+
 Unload shader storage buffer object (SSBO)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| ssboId | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| ssboId | <code>number</code> |
 
 <a name="rlUpdateShaderBuffer"></a>
 
 ## rlUpdateShaderBuffer(id, data, dataSize, offset) ⇒ <code>undefined</code>
+
 Update SSBO buffer data
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| data | <code>number</code> | 
-| dataSize | <code>number</code> | 
-| offset | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| id       | <code>number</code> |
+| data     | <code>number</code> |
+| dataSize | <code>number</code> |
+| offset   | <code>number</code> |
 
 <a name="rlBindShaderBuffer"></a>
 
 ## rlBindShaderBuffer(id, index) ⇒ <code>undefined</code>
+
 Bind SSBO buffer
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| index | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
+| index | <code>number</code> |
 
 <a name="rlReadShaderBuffer"></a>
 
 ## rlReadShaderBuffer(id, dest, count, offset) ⇒ <code>undefined</code>
+
 Read SSBO buffer data (GPU->CPU)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| dest | <code>number</code> | 
-| count | <code>number</code> | 
-| offset | <code>number</code> | 
+| Param  | Type                |
+| ------ | ------------------- |
+| id     | <code>number</code> |
+| dest   | <code>number</code> |
+| count  | <code>number</code> |
+| offset | <code>number</code> |
 
 <a name="rlCopyShaderBuffer"></a>
 
 ## rlCopyShaderBuffer(destId, srcId, destOffset, srcOffset, count) ⇒ <code>undefined</code>
+
 Copy SSBO data between buffers
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| destId | <code>number</code> | 
-| srcId | <code>number</code> | 
-| destOffset | <code>number</code> | 
-| srcOffset | <code>number</code> | 
-| count | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| destId     | <code>number</code> |
+| srcId      | <code>number</code> |
+| destOffset | <code>number</code> |
+| srcOffset  | <code>number</code> |
+| count      | <code>number</code> |
 
 <a name="rlGetShaderBufferSize"></a>
 
 ## rlGetShaderBufferSize(id) ⇒ <code>number</code>
+
 Get SSBO buffer size
 
 **Kind**: global function  
-**Returns**: <code>number</code> - The resulting unsigned int.  
+**Returns**: <code>number</code> - The resulting unsigned int.
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| id    | <code>number</code> |
 
 <a name="rlBindImageTexture"></a>
 
 ## rlBindImageTexture(id, index, format, readonly) ⇒ <code>undefined</code>
+
 Bind image texture
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| id | <code>number</code> | 
-| index | <code>number</code> | 
-| format | <code>number</code> | 
-| readonly | <code>boolean</code> | 
+| Param    | Type                 |
+| -------- | -------------------- |
+| id       | <code>number</code>  |
+| index    | <code>number</code>  |
+| format   | <code>number</code>  |
+| readonly | <code>boolean</code> |
 
 <a name="rlGetMatrixModelview"></a>
 
 ## rlGetMatrixModelview() ⇒ <code>Matrix</code>
+
 Get internal modelview matrix
 
 **Kind**: global function  
@@ -11275,6 +12042,7 @@ Get internal modelview matrix
 <a name="rlGetMatrixProjection"></a>
 
 ## rlGetMatrixProjection() ⇒ <code>Matrix</code>
+
 Get internal projection matrix
 
 **Kind**: global function  
@@ -11282,6 +12050,7 @@ Get internal projection matrix
 <a name="rlGetMatrixTransform"></a>
 
 ## rlGetMatrixTransform() ⇒ <code>Matrix</code>
+
 Get internal accumulated transform matrix
 
 **Kind**: global function  
@@ -11289,806 +12058,868 @@ Get internal accumulated transform matrix
 <a name="rlGetMatrixProjectionStereo"></a>
 
 ## rlGetMatrixProjectionStereo(eye) ⇒ <code>Matrix</code>
+
 Get internal projection matrix for stereo render (selected eye)
 
 **Kind**: global function  
-**Returns**: <code>Matrix</code> - The resulting Matrix.  
+**Returns**: <code>Matrix</code> - The resulting Matrix.
 
-| Param | Type |
-| --- | --- |
-| eye | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| eye   | <code>number</code> |
 
 <a name="rlGetMatrixViewOffsetStereo"></a>
 
 ## rlGetMatrixViewOffsetStereo(eye) ⇒ <code>Matrix</code>
+
 Get internal view offset matrix for stereo render (selected eye)
 
 **Kind**: global function  
-**Returns**: <code>Matrix</code> - The resulting Matrix.  
+**Returns**: <code>Matrix</code> - The resulting Matrix.
 
-| Param | Type |
-| --- | --- |
-| eye | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| eye   | <code>number</code> |
 
 <a name="rlSetMatrixProjection"></a>
 
 ## rlSetMatrixProjection(proj) ⇒ <code>undefined</code>
+
 Set a custom projection matrix (replaces internal projection matrix)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| proj | <code>Matrix</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| proj  | <code>Matrix</code> |
 
 <a name="rlSetMatrixModelview"></a>
 
 ## rlSetMatrixModelview(view) ⇒ <code>undefined</code>
+
 Set a custom modelview matrix (replaces internal modelview matrix)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| view | <code>Matrix</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| view  | <code>Matrix</code> |
 
 <a name="rlSetMatrixProjectionStereo"></a>
 
 ## rlSetMatrixProjectionStereo(right, left) ⇒ <code>undefined</code>
+
 Set eyes projection matrices for stereo rendering
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| right | <code>Matrix</code> | 
-| left | <code>Matrix</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| right | <code>Matrix</code> |
+| left  | <code>Matrix</code> |
 
 <a name="rlSetMatrixViewOffsetStereo"></a>
 
 ## rlSetMatrixViewOffsetStereo(right, left) ⇒ <code>undefined</code>
+
 Set eyes view offsets matrices for stereo rendering
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| right | <code>Matrix</code> | 
-| left | <code>Matrix</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| right | <code>Matrix</code> |
+| left  | <code>Matrix</code> |
 
 <a name="rlLoadDrawCube"></a>
 
 ## rlLoadDrawCube() ⇒ <code>undefined</code>
+
 Load and draw a cube
 
 **Kind**: global function  
 <a name="rlLoadDrawQuad"></a>
 
 ## rlLoadDrawQuad() ⇒ <code>undefined</code>
+
 Load and draw a quad
 
 **Kind**: global function  
 <a name="UpdateCamera"></a>
 
 ## UpdateCamera(camera, mode) ⇒ <code>undefined</code>
+
 Update camera position for selected mode
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| camera | [<code>Camera3D</code>](#Camera3D) | 
-| mode | <code>number</code> | 
+| Param  | Type                               |
+| ------ | ---------------------------------- |
+| camera | [<code>Camera3D</code>](#Camera3D) |
+| mode   | <code>number</code>                |
 
 <a name="ImageFormat"></a>
 
 ## ImageFormat(image, newFormat) ⇒ <code>undefined</code>
+
 Convert image data to desired format
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| newFormat | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| image     | <code>Image</code>  |
+| newFormat | <code>number</code> |
 
 <a name="ImageToPOT"></a>
 
 ## ImageToPOT(image, fill) ⇒ <code>undefined</code>
+
 Convert image to POT (power-of-two)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| fill | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| image | <code>Image</code>           |
+| fill  | [<code>Color</code>](#Color) |
 
 <a name="ImageCrop"></a>
 
 ## ImageCrop(image, crop) ⇒ <code>undefined</code>
+
 Crop an image to a defined rectangle
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| crop | [<code>Rectangle</code>](#Rectangle) | 
+| Param | Type                                 |
+| ----- | ------------------------------------ |
+| image | <code>Image</code>                   |
+| crop  | [<code>Rectangle</code>](#Rectangle) |
 
 <a name="ImageAlphaCrop"></a>
 
 ## ImageAlphaCrop(image, threshold) ⇒ <code>undefined</code>
+
 Crop image depending on alpha value
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| threshold | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| image     | <code>Image</code>  |
+| threshold | <code>number</code> |
 
 <a name="ImageAlphaClear"></a>
 
 ## ImageAlphaClear(image, color, threshold) ⇒ <code>undefined</code>
+
 Clear alpha channel to desired color
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| color | [<code>Color</code>](#Color) | 
-| threshold | <code>number</code> | 
+| Param     | Type                         |
+| --------- | ---------------------------- |
+| image     | <code>Image</code>           |
+| color     | [<code>Color</code>](#Color) |
+| threshold | <code>number</code>          |
 
 <a name="ImageAlphaMask"></a>
 
 ## ImageAlphaMask(image, alphaMask) ⇒ <code>undefined</code>
+
 Apply alpha mask to image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| alphaMask | <code>Image</code> | 
+| Param     | Type               |
+| --------- | ------------------ |
+| image     | <code>Image</code> |
+| alphaMask | <code>Image</code> |
 
 <a name="ImageAlphaPremultiply"></a>
 
 ## ImageAlphaPremultiply(image) ⇒ <code>undefined</code>
+
 Premultiply alpha channel
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="ImageResize"></a>
 
 ## ImageResize(image, newWidth, newHeight) ⇒ <code>undefined</code>
+
 Resize image (Bicubic scaling algorithm)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| newWidth | <code>number</code> | 
-| newHeight | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| image     | <code>Image</code>  |
+| newWidth  | <code>number</code> |
+| newHeight | <code>number</code> |
 
 <a name="ImageResizeNN"></a>
 
 ## ImageResizeNN(image, newWidth, newHeight) ⇒ <code>undefined</code>
+
 Resize image (Nearest-Neighbor scaling algorithm)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| newWidth | <code>number</code> | 
-| newHeight | <code>number</code> | 
+| Param     | Type                |
+| --------- | ------------------- |
+| image     | <code>Image</code>  |
+| newWidth  | <code>number</code> |
+| newHeight | <code>number</code> |
 
 <a name="ImageResizeCanvas"></a>
 
 ## ImageResizeCanvas(image, newWidth, newHeight, offsetX, offsetY, fill) ⇒ <code>undefined</code>
+
 Resize canvas and fill with color
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| newWidth | <code>number</code> | 
-| newHeight | <code>number</code> | 
-| offsetX | <code>number</code> | 
-| offsetY | <code>number</code> | 
-| fill | [<code>Color</code>](#Color) | 
+| Param     | Type                         |
+| --------- | ---------------------------- |
+| image     | <code>Image</code>           |
+| newWidth  | <code>number</code>          |
+| newHeight | <code>number</code>          |
+| offsetX   | <code>number</code>          |
+| offsetY   | <code>number</code>          |
+| fill      | [<code>Color</code>](#Color) |
 
 <a name="ImageMipmaps"></a>
 
 ## ImageMipmaps(image) ⇒ <code>undefined</code>
+
 Compute all mipmap levels for a provided image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="ImageDither"></a>
 
 ## ImageDither(image, rBpp, gBpp, bBpp, aBpp) ⇒ <code>undefined</code>
+
 Dither image data to 16bpp or lower (Floyd-Steinberg dithering)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| rBpp | <code>number</code> | 
-| gBpp | <code>number</code> | 
-| bBpp | <code>number</code> | 
-| aBpp | <code>number</code> | 
+| Param | Type                |
+| ----- | ------------------- |
+| image | <code>Image</code>  |
+| rBpp  | <code>number</code> |
+| gBpp  | <code>number</code> |
+| bBpp  | <code>number</code> |
+| aBpp  | <code>number</code> |
 
 <a name="ImageFlipVertical"></a>
 
 ## ImageFlipVertical(image) ⇒ <code>undefined</code>
+
 Flip image vertically
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="ImageFlipHorizontal"></a>
 
 ## ImageFlipHorizontal(image) ⇒ <code>undefined</code>
+
 Flip image horizontally
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="ImageRotateCW"></a>
 
 ## ImageRotateCW(image) ⇒ <code>undefined</code>
+
 Rotate image clockwise 90deg
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="ImageRotateCCW"></a>
 
 ## ImageRotateCCW(image) ⇒ <code>undefined</code>
+
 Rotate image counter-clockwise 90deg
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="ImageColorTint"></a>
 
 ## ImageColorTint(image, color) ⇒ <code>undefined</code>
+
 Modify image color: tint
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| image | <code>Image</code>           |
+| color | [<code>Color</code>](#Color) |
 
 <a name="ImageColorInvert"></a>
 
 ## ImageColorInvert(image) ⇒ <code>undefined</code>
+
 Modify image color: invert
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="ImageColorGrayscale"></a>
 
 ## ImageColorGrayscale(image) ⇒ <code>undefined</code>
+
 Modify image color: grayscale
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
+| Param | Type               |
+| ----- | ------------------ |
+| image | <code>Image</code> |
 
 <a name="ImageColorContrast"></a>
 
 ## ImageColorContrast(image, contrast) ⇒ <code>undefined</code>
+
 Modify image color: contrast (-100 to 100)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| contrast | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| image    | <code>Image</code>  |
+| contrast | <code>number</code> |
 
 <a name="ImageColorBrightness"></a>
 
 ## ImageColorBrightness(image, brightness) ⇒ <code>undefined</code>
+
 Modify image color: brightness (-255 to 255)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| brightness | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| image      | <code>Image</code>  |
+| brightness | <code>number</code> |
 
 <a name="ImageColorReplace"></a>
 
 ## ImageColorReplace(image, color, replace) ⇒ <code>undefined</code>
+
 Modify image color: replace color
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| image | <code>Image</code> | 
-| color | [<code>Color</code>](#Color) | 
-| replace | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| image   | <code>Image</code>           |
+| color   | [<code>Color</code>](#Color) |
+| replace | [<code>Color</code>](#Color) |
 
 <a name="ImageClearBackground"></a>
 
 ## ImageClearBackground(dst, color) ⇒ <code>undefined</code>
+
 Clear image background with given color
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| dst   | <code>Image</code>           |
+| color | [<code>Color</code>](#Color) |
 
 <a name="ImageDrawPixel"></a>
 
 ## ImageDrawPixel(dst, posX, posY, color) ⇒ <code>undefined</code>
+
 Draw pixel within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                         |
+| ----- | ---------------------------- |
+| dst   | <code>Image</code>           |
+| posX  | <code>number</code>          |
+| posY  | <code>number</code>          |
+| color | [<code>Color</code>](#Color) |
 
 <a name="ImageDrawPixelV"></a>
 
 ## ImageDrawPixelV(dst, position, color) ⇒ <code>undefined</code>
+
 Draw pixel within an image (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| position | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| dst      | <code>Image</code>               |
+| position | [<code>Vector2</code>](#Vector2) |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="ImageDrawLine"></a>
 
 ## ImageDrawLine(dst, startPosX, startPosY, endPosX, endPosY, color) ⇒ <code>undefined</code>
+
 Draw line within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| startPosX | <code>number</code> | 
-| startPosY | <code>number</code> | 
-| endPosX | <code>number</code> | 
-| endPosY | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param     | Type                         |
+| --------- | ---------------------------- |
+| dst       | <code>Image</code>           |
+| startPosX | <code>number</code>          |
+| startPosY | <code>number</code>          |
+| endPosX   | <code>number</code>          |
+| endPosY   | <code>number</code>          |
+| color     | [<code>Color</code>](#Color) |
 
 <a name="ImageDrawLineV"></a>
 
 ## ImageDrawLineV(dst, start, end, color) ⇒ <code>undefined</code>
+
 Draw line within an image (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| start | [<code>Vector2</code>](#Vector2) | 
-| end | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                             |
+| ----- | -------------------------------- |
+| dst   | <code>Image</code>               |
+| start | [<code>Vector2</code>](#Vector2) |
+| end   | [<code>Vector2</code>](#Vector2) |
+| color | [<code>Color</code>](#Color)     |
 
 <a name="ImageDrawCircle"></a>
 
 ## ImageDrawCircle(dst, centerX, centerY, radius, color) ⇒ <code>undefined</code>
+
 Draw a filled circle within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| centerX | <code>number</code> | 
-| centerY | <code>number</code> | 
-| radius | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param   | Type                         |
+| ------- | ---------------------------- |
+| dst     | <code>Image</code>           |
+| centerX | <code>number</code>          |
+| centerY | <code>number</code>          |
+| radius  | <code>number</code>          |
+| color   | [<code>Color</code>](#Color) |
 
 <a name="ImageDrawCircleV"></a>
 
 ## ImageDrawCircleV(dst, center, radius, color) ⇒ <code>undefined</code>
+
 Draw a filled circle within an image (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| center | [<code>Vector2</code>](#Vector2) | 
-| radius | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param  | Type                             |
+| ------ | -------------------------------- |
+| dst    | <code>Image</code>               |
+| center | [<code>Vector2</code>](#Vector2) |
+| radius | <code>number</code>              |
+| color  | [<code>Color</code>](#Color)     |
 
 <a name="ImageDrawRectangle"></a>
 
 ## ImageDrawRectangle(dst, posX, posY, width, height, color) ⇒ <code>undefined</code>
+
 Draw rectangle within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| width | <code>number</code> | 
-| height | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param  | Type                         |
+| ------ | ---------------------------- |
+| dst    | <code>Image</code>           |
+| posX   | <code>number</code>          |
+| posY   | <code>number</code>          |
+| width  | <code>number</code>          |
+| height | <code>number</code>          |
+| color  | [<code>Color</code>](#Color) |
 
 <a name="ImageDrawRectangleV"></a>
 
 ## ImageDrawRectangleV(dst, position, size, color) ⇒ <code>undefined</code>
+
 Draw rectangle within an image (Vector version)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| position | [<code>Vector2</code>](#Vector2) | 
-| size | [<code>Vector2</code>](#Vector2) | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| dst      | <code>Image</code>               |
+| position | [<code>Vector2</code>](#Vector2) |
+| size     | [<code>Vector2</code>](#Vector2) |
+| color    | [<code>Color</code>](#Color)     |
 
 <a name="ImageDrawRectangleRec"></a>
 
 ## ImageDrawRectangleRec(dst, rec, color) ⇒ <code>undefined</code>
+
 Draw rectangle within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| rec | [<code>Rectangle</code>](#Rectangle) | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                                 |
+| ----- | ------------------------------------ |
+| dst   | <code>Image</code>                   |
+| rec   | [<code>Rectangle</code>](#Rectangle) |
+| color | [<code>Color</code>](#Color)         |
 
 <a name="ImageDrawRectangleLines"></a>
 
 ## ImageDrawRectangleLines(dst, rec, thick, color) ⇒ <code>undefined</code>
+
 Draw rectangle lines within an image
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| rec | [<code>Rectangle</code>](#Rectangle) | 
-| thick | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param | Type                                 |
+| ----- | ------------------------------------ |
+| dst   | <code>Image</code>                   |
+| rec   | [<code>Rectangle</code>](#Rectangle) |
+| thick | <code>number</code>                  |
+| color | [<code>Color</code>](#Color)         |
 
 <a name="ImageDraw"></a>
 
 ## ImageDraw(dst, src, srcRec, dstRec, tint) ⇒ <code>undefined</code>
+
 Draw a source image within a destination image (tint applied to source)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| src | <code>Image</code> | 
-| srcRec | [<code>Rectangle</code>](#Rectangle) | 
-| dstRec | [<code>Rectangle</code>](#Rectangle) | 
-| tint | [<code>Color</code>](#Color) | 
+| Param  | Type                                 |
+| ------ | ------------------------------------ |
+| dst    | <code>Image</code>                   |
+| src    | <code>Image</code>                   |
+| srcRec | [<code>Rectangle</code>](#Rectangle) |
+| dstRec | [<code>Rectangle</code>](#Rectangle) |
+| tint   | [<code>Color</code>](#Color)         |
 
 <a name="ImageDrawText"></a>
 
 ## ImageDrawText(dst, text, posX, posY, fontSize, color) ⇒ <code>undefined</code>
+
 Draw text (using default font) within an image (destination)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| text | <code>string</code> | 
-| posX | <code>number</code> | 
-| posY | <code>number</code> | 
-| fontSize | <code>number</code> | 
-| color | [<code>Color</code>](#Color) | 
+| Param    | Type                         |
+| -------- | ---------------------------- |
+| dst      | <code>Image</code>           |
+| text     | <code>string</code>          |
+| posX     | <code>number</code>          |
+| posY     | <code>number</code>          |
+| fontSize | <code>number</code>          |
+| color    | [<code>Color</code>](#Color) |
 
 <a name="ImageDrawTextEx"></a>
 
 ## ImageDrawTextEx(dst, font, text, position, fontSize, spacing, tint) ⇒ <code>undefined</code>
+
 Draw text (custom sprite font) within an image (destination)
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| dst | <code>Image</code> | 
-| font | <code>Font</code> | 
-| text | <code>string</code> | 
-| position | [<code>Vector2</code>](#Vector2) | 
-| fontSize | <code>number</code> | 
-| spacing | <code>number</code> | 
-| tint | [<code>Color</code>](#Color) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| dst      | <code>Image</code>               |
+| font     | <code>Font</code>                |
+| text     | <code>string</code>              |
+| position | [<code>Vector2</code>](#Vector2) |
+| fontSize | <code>number</code>              |
+| spacing  | <code>number</code>              |
+| tint     | [<code>Color</code>](#Color)     |
 
 <a name="GenTextureMipmaps"></a>
 
 ## GenTextureMipmaps(texture) ⇒ <code>undefined</code>
+
 Generate GPU mipmaps for a texture
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| texture | <code>Texture</code> | 
+| Param   | Type                 |
+| ------- | -------------------- |
+| texture | <code>Texture</code> |
 
 <a name="UploadMesh"></a>
 
 ## UploadMesh(mesh, dynamic) ⇒ <code>undefined</code>
+
 Upload mesh vertex data in GPU and provide VAO/VBO ids
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| mesh | <code>Mesh</code> | 
-| dynamic | <code>boolean</code> | 
+| Param   | Type                 |
+| ------- | -------------------- |
+| mesh    | <code>Mesh</code>    |
+| dynamic | <code>boolean</code> |
 
 <a name="GenMeshTangents"></a>
 
 ## GenMeshTangents(mesh) ⇒ <code>undefined</code>
+
 Compute mesh tangents
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| mesh | <code>Mesh</code> | 
+| Param | Type              |
+| ----- | ----------------- |
+| mesh  | <code>Mesh</code> |
 
 <a name="SetModelMeshMaterial"></a>
 
 ## SetModelMeshMaterial(model, meshId, materialId) ⇒ <code>undefined</code>
+
 Set material for a mesh
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| model | <code>Model</code> | 
-| meshId | <code>number</code> | 
-| materialId | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| model      | <code>Model</code>  |
+| meshId     | <code>number</code> |
+| materialId | <code>number</code> |
 
 <a name="WaveCrop"></a>
 
 ## WaveCrop(wave, initFrame, finalFrame) ⇒ <code>undefined</code>
+
 Crop a wave to defined frames range
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| wave | <code>Wave</code> | 
-| initFrame | <code>number</code> | 
-| finalFrame | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| wave       | <code>Wave</code>   |
+| initFrame  | <code>number</code> |
+| finalFrame | <code>number</code> |
 
 <a name="WaveFormat"></a>
 
 ## WaveFormat(wave, sampleRate, sampleSize, channels) ⇒ <code>undefined</code>
+
 Convert wave data to desired format
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| wave | <code>Wave</code> | 
-| sampleRate | <code>number</code> | 
-| sampleSize | <code>number</code> | 
-| channels | <code>number</code> | 
+| Param      | Type                |
+| ---------- | ------------------- |
+| wave       | <code>Wave</code>   |
+| sampleRate | <code>number</code> |
+| sampleSize | <code>number</code> |
+| channels   | <code>number</code> |
 
 <a name="Color"></a>
 
 ## Color(r, g, b, a) ⇒ [<code>Color</code>](#Color)
+
 Color, 4 components, R8G8B8A8 (32bit)
 
 **Kind**: global function  
-**Returns**: [<code>Color</code>](#Color) - The new Color.  
+**Returns**: [<code>Color</code>](#Color) - The new Color.
 
-| Param | Type | Description |
-| --- | --- | --- |
-| r | <code>number</code> | Color red value |
-| g | <code>number</code> | Color green value |
-| b | <code>number</code> | Color blue value |
-| a | <code>number</code> | Color alpha value |
+| Param | Type                | Description       |
+| ----- | ------------------- | ----------------- |
+| r     | <code>number</code> | Color red value   |
+| g     | <code>number</code> | Color green value |
+| b     | <code>number</code> | Color blue value  |
+| a     | <code>number</code> | Color alpha value |
 
 <a name="Vector2"></a>
 
 ## Vector2(x, y) ⇒ [<code>Vector2</code>](#Vector2)
+
 Vector2, 2 components
 
 **Kind**: global function  
-**Returns**: [<code>Vector2</code>](#Vector2) - The new Vector2.  
+**Returns**: [<code>Vector2</code>](#Vector2) - The new Vector2.
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | Vector x component |
-| y | <code>number</code> | Vector y component |
+| Param | Type                | Description        |
+| ----- | ------------------- | ------------------ |
+| x     | <code>number</code> | Vector x component |
+| y     | <code>number</code> | Vector y component |
 
 <a name="Vector3"></a>
 
 ## Vector3(x, y, z) ⇒ [<code>Vector3</code>](#Vector3)
+
 Vector3, 3 components
 
 **Kind**: global function  
-**Returns**: [<code>Vector3</code>](#Vector3) - The new Vector3.  
+**Returns**: [<code>Vector3</code>](#Vector3) - The new Vector3.
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | Vector x component |
-| y | <code>number</code> | Vector y component |
-| z | <code>number</code> | Vector z component |
+| Param | Type                | Description        |
+| ----- | ------------------- | ------------------ |
+| x     | <code>number</code> | Vector x component |
+| y     | <code>number</code> | Vector y component |
+| z     | <code>number</code> | Vector z component |
 
 <a name="Vector4"></a>
 
 ## Vector4(x, y, z, w) ⇒ [<code>Vector4</code>](#Vector4)
+
 Vector4, 4 components
 
 **Kind**: global function  
-**Returns**: [<code>Vector4</code>](#Vector4) - The new Vector4.  
+**Returns**: [<code>Vector4</code>](#Vector4) - The new Vector4.
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | Vector x component |
-| y | <code>number</code> | Vector y component |
-| z | <code>number</code> | Vector z component |
-| w | <code>number</code> | Vector w component |
+| Param | Type                | Description        |
+| ----- | ------------------- | ------------------ |
+| x     | <code>number</code> | Vector x component |
+| y     | <code>number</code> | Vector y component |
+| z     | <code>number</code> | Vector z component |
+| w     | <code>number</code> | Vector w component |
 
 <a name="Rectangle"></a>
 
 ## Rectangle(x, y, width, height) ⇒ [<code>Rectangle</code>](#Rectangle)
+
 Rectangle, 4 components
 
 **Kind**: global function  
-**Returns**: [<code>Rectangle</code>](#Rectangle) - The new Rectangle.  
+**Returns**: [<code>Rectangle</code>](#Rectangle) - The new Rectangle.
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | Rectangle top-left corner position x |
-| y | <code>number</code> | Rectangle top-left corner position y |
-| width | <code>number</code> | Rectangle width |
-| height | <code>number</code> | Rectangle height |
+| Param  | Type                | Description                          |
+| ------ | ------------------- | ------------------------------------ |
+| x      | <code>number</code> | Rectangle top-left corner position x |
+| y      | <code>number</code> | Rectangle top-left corner position y |
+| width  | <code>number</code> | Rectangle width                      |
+| height | <code>number</code> | Rectangle height                     |
 
 <a name="Camera2D"></a>
 
 ## Camera2D(offset, target, rotation, zoom) ⇒ [<code>Camera2D</code>](#Camera2D)
+
 Camera2D, defines position/orientation in 2d space
 
 **Kind**: global function  
-**Returns**: [<code>Camera2D</code>](#Camera2D) - The new Camera2D.  
+**Returns**: [<code>Camera2D</code>](#Camera2D) - The new Camera2D.
 
-| Param | Type | Description |
-| --- | --- | --- |
-| offset | [<code>Vector2</code>](#Vector2) | Camera offset (displacement from target) |
-| target | [<code>Vector2</code>](#Vector2) | Camera target (rotation and zoom origin) |
-| rotation | <code>number</code> | Camera rotation in degrees |
-| zoom | <code>number</code> | Camera zoom (scaling), should be 1.0f by default |
+| Param    | Type                             | Description                                      |
+| -------- | -------------------------------- | ------------------------------------------------ |
+| offset   | [<code>Vector2</code>](#Vector2) | Camera offset (displacement from target)         |
+| target   | [<code>Vector2</code>](#Vector2) | Camera target (rotation and zoom origin)         |
+| rotation | <code>number</code>              | Camera rotation in degrees                       |
+| zoom     | <code>number</code>              | Camera zoom (scaling), should be 1.0f by default |
 
 <a name="Camera3D"></a>
 
 ## Camera3D(position, target, up, fovy, projection) ⇒ [<code>Camera3D</code>](#Camera3D)
+
 Camera, defines position/orientation in 3d space
 
 **Kind**: global function  
-**Returns**: [<code>Camera3D</code>](#Camera3D) - The new Camera3D.  
+**Returns**: [<code>Camera3D</code>](#Camera3D) - The new Camera3D.
 
-| Param | Type | Description |
-| --- | --- | --- |
-| position | [<code>Vector3</code>](#Vector3) | Camera position |
-| target | [<code>Vector3</code>](#Vector3) | Camera target it looks-at |
-| up | [<code>Vector3</code>](#Vector3) | Camera up vector (rotation over its axis) |
-| fovy | <code>number</code> | Camera field-of-view aperture in Y (degrees) in perspective, used as near plane width in orthographic |
-| projection | <code>number</code> | Camera projection: CAMERA_PERSPECTIVE or CAMERA_ORTHOGRAPHIC |
+| Param      | Type                             | Description                                                                                           |
+| ---------- | -------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| position   | [<code>Vector3</code>](#Vector3) | Camera position                                                                                       |
+| target     | [<code>Vector3</code>](#Vector3) | Camera target it looks-at                                                                             |
+| up         | [<code>Vector3</code>](#Vector3) | Camera up vector (rotation over its axis)                                                             |
+| fovy       | <code>number</code>              | Camera field-of-view aperture in Y (degrees) in perspective, used as near plane width in orthographic |
+| projection | <code>number</code>              | Camera projection: CAMERA_PERSPECTIVE or CAMERA_ORTHOGRAPHIC                                          |
 
 <a name="SetShaderFloat"></a>
 
 ## SetShaderFloat(shader, locIndex, value) ⇒ <code>undefined</code>
+
 Set shader uniform value float
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
-| locIndex | <code>number</code> | 
-| value | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| shader   | <code>Shader</code> |
+| locIndex | <code>number</code> |
+| value    | <code>number</code> |
 
 <a name="SetShaderInt"></a>
 
 ## SetShaderInt(shader, locIndex, value) ⇒ <code>undefined</code>
+
 Set shader uniform value float
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
-| locIndex | <code>number</code> | 
-| value | <code>number</code> | 
+| Param    | Type                |
+| -------- | ------------------- |
+| shader   | <code>Shader</code> |
+| locIndex | <code>number</code> |
+| value    | <code>number</code> |
 
 <a name="SetShaderVec2"></a>
 
 ## SetShaderVec2(shader, locIndex, value) ⇒ <code>undefined</code>
+
 Set shader uniform value vector2
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
-| locIndex | <code>number</code> | 
-| value | [<code>Vector2</code>](#Vector2) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| shader   | <code>Shader</code>              |
+| locIndex | <code>number</code>              |
+| value    | [<code>Vector2</code>](#Vector2) |
 
 <a name="SetShaderVec3"></a>
 
 ## SetShaderVec3(shader, locIndex, value) ⇒ <code>undefined</code>
+
 Set shader uniform value vector3
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
-| locIndex | <code>number</code> | 
-| value | [<code>Vector3</code>](#Vector3) | 
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| shader   | <code>Shader</code>              |
+| locIndex | <code>number</code>              |
+| value    | [<code>Vector3</code>](#Vector3) |
 
 <a name="SetShaderVec4"></a>
 
 ## SetShaderVec4(shader, locIndex, value) ⇒ <code>undefined</code>
+
 Set shader uniform value vector4
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| shader | <code>Shader</code> | 
-| locIndex | <code>number</code> | 
-| value | [<code>Vector4</code>](#Vector4) | 
-
+| Param    | Type                             |
+| -------- | -------------------------------- |
+| shader   | <code>Shader</code>              |
+| locIndex | <code>number</code>              |
+| value    | [<code>Vector4</code>](#Vector4) |

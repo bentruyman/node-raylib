@@ -1,107 +1,122 @@
-const ArgumentTypeConversion = require('./ArgumentTypeConversion')
+const ArgumentTypeConversion = require("./ArgumentTypeConversion");
 
 // These are struct types that the JS wrapper will create simple functions to generate objects for.
 const constructors = [
-  'Color',
-  'Vector2',
-  'Vector3',
-  'Vector4',
-  'Rectangle',
-  'Camera2D',
-  'Camera3D'
-]
+  "Color",
+  "Vector2",
+  "Vector3",
+  "Vector4",
+  "Rectangle",
+  "Camera2D",
+  "Camera3D",
+];
 
 const FlattenArgument = (structs, param) => {
-  if (param.type === 'Camera') { param.type = 'Camera3D' }
-  if (param.type === 'Texture2D') { param.type = 'Texture' }
-  if (param.type === 'RenderTexture2D') { param.type = 'RenderTexture' }
-  let out = ''
-  let isStruct = false
+  if (param.type === "Camera") {
+    param.type = "Camera3D";
+  }
+  if (param.type === "Texture2D") {
+    param.type = "Texture";
+  }
+  if (param.type === "RenderTexture2D") {
+    param.type = "RenderTexture";
+  }
+  let out = "";
+  let isStruct = false;
   for (const struct of structs) {
     if (struct.name === param.type) {
-      isStruct = true
+      isStruct = true;
       for (const field of struct.fields) {
-        out += FlattenArgument(structs, { type: field.type, name: param.name + '.' + field.name }) + ',\n    '
+        out +=
+          FlattenArgument(structs, {
+            type: field.type,
+            name: param.name + "." + field.name,
+          }) + ",\n    ";
       }
-      out = out.slice(0, out.length - 6) // remove final comma
+      out = out.slice(0, -6); // remove final comma
     }
   }
 
   if (!isStruct) {
-    out += param.name
+    out += param.name;
   }
-  return out
-}
+  return out;
+};
 
 /**
  * Generates the JSDocs for the given function.
  */
 const JSDocsForFunction = (structs, func) => {
   // Determine the function description.
-  const description = func.description ?? func.name
+  const description = func.description ?? func.name;
 
   // Define the parameters.
-  let params = ''
+  let params = "";
   if (func.params) {
-    params = '\n *'
+    params = "\n *";
     for (const param of func.params) {
-      params += `\n * @param {${ArgumentTypeConversion(param.type)}} ${param.name}`
+      params += `\n * @param {${ArgumentTypeConversion(param.type)}} ${param.name}`;
     }
   }
 
   // Find the return type.
-  let returnType = ''
-  if (func.returnType && func.returnType !== 'void') {
-    returnType = `\n *\n * @return {${ArgumentTypeConversion(func.returnType)}} The resulting ${func.returnType}.`
-  } else {
-    returnType = '\n *\n * @return {undefined}'
-  }
+  let returnType = "";
+  returnType =
+    func.returnType && func.returnType !== "void"
+      ? `\n *\n * @return {${ArgumentTypeConversion(func.returnType)}} The resulting ${func.returnType}.`
+      : "\n *\n * @return {undefined}";
 
   if (description) {
     return `
 /**
  * ${description}${params}${returnType}
- */`
+ */`;
   }
-  return ''
-}
+  return "";
+};
 
 const WrapFunction = (structs, func) => {
   return `${JSDocsForFunction(structs, func)}
-function ${func.name}(${!func.params ? '' : func.params.map(param => param.name).join(', ')}) {
+function ${func.name}(${func.params ? func.params.map((param) => param.name).join(", ") : ""}) {
   return r.Bind${func.name}(${
-    !func.params
-? ''
-: '\n    ' +
-      func.params
-      .map(param => { return FlattenArgument(structs, param) })
-      .join(',\n    ') + '\n  '
+    func.params
+      ? "\n    " +
+        func.params
+          .map((param) => {
+            return FlattenArgument(structs, param);
+          })
+          .join(",\n    ") +
+        "\n  "
+      : ""
   })
 }
-raylib.${func.name} = ${func.name}`
-}
+raylib.${func.name} = ${func.name}`;
+};
 
 const WrapByRefFunction = (structs, func) => {
   // copy params array to make edits nondestructively
-  const params = []
+  const params = [];
   for (const param of func.params) {
-    params.push(param)
+    params.push(param);
   }
   // no longer a pointer function - instead pass a copy - C++ creates the pointer at execution time
   if (params[0]) {
-    params[0].type = params[0].type.replace('*', '')
-    params[0].type = params[0].type.replace(' ', '')
+    params[0].type = params[0].type.replace("*", "");
+    params[0].type = params[0].type.replace(" ", "");
   }
 
   return `${JSDocsForFunction(structs, func)}
-function ${func.name}(${!params ? '' : params.map(param => param.name).join(', ')}) {
+function ${func.name}(${params ? params.map((param) => param.name).join(", ") : ""}) {
   const obj = r.Bind${func.name}(${
-    !params
-? ''
-: '\n    ' +
     params
-      .map(param => { return FlattenArgument(structs, param) })
-      .join(',\n    ') + '\n  '
+      ? "\n    " +
+        params
+          .map((param) => {
+            return FlattenArgument(structs, param);
+          })
+          .join(",\n    ") +
+        "\n  "
+      : ""
   })
   if (typeof obj !== 'undefined') {
     for (const key in obj) {
@@ -109,24 +124,24 @@ function ${func.name}(${!params ? '' : params.map(param => param.name).join(', '
     }
   }
 }
-raylib.${func.name} = ${func.name}`
-}
+raylib.${func.name} = ${func.name}`;
+};
 
 const WrapConstructor = (structs, constructor) => {
-  let info
+  let info;
   for (const struct of structs) {
-    if (struct.name === constructor) info = struct
+    if (struct.name === constructor) info = struct;
   }
   if (info) {
     // Grab the description for the object.
-    const description = info.description ?? info.name
+    const description = info.description ?? info.name;
 
     // Construct the field parameters
-    let params = ''
+    let params = "";
     if (info.fields) {
-      params = '\n *'
+      params = "\n *";
       for (const field of info.fields) {
-        params += `\n * @param {${ArgumentTypeConversion(field.type)}} ${field.name} - ${field.description}`
+        params += `\n * @param {${ArgumentTypeConversion(field.type)}} ${field.name} - ${field.description}`;
       }
     }
     return `/**
@@ -134,15 +149,21 @@ const WrapConstructor = (structs, constructor) => {
  *
  * @return {${info.name}} The new ${info.name}.
  */
-function ${info.name}(${info.fields.map(field => `${field.name}`).join(',')}) {
-  return {${info.fields.map(field => `${field.name}`).join(',')}}
+function ${info.name}(${info.fields.map((field) => `${field.name}`).join(",")}) {
+  return {${info.fields.map((field) => `${field.name}`).join(",")}}
 }
 raylib.${info.name} = ${info.name}
-`
-  } else return ''
-}
+`;
+  } else return "";
+};
 
-module.exports = ({ functions, structs, enums, blocklist, byreflist }) => {
+const generateWrapper = ({
+  functions,
+  structs,
+  enums,
+  blocklist,
+  byreflist,
+}) => {
   return `/**
  * node-raylib
  *
@@ -158,20 +179,21 @@ const raylib = {}
 ${functions
   .filter(({ name }) => !blocklist.includes(name))
   .filter(({ name }) => !byreflist.includes(name))
-  .map((func) => { return WrapFunction(structs, func) })
-  .join('\n')
-}
+  .map((func) => {
+    return WrapFunction(structs, func);
+  })
+  .join("\n")}
 ${functions
   .filter(({ name }) => !blocklist.includes(name))
   .filter(({ name }) => byreflist.includes(name))
-  .map((func) => { return WrapByRefFunction(structs, func) })
-  .join('\n')
-}
+  .map((func) => {
+    return WrapByRefFunction(structs, func);
+  })
+  .join("\n")}
 
 ${constructors
-  .map(ctor => WrapConstructor(structs, ctor))
-  .join('\n')
-}raylib.Camera = raylib.Camera3D
+  .map((ctor) => WrapConstructor(structs, ctor))
+  .join("\n")}raylib.Camera = raylib.Camera3D
 
 // WRAPPED TYPED SHADER FUNCTIONS
 
@@ -277,18 +299,20 @@ function SetShaderVec4(shader, locIndex, value) {
 raylib.SetShaderVec4 = SetShaderVec4
 ${enums
   .map((e) => {
-    return e.values.map(v => `
+    return e.values
+      .map(
+        (v) => `
 /**
  * ${v.description}
  *
  * @type {number}
  * @constant
  */
-raylib.${v.name} = ${v.value}`)
-    .join('\n')
+raylib.${v.name} = ${v.value}`,
+      )
+      .join("\n");
   })
-  .join('\n')
-}
+  .join("\n")}
 
 raylib.LIGHTGRAY = { r: 200, g: 200, b: 200, a: 255 }
 raylib.GRAY = { r: 130, g: 130, b: 130, a: 255 }
@@ -318,5 +342,7 @@ raylib.MAGENTA = { r: 255, g: 0, b: 255, a: 255 }
 raylib.RAYWHITE = { r: 245, g: 245, b: 245, a: 255 }
 
 module.exports = raylib
-`
-}
+`;
+};
+
+module.exports = generateWrapper;

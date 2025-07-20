@@ -1,14 +1,14 @@
 {
   "name": "raylib-simple-game",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "description": "",
+  "license": "MIT",
+  "author": "",
   "main": "simple_game.js",
   "scripts": {
     "start": "node simple_game.js"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "raylib": "*"
   }
